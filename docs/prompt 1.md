@@ -39,7 +39,7 @@ Key Features:
 Dependencies:
 - PyPDF2 - PDF processing
 - pdfplumber - Advanced PDF text extraction with color information
-python-json-logger - JSON formatted logging
+- python-json-logger - JSON formatted logging
 
 To use the package, you would need to:
 
@@ -58,7 +58,7 @@ processor = M11Processor(
 results = processor.process()
 ````
 
-# Or save to JSON
+Or save to JSON
 
 ```
 processor.save_to_json("output.json")
