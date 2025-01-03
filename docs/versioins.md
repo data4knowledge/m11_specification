@@ -1,4 +1,4 @@
-Versions and updates
+# Versions and updates
 
 | Version | Description |
 | ------- | ----------- |

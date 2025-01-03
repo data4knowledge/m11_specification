@@ -1,3 +1,5 @@
+# Prompt
+
 1. Write a python package that takes two PDF documents as the inputs.
 2. The documents can be stored locally and referenced by full path manes
 3. One document is the specification of a template, the Template Specification, for clinical trial protocol documents, see https://www.ema.europa.eu/en/documents/scientific-guideline/ich-m11-template-step-2b_en.pdf for an example
