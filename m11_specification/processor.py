@@ -35,13 +35,22 @@ class M11Processor:
             raise FileNotFoundError(f"Technical specification file not found: {technical_spec_path}")
 
     def _extract_color_from_text(self, text_obj: Dict) -> str:
-        """Extract color from PDF text object."""
+        """
+        Extract color from PDF text object.
+        Handles various shades of red and blue that might appear in the PDF.
+        """
         if 'non_stroking_color' in text_obj:
             color = text_obj['non_stroking_color']
-            if color == (1, 0, 0):  # Red
+            
+            # Handle red (checking for various shades)
+            if (color[0] > 0.7 and color[1] < 0.3 and color[2] < 0.3):
                 return 'red'
-            elif color == (0, 0, 1):  # Blue
+            
+            # Handle blue (checking for various shades)
+            elif (color[0] < 0.3 and color[1] < 0.3 and color[2] > 0.7):
                 return 'blue'
+            
+            # Default to black for other colors
             return 'black'
         return 'black'
 
