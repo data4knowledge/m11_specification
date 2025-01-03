@@ -43,6 +43,7 @@ class M11Processor:
             color = text_obj['non_stroking_color']
             
             # Handle red (checking for various shades)
+            print(f"COLOUR: {color}, {text_obj['text']}")
             if (color[0] > 0.7 and color[1] < 0.3 and color[2] < 0.3):
                 return 'red'
             
