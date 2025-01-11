@@ -1,7 +1,8 @@
-from m11_specification import M11Processor
+import json
+from m11_template.m11_template import M11Template
 
-processor = M11Processor(
-    template_spec_path="data/input_data/ich-m11-template-step-2b_en.pdf",
-    technical_spec_path="data/input_data/ich-m11-technical-specification-step-2b_en.pdf"
-)
-processor.save_to_json("data/output_data/m11.json")
+template = M11Template(filepath="data/input_data/m11-template-spec.docx")
+results = template.process()
+with open("data/output_data/m11.json", 'w') as f:
+    json.dump(results, f, indent=4)
+
