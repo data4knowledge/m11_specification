@@ -9,8 +9,7 @@ class M11Template:
         Initialize the M11 processor with paths to both specification documents.
 
         Args:
-            template_spec_path (str): Path to the Template Specification PDF
-            technical_spec_path (str): Path to the Technical Specification PDF
+            filepath (str): Path to the Template Specification PDF
         """
         self.document = None
         self.elements = []
@@ -21,6 +20,9 @@ class M11Template:
             )
 
     def process(self) -> None:
+        """
+        Process the template specification document.
+        """
         raw_doc: RawDocument = RawDocx(self.filepath).target_document
         self.document = raw_doc.to_dict()
         for section in raw_doc.sections:
@@ -37,6 +39,16 @@ class M11Template:
                                     self.elements += confirmed_elements
     
     def _extract_elements(self, section: RawSection, paragraph: RawParagraph) -> list[str]:
+        """
+        Extract elements from a paragraph.
+
+        Args:
+            section (RawSection): The section the paragraph belongs to
+            paragraph (RawParagraph): The paragraph to extract elements from
+
+        Returns:
+            list[str]: A list of confirmed elements
+        """
         confirmed_elements = []
         potential_elements = self._find_elements(paragraph.text)
         for element in potential_elements:
@@ -52,7 +64,15 @@ class M11Template:
         return confirmed_elements
     
     def _find_elements(self, text: str) -> list[str]:
-        # Add regex pattern to extract text between < and >
+        """
+        Find elements in a paragraph. 
+        Elements are found by looking for text between < and >.
+        Args:
+            text (str): The text to find elements in
+
+        Returns:
+            list[str]: A list of elements
+        """
         pattern = r'<([^>]+)>'
         matches = re.findall(pattern, text)
         print(f"MATCHES: {matches}")
