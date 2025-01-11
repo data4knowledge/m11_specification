@@ -53,7 +53,9 @@ class M11Template:
                                         instructions = self._extract_instructions(
                                             section, item
                                         )
-                                        print(f"INSTRUCTIONS: {instructions} for {last_row_elements}")
+                                        print(
+                                            f"INSTRUCTIONS: {instructions} for {last_row_elements}"
+                                        )
                                         self._add_instructions(
                                             last_row_elements, instructions
                                         )
@@ -110,8 +112,7 @@ class M11Template:
                         "optional": optional,
                         "section_number": section.number,
                         "section_title": section.title,
-                        "optional": optional,
-                        "instructions": []
+                        "instructions": [],
                     }
                 )
         print(f"CONFIRMED ELEMENTS: {confirmed_elements}")
@@ -134,7 +135,11 @@ class M11Template:
         # print(f"INSTRUCTIONS COLOR: {[x.color for x in paragraph.runs]}")
         # print(f"INSTRUCTIONS HIGHLIGHT: {[x.highlight for x in paragraph.runs]}")
         # print(f"INSTRUCTIONS STYLE: {[x.style for x in paragraph.runs]}")
-        instructions = [x.text for x in paragraph.runs if x.color == "C00000" or x.style == 'Instructional TExt']
+        instructions = [
+            x.text
+            for x in paragraph.runs
+            if x.color == "C00000" or x.style == "Instructional TExt"
+        ]
         print(f"INSTRUCTIONS: {instructions}")
         return instructions
 
