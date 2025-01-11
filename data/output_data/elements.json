@@ -287,7 +287,9 @@
         "optional": false,
         "section_number": null,
         "section_title": null,
-        "instructions": []
+        "instructions": [
+            "or"
+        ]
     },
     "describe method": {
         "long_name": "describe method",
@@ -397,7 +399,9 @@
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
-        "instructions": []
+        "instructions": [
+            "or"
+        ]
     },
     "alternate description of planned duration of trial intervention if duration will vary": {
         "long_name": "Enter alternate description of planned duration of trial intervention if duration will vary",
@@ -413,7 +417,9 @@
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
-        "instructions": []
+        "instructions": [
+            "If necessary, include any clarifications or cross references to details in the main body of the protocol in the optional field below."
+        ]
     },
     "Additional Description of Duration": {
         "long_name": "Enter Additional Description of Duration",
@@ -437,7 +443,9 @@
         "optional": true,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
-        "instructions": []
+        "instructions": [
+            "Delete \u201cOther Committees\u201d if not applicable."
+        ]
     },
     "Trial Schema": {
         "long_name": "Enter Trial Schema",
@@ -485,7 +493,9 @@
         "optional": true,
         "section_number": "2.2.2",
         "section_title": "Risk Summary and Mitigation Strategy",
-        "instructions": []
+        "instructions": [
+            "Trial Procedures \u2013 Consider risks associated with the design (e.g., placebo arm) and procedures specific to THIS trial (e.g., biopsies), and any measures to control or mitigate the risks. Provide a brief description of strategies to mitigate identified risks or provide a cross reference to the relevant protocol section. This is not intended to be an exhaustive list of all possible risks associated with trial procedures but should focus on the unique risks inherent in the design or less common or high-risk procedures. As above, provide a brief description of strategies to mitigate identified risks or provide a cross reference to the relevant protocol section."
+        ]
     },
     "Trial-specific Procedure Risks and Mitigations": {
         "long_name": "Enter Trial-specific Procedure Risks and Mitigations",
@@ -493,7 +503,9 @@
         "optional": true,
         "section_number": "2.2.2",
         "section_title": "Risk Summary and Mitigation Strategy",
-        "instructions": []
+        "instructions": [
+            "Other \u2013 Consider risks associated with other items (e.g., challenge agents, imaging agents, medical devices). This could include discussion of risk mitigation for special populations, if not described elsewhere. Insert a line for each, as needed."
+        ]
     },
     "Trial-specific Other Risks and Mitigations": {
         "long_name": "Enter Trial-specific Other Risks and Mitigations",
@@ -605,7 +617,9 @@
         "optional": true,
         "section_number": "4.1",
         "section_title": "Description of Trial Design",
-        "instructions": []
+        "instructions": [
+            "OR"
+        ]
     },
     "Description of Intervention Model": {
         "long_name": "Enter Description of Intervention Model",
@@ -613,7 +627,9 @@
         "optional": true,
         "section_number": "4.1",
         "section_title": "Description of Trial Design",
-        "instructions": []
+        "instructions": [
+            "Describe the trial duration with reference to Section 1.2 Trial Schema. Explain what the overall duration for an individual participant is anticipated to be and why, including the sequence and duration of trial periods (e.g., screening, run-in, randomisation, treatment [fixed dose/titration], follow-up/washout periods). Where applicable, include discussion of sentinel dosing (or lack thereof), dose escalation, and cohort expansion. If dose modification decisions are dependent upon review by a committee, include details in Section 11.4 Committees."
+        ]
     },
     "Description of Trial Duration": {
         "long_name": "Enter Description of Trial Duration",
@@ -621,7 +637,9 @@
         "optional": true,
         "section_number": "4.1",
         "section_title": "Description of Trial Design",
-        "instructions": []
+        "instructions": [
+            "State the method of assignment to trial intervention the level and method of blinding that will be used with reference to Section 6.7 Investigational Trial Intervention Assignment, Randomisation and Blinding."
+        ]
     },
     "Method of Assignment to Trial Intervention": {
         "long_name": "Enter Method of Assignment to Trial Intervention",
@@ -645,7 +663,9 @@
         "optional": true,
         "section_number": "4.1",
         "section_title": "Description of Trial Design",
-        "instructions": []
+        "instructions": [
+            "Describe any other important aspects of the design, e.g.,:"
+        ]
     },
     "Additional Description of Trial Design": {
         "long_name": "Enter Additional Description of Trial Design",
@@ -669,7 +689,9 @@
         "optional": true,
         "section_number": "4.2",
         "section_title": "Rationale for Trial Design",
-        "instructions": []
+        "instructions": [
+            "OR"
+        ]
     },
     "Rationale for Intervention Model": {
         "long_name": "Enter Rationale for Intervention Model",
@@ -1533,7 +1555,9 @@
         "optional": false,
         "section_number": "11.2",
         "section_title": "Trial Oversight",
-        "instructions": []
+        "instructions": [
+            "OR"
+        ]
     },
     "Investigator Responsibilities": {
         "long_name": "Enter Investigator Responsibilities",
@@ -1565,7 +1589,9 @@
         "optional": true,
         "section_number": "11.3",
         "section_title": "Informed Consent Process",
-        "instructions": []
+        "instructions": [
+            "If enrollment in the trial may occur during an emergency in which the participant or their legally acceptable representative is not able or available to give consent, describe the consent process."
+        ]
     },
     "Description of Emergency Consent Process": {
         "long_name": "Enter Description of Emergency Consent Process",
@@ -1669,7 +1695,9 @@
         "optional": false,
         "section_number": "11.10",
         "section_title": "Early Site Closure",
-        "instructions": []
+        "instructions": [
+            "List the criteria for early closure of a site by the sponsor or investigator."
+        ]
     },
     "Criteria for Early Closure": {
         "long_name": "Enter Criteria for Early Closure",
@@ -1677,7 +1705,9 @@
         "optional": false,
         "section_number": "11.10",
         "section_title": "Early Site Closure",
-        "instructions": []
+        "instructions": [
+            "List the responsibilities of the sponsor and investigator following early site closure, such as informing the ethics committee(s), and prompt notification of the participant and their transition to appropriate therapy and/or follow-up."
+        ]
     },
     "Responsibilities Following Early Site Closure": {
         "long_name": "Enter Responsibilities Following Early Site Closure",
@@ -1741,7 +1771,9 @@
         "optional": false,
         "section_number": "12.3",
         "section_title": "Prior Protocol Amendment(s)",
-        "instructions": []
+        "instructions": [
+            "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first)."
+        ]
     },
     "enter amendment number": {
         "long_name": "enter amendment number",
@@ -1749,7 +1781,9 @@
         "optional": false,
         "section_number": "12.3",
         "section_title": "Prior Protocol Amendment(s)",
-        "instructions": []
+        "instructions": [
+            "(Add lines as needed)"
+        ]
     },
     "enter date": {
         "long_name": "enter date",
@@ -1757,7 +1791,9 @@
         "optional": false,
         "section_number": "12.3",
         "section_title": "Prior Protocol Amendment(s)",
-        "instructions": []
+        "instructions": [
+            "(Add lines as needed)"
+        ]
     },
     "Glossary of Terms and Abbreviations": {
         "long_name": "Enter Glossary of Terms and Abbreviations",
