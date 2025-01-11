@@ -26,8 +26,8 @@ class M11Template:
         raw_doc: RawDocument = RawDocx(self.filepath).target_document
         self.document = raw_doc.to_dict()
         for section in raw_doc.sections:
+            last_document_elements = []
             for item in section.items:
-                last_document_elements = []
                 if isinstance(item, RawParagraph):
                     confirmed_elements = self._extract_elements(section, item)
                     if confirmed_elements:
@@ -46,14 +46,17 @@ class M11Template:
                                     confirmed_elements = self._extract_elements(
                                         section, item
                                     )
-                                    self._add_elements(confirmed_elements)
-                                    last_row_elements = confirmed_elements
-                                    instructions = self._extract_instructions(
-                                        section, item
-                                    )
-                                    self._add_instructions(
-                                        last_row_elements, instructions
-                                    )
+                                    if confirmed_elements:
+                                        self._add_elements(confirmed_elements)
+                                        last_row_elements = confirmed_elements
+                                    else:
+                                        instructions = self._extract_instructions(
+                                            section, item
+                                        )
+                                        print(f"INSTRUCTIONS: {instructions} for {last_row_elements}")
+                                        self._add_instructions(
+                                            last_row_elements, instructions
+                                        )
 
     def _add_elements(self, elements: list[str]) -> None:
         """
@@ -67,7 +70,7 @@ class M11Template:
         Add instructions to the elements dictionary.
         """
         for element in elements:
-            element["instructions"] = instructions
+            self.elements[element["short_name"]]["instructions"] = instructions
 
     def _extract_elements(
         self, section: RawSection, paragraph: RawParagraph
@@ -85,10 +88,10 @@ class M11Template:
         confirmed_elements = []
         potential_elements = self._find_elements(paragraph.text)
         for element in potential_elements:
-            print(f"TEXT: {[x.text for x in paragraph.runs]}")
-            print(f"COLOR: {[x.color for x in paragraph.runs]}")
-            print(f"HIGHLIGHT: {[x.highlight for x in paragraph.runs]}")
-            print(f"STYLE: {[x.style for x in paragraph.runs]}")
+            # print(f"TEXT: {[x.text for x in paragraph.runs]}")
+            # print(f"COLOR: {[x.color for x in paragraph.runs]}")
+            # print(f"HIGHLIGHT: {[x.highlight for x in paragraph.runs]}")
+            # print(f"STYLE: {[x.style for x in paragraph.runs]}")
             match = next(
                 (
                     x
@@ -127,10 +130,10 @@ class M11Template:
         Returns:
             list[str]: The instructions
         """
-        print(f"INSTRUCTIONS TEXT: {[x.text for x in paragraph.runs]}")
-        print(f"INSTRUCTIONS COLOR: {[x.color for x in paragraph.runs]}")
-        print(f"INSTRUCTIONS HIGHLIGHT: {[x.highlight for x in paragraph.runs]}")
-        print(f"INSTRUCTIONS STYLE: {[x.style for x in paragraph.runs]}")
+        # print(f"INSTRUCTIONS TEXT: {[x.text for x in paragraph.runs]}")
+        # print(f"INSTRUCTIONS COLOR: {[x.color for x in paragraph.runs]}")
+        # print(f"INSTRUCTIONS HIGHLIGHT: {[x.highlight for x in paragraph.runs]}")
+        # print(f"INSTRUCTIONS STYLE: {[x.style for x in paragraph.runs]}")
         instructions = [x.text for x in paragraph.runs if x.color == "C00000" or x.style == 'Instructional TExt']
         print(f"INSTRUCTIONS: {instructions}")
         return instructions

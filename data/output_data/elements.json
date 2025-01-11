@@ -6,9 +6,7 @@
         "section_number": null,
         "section_title": null,
         "instructions": [
-            "<",
-            "Chevrons",
-            "> in the prevailing typeface with grey shading."
+            "When complete, remove chevrons and restyle text to match other text in the final document"
         ]
     },
     "Sponsor Confidentiality Statement": {
@@ -17,7 +15,9 @@
         "optional": true,
         "section_number": null,
         "section_title": null,
-        "instructions": []
+        "instructions": [
+            "Insert the Sponsor\u2019s confidentiality statement, if applicable, otherwise delete."
+        ]
     },
     "Full Title": {
         "long_name": "Enter Full Title",
@@ -25,7 +25,9 @@
         "optional": false,
         "section_number": null,
         "section_title": null,
-        "instructions": []
+        "instructions": [
+            "The protocol should have a descriptive title that identifies the scientific aspects of the trial sufficiently to ensure it is immediately evident what the trial is investigating and on whom, and to allow retrieval from literature or internet searches."
+        ]
     },
     "Trial Acronym": {
         "long_name": "Enter Trial Acronym",
@@ -33,7 +35,9 @@
         "optional": true,
         "section_number": null,
         "section_title": null,
-        "instructions": []
+        "instructions": [
+            "Acronym or abbreviation used publicly to identify the clinical trial. Delete this line from the table if not applicable."
+        ]
     },
     "Sponsor Protocol Identifier": {
         "long_name": "Enter Sponsor Protocol Identifier",
@@ -41,7 +45,9 @@
         "optional": false,
         "section_number": null,
         "section_title": null,
-        "instructions": []
+        "instructions": [
+            "A unique alphanumeric identifier for the trial, designated by the Sponsor, is a standard part of trial data, and should be included for most trials."
+        ]
     },
     "Version Number": {
         "long_name": "Enter Version Number",
@@ -49,7 +55,9 @@
         "optional": true,
         "section_number": null,
         "section_title": null,
-        "instructions": []
+        "instructions": [
+            "An optional field for use by the Sponsor at their discretion."
+        ]
     },
     "Version Date": {
         "long_name": "Enter Version Date",
@@ -57,7 +65,9 @@
         "optional": true,
         "section_number": null,
         "section_title": null,
-        "instructions": []
+        "instructions": [
+            "An optional field for use by the Sponsor at their discretion."
+        ]
     },
     "Site Identifier": {
         "long_name": "Enter Site Identifier",
@@ -66,8 +76,7 @@
         "section_number": null,
         "section_title": null,
         "instructions": [
-            "or",
-            "or "
+            "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
         ]
     },
     "Compound Code(s)": {
@@ -76,7 +85,9 @@
         "optional": true,
         "section_number": null,
         "section_title": null,
-        "instructions": []
+        "instructions": [
+            "Enter the Sponsor\u2019s unique identifier for investigational compound(s) in the trial. Add fields as needed."
+        ]
     },
     "Nonproprietary Name(s)": {
         "long_name": "Enter Nonproprietary Name(s)",
@@ -92,7 +103,9 @@
         "optional": true,
         "section_number": null,
         "section_title": null,
-        "instructions": []
+        "instructions": [
+            "Omit nonproprietary name fields if a nonproprietary name has not yet been assigned. Omit proprietary name fields if not yet established."
+        ]
     },
     "Description of Trial Phase Other": {
         "long_name": "Enter Description of Trial Phase Other",
@@ -100,7 +113,9 @@
         "optional": false,
         "section_number": null,
         "section_title": null,
-        "instructions": []
+        "instructions": [
+            "For trials combining investigational drugs or vaccines with devices, classify according to the phase of drug development."
+        ]
     },
     "Trial Short Title": {
         "long_name": "Enter Trial Short Title",
@@ -108,7 +123,9 @@
         "optional": true,
         "section_number": null,
         "section_title": null,
-        "instructions": []
+        "instructions": [
+            "Short title should convey in plain language what the trial is about and should be suitable for use as \u201cBrief Title\u201d or \u201cTitle in Plain Language\u201d in global clinical trial registries. It can also be suitable for use with informed consents and ethics committee submissions."
+        ]
     },
     "Sponsor Name": {
         "long_name": "Enter Sponsor Name",
@@ -140,7 +157,9 @@
         "optional": true,
         "section_number": null,
         "section_title": null,
-        "instructions": []
+        "instructions": [
+            "Local Sponsor Name and Address:"
+        ]
     },
     "Local Sponsor Name": {
         "long_name": "Enter Local Sponsor Name",
@@ -156,7 +175,9 @@
         "optional": true,
         "section_number": null,
         "section_title": null,
-        "instructions": []
+        "instructions": [
+            "In some countries, the clinical trial Sponsor may be the local affiliate company (or designee). In such cases, indicate this in the Sponsor Local Name and Address Field."
+        ]
     },
     "Device Manufacturer Name": {
         "long_name": "Enter Device Manufacturer Name",
@@ -172,7 +193,9 @@
         "optional": true,
         "section_number": null,
         "section_title": null,
-        "instructions": []
+        "instructions": [
+            "Add additional fields as needed if multiple investigational devices will be used in the trial. Delete this line if not applicable."
+        ]
     },
     "EU CT Number": {
         "long_name": "EU CT Number",
@@ -236,7 +259,9 @@
         "optional": true,
         "section_number": null,
         "section_title": null,
-        "instructions": []
+        "instructions": [
+            "Include all numbers that are applicable for the trial and available at the time of protocol or amendment finalisation. Delete prompts for numbers not available at the time of document finalisation. Delete unused fields. Add fields for \u201cother\u201d if more than one is needed."
+        ]
     },
     "Approval Date": {
         "long_name": "Enter Approval Date",
@@ -253,7 +278,7 @@
         "section_number": null,
         "section_title": null,
         "instructions": [
-            "or"
+            "All versions should be uniquely identifiable. Use the CDISC date format (dd/mmm/yyyy, e.g., 07/JUN/2015) to indicate the date the protocol (or amendment) was approved by the Sponsor."
         ]
     },
     "sponsor signature block (name and title of sponsor signatory and signature date)": {
@@ -278,7 +303,9 @@
         "optional": true,
         "section_number": null,
         "section_title": null,
-        "instructions": []
+        "instructions": [
+            "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
+        ]
     },
     "Globally/Locally/by Cohort": {
         "long_name": "Globally/Locally/by Cohort",
@@ -286,7 +313,9 @@
         "optional": true,
         "section_number": null,
         "section_title": null,
-        "instructions": []
+        "instructions": [
+            "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
+        ]
     },
     "\u201cOriginal\u201d": {
         "long_name": "Enter \u201cOriginal\u201d",
@@ -294,10 +323,7 @@
         "optional": false,
         "section_number": null,
         "section_title": null,
-        "instructions": [
-            "or",
-            "*"
-        ]
+        "instructions": []
     },
     "Amendment Summary": {
         "long_name": "Amendment Summary",
@@ -305,7 +331,9 @@
         "optional": false,
         "section_number": null,
         "section_title": null,
-        "instructions": []
+        "instructions": [
+            "Describe key changes briefly. Changes which are included in the amendment but unrelated to the key changes do not need to be described here."
+        ]
     },
     "Description of Change": {
         "long_name": "Enter Description of Change",
@@ -345,10 +373,7 @@
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
-        "instructions": [
-            "or",
-            "or"
-        ]
+        "instructions": []
     },
     "numeric": {
         "long_name": "numeric",
