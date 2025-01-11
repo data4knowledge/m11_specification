@@ -1,5 +1,6 @@
+import re
 from pathlib import Path
-from raw_docx import RawDocx, RawDocument, RawParagraph, RawTable
+from raw_docx import RawDocx, RawDocument, RawParagraph, RawTable, RawSection
 
 class M11Template:
 
@@ -11,68 +12,48 @@ class M11Template:
             template_spec_path (str): Path to the Template Specification PDF
             technical_spec_path (str): Path to the Technical Specification PDF
         """
-        self.result = None
+        self.document = None
+        self.elements = []
         self.filepath = Path(filepath)
         if not self.filepath.exists():
             raise FileNotFoundError(
                 f"Template specification file not found: {filepath}"
             )
 
-    def process(self):
+    def process(self) -> None:
         raw_doc: RawDocument = RawDocx(self.filepath).target_document
-        self.result = raw_doc.to_dict()
+        self.document = raw_doc.to_dict()
         for section in raw_doc.sections:
             for item in section.items:
                 if isinstance(item, RawParagraph):
-                    print(f"PARA: {item.runs}")
+                    confirmed_elements = self._extract_elements(section, item)
+                    self.elements += confirmed_elements
                 elif isinstance(item, RawTable):
-                    pass
-        return self.result
+                    for row in item.rows:
+                        for cell in row.cells:
+                            for item in cell.items:
+                                if isinstance(item, RawParagraph):
+                                    confirmed_elements = self._extract_elements(section, item)
+                                    self.elements += confirmed_elements
     
-    # def _extract_elements(self, data: list[dict]):
-    #     index = 0
-    #     more = False
-    #     while not more and index < len(data):
-    #         run = data[index]
-    #         if not run["text"]:
-    #             run["keep"] = False
-    #             more = True
-    #         elif (index < len(data) - 1) and run["text"][-1] in ["<", "[", "{"]:
-    #             run["text"] = run["text"] + data[index + 1]["text"]
-    #             run["style"] = (
-    #                 data[index + 1]["style"]
-    #                 if data[index + 1]["style"] == "CPT_Variable"
-    #                 else run["style"]
-    #             )
-    #             data[index + 1]["keep"] = False
-    #             more = True
-    #         elif index > 0 and run["text"][0] in [">", "]", "}"]:
-    #             data[index - 1]["text"] = data[index - 1]["text"] + run["text"]
-    #             data[index - 1]["style"] = (
-    #                 run["style"]
-    #                 if run["style"] == "CPT_Variable"
-    #                 else data[index - 1]["style"]
-    #             )
-    #             run["keep"] = False
-    #             more = True
-    #         elif index > 0 and run["text"]:
-    #             start_char = run["text"][0]
-    #             end_char = run["text"][-1]
-    #             if (
-    #                 (end_char == ">" and start_char != "<")
-    #                 or (end_char == "]" and start_char != "[")
-    #                 or (end_char == "}" and start_char != "{")
-    #             ):
-    #                 data[index - 1]["text"] = data[index - 1]["text"] + run["text"]
-    #                 data[index - 1]["style"] = (
-    #                     run["style"]
-    #                     if run["style"] == "CPT_Variable"
-    #                     else data[index - 1]["style"]
-    #                 )
-    #                 run["keep"] = False
-    #                 more = True
-    #         index += 1
-    #     new_data = [x for x in data if x["keep"]]
-    #     if more:
-    #         new_data = self._extract_elements(new_data)
-    #     return new_data
+    def _extract_elements(self, section: RawSection, paragraph: RawParagraph) -> list[str]:
+        confirmed_elements = []
+        potential_elements = self._find_elements(paragraph.text)
+        for element in potential_elements:
+            print(f"TEXT: {[x.text for x in paragraph.runs]}")
+            print(f"COLOR: {[x.color for x in paragraph.runs]}")
+            print(f"HIGHLIGHT: {[x.highlight for x in paragraph.runs]}")
+            print(f"STYLE: {[x.style for x in paragraph.runs]}")
+            match = next((x for x in paragraph.runs if element in x.text and x.highlight == 'GRAY_25 (16)'), None)
+            if match:
+                short_name = element.replace("Enter ", "")
+                confirmed_elements.append({'long_name': element, 'short_name': short_name, 'section_number': section.number, 'section_title': section.title})
+        print(f"CONFIRMED ELEMENTS: {confirmed_elements}")  
+        return confirmed_elements
+    
+    def _find_elements(self, text: str) -> list[str]:
+        # Add regex pattern to extract text between < and >
+        pattern = r'<([^>]+)>'
+        matches = re.findall(pattern, text)
+        print(f"MATCHES: {matches}")
+        return matches
