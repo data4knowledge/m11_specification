@@ -85,10 +85,10 @@ class M11Template:
         confirmed_elements = []
         potential_elements = self._find_elements(paragraph.text)
         for element in potential_elements:
-            # print(f"TEXT: {[x.text for x in paragraph.runs]}")
-            # print(f"COLOR: {[x.color for x in paragraph.runs]}")
-            # print(f"HIGHLIGHT: {[x.highlight for x in paragraph.runs]}")
-            # print(f"STYLE: {[x.style for x in paragraph.runs]}")
+            print(f"TEXT: {[x.text for x in paragraph.runs]}")
+            print(f"COLOR: {[x.color for x in paragraph.runs]}")
+            print(f"HIGHLIGHT: {[x.highlight for x in paragraph.runs]}")
+            print(f"STYLE: {[x.style for x in paragraph.runs]}")
             match = next(
                 (
                     x
@@ -127,7 +127,11 @@ class M11Template:
         Returns:
             list[str]: The instructions
         """
-        instructions = [x.text for x in paragraph.runs if x.color == "C00000"]
+        print(f"INSTRUCTIONS TEXT: {[x.text for x in paragraph.runs]}")
+        print(f"INSTRUCTIONS COLOR: {[x.color for x in paragraph.runs]}")
+        print(f"INSTRUCTIONS HIGHLIGHT: {[x.highlight for x in paragraph.runs]}")
+        print(f"INSTRUCTIONS STYLE: {[x.style for x in paragraph.runs]}")
+        instructions = [x.text for x in paragraph.runs if x.color == "C00000" or x.style == 'Instructional TExt']
         print(f"INSTRUCTIONS: {instructions}")
         return instructions
 
