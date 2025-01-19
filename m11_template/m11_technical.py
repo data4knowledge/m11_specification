@@ -106,7 +106,7 @@ class M11Technical:
         if len(table.rows) > 3:
             row_1 = table.rows[0]
             row_3 = table.rows[2]
-            print(f"ROW 1: {self._row_cell_text(row_1, 0)} -> {self._row_cell_text(row_1, 1)}")
+            #print(f"ROW 1: {self._row_cell_text(row_1, 0)} -> {self._row_cell_text(row_1, 1)}")
             if self._row_cell_text(row_1, 0).startswith("Term (Variable)") and self._row_cell_text(row_3, 1) in ["D", "V"]:
                 return True
         return False
