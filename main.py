@@ -12,7 +12,7 @@ with open("data/output_data/template_document.json", "w") as f:
 with open("data/output_data/template_elements.json", "w") as f:
     json.dump(template.elements, f, indent=4)
 with open("data/output_data/technical_document.json", "w") as f:
-    json.dump(technical.document, f, indent=4)
+    json.dump(technical.document, f, indent=4)#
 with open("data/output_data/technical_elements.json", "w") as f:
     json.dump(technical.elements, f, indent=4)
 

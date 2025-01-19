@@ -1,4 +1,14 @@
 {
+    "Square brackets": {
+        "long_name": "Square brackets",
+        "short_name": "Square brackets",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": [
+            "Populate field from available choices, or with free text if indicated; remove brackets and restyle text to match other text in the final document"
+        ]
+    },
     "Chevrons": {
         "long_name": "Chevrons",
         "short_name": "Chevrons",
@@ -49,6 +59,14 @@
             "A unique alphanumeric identifier for the trial, designated by the Sponsor."
         ]
     },
+    "Original Protocol Indicator": {
+        "long_name": "Original Protocol Indicator",
+        "short_name": "Original Protocol Indicator",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": []
+    },
     "Version Number": {
         "long_name": "Enter Version Number",
         "short_name": "Version Number",
@@ -67,6 +85,44 @@
         "section_title": null,
         "instructions": [
             "For use by the Sponsor at their discretion."
+        ]
+    },
+    "Amendment Identifier": {
+        "long_name": "Enter Amendment Identifier",
+        "short_name": "Amendment Identifier",
+        "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
+        "instructions": []
+    },
+    "Amendment Scope": {
+        "long_name": "Amendment Scope",
+        "short_name": "Amendment Scope",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": [
+            "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
+        ]
+    },
+    "Country Identifier": {
+        "long_name": "Country Identifier",
+        "short_name": "Country Identifier",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": [
+            "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
+        ]
+    },
+    "Region Identifier": {
+        "long_name": "Region Identifier",
+        "short_name": "Region Identifier",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": [
+            "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
         ]
     },
     "Site Identifier": {
@@ -105,6 +161,16 @@
         "section_title": null,
         "instructions": [
             "Omit nonproprietary name fields if a nonproprietary name has not yet been assigned. Omit proprietary name fields if not yet established."
+        ]
+    },
+    "Trial Phase": {
+        "long_name": "Trial Phase",
+        "short_name": "Trial Phase",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": [
+            "For trials combining investigational drugs or vaccines with devices, classify according to the phase of drug development."
         ]
     },
     "Trial Short Title": {
@@ -253,16 +319,6 @@
             "Include all identifiers that are applicable for the trial and available at the time of protocol or amendment finalisation. Delete prompts for identifiers not available at the time of document finalisation. Delete unused fields. Add fields for \u201cother\u201d if more than one is needed."
         ]
     },
-    "Approval Date": {
-        "long_name": "Enter Approval Date",
-        "short_name": "Approval Date",
-        "optional": false,
-        "section_number": null,
-        "section_title": null,
-        "instructions": [
-            "All versions should be uniquely identifiable. "
-        ]
-    },
     "State location where information can be found": {
         "long_name": "State location where information can be found",
         "short_name": "State location where information can be found",
@@ -271,16 +327,6 @@
         "section_title": null,
         "instructions": [
             "All versions should be uniquely identifiable. "
-        ]
-    },
-    "sponsor signature block (name and title of sponsor signatory and signature date)": {
-        "long_name": "Enter sponsor signature block (name and title of sponsor signatory and signature date)",
-        "short_name": "sponsor signature block (name and title of sponsor signatory and signature date)",
-        "optional": false,
-        "section_number": null,
-        "section_title": null,
-        "instructions": [
-            "or"
         ]
     },
     "describe method": {
@@ -319,6 +365,22 @@
             "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
         ]
     },
+    "Primary Reason for Amendment": {
+        "long_name": "Primary Reason for Amendment",
+        "short_name": "Primary Reason for Amendment",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": []
+    },
+    "Secondary Reason for Amendment": {
+        "long_name": "Secondary Reason for Amendment",
+        "short_name": "Secondary Reason for Amendment",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": []
+    },
     "Amendment Summary": {
         "long_name": "Amendment Summary",
         "short_name": "Amendment Summary",
@@ -328,6 +390,14 @@
         "instructions": [
             "Describe key changes briefly. Changes which are included in the amendment but unrelated to the key changes do not need to be described here."
         ]
+    },
+    "Yes/No": {
+        "long_name": "Yes/No",
+        "short_name": "Yes/No",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": []
     },
     "Description of Change": {
         "long_name": "Enter Description of Change",
@@ -361,9 +431,49 @@
         "section_title": "Primary and Secondary Objectives and Estimands",
         "instructions": []
     },
+    "Population type": {
+        "long_name": "Population type",
+        "short_name": "Population type",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Intervention model": {
+        "long_name": "Intervention model",
+        "short_name": "Intervention model",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Population diagnosis or condition": {
+        "long_name": "Population diagnosis or condition",
+        "short_name": "Population diagnosis or condition",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Control type": {
+        "long_name": "Control type",
+        "short_name": "Control type",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
     "minimum age": {
         "long_name": "minimum age",
         "short_name": "minimum age",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "units of minimum age": {
+        "long_name": "units of minimum age",
+        "short_name": "units of minimum age",
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
@@ -377,9 +487,119 @@
         "section_title": "Overall Design",
         "instructions": []
     },
+    "units of maximum age": {
+        "long_name": "units of maximum age",
+        "short_name": "units of maximum age",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Nonproprietary name": {
+        "long_name": "Nonproprietary name",
+        "short_name": "Nonproprietary name",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "INN": {
+        "long_name": "INN",
+        "short_name": "INN",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
     "\u201cNot applicable\u201d": {
         "long_name": "Enter \u201cNot applicable\u201d",
         "short_name": "\u201cNot applicable\u201d",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Site distribution": {
+        "long_name": "Site distribution",
+        "short_name": "Site distribution",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Site geographic scope": {
+        "long_name": "Site geographic scope",
+        "short_name": "Site geographic scope",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Intervention assignment method": {
+        "long_name": "Intervention assignment method",
+        "short_name": "Intervention assignment method",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Master Protocol Indicator": {
+        "long_name": "Master Protocol Indicator",
+        "short_name": "Master Protocol Indicator",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Drug/Device Combination Product Indicator": {
+        "long_name": "Drug/Device Combination Product Indicator",
+        "short_name": "Drug/Device Combination Product Indicator",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Adaptive Trial Design Indicator": {
+        "long_name": "Adaptive Trial Design Indicator",
+        "short_name": "Adaptive Trial Design Indicator",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Number of Arms": {
+        "long_name": "Number of Arms",
+        "short_name": "Number of Arms",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": [
+            "Select the numeric value for the number of arms in the trial. For trials with a different number of arms in different periods, populate this field based on the total number of arms."
+        ]
+    },
+    "Trial Blind Schema": {
+        "long_name": "Trial Blind Schema",
+        "short_name": "Trial Blind Schema",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": [
+            "For designs in which these details may differ in one or more trial periods, answer according to the portion of the trial in which the highest number of blinded roles occurs. Additional details can be provided in Section 6.7.3 Blinding."
+        ]
+    },
+    "blinded roles": {
+        "long_name": "blinded roles",
+        "short_name": "blinded roles",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": [
+            "\u201cNot applicable (No blinding)\u201d indicates an open-label trial."
+        ]
+    },
+    "Target/Maximum": {
+        "long_name": "Target/Maximum",
+        "short_name": "Target/Maximum",
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
@@ -393,9 +613,27 @@
         "section_title": "Overall Design",
         "instructions": []
     },
+    "randomly assigned to trial intervention/enrolled": {
+        "long_name": "randomly assigned to trial intervention/enrolled",
+        "short_name": "randomly assigned to trial intervention/enrolled",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
     "total planned duration of trial intervention": {
         "long_name": "Enter total planned duration of trial intervention",
         "short_name": "total planned duration of trial intervention",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": [
+            "or"
+        ]
+    },
+    "total planned duration of trial intervention unit of time": {
+        "long_name": "total planned duration of trial intervention unit of time",
+        "short_name": "total planned duration of trial intervention unit of time",
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
@@ -414,6 +652,16 @@
     "total planned duration of trial participation": {
         "long_name": "Enter total planned duration of trial participation",
         "short_name": "total planned duration of trial participation",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": [
+            "or"
+        ]
+    },
+    "total planned duration of trial participation unit of time": {
+        "long_name": "total planned duration of trial participation unit of time",
+        "short_name": "total planned duration of trial participation unit of time",
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
@@ -857,9 +1105,33 @@
         "section_title": "Trial Intervention And Concomitant Therapy",
         "instructions": []
     },
+    "Select Arm Type": {
+        "long_name": "Select Arm Type",
+        "short_name": "Select Arm Type",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
     "Intervention Name": {
         "long_name": "Enter Intervention Name",
         "short_name": "Intervention Name",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Select Intervention Type": {
+        "long_name": "Select Intervention Type",
+        "short_name": "Select Intervention Type",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Select Pharmaceutical Dose Form": {
+        "long_name": "Select Pharmaceutical Dose Form",
+        "short_name": "Select Pharmaceutical Dose Form",
         "optional": true,
         "section_number": "6",
         "section_title": "Trial Intervention And Concomitant Therapy",
@@ -881,9 +1153,41 @@
         "section_title": "Trial Intervention And Concomitant Therapy",
         "instructions": []
     },
+    "Select Route of Administration": {
+        "long_name": "Select Route of Administration",
+        "short_name": "Select Route of Administration",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
     "Regimen/Treatment Period/Vaccination Regimen": {
         "long_name": "Enter Regimen/Treatment Period/Vaccination Regimen",
         "short_name": "Regimen/Treatment Period/Vaccination Regimen",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Select Use": {
+        "long_name": "Select Use",
+        "short_name": "Select Use",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Select IMP or NIMP": {
+        "long_name": "Select IMP or NIMP",
+        "short_name": "Select IMP or NIMP",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Select Sourcing": {
+        "long_name": "Select Sourcing",
+        "short_name": "Select Sourcing",
         "optional": true,
         "section_number": "6",
         "section_title": "Trial Intervention And Concomitant Therapy",
@@ -1255,6 +1559,14 @@
         "optional": false,
         "section_number": "9.1.3.1",
         "section_title": "{Definition of Medical Device Product Complaints}",
+        "instructions": []
+    },
+    "Event Type": {
+        "long_name": "Event Type",
+        "short_name": "Event Type",
+        "optional": true,
+        "section_number": "9.2",
+        "section_title": "Timing and Procedures for Collection and Reporting",
         "instructions": []
     },
     "Situational Scope": {
@@ -1745,6 +2057,14 @@
         "section_title": "Clinical Laboratory Tests",
         "instructions": []
     },
+    "Country/Region Identifier": {
+        "long_name": "Country/Region Identifier",
+        "short_name": "Country/Region Identifier",
+        "optional": true,
+        "section_number": "12.2",
+        "section_title": "Country/Region-Specific Differences",
+        "instructions": []
+    },
     "Country/Region Specific Requirements": {
         "long_name": "Enter Country/Region Specific Requirements",
         "short_name": "Country/Region Specific Requirements",
@@ -1759,14 +2079,6 @@
         "optional": true,
         "section_number": "12.2",
         "section_title": "Country/Region-Specific Differences",
-        "instructions": []
-    },
-    "Amendment Identifier": {
-        "long_name": "Enter Amendment Identifier",
-        "short_name": "Amendment Identifier",
-        "optional": false,
-        "section_number": "12.3",
-        "section_title": "Prior Protocol Amendment(s)",
         "instructions": []
     },
     "Sponsor Approval Date": {

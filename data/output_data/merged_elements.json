@@ -99,6 +99,161 @@
             "ct": []
         }
     },
+    "Amendment Identifier": {
+        "template": {
+            "long_name": "Enter Amendment Identifier",
+            "short_name": "Amendment Identifier",
+            "optional": false,
+            "section_number": "12.3",
+            "section_title": "Prior Protocol Amendment(s)",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Amendment Identifier",
+            "data_type": "Text or \u201cOriginal Protocol\u201d",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA sequence of characters used to uniquely identif a protocol amendment.",
+            "guidance": "",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "12.3",
+            "value": "Text or \u201cOriginal Protocol\u201d ",
+            "business_rules": "Value Allowed: Yes\nRelationship: Table Column Heading \u201cDocument\u201d\nConcept: CNEW",
+            "repeating": "Yes, reuse from the title page",
+            "ct": []
+        }
+    },
+    "Amendment Scope": {
+        "template": {
+            "long_name": "Amendment Scope",
+            "short_name": "Amendment Scope",
+            "optional": false,
+            "section_number": null,
+            "section_title": null,
+            "instructions": [
+                "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
+            ]
+        },
+        "technical": {
+            "name": "Amendment Scope",
+            "data_type": "Valid Value",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description as to whether the amendment scope applies globally across the trial.",
+            "guidance": "Leave blank for original protocol.\nIf this is the original instance of the protocol, delete the row or enter \"Not applicable\". If an amendment applies to all sites in the trial, enter \u201cglobal\u201d and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter \u201cglobal\u201d.",
+            "conformance": "Conditional: when there is an amendment",
+            "cardinality": "One to one, One to Amendment Identifier",
+            "relationship": "Title page",
+            "value": "Blank; Global (C68846), Not Global (CNEW)",
+            "business_rules": "Value Allowed: Yes; Blank if Original Protocol Indicator = Yes\nRelationship: Heading, Amendment Identifier\nConcept: CNEW",
+            "repeating": "No",
+            "ct": [
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Amendment Scope Response",
+                    "definition": "A terminology value set relevant to the responses for the protocol amendment scope within the ICH M11 Protocol model."
+                },
+                {
+                    "ncit_code": "C68846",
+                    "preferred_term": "Global",
+                    "definition": "Covering or affecting the whole of a system."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Not Global",
+                    "definition": "Covering or affecting a portion of the system."
+                }
+            ]
+        }
+    },
+    "Trial Phase": {
+        "template": {
+            "long_name": "Trial Phase",
+            "short_name": "Trial Phase",
+            "optional": false,
+            "section_number": null,
+            "section_title": null,
+            "instructions": [
+                "For trials combining investigational drugs or vaccines with devices, classify according to the phase of drug development."
+            ]
+        },
+        "technical": {
+            "name": "Trial Phase",
+            "data_type": "Valid Value ",
+            "definition": "C48281\nFor review purpose, see definition of the controlled terminology below\nA step in the clinical research and development of a therapy from initial clinical trials to post-approval studies.",
+            "guidance": "For trials combining investigational drugs or vaccines with devices, classify according to the phase of drug development.",
+            "conformance": "Required ",
+            "cardinality": "One to one; Protocol Identifier",
+            "relationship": "Title Page ",
+            "value": "Early Phase 1 (C54721); Phase 1(C15600); Phase 1/Phase 2 (C15693) Phase 1/Phase 2/Phase 3 (C198366); Phase 1/Phase 3(C198367); Phase 2(C15601); Phase 2/Phase 3(C15694); Phase2/Phase 3/Phase 4(CNEW); Phase 3(C15602); Phase 3/Phase 4 (CNEW); Phase 4 (C15603)))",
+            "business_rules": "Value Allowed: Yes\nRelationship: Heading; Protocol Identifier\nConcept: C48281",
+            "repeating": "No",
+            "ct": [
+                {
+                    "ncit_code": "C66737",
+                    "preferred_term": "TPHASE",
+                    "definition": "A terminology codelist relevant to the phase, or stage, of the clinical trial."
+                },
+                {
+                    "ncit_code": "C54721",
+                    "preferred_term": "Early Phase 1",
+                    "definition": "First-in-human trials, in a small number of subjects, that are conducted before Phase 1 trials and are intended to assess new candidate therapeutic and imaging agents. The study agent is administered at a low dose for a limited time, and there is no therapeutic or diagnostic intent. "
+                },
+                {
+                    "ncit_code": "C15600",
+                    "preferred_term": "Phase 1",
+                    "definition": "The initial introduction of an investigational new drug into humans. Phase 1 studies are typically closely monitored and may be conducted in patients or normal volunteer subjects. "
+                },
+                {
+                    "ncit_code": "C15693",
+                    "preferred_term": "Phase 1/Phase 2",
+                    "definition": "A class of clinical study that combines elements characteristic of traditional Phase 1 and Phase 2 trials. See also Phase I, Phase II."
+                },
+                {
+                    "ncit_code": "C198366",
+                    "preferred_term": "Phase 1/Phase 2/Phase 3",
+                    "definition": "A study that begins as a Phase 1 study and transitions into Phases 2 and 3 based upon successful completion of each previous portion."
+                },
+                {
+                    "ncit_code": "C198367",
+                    "preferred_term": "Phase 1/Phase 3",
+                    "definition": "A study that begins as a Phase 1 study and transitions into a Phase 3 study upon successful completion of the Phase I portion."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Phase 2/Phase 3/Phase 4",
+                    "definition": "A study that begins as a Phase 2 study and transitions into Phases 3 and 4 based upon successful completion of each previous portion."
+                },
+                {
+                    "ncit_code": "C15601",
+                    "preferred_term": "Phase 2",
+                    "definition": "Phase that includes the controlled clinical trials conducted to evaluate the safety and efficacy of the drug in a limited number of patients with the disease or condition under study. Objectives can be dose-ranging (dose-response, frequency of dosing), type of patients, or numerous other characteristics of safety and efficacy. "
+                },
+                {
+                    "ncit_code": "C15694",
+                    "preferred_term": "Phase 2/Phase 3",
+                    "definition": "A class of clinical study that combines elements characteristic of traditional Phase 2 and Phase 3 trials."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Phase 3/Phase 4",
+                    "definition": "A class of clinical study that combines elements characteristic of traditional Phase 3 and Phase 4 trials."
+                },
+                {
+                    "ncit_code": "C15602",
+                    "preferred_term": "Phase 3",
+                    "definition": "Phase that includes the controlled clinical trials intended to confirm safety and effectiveness, evaluate the overall benefit-risk relationship, and to provide substantial evidence for regulatory approval and labeling.  "
+                },
+                {
+                    "ncit_code": "C15603",
+                    "preferred_term": "Phase 4",
+                    "definition": "Post-approval studies to delineate additional information about the drug's risks, benefits, and optimal use that may be requested by regulatory authorities in conjunction with marketing approval. "
+                },
+                {
+                    "ncit_code": "",
+                    "preferred_term": "",
+                    "definition": ""
+                }
+            ]
+        }
+    },
     "Trial Short Title": {
         "template": {
             "long_name": "Enter Trial Short Title",
@@ -473,6 +628,121 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 1.1.1 Primary and Secondary Objectives and Estimands\nConcept: CNEW",
             "repeating": "Yes, Reuse <Primary Objective> and <Endpoint> for each Primary Objective from section 3.1, reuse <Secondary Objective and <ndpoint> for each Secondary Objective from section 3.2.",
             "ct": []
+        }
+    },
+    "Site geographic scope": {
+        "template": {
+            "long_name": "Site geographic scope",
+            "short_name": "Site geographic scope",
+            "optional": false,
+            "section_number": "1.1.2",
+            "section_title": "Overall Design",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Site geographic scope",
+            "data_type": "Valid Value",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the trial is taking place in one or more countries.",
+            "guidance": "N/A",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "1.1.2",
+            "value": "Single Country (CNEW), Multiple Countries (CNEW)",
+            "business_rules": "Value Allowed: Yes\nRelationship: Row Title Heading, Protocol Identifier\nConcept: CNEW",
+            "repeating": "No",
+            "ct": [
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Trial Site Geographic Scope Response",
+                    "definition": "A terminology value set relevant to the trial site geographic scope responses within the ICH M11 Protocol model."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Single Country",
+                    "definition": "Of, or pertaining to, an occurrence in one country."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Multiple Countries",
+                    "definition": "Of, or pertaining to, an occurrence in more than one country."
+                }
+            ]
+        }
+    },
+    "Number of Arms": {
+        "template": {
+            "long_name": "Number of Arms",
+            "short_name": "Number of Arms",
+            "optional": false,
+            "section_number": "1.1.2",
+            "section_title": "Overall Design",
+            "instructions": [
+                "Select the numeric value for the number of arms in the trial. For trials with a different number of arms in different periods, populate this field based on the total number of arms."
+            ]
+        },
+        "technical": {
+            "name": "Number of Arms",
+            "data_type": "Number",
+            "definition": "C98771\nFor review purpose, see definition of the controlled terminology below\nThe planned number of intervention groups.",
+            "guidance": "Enter the numeric value for the number of arms in the trial. For trials with a different number of arms in different periods, populate this field based on the period with the greatest number of arms.",
+            "conformance": "Required ",
+            "cardinality": "One to one",
+            "relationship": "1.1.2",
+            "value": "Integer",
+            "business_rules": "Value Allowed: Yes\nRelationship: Number of Arms, Heading; Protocol Identifier\nConcept: C98771",
+            "repeating": "No",
+            "ct": []
+        }
+    },
+    "Trial Blind Schema": {
+        "template": {
+            "long_name": "Trial Blind Schema",
+            "short_name": "Trial Blind Schema",
+            "optional": false,
+            "section_number": "1.1.2",
+            "section_title": "Overall Design",
+            "instructions": [
+                "For designs in which these details may differ in one or more trial periods, answer according to the portion of the trial in which the highest number of blinded roles occurs. Additional details can be provided in Section 6.7.3 Blinding."
+            ]
+        },
+        "technical": {
+            "name": "Trial Blind Schema",
+            "data_type": "Valid Value",
+            "definition": "C49658\nFor review purpose, see definition of the controlled terminology below\nThe type of experimental design used to describe the level of awareness of the study subjects and/ or study personnel as it relates to the respective intervention(s) or assessments being observed, received or administered.",
+            "guidance": "For designs in which these details may differ in one or more trial periods, answer according to the portion of the trial in which the highest number of blinded roles occurs. Additional details can be provided in Section 6.8.3 of the protocol.",
+            "conformance": "Required ",
+            "cardinality": "One to one",
+            "relationship": "1.1.2",
+            "value": "Double Blind (C15228), Observer Blind (C187674), Open Label (C49659), Single Blind (C28233)",
+            "business_rules": "Value Allowed: Yes\nRelationship: Trial Blind Schema, Heading\nConcept: C49658",
+            "repeating": "No",
+            "ct": [
+                {
+                    "ncit_code": "C66735",
+                    "preferred_term": "TBLIND",
+                    "definition": "A terminology codelist relevant to the type of blinding for the trial."
+                },
+                {
+                    "ncit_code": "C15228",
+                    "preferred_term": "Double Blind",
+                    "definition": "A study in which neither the subject nor the study personnel interacting with the subject or data during the study knows what intervention a subject is receiving."
+                },
+                {
+                    "ncit_code": "C187674",
+                    "preferred_term": "Observer Blind",
+                    "definition": "A study in which the study personnel who measure, record, or assess the subject do not know which intervention the subject is receiving or, in the context of observational studies, do not know the external factors to which a subject has been exposed."
+                },
+                {
+                    "ncit_code": "C49659",
+                    "preferred_term": "Open Label",
+                    "definition": "A study in which subjects and study personnel know which intervention each subject is receiving."
+                },
+                {
+                    "ncit_code": "C28233",
+                    "preferred_term": "Single Blind",
+                    "definition": "A study in which one party, either the subject or study personnel, does not know which intervention is administered to the subject."
+                }
+            ]
         }
     },
     "Number of Participants": {
@@ -2195,6 +2465,80 @@
             "ct": []
         }
     },
+    "Event Type": {
+        "template": {
+            "long_name": "Event Type",
+            "short_name": "Event Type",
+            "optional": true,
+            "section_number": "9.2",
+            "section_title": "Timing and Procedures for Collection and Reporting",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Event Type",
+            "data_type": "Valid Value",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA categorization or classification of trial-related safety events, such as adverse events, serious adverse events, product complaints, medical device product complaints, and pregnancy and postpartum events.",
+            "guidance": "N/A",
+            "conformance": "Optional",
+            "cardinality": "One to many",
+            "relationship": "9.2",
+            "value": "Adverse Event (C41331), Serious Adverse Event(C41335), Trial Intervention Complaint (CNEW), Medical Device Product Complaint (C54026), Pregnancy Event (C25742), Lactation Event (CNEW), Post-Partum Event (CNEW), Reportable Adverse Event of Special Interest (CNEW), Not Reportable Adverse Event of Special Interest (CNEW)",
+            "business_rules": "Value Allowed: Yes\nRelationship: Event Type \nConcept: CNEW",
+            "repeating": "Yes, repeatable for each event type ",
+            "ct": [
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "ICH M11 Event Type Response",
+                    "definition": "A terminology value set relevant to the safety event type responses within the ICH M11 Protocol model."
+                },
+                {
+                    "ncit_code": "C41331",
+                    "preferred_term": "Adverse Event",
+                    "definition": "Any untoward medical occurrence in a patient or clinical investigation subject administered a pharmaceutical product and which does not necessarily have to have a causal relationship with this treatment."
+                },
+                {
+                    "ncit_code": "C41335",
+                    "preferred_term": "Serious Adverse Event",
+                    "definition": "Any untoward medical occurrence that at any dose: results in death, is life-threatening, requires inpatient hospitalization or prolongation of existing hospitalization, results in persistent or significant disability/ incapacity, or is a congenital anomaly/ birth defect. "
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Trial Intervention Complaint",
+                    "definition": "Any concern about the safety and/or quality of any trial-related interventions."
+                },
+                {
+                    "ncit_code": "C54026",
+                    "preferred_term": "Medical Device Product Complaint",
+                    "definition": "Any concern about the safety, quality, and/or performance of a trial-related drug-device combination."
+                },
+                {
+                    "ncit_code": "C25742",
+                    "preferred_term": "Pregnancy Event",
+                    "definition": "Any event that occurs when the participant is pregnant."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Lactation Event",
+                    "definition": "Any event that occurs when the participant is lactating."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Post-Partum Event",
+                    "definition": "Any event that occurs when the participant is in the stages of recovery post pregnancy and birth event."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Reportable Adverse Event of Special Interest",
+                    "definition": "An adverse event of special interest (serious or non-serious) is one of scientific and medical concern specific to the sponsor\u2019s product or programme, for which ongoing monitoring and rapid communication by the investigator to the sponsor could be appropriate, and which is deemed to be reportable to the appropriate regulatory authority."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Not Reportable Adverse Event of Special Interest",
+                    "definition": "An adverse event of special interest (serious or non-serious) is one of scientific and medical concern specific to the sponsor\u2019s product or programme, for which ongoing monitoring and rapid communication by the investigator to the sponsor could be appropriate, and which is deemed to be not reportable to the appropriate regulatory authority."
+                }
+            ]
+        }
+    },
     "Situational Scope": {
         "template": {
             "long_name": "Situational Scope",
@@ -3143,29 +3487,6 @@
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 12.1 Clinical Laboratory Tests\nConcept: C25294",
             "repeating": "No",
-            "ct": []
-        }
-    },
-    "Amendment Identifier": {
-        "template": {
-            "long_name": "Enter Amendment Identifier",
-            "short_name": "Amendment Identifier",
-            "optional": false,
-            "section_number": "12.3",
-            "section_title": "Prior Protocol Amendment(s)",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Amendment Identifier",
-            "data_type": "Text or \u201cOriginal Protocol\u201d",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA sequence of characters used to uniquely identif a protocol amendment.",
-            "guidance": "",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "12.3",
-            "value": "Text or \u201cOriginal Protocol\u201d ",
-            "business_rules": "Value Allowed: Yes\nRelationship: Table Column Heading \u201cDocument\u201d\nConcept: CNEW",
-            "repeating": "Yes, reuse from the title page",
             "ct": []
         }
     },

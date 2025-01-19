@@ -131,16 +131,11 @@ class M11Template:
         Returns:
             list[str]: The instructions
         """
-        # print(f"INSTRUCTIONS TEXT: {[x.text for x in paragraph.runs]}")
-        # print(f"INSTRUCTIONS COLOR: {[x.color for x in paragraph.runs]}")
-        # print(f"INSTRUCTIONS HIGHLIGHT: {[x.highlight for x in paragraph.runs]}")
-        # print(f"INSTRUCTIONS STYLE: {[x.style for x in paragraph.runs]}")
         instructions = [
             x.text
             for x in paragraph.runs
             if x.color == "C00000" or x.style == "Instructional TExt"
         ]
-        print(f"INSTRUCTIONS: {instructions}")
         return instructions
 
     def _find_elements(self, text: str) -> list[str]:
@@ -153,7 +148,8 @@ class M11Template:
         Returns:
             list[str]: A list of elements
         """
-        pattern = r"<([^>]+)>"
+        #print(f"ELEMENT TEXT: {text}")
+        pattern = r'[<\[]([^\]>]+)[\]>]'
         matches = re.findall(pattern, text)
-        # print(f"MATCHES: {matches}")
+        #print(f"MATCHES: {matches}")
         return matches
