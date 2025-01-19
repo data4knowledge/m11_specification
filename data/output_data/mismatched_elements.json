@@ -22,28 +22,6 @@
                 "When complete, remove chevrons and restyle text to match other text in the final document"
             ]
         },
-        "Sponsor Confidentiality Statement": {
-            "long_name": "Enter Sponsor Confidentiality Statement",
-            "short_name": "Sponsor Confidentiality Statement",
-            "original_name": "Sponsor Confidentiality Statement",
-            "optional": true,
-            "section_number": null,
-            "section_title": null,
-            "instructions": [
-                "Insert the Sponsor\u2019s confidentiality statement, if applicable, otherwise delete."
-            ]
-        },
-        "Full Title": {
-            "long_name": "Enter Full Title",
-            "short_name": "Full Title",
-            "original_name": "Full Title",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": [
-                "The protocol should have a descriptive title that identifies the scientific aspects of the trial sufficiently to ensure it is immediately evident what the trial is investigating and on whom, and to allow retrieval from literature or internet searches."
-            ]
-        },
         "Original Protocol Indicator": {
             "long_name": "Original Protocol Indicator",
             "short_name": "Original Protocol Indicator",
@@ -264,24 +242,6 @@
             "long_name": "minimum age",
             "short_name": "minimum age",
             "original_name": "minimum age",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        },
-        "maximum age": {
-            "long_name": "maximum age",
-            "short_name": "maximum age",
-            "original_name": "maximum age",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        },
-        "Nonproprietary name": {
-            "long_name": "Nonproprietary name",
-            "short_name": "Nonproprietary name",
-            "original_name": "Nonproprietary name",
             "optional": false,
             "section_number": "1.1.2",
             "section_title": "Overall Design",
@@ -627,15 +587,6 @@
             "section_title": "{Preparation of Investigational Trial Intervention}",
             "instructions": []
         },
-        "Investigational Trial Intervention Adherence": {
-            "long_name": "Enter Investigational Trial Intervention Adherence",
-            "short_name": "Investigational Trial Intervention Adherence",
-            "original_name": "Investigational Trial Intervention Adherence",
-            "optional": false,
-            "section_number": "6.8",
-            "section_title": "Investigational Trial Intervention Adherence",
-            "instructions": []
-        },
         "Background Trial Interventions": {
             "long_name": "Enter Background Trial Interventions",
             "short_name": "Background Trial Interventions",
@@ -652,15 +603,6 @@
             "optional": false,
             "section_number": "6.9.3",
             "section_title": "{Other Noninvestigational Trial Intervention}",
-            "instructions": []
-        },
-        "Permitted Concomitant Therapy": {
-            "long_name": "Enter Permitted Concomitant Therapy",
-            "short_name": "Permitted Concomitant Therapy",
-            "original_name": "Permitted Concomitant Therapy",
-            "optional": false,
-            "section_number": "6.10.2",
-            "section_title": "{Permitted Concomitant Therapy}",
             "instructions": []
         },
         "Management of Loss to Follow-Up": {
@@ -771,6 +713,17 @@
             "section_title": "Analyses Associated with the Exploratory Objective(s)",
             "instructions": []
         },
+        "Trial Oversight ": {
+            "long_name": "Enter Trial Oversight ",
+            "short_name": "Trial Oversight ",
+            "original_name": "Trial Oversight ",
+            "optional": false,
+            "section_number": "11.2",
+            "section_title": "Trial Oversight",
+            "instructions": [
+                "OR"
+            ]
+        },
         "Risk-Based Quality Management": {
             "long_name": "Enter Risk-Based Quality Management",
             "short_name": "Risk-Based Quality Management",
@@ -807,15 +760,6 @@
             "section_title": "Country/Region-Specific Differences",
             "instructions": []
         },
-        "Sponsor Approval Date": {
-            "long_name": "Enter Sponsor Approval Date",
-            "short_name": "Sponsor Approval Date",
-            "original_name": "Sponsor Approval Date",
-            "optional": false,
-            "section_number": "12.3",
-            "section_title": "Prior Protocol Amendment(s)",
-            "instructions": []
-        },
         "# or % enrolled globally/locally/per cohort": {
             "long_name": "Enter # or % enrolled globally/locally/per cohort",
             "short_name": "# or % enrolled globally/locally/per cohort",
@@ -824,17 +768,6 @@
             "section_number": "12.3",
             "section_title": "Prior Protocol Amendment(s)",
             "instructions": []
-        },
-        "specify alternative location": {
-            "long_name": "specify alternative location",
-            "short_name": "specify alternative location",
-            "original_name": "specify alternative location",
-            "optional": false,
-            "section_number": "12.3",
-            "section_title": "Prior Protocol Amendment(s)",
-            "instructions": [
-                "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first)."
-            ]
         },
         "enter amendment number": {
             "long_name": "enter amendment number",
@@ -860,69 +793,43 @@
         }
     },
     "technical": {
-        "Sponsor Confidentiality Statement ": {
-            "name": "Sponsor Confidentiality Statement ",
-            "data_type": "Text",
-            "definition": "C181236\nFor review purpose, see definition of the controlled terminology below:\nA written message within the study protocol that asserts a statement of non-disclosure, such that information contained within the protocol document may only be shared with authorized parties.",
-            "guidance": "Insert the Sponsor\u2019s confidentiality statement, if applicable, otherwise delete.",
-            "conformance": "Optional",
-            "cardinality": "One to one",
-            "relationship": "Title Page",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: Heading\nConcept: C181236",
-            "repeating": "No",
-            "ct": []
-        },
-        "Full Title ": {
-            "name": "Full Title ",
-            "data_type": "Text",
-            "definition": "C132346\nFor review purpose, see definition of the controlled terminology below:\nThe formal descriptive name for the protocol sufficient to describe key elements of the study, aimed at a scientific audience.",
-            "guidance": "The protocol should have a descriptive title that identifies the scientific aspects of the trial sufficiently to ensure it is immediately evident what the trial is investigating and on whom, and to allow retrieval from literature or internet searches.",
-            "conformance": "Required ",
-            "cardinality": "One to one",
-            "relationship": "Title page",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: Heading; Sponsor Protocol Identifier\nConcept: C132346",
-            "repeating": "No",
-            "ct": []
-        },
         "Country Identifier or Region Identifier or Site Identifier": {
             "name": "Country Identifier or Region Identifier or Site Identifier",
             "data_type": "Valid Value",
             "definition": "C20108\nCNEW\nCNEW\n\nFor review purpose, see definition of the controlled terminology below\nC20108\nA sequence of characters used to identify and/or name the country.\nCNEW\nA sequence of characters used to identify and/or name the region\nCNEW\nA sequence of characters used to identify and/or name the study site.",
             "guidance": "Leave blank for original protocol.\nIf the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope.",
             "conformance": "Conditional: when not global",
-            "cardinality": "One to one; Many to Amendment Scope; One to Amendment Identifier; One to Sponsor Protocol Identifier ",
+            "cardinality": "One to one; Many to Amendment Scope; One to Amendment Identifier; One to Sponsor Protocol Identifier",
             "relationship": "Title Page",
             "value": "Country specific: [Country Identifier] (ISO 3166 Country Codes, Alpha 3; ISO 3166 \nCountry Codes, Alpha 2)\nor\nRegion Specific: [Region Identifier]\nor\nSite specific: [Site Identifier] (Text)\nSite Identifier Text\nCondition Blank for Original Protocol Indicator = yes",
             "business_rules": "Value Allowed: Yes\nRelationship: Heading, Amendment Scope, Amendment Identifier, Sponsor Protocol Identifier\nConcept: C20108, CNEW, CNEW",
             "repeating": "Yes, repeatable in 12.2 country/region-specific differences",
             "ct": []
         },
-        " Sponsors Investigational Product Codes": {
-            "name": " Sponsors Investigational Product Codes",
+        "Sponsors Investigational Product Codes": {
+            "name": "Sponsors Investigational Product Codes",
             "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below:\nA symbol or combination of symbols that are assigned by the Sponsor to uniquely identify an experimental intervention.",
-            "guidance": "Enter the Sponsor\u2019s unique identifier for investigational compound(s) in the trial. Add fields as needed.",
-            "conformance": "Optional: if there is Sponsor Investigational Product Code",
-            "cardinality": "One to one, Many to Sponsor Protocol Identifier",
-            "relationship": "Title Page ",
+            "definition": "CNEW",
+            "guidance": "N/A",
+            "conformance": "Optional Required Either Sponsor Investigational Product Code or Nonproprietary Name",
+            "cardinality": "One to one; One to Heading One to Protocol Identifier",
+            "relationship": "1.1.2",
             "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: Heading, Sponsor Protocol Identifier\nConcept: CNEW",
-            "repeating": "Yes, repeatable for each Investigational compound\nYes, repeatable in 1.1.2 under Intervention",
+            "business_rules": "Value Allowed: Yes\nRelationship: Row title; Sponsor Protocol Identifier\nConcept:",
+            "repeating": "Yes, repeatable from Title Page Sponsor Investigational Product Code(s)\nyes, reuse for each Investigational Product",
             "ct": []
         },
         "Nonproprietary Names": {
             "name": "Nonproprietary Names",
             "data_type": "Text",
-            "definition": "C97054\nFor review purpose, see definition of the controlled terminology below\nDrug name that is not protected by a trademark, usually descriptive of its chemical structure. ",
+            "definition": "C97054\nFor review purpose, see definition of the controlled terminology below\nDrug name that is not protected by a trademark, usually descriptive of its chemical structure.",
             "guidance": "Omit nonproprietary name fields if a nonproprietary name has not yet been assigned.",
-            "conformance": "Optional; Blank ",
+            "conformance": "Optional; Blank",
             "cardinality": "One to many; Many to Sponsor Investigational Product Code(s); Many to Sponsor Protocol Identifier",
             "relationship": "Title Page",
             "value": "Text for example WHO INN, USAN, JAN, XEVMPD",
             "business_rules": "Value Allowed: Yes\nRelationship: Heading, Sponsor Protocol Identifier\nConcept: C97054",
-            "repeating": "Yes, repeatable for each nonproprietary name \nYes, repeatable in 1.1,2 under intervention ",
+            "repeating": "Yes, repeatable for each nonproprietary name \nYes, repeatable in 1.1,2 under intervention",
             "ct": []
         },
         "Proprietary Names": {
@@ -943,7 +850,7 @@
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe literal identifier (i.e. distinctive designation) of the trial co-Sponsor.",
             "guidance": "Provide the legal name of the individual or pharmaceutical or medical device company, governmental agency, academic institution, private organisation, or other organisation who takes primary responsibility for and initiates a clinical investigation. If more than one Sponsor, list the Primary Sponsor in this field.",
-            "conformance": "Optional ",
+            "conformance": "Optional",
             "cardinality": "One to one, One to Co-Sponsor Name, One to Sponsor Name; One to Sponsor Protocol Identifier",
             "relationship": "Title Page",
             "value": "Text",
@@ -956,19 +863,19 @@
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe legally registered address of the trial co-sponsor.",
             "guidance": "Provide the legal name of the individual or pharmaceutical or medical device company, governmental agency, academic institution, private organisation, or other organisation who takes primary responsibility for and initiates a clinical investigation. If more than one Sponsor, list the Primary Sponsor in this field.",
-            "conformance": "Optional ",
+            "conformance": "Optional",
             "cardinality": "One to one; One to Heading; One to Co-Sponsor Name",
-            "relationship": "Title Page ",
+            "relationship": "Title Page",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: Heading, Co- Sponsor Name\nConcept: CNEW",
             "repeating": "No",
             "ct": []
         },
-        "Approval Date or State location where Information can be found ": {
-            "name": "Approval Date or State location where Information can be found ",
+        "Approval Date or State location where Information can be found": {
+            "name": "Approval Date or State location where Information can be found",
             "data_type": "Valid Value",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below \nThe date that the sponsor approved the current version of the protocol, or the physical or virtual location of the date on which the sponsor approved the current version of the protocol.",
-            "guidance": "All versions should be uniquely identifiable. ",
+            "guidance": "All versions should be uniquely identifiable.",
             "conformance": "Required",
             "cardinality": "One to one; One to Sponsor Protocol Identifier; One to Original Protocol One to Amendment Identifier",
             "relationship": "Title Page",
@@ -989,13 +896,13 @@
                 {
                     "ncit_code": "CNEW",
                     "preferred_term": "Location of Sponsor Approval Date",
-                    "definition": "The physical or virtual location of the date on which the sponsor approved the current version of the protocol. "
+                    "definition": "The physical or virtual location of the date on which the sponsor approved the current version of the protocol."
                 }
             ]
         },
         "sponsor signature block name and title of sponsor signatory and signature date or This protocol was approved via describe method": {
             "name": "sponsor signature block name and title of sponsor signatory and signature date or This protocol was approved via describe method",
-            "data_type": "Valid Value ",
+            "data_type": "Valid Value",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA block of text containing the name and signature of the sponsor's signatory, along with a signature date, or a statement on behalf of the sponsor that describes the method of protocol approval.",
             "guidance": "Include either the Sponsor signature or the statement below.",
             "conformance": "Optional",
@@ -1040,7 +947,7 @@
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe contact information for the sponsor's representative who can advise on specific trial-related medical questions or problems.",
             "guidance": "N/A",
-            "conformance": "Optional ",
+            "conformance": "Optional",
             "cardinality": "One to one; One to Sponsor Protocol Identifier",
             "relationship": "Title Page",
             "value": "Text",
@@ -1050,7 +957,7 @@
         },
         "Amendment Details": {
             "name": "Amendment Details",
-            "data_type": "Valid Value ",
+            "data_type": "Valid Value",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA written message within the study protocol that describes the amendment details, especially as to whether the protocol has been amended previously.",
             "guidance": "Choose the applicable statement below. For an original protocol that has not been amended, retain the first sentence below and delete the remainder of this entire section.\n{Not applicable. This protocol has not been amended.}\nOr include the below as applicable.\n{This protocol has been amended previously. Details of prior amendments are presented in Section 12.3 Prior Protocol Amendment(s).}",
             "conformance": "Required",
@@ -1100,11 +1007,11 @@
             "relationship": "Amendment Details",
             "value": "Approximate <#/%> enrolled <Globally/Locally/by Cohort>",
             "business_rules": "Value Allowed: Yes\nRelationship: Statement\nConcept: C68846, CNEW",
-            "repeating": "Yes, reuse to Section 12.3 ",
+            "repeating": "Yes, reuse to Section 12.3",
             "ct": []
         },
-        "Number or ": {
-            "name": "Number or ",
+        "Number or": {
+            "name": "Number or",
             "data_type": "Number",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value (expressed as an absolute value or percentage) for the estimated number of participants enrolled at the time of the protocol amendment.",
             "guidance": "",
@@ -1119,7 +1026,7 @@
         "Other description": {
             "name": "Other description",
             "data_type": "Text",
-            "definition": "C17649\nFor review purpose, see definition of the controlled terminology below\nDifferent than the one(s) previously specified or mentioned. ",
+            "definition": "C17649\nFor review purpose, see definition of the controlled terminology below\nDifferent than the one(s) previously specified or mentioned.",
             "guidance": "Choose from the available categories as the primary reason and secondary reason(s) for the amendment. Select the closest match among the choices. Changes to primary estimand, endpoints, or related measures should be listed as a change of strategy. If none of the choices apply, choose \u201cother\u201d and provide a description. If no secondary reason, indicate \u201cnot applicable\u201d for the secondary reason.",
             "conformance": "Conditional if Other is selected as a Valid Value",
             "cardinality": "One to one",
@@ -1133,7 +1040,7 @@
             "name": "YesNo",
             "data_type": "Valid Value",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the amendment likely to have a substantial impact on the reliability and robustness of the data generated in the clinical trial.",
-            "guidance": "N/A\n",
+            "guidance": "N/A",
             "conformance": "Conditional : if there is an amendment",
             "cardinality": "One to one; One to Amendment Identifier; One to Sponsor Protocol Identifier",
             "relationship": "Amendment Details",
@@ -1171,8 +1078,8 @@
             "repeating": "No",
             "ct": []
         },
-        "Section  and Name of Change ": {
-            "name": "Section  and Name of Change ",
+        "Section  and Name of Change": {
+            "name": "Section  and Name of Change",
             "data_type": "Valid Value",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe protocol section number and name containing the change introduced in the current version of the protocol.",
             "guidance": "N/A",
@@ -1978,19 +1885,6 @@
             "repeating": "No",
             "ct": []
         },
-        "Sponsors Investigational Product Codes": {
-            "name": "Sponsors Investigational Product Codes",
-            "data_type": "Text",
-            "definition": "CNEW",
-            "guidance": "N/A",
-            "conformance": "Optional Required Either Sponsor Investigational Product Code or Nonproprietary Name",
-            "cardinality": "One to one; One to Heading One to Protocol Identifier",
-            "relationship": "1.1.2",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: Row title; Sponsor Protocol Identifier\nConcept: ",
-            "repeating": "Yes, repeatable from Title Page Sponsor Investigational Product Code(s)\nyes, reuse for each Investigational Product",
-            "ct": []
-        },
         "NonProprietary Names": {
             "name": "NonProprietary Names",
             "data_type": "Text",
@@ -2000,7 +1894,7 @@
             "cardinality": "One to one; One to Heading One to Protocol Identifier",
             "relationship": "1.1.2",
             "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: Row title; Sponsor Protocol Identifier\nConcept: ",
+            "business_rules": "Value Allowed: Yes\nRelationship: Row title; Sponsor Protocol Identifier\nConcept:",
             "repeating": "Yes, repeatable from Title Page Nonproprietary Name(s)\nYes, reuse for each Investigational Product",
             "ct": []
         },
@@ -2082,8 +1976,8 @@
                 }
             ]
         },
-        "Control Type ": {
-            "name": "Control Type ",
+        "Control Type": {
+            "name": "Control Type",
             "data_type": "Valid Value",
             "definition": "C49647\nFor review purpose, see definition of the controlled terminology below\nA characterisation or classification of the comparator against which the study intervention is evaluated.",
             "guidance": "Control method (for example, placebo, active comparator, low dose, historical, standard of care, sham procedure, or none [uncontrolled])",
@@ -2122,7 +2016,7 @@
                 {
                     "ncit_code": "CNEW",
                     "preferred_term": "Different Dose or Regimen",
-                    "definition": "A type of control that comprises a different dose or dosage regimen in comparison to the investigational intervention dose or dosage regimen. "
+                    "definition": "A type of control that comprises a different dose or dosage regimen in comparison to the investigational intervention dose or dosage regimen."
                 },
                 {
                     "ncit_code": "CNEW",
@@ -2149,21 +2043,8 @@
             "repeating": "No",
             "ct": []
         },
-        "Nonproprietary name ": {
-            "name": "Nonproprietary name ",
-            "data_type": "Valid Value ",
-            "definition": "C97054\nFor review purpose, see definition of the controlled terminology below\nDrug name that is not protected by a trademark, usually descriptive of its chemical structure. (ICH E2B)",
-            "guidance": "",
-            "conformance": "Conditional: if there is a Nonproprietary name",
-            "cardinality": "One to many",
-            "relationship": "1.1.2",
-            "value": "Use for example WHO INN, USAN, JAN, XEVMPD",
-            "business_rules": "Value Allowed: Yes\nRelationship: Row title; Control Description; Sponsor Protocol Identifier\nConcept: C97054",
-            "repeating": "Yes, repeatable for each nonproprietary name used as control",
-            "ct": []
-        },
-        "or INN or ": {
-            "name": "or INN or ",
+        "or INN or": {
+            "name": "or INN or",
             "data_type": "Valid Value",
             "definition": "C142585\nFor review purpose, see definition of the controlled terminology below\nA unique name that is globally recognised and public property, which identifies pharmaceutical substances or active pharmaceutical ingredients. (After WHO)",
             "guidance": "",
@@ -2193,24 +2074,11 @@
             "data_type": "Number",
             "definition": "C49693\nFor review purpose, see definition of the controlled terminology below\nThe anticipated minimum age of the participants to be entered in a clinical trial.",
             "guidance": "Population age range - For trials in which multiple age ranges may be eligible (for example, a younger cohort and an older cohort), indicate the minimum and maximum ages for the trial overall, with an additional comment for any excluded age ranges.",
-            "conformance": "Required ",
+            "conformance": "Required",
             "cardinality": "One to one",
             "relationship": "1.1.2",
             "value": "Integer",
             "business_rules": "Value Allowed: Yes\nRelationship: population age, Minimum; minimum unit of age\nConcept:C49693",
-            "repeating": "No",
-            "ct": []
-        },
-        "maximum age ": {
-            "name": "maximum age ",
-            "data_type": "Number",
-            "definition": "C49694\nFor review purpose, see definition of the controlled terminology below\nThe anticipated maximum age of the participants to be entered in a clinical trial",
-            "guidance": "Population age range - For trials in which multiple age ranges may be eligible (for example, a younger cohort and an older cohort), indicate the minimum and maximum ages for the trial overall, with an additional comment for any excluded age ranges.",
-            "conformance": "Required ",
-            "cardinality": "One to one",
-            "relationship": "1.1.2",
-            "value": "Integer",
-            "business_rules": "Value Allowed: Yes\nRelationship: population age, Maximum Age; Maximum unit of age\nConcept:C49694",
             "repeating": "No",
             "ct": []
         },
@@ -2297,7 +2165,7 @@
                 {
                     "ncit_code": "C142710",
                     "preferred_term": "Participant",
-                    "definition": " A member of the clinical study population from whom data are being collected."
+                    "definition": "A member of the clinical study population from whom data are being collected."
                 },
                 {
                     "ncit_code": "C17445",
@@ -2331,12 +2199,12 @@
             "data_type": "Valid Value",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA characterisation or classification of the trial participant numbers as to whether the numbers reflect a target or maximum.",
             "guidance": "State the expected number of participants to be assigned to trial intervention/enrolled. Indicate whether the number provided is the target or maximum number of individuals to be randomly assigned to trial intervention/enrolled.",
-            "conformance": "Required ",
+            "conformance": "Required",
             "cardinality": "One to one",
             "relationship": "1.1.2",
             "value": "A (choose Target/Maximum) of",
             "business_rules": "Value Allowed: Universal Text and Yes\nRelationship: Heading; Sponsor Protocol Identifier  \nConcept: CNEW",
-            "repeating": "No ",
+            "repeating": "No",
             "ct": []
         },
         "randomly assigned to trial intervention enrolled": {
@@ -2344,7 +2212,7 @@
             "data_type": "Valid Value",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe target or maximum number of participants who have been randomly assigned to the trial intervention or enrolled in the trial.",
             "guidance": "State the expected number of participants to be assigned to trial intervention/enrolled. Indicate whether the number provided is the target or maximum number of individuals to be randomly assigned to trial intervention/enrolled",
-            "conformance": "Required ",
+            "conformance": "Required",
             "cardinality": "One to one",
             "relationship": "1.1.2",
             "value": "randomly assigned to trial intervention/enrolled",
@@ -2372,7 +2240,7 @@
             "guidance": "Trial Procedures \u2013 Describe risks associated with the design (e.g., placebo arm) and procedures specific to this trial (e.g., biopsies), and any measures to control or mitigate the risks. Provide a brief description of strategies to mitigate identified risks or provide a cross-reference to the relevant protocol section. This is not intended to be an exhaustive list of all possible risks associated with trial procedures but should focus on the unique risks inherent in the design or less common or high-risk procedures. As above, provide a brief description of strategies to mitigate identified risks or provide a cross-reference to the relevant protocol section.",
             "conformance": "Optional",
             "cardinality": "One to one",
-            "relationship": "2.2.1 ",
+            "relationship": "2.2.1",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 2.2.1 Risk Summary and Mitigation Strategy\nConcept: CNEW",
             "repeating": "No",
@@ -2395,39 +2263,26 @@
             "name": "Overall RiskBenefit Assessment",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA short textual description containing the risks and benefits associated with participation in the trial.",
-            "guidance": "Provide a succinct, concluding statement on the perceived balance between risks that have been identified from cumulative safety data, protocol procedures, and anticipated efficacy/benefits within the context of the proposed trial. ",
+            "guidance": "Provide a succinct, concluding statement on the perceived balance between risks that have been identified from cumulative safety data, protocol procedures, and anticipated efficacy/benefits within the context of the proposed trial.",
             "conformance": "Required",
             "cardinality": "One to one",
-            "relationship": "2.2.3 ",
+            "relationship": "2.2.3",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 2.2.3 Overall Risk-Benefit Assessment OR 2.2 Assessment of Risks and Benefits (when the Optional Level 3 subheading (2.2.3) is not used)\nIf the Optional Level 3 subheadings (2.2.1, 2.2.2, 2.2.3) are not used, the user guidance below Section 2.2 applies.\nConcept: CNEW",
             "repeating": "No",
             "ct": []
         },
-        " Table of Estimand Characteristics including Endpoint at a minimum": {
-            "name": " Table of Estimand Characteristics including Endpoint at a minimum",
+        "Table of Estimand Characteristics including Endpoint at a minimum": {
+            "name": "Table of Estimand Characteristics including Endpoint at a minimum",
             "data_type": "Text",
             "definition": "N/A",
             "guidance": "N/A",
-            "conformance": "Required ",
+            "conformance": "Required",
             "cardinality": "One to one",
             "relationship": "3.1.X: X is a unique number for each primary objective",
             "value": "Estimand Characteristics",
             "business_rules": "Value Allowed: Yes\nRelationship: 3.1.1 Primary Objective\nConcept: Heading",
             "repeating": "Yes, repeatable for each numbered primary objective.\nYes, reuse to the table in Section 1.1.1.for each primary objective",
-            "ct": []
-        },
-        " Endpoint ": {
-            "name": " Endpoint ",
-            "data_type": "Text",
-            "definition": "C25212\nFor review purpose, see definition of the controlled terminology below\nThe variable to be obtained for each patient that is required to address the clinical question. The specification of the variable might include whether the patient experiences an intercurrent event",
-            "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status))",
-            "conformance": "Required",
-            "cardinality": "One to Row Heading, One to Primary Objective Table, Project Identifier ",
-            "relationship": "3.1.X",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: Row Heading, Description\nConcept: C25212",
-            "repeating": "Yes, repeatable for each numbered primary objective",
             "ct": []
         },
         "PopulationLevel Summary": {
@@ -2436,11 +2291,11 @@
             "definition": "C188853\nFor review purpose, see definition of the controlled terminology below\n A synopsis of the clinical endpoint of interest within the analysis target study population.",
             "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
             "conformance": "Conditional: If there is a population -level summary",
-            "cardinality": "One to Row Heading, One to Exploratory Objective Table, Project Identifier ",
-            "relationship": "3.3.X ",
+            "cardinality": "One to Row Heading, One to Exploratory Objective Table, Project Identifier",
+            "relationship": "3.3.X",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: Row Heading, Description; Table Estimand Characteristics, Exploratory (1\u2026n) Estimand\nConcept: C188857",
-            "repeating": "Yes, repeatable for each numbered exploratory objective.\n",
+            "repeating": "Yes, repeatable for each numbered exploratory objective.",
             "ct": []
         },
         "Secondary Objective X": {
@@ -2449,11 +2304,11 @@
             "definition": "C85827\nFor review purpose, see definition of the controlled terminology below\nThe secondary reason for performing a study in terms of the scientific questions to be answered by the analysis of data collected during the study.",
             "guidance": "N/A",
             "conformance": "Required",
-            "cardinality": "One to one; Table of Contents Number 3.2.X, One to Estimand Characteristic Table, Secondary Objective X, Protocol Identifier ",
-            "relationship": "3.2.X ",
+            "cardinality": "One to one; Table of Contents Number 3.2.X, One to Estimand Characteristic Table, Secondary Objective X, Protocol Identifier",
+            "relationship": "3.2.X",
             "value": "Text and unique integer which is same as Level 3 number for the section.",
             "business_rules": "Value Allowed: Yes\nRelationship: 3.2.X Secondary Objective, Estimand Characteristics table\nConcept: C85827",
-            "repeating": "Yes, repeatable for each numbered secondary objective.\n",
+            "repeating": "Yes, repeatable for each numbered secondary objective.",
             "ct": []
         },
         "Secondary Objective Number": {
@@ -2466,7 +2321,7 @@
             "relationship": "3.2.X",
             "value": "an integer, unique number",
             "business_rules": "Value Allowed: Yes\nRelationship: 3.2.X Secondary Objective\nConcept: Sequential number",
-            "repeating": "Yes, repeatable for each numbered secondary objective.\n",
+            "repeating": "Yes, repeatable for each numbered secondary objective.",
             "ct": []
         },
         "If a Secondary Objective has been entered Enter Table of Estimand Characteristics including Endpoint at a minimum": {
@@ -2479,20 +2334,7 @@
             "relationship": "3.2.X",
             "value": "Estimand Characteristics",
             "business_rules": "Value Allowed: No\nRelationship: 3 3.2 Secondary Objective(s) and associated Estimand(s)\nConcept: Heading",
-            "repeating": "Yes, repeatable for each numbered secondary objective.\n",
-            "ct": []
-        },
-        "  Endpoint ": {
-            "name": "  Endpoint ",
-            "data_type": "Text",
-            "definition": "C25212\n\nFor review purpose, see definition of the controlled terminology below\nThe variable to be obtained for each patient that is required to address the clinical question. The specification of the variable might include whether the patient experiences an intercurrent event",
-            "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
-            "conformance": "Required",
-            "cardinality": "One to Row Heading, One to Secondary Objective Table, Project Identifier ",
-            "relationship": "3.2.X",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: Row Heading, Description; Table Estimand Characteristics, Secondary (1\u2026n) Estimand; Concept: C25212",
-            "repeating": "Yes, repeatable for each numbered secondary objective.\n",
+            "repeating": "Yes, repeatable for each numbered secondary objective.",
             "ct": []
         },
         "Intercurrent Event Strategy": {
@@ -2501,7 +2343,7 @@
             "definition": "C188857\nFor review purpose, see definition of the controlled terminology below\nA textual description of the planned strategy to address intercurrent events.",
             "guidance": "Description of the strategy to address the intercurrent event (e.g. a treatment policy strategy); cross-reference the justification in Section 4. If there is >1 intercurrent event for an objective, add additional intercurrent event rows",
             "conformance": "Conditional: If there is one or more other intercurrent events.",
-            "cardinality": "One to one ",
+            "cardinality": "One to one",
             "relationship": "3.2.X",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: Row Heading Intercurrent Event, Description\nConcept: C188857",
@@ -2518,7 +2360,7 @@
             "relationship": "3.3.X",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 3.3.3 Exploratory Objective(s) and associated Estimand(s);Table column Heading; Description, Population, Treatment, Endpoint, Population-Level, Intercurrent Event (1\u2026n)\nConcept: Heading",
-            "repeating": "Yes, repeatable for each numbered exploratory objective.\n",
+            "repeating": "Yes, repeatable for each numbered exploratory objective.",
             "ct": []
         },
         "Intercurrent Event  Strategy": {
@@ -2527,7 +2369,7 @@
             "definition": "C188857\nFor review purpose, see definition of the controlled terminology below\nA textual description of the planned strategy to address intercurrent events.",
             "guidance": "Description of the strategy to address the intercurrent event (e.g. a treatment policy strategy); cross-reference the justification in Section 4. If there is >1 intercurrent event for an objective, add additional intercurrent event rows",
             "conformance": "Conditional: If there is one or more other intercurrent events as estimand charactristic.",
-            "cardinality": "One to one ",
+            "cardinality": "One to one",
             "relationship": "3.3.X",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: Row Heading; Strategy, Description\nConcept: C188857",
@@ -2538,7 +2380,7 @@
             "name": "Rationale for Estimands",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn explanation as to the scientific reasons for the choice of the trial estimand features.",
-            "guidance": "When estimands are associated with the Primary and Secondary Objectives described in Section 3 Trial Objectives and Associated Estimands, provide a rationale for the estimand not described elsewhere in the document. This should include a rationale that the selected endpoint(s) are clinically relevant and provide a reliable and valid measurement of the intended intervention effect. It should also include a rationale for the selected strategies for handling intercurrent events.\n",
+            "guidance": "When estimands are associated with the Primary and Secondary Objectives described in Section 3 Trial Objectives and Associated Estimands, provide a rationale for the estimand not described elsewhere in the document. This should include a rationale that the selected endpoint(s) are clinically relevant and provide a reliable and valid measurement of the intended intervention effect. It should also include a rationale for the selected strategies for handling intercurrent events.",
             "conformance": "Conditional: when<Overall Rationale for Trial Design> is not used",
             "cardinality": "One to one",
             "relationship": "4.2.1",
@@ -2551,7 +2393,7 @@
             "name": "Rationale for Trial Intervention Model",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn explanation as to the scientific reasons for why the intervention model was chosen for the trial.",
-            "guidance": "Provide a rationale for the trial intervention model described in Section 4.1 Description of Trial Design with a cross-reference to Section 6.2 Rationale for Investigational Intervention Dose and Regimen. Rationale for choice of comparator, if applicable, should be described separately in Section 4.2.5 Rationale for Control Type. A rationale for the choice of trial population should be described separately in Section 5.1 Description of Trial Population and Rationale.\n",
+            "guidance": "Provide a rationale for the trial intervention model described in Section 4.1 Description of Trial Design with a cross-reference to Section 6.2 Rationale for Investigational Intervention Dose and Regimen. Rationale for choice of comparator, if applicable, should be described separately in Section 4.2.5 Rationale for Control Type. A rationale for the choice of trial population should be described separately in Section 5.1 Description of Trial Population and Rationale.",
             "conformance": "Conditional: when <Overall Rationale for Trial Design> is not used",
             "cardinality": "One to one",
             "relationship": "4.2.2",
@@ -2654,7 +2496,7 @@
         "Contraception Requirements": {
             "name": "Contraception Requirements",
             "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of the requirements for the prevention of conception or impregnation by the use of devices or drugs or surgery within a context of a trial l, or state not applicable. ",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of the requirements for the prevention of conception or impregnation by the use of devices or drugs or surgery within a context of a trial l, or state not applicable.",
             "guidance": "Specify the: \ncontraceptive methods required \nduration of use",
             "conformance": "Required",
             "cardinality": "One to one",
@@ -2668,7 +2510,7 @@
             "name": "Caffeine Alcohol Tobacco and Other Restrictions",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of the restrictions related to participant intake of caffeine, alcohol, tobacco, and other habit-forming substances during the trial.",
-            "guidance": "If applicable, describe any restrictions on the intake of caffeine, alcohol, tobacco, or other restrictions. \n",
+            "guidance": "If applicable, describe any restrictions on the intake of caffeine, alcohol, tobacco, or other restrictions.",
             "conformance": "Optional",
             "cardinality": "One to one",
             "relationship": "5.5.2",
@@ -2741,7 +2583,7 @@
         },
         "Intervention Type": {
             "name": "Intervention Type",
-            "data_type": "Valid Value ",
+            "data_type": "Valid Value",
             "definition": "C98747\nFor review purpose, see definition of the controlled terminology below\nThe kind of product or procedure studied in a trial.",
             "guidance": "N/A",
             "conformance": "Optional: if the table used",
@@ -2837,7 +2679,7 @@
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe strength of a drug product, which indicates the amount of each active ingredient in a given dosage form, measured in units of volume or concentration.",
             "guidance": "N/A",
             "conformance": "Optional: if the table used",
-            "cardinality": "One to each dosage formulation ",
+            "cardinality": "One to each dosage formulation",
             "relationship": "Trial Intervention and Concomitant Therapy",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: arm name and dose strength, 6 Trial Intervention and Concomitant Therapy\nConcept: CNEW",
@@ -2854,7 +2696,7 @@
             "relationship": "6",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: arm name and dose level\nConcept: C94394",
-            "repeating": "Yes, repeatable for each intervention, dose formulation, dosage strength and dosage level per arm ",
+            "repeating": "Yes, repeatable for each intervention, dose formulation, dosage strength and dosage level per arm",
             "ct": []
         },
         "RegimenTreatment PeriodVaccination regimen": {
@@ -2970,25 +2812,12 @@
             "name": "Preparation of Investigational Trial Intervention",
             "data_type": "Text",
             "definition": "C176274\nFor review purpose, see definition of the controlled terminology below\nThe way in which the investigational trial intervention is prepared for use or administration to the study participant.",
-            "guidance": "Describe any preparation of the investigational trial intervention, and when necessary, by whom. When applicable, describe the maximum hold time once thawed/mixed before administration. Include thawing, diluting, mixing, and reconstitution/preparation instructions. For drug/device combination products, include any relevant assembly or use instructions and reference the package insert that is provided separately.\u00a0\nIf the instructions are lengthy or complicated, it is acceptable to reference the package insert (if applicable) or include instructions in a separate document(s) provided to the site (for example, a pharmacy manual). If the latter, reference the separate documents.\u00a0\n",
-            "conformance": "Required ",
+            "guidance": "Describe any preparation of the investigational trial intervention, and when necessary, by whom. When applicable, describe the maximum hold time once thawed/mixed before administration. Include thawing, diluting, mixing, and reconstitution/preparation instructions. For drug/device combination products, include any relevant assembly or use instructions and reference the package insert that is provided separately.\u00a0\nIf the instructions are lengthy or complicated, it is acceptable to reference the package insert (if applicable) or include instructions in a separate document(s) provided to the site (for example, a pharmacy manual). If the latter, reference the separate documents.",
+            "conformance": "Required",
             "cardinality": "One to one",
             "relationship": "6.6.1",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 6.6.1 Preparation of Investigational Trial Intervention\nConcept: C176274",
-            "repeating": "No",
-            "ct": []
-        },
-        "Investigational Trial Intervention Adherence ": {
-            "name": "Investigational Trial Intervention Adherence ",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of the measures taken to ensure trial intervention compliance, including mandatory documentation to be filled out and the source data that will be used to document investigational trial intervention compliance.",
-            "guidance": "Describe the measures to monitor and document participants\u2019 compliance with investigational intervention (e.g. study intervention accountability records, diary cards, or investigational intervention concentration measurements).\nList what documents are mandatory to complete (for example, participant drug log) and what source data/records will be used to document investigational intervention compliance. ",
-            "conformance": "Required ",
-            "cardinality": "One to one",
-            "relationship": "6.8",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: 6.8 Investigational Trial Intervention Adherence\nConcept: CNEW",
             "repeating": "No",
             "ct": []
         },
@@ -2997,7 +2826,7 @@
             "data_type": "Text",
             "definition": "C165822\nFor review purpose, see definition of the controlled terminology below\nMedicinal products that are administered to each clinical trial subject, regardless of randomization group, a) to treat the indication which is the object of the study, or b) required in the protocol as part of standard care for a condition that is not the indication under investigation, and is relevant for the clinical trial design. [After Recommendations from the expert group on clinical trials for the implementation of Regulation (EU) No 536/2014' dd 28 June 2017]",
             "guidance": "Describe permitted background intervention(s), including administration and any conditions for use.",
-            "conformance": "Conditional: when any background interventions are defined ",
+            "conformance": "Conditional: when any background interventions are defined",
             "cardinality": "One to one",
             "relationship": "6.9.1",
             "value": "Text",
@@ -3015,19 +2844,6 @@
             "relationship": "6.9.3",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 6.9.3 Other Noninvestigational Intervention\nConcept: CNEW",
-            "repeating": "No",
-            "ct": []
-        },
-        "Permitted Concomitant Therapy ": {
-            "name": "Permitted Concomitant Therapy ",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nConcomitant therapy that is approved for use in the trial.",
-            "guidance": "If applicable, describe any permitted concomitant therapy.",
-            "conformance": "Conditional: when any permitted concomitant therapies are defined ",
-            "cardinality": "One to one",
-            "relationship": "6.10.2",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: 6.10.2 Permitted Concomitant Therapy\nConcept: CNEW",
             "repeating": "No",
             "ct": []
         },
@@ -3061,7 +2877,7 @@
             "name": "Definition of Product Complaints",
             "data_type": "Text",
             "definition": "",
-            "guidance": "Specify the definition of product complaints in the context of the trial. \n",
+            "guidance": "Specify the definition of product complaints in the context of the trial.",
             "conformance": "Required",
             "cardinality": "One to one",
             "relationship": "9.1.3",
@@ -3088,12 +2904,12 @@
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of the procedures for follow-up, including the assessment tools that will be used to monitor an event and the duration of follow-up.",
             "guidance": "Specify the procedures for follow-up. Include the assessment tools that will be used to monitor the events and the duration of follow-up after appearance of the events.",
-            "conformance": "Required ",
-            "cardinality": "One to one ",
+            "conformance": "Required",
+            "cardinality": "One to one",
             "relationship": "9.2.2",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: Follow-up and 9.2.2 Collection Procedures\nConcept: CNEW",
-            "repeating": "No ",
+            "repeating": "No",
             "ct": []
         },
         "Adverse Events of Special Interest or state Not applicable": {
@@ -3101,7 +2917,7 @@
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of the processes and procedures used to define, measure, confirm, and report the occurrence of adverse events that are of special interest to the specific trial, or state not applicable.",
             "guidance": "",
-            "conformance": "Required ",
+            "conformance": "Required",
             "cardinality": "One to one",
             "relationship": "9.2.4",
             "value": "Text",
@@ -3114,8 +2930,8 @@
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of events or outcomes related to the trial disease indication but not qualifying as adverse events or serious adverse events within the trial, or state not applicable.",
             "guidance": "Specify any DREs, DROs, or both that will not be reported as AEs or SAEs (e.g., seizures in anticonvulsant trials) or state \u201cNot applicable.\u201d",
-            "conformance": "Required ",
-            "cardinality": "One to one ",
+            "conformance": "Required",
+            "cardinality": "One to one",
             "relationship": "9.2.5",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 9.2.5 Disease-related Events or Outcomes Not Qualifying as AEs or SAEs\nConcept: CNEW",
@@ -3178,7 +2994,7 @@
             "name": "Handling of Missing Data in Relation to Secondary Estimands",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of how missing data associated with the Secondary estimand will be handled, including the rationale for the approach.",
-            "guidance": " Describe how missing data will be addressed (e.g., imputation method and model), state the underlying assumptions, and provide a rationale for the approach.",
+            "guidance": "Describe how missing data will be addressed (e.g., imputation method and model), state the underlying assumptions, and provide a rationale for the approach.",
             "conformance": "Conditional: when there is Secondary estimand",
             "cardinality": "One to one",
             "relationship": "10.5.X.3",
@@ -3200,15 +3016,28 @@
             "repeating": "No",
             "ct": []
         },
+        "Trial Oversight": {
+            "name": "Trial Oversight",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of the planned processes and procedures to govern and conduct a clinical trial in order to protect the rights, safety and welfare of the trial participants.",
+            "guidance": "Concisely summarize the trial oversight listing the investigator and sponsor responsibilities not covered in other sections of the protocol which are essential for the operations of the trial, specifying the ones related to quality assurance.\nif not using below optional subheadings",
+            "conformance": "Conditional: if not using the optional subheadings Level 3 (11.2.1, 11.2.2)",
+            "cardinality": "One to one",
+            "relationship": "11.2",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 11.2 Trial Oversight\nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        },
         "RiskBased Quality Management": {
             "name": "RiskBased Quality Management",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of how potential risks and critical to quality factors associated with the trial will be identified and handled.",
             "guidance": "Describe the identified critical to quality factors, associated risks and risk mitigation strategies in the trial or refer to a separate document where this is described.",
             "conformance": "Required",
-            "cardinality": "One to one ",
+            "cardinality": "One to one",
             "relationship": "11.6",
-            "value": "Text ",
+            "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 11.6 Risk-Based Quality Management\nConcept: CNEW",
             "repeating": "No",
             "ct": []
@@ -3233,7 +3062,7 @@
             "guidance": "Although global clinical trial practices are increasingly harmonised, some country/ region-specific differences in requirements do exist (e.g., document retention periods, contraception requirements). Where differences in requirements cannot be reconciled, sponsors should explain how they will document and communicate country/region-specific differences (e.g., by country/region-specific amendments or addenda).\nAn alternative to country/region-specific amendments is to list the specific differences by country or countries in this section, including a reference to the relevant section of the protocol where the differing requirement applies.",
             "conformance": "Optional if there is Country/Region-specific differences",
             "cardinality": "One to many",
-            "relationship": "12.2 ",
+            "relationship": "12.2",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 12.2 Country /Region Identifier Country/Region-Specific Differences\nConcept: CNEW",
             "repeating": "Yes, repeatable for each country/region",
@@ -3242,7 +3071,7 @@
         "Prior Protocol Amendments": {
             "name": "Prior Protocol Amendments",
             "data_type": "Valid Value",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the protocol has not been amended, is the first protocol amendment, or a statement that the protocol has been amended previously. ",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the protocol has not been amended, is the first protocol amendment, or a statement that the protocol has been amended previously.",
             "guidance": "Choose the applicable statement below. For an original protocol that has not been amended, retain the first sentence below and delete the remainder of this entire section. \n{Not applicable. This protocol has not been amended.} \nOr\n{Not applicable. This is the first protocol amendment.} \nOr include the below as applicable.\n{This protocol has been amended previously. The Protocol Amendment Summary of Changes for the current amendment is located directly before the Table of Contents. Prior amendment(s) to this protocol are listed in the table below, beginning with the most recent.}",
             "conformance": "Required",
             "cardinality": "One to one",
@@ -3269,25 +3098,12 @@
                 {
                     "ncit_code": "CNEW",
                     "preferred_term": "{This protocol has been amended previously. The Protocol Amendment Summary of Changes for the current amendment is located directly before the Table of Contents. Prior amendment(s) to this protocol are listed in the table below, beginning with the most recent.}",
-                    "definition": "{This protocol has been amended previously. The Protocol Amendment Summary of Changes for the current amendment is located directly before the Table of Contents. Prior amendment(s) to this protocol are listed in the table below, beginning with the most recent.}\n"
+                    "definition": "{This protocol has been amended previously. The Protocol Amendment Summary of Changes for the current amendment is located directly before the Table of Contents. Prior amendment(s) to this protocol are listed in the table below, beginning with the most recent.}"
                 }
             ]
         },
-        "Sponsor Approval Date ": {
-            "name": "Sponsor Approval Date ",
-            "data_type": "Date",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe date that the sponsor approved the version of the protocol, ",
-            "guidance": "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first).",
-            "conformance": "Conditional: if amendment",
-            "cardinality": "One to one",
-            "relationship": "12.3",
-            "value": "Date",
-            "business_rules": "Value Allowed: Yes\nRelationship: {The Overview of Changes from each prior protocol amendment is {provided below} or <specify alternative location>}.\nConcept: CNEW",
-            "repeating": "Yes, repeatable one table per amendment",
-            "ct": []
-        },
-        " or  enrolled globallylocallyper cohort": {
-            "name": " or  enrolled globallylocallyper cohort",
+        "or  enrolled globallylocallyper cohort": {
+            "name": "or  enrolled globallylocallyper cohort",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage. The numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage.",
             "guidance": "",
@@ -3299,8 +3115,8 @@
             "repeating": "Yes, reuse from the title page",
             "ct": []
         },
-        " or ": {
-            "name": " or ",
+        "or": {
+            "name": "or",
             "data_type": "Number",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value (expressed as an absolute value or percentage) for the estimated number of participants enrolled at the time of the protocol amendment.",
             "guidance": "N/A",
@@ -3312,19 +3128,6 @@
             "repeating": "Yes, reuse from the title page",
             "ct": []
         },
-        "specify alternative location ": {
-            "name": "specify alternative location ",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nthe physical or virtual location of the date on which the sponsor approved the current version of the protocol.",
-            "guidance": "N/A",
-            "conformance": "Conditional: when a specify alternative location is selected",
-            "cardinality": "One to one",
-            "relationship": "12.3",
-            "value": "Text Location where information can be found",
-            "business_rules": "Value Allowed: Yes\nRelationship: Location for previous amendments\nConcept: CNEW",
-            "repeating": "Yes, reuse from the title page.",
-            "ct": []
-        },
         "amendment number": {
             "name": "amendment number",
             "data_type": "Text",
@@ -3333,7 +3136,7 @@
             "conformance": "Conditional: if amendment",
             "cardinality": "One to one",
             "relationship": "12.3",
-            "value": "Text ",
+            "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: {The Overview of Changes from each prior protocol amendment is {provided below} or <specify alternative location>}.\nConcept: CNEW",
             "repeating": "Yes, repeatable one table per amendment",
             "ct": []
@@ -3345,10 +3148,10 @@
             "guidance": "N/A",
             "conformance": "Optional",
             "cardinality": "One to one",
-            "relationship": "12 X\nwhere X is a unique number for each Additional Appendix ",
+            "relationship": "12 X\nwhere X is a unique number for each Additional Appendix",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 12.X Additional Appendices\nConcept: CNEW",
-            "repeating": "No ",
+            "repeating": "No",
             "ct": []
         }
     }

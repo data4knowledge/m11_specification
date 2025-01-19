@@ -74,15 +74,15 @@ class M11Technical:
         if len(table.rows) >= 10:
             data_element = {
                 "name": self._clean_element_name(self._row_cell_text(table.rows[0], 1)),
-                "data_type": self._row_cell_text(table.rows[1], 1),
-                "definition": self._row_cell_text(table.rows[3], 1),
-                "guidance": self._row_cell_text(table.rows[4], 1),
-                "conformance": self._row_cell_text(table.rows[5], 1),
-                "cardinality": self._row_cell_text(table.rows[6], 1),
-                "relationship": self._row_cell_text(table.rows[7], 1),
-                "value": self._row_cell_text(table.rows[8], 1),
-                "business_rules": self._row_cell_text(table.rows[9], 1),
-                "repeating": self._row_cell_text(table.rows[10], 1),
+                "data_type": self._row_cell_text(table.rows[1], 1).strip(),
+                "definition": self._row_cell_text(table.rows[3], 1).strip(),
+                "guidance": self._row_cell_text(table.rows[4], 1).strip(),
+                "conformance": self._row_cell_text(table.rows[5], 1).strip(),
+                "cardinality": self._row_cell_text(table.rows[6], 1).strip(),
+                "relationship": self._row_cell_text(table.rows[7], 1).strip(),
+                "value": self._row_cell_text(table.rows[8], 1).strip(),
+                "business_rules": self._row_cell_text(table.rows[9], 1).strip(),
+                "repeating": self._row_cell_text(table.rows[10], 1).strip(),
                 "ct": []
             }
         return data_element
@@ -94,9 +94,9 @@ class M11Technical:
         ncit_element = []
         for row in table.rows[1:]:
             ncit_element.append({
-                "ncit_code": row.cells[0].text(),
-                "preferred_term": row.cells[1].text(),
-                "definition": row.cells[2].text()
+                "ncit_code": row.cells[0].text().strip(),
+                "preferred_term": row.cells[1].text().strip(),
+                "definition": row.cells[2].text().strip()
             })
         return ncit_element
 
@@ -134,4 +134,4 @@ class M11Technical:
         """
         Clean the element name. Remove any non-alphanumeric characters.
         """
-        return re.sub(r'[^a-zA-Z0-9 ]', '', element_name)
+        return re.sub(r'[^a-zA-Z0-9 ]', '', element_name).strip()
