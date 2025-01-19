@@ -15,3 +15,14 @@ with open("data/output_data/technical_document.json", "w") as f:
     json.dump(technical.document, f, indent=4)
 with open("data/output_data/technical_elements.json", "w") as f:
     json.dump(technical.elements, f, indent=4)
+
+merged = {}
+for key, value in template.elements.items():
+    if key in technical.elements:
+        merged[key] = {
+            "template": value,
+            "technical": technical.elements[key]
+        }
+
+with open("data/output_data/merged_elements.json", "w") as f:
+    json.dump(merged, f, indent=4)
