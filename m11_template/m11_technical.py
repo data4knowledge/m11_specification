@@ -28,32 +28,30 @@ class M11Technical:
         for section in raw_doc.sections:
             for index, section_item in enumerate(section.items):
                 if isinstance(section_item, RawParagraph):
-                    print(f"PARAGRAPH: {section_item.text}")
+                    #print(f"PARAGRAPH: {section_item.text}")
+                    pass
                 elif isinstance(section_item, RawTable):
                     if self._is_data_element_table(section_item):
-                        print("DATA ELEMENT TABLE")
                         data_element = self._extract_data_element(section_item)
                         if data_element:
                             self.elements[data_element["name"]] = data_element
                             if index + 1 < len(section.items):
-                                print("NEXT TABLE")
                                 next_index = index + 1
                                 while next_index < len(section.items):
                                     next_item = section.items[next_index]
                                     if isinstance(next_item, RawTable):
-                                        print("NEXT ITEM IS A TABLE")
                                         if self._is_ncit_table(next_item):
-                                            print("NEXT ITEM IS A NCI THESAURUS TABLE")
                                             ncit_element = self._extract_ncit_element(next_item)
                                             if ncit_element:
-                                                print("NCIT ELEMENT")
                                                 self.elements[data_element["name"]]["ct"] = ncit_element
                                         break
                                     next_index += 1
                     elif self._is_ncit_table(section_item):
-                        print(f"NCI THESAURUS TABLE:")
+                        #print(f"NCI THESAURUS TABLE:")
+                        pass
                     else:
-                        print(f"TABLE: Other Type")
+                        #print(f"TABLE: Other Type")
+                        pass
 
 
     def _extract_data_element(self, table: RawTable) -> dict:

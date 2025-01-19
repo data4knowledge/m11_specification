@@ -53,9 +53,9 @@ class M11Template:
                                         instructions = self._extract_instructions(
                                             section, item
                                         )
-                                        print(
-                                            f"INSTRUCTIONS: {instructions} for {last_row_elements}"
-                                        )
+                                        #print(
+                                        #    f"INSTRUCTIONS: {instructions} for {last_row_elements}"
+                                        #)
                                         self._add_instructions(
                                             last_row_elements, instructions
                                         )
@@ -115,7 +115,7 @@ class M11Template:
                         "instructions": [],
                     }
                 )
-        print(f"CONFIRMED ELEMENTS: {confirmed_elements}")
+        #print(f"CONFIRMED ELEMENTS: {confirmed_elements}")
         return confirmed_elements
 
     def _extract_instructions(
