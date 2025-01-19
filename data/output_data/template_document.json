@@ -8855,7 +8855,7 @@
         },
         {
             "type": "section",
-            "title": "Primary Objective",
+            "title": "Primary Objective <#>",
             "number": "3.1.1",
             "level": 3,
             "items": [
@@ -10398,10 +10398,10 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "If appropriate, provide a cross reference to Section 11.1 Early Site Closure.",
+                    "text": "If appropriate, provide a cross reference to Section 11.11 Early Site Closure.",
                     "runs": [
                         {
-                            "text": "If appropriate, provide a cross reference to Section 11.1 Early Site Closure.",
+                            "text": "If appropriate, provide a cross reference to Section 11.11 Early Site Closure.",
                             "color": "C00000",
                             "highlight": "None",
                             "style": "Instructional Text"
@@ -17005,13 +17005,13 @@
         },
         {
             "type": "section",
-            "title": "{Sensitivity }",
+            "title": "{Sensitivity Analysis}",
             "number": "10.5.1.4",
             "level": 4,
             "items": [
                 {
                     "type": "paragraph",
-                    "text": "{<Enter Sensitivity >}",
+                    "text": "{<Enter Sensitivity Analysis>}",
                     "runs": [
                         {
                             "text": "{<",
@@ -17020,7 +17020,7 @@
                             "style": "00Paragraph"
                         },
                         {
-                            "text": "Enter Sensitivity ",
+                            "text": "Enter Sensitivity Analysis",
                             "color": "None",
                             "highlight": "GRAY_25 (16)",
                             "style": "00Paragraph"
@@ -17038,13 +17038,13 @@
         },
         {
             "type": "section",
-            "title": "{Supplementary }",
+            "title": "{Supplementary Analysis}",
             "number": "10.5.1.5",
             "level": 4,
             "items": [
                 {
                     "type": "paragraph",
-                    "text": "{<Enter Supplementary >}",
+                    "text": "{<Enter Supplementary Analysis>}",
                     "runs": [
                         {
                             "text": "{<",
@@ -17053,7 +17053,7 @@
                             "style": "00Paragraph"
                         },
                         {
-                            "text": "Enter Supplementary ",
+                            "text": "Enter Supplementary Analysis",
                             "color": "None",
                             "highlight": "GRAY_25 (16)",
                             "style": "00Paragraph"
@@ -17787,10 +17787,10 @@
             "items": [
                 {
                     "type": "paragraph",
-                    "text": "Describe the sponsor duties, including those to be  to a third party that may impact the investigators sites, if applicable.",
+                    "text": "Describe the sponsor duties, including those to be transferred to a third party that may impact the investigators sites, if applicable.",
                     "runs": [
                         {
-                            "text": "Describe the sponsor duties, including those to be  to a third party that may impact the investigators sites, if applicable.",
+                            "text": "Describe the sponsor duties, including those to be transferred to a third party that may impact the investigators sites, if applicable.",
                             "color": "C00000",
                             "highlight": "None",
                             "style": "Instructional TExt"
@@ -28637,7 +28637,7 @@
         },
         "3.1.1": {
             "type": "section",
-            "title": "Primary Objective",
+            "title": "Primary Objective <#>",
             "number": "3.1.1",
             "level": 3,
             "items": [
@@ -30180,10 +30180,10 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "If appropriate, provide a cross reference to Section 11.1 Early Site Closure.",
+                    "text": "If appropriate, provide a cross reference to Section 11.11 Early Site Closure.",
                     "runs": [
                         {
-                            "text": "If appropriate, provide a cross reference to Section 11.1 Early Site Closure.",
+                            "text": "If appropriate, provide a cross reference to Section 11.11 Early Site Closure.",
                             "color": "C00000",
                             "highlight": "None",
                             "style": "Instructional Text"
@@ -36787,13 +36787,13 @@
         },
         "10.5.1.4": {
             "type": "section",
-            "title": "{Sensitivity }",
+            "title": "{Sensitivity Analysis}",
             "number": "10.5.1.4",
             "level": 4,
             "items": [
                 {
                     "type": "paragraph",
-                    "text": "{<Enter Sensitivity >}",
+                    "text": "{<Enter Sensitivity Analysis>}",
                     "runs": [
                         {
                             "text": "{<",
@@ -36802,7 +36802,7 @@
                             "style": "00Paragraph"
                         },
                         {
-                            "text": "Enter Sensitivity ",
+                            "text": "Enter Sensitivity Analysis",
                             "color": "None",
                             "highlight": "GRAY_25 (16)",
                             "style": "00Paragraph"
@@ -36820,13 +36820,13 @@
         },
         "10.5.1.5": {
             "type": "section",
-            "title": "{Supplementary }",
+            "title": "{Supplementary Analysis}",
             "number": "10.5.1.5",
             "level": 4,
             "items": [
                 {
                     "type": "paragraph",
-                    "text": "{<Enter Supplementary >}",
+                    "text": "{<Enter Supplementary Analysis>}",
                     "runs": [
                         {
                             "text": "{<",
@@ -36835,7 +36835,7 @@
                             "style": "00Paragraph"
                         },
                         {
-                            "text": "Enter Supplementary ",
+                            "text": "Enter Supplementary Analysis",
                             "color": "None",
                             "highlight": "GRAY_25 (16)",
                             "style": "00Paragraph"
@@ -37569,10 +37569,10 @@
             "items": [
                 {
                     "type": "paragraph",
-                    "text": "Describe the sponsor duties, including those to be  to a third party that may impact the investigators sites, if applicable.",
+                    "text": "Describe the sponsor duties, including those to be transferred to a third party that may impact the investigators sites, if applicable.",
                     "runs": [
                         {
-                            "text": "Describe the sponsor duties, including those to be  to a third party that may impact the investigators sites, if applicable.",
+                            "text": "Describe the sponsor duties, including those to be transferred to a third party that may impact the investigators sites, if applicable.",
                             "color": "C00000",
                             "highlight": "None",
                             "style": "Instructional TExt"
@@ -48409,24 +48409,532 @@
                 }
             ]
         },
-        "Primary Objective": {
+        "Primary Objective <#>": {
             "type": "section",
-            "title": "Primary Objective",
-            "number": "10.4.1",
+            "title": "Primary Objective <#>",
+            "number": "3.1.1",
             "level": 3,
             "items": [
                 {
                     "type": "paragraph",
-                    "text": "No text is intended here (heading only).",
+                    "text": "<Enter Primary Objective>",
                     "runs": [
                         {
-                            "text": "No text is intended here (heading only).",
-                            "color": "C00000",
+                            "text": "<",
+                            "color": "None",
+                            "highlight": "None",
+                            "style": "00Paragraph"
+                        },
+                        {
+                            "text": "Enter Primary Objective",
+                            "color": "None",
+                            "highlight": "GRAY_25 (16)",
+                            "style": "00Paragraph"
+                        },
+                        {
+                            "text": ">",
+                            "color": "None",
                             "highlight": "None",
                             "style": "00Paragraph"
                         }
                     ],
                     "classes": []
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<Enter Table of Estimand Characteristics including Endpoint at a minimum>.",
+                    "runs": [
+                        {
+                            "text": "<",
+                            "color": "000000",
+                            "highlight": "None",
+                            "style": "00Paragraph"
+                        },
+                        {
+                            "text": "Enter Table of Estimand Characteristics ",
+                            "color": "000000",
+                            "highlight": "GRAY_25 (16)",
+                            "style": "00Paragraph"
+                        },
+                        {
+                            "text": "including Endpoint at a minimum>.",
+                            "color": "000000",
+                            "highlight": "None",
+                            "style": "00Paragraph"
+                        }
+                    ],
+                    "classes": []
+                },
+                {
+                    "type": "table",
+                    "rows": [
+                        {
+                            "type": "table_row",
+                            "cells": [
+                                {
+                                    "type": "table_cell",
+                                    "row_span": 1,
+                                    "col_span": 1,
+                                    "first": true,
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "text": "Estimand Characteristic",
+                                            "runs": [
+                                                {
+                                                    "text": "Estimand Characteristic",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                }
+                                            ],
+                                            "classes": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "table_cell",
+                                    "row_span": 1,
+                                    "col_span": 1,
+                                    "first": true,
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "text": "Description",
+                                            "runs": [
+                                                {
+                                                    "text": "Description",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                }
+                                            ],
+                                            "classes": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "table_row",
+                            "cells": [
+                                {
+                                    "type": "table_cell",
+                                    "row_span": 1,
+                                    "col_span": 1,
+                                    "first": true,
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "text": "{Population}",
+                                            "runs": [
+                                                {
+                                                    "text": "{Population}",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                }
+                                            ],
+                                            "classes": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "table_cell",
+                                    "row_span": 1,
+                                    "col_span": 1,
+                                    "first": true,
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "text": "List of key characteristics, such as demographic characteristics (e.g., age, sex) and clinical characteristics (e.g., prior therapies, symptoms, severity, biomarker status)",
+                                            "runs": [
+                                                {
+                                                    "text": "List of key characteristics, such as demographic characteristics (e.g., age, sex) and clinical characteristics (e.g., prior therapies, symptoms, severity, biomarker status)",
+                                                    "color": "C00000",
+                                                    "highlight": "None",
+                                                    "style": "Instructional TExt"
+                                                }
+                                            ],
+                                            "classes": []
+                                        },
+                                        {
+                                            "type": "paragraph",
+                                            "text": "{<Enter Population>}",
+                                            "runs": [
+                                                {
+                                                    "text": "{<",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                },
+                                                {
+                                                    "text": "Enter Population",
+                                                    "color": "None",
+                                                    "highlight": "GRAY_25 (16)",
+                                                    "style": "Normal"
+                                                },
+                                                {
+                                                    "text": ">}",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                }
+                                            ],
+                                            "classes": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "table_row",
+                            "cells": [
+                                {
+                                    "type": "table_cell",
+                                    "row_span": 1,
+                                    "col_span": 1,
+                                    "first": true,
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "text": "{Treatment}",
+                                            "runs": [
+                                                {
+                                                    "text": "{Treatment}",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                }
+                                            ],
+                                            "classes": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "table_cell",
+                                    "row_span": 1,
+                                    "col_span": 1,
+                                    "first": true,
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "text": "List of key aspects of treatment regimens in each study group, including at least investigational agents, dosage, and administration route",
+                                            "runs": [
+                                                {
+                                                    "text": "List of key aspects of treatment regimens in each study group, including at least investigational agents, dosage, and administration route",
+                                                    "color": "C00000",
+                                                    "highlight": "None",
+                                                    "style": "Instructional TExt"
+                                                }
+                                            ],
+                                            "classes": []
+                                        },
+                                        {
+                                            "type": "paragraph",
+                                            "text": "{<Enter Treatment>}",
+                                            "runs": [
+                                                {
+                                                    "text": "{<",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                },
+                                                {
+                                                    "text": "Enter Treatment",
+                                                    "color": "None",
+                                                    "highlight": "GRAY_25 (16)",
+                                                    "style": "Normal"
+                                                },
+                                                {
+                                                    "text": ">}",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                }
+                                            ],
+                                            "classes": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "table_row",
+                            "cells": [
+                                {
+                                    "type": "table_cell",
+                                    "row_span": 1,
+                                    "col_span": 1,
+                                    "first": true,
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "text": "Endpoint",
+                                            "runs": [
+                                                {
+                                                    "text": "Endpoint",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                }
+                                            ],
+                                            "classes": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "table_cell",
+                                    "row_span": 1,
+                                    "col_span": 1,
+                                    "first": true,
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "text": "Definition of the endpoint",
+                                            "runs": [
+                                                {
+                                                    "text": "Definition of the endpoint",
+                                                    "color": "C00000",
+                                                    "highlight": "None",
+                                                    "style": "Instructional TExt"
+                                                }
+                                            ],
+                                            "classes": []
+                                        },
+                                        {
+                                            "type": "paragraph",
+                                            "text": "<Enter Endpoint>",
+                                            "runs": [
+                                                {
+                                                    "text": "<",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                },
+                                                {
+                                                    "text": "Enter Endpoint",
+                                                    "color": "None",
+                                                    "highlight": "GRAY_25 (16)",
+                                                    "style": "Normal"
+                                                },
+                                                {
+                                                    "text": ">",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                }
+                                            ],
+                                            "classes": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "table_row",
+                            "cells": [
+                                {
+                                    "type": "table_cell",
+                                    "row_span": 1,
+                                    "col_span": 1,
+                                    "first": true,
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "text": "{Population-level Summary}",
+                                            "runs": [
+                                                {
+                                                    "text": "{Population-level Summary}",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                }
+                                            ],
+                                            "classes": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "table_cell",
+                                    "row_span": 1,
+                                    "col_span": 1,
+                                    "first": true,
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "text": "Description of the population-level summary (e.g., mean difference, relative risk)",
+                                            "runs": [
+                                                {
+                                                    "text": "Description of the population-level summary (e.g., mean difference, relative risk)",
+                                                    "color": "C00000",
+                                                    "highlight": "None",
+                                                    "style": "Instructional TExt"
+                                                }
+                                            ],
+                                            "classes": []
+                                        },
+                                        {
+                                            "type": "paragraph",
+                                            "text": "{<Enter Population-level Summary>}",
+                                            "runs": [
+                                                {
+                                                    "text": "{<",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                },
+                                                {
+                                                    "text": "Enter Population-level Summary",
+                                                    "color": "None",
+                                                    "highlight": "GRAY_25 (16)",
+                                                    "style": "Normal"
+                                                },
+                                                {
+                                                    "text": ">}",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                }
+                                            ],
+                                            "classes": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "table_row",
+                            "cells": [
+                                {
+                                    "type": "table_cell",
+                                    "row_span": 1,
+                                    "col_span": 1,
+                                    "first": true,
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "text": "{Other Intercurrent Event}",
+                                            "runs": [
+                                                {
+                                                    "text": "{Other Intercurrent Event}",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                }
+                                            ],
+                                            "classes": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "table_cell",
+                                    "row_span": 1,
+                                    "col_span": 1,
+                                    "first": true,
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "text": "{Strategy}",
+                                            "runs": [
+                                                {
+                                                    "text": "{Strategy}",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                }
+                                            ],
+                                            "classes": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "table_row",
+                            "cells": [
+                                {
+                                    "type": "table_cell",
+                                    "row_span": 1,
+                                    "col_span": 1,
+                                    "first": true,
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "text": "{<Enter Description of Intercurrent Event>}",
+                                            "runs": [
+                                                {
+                                                    "text": "{<",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                },
+                                                {
+                                                    "text": "Enter Description of Intercurrent Event",
+                                                    "color": "None",
+                                                    "highlight": "GRAY_25 (16)",
+                                                    "style": "Normal"
+                                                },
+                                                {
+                                                    "text": ">}",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                }
+                                            ],
+                                            "classes": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "table_cell",
+                                    "row_span": 1,
+                                    "col_span": 1,
+                                    "first": true,
+                                    "content": [
+                                        {
+                                            "type": "paragraph",
+                                            "text": "Description of the strategy to address the intercurrent event (e.g., a treatment policy strategy); cross reference the justification in Section 4 Trial Design. If there is >1 intercurrent event for an objective, add additional intercurrent event rows",
+                                            "runs": [
+                                                {
+                                                    "text": "Description of the strategy to address the intercurrent event (e.g., a treatment policy strategy); cross reference the justification in Section 4 Trial Design. If there is >1 intercurrent event for an objective, add additional intercurrent event rows",
+                                                    "color": "C00000",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                }
+                                            ],
+                                            "classes": []
+                                        },
+                                        {
+                                            "type": "paragraph",
+                                            "text": "{<Enter Intercurrent Event 1 Strategy>}",
+                                            "runs": [
+                                                {
+                                                    "text": "{<",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                },
+                                                {
+                                                    "text": "Enter Intercurrent Event 1 Strategy",
+                                                    "color": "None",
+                                                    "highlight": "GRAY_25 (16)",
+                                                    "style": "Normal"
+                                                },
+                                                {
+                                                    "text": ">}",
+                                                    "color": "None",
+                                                    "highlight": "None",
+                                                    "style": "Normal"
+                                                }
+                                            ],
+                                            "classes": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
@@ -49397,10 +49905,10 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "If appropriate, provide a cross reference to Section 11.1 Early Site Closure.",
+                    "text": "If appropriate, provide a cross reference to Section 11.11 Early Site Closure.",
                     "runs": [
                         {
-                            "text": "If appropriate, provide a cross reference to Section 11.1 Early Site Closure.",
+                            "text": "If appropriate, provide a cross reference to Section 11.11 Early Site Closure.",
                             "color": "C00000",
                             "highlight": "None",
                             "style": "Instructional Text"
@@ -55545,6 +56053,27 @@
                 }
             ]
         },
+        "Primary Objective": {
+            "type": "section",
+            "title": "Primary Objective",
+            "number": "10.4.1",
+            "level": 3,
+            "items": [
+                {
+                    "type": "paragraph",
+                    "text": "No text is intended here (heading only).",
+                    "runs": [
+                        {
+                            "text": "No text is intended here (heading only).",
+                            "color": "C00000",
+                            "highlight": "None",
+                            "style": "00Paragraph"
+                        }
+                    ],
+                    "classes": []
+                }
+            ]
+        },
         "Statistical Analysis Method": {
             "type": "section",
             "title": "Statistical Analysis Method",
@@ -55725,22 +56254,9 @@
         "{Sensitivity Analysis}": {
             "type": "section",
             "title": "{Sensitivity Analysis}",
-            "number": "10.4.1.4",
+            "number": "10.5.1.4",
             "level": 4,
             "items": [
-                {
-                    "type": "paragraph",
-                    "text": "Describe any sensitivity analyses and how their assumptions changed from the assumptions of the main statistical analysis. Sensitivity analyses are a series of analyses conducted with the intent to explore the robustness of inferences from the main estimator to deviations from its underlying modelling assumptions and limitations in the data.",
-                    "runs": [
-                        {
-                            "text": "Describe any sensitivity analyses and how their assumptions changed from the assumptions of the main statistical analysis. Sensitivity analyses are a series of analyses conducted with the intent to explore the robustness of inferences from the main estimator to deviations from its underlying modelling assumptions and limitations in the data.",
-                            "color": "C00000",
-                            "highlight": "None",
-                            "style": "Instructional TExt"
-                        }
-                    ],
-                    "classes": []
-                },
                 {
                     "type": "paragraph",
                     "text": "{<Enter Sensitivity Analysis>}",
@@ -55771,22 +56287,9 @@
         "{Supplementary Analysis}": {
             "type": "section",
             "title": "{Supplementary Analysis}",
-            "number": "10.4.1.5",
+            "number": "10.5.1.5",
             "level": 4,
             "items": [
-                {
-                    "type": "paragraph",
-                    "text": "Describe any supplementary analysis, if applicable. Supplementary analyses are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect.",
-                    "runs": [
-                        {
-                            "text": "Describe any supplementary analysis, if applicable. Supplementary analyses are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect.",
-                            "color": "C00000",
-                            "highlight": "None",
-                            "style": "Instructional Text"
-                        }
-                    ],
-                    "classes": []
-                },
                 {
                     "type": "paragraph",
                     "text": "{<Enter Supplementary Analysis>}",
@@ -55945,72 +56448,6 @@
                         },
                         {
                             "text": "Enter Handling of Missing Data in Relation to Secondary Estimand(s)",
-                            "color": "None",
-                            "highlight": "GRAY_25 (16)",
-                            "style": "00Paragraph"
-                        },
-                        {
-                            "text": ">}",
-                            "color": "None",
-                            "highlight": "None",
-                            "style": "00Paragraph"
-                        }
-                    ],
-                    "classes": []
-                }
-            ]
-        },
-        "{Sensitivity }": {
-            "type": "section",
-            "title": "{Sensitivity }",
-            "number": "10.5.1.4",
-            "level": 4,
-            "items": [
-                {
-                    "type": "paragraph",
-                    "text": "{<Enter Sensitivity >}",
-                    "runs": [
-                        {
-                            "text": "{<",
-                            "color": "None",
-                            "highlight": "None",
-                            "style": "00Paragraph"
-                        },
-                        {
-                            "text": "Enter Sensitivity ",
-                            "color": "None",
-                            "highlight": "GRAY_25 (16)",
-                            "style": "00Paragraph"
-                        },
-                        {
-                            "text": ">}",
-                            "color": "None",
-                            "highlight": "None",
-                            "style": "00Paragraph"
-                        }
-                    ],
-                    "classes": []
-                }
-            ]
-        },
-        "{Supplementary }": {
-            "type": "section",
-            "title": "{Supplementary }",
-            "number": "10.5.1.5",
-            "level": 4,
-            "items": [
-                {
-                    "type": "paragraph",
-                    "text": "{<Enter Supplementary >}",
-                    "runs": [
-                        {
-                            "text": "{<",
-                            "color": "None",
-                            "highlight": "None",
-                            "style": "00Paragraph"
-                        },
-                        {
-                            "text": "Enter Supplementary ",
                             "color": "None",
                             "highlight": "GRAY_25 (16)",
                             "style": "00Paragraph"
@@ -56744,10 +57181,10 @@
             "items": [
                 {
                     "type": "paragraph",
-                    "text": "Describe the sponsor duties, including those to be  to a third party that may impact the investigators sites, if applicable.",
+                    "text": "Describe the sponsor duties, including those to be transferred to a third party that may impact the investigators sites, if applicable.",
                     "runs": [
                         {
-                            "text": "Describe the sponsor duties, including those to be  to a third party that may impact the investigators sites, if applicable.",
+                            "text": "Describe the sponsor duties, including those to be transferred to a third party that may impact the investigators sites, if applicable.",
                             "color": "C00000",
                             "highlight": "None",
                             "style": "Instructional TExt"
