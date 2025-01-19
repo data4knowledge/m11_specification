@@ -221,6 +221,82 @@
             ]
         }
     },
+    "Sponsors Investigational Product Codes": {
+        "template": {
+            "long_name": "Enter Sponsor\u2019s Investigational Product Code(s)",
+            "short_name": "Sponsors Investigational Product Codes",
+            "original_name": "Sponsor\u2019s Investigational Product Code(s)",
+            "optional": true,
+            "section_number": null,
+            "section_title": null,
+            "instructions": [
+                "Enter the Sponsor\u2019s unique identifier for investigational compound(s) in the trial. Add fields as needed."
+            ]
+        },
+        "technical": {
+            "name": "Sponsors Investigational Product Codes",
+            "data_type": "Text",
+            "definition": "CNEW",
+            "guidance": "N/A",
+            "conformance": "Optional Required Either Sponsor Investigational Product Code or Nonproprietary Name",
+            "cardinality": "One to one; One to Heading One to Protocol Identifier",
+            "relationship": "1.1.2",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: Row title; Sponsor Protocol Identifier\nConcept:",
+            "repeating": "Yes, repeatable from Title Page Sponsor Investigational Product Code(s)\nyes, reuse for each Investigational Product",
+            "ct": []
+        }
+    },
+    "Nonproprietary Names": {
+        "template": {
+            "long_name": "Enter Nonproprietary Name(s)",
+            "short_name": "Nonproprietary Names",
+            "original_name": "Nonproprietary Name(s)",
+            "optional": true,
+            "section_number": null,
+            "section_title": null,
+            "instructions": []
+        },
+        "technical": {
+            "name": "Nonproprietary Names",
+            "data_type": "Text",
+            "definition": "C97054\nFor review purpose, see definition of the controlled terminology below\nDrug name that is not protected by a trademark, usually descriptive of its chemical structure.",
+            "guidance": "Omit nonproprietary name fields if a nonproprietary name has not yet been assigned.",
+            "conformance": "Optional; Blank",
+            "cardinality": "One to many; Many to Sponsor Investigational Product Code(s); Many to Sponsor Protocol Identifier",
+            "relationship": "Title Page",
+            "value": "Text for example WHO INN, USAN, JAN, XEVMPD",
+            "business_rules": "Value Allowed: Yes\nRelationship: Heading, Sponsor Protocol Identifier\nConcept: C97054",
+            "repeating": "Yes, repeatable for each nonproprietary name \nYes, repeatable in 1.1,2 under intervention",
+            "ct": []
+        }
+    },
+    "Proprietary Names": {
+        "template": {
+            "long_name": "Enter Proprietary Name(s)",
+            "short_name": "Proprietary Names",
+            "original_name": "Proprietary Name(s)",
+            "optional": true,
+            "section_number": null,
+            "section_title": null,
+            "instructions": [
+                "Omit nonproprietary name fields if a nonproprietary name has not yet been assigned. Omit proprietary name fields if not yet established."
+            ]
+        },
+        "technical": {
+            "name": "Proprietary Names",
+            "data_type": "Text",
+            "definition": "C71898\nFor review purpose, see definition of the controlled terminology below\nA commercial name granted by a naming authority for use in marketing an experimental intervention.",
+            "guidance": "Omit proprietary name fields if not yet established.",
+            "conformance": "Optional; Blank",
+            "cardinality": "One to many; Many to Sponsor Investigational Product Code(s); Many to Sponsor Protocol Identifier",
+            "relationship": "Title Page",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: Heading; Protocol Identifier; Sponsor Investigational Product Code(s)\nConcept: C71898",
+            "repeating": "Yes, repeatable for each proprietary name",
+            "ct": []
+        }
+    },
     "Trial Phase": {
         "template": {
             "long_name": "Trial Phase",
@@ -378,6 +454,56 @@
             "relationship": "Title Page",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: Heading, Sponsor Name\nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        }
+    },
+    "CoSponsor Name": {
+        "template": {
+            "long_name": "Enter Co-Sponsor Name",
+            "short_name": "CoSponsor Name",
+            "original_name": "Co-Sponsor Name",
+            "optional": true,
+            "section_number": null,
+            "section_title": null,
+            "instructions": []
+        },
+        "technical": {
+            "name": "CoSponsor Name",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe literal identifier (i.e. distinctive designation) of the trial co-Sponsor.",
+            "guidance": "Provide the legal name of the individual or pharmaceutical or medical device company, governmental agency, academic institution, private organisation, or other organisation who takes primary responsibility for and initiates a clinical investigation. If more than one Sponsor, list the Primary Sponsor in this field.",
+            "conformance": "Optional",
+            "cardinality": "One to one, One to Co-Sponsor Name, One to Sponsor Name; One to Sponsor Protocol Identifier",
+            "relationship": "Title Page",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: Heading, Co-Sponsor Name, Sponsor Name, Sponsor Protocol Identifier\nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        }
+    },
+    "CoSponsor Legal Address": {
+        "template": {
+            "long_name": "Enter Co-Sponsor Legal Address",
+            "short_name": "CoSponsor Legal Address",
+            "original_name": "Co-Sponsor Legal Address",
+            "optional": true,
+            "section_number": null,
+            "section_title": null,
+            "instructions": [
+                "Local Sponsor Name and Address:"
+            ]
+        },
+        "technical": {
+            "name": "CoSponsor Legal Address",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe legally registered address of the trial co-sponsor.",
+            "guidance": "Provide the legal name of the individual or pharmaceutical or medical device company, governmental agency, academic institution, private organisation, or other organisation who takes primary responsibility for and initiates a clinical investigation. If more than one Sponsor, list the Primary Sponsor in this field.",
+            "conformance": "Optional",
+            "cardinality": "One to one; One to Heading; One to Co-Sponsor Name",
+            "relationship": "Title Page",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: Heading, Co- Sponsor Name\nConcept: CNEW",
             "repeating": "No",
             "ct": []
         }
@@ -652,6 +778,56 @@
             "ct": []
         }
     },
+    "contact information for Medical Expert as designated by sponsor or state location where information can be found": {
+        "template": {
+            "long_name": "Enter contact information for Medical Expert (as designated by sponsor) or state location where information can be found",
+            "short_name": "contact information for Medical Expert as designated by sponsor or state location where information can be found",
+            "original_name": "contact information for Medical Expert (as designated by sponsor) or state location where information can be found",
+            "optional": true,
+            "section_number": null,
+            "section_title": null,
+            "instructions": []
+        },
+        "technical": {
+            "name": "contact information for Medical Expert as designated by sponsor or state location where information can be found",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe contact information for the sponsor's representative who can advise on specific trial-related medical questions or problems.",
+            "guidance": "N/A",
+            "conformance": "Optional",
+            "cardinality": "One to one; One to Sponsor Protocol Identifier",
+            "relationship": "Title Page",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: Medical Expert Contact Response\nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        }
+    },
+    "": {
+        "template": {
+            "long_name": "#/%",
+            "short_name": "",
+            "original_name": "#/%",
+            "optional": true,
+            "section_number": null,
+            "section_title": null,
+            "instructions": [
+                "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
+            ]
+        },
+        "technical": {
+            "name": "",
+            "data_type": "Number",
+            "definition": "N/A",
+            "guidance": "Add criteria as needed.  Consider numbering the criteria sequentially",
+            "conformance": "Required",
+            "cardinality": "One to many",
+            "relationship": "5.3",
+            "value": "# is an identifier <criterion identifier> unique number and not replaceable",
+            "business_rules": "Value Allowed: Yes\nRelationship: 5.3 Exclusion Criteria\nConcept: Sequential number",
+            "repeating": "Yes. number consecutively, repeatable for each exclusion criteria, if deleted do not replace, do not duplicate",
+            "ct": []
+        }
+    },
     "Amendment Summary": {
         "template": {
             "long_name": "Amendment Summary",
@@ -676,6 +852,46 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Amendment Details; Amendment Identifier, Sponsor Protocol Identifier\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        }
+    },
+    "YesNo": {
+        "template": {
+            "long_name": "Yes/No",
+            "short_name": "YesNo",
+            "original_name": "Yes/No",
+            "optional": false,
+            "section_number": null,
+            "section_title": null,
+            "instructions": []
+        },
+        "technical": {
+            "name": "YesNo",
+            "data_type": "Valid Value",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the amendment likely to have a substantial impact on the reliability and robustness of the data generated in the clinical trial.",
+            "guidance": "N/A",
+            "conformance": "Conditional : if there is an amendment",
+            "cardinality": "One to one; One to Amendment Identifier; One to Sponsor Protocol Identifier",
+            "relationship": "Amendment Details",
+            "value": "Yes (C49488), No (C49487)",
+            "business_rules": "Value Allowed: Yes\nRelationship: Amendment Details, Amendment Identifier, Sponsor Protocol Identifier\nConcept: CNEW",
+            "repeating": "No",
+            "ct": [
+                {
+                    "ncit_code": "C66742",
+                    "preferred_term": "NY",
+                    "definition": "A term that is used to indicate a question with permissible values of yes/no/unknown/not applicable."
+                },
+                {
+                    "ncit_code": "C49487",
+                    "preferred_term": "No",
+                    "definition": "The non-affirmative response to a question."
+                },
+                {
+                    "ncit_code": "C49488",
+                    "preferred_term": "Yes",
+                    "definition": "The affirmative response to a question."
+                }
+            ]
         }
     },
     "Description of Change": {
@@ -724,6 +940,811 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Table Column Heading {Brief Rationale for Change} and description of change <Description of Change> \nConcept: CNEW",
             "repeating": "Yes, repeatable for every description of change",
             "ct": []
+        }
+    },
+    "Section  and Name of Change": {
+        "template": {
+            "long_name": "Enter Section # and Name of Change",
+            "short_name": "Section  and Name of Change",
+            "original_name": "Section # and Name of Change",
+            "optional": false,
+            "section_number": "12.3",
+            "section_title": "Prior Protocol Amendment(s)",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Section  and Name of Change",
+            "data_type": "Valid Value",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe protocol section number and name containing the change introduced in the current version of the protocol.",
+            "guidance": "N/A",
+            "conformance": "Conditional: if there is a previous amendment. Table optional",
+            "cardinality": "One to Column Heading\nRow description of change \nDescription of Change, Rational for Amendment Change",
+            "relationship": "12.3",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: Description of Change Concept: CNEW",
+            "repeating": "Yes, repeatable for every Description of Change",
+            "ct": [
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "ICH M11 Protocol Number and Name Response",
+                    "definition": "A terminology value set relevant to the protocol number and name responses within the ICH M11 Protocol model."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "1 PROTOCOL SUMMARY",
+                    "definition": "Section 1 of the ICH M11 Protocol standard, PROTOCOL SUMMARY."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "1.1 Protocol Synopsis",
+                    "definition": "Section 1.1 of the ICH M11 Protocol standard, Protocol Synopsis."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "1.1.1 Primary and Secondary Objectives and Estimands",
+                    "definition": "Section 1.1.1 of the ICH M11 Protocol standard, Primary and Secondary Objectives and Estimands."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "1.1.2 Overall Design",
+                    "definition": "Section 1.1.2 of the ICH M11 Protocol standard, Overall Design."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "1.2 Trial Schema",
+                    "definition": "Section 1.2 of the ICH M11 Protocol standard, Trial Schema."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "1.3 Schedule of Activities",
+                    "definition": "Section 1.3 of the ICH M11 Protocol standard, Schedule of Activities."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "2 INTRODUCTION",
+                    "definition": "Section 2 of the ICH M11 Protocol standard, INTRODUCTION."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "2.1 Purpose of Trial",
+                    "definition": "Section 2.1 of the ICH M11 Protocol standard, Purpose of Trial."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "2.2 Assessment of Risks and Benefits",
+                    "definition": "Section 2.2 of the ICH M11 Protocol standard, Summary of Benefits and Risks."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "2.2.1  Risk Summary and Mitigation Strategy",
+                    "definition": "Section 2.2.1 of the ICH M11 Protocol standard,  Risk Summary and Mitigation Strategy."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "2.2.2 Benefit Summary",
+                    "definition": "Section 2.2.2 of the ICH M11 Protocol standard, Benefit Summary."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "2.2.3 Overall Risk-Benefit Assessment",
+                    "definition": "Section 2.2.3 of the ICH M11 Protocol standard, Overall Risk-Benefit Assessment."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "3 TRIAL OBJECTIVES AND ASSOCIATED ESTIMANDS",
+                    "definition": "Section 3 of the ICH M11 Protocol standard, TRIAL OBJECTIVES AND ASSOCIATED ESTIMANDS."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "3.1 Primary Objective(s) and Associated Estimand(s)",
+                    "definition": "Section 3.1 of the ICH M11 Protocol standard, Primary Objective(s) and Associated Estimand(s)."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "3.1.1 Primary  Objective",
+                    "definition": "Section 3.1.1 of the ICH M11 Protocol standard, Primary  Objective."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "3.2 Secondary Objective(s) and Associated Estimand(s)",
+                    "definition": "Section 3.2 of the ICH M11 Protocol standard, Secondary Objective(s) and Associated Estimand(s)."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "3.3 Exploratory Objective(s)",
+                    "definition": "Section 3.3 of the ICH M11 Protocol standard, Exploratory Objective(s)."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "4 TRIAL DESIGN",
+                    "definition": "Section 4 of the ICH M11 Protocol standard, TRIAL DESIGN."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "4.1 Description of Trial Design",
+                    "definition": "Section 4.1 of the ICH M11 Protocol standard, Description of Trial Design."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "4.1.1 Stakeholder Input into Design",
+                    "definition": "Section 4.1.1 of the ICH M11 Protocol standard, Stakeholder Input into Design."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "4.2 Rationale for Trial Design",
+                    "definition": "Section 4.2 of the ICH M11 Protocol standard, Rationale for Trial Design."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "4.2.1 Rationale for Intervention Model",
+                    "definition": "Section 4.2.1 of the ICH M11 Protocol standard, Rationale for Intervention Model."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "4.2.2 Rationale for Duration",
+                    "definition": "Section 4.2.2 of the ICH M11 Protocol standard, Rationale for Duration."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "4.2.3 Rationale for Estimands",
+                    "definition": "Section 4.2.3 of the ICH M11 Protocol standard, Rationale for Estimands."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "4.2.4 Rationale for Interim Analysis",
+                    "definition": "Section 4.2.4 of the ICH M11 Protocol standard, Rationale for Interim Analysis."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "4.2.5 Rationale for Control Type",
+                    "definition": "Section 4.2.5 of the ICH M11 Protocol standard, Rationale for Control Type."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "4.2.6 Rationale for Adaptive or Novel Trial Design",
+                    "definition": "Section 4.2.6 of the ICH M11 Protocol standard, Rationale for Adaptive or Novel Trial Design."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "4.2.7 Rationale for Other Trial Design Aspects",
+                    "definition": "Section 4.2.7 of the ICH M11 Protocol standard, Rationale for Other Trial Design Aspects."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "4.3 Trial Stopping Rules",
+                    "definition": "Section 4.3 of the ICH M11 Protocol standard, Trial Stopping Rules."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "4.4 Start of Trial and End of Trial",
+                    "definition": "Section 4.4 of the ICH M11 Protocol standard, Start of Trial and End of Trial."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "4.5 Access to Trial Intervention After End of Trial",
+                    "definition": "Section 4.5 of the ICH M11 Protocol standard, Access to Trial Intervention After End of Trial."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "5 TRIAL POPULATION",
+                    "definition": "Section 5 of the ICH M11 Protocol standard, TRIAL POPULATION."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "5.1 Description of Trial Population and Rationale",
+                    "definition": "Section 5.1 of the ICH M11 Protocol standard, Description of Trial Population and Rationale."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "5.2 Inclusion Criteria",
+                    "definition": "Section 5.2 of the ICH M11 Protocol standard, Inclusion Criteria."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "5.3 Exclusion Criteria",
+                    "definition": "Section 5.3 of the ICH M11 Protocol standard, Exclusion Criteria."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "5.4 Contraception",
+                    "definition": "Section 5.4 of the ICH M11 Protocol standard, Contraception."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "5.4.1 Definitions Related to Childbearing Potential",
+                    "definition": "Section 5.4.1 of the ICH M11 Protocol standard, Definitions Related to Childbearing Potential."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "5.4.2 Contraception Requirements",
+                    "definition": "Section 5.4.2 of the ICH M11 Protocol standard, Contraception Requirements."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "5.5 Lifestyle Restrictions",
+                    "definition": "Section 5.5 of the ICH M11 Protocol standard, Lifestyle Restrictions."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "5.5.1 Meals and Dietary Restrictions",
+                    "definition": "Section 5.5.1 of the ICH M11 Protocol standard, Contraception Requirements."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "5.5.2 Caffeine, Alcohol, Tobacco, and Other Restrictions",
+                    "definition": "Section 5.5.2 of the ICH M11 Protocol standard, Caffeine, Alcohol, Tobacco, and Other Restrictions."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "5.5.3 Physical Activity Restrictions",
+                    "definition": "Section 5.5.3 of the ICH M11 Protocol standard, Physical Activity Restrictions."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "5.5.4 Other Activity Restrictions",
+                    "definition": "Section 5.5.4 of the ICH M11 Protocol standard, Other Activity Restrictions."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "5.6 Screen Failure and Rescreening",
+                    "definition": "Section 5.6 of the ICH M11 Protocol standard, Screen Failure and Rescreening."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6 TRIAL INTERVENTION AND CONCOMITANT THERAPY",
+                    "definition": "Section 6 of the ICH M11 Protocol standard, TRIAL INTERVENTION AND CONCOMITANT THERAPY."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.1 Description of Investigational Trial Intervention",
+                    "definition": "Section 6.1 of the ICH M11 Protocol standard, Overview of Trial Interventions."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.2 Description of Investigational Trial Intervention",
+                    "definition": "Section 6.2 of the ICH M11 Protocol standard, Description of Investigational Trial Intervention."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.3 Rationale for Investigation Trial Intervention Dose and Regimen",
+                    "definition": "Section 6.3 of the ICH M11 Protocol standard, Rationale for Investigation Trial Intervention Dose and Regimen."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.4 Investigational Trial Intervention Administration",
+                    "definition": "Section 6.4 of the ICH M11 Protocol standard, Investigational Trial Intervention Administration."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.5 Investigational Trial Intervention Dose Modification",
+                    "definition": "Section 6.5 of the ICH M11 Protocol standard, Investigational Trial Intervention Dose Modification."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.6 Management of Investigational Trial Intervention Overdose",
+                    "definition": "Section 6.6 of the ICH M11 Protocol standard, Management of Investigational Trial Intervention Overdose."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.7 Preparation, Storage, Handling and Accountability of Investigational Trial Intervention(s)",
+                    "definition": "Section 6.7 of the ICH M11 Protocol standard, Preparation, Storage, Handling and Accountability of Investigational Trial Intervention(s)."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.7.1 Preparation of Investigational Trial Intervention(s)",
+                    "definition": "Section 6.7.1 of the ICH M11 Protocol standard, Preparation of Investigational Trial Intervention(s)."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.7.2 Storage and Handling of Investigational Trial Intervention",
+                    "definition": "Section 6.7.2 of the ICH M11 Protocol standard, Storage and Handling of Investigational Trial Intervention."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.7.3 Accountability of Investigational Trial Intervention",
+                    "definition": "Section 6.7.3 of the ICH M11 Protocol standard, Accountability of Investigational Trial Intervention."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.8 Investigational Trial Intervention Assignment, Randomisation and Blinding",
+                    "definition": "Section 6.8 of the ICH M11 Protocol standard, Investigational Trial Intervention Assignment, Randomisation and Blinding."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.8.1 Participant Assignment to Investigational Trial Intervention",
+                    "definition": "Section 6.8.1 of the ICH M11 Protocol standard, Participant Assignment to Investigational Trial Intervention."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.8.2 Randomisation",
+                    "definition": "Section 6.8.2 of the ICH M11 Protocol standard, Randomisation."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.8.3 Blinding",
+                    "definition": "Section 6.8.3 of the ICH M11 Protocol standard, Blinding."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.8.4 Emergency Unblinding at the Site",
+                    "definition": "Section 6.8.4 of the ICH M11 Protocol standard, Emergency Unblinding at the Site."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.9 Investigational Trial Intervention Compliance",
+                    "definition": "Section 6.9 of the ICH M11 Protocol standard, Investigational Trial Intervention Compliance."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.10 Description of Non-Investigational Trial Intervention(s)",
+                    "definition": "Section 6.1 of the ICH M11 Protocol standard, Description of Non-Investigational Trial Intervention(s)."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.10.1 Background Intervention",
+                    "definition": "Section 6.10.1 of the ICH M11 Protocol standard, Background Intervention."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.10.2 Rescue Therapy",
+                    "definition": "Section 6.10.2 of the ICH M11 Protocol standard, Rescue Therapy."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.10.3 Other Non-investigational Intervention",
+                    "definition": "Section 6.10.3 of the ICH M11 Protocol standard, Other Non-investigational Intervention."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.11 Concomitant Therapy",
+                    "definition": "Section 6.11 of the ICH M11 Protocol standard, Concomitant Therapy."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.11.1 Prohibited Concomitant Therapy",
+                    "definition": "Section 6.11.1 of the ICH M11 Protocol standard, Prohibited Concomitant Therapy."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "6.11.2 Permitted Concomitant Therapy",
+                    "definition": "Section 6.11.2 of the ICH M11 Protocol standard, Permitted Concomitant Therapy."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "7 PARTICIPANT DISCONTINUATION OF TRIAL INTERVENTION AND DISCONTINUATION OR WITHDRAWAL FROM TRIAL",
+                    "definition": "Section 7 of the ICH M11 Protocol standard, PARTICIPANT DISCONTINUATION OF TRIAL INTERVENTION AND DISCONTINUATION OR WITHDRAWAL FROM TRIAL."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "7.1 Discontinuation of Trial Intervention for Individual Participants",
+                    "definition": "Section 7.1 of the ICH M11 Protocol standard, Discontinuation of Trial Intervention for Individual Participants."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "7.1.1 Permanent Discontinuation of Trial Intervention",
+                    "definition": "Section 7.1.1 of the ICH M11 Protocol standard, Permanent Discontinuation of Trial Intervention."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "7.1.2 Temporary Discontinuation of Trial Intervention",
+                    "definition": "Section 7.1.2 of the ICH M11 Protocol standard, Temporary Discontinuation of Trial Intervention."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "7.1.3 Rechallenge",
+                    "definition": "Section 7.1.3 of the ICH M11 Protocol standard, Rechallenge."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "7.2 Discontinuation or Withdrawal from the Trial",
+                    "definition": "Section 7.2 of the ICH M11 Protocol standard, Discontinuation or Withdrawal from the Trial."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "7.3 Lost to Follow-Up",
+                    "definition": "Section 7.3 of the ICH M11 Protocol standard, Lost to Follow-Up."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "8 TRIAL ASSESSMENTS AND PROCEDURES",
+                    "definition": "Section 8 of the ICH M11 Protocol standard, TRIAL ASSESSMENTS AND PROCEDURES."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "8.1 Trial Assessments and Procedures Considerations",
+                    "definition": "Section 8.1 of the ICH M11 Protocol standard, Trial Assessments and Procedures Considerations."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "8.2 Screening/Baseline Assessments and Procedures",
+                    "definition": "Section 8.2 of the ICH M11 Protocol standard, Screening/Baseline Assessments and Procedures."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "8.3 Efficacy Assessments and Procedures",
+                    "definition": "Section 8.3 of the ICH M11 Protocol standard, Efficacy Assessments and Procedures."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "8.4 Safety Assessments and Procedures",
+                    "definition": "Section 8.4 of the ICH M11 Protocol standard, Safety Assessments and Procedures."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "8.4.1 Physical Examination",
+                    "definition": "Section 8.4.1 of the ICH M11 Protocol standard, Physical Examination."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "8.4.2 Vital Signs",
+                    "definition": "Section 8.4.2 of the ICH M11 Protocol standard, Vital Signs."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "8.4.3 Electrocardiograms",
+                    "definition": "Section 8.4.3 of the ICH M11 Protocol standard, Electrocardiograms."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "8.4.4 Clinical Laboratory Assessments",
+                    "definition": "Section 8.4.4 of the ICH M11 Protocol standard, Clinical Laboratory Assessments."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "8.4.5 Pregnancy Testing",
+                    "definition": "Section 8.4.5 of the ICH M11 Protocol standard, Pregnancy Testing."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "8.4.6 Suicidal Ideation and Behaviour Risk Monitoring",
+                    "definition": "Section 8.4.6 of the ICH M11 Protocol standard, Suicidal Ideation and Behaviour Risk Monitoring."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "8.5 Pharmacokinetics",
+                    "definition": "Section 8.5 of the ICH M11 Protocol standard, Pharmacokinetics."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "8.6 Biomarkers",
+                    "definition": "Section 8.6 of the ICH M11 Protocol standard, Biomarkers."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "8.6.1 Genetics and Pharmacogenomics",
+                    "definition": "Section 8.6.1 of the ICH M11 Protocol standard, Genetics and Pharmacogenomics."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "8.6.2 Pharmacodynamic Biomarkers",
+                    "definition": "Section 8.6.2 of the ICH M11 Protocol standard, Pharmacodynamic Biomarkers."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "8.6.3 Other Biomarkers",
+                    "definition": "Section 8.6.3 of the ICH M11 Protocol standard, Other Biomarkers."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "8.7 Immunogenicity Assessments",
+                    "definition": "Section 8.7 of the ICH M11 Protocol standard, Immunogenicity Assessments."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "8.8 Medical Resource Utilisation and Health Economics",
+                    "definition": "Section 8.8 of the ICH M11 Protocol standard, Medical Resource Utilisation and Health Economics."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "9 ADVERSE EVENTS, SERIOUS ADVERSE EVENTS, PRODUCT COMPLAINTS, PREGNANCY AND POSTPARTUM INFORMATION",
+                    "definition": "Section 9 of the ICH M11 Protocol standard, ADVERSE EVENTS, SERIOUS ADVERSE EVENTS, PRODUCT COMPLAINTS, PREGNANCY AND POSTPARTUM INFORMATION."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "9.1 Definitions",
+                    "definition": "Section 9.1 of the ICH M11 Protocol standard, Definitions."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "9.1.1 Definitions of Adverse Events",
+                    "definition": "Section 9.1.1 of the ICH M11 Protocol standard, Definitions of Adverse Events."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "9.1.2 Definitions of Serious Adverse Events",
+                    "definition": "Section 9.1.2 of the ICH M11 Protocol standard, Definitions of Serious Adverse Events."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "9.1.3 Definition of Medical Device Product Complaints",
+                    "definition": "Section 9.1.3 of the ICH M11 Protocol standard, Definition of Medical Device Product Complaints."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "9.2 Timing and Mechanism for Collection and Reporting",
+                    "definition": "Section 9.2 of the ICH M11 Protocol standard, Timing and Mechanism for Collection and Reporting."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "9.3 Identification, Recording and Follow-Up",
+                    "definition": "Section 9.3 of the ICH M11 Protocol standard, Identification, Recording and Follow-Up."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "9.3.1 Identification",
+                    "definition": "Section 9.3.1 of the ICH M11 Protocol standard, Identification."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "9.3.2 Severity",
+                    "definition": "Section 9.3.2 of the ICH M11 Protocol standard, Severity."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "9.3.3 Causality",
+                    "definition": "Section 9.3.3 of the ICH M11 Protocol standard, Causality."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "9.3.4 Follow-up",
+                    "definition": "Section 9.3.4 of the ICH M11 Protocol standard, Follow-up."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "9.4 Reporting",
+                    "definition": "Section 9.4 of the ICH M11 Protocol standard, Reporting."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "9.4.1 Regulatory Reporting Requirements",
+                    "definition": "Section 9.4.1 of the ICH M11 Protocol standard, Regulatory Reporting Requirements."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "9.4.2 Adverse Events of Special Interest",
+                    "definition": "Section 9.4.2 of the ICH M11 Protocol standard, Adverse Events of Special Interest."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "9.4.3 Disease-related Events or Outcomes Not Qualifying as AEs or SAEs",
+                    "definition": "Section 9.4.3 of the ICH M11 Protocol standard, Disease-related Events or Outcomes Not Qualifying as AEs or SAEs."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "9.5 Pregnancy and Postpartum Information",
+                    "definition": "Section 9.5 of the ICH M11 Protocol standard, Pregnancy and Postpartum Information."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "9.5.1 Participants Who Become Pregnant During the Trial",
+                    "definition": "Section 9.5.1 of the ICH M11 Protocol standard, Participants Who Become Pregnant During the Trial."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "9.5.2 Participants Whose Partners Become Pregnant",
+                    "definition": "Section 9.5.2 of the ICH M11 Protocol standard, Participants Whose Partners Become Pregnant."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10 Statistical Considerations",
+                    "definition": "Section 10 of the ICH M11 Protocol standard, Statistical Considerations."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.1 General Considerations",
+                    "definition": "Section 10.1 of the ICH M11 Protocol standard, General Considerations."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.2 Analysis Sets",
+                    "definition": "Section 10.2 of the ICH M11 Protocol standard, Analysis Sets."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.3 Analyses of Demographics and Other Baseline Variables",
+                    "definition": "Section 10.3 of the ICH M11 Protocol standard, Analyses of Demographics and Other Baseline Variables."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.4 Analyses Associated with the Primary Objective(s)",
+                    "definition": "Section 10.4 of the ICH M11 Protocol standard, Analyses Associated with the Primary Objective(s)."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.4.1 Statistical Method of Analysis",
+                    "definition": "Section 10.4.1 of the ICH M11 Protocol standard, Statistical Method of Analysis."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.4.2 Handling of Data in Relation to Primary Estimand(s)",
+                    "definition": "Section 10.4.2 of the ICH M11 Protocol standard, Handling of Data in Relation to Primary Estimand(s)."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.4.3 Handling of Missing Data",
+                    "definition": "Section 10.4.3 of the ICH M11 Protocol standard, Handling of Missing Data."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.4.4 Sensitivity Analysis",
+                    "definition": "Section 10.4.4 of the ICH M11 Protocol standard, Sensitivity Analysis."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.4.5 Supplementary Analysis",
+                    "definition": "Section 10.4.5 of the ICH M11 Protocol standard, Supplementary Analysis."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.5 Analysis Associated with the Secondary Objective(s)",
+                    "definition": "Section 10.5 of the ICH M11 Protocol standard, Analysis Associated with the Secondary Objective(s)."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.5.1 Statistical Method of Analysis",
+                    "definition": "Section 10.5.1 of the ICH M11 Protocol standard, Statistical Method of Analysis."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.5.2 Handling of Data in Relation to Secondary Estimand(s)",
+                    "definition": "Section 10.5.2 of the ICH M11 Protocol standard, Handling of Data in Relation to Secondary Estimand(s)."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.5.3 Handling of Missing Data in Relation to Secondary Estimand(s)",
+                    "definition": "Section 10.5.3 of the ICH M11 Protocol standard, Handling of Missing Data in Relation to Secondary Estimand(s)."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.5.4 Sensitivity Analyses",
+                    "definition": "Section 10.5.4 of the ICH M11 Protocol standard, Sensitivity Analyses."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.5.5 Supplementary Analyses",
+                    "definition": "Section 10.5.5 of the ICH M11 Protocol standard, Supplementary Analyses."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.6 Analysis Associated with the Exploratory Objective(s)",
+                    "definition": "Section 10.6 of the ICH M11 Protocol standard, Analysis Associated with the Exploratory Objective(s)."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.7 Safety Analyses",
+                    "definition": "Section 10.7 of the ICH M11 Protocol standard, Safety Analyses."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.8 Other Analyses",
+                    "definition": "Section 10.8 of the ICH M11 Protocol standard, Other Analyses."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.9 Interim Analyses",
+                    "definition": "Section 10.9 of the ICH M11 Protocol standard, Interim Analyses."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.10 Multiplicity Adjustments",
+                    "definition": "Section 10.1 of the ICH M11 Protocol standard, Multiplicity Adjustments."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "10.11 Sample Size Determination",
+                    "definition": "Section 10.11 of the ICH M11 Protocol standard, Sample Size Determination."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "11 TRIAL OVERSIGHT AND OTHER GENERAL CONSIDERATIONS",
+                    "definition": "Section 11 of the ICH M11 Protocol standard, TRIAL OVERSIGHT AND OTHER GENERAL CONSIDERATIONS."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "11.1 Regulatory and Ethical Considerations",
+                    "definition": "Section 11.1 of the ICH M11 Protocol standard, Regulatory and Ethical Considerations."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "11.2 Trial Oversight",
+                    "definition": "Section 11.2 of the ICH M11 Protocol standard, Trial Oversight."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "11.2.1 Investigator Responsibilities",
+                    "definition": "Section 11.2.1 of the ICH M11 Protocol standard, Investigator Responsibilities."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "11.2.2 Sponsor Responsibilities",
+                    "definition": "Section 11.2.2 of the ICH M11 Protocol standard, Sponsor Responsibilities."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "11.3 Informed Consent Process",
+                    "definition": "Section 11.3 of the ICH M11 Protocol standard, Informed Consent Process."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "11.3.1 Informed Consent for Rescreening",
+                    "definition": "Section 11.3.1 of the ICH M11 Protocol standard, Informed Consent for Rescreening."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "11.3.2 Informed Consent for Use of Remaining Samples in Exploratory Research",
+                    "definition": "Section 11.3.2 of the ICH M11 Protocol standard, Informed Consent for Use of Remaining Samples in Exploratory Research."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "11.4 Committees",
+                    "definition": "Section 11.4 of the ICH M11 Protocol standard, Committees."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "11.5 Insurance and Indemnity",
+                    "definition": "Section 11.5 of the ICH M11 Protocol standard, Insurance and Indemnity."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "11.6 Risk-Based Quality Management",
+                    "definition": "Section 11.5 of the ICH M11 Protocol standard, Risk Management."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "11.7 Data Governance",
+                    "definition": "Section 11.7 of the ICH M11 Protocol standard, Data Governance."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "11.8 Data Protection",
+                    "definition": "Section 11.8 of the ICH M11 Protocol standard, Data Protection"
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "11.9 Source Data",
+                    "definition": "Section 11.9 of the ICH M11 Protocol standard, Source Data."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "11.10 Protocol Deviations",
+                    "definition": "Section 11.10 of the ICH M11 Protocol standard, Protocol Deviations."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "11.11 Early Site Closure",
+                    "definition": "Section 11.1 of the ICH M11 Protocol standard, Early Site Closure."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "12 APPENDIX: SUPPORTING DETAILS",
+                    "definition": "Section 12 of the ICH M11 Protocol standard, APPENDIX: SUPPORTING DETAILS."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "12.1 Clinical Laboratory Tests",
+                    "definition": "Section 12.1 of the ICH M11 Protocol standard, Clinical Laboratory Tests."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "12.2 Country/Region-Specific Differences",
+                    "definition": "Section 12.2 of the ICH M11 Protocol standard, Country/Region-Specific Differences."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "12.3 Prior Protocol Amendment(s)",
+                    "definition": "Section 12.3 of the ICH M11 Protocol standard, Prior Protocol Amendment(s)."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "13 APPENDIX: GLOSSARY OF TERMS AND ABBREVIATIONS",
+                    "definition": "Section 13 of the ICH M11 Protocol standard, APPENDIX: GLOSSARY OF TERMS AND ABBREVIATIONS."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "14 APPENDIX: REFERENCES",
+                    "definition": "Section 14 of the ICH M11 Protocol standard, APPENDIX: REFERENCES."
+                }
+            ]
         }
     },
     "Primary and Secondary Objectives and Estimands": {
@@ -908,6 +1929,30 @@
             "ct": []
         }
     },
+    "Not applicable": {
+        "template": {
+            "long_name": "Enter \u201cNot applicable\u201d",
+            "short_name": "Not applicable",
+            "original_name": "\u201cNot applicable\u201d",
+            "optional": false,
+            "section_number": "1.1.2",
+            "section_title": "Overall Design",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Not applicable",
+            "data_type": "Universal Text",
+            "definition": "",
+            "guidance": "N/A",
+            "conformance": "Optional: if there are no Country/Region Specific Differences",
+            "cardinality": "One to one",
+            "relationship": "12.2",
+            "value": "Not applicable",
+            "business_rules": "Value Allowed: Yes\nRelationship: 12.2 Country/Region-Specific Differences\nConcept: Universal Text",
+            "repeating": "No",
+            "ct": []
+        }
+    },
     "Site geographic scope": {
         "template": {
             "long_name": "Site geographic scope",
@@ -1024,6 +2069,30 @@
                     "definition": "A study in which one party, either the subject or study personnel, does not know which intervention is administered to the subject."
                 }
             ]
+        }
+    },
+    "TargetMaximum": {
+        "template": {
+            "long_name": "Target/Maximum",
+            "short_name": "TargetMaximum",
+            "original_name": "Target/Maximum",
+            "optional": false,
+            "section_number": "1.1.2",
+            "section_title": "Overall Design",
+            "instructions": []
+        },
+        "technical": {
+            "name": "TargetMaximum",
+            "data_type": "Valid Value",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA characterisation or classification of the trial participant numbers as to whether the numbers reflect a target or maximum.",
+            "guidance": "State the expected number of participants to be assigned to trial intervention/enrolled. Indicate whether the number provided is the target or maximum number of individuals to be randomly assigned to trial intervention/enrolled.",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "1.1.2",
+            "value": "A (choose Target/Maximum) of",
+            "business_rules": "Value Allowed: Universal Text and Yes\nRelationship: Heading; Sponsor Protocol Identifier  \nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
         }
     },
     "Number of Participants": {
@@ -1301,6 +2370,82 @@
             "ct": []
         }
     },
+    "Trialspecific Intervention Risks and Mitigations": {
+        "template": {
+            "long_name": "Enter Trial-specific Intervention Risks and Mitigations",
+            "short_name": "Trialspecific Intervention Risks and Mitigations",
+            "original_name": "Trial-specific Intervention Risks and Mitigations",
+            "optional": true,
+            "section_number": "2.2.1",
+            "section_title": "Risk Summary and Mitigation Strategy",
+            "instructions": [
+                "Trial Procedures \u2013 Describe risks associated with the design (e.g., placebo arm) and procedures specific to this trial (e.g., biopsies), and any measures to control or mitigate the risks. Provide a brief description of strategies to mitigate identified risks or provide a cross reference to the relevant protocol section. This is not intended to be an exhaustive list of all possible risks associated with trial procedures but should focus on the unique risks inherent in the design or less common or high-risk procedures. As above, provide a brief description of strategies to mitigate identified risks or provide a cross reference to the relevant protocol section."
+            ]
+        },
+        "technical": {
+            "name": "Trialspecific Intervention Risks and Mitigations",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of the potential risks associated with the trial interventions and mitigation strategies to be employed within the trial.",
+            "guidance": "Trial Intervention \u2013 Describe risks related to trial-specific treatments and interventions. For the protocol, focus on the relevant key risks for THIS trial. Provide a brief description of strategies to mitigate identified risks or provide a cross-reference to the relevant protocol section.",
+            "conformance": "Optional",
+            "cardinality": "One to one",
+            "relationship": "2.2.1",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 2.2.1 Risk Summary and Mitigation Strategy\nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        }
+    },
+    "Trialspecific Procedure Risks and Mitigations": {
+        "template": {
+            "long_name": "Enter Trial-specific Procedure Risks and Mitigations",
+            "short_name": "Trialspecific Procedure Risks and Mitigations",
+            "original_name": "Trial-specific Procedure Risks and Mitigations",
+            "optional": true,
+            "section_number": "2.2.1",
+            "section_title": "Risk Summary and Mitigation Strategy",
+            "instructions": [
+                "Other \u2013 Consider risks associated with other items (e.g., challenge agents, imaging agents, medical devices). This could include discussion of risk mitigation for special populations, if not described elsewhere. Insert a line for each, as needed."
+            ]
+        },
+        "technical": {
+            "name": "Trialspecific Procedure Risks and Mitigations",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of the potential risks associated with the trial procedures and mitigation strategies to be employed within the trial.",
+            "guidance": "Trial Procedures \u2013 Describe risks associated with the design (e.g., placebo arm) and procedures specific to this trial (e.g., biopsies), and any measures to control or mitigate the risks. Provide a brief description of strategies to mitigate identified risks or provide a cross-reference to the relevant protocol section. This is not intended to be an exhaustive list of all possible risks associated with trial procedures but should focus on the unique risks inherent in the design or less common or high-risk procedures. As above, provide a brief description of strategies to mitigate identified risks or provide a cross-reference to the relevant protocol section.",
+            "conformance": "Optional",
+            "cardinality": "One to one",
+            "relationship": "2.2.1",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 2.2.1 Risk Summary and Mitigation Strategy\nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        }
+    },
+    "Trialspecific Other Risks and Mitigations": {
+        "template": {
+            "long_name": "Enter Trial-specific Other Risks and Mitigations",
+            "short_name": "Trialspecific Other Risks and Mitigations",
+            "original_name": "Trial-specific Other Risks and Mitigations",
+            "optional": true,
+            "section_number": "2.2.1",
+            "section_title": "Risk Summary and Mitigation Strategy",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Trialspecific Other Risks and Mitigations",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of the potential risks associated with other trial-related agents and mitigation strategies to be employed within the trial.",
+            "guidance": "Other \u2013 Consider risks associated with other items (e.g., challenge agents, imaging agents, medical devices). This could include discussion of risk mitigation for special populations, if not described elsewhere. Insert a line for each, as needed.",
+            "conformance": "Optional",
+            "cardinality": "One to one",
+            "relationship": "2.2.1",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 2.2.1 Risk Summary and Mitigation Strategy\nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        }
+    },
     "Benefit Summary": {
         "template": {
             "long_name": "Enter Benefit Summary",
@@ -1321,6 +2466,30 @@
             "relationship": "2.2.2",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 2.2.2 Benefit Summary\nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        }
+    },
+    "Overall RiskBenefit Assessment": {
+        "template": {
+            "long_name": "Enter Overall Risk-Benefit Assessment",
+            "short_name": "Overall RiskBenefit Assessment",
+            "original_name": "Overall Risk-Benefit Assessment",
+            "optional": false,
+            "section_number": "2.2.3",
+            "section_title": "Overall Risk-Benefit Assessment",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Overall RiskBenefit Assessment",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA short textual description containing the risks and benefits associated with participation in the trial.",
+            "guidance": "Provide a succinct, concluding statement on the perceived balance between risks that have been identified from cumulative safety data, protocol procedures, and anticipated efficacy/benefits within the context of the proposed trial.",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "2.2.3",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 2.2.3 Overall Risk-Benefit Assessment OR 2.2 Assessment of Risks and Benefits (when the Optional Level 3 subheading (2.2.3) is not used)\nIf the Optional Level 3 subheadings (2.2.1, 2.2.2, 2.2.3) are not used, the user guidance below Section 2.2 applies.\nConcept: CNEW",
             "repeating": "No",
             "ct": []
         }
@@ -1671,6 +2840,30 @@
             "ct": []
         }
     },
+    "Rationale for Estimands": {
+        "template": {
+            "long_name": "Enter Rationale for Estimand(s)",
+            "short_name": "Rationale for Estimands",
+            "original_name": "Rationale for Estimand(s)",
+            "optional": false,
+            "section_number": "4.2.1",
+            "section_title": "Rationale for Estimand(s)",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Rationale for Estimands",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn explanation as to the scientific reasons for the choice of the trial estimand features.",
+            "guidance": "When estimands are associated with the Primary and Secondary Objectives described in Section 3 Trial Objectives and Associated Estimands, provide a rationale for the estimand not described elsewhere in the document. This should include a rationale that the selected endpoint(s) are clinically relevant and provide a reliable and valid measurement of the intended intervention effect. It should also include a rationale for the selected strategies for handling intercurrent events.",
+            "conformance": "Conditional: when<Overall Rationale for Trial Design> is not used",
+            "cardinality": "One to one",
+            "relationship": "4.2.1",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 4.2.1 Rationale for Estimand(s)\nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        }
+    },
     "Rationale for Control Type": {
         "template": {
             "long_name": "Enter Rationale for Control Type",
@@ -1911,6 +3104,54 @@
             "ct": []
         }
     },
+    "Definitions Related to Childbearing Potential": {
+        "template": {
+            "long_name": "Enter Definitions Related to Childbearing Potential ",
+            "short_name": "Definitions Related to Childbearing Potential",
+            "original_name": "Definitions Related to Childbearing Potential ",
+            "optional": false,
+            "section_number": "5.4.1",
+            "section_title": "Definitions Related to Childbearing Potential",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Definitions Related to Childbearing Potential",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA concise explanation of the meaning of participants of childbearing potential and non-childbearing potential within the context of a trial, or state not applicable.",
+            "guidance": "Specify the definitions of:\nparticipant of childbearing potential\nparticipant of nonchildbearing potential",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "5.4.1",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 5.4.1 Definitions Related to Childbearing Potential\nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        }
+    },
+    "Contraception Requirements": {
+        "template": {
+            "long_name": "Enter Contraception Requirements.",
+            "short_name": "Contraception Requirements",
+            "original_name": "Contraception Requirements.",
+            "optional": false,
+            "section_number": "5.4.2",
+            "section_title": "Contraception Requirements",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Contraception Requirements",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of the requirements for the prevention of conception or impregnation by the use of devices or drugs or surgery within a context of a trial l, or state not applicable.",
+            "guidance": "Specify the: \ncontraceptive methods required \nduration of use",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "5.4",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 5.4.2 Contraception requirements\nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        }
+    },
     "Lifestyle Restrictions": {
         "template": {
             "long_name": "Enter Lifestyle Restrictions",
@@ -1955,6 +3196,30 @@
             "relationship": "5.5.1",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 5.5.1 Meals and Dietary Restrictions\nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        }
+    },
+    "Caffeine Alcohol Tobacco and Other Restrictions": {
+        "template": {
+            "long_name": "Enter Caffeine, Alcohol, Tobacco, and Other Restrictions",
+            "short_name": "Caffeine Alcohol Tobacco and Other Restrictions",
+            "original_name": "Caffeine, Alcohol, Tobacco, and Other Restrictions",
+            "optional": false,
+            "section_number": "5.5.2",
+            "section_title": "Caffeine, Alcohol, Tobacco, and Other Restrictions",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Caffeine Alcohol Tobacco and Other Restrictions",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of the restrictions related to participant intake of caffeine, alcohol, tobacco, and other habit-forming substances during the trial.",
+            "guidance": "If applicable, describe any restrictions on the intake of caffeine, alcohol, tobacco, or other restrictions.",
+            "conformance": "Optional",
+            "cardinality": "One to one",
+            "relationship": "5.5.2",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 5.2.2 Caffeine, Alcohol, Tobacco, and Other Restrictions\nConcept: CNEW",
             "repeating": "No",
             "ct": []
         }
@@ -2103,6 +3368,54 @@
             "ct": []
         }
     },
+    "Dosage Strengths": {
+        "template": {
+            "long_name": "Enter Dosage Strength(s)",
+            "short_name": "Dosage Strengths",
+            "original_name": "Dosage Strength(s)",
+            "optional": true,
+            "section_number": "6",
+            "section_title": "Trial Intervention And Concomitant Therapy",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Dosage Strengths",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe strength of a drug product, which indicates the amount of each active ingredient in a given dosage form, measured in units of volume or concentration.",
+            "guidance": "N/A",
+            "conformance": "Optional: if the table used",
+            "cardinality": "One to each dosage formulation",
+            "relationship": "Trial Intervention and Concomitant Therapy",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: arm name and dose strength, 6 Trial Intervention and Concomitant Therapy\nConcept: CNEW",
+            "repeating": "Yes, repeatable for each intervention and formulation per arm name and arm type",
+            "ct": []
+        }
+    },
+    "Dosage Levels": {
+        "template": {
+            "long_name": "Enter Dosage Level(s)",
+            "short_name": "Dosage Levels",
+            "original_name": "Dosage Level(s)",
+            "optional": true,
+            "section_number": "6",
+            "section_title": "Trial Intervention And Concomitant Therapy",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Dosage Levels",
+            "data_type": "Text",
+            "definition": "C94394\nFor review purpose, see definition of the controlled terminology below\nSpecified quantity of a medicine, to be taken at one time or at stated intervals. [ISO 11615:2012 Health Informatics]",
+            "guidance": "N/A",
+            "conformance": "Optional: if the table used",
+            "cardinality": "One to each intervention and dosage formulation",
+            "relationship": "6",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: arm name and dose level\nConcept: C94394",
+            "repeating": "Yes, repeatable for each intervention, dose formulation, dosage strength and dosage level per arm",
+            "ct": []
+        }
+    },
     "Description of Investigational Trial Intervention": {
         "template": {
             "long_name": "Enter Description of Investigational Trial Intervention",
@@ -2219,6 +3532,30 @@
             "relationship": "6.5",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 6.5 Management of Investigational Trial Intervention Overdose\nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        }
+    },
+    "Preparation of Investigational Trial Intervention": {
+        "template": {
+            "long_name": "Enter Preparation of Investigational Trial Intervention ",
+            "short_name": "Preparation of Investigational Trial Intervention",
+            "original_name": "Preparation of Investigational Trial Intervention ",
+            "optional": false,
+            "section_number": "6.6.1",
+            "section_title": "{Preparation of Investigational Trial Intervention}",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Preparation of Investigational Trial Intervention",
+            "data_type": "Text",
+            "definition": "C176274\nFor review purpose, see definition of the controlled terminology below\nThe way in which the investigational trial intervention is prepared for use or administration to the study participant.",
+            "guidance": "Describe any preparation of the investigational trial intervention, and when necessary, by whom. When applicable, describe the maximum hold time once thawed/mixed before administration. Include thawing, diluting, mixing, and reconstitution/preparation instructions. For drug/device combination products, include any relevant assembly or use instructions and reference the package insert that is provided separately.\u00a0\nIf the instructions are lengthy or complicated, it is acceptable to reference the package insert (if applicable) or include instructions in a separate document(s) provided to the site (for example, a pharmacy manual). If the latter, reference the separate documents.",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "6.6.1",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 6.6.1 Preparation of Investigational Trial Intervention\nConcept: C176274",
             "repeating": "No",
             "ct": []
         }
@@ -2603,6 +3940,30 @@
             "relationship": "7.2",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 7.2 Participants Discontinuation or Withdrawal from the Trial\nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        }
+    },
+    "Management of Loss to FollowUp": {
+        "template": {
+            "long_name": "Enter Management of Loss to Follow-Up",
+            "short_name": "Management of Loss to FollowUp",
+            "original_name": "Management of Loss to Follow-Up",
+            "optional": false,
+            "section_number": "7.3",
+            "section_title": "Management of Loss to Follow-Up",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Management of Loss to FollowUp",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe mitigation strategies to be employed for the loss or lack of continuation of a participant to follow-up, including the frequency by which follow-up occurs.",
+            "guidance": "Describe how the trial will define how participants are lost to follow-up. In general, participants should be considered lost to follow-up only if they cannot be reached despite multiple attempts to contact. Also describe approaches that will be used to minimise loss to follow-up, such as multiple, diverse methods to remain in contact with participants (e.g., telephone calls, texts, and emails to the participant) and how contacts will be recorded.",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "7.3",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 7.3 Management of Loss to Follow-up\nConcept: CNEW",
             "repeating": "No",
             "ct": []
         }
@@ -3378,6 +4739,30 @@
             "ct": []
         }
     },
+    "Followup": {
+        "template": {
+            "long_name": "Enter Follow-up",
+            "short_name": "Followup",
+            "original_name": "Follow-up",
+            "optional": false,
+            "section_number": "9.2.2",
+            "section_title": "Collection Procedures",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Followup",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of the procedures for follow-up, including the assessment tools that will be used to monitor an event and the duration of follow-up.",
+            "guidance": "Specify the procedures for follow-up. Include the assessment tools that will be used to monitor the events and the duration of follow-up after appearance of the events.",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "9.2.2",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: Follow-up and 9.2.2 Collection Procedures\nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        }
+    },
     "Reporting": {
         "template": {
             "long_name": "Enter Reporting",
@@ -3570,6 +4955,30 @@
             "ct": []
         }
     },
+    "Handling of Data in Relation to Primary Estimands": {
+        "template": {
+            "long_name": "Enter Handling of Data in Relation to Primary Estimand(s)",
+            "short_name": "Handling of Data in Relation to Primary Estimands",
+            "original_name": "Handling of Data in Relation to Primary Estimand(s)",
+            "optional": false,
+            "section_number": "10.4.1.2",
+            "section_title": "Handling of Data in Relation to Primary Estimand(s)",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Handling of Data in Relation to Primary Estimands",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of how data will be handled for the statistical analysis in line with the primary estimand.",
+            "guidance": "For each intercurrent event of the primary estimand(s) (Section 3.1, Estimand(s) for the Primary Objective(s)), explain how data will be handled for the statistical analysis in line with the primary estimand. The handling of intercurrent events in statistical analysis should be aligned with the specific estimand strategies being used.\nThis section should describe with more detail the rationale and handling of the data rather than repeating the guidance from the preceding sections.",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "10.4.X.2 Handling of Data in relation to Primary Estimand(s)",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 10.4.X.2 Handling of Data in relation to Primary Estimand(s)\nConcept: CNEW",
+            "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.4.X.1, 10.4.X.2, 10.4.X.3, 10.4.X.4, 10.4.X.5).",
+            "ct": []
+        }
+    },
     "Sensitivity Analysis": {
         "template": {
             "long_name": "Enter Sensitivity Analysis",
@@ -3614,6 +5023,54 @@
             "relationship": "10.5.X.5",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 10.5.X.5 Supplementary Analysis\nConcept: CNEW",
+            "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
+            "ct": []
+        }
+    },
+    "Handling of Data in Relation to Secondary Estimands": {
+        "template": {
+            "long_name": "Enter Handling of Data in Relation to Secondary Estimand(s)",
+            "short_name": "Handling of Data in Relation to Secondary Estimands",
+            "original_name": "Handling of Data in Relation to Secondary Estimand(s)",
+            "optional": false,
+            "section_number": "10.5.1.2",
+            "section_title": "{Handling of Data in Relation to Secondary Estimand(s)}",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Handling of Data in Relation to Secondary Estimands",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of how data will be handled for the statistical analysis in line with the Secondary estimand.",
+            "guidance": "For each intercurrent event of the Secondary estimand(s) (Section 3.1, Estimand(s) for the Secondary Objective(s)), explain how data will be handled for the statistical analysis in line with the Secondary estimand. The handling of intercurrent events in statistical analysis should be aligned with the specific estimand strategies being used.\nThis section should describe with more detail the rationale and handling of the data rather than repeating the guidance from the preceding sections.",
+            "conformance": "Conditional: when there is Secondary estimand",
+            "cardinality": "One to one",
+            "relationship": "10.5.X.2",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship:10.5.X.2 Handling of Data in relation to Secondary Estimand(s)\nConcept: CNEW",
+            "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
+            "ct": []
+        }
+    },
+    "Handling of Missing Data in Relation to Secondary Estimands": {
+        "template": {
+            "long_name": "Enter Handling of Missing Data in Relation to Secondary Estimand(s)",
+            "short_name": "Handling of Missing Data in Relation to Secondary Estimands",
+            "original_name": "Handling of Missing Data in Relation to Secondary Estimand(s)",
+            "optional": false,
+            "section_number": "10.5.1.3",
+            "section_title": "{Handling of Missing Data in Relation to Secondary Estimand(s)}",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Handling of Missing Data in Relation to Secondary Estimands",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of how missing data associated with the Secondary estimand will be handled, including the rationale for the approach.",
+            "guidance": "Describe how missing data will be addressed (e.g., imputation method and model), state the underlying assumptions, and provide a rationale for the approach.",
+            "conformance": "Conditional: when there is Secondary estimand",
+            "cardinality": "One to one",
+            "relationship": "10.5.X.3",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 10.5.X.3 Handling of Missing Data in Relation to Secondary Estimand(s)\nConcept: CNEW",
             "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
             "ct": []
         }
@@ -3758,6 +5215,32 @@
             "relationship": "11.1",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 11.1 Regulatory and Ethical Considerations\nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        }
+    },
+    "Trial Oversight": {
+        "template": {
+            "long_name": "Enter Trial Oversight ",
+            "short_name": "Trial Oversight",
+            "original_name": "Trial Oversight ",
+            "optional": false,
+            "section_number": "11.2",
+            "section_title": "Trial Oversight",
+            "instructions": [
+                "OR"
+            ]
+        },
+        "technical": {
+            "name": "Trial Oversight",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of the planned processes and procedures to govern and conduct a clinical trial in order to protect the rights, safety and welfare of the trial participants.",
+            "guidance": "Concisely summarize the trial oversight listing the investigator and sponsor responsibilities not covered in other sections of the protocol which are essential for the operations of the trial, specifying the ones related to quality assurance.\nif not using below optional subheadings",
+            "conformance": "Conditional: if not using the optional subheadings Level 3 (11.2.1, 11.2.2)",
+            "cardinality": "One to one",
+            "relationship": "11.2",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 11.2 Trial Oversight\nConcept: CNEW",
             "repeating": "No",
             "ct": []
         }
@@ -3976,6 +5459,30 @@
             "relationship": "11.5",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 11.5 Insurance and Indemnity\nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        }
+    },
+    "RiskBased Quality Management": {
+        "template": {
+            "long_name": "Enter Risk-Based Quality Management",
+            "short_name": "RiskBased Quality Management",
+            "original_name": "Risk-Based Quality Management",
+            "optional": false,
+            "section_number": "11.6",
+            "section_title": "Risk-Based Quality Management",
+            "instructions": []
+        },
+        "technical": {
+            "name": "RiskBased Quality Management",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of how potential risks and critical to quality factors associated with the trial will be identified and handled.",
+            "guidance": "Describe the identified critical to quality factors, associated risks and risk mitigation strategies in the trial or refer to a separate document where this is described.",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "11.6",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 11.6 Risk-Based Quality Management\nConcept: CNEW",
             "repeating": "No",
             "ct": []
         }
@@ -4293,6 +5800,30 @@
             "value": "Date",
             "business_rules": "Value Allowed: Yes\nRelationship: {The Overview of Changes from each prior protocol amendment is {provided below} or <specify alternative location>}.\nConcept: CNEW",
             "repeating": "Yes, repeatable one table per amendment",
+            "ct": []
+        }
+    },
+    "or  enrolled globallylocallyper cohort": {
+        "template": {
+            "long_name": "Enter # or % enrolled globally/locally/per cohort",
+            "short_name": "or  enrolled globallylocallyper cohort",
+            "original_name": "# or % enrolled globally/locally/per cohort",
+            "optional": true,
+            "section_number": "12.3",
+            "section_title": "Prior Protocol Amendment(s)",
+            "instructions": []
+        },
+        "technical": {
+            "name": "or  enrolled globallylocallyper cohort",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage. The numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage.",
+            "guidance": "",
+            "conformance": "Optional: when there is an amendment and sponsor chooses",
+            "cardinality": "One to one",
+            "relationship": "12.3",
+            "value": "<# or %> enrolled <globally/locally/per cohort>",
+            "business_rules": "Value Allowed: Yes\nRelationship: Document, Sponsor Approval Date\nConcept: CNEW",
+            "repeating": "Yes, reuse from the title page",
             "ct": []
         }
     },

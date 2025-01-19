@@ -2,6 +2,7 @@ import re
 import yaml
 from pathlib import Path
 from raw_docx import RawDocx, RawDocument, RawParagraph, RawTable, RawSection
+from m11_template.m11_utility import clean_element_name
 
 
 class M11Template:
@@ -121,7 +122,7 @@ class M11Template:
                 confirmed_elements.append(
                     {
                         "long_name": element,
-                        "short_name": short_name,
+                        "short_name": clean_element_name(short_name),
                         "original_name": short_name,
                         "optional": optional,
                         "section_number": section.number,

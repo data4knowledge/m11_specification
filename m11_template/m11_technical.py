@@ -1,8 +1,7 @@
-import re
 import yaml
 from pathlib import Path
 from raw_docx import RawDocx, RawDocument, RawParagraph, RawTable, RawSection, RawTableRow
-
+from m11_template.m11_utility import clean_element_name
 
 class M11Technical:
     def __init__(self, filepath: str):
@@ -73,7 +72,7 @@ class M11Technical:
         data_element = None
         if len(table.rows) >= 10:
             data_element = {
-                "name": self._clean_element_name(self._row_cell_text(table.rows[0], 1)),
+                "name": clean_element_name(self._row_cell_text(table.rows[0], 1)),
                 "data_type": self._row_cell_text(table.rows[1], 1).strip(),
                 "definition": self._row_cell_text(table.rows[3], 1).strip(),
                 "guidance": self._row_cell_text(table.rows[4], 1).strip(),
@@ -130,8 +129,4 @@ class M11Technical:
                 return cell.text()
         return ""
 
-    def _clean_element_name(self, element_name: str) -> str:
-        """
-        Clean the element name. Remove any non-alphanumeric characters.
-        """
-        return re.sub(r'[^a-zA-Z0-9 ]', '', element_name).strip()
+
