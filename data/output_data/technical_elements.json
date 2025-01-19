@@ -432,19 +432,6 @@
         "repeating": "No",
         "ct": []
     },
-    "WHOUTN Number": {
-        "name": "WHOUTN Number",
-        "data_type": "Text",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA sequence of characters used to identify a clinical trial, as assigned by the World Health Organisation's International Clinical Trial's Registry Platform (ICTRP).",
-        "guidance": "Include all numbers that are applicable for the trial and available at the time of protocol or amendment finalisation. Delete prompts for numbers not available at the time of document finalisation. Delete unused fields. Add fields for \u201cother\u201d if more than one is needed.",
-        "conformance": "Optional",
-        "cardinality": "One to one; One to Protocol Identifier",
-        "relationship": "Title Page ",
-        "value": "UTN/WHO: Uxxxx-xxxx-xxxx with X being an integer",
-        "business_rules": "Value Allowed: Yes; \nRelationship: Heading; Protocol Identifier; \nConcept: CNEW",
-        "repeating": "No",
-        "ct": []
-    },
     "Other Regulatory Identifier": {
         "name": "Other Regulatory Identifier",
         "data_type": "Text",
@@ -2990,35 +2977,6 @@
             }
         ]
     },
-    "IMPNIMP": {
-        "name": "IMPNIMP",
-        "data_type": "Valid value",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the investigational intervention is an investigational medicinal product or an auxiliary medicinal product.",
-        "guidance": "N/A",
-        "conformance": "Optional: if the table used",
-        "cardinality": "One to each intervention",
-        "relationship": "6",
-        "value": "IMP(CNEW), NIMP(C156473)",
-        "business_rules": "Value Allowed: Yes\nRelationship: One per each intervention \nConcept: CNEW",
-        "repeating": "Yes, repeatable for each intervention per arm",
-        "ct": [
-            {
-                "ncit_code": "CNEW",
-                "preferred_term": "ICH M11 Investigational Medicinal Product Indicator Response",
-                "definition": "A terminology value set relevant to the investigational medicinal product indicator responses within the ICH M11 Protocol model."
-            },
-            {
-                "ncit_code": "CNEW",
-                "preferred_term": "IMP",
-                "definition": "A medicinal product which is being tested or used as a reference, including as a placebo, in a clinical trial."
-            },
-            {
-                "ncit_code": "C156473",
-                "preferred_term": "NIMP (AxMP)",
-                "definition": "A medicinal product that is related to the specific needs of the clinical trial as described in the protocol, but not as an investigational medicinal product."
-            }
-        ]
-    },
     "Sourcing": {
         "name": "Sourcing",
         "data_type": "Valid Value",
@@ -4588,5 +4546,49 @@
         "business_rules": "Value Allowed: Yes\nRelationship: 14 APPENDIX: REFERENCES\nConcept: C184397",
         "repeating": "No",
         "ct": []
+    },
+    "IMP or NIMP": {
+        "name": "IMPNIMP",
+        "data_type": "Valid value",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the investigational intervention is an investigational medicinal product or an auxiliary medicinal product.",
+        "guidance": "N/A",
+        "conformance": "Optional: if the table used",
+        "cardinality": "One to each intervention",
+        "relationship": "6",
+        "value": "IMP(CNEW), NIMP(C156473)",
+        "business_rules": "Value Allowed: Yes\nRelationship: One per each intervention \nConcept: CNEW",
+        "repeating": "Yes, repeatable for each intervention per arm",
+        "ct": [
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "ICH M11 Investigational Medicinal Product Indicator Response",
+                "definition": "A terminology value set relevant to the investigational medicinal product indicator responses within the ICH M11 Protocol model."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "IMP",
+                "definition": "A medicinal product which is being tested or used as a reference, including as a placebo, in a clinical trial."
+            },
+            {
+                "ncit_code": "C156473",
+                "preferred_term": "NIMP (AxMP)",
+                "definition": "A medicinal product that is related to the specific needs of the clinical trial as described in the protocol, but not as an investigational medicinal product."
+            }
+        ],
+        "short_name": "IMP or NIMP"
+    },
+    "WHO UTN Number": {
+        "name": "WHOUTN Number",
+        "data_type": "Text",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA sequence of characters used to identify a clinical trial, as assigned by the World Health Organisation's International Clinical Trial's Registry Platform (ICTRP).",
+        "guidance": "Include all numbers that are applicable for the trial and available at the time of protocol or amendment finalisation. Delete prompts for numbers not available at the time of document finalisation. Delete unused fields. Add fields for \u201cother\u201d if more than one is needed.",
+        "conformance": "Optional",
+        "cardinality": "One to one; One to Protocol Identifier",
+        "relationship": "Title Page ",
+        "value": "UTN/WHO: Uxxxx-xxxx-xxxx with X being an integer",
+        "business_rules": "Value Allowed: Yes; \nRelationship: Heading; Protocol Identifier; \nConcept: CNEW",
+        "repeating": "No",
+        "ct": [],
+        "short_name": "WHO UTN Number"
     }
 }

@@ -1,4 +1,5 @@
 import re
+import yaml
 from pathlib import Path
 from raw_docx import RawDocx, RawDocument, RawParagraph, RawTable, RawSection, RawTableRow
 
@@ -53,6 +54,17 @@ class M11Technical:
                         #print(f"TABLE: Other Type")
                         pass
 
+    def rename_elements(self, filepath: str) -> None:
+        """
+        Rename elements in the elements dictionary.
+        """
+        with open(filepath, "r") as f:
+            rename_dict = yaml.safe_load(f)
+        for key, value in rename_dict.items():
+            if key in self.elements:
+                self.elements[value] = self.elements[key]
+                self.elements[value]["short_name"] = value
+                self.elements.pop(key)
 
     def _extract_data_element(self, table: RawTable) -> dict:
         """
@@ -105,7 +117,7 @@ class M11Technical:
         """
         if len(table.rows) > 1:
             row_1 = table.rows[0]
-            print(f"ROW 1: {self._row_cell_text(row_1, 0)}")
+            #print(f"ROW 1: {self._row_cell_text(row_1, 0)}")
             if self._row_cell_text(row_1, 0).startswith("NCI C-Code"):
                 return True
         return False

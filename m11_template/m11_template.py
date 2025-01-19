@@ -1,4 +1,5 @@
 import re
+import yaml
 from pathlib import Path
 from raw_docx import RawDocx, RawDocument, RawParagraph, RawTable, RawSection
 
@@ -60,6 +61,18 @@ class M11Template:
                                             last_row_elements, instructions
                                         )
 
+    def rename_elements(self, filepath: str) -> None:
+        """
+        Rename elements in the elements dictionary.
+        """
+        with open(filepath, "r") as f:
+            rename_dict = yaml.safe_load(f)
+        for key, value in rename_dict.items():
+            if key in self.elements:
+                self.elements[value] = self.elements[key]
+                self.elements[value]["short_name"] = value
+                self.elements.pop(key)
+
     def _add_elements(self, elements: list[str]) -> None:
         """
         Add elements to the elements dictionary.
@@ -109,6 +122,7 @@ class M11Template:
                     {
                         "long_name": element,
                         "short_name": short_name,
+                        "original_name": short_name,
                         "optional": optional,
                         "section_number": section.number,
                         "section_title": section.title,

@@ -4,8 +4,10 @@ from m11_template.m11_technical import M11Technical
 
 template = M11Template(filepath="data/input_data/m11-template-spec.docx")
 template.process()
+template.rename_elements(filepath="data/input_data/template_renames.yaml")
 technical = M11Technical(filepath="data/input_data/m11-technical-spec.docx")
 technical.process()
+technical.rename_elements(filepath="data/input_data/technical_renames.yaml")
 
 with open("data/output_data/template_document.json", "w") as f:
     json.dump(template.document, f, indent=4)
