@@ -6,7 +6,7 @@ from raw_docx import RawDocx, RawDocument, RawParagraph, RawTable, RawSection
 class M11Template:
     def __init__(self, filepath: str):
         """
-        Initialize the M11 processor with paths to both specification documents.
+        Initialize the M11 template processor.
 
         Args:
             filepath (str): Path to the Template Specification PDF
@@ -22,7 +22,7 @@ class M11Template:
     def process(self) -> None:
         """
         Process the template specification document.
-        """
+        """                                    
         raw_doc: RawDocument = RawDocx(self.filepath).target_document
         self.document = raw_doc.to_dict()
         for section in raw_doc.sections:
