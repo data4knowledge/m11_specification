@@ -26,14 +26,30 @@ class M11Technical:
         raw_doc: RawDocument = RawDocx(self.filepath).target_document
         self.document = raw_doc.to_dict()
         for section in raw_doc.sections:
-            for section_item in section.items:
+            for index, section_item in enumerate(section.items):
                 if isinstance(section_item, RawParagraph):
                     print(f"PARAGRAPH: {section_item.text}")
                 elif isinstance(section_item, RawTable):
                     if self._is_data_element_table(section_item):
+                        print("DATA ELEMENT TABLE")
                         data_element = self._extract_data_element(section_item)
                         if data_element:
                             self.elements[data_element["name"]] = data_element
+                            if index + 1 < len(section.items):
+                                print("NEXT TABLE")
+                                next_index = index + 1
+                                while next_index < len(section.items):
+                                    next_item = section.items[next_index]
+                                    if isinstance(next_item, RawTable):
+                                        print("NEXT ITEM IS A TABLE")
+                                        if self._is_ncit_table(next_item):
+                                            print("NEXT ITEM IS A NCI THESAURUS TABLE")
+                                            ncit_element = self._extract_ncit_element(next_item)
+                                            if ncit_element:
+                                                print("NCIT ELEMENT")
+                                                self.elements[data_element["name"]]["ct"] = ncit_element
+                                        break
+                                    next_index += 1
                     elif self._is_ncit_table(section_item):
                         print(f"NCI THESAURUS TABLE:")
                     else:
@@ -57,8 +73,22 @@ class M11Technical:
                 "value": self._row_cell_text(table.rows[8], 1),
                 "business_rules": self._row_cell_text(table.rows[9], 1),
                 "repeating": self._row_cell_text(table.rows[10], 1),
+                "ct": []
             }
         return data_element
+
+    def _extract_ncit_element(self, table: RawTable) -> dict:
+        """
+        Extract the NCI Thesaurus element from the table.
+        """
+        ncit_element = []
+        for row in table.rows[1:]:
+            ncit_element.append({
+                "ncit_code": row.cells[0].text(),
+                "preferred_term": row.cells[1].text(),
+                "definition": row.cells[2].text()
+            })
+        return ncit_element
 
     def _is_data_element_table(self, table: RawTable) -> bool:
         """
@@ -67,7 +97,7 @@ class M11Technical:
         if len(table.rows) > 3:
             row_1 = table.rows[0]
             row_3 = table.rows[2]
-            if self._row_cell_text(row_1, 0).startswith("Term (Variable)") and self._row_cell_text(row_3, 1) == "D":
+            if self._row_cell_text(row_1, 0).startswith("Term (Variable)") and self._row_cell_text(row_3, 1) in ["D", "V"]:
                 return True
         return False
 
@@ -77,6 +107,7 @@ class M11Technical:
         """
         if len(table.rows) > 1:
             row_1 = table.rows[0]
+            print(f"ROW 1: {self._row_cell_text(row_1, 0)}")
             if self._row_cell_text(row_1, 0).startswith("NCI C-Code"):
                 return True
         return False
