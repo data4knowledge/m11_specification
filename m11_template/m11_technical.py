@@ -47,7 +47,7 @@ class M11Technical:
         data_element = None
         if len(table.rows) >= 10:
             data_element = {
-                "name": self._row_cell_text(table.rows[0], 1),
+                "name": self._clean_element_name(self._row_cell_text(table.rows[0], 1)),
                 "data_type": self._row_cell_text(table.rows[1], 1),
                 "definition": self._row_cell_text(table.rows[3], 1),
                 "guidance": self._row_cell_text(table.rows[4], 1),
@@ -87,3 +87,9 @@ class M11Technical:
             if cell.is_text():
                 return cell.text()
         return ""
+
+    def _clean_element_name(self, element_name: str) -> str:
+        """
+        Clean the element name. Remove any non-alphanumeric characters.
+        """
+        return re.sub(r'[^a-zA-Z0-9 ]', '', element_name)
