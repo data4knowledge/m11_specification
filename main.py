@@ -41,14 +41,19 @@ for key, value in technical.elements.items():
 with open("data/input_data/usdm/m11_mapping.yaml", "r") as f:
     usdm = yaml.load(f, Loader=yaml.FullLoader)
 
+not_mapped = {}
 for key, value in merged.items():
     if key in usdm:
         merged[key]['usdm'] = usdm[key]
+    else:
+        not_mapped[key] = key
 
 with open("data/output_data/merged_elements.json", "w") as f:
     json.dump(merged, f, indent=4)
 with open("data/output_data/mismatched_elements.json", "w") as f:
     json.dump(missing, f, indent=4)
+with open("data/output_data/not_mapped_elements.json", "w") as f:
+    json.dump(not_mapped, f, indent=4)
 
 res = zip_longest(missing['template'].keys(), missing['technical'].keys())
 print("\n\nResults: Unmatched Items\n\n")
