@@ -23,6 +23,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Heading\nConcept: C181236",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Sponsor Confidentiality Statement",
+            "notes": "We could this this via NarrativeContent but maybe a better mechanism could be provided"
         }
     },
     "Full Title": {
@@ -49,6 +55,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Heading; Sponsor Protocol Identifier\nConcept: C132346",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "StudyTitle",
+                    "notes": "There are many titles. Select the correct one via the 'type' attribute in StudyTitle",
+                    "path": "StudyVersion/@studyTitles/StudyTitle/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Full Title",
+            "notes": ""
         }
     },
     "Trial Acronym": {
@@ -75,6 +94,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Heading; Protocol Identifier\nConcept: C94108",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "StudyTitle",
+                    "notes": "There are many titles. Select the acronym via the 'type' attribute in StudyTitle",
+                    "path": "StudyVersion/@studyTitles/StudyTitle/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Trial Acronym",
+            "notes": ""
         }
     },
     "Sponsor Protocol Identifier": {
@@ -101,6 +133,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Heading\nConcept: C132351\nNote: Must have at least One Character May not be space(null)",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "studyIdentifier",
+                    "klass": "StudyIdentifier",
+                    "notes": "Select the sponsor identifier. This can be identified via the 'studyIdentifierScope' attribute, teh resulting organization and its type",
+                    "path": "StudyVersion/@studyIdentifiers/StudyIdentifier/@studyIdentifier"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Sponsor Protocol Identifier",
+            "notes": ""
         }
     },
     "Version Number": {
@@ -127,6 +172,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Heading, Sponsor Protocol Identifier\nConcept: C181232",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "versionIdentifier",
+                    "klass": "StudyVersion",
+                    "notes": "",
+                    "path": "StudyVersion/@versionIdentifier"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Version Number",
+            "notes": ""
         }
     },
     "Version Date": {
@@ -153,6 +211,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Heading; Version number; Sponsor Protocol Identifier \nConcept: C93813",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "dateValue",
+                    "klass": "GovernanceDate",
+                    "notes": "The governamce data 'type' attribute should be examined and the type 'Protocol Effective Date' selected",
+                    "path": "StudyProtocolDocumentVersion/@dateValues/GovernanceDate/@dateValue"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Version Date",
+            "notes": ""
         }
     },
     "Amendment Identifier": {
@@ -177,6 +248,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Table Column Heading \u201cDocument\u201d\nConcept: CNEW",
             "repeating": "Yes, reuse from the title page",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Amendment Identifier",
+            "notes": ""
         }
     },
     "Amendment Scope": {
@@ -219,6 +303,19 @@
                     "definition": "Covering or affecting a portion of the system."
                 }
             ]
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "type",
+                    "klass": "GeographicScope",
+                    "notes": "The type will give Global, Regional or Country scope. There may be several scopes but only be one global scope",
+                    "path": "StudyVersion/@amendments/StudyAmendment/@enrollments/SubjectEnrollment/@code/AliasCode/@standardCode/Code/@decode"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Amendment Scope",
+            "notes": ""
         }
     },
     "Sponsors Investigational Product Codes": {
@@ -382,6 +479,19 @@
                     "definition": "Post-approval studies to delineate additional information about the drug's risks, benefits, and optimal use that may be requested by regulatory authorities in conjunction with marketing approval."
                 }
             ]
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "studyPhase",
+                    "klass": "StudyVersion",
+                    "notes": "",
+                    "path": "StudyVersion/@studyPhase"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Trial Phase",
+            "notes": ""
         }
     },
     "Trial Short Title": {
@@ -408,6 +518,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Heading, Sponsor Protocol Identifier\nConcept: C132345",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "StudyTitle",
+                    "notes": "There are many titles. Select the correct one via the 'type' attribute in StudyTitle",
+                    "path": "StudyVersion/@studyTitles/StudyTitle/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Trial Short Title",
+            "notes": ""
         }
     },
     "Sponsor Name": {
@@ -432,6 +555,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Heading; Sponsor Protocol Identifier\nConcept: C70793",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "name",
+                    "klass": "Organization",
+                    "notes": "Select the sponsor organization",
+                    "path": "StudyIdentifier/@studyIdentifierScope/Organization/@name"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Sponsor Name",
+            "notes": ""
         }
     },
     "Sponsor Legal Address": {
@@ -456,6 +592,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Heading, Sponsor Name\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "Address",
+                    "notes": "Select the sponsor organization",
+                    "path": "StudyIdentifier/@studyIdentifierScope/Organization/@legalAddress/Address/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Sponsor Legal Address",
+            "notes": ""
         }
     },
     "CoSponsor Name": {
@@ -530,6 +679,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Heading, Sponsor Name and Address; Sponsor Name; Country\nConcept: CNEW",
             "repeating": "Yes, repeatable for each Local Sponsor Name",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "Address",
+                    "notes": "Select the co-sponsor organization",
+                    "path": "StudyIdentifier/@studyIdentifierScope/Organization/@legalAddress/Address/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Local Sponsor Name",
+            "notes": ""
         }
     },
     "Local Sponsor Address": {
@@ -556,6 +718,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Heading, Local Sponsor, Country\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "name",
+                    "klass": "Organization",
+                    "notes": "Select the co-sponsor organization",
+                    "path": "StudyIdentifier/@studyIdentifierScope/Organization/@name"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Local Sponsor Address",
+            "notes": ""
         }
     },
     "Device Manufacturer Name": {
@@ -580,6 +755,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Heading; Sponsor Protocol Identifier; Sponsor Name\nConcept: CNEW",
             "repeating": "Yes, repeatable for each device manufacturers",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Device Manufacturer Name",
+            "notes": "Currently USDM not handling device entities. Will be mapped in Phase 4 and use the Organization class"
         }
     },
     "Device Manufacturer Address": {
@@ -606,6 +787,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Heading; Device Manufacturing Name\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Device Manufacturer Address",
+            "notes": "Currently USDM not handling device entities. Will be mapped in Phase 4 and use the Organization class"
         }
     },
     "EU CT Number": {
@@ -630,6 +817,19 @@
             "business_rules": "Value Allowed: Yes; EU CT number: yyyy-5xxxxx-xx with YYYY corresponding to a year i.e. 2024 and x being an integer\nRelationship: Heading; Sponsor Protocol Identifier\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "studyIdentifier",
+                    "klass": "StudyIdentifier",
+                    "notes": "Select where the organization is of type 'Regulatory Agency' and is the EU",
+                    "path": "StudyVersion/@studyIdentifiers/StudyIdentifier/@studyIdentifier"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "EU CT Number",
+            "notes": ""
         }
     },
     "FDA IND Number": {
@@ -654,6 +854,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Heading; Sponsor Protocol Identifier\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "studyIdentifier",
+                    "klass": "StudyIdentifier",
+                    "notes": "Select where the organization is of type 'Regulatory Agency' and is the FDA",
+                    "path": "StudyVersion/@studyIdentifiers/StudyIdentifier/@studyIdentifier"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "FDA IND Number",
+            "notes": ""
         }
     },
     "IDE Number": {
@@ -678,6 +891,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Heading, Sponsor Protocol Identifier\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "studyIdentifier",
+                    "klass": "StudyIdentifier",
+                    "notes": "Select where the organization is of type 'Regulatory Agency' and is the FDA",
+                    "path": "StudyVersion/@studyIdentifiers/StudyIdentifier/@studyIdentifier"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "IDE Number",
+            "notes": ""
         }
     },
     "jRCT Number": {
@@ -726,6 +952,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Heading, Sponsor Protocol Identifier\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "studyIdentifier",
+                    "klass": "StudyIdentifier",
+                    "notes": "Select where the organization is of type 'Clinical Study Registry' and is the ClinicalTrials.gov",
+                    "path": "StudyVersion/@studyIdentifiers/StudyIdentifier/@studyIdentifier"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "NCT Number",
+            "notes": ""
         }
     },
     "NMPA IND Number": {
@@ -750,6 +989,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Heading; Sponsor Protocol Identifier\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "studyIdentifier",
+                    "klass": "StudyIdentifier",
+                    "notes": "Select where the organization is of type 'Regulatory Agency' and is the NMPA (China)",
+                    "path": "StudyVersion/@studyIdentifiers/StudyIdentifier/@studyIdentifier"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "NMPA IND Number",
+            "notes": ""
         }
     },
     "Other Regulatory or Clinical Trial Identifier": {
@@ -852,6 +1104,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Amendment Details; Amendment Identifier, Sponsor Protocol Identifier\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "summary",
+                    "klass": "StudyAmendment",
+                    "notes": "",
+                    "path": "StudyVersion/@amendments/StudyAmendment/@summary"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Amendment Summary",
+            "notes": ""
         }
     },
     "YesNo": {
@@ -1927,6 +2192,13 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Row title; Control Description; Sponsor Protocol Identifier\nConcept: C97054",
             "repeating": "Yes, repeatable for each nonproprietary name used as control",
             "ct": []
+        },
+        "usdm": {
+            "image": "",
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Nonproprietary name",
+            "notes": ""
         }
     },
     "Not applicable": {
@@ -2017,6 +2289,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Number of Arms, Heading; Sponsor Protocol Identifier\nConcept: C98771",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "name",
+                    "klass": "StudyArm",
+                    "notes": "Count of the number of arms within the study design",
+                    "path": "StudyVersion/@studyDesigns/StudyDesign/@arms/StudyArm/@name"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Number of Arms",
+            "notes": ""
         }
     },
     "Trial Blind Schema": {
@@ -2069,6 +2354,19 @@
                     "definition": "A study in which one party, either the subject or study personnel, does not know which intervention is administered to the subject."
                 }
             ]
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "blindingSchema",
+                    "klass": "StudyDesign",
+                    "notes": "",
+                    "path": "StudyVersion/@studyDesigns/StudyDesign/@blindingSchema"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Trial Blind Schema",
+            "notes": ""
         }
     },
     "TargetMaximum": {
@@ -2117,6 +2415,37 @@
             "business_rules": "Value Allowed: Yes and Universal Text\nRelationship: beheading; Sponsor Protocol Identifiers\nConcept: C49692",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "plannedEnrollmentNumber",
+                    "klass": "StudyDesignPopulation",
+                    "notes": "",
+                    "path": "StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@plannedEnrollmentNumber"
+                },
+                {
+                    "attribute": "plannedCompletionNumber",
+                    "klass": "StudyDesignPopulation",
+                    "notes": "",
+                    "path": "StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@plannedCompletionNumber"
+                },
+                {
+                    "attribute": "plannedEnrollmentNumber",
+                    "klass": "StudyCohort",
+                    "notes": "",
+                    "path": "StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@cohorts/StudyCohort/@plannedEnrollmentNumber"
+                },
+                {
+                    "attribute": "plannedCompletionNumber",
+                    "klass": "StudyCohort",
+                    "notes": "",
+                    "path": "StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@cohorts/StudyCohort/@plannedCompletionNumber"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Number of Participants",
+            "notes": ""
         }
     },
     "alternate description of planned duration of trial intervention if duration will vary": {
@@ -2296,6 +2625,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 1.2 Trial Schema\nConcept: C93682",
             "repeating": "Yes, repeatable within Section",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Trial Schema",
+            "notes": ""
         }
     },
     "Schema Notes": {
@@ -2320,6 +2655,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 1.2 Trial Schema\nConcept: CNEW",
             "repeating": "Yes, repeatable and aligned with appropriate schema",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Schema Notes",
+            "notes": ""
         }
     },
     "Schedule of Activities": {
@@ -2344,6 +2685,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 1.3 Schedule of Activities\nConcept: CNEW",
             "repeating": "Yes, repeatable for each Schedule of Activity if needed",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Schedule of Activities",
+            "notes": ""
         }
     },
     "Purpose of Trial": {
@@ -2468,6 +2815,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 2.2.2 Benefit Summary\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Benefit Summary",
+            "notes": ""
         }
     },
     "Overall RiskBenefit Assessment": {
@@ -2516,6 +2876,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 3.1.X Primary Objective \nConcept: C85826",
             "repeating": "Yes, repeatable for each numbered primary objective.\nYes, reuse to the table in Section 1.1.1.for each primary objective",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "Objective",
+                    "notes": "Where the objective level is 'primary'",
+                    "path": "StudyVersion/@studyDesigns/StudyDesign/@objectives/Objective/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Primary Objective",
+            "notes": ""
         }
     },
     "Population": {
@@ -2540,6 +2913,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Row Heading, Description; Table Estimand Characteristics, Exploratory (1\u2026n) Estimand\nConcept: C70833",
             "repeating": "Yes, repeatable for each numbered exploratory objective.",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Population",
+            "notes": ""
         }
     },
     "Treatment": {
@@ -2564,6 +2943,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Row Heading, Description; Table Estimand Characteristics, Exploratory (1\u2026n) Estimand; Protocol Identifier\nConcept: C49236",
             "repeating": "Yes, repeatable for each numbered exploratory objective.",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Treatment",
+            "notes": ""
         }
     },
     "Endpoint": {
@@ -2588,6 +2973,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Row Heading, Description; Table Estimand Characteristics, Exploratory (1\u2026n) Estimand\nConcept: C25212",
             "repeating": "Yes, repeatable for each numbered exploratory objective.",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Endpoint",
+            "notes": ""
         }
     },
     "Description of Intercurrent Event": {
@@ -2612,6 +3010,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Row Heading, Estimand Characteristics\nConcept: C188853",
             "repeating": "Yes, repeatable for each intercurrent event",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Description of Intercurrent Event",
+            "notes": ""
         }
     },
     "Intercurrent Event 1 Strategy": {
@@ -2714,6 +3118,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 4.1 Description of Trial Design\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Description of Trial Duration",
+            "notes": ""
         }
     },
     "Method of Assignment to Trial Intervention": {
@@ -2738,6 +3155,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 4.1 Description of Trial Design\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Method of Assignment to Trial Intervention",
+            "notes": ""
         }
     },
     "Description of Level and Method of Blinding": {
@@ -2788,6 +3218,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 4.1 Description of Trial Design\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Additional Description of Trial Design",
+            "notes": ""
         }
     },
     "Stakeholder Input into Design": {
@@ -2862,6 +3305,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 4.2.1 Rationale for Estimand(s)\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Rationale for Estimands",
+            "notes": ""
         }
     },
     "Rationale for Control Type": {
@@ -2886,6 +3335,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 4.2.3 Rational for Control Type\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Rationale for Control Type",
+            "notes": ""
         }
     },
     "Rationale for Duration": {
@@ -2958,6 +3413,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 4.2.6 Rational for Interim Analysis\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Rationale for Interim Analysis",
+            "notes": ""
         }
     },
     "Rationale for Other Trial Design Aspects": {
@@ -3006,6 +3467,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 4.3 Trial Stopping Rules\nConcept: C142698",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Trial Stopping Rules",
+            "notes": ""
         }
     },
     "Start of Trial": {
@@ -3030,6 +3504,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 4.4 Start of Trial and End of Trial\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Start of Trial",
+            "notes": ""
         }
     },
     "End of Trial": {
@@ -3054,6 +3534,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 4.4 Start of Trial\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "End of Trial",
+            "notes": ""
         }
     },
     "Access to Trial Intervention after End of Trial": {
@@ -3078,6 +3564,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 4.5 Access to Trial Intervention After End of Trial\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Access to Trial Intervention after End of Trial",
+            "notes": ""
         }
     },
     "Description of Trial Population and Rationale": {
@@ -3102,6 +3601,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 5.1 Description of Trial Population and Rationale\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Description of Trial Population and Rationale",
+            "notes": ""
         }
     },
     "Definitions Related to Childbearing Potential": {
@@ -3126,6 +3631,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 5.4.1 Definitions Related to Childbearing Potential\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Definitions Related to Childbearing Potential",
+            "notes": ""
         }
     },
     "Contraception Requirements": {
@@ -3150,6 +3661,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 5.4.2 Contraception requirements\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Contraception Requirements",
+            "notes": ""
         }
     },
     "Lifestyle Restrictions": {
@@ -3174,6 +3691,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 5.5\t Lifestyle Restrictions\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Lifestyle Restrictions",
+            "notes": ""
         }
     },
     "Meals and Dietary Restrictions": {
@@ -3198,6 +3728,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 5.5.1 Meals and Dietary Restrictions\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Meals and Dietary Restrictions",
+            "notes": ""
         }
     },
     "Caffeine Alcohol Tobacco and Other Restrictions": {
@@ -3246,6 +3789,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 5.5.3 Physical Activity Restrictions\nConcept: C17708",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Physical Activity Restrictions",
+            "notes": ""
         }
     },
     "Other Activity Restrictions": {
@@ -3270,6 +3826,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 5.5.4 Other Activity Restrictions\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Other Activity Restrictions",
+            "notes": ""
         }
     },
     "Screen Failure": {
@@ -3294,6 +3863,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 5.6 Screen Failure and Rescreening\nConcept: C49628",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Screen Failure",
+            "notes": ""
         }
     },
     "Rescreening": {
@@ -3318,6 +3893,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 5.6 Screen Failure and Rescreening\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Rescreening",
+            "notes": ""
         }
     },
     "Arm Name": {
@@ -3342,6 +3923,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: arm name \nConcept: C93729",
             "repeating": "Yes, repeatable for each arm name and intervention and use combination",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Arm Name",
+            "notes": ""
         }
     },
     "Intervention Name": {
@@ -3366,6 +3953,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Arm name and intervention name, Concept: C177930",
             "repeating": "Yes, repeatable for each arm name and arm type",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Intervention Name",
+            "notes": ""
         }
     },
     "Dosage Strengths": {
@@ -3438,6 +4031,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 6.1 Description of Investigational Trial Intervention\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Description of Investigational Trial Intervention",
+            "notes": ""
         }
     },
     "Rationale for Investigational Trial Intervention Dose and Regimen": {
@@ -3462,6 +4068,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 6.2 Rationale for Investigational Trial Intervention Dose and Regimen\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Rationale for Investigational Trial Intervention Dose and Regimen",
+            "notes": ""
         }
     },
     "Investigational Trial Intervention Administration": {
@@ -3486,6 +4105,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 6.3 Investigational Trial Intervention Administration\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Investigational Trial Intervention Administration",
+            "notes": ""
         }
     },
     "Investigational Trial Intervention Dose Modification": {
@@ -3510,6 +4142,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 6.4 Investigational Trial Intervention Dose Modification\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Investigational Trial Intervention Dose Modification",
+            "notes": ""
         }
     },
     "Management of Investigational Trial Intervention Overdose": {
@@ -3558,6 +4203,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 6.6.1 Preparation of Investigational Trial Intervention\nConcept: C176274",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Preparation of Investigational Trial Intervention",
+            "notes": ""
         }
     },
     "Storage and Handling of Investigational Trial Intervention": {
@@ -3582,6 +4240,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 6.6.2 Storage and Handling of Investigational Trial Intervention\nConcept: C115525",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Storage and Handling of Investigational Trial Intervention",
+            "notes": ""
         }
     },
     "Accountability of Investigational Trial Intervention": {
@@ -3606,6 +4277,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 6.6.3 Accountability of Trial Intervention\nConcept: C176267",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Accountability of Investigational Trial Intervention",
+            "notes": ""
         }
     },
     "Participant Assignment to Investigational Trial Intervention": {
@@ -3630,6 +4314,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 6.7.1 Participant Assignment to Investigational Trial Intervention\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Participant Assignment to Investigational Trial Intervention",
+            "notes": ""
         }
     },
     "Randomisation": {
@@ -3654,6 +4351,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 6.7.2 Randomisation\nConcept: C25196",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Randomisation",
+            "notes": ""
         }
     },
     "Measures to Maintain Blinding": {
@@ -3702,6 +4412,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 6.7.4 Emergency Unblinding at the Site\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Emergency Unblinding at the Site",
+            "notes": ""
         }
     },
     "Investigational Trial Intervention Adherence": {
@@ -3774,6 +4497,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 6.9.2 Rescue Therapy\nConcept: C165835",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Rescue Therapy",
+            "notes": ""
         }
     },
     "Concomitant Therapy": {
@@ -3798,6 +4534,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 6.10 Concomitant Therapy\nConcept: C53630",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Concomitant Therapy",
+            "notes": ""
         }
     },
     "Prohibited Concomitant Therapy": {
@@ -3822,6 +4571,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 6.10.1 Prohibited Concomitant Therapy\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Prohibited Concomitant Therapy",
+            "notes": ""
         }
     },
     "Permitted Concomitant Therapy": {
@@ -3846,6 +4608,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 6.10.2 Permitted Concomitant Therapy\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Permitted Concomitant Therapy",
+            "notes": ""
         }
     },
     "Permanent Discontinuation of Trial Intervention": {
@@ -3918,6 +4693,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 7.1.3 Rechallenge\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Rechallenge",
+            "notes": ""
         }
     },
     "Participant Discontinuation or Withdrawal from Trial": {
@@ -3942,6 +4730,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 7.2 Participants Discontinuation or Withdrawal from the Trial\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Participant Discontinuation or Withdrawal from Trial",
+            "notes": ""
         }
     },
     "Management of Loss to FollowUp": {
@@ -4014,6 +4808,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 8.2 Screening/Baseline Assessments and Procedures\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Screening Assessments and Procedures",
+            "notes": ""
         }
     },
     "Baseline Assessments and Procedures": {
@@ -4038,6 +4845,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 8.2 Screening/Baseline Assessments and Procedures\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Baseline Assessments and Procedures",
+            "notes": ""
         }
     },
     "Efficacy Assessments and Procedures": {
@@ -4062,6 +4882,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 8.3 Efficacy Assessments and Procedures\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Efficacy Assessments and Procedures",
+            "notes": ""
         }
     },
     "Safety Assessments and Procedures": {
@@ -4086,6 +4919,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 8.4 Safety Assessments and Procedures\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Safety Assessments and Procedures",
+            "notes": ""
         }
     },
     "Physical Examination": {
@@ -4110,6 +4949,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 8.4.1 Physical Examination\nConcept: C20989",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Physical Examination",
+            "notes": ""
         }
     },
     "Vital Signs": {
@@ -4134,6 +4986,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 8.4.2 Vital Signs\nConcept: C154628",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Vital Signs",
+            "notes": ""
         }
     },
     "Electrocardiograms": {
@@ -4158,6 +5023,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 8.4.3 Electrocardiograms\nConcept: C168186",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Electrocardiograms",
+            "notes": ""
         }
     },
     "Pregnancy Testing": {
@@ -4182,6 +5060,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 8.4.5 Pregnancy Testing\nConcept: C92949",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Pregnancy Testing",
+            "notes": ""
         }
     },
     "Suicidal Ideation and Behaviour Risk Monitoring": {
@@ -4206,6 +5097,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 8.4.6 Suicidal Ideation and Behaviour Risk Monitoring\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Suicidal Ideation and Behaviour Risk Monitoring",
+            "notes": ""
         }
     },
     "Pharmacokinetics": {
@@ -4230,6 +5134,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 8.5 Pharmacokinetics\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Pharmacokinetics",
+            "notes": ""
         }
     },
     "Genetics and Pharmacogenomics": {
@@ -4254,6 +5171,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 8.6.1 Genetics and Pharmacogenomics\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Genetics and Pharmacogenomics",
+            "notes": ""
         }
     },
     "Pharmacodynamic Biomarkers": {
@@ -4278,6 +5208,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 8.6.2 Pharmacodynamic Biomarkers\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Pharmacodynamic Biomarkers",
+            "notes": ""
         }
     },
     "Other Biomarkers": {
@@ -4302,6 +5245,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 8.6.3 Other Biomarkers\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Other Biomarkers",
+            "notes": ""
         }
     },
     "Immunogenicity Assessments": {
@@ -4326,6 +5282,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 8.7 Immunogenicity Assessments\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Immunogenicity Assessments",
+            "notes": ""
         }
     },
     "Medical Resource Utilisation and Health Economics": {
@@ -4350,6 +5319,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 8.8 Medical Resource Utilisation and Health Economics\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Medical Resource Utilisation and Health Economics",
+            "notes": ""
         }
     },
     "Definitions of Adverse Events": {
@@ -4422,6 +5404,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 9.1.3.1 Definition of Medical Device Product Complaints\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Definition of Medical Device Product Complaints",
+            "notes": ""
         }
     },
     "Event Type": {
@@ -4689,6 +5684,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Severity and 9.2.2 Collection Procedures\nConcept: C25676",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Severity",
+            "notes": ""
         }
     },
     "Causality": {
@@ -4713,6 +5721,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Causality and 9.2.2 Collection Procedures\nConcept: C82552",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Causality",
+            "notes": ""
         }
     },
     "Recording": {
@@ -4833,6 +5854,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 9.3.1 Participants Who Become Pregnant During the Trial\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Participants Who Become Pregnant During the Trial",
+            "notes": ""
         }
     },
     "Participants Whose Partners Become Pregnant During the Trial": {
@@ -4905,6 +5932,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 10.1 General Considerations, 10 STATISTICAL CONSIDERATIONS and Table of Contents\nConcept: C164387",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "General Considerations",
+            "notes": ""
         }
     },
     "Analysis Sets": {
@@ -4929,6 +5962,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 10.2 Analysis Sets, 10 STATISTICAL CONSIDERATIONS and Table of Contents\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Analysis Sets",
+            "notes": ""
         }
     },
     "Analyses of Demographics and Other Baseline Variables": {
@@ -4953,6 +5992,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 10.3 Analyses of Demographics and Other Baseline Variables, 10 STATISTICAL CONSIDERATIONS and Table of Contents\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Analyses of Demographics and Other Baseline Variables",
+            "notes": ""
         }
     },
     "Handling of Data in Relation to Primary Estimands": {
@@ -5001,6 +6046,19 @@
             "business_rules": "Value Allowed Yes\nRelationship: 10.5.X.4 Sensitivity Analysis\nConcept: CNEW",
             "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Sensitivity Analysis",
+            "notes": ""
         }
     },
     "Supplementary Analysis": {
@@ -5025,6 +6083,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 10.5.X.5 Supplementary Analysis\nConcept: CNEW",
             "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Supplementary Analysis",
+            "notes": ""
         }
     },
     "Handling of Data in Relation to Secondary Estimands": {
@@ -5097,6 +6168,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 10.7 Safety Analyses\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Safety Analyses",
+            "notes": ""
         }
     },
     "Other Analyses": {
@@ -5121,6 +6205,19 @@
             "business_rules": "Value AllowedYes\nRelationship: 10.8 Other Analyses,Concept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Other Analyses",
+            "notes": ""
         }
     },
     "Interim Analyses": {
@@ -5145,6 +6242,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 10.9 Interim Analyses\nConcept: C142582",
             "repeating": "Yes, repeatable for each interim",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Interim Analyses",
+            "notes": ""
         }
     },
     "Multiplicity Adjustments": {
@@ -5169,6 +6279,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship:10.10 Multiplicity Adjustments\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Multiplicity Adjustments",
+            "notes": ""
         }
     },
     "Sample Size Determination": {
@@ -5193,6 +6309,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 10.11 Sample Size Determination,\nConcept: C115467",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Sample Size Determination",
+            "notes": ""
         }
     },
     "Regulatory and Ethical Considerations": {
@@ -5217,6 +6346,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 11.1 Regulatory and Ethical Considerations\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Regulatory and Ethical Considerations",
+            "notes": ""
         }
     },
     "Trial Oversight": {
@@ -5267,6 +6402,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 11.2.1 Investigator Responsibilities\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Investigator Responsibilities",
+            "notes": ""
         }
     },
     "Sponsor Responsibilities": {
@@ -5291,6 +6439,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 11.2.2 Sponsor Responsibilities\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Sponsor Responsibilities",
+            "notes": ""
         }
     },
     "Description of Informed Consent Process": {
@@ -5315,6 +6476,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 11.3 Informed Consent Process\nConcept: C184390",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Description of Informed Consent Process",
+            "notes": ""
         }
     },
     "Description of Assent Process": {
@@ -5341,6 +6515,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 11.3 Informed Consent Process\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Description of Assent Process",
+            "notes": ""
         }
     },
     "Description of Emergency Consent Process": {
@@ -5365,6 +6552,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 11.3 Informed Consent Process\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Description of Emergency Consent Process",
+            "notes": ""
         }
     },
     "Informed Consent for Rescreening": {
@@ -5437,6 +6637,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 11.4 Committees\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Committees",
+            "notes": ""
         }
     },
     "Insurance and Indemnity": {
@@ -5461,6 +6667,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 11.5 Insurance and Indemnity\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Insurance and Indemnity",
+            "notes": ""
         }
     },
     "RiskBased Quality Management": {
@@ -5509,6 +6728,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 11.7 Data Governance\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Data Governance",
+            "notes": ""
         }
     },
     "Data Protection": {
@@ -5557,6 +6789,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 11.9 Source Data\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Source Data Introduction",
+            "notes": ""
         }
     },
     "Investigator Expectations for Source Data": {
@@ -5581,6 +6826,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 11.9 Source Data\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Investigator Expectations for Source Data",
+            "notes": ""
         }
     },
     "Trial Monitor Expectations for Source Data": {
@@ -5605,6 +6863,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 11.9 Source Data\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Trial Monitor Expectations for Source Data",
+            "notes": ""
         }
     },
     "Identification of Source Data": {
@@ -5679,6 +6950,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 11.11 Early Site Closure\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Decision Rights for Site Closure",
+            "notes": ""
         }
     },
     "Criteria for Early Closure": {
@@ -5705,6 +6989,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 11.11 Early Site Closure\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Criteria for Early Closure",
+            "notes": ""
         }
     },
     "Responsibilities Following Early Site Closure": {
@@ -5777,6 +7074,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 12.1 Clinical Laboratory Tests\nConcept: C25294",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Clinical Laboratory Tests",
+            "notes": ""
         }
     },
     "Sponsor Approval Date": {
@@ -5875,6 +7185,12 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 13 APPENDIX: GLOSSARY OF TERMS AND ABBREVIATIONS\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Glossary of Terms and Abbreviations",
+            "notes": ""
         }
     },
     "References": {
@@ -5899,6 +7215,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 14 APPENDIX: REFERENCES\nConcept: C184397",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "References",
+            "notes": ""
         }
     },
     "IMP or NIMP": {

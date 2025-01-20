@@ -1,0 +1,2014 @@
+AE Definition:
+  items: []
+  map_status: To Be Mapped
+  name: AE Definition
+  notes: ''
+Access to Trial Intervention after End of Trial:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Access to Trial Intervention after End of Trial
+  notes: ''
+Accountability of Investigational Trial Intervention:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Accountability of Investigational Trial Intervention
+  notes: ''
+Additional Description of Trial Design:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Additional Description of Trial Design
+  notes: ''
+Additional ICF text for Use of Remaining Samples in Optional Exploratory Research:
+  items: []
+  map_status: To Be Mapped
+  name: Additional ICF text for Use of Remaining Samples in Optional Exploratory Research
+  notes: ''
+Additional Text, if Needed:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Additional Text, if Needed
+  notes: ''
+Adverse Events of Special Interest:
+  items: []
+  map_status: To Be Mapped
+  name: Adverse Events of Special Interest
+  notes: ''
+Amendment Identifier:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Amendment Identifier
+  notes: ''
+Amendment Scope:
+  items:
+  - attribute: type
+    klass: GeographicScope
+    notes: The type will give Global, Regional or Country scope. There may be several
+      scopes but only be one global scope
+    path: StudyVersion/@amendments/StudyAmendment/@enrollments/SubjectEnrollment/@code/AliasCode/@standardCode/Code/@decode
+  map_status: Mapped
+  name: Amendment Scope
+  notes: ''
+Amendment Scope Enrollment Description:
+  items: []
+  map_status: To Be Mapped
+  name: Amendment Scope Enrollment Description
+  notes: ''
+Amendment Summary:
+  items:
+  - attribute: summary
+    klass: StudyAmendment
+    notes: ''
+    path: StudyVersion/@amendments/StudyAmendment/@summary
+  map_status: Mapped
+  name: Amendment Summary
+  notes: ''
+Analyses of Demographics and Other Baseline Variables:
+  items: []
+  map_status: To Be Mapped
+  name: Analyses of Demographics and Other Baseline Variables
+  notes: ''
+Analysis Associated With the Exploratory Objective(s):
+  items: []
+  map_status: To Be Mapped
+  name: Analysis Associated With the Exploratory Objective(s)
+  notes: ''
+Analysis Sets:
+  items: []
+  map_status: To Be Mapped
+  name: Analysis Sets
+  notes: ''
+Approval Date or State Location Where Information Can be Found:
+  items:
+  - attribute: dateValue
+    klass: GovernanceDate
+    notes: Want the sponsor approval date
+    path: StudyVersion/@dateValues/GovernanceDate/@dateValue
+  map_status: Mapped
+  name: Approval Date or State Location Where Information Can be Found
+  notes: ''
+Approximate Enrolled At Time of Sponsor Approval:
+  items:
+  - attribute: quantity
+    klass: SubjectEnrollment
+    notes: ''
+    path: StudyVersion/@amendments/StudyAmendment/@enrollments/SubjectEnrollment/@quantity
+  map_status: Mapped
+  name: Approximate Enrolled At Time of Sponsor Approval
+  notes: ''
+Approximate Enrolled At Time of Sponsor Approval Title:
+  items: []
+  map_status: To Be Mapped
+  name: Approximate Enrolled At Time of Sponsor Approval Title
+  notes: This is a title field, not going to be a map
+Arm Name:
+  items: []
+  map_status: To Be Mapped
+  name: Arm Name
+  notes: ''
+Arm Type:
+  items: []
+  map_status: To Be Mapped
+  name: Arm Type
+  notes: ''
+Background Intervention:
+  items: []
+  map_status: To Be Mapped
+  name: Background Intervention
+  notes: ''
+Baseline Assessments and Procedures:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Baseline Assessments and Procedures
+  notes: ''
+Benefit Summary:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Benefit Summary
+  notes: ''
+Blinded Roles:
+  items:
+  - attribute: maskingRoles
+    klass: StudyDesign
+    notes: ''
+    path: StudyVersion/@studyDesigns/StudyDesign/@maskingRoles
+  map_status: Mapped
+  name: Blinded Roles
+  notes: ''
+Blinding:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Blinding
+  notes: ''
+Briefly Explain Substantial Impact On Safety:
+  items: []
+  map_status: To Be Mapped
+  name: Briefly Explain Substantial Impact On Safety
+  notes: ''
+Briefly Explain Substantial Impact on Data:
+  items: []
+  map_status: To Be Mapped
+  name: Briefly Explain Substantial Impact on Data
+  notes: ''
+Caffeine, Alcohol, Tobacco, and Other Restrictions:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Caffeine, Alcohol, Tobacco, and Other Restrictions
+  notes: ''
+Causality:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Causality
+  notes: ''
+Clinical Laboratory Tests:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Clinical Laboratory Tests
+  notes: ''
+Clinical Safety Laboratory Assessments:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Clinical Safety Laboratory Assessments
+  notes: ''
+Co-Sponsor Legal Address:
+  items:
+  - attribute: name
+    klass: Organization
+    notes: Select the co-sponsor organization
+    path: StudyIdentifier/@studyIdentifierScope/Organization/@name
+  map_status: Mapped
+  name: Co-Sponsor Legal Address
+  notes: ''
+Co-Sponsor Name:
+  items:
+  - attribute: text
+    klass: Address
+    notes: Select the co-sponsor organization
+    path: StudyIdentifier/@studyIdentifierScope/Organization/@legalAddress/Address/@text
+  map_status: Mapped
+  name: Co-Sponsor Name
+  notes: ''
+Committees:
+  items: []
+  map_status: To Be Mapped
+  name: Committees
+  notes: ''
+Compound Code(s):
+  items: []
+  map_status: To Be Mapped
+  name: Compound Code(s)
+  notes: We could this this via NarrativeContent but maybe a better mechanism could.
+    Look at the AgentAdminusatrion class
+Concomitant Therapy:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Concomitant Therapy
+  notes: ''
+Consent Requirements for Rescreening:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Consent Requirements for Rescreening
+  notes: ''
+Contraception Requirements:
+  items: []
+  map_status: To Be Mapped
+  name: Contraception Requirements
+  notes: ''
+Control Description:
+  items: []
+  map_status: To Be Mapped
+  name: Control Description
+  notes: ''
+Control Description Not Applicable:
+  items: []
+  map_status: To Be Mapped
+  name: Control Description Not Applicable
+  notes: ''
+Control Type:
+  items:
+  - attribute: type
+    klass: StudyArm
+    notes: ''
+    path: StudyVersion/@studyDesigns/StudyDesign/@arms/StudyArm/@type
+  map_status: Mapped
+  name: Control Type
+  notes: ''
+Country Identifier:
+  items:
+  - attribute: type
+    klass: GeographicScope
+    notes: The type will give Global, Regional or Country scope. There may be several
+      scopes but only be one global scope
+    path: StudyVersion/@amendments/StudyAmendment/@enrollments/SubjectEnrollment/@code/AliasCode/@standardCode/Code/@decode
+  map_status: Mapped
+  name: Country Identifier
+  notes: ''
+Country/Region:
+  items: []
+  map_status: To Be Mapped
+  name: Country/Region
+  notes: ''
+Country/Region-specific Protocol Clarifications:
+  items: []
+  map_status: To Be Mapped
+  name: Country/Region-specific Protocol Clarifications
+  notes: ''
+Country/Region-specific Requirements:
+  items: []
+  map_status: To Be Mapped
+  name: Country/Region-specific Requirements
+  notes: ''
+Criteria for Early Closure:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Criteria for Early Closure
+  notes: ''
+Criteria for Permanent Discontinuation of Trial Intervention:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Criteria for Permanent Discontinuation of Trial Intervention
+  notes: ''
+Data Governance:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Data Governance
+  notes: ''
+Decision Rights for Site Closure:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Decision Rights for Site Closure
+  notes: ''
+Definition of Medical Device Product Complaints:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Definition of Medical Device Product Complaints
+  notes: ''
+Definition of Source Data:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Definition of Source Data
+  notes: ''
+Definitions Related to Childbearing Potential:
+  items: []
+  map_status: To Be Mapped
+  name: Definitions Related to Childbearing Potential
+  notes: ''
+Describe Method:
+  items: []
+  map_status: To Be Mapped
+  name: Describe Method
+  notes: USDM has avoided handling the issue of signatures. Align with the FHIR work
+    during Phase 4
+Description of Amendment Change:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Description of Amendment Change
+  notes: ''
+Description of Assent Process:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Description of Assent Process
+  notes: ''
+Description of Duration:
+  items: []
+  map_status: To Be Mapped
+  name: Description of Duration
+  notes: ''
+Description of Emergency Consent Process:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Description of Emergency Consent Process
+  notes: ''
+Description of Informed Consent Process:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Description of Informed Consent Process
+  notes: ''
+Description of Intercurrent Event:
+  items: []
+  map_status: To Be Mapped
+  name: Description of Intercurrent Event
+  notes: ''
+Description of Intervention Model:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Description of Intervention Model
+  notes: ''
+Description of Investigational Trial Intervention:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Description of Investigational Trial Intervention
+  notes: ''
+Description of Non-Investigational Trial Intervention:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Description of Non-Investigational Trial Intervention
+  notes: ''
+Description of Purpose of Trial:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Description of Purpose of Trial
+  notes: ''
+Description of Trial Duration:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Description of Trial Duration
+  notes: ''
+Description of Trial Phase Other:
+  image: ''
+  items: []
+  map_status: To Be Mapped
+  name: Description of Trial Phase Other
+  notes: USDM does not currently handle the 'other' requirement as USDM has a wider
+    (than M11) code list and, therefore, does not allow the other possibility.
+Description of Trial Population and Rationale:
+  items: []
+  map_status: To Be Mapped
+  name: Description of Trial Population and Rationale
+  notes: ''
+Description of level of Blinding and Method of Blinding:
+  items: []
+  map_status: To Be Mapped
+  name: Description of level of Blinding and Method of Blinding
+  notes: ''
+Device Manufacturer Address:
+  items: []
+  map_status: To Be Mapped
+  name: Device Manufacturer Address
+  notes: Currently USDM not handling device entities. Will be mapped in Phase 4 and
+    use the Organization class
+Device Manufacturer Name:
+  items: []
+  map_status: To Be Mapped
+  name: Device Manufacturer Name
+  notes: Currently USDM not handling device entities. Will be mapped in Phase 4 and
+    use the Organization class
+Disease-related Events or Outcomes Not Qualifying as AEs or SAEs:
+  items: []
+  map_status: To Be Mapped
+  name: Disease-related Events or Outcomes Not Qualifying as AEs or SAEs
+  notes: ''
+Dosage Form:
+  items: []
+  map_status: To Be Mapped
+  name: Dosage Form
+  notes: ''
+Dosage Level(s):
+  items: []
+  map_status: To Be Mapped
+  name: Dosage Level(s)
+  notes: ''
+Dosage Strength(s):
+  items: []
+  map_status: To Be Mapped
+  name: Dosage Strength(s)
+  notes: ''
+Drug/Device Combination Product Indicator:
+  items: []
+  map_status: To Be Mapped
+  name: Drug/Device Combination Product Indicator
+  notes: ''
+EU CT Number:
+  items:
+  - attribute: studyIdentifier
+    klass: StudyIdentifier
+    notes: Select where the organization is of type 'Regulatory Agency' and is the
+      EU
+    path: StudyVersion/@studyIdentifiers/StudyIdentifier/@studyIdentifier
+  map_status: Mapped
+  name: EU CT Number
+  notes: ''
+Efficacy Assessments and Procedures:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Efficacy Assessments and Procedures
+  notes: ''
+Electrocardiograms:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Electrocardiograms
+  notes: ''
+Emergency Unblinding at the Site:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Emergency Unblinding at the Site
+  notes: ''
+End of Trial:
+  items: []
+  map_status: To Be Mapped
+  name: End of Trial
+  notes: ''
+Endpoint:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Endpoint
+  notes: ''
+Exclusion Criteria:
+  items:
+  - attribute: text
+    klass: EligibilityCriteria
+    notes: Where category is 'Exclusion'
+    path: StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@criteria/EligibilityCriteria/@text
+  map_status: Mapped
+  name: Exclusion Criteria
+  notes: ''
+Exclusion Identifier:
+  items:
+  - attribute: identifier
+    klass: EligibilityCriteria
+    notes: Where category is 'Exclusion'
+    path: StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@criteria/EligibilityCriteria/@identifier
+  map_status: Mapped
+  name: Exclusion Identifier
+  notes: ''
+Exploratory Endpoint:
+  items:
+  - attribute: text
+    klass: Endpoint
+    notes: Where the endpoint level is 'exploratory'
+    path: StudyVersion/@studyDesigns/StudyDesign/@objectives/Objective/@endpoints/Endpoint/@text
+  map_status: Mapped
+  name: Exploratory Endpoint
+  notes: ''
+Exploratory Objective Description:
+  items:
+  - attribute: text
+    klass: Objective
+    notes: Where the objective level is 'exploratory'
+    path: StudyVersion/@studyDesigns/StudyDesign/@objectives/Objective/@text
+  map_status: Mapped
+  name: Exploratory Objective Description
+  notes: ''
+FDA IND Number:
+  items:
+  - attribute: studyIdentifier
+    klass: StudyIdentifier
+    notes: Select where the organization is of type 'Regulatory Agency' and is the
+      FDA
+    path: StudyVersion/@studyIdentifiers/StudyIdentifier/@studyIdentifier
+  map_status: Mapped
+  name: FDA IND Number
+  notes: ''
+Follow-up of AEs and SAEs:
+  items: []
+  map_status: To Be Mapped
+  name: Follow-up of AEs and SAEs
+  notes: ''
+Full Title:
+  items:
+  - attribute: text
+    klass: StudyTitle
+    notes: There are many titles. Select the correct one via the 'type' attribute
+      in StudyTitle
+    path: StudyVersion/@studyTitles/StudyTitle/@text
+  map_status: Mapped
+  name: Full Title
+  notes: ''
+General Considerations:
+  items: []
+  map_status: To Be Mapped
+  name: General Considerations
+  notes: ''
+General Trial Assessments and Procedures:
+  items: []
+  map_status: To Be Mapped
+  name: General Trial Assessments and Procedures
+  notes: ''
+Genetics and Pharmacogenomics:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Genetics and Pharmacogenomics
+  notes: ''
+Globally/Locally/By Cohort:
+  items: []
+  map_status: To Be Mapped
+  name: Globally/Locally/By Cohort
+  notes: ''
+Glossary of Terms and Abbreviations:
+  items: []
+  map_status: To Be Mapped
+  name: Glossary of Terms and Abbreviations
+  notes: ''
+Handling of Data in Relation to Primary Estimand(s):
+  items: []
+  map_status: To Be Mapped
+  name: Handling of Data in Relation to Primary Estimand(s)
+  notes: ''
+Handling of Data in Relation to Secondary Estimand(s):
+  items: []
+  map_status: To Be Mapped
+  name: Handling of Data in Relation to Secondary Estimand(s)
+  notes: ''
+Handling of Missing Data in Relation to Primary Estimand(s):
+  items: []
+  map_status: To Be Mapped
+  name: Handling of Missing Data in Relation to Primary Estimand(s)
+  notes: ''
+Handling of Missing Data in Relation to Secondary Estimand(s):
+  items: []
+  map_status: To Be Mapped
+  name: Handling of Missing Data in Relation to Secondary Estimand(s)
+  notes: ''
+ICH Sponsor Signatory Response:
+  items: []
+  map_status: To Be Mapped
+  name: ICH Sponsor Signatory Response
+  notes: USDM has avoided handling the issue of signatures. Align with the FHIR work
+    during Phase 4
+IDE Number:
+  items:
+  - attribute: studyIdentifier
+    klass: StudyIdentifier
+    notes: Select where the organization is of type 'Regulatory Agency' and is the
+      FDA
+    path: StudyVersion/@studyIdentifiers/StudyIdentifier/@studyIdentifier
+  map_status: Mapped
+  name: IDE Number
+  notes: ''
+IMP/NIMP (AxMP):
+  items: []
+  map_status: To Be Mapped
+  name: IMP/NIMP (AxMP)
+  notes: ''
+INN:
+  items: []
+  map_status: To Be Mapped
+  name: INN
+  notes: ''
+Identification of AEs, SAEs, Product Complaints, and Pregnancy and Postpartum Information:
+  items: []
+  map_status: To Be Mapped
+  name: Identification of AEs, SAEs, Product Complaints, and Pregnancy and Postpartum
+    Information
+  notes: ''
+Identification, Recording and Follow-Up of AEs, SAEs, Product Complaints, and Pregnancy and Postpartum Information:
+  items: []
+  map_status: To Be Mapped
+  name: Identification, Recording and Follow-Up of AEs, SAEs, Product Complaints,
+    and Pregnancy and Postpartum Information
+  notes: ''
+Immunogenicity Assessments:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Immunogenicity Assessments
+  notes: ''
+Inclusion Criteria:
+  items:
+  - attribute: text
+    klass: EligibilityCriteria
+    notes: Where category is 'Inclusion'
+    path: StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@criteria/EligibilityCriteria/@text
+  map_status: Mapped
+  name: Inclusion Criteria
+  notes: ''
+Inclusion Identifier:
+  items:
+  - attribute: identifier
+    klass: EligibilityCriteria
+    notes: Where category is 'Inclusion'
+    path: StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@criteria/EligibilityCriteria/@identifier
+  map_status: Mapped
+  name: Inclusion Identifier
+  notes: ''
+Independent Committee:
+  items: []
+  map_status: To Be Mapped
+  name: Independent Committee
+  notes: ''
+Insurance and Indemnity:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Insurance and Indemnity
+  notes: ''
+Intercurrent Event Strategy:
+  items: []
+  map_status: To Be Mapped
+  name: Intercurrent Event Strategy
+  notes: ''
+Interim Analyses:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Interim Analyses
+  notes: ''
+Intervention Assignment Method:
+  items: []
+  map_status: To Be Mapped
+  name: Intervention Assignment Method
+  notes: ''
+Intervention Model:
+  items:
+  - attribute: interventionModel
+    klass: StudyDesign
+    notes: ''
+    path: StudyVersion/@studyDesigns/StudyDesign/@interventionModel
+  map_status: Mapped
+  name: Intervention Model
+  notes: ''
+Intervention Name:
+  items: []
+  map_status: To Be Mapped
+  name: Intervention Name
+  notes: ''
+Intervention Type:
+  items: []
+  map_status: To Be Mapped
+  name: Intervention Type
+  notes: ''
+Investigational Trial Intervention Administration:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Investigational Trial Intervention Administration
+  notes: ''
+Investigational Trial Intervention Compliance:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Investigational Trial Intervention Compliance
+  notes: ''
+Investigational Trial Intervention Dose Modification:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Investigational Trial Intervention Dose Modification
+  notes: ''
+Investigator Expectations for Source Data:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Investigator Expectations for Source Data
+  notes: ''
+Investigator Responsibilities:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Investigator Responsibilities
+  notes: ''
+JRCT Number:
+  items:
+  - attribute: studyIdentifier
+    klass: StudyIdentifier
+    notes: Select where the organization is of type 'Regulatory Agency' and is the
+      MHLW (Japan)
+    path: StudyVersion/@studyIdentifiers/StudyIdentifier/@studyIdentifier
+  map_status: Mapped
+  name: JRCT Number
+  notes: ''
+Lifestyle Restrictions:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Lifestyle Restrictions
+  notes: ''
+Local Sponsor Address:
+  items:
+  - attribute: name
+    klass: Organization
+    notes: Select the co-sponsor organization
+    path: StudyIdentifier/@studyIdentifierScope/Organization/@name
+  map_status: Mapped
+  name: Local Sponsor Address
+  notes: ''
+Local Sponsor Name:
+  items:
+  - attribute: text
+    klass: Address
+    notes: Select the co-sponsor organization
+    path: StudyIdentifier/@studyIdentifierScope/Organization/@legalAddress/Address/@text
+  map_status: Mapped
+  name: Local Sponsor Name
+  notes: ''
+Lost to Follow-Up:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Lost to Follow-Up
+  notes: ''
+Management of Investigation Trial Intervention Overdose:
+  items: []
+  map_status: To Be Mapped
+  name: Management of Investigation Trial Intervention Overdose
+  notes: ''
+Master Protocol Design Indicator:
+  items: []
+  map_status: To Be Mapped
+  name: Master Protocol Design Indicator
+  notes: ''
+Master Study, Sub-Study:
+  items: []
+  map_status: To Be Mapped
+  name: Master Study, Sub-Study
+  notes: ''
+Maximum Age:
+  items:
+  - attribute: plannedAge
+    klass: StudyDesignPopulation
+    notes: ''
+    path: StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@plannedAge
+  - attribute: plannedAge
+    klass: StudyCohort
+    notes: ''
+    path: StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@cohorts/StudyCohort/@plannedAge
+  - attribute: maxValue
+    klass: Range
+    notes: ''
+    path: StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@plannedAge/Range/@maxValue
+  map_status: Mapped
+  name: Maximum Age
+  notes: ''
+Maximum Age Unit:
+  items: []
+  map_status: To Be Mapped
+  name: Maximum Age Unit
+  notes: ''
+Meals and Dietary Restrictions:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Meals and Dietary Restrictions
+  notes: ''
+Medical Expert Contact Information Response:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Medical Expert Contact Information Response
+  notes: ''
+Medical Resource Utilisation and Health Economics:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Medical Resource Utilisation and Health Economics
+  notes: ''
+Method of Assignment to Trial Intervention:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Method of Assignment to Trial Intervention
+  notes: ''
+Minimum Age:
+  items:
+  - attribute: plannedAge
+    klass: StudyDesignPopulation
+    notes: ''
+    path: StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@plannedAge
+  - attribute: plannedAge
+    klass: StudyCohort
+    notes: ''
+    path: StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@cohorts/StudyCohort/@plannedAge
+  - attribute: minValue
+    klass: Range
+    notes: ''
+    path: StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@plannedAge/Range/@minValue
+  map_status: Mapped
+  name: Minimum Age
+  notes: ''
+Minimum Age Unit:
+  items: []
+  map_status: To Be Mapped
+  name: Minimum Age Unit
+  notes: ''
+Multiplicity Adjustments:
+  items: []
+  map_status: To Be Mapped
+  name: Multiplicity Adjustments
+  notes: ''
+NCT Number:
+  items:
+  - attribute: studyIdentifier
+    klass: StudyIdentifier
+    notes: Select where the organization is of type 'Clinical Study Registry' and
+      is the ClinicalTrials.gov
+    path: StudyVersion/@studyIdentifiers/StudyIdentifier/@studyIdentifier
+  map_status: Mapped
+  name: NCT Number
+  notes: ''
+NMPA IND Number:
+  items:
+  - attribute: studyIdentifier
+    klass: StudyIdentifier
+    notes: Select where the organization is of type 'Regulatory Agency' and is the
+      NMPA (China)
+    path: StudyVersion/@studyIdentifiers/StudyIdentifier/@studyIdentifier
+  map_status: Mapped
+  name: NMPA IND Number
+  notes: ''
+Nonproprietary Name(s):
+  items:
+  - attribute: codes
+    klass: StudyIntervention
+    notes: Select where role is 'TBD'
+    path: StudyVersion/@studyDesigns/StudyDesign/@interventions/StudyIntervention/@codes
+  - attribute: role
+    klass: StudyIntervention
+    notes: null
+    path: StudyVersion/@studyDesigns/StudyDesign/@interventions/StudyIntervention/@role
+  map_status: Mapped
+  name: Nonproprietary Name(s)
+  notes: ''
+Nonproprietary name:
+  image: ''
+  items: []
+  map_status: To Be Mapped
+  name: Nonproprietary name
+  notes: ''
+Number of Arms:
+  items:
+  - attribute: name
+    klass: StudyArm
+    notes: Count of the number of arms within the study design
+    path: StudyVersion/@studyDesigns/StudyDesign/@arms/StudyArm/@name
+  map_status: Mapped
+  name: Number of Arms
+  notes: ''
+Number of Participants:
+  items:
+  - attribute: plannedEnrollmentNumber
+    klass: StudyDesignPopulation
+    notes: ''
+    path: StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@plannedEnrollmentNumber
+  - attribute: plannedCompletionNumber
+    klass: StudyDesignPopulation
+    notes: ''
+    path: StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@plannedCompletionNumber
+  - attribute: plannedEnrollmentNumber
+    klass: StudyCohort
+    notes: ''
+    path: StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@cohorts/StudyCohort/@plannedEnrollmentNumber
+  - attribute: plannedCompletionNumber
+    klass: StudyCohort
+    notes: ''
+    path: StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@cohorts/StudyCohort/@plannedCompletionNumber
+  map_status: Mapped
+  name: Number of Participants
+  notes: ''
+Original Protocol Date:
+  items: []
+  map_status: To Be Mapped
+  name: Original Protocol Date
+  notes: ''
+Original Protocol Indicator:
+  items:
+  - attribute: amendments
+    klass: StudyVersion
+    notes: Existance of any amendments tells us this is not an original protocol.
+      Set to 'Yes' if no amendments exist, otherwise 'No'
+    path: StudyVersion/@amendments
+  map_status: Mapped
+  name: Original Protocol Indicator
+  notes: ''
+Other Activity Restrictions:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Other Activity Restrictions
+  notes: ''
+Other Analyses:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Other Analyses
+  notes: ''
+Other Biomarkers:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Other Biomarkers
+  notes: ''
+Other Committee:
+  items: []
+  map_status: To Be Mapped
+  name: Other Committee
+  notes: ''
+Other Regulatory Agency Identifier Number:
+  items:
+  - attribute: studyIdentifier
+    klass: StudyIdentifier
+    notes: Select where the organization is of type 'Regulatory Agency'
+    path: StudyVersion/@studyIdentifiers/StudyIdentifier/@studyIdentifier
+  map_status: Mapped
+  name: Other Regulatory Agency Identifier Number
+  notes: ''
+Other Therapy:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Other Therapy
+  notes: ''
+Overall Benefit:Risk Conclusion:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Overall Benefit:Risk Conclusion
+  notes: ''
+Overall Description of Trial Design:
+  items: []
+  map_status: To Be Mapped
+  name: Overall Description of Trial Design
+  notes: ''
+Participant Assignment to Investigational Trial Intervention:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Participant Assignment to Investigational Trial Intervention
+  notes: ''
+Participant Discontinuation or Withdrawal from Trial:
+  items: []
+  map_status: To Be Mapped
+  name: Participant Discontinuation or Withdrawal from Trial
+  notes: ''
+Participants Who Become Pregnant During the Trial:
+  items: []
+  map_status: To Be Mapped
+  name: Participants Who Become Pregnant During the Trial
+  notes: ''
+Participants Whose Partners Become Pregnant:
+  items: []
+  map_status: To Be Mapped
+  name: Participants Whose Partners Become Pregnant
+  notes: ''
+Permitted Concomitant Therapy:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Permitted Concomitant Therapy
+  notes: ''
+Pharmacodynamic Biomarkers:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Pharmacodynamic Biomarkers
+  notes: ''
+Pharmacokinetics:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Pharmacokinetics
+  notes: ''
+Physical Activity Restrictions:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Physical Activity Restrictions
+  notes: ''
+Physical Examination:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Physical Examination
+  notes: ''
+Planned Duration of Trial Intervention Alternate Description:
+  items: []
+  map_status: To Be Mapped
+  name: Planned Duration of Trial Intervention Alternate Description
+  notes: ''
+Planned Duration of Trial Intervention Number:
+  items:
+  - attribute: name
+    klass: StudyElement
+    notes: Can be calculated from the element link to intervention and then from the
+      timeline
+    path: StudyVersion/@studyDesigns/StudyDesign/@elements/Element/@name
+  map_status: Mapped
+  name: Planned Duration of Trial Intervention Number
+  notes: ''
+Planned Duration of Trial Intervention Unit of Time:
+  items:
+  - attribute: name
+    klass: StudyElement
+    notes: Can be calculated from the element link to intervention and then from the
+      timeline
+    path: StudyVersion/@studyDesigns/StudyDesign/@elements/Element/@name
+  map_status: Mapped
+  name: Planned Duration of Trial Intervention Unit of Time
+  notes: ''
+Planned Duration of Trial Participation Alternate Description:
+  items: []
+  map_status: To Be Mapped
+  name: Planned Duration of Trial Participation Alternate Description
+  notes: ''
+Planned Duration of Trial Participation Number:
+  items:
+  - attribute: name
+    klass: StudyEpoch
+    notes: Can be calculated from the element link to intervention and then from the
+      timeline
+    path: StudyVersion/@studyDesigns/StudyDesign/@epochs/StudyEpoch/@name
+  map_status: Mapped
+  name: Planned Duration of Trial Participation Number
+  notes: ''
+Planned Duration of Trial Participation Unit of Time:
+  items:
+  - attribute: name
+    klass: StudyEpoch
+    notes: Can be calculated from the element link to intervention and then from the
+      timeline
+    path: StudyVersion/@studyDesigns/StudyDesign/@epochs/StudyEpoch/@name
+  map_status: Mapped
+  name: Planned Duration of Trial Participation Unit of Time
+  notes: ''
+Population:
+  items: []
+  map_status: To Be Mapped
+  name: Population
+  notes: ''
+Population Diagnosis or Condition:
+  items:
+  - attribute: codes
+    klass: Indication
+    notes: ''
+    path: StudyVersion/@studyDesigns/StudyDesign/@indications/Indication/@codes
+  map_status: Mapped
+  name: Population Diagnosis or Condition
+  notes: ''
+Population Type:
+  items:
+  - attribute: includesHealthySubjects
+    klass: StudyDesignPopulation
+    notes: ''
+    path: StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@includesHealthySubjects
+  - attribute: includesHealthySubjects
+    klass: StudyCohort
+    notes: ''
+    path: StudyVersion/@studyDesigns/StudyDesign/@population/StudyDesignPopulation/@cohorts/StudyCohort/@includesHealthySubjects
+  map_status: Mapped
+  name: Population Type
+  notes: ''
+Population-Level Summary:
+  items: []
+  map_status: To Be Mapped
+  name: Population-Level Summary
+  notes: ''
+Pregnancy Testing:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Pregnancy Testing
+  notes: ''
+Preparation of Investigational Trial Intervention:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Preparation of Investigational Trial Intervention
+  notes: ''
+Primary Endpoint:
+  items:
+  - attribute: text
+    klass: Endpoint
+    notes: Where the endpoint level is 'primary'
+    path: StudyVersion/@studyDesigns/StudyDesign/@objectives/Objective/@endpoints/Endpoint/@text
+  map_status: Mapped
+  name: Primary Endpoint
+  notes: ''
+Primary Estimand:
+  items: []
+  map_status: To Be Mapped
+  name: Primary Estimand
+  notes: ''
+Primary Objective:
+  items:
+  - attribute: text
+    klass: Objective
+    notes: Where the objective level is 'primary'
+    path: StudyVersion/@studyDesigns/StudyDesign/@objectives/Objective/@text
+  map_status: Mapped
+  name: Primary Objective
+  notes: ''
+Primary Reason for Amendment:
+  items:
+  - attribute: code
+    klass: StudyAmendmentReason
+    notes: ''
+    path: StudyVersion/@amendments/StudyAmendment/@primaryReason/StudyAmendmentReason/@code
+  - attribute: otherReason
+    klass: StudyAmendmentReason
+    notes: Allows for free text other reason
+    path: StudyVersion/@amendments/StudyAmendment/@primaryReason/StudyAmendmentReason/@otherReason
+  map_status: Mapped
+  name: Primary Reason for Amendment
+  notes: ''
+Prohibited Concomitant Therapy:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Prohibited Concomitant Therapy
+  notes: ''
+Proprietary Name(s):
+  items:
+  - attribute: codes
+    klass: StudyIntervention
+    notes: Select where role is 'TBD'
+    path: StudyVersion/@studyDesigns/StudyDesign/@interventions/StudyIntervention/@codes
+  - attribute: role
+    klass: StudyIntervention
+    notes: null
+    path: StudyVersion/@studyDesigns/StudyDesign/@interventions/StudyIntervention/@role
+  map_status: Mapped
+  name: Proprietary Name(s)
+  notes: ''
+Protocol Deviations Plans:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Protocol Deviations Plans
+  notes: ''
+Randomisation:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Randomisation
+  notes: ''
+Randomly Assigned to Trial Intervention/Enrolled:
+  items: []
+  map_status: To Be Mapped
+  name: Randomly Assigned to Trial Intervention/Enrolled
+  notes: ''
+Rationale For Amendment Change:
+  items: []
+  map_status: To Be Mapped
+  name: Rationale For Amendment Change
+  notes: ''
+Rationale for Adaptive or Novel Design:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Rationale for Adaptive or Novel Design
+  notes: ''
+Rationale for Control Type:
+  items: []
+  map_status: To Be Mapped
+  name: Rationale for Control Type
+  notes: ''
+Rationale for Estimands:
+  items: []
+  map_status: To Be Mapped
+  name: Rationale for Estimands
+  notes: ''
+Rationale for Interim Analysis:
+  items: []
+  map_status: To Be Mapped
+  name: Rationale for Interim Analysis
+  notes: ''
+Rationale for Investigational Trial Intervention Dose and Regimen:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Rationale for Investigational Trial Intervention Dose and Regimen
+  notes: ''
+Rationale for Other Design Aspects:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Rationale for Other Design Aspects
+  notes: ''
+Rationale for Trial Duration:
+  items: []
+  map_status: To Be Mapped
+  name: Rationale for Trial Duration
+  notes: ''
+Rationale for Trial Intervention Model:
+  items: []
+  map_status: To Be Mapped
+  name: Rationale for Trial Intervention Model
+  notes: ''
+Reason(s) for Amendment:
+  items: []
+  map_status: To Be Mapped
+  name: Reason(s) for Amendment
+  notes: ''
+Rechallenge:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Rechallenge
+  notes: ''
+References:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: References
+  notes: ''
+Regimen/Treatment Period/Vaccine Regimen:
+  items: []
+  map_status: To Be Mapped
+  name: Regimen/Treatment Period/Vaccine Regimen
+  notes: ''
+Region Identifier:
+  items:
+  - attribute: type
+    klass: GeographicScope
+    notes: The type will give Global, Regional or Country scope. There may be several
+      scopes but only be one global scope
+    path: StudyVersion/@amendments/StudyAmendment/@enrollments/SubjectEnrollment/@code/AliasCode/@standardCode/Code/@decode
+  map_status: Mapped
+  name: Region Identifier
+  notes: ''
+Regulatory Reporting Requirements for SAEs:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Regulatory Reporting Requirements for SAEs
+  notes: ''
+Regulatory and Ethical Considerations:
+  items: []
+  map_status: To Be Mapped
+  name: Regulatory and Ethical Considerations
+  notes: ''
+Reporting of SAEs:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Reporting of SAEs
+  notes: ''
+Rescreening:
+  items: []
+  map_status: To Be Mapped
+  name: Rescreening
+  notes: ''
+Rescue Therapy:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Rescue Therapy
+  notes: ''
+Responsibilities following Termination or Suspension:
+  items: []
+  map_status: To Be Mapped
+  name: Responsibilities following Termination or Suspension
+  notes: ''
+Risk Management:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Risk Management
+  notes: ''
+Route of Administration:
+  items: []
+  map_status: To Be Mapped
+  name: Route of Administration
+  notes: ''
+SAE Definition:
+  items: []
+  map_status: To Be Mapped
+  name: SAE Definition
+  notes: ''
+SAE Reporting Method:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: SAE Reporting Method
+  notes: ''
+Safety Analyses:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Safety Analyses
+  notes: ''
+Safety Assessments and Procedures:
+  items: []
+  map_status: To Be Mapped
+  name: Safety Assessments and Procedures
+  notes: ''
+Sample Size Determination:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Sample Size Determination
+  notes: ''
+Schedule of Activities:
+  items: []
+  map_status: To Be Mapped
+  name: Schedule of Activities
+  notes: ''
+Schema Notes:
+  items: []
+  map_status: To Be Mapped
+  name: Schema Notes
+  notes: ''
+Screen Failure:
+  items: []
+  map_status: To Be Mapped
+  name: Screen Failure
+  notes: ''
+Screening Assessments and Procedures:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Screening Assessments and Procedures
+  notes: ''
+Secondary Endpoint:
+  items:
+  - attribute: text
+    klass: Endpoint
+    notes: Where the endpoint level is 'secondary'
+    path: StudyVersion/@studyDesigns/StudyDesign/@objectives/Objective/@endpoints/Endpoint/@text
+  map_status: Mapped
+  name: Secondary Endpoint
+  notes: ''
+Secondary Estimand:
+  items: []
+  map_status: To Be Mapped
+  name: Secondary Estimand
+  notes: ''
+Secondary Objective:
+  items:
+  - attribute: text
+    klass: Objective
+    notes: Where the objective level is 'secondary'
+    path: StudyVersion/@studyDesigns/StudyDesign/@objectives/Objective/@text
+  map_status: Mapped
+  name: Secondary Objective
+  notes: ''
+Secondary Reason For Amendment Original:
+  items: []
+  map_status: To Be Mapped
+  name: Secondary Reason For Amendment Original
+  notes: ''
+Secondary Reason for Amendment:
+  items:
+  - attribute: code
+    klass: StudyAmendmentReason
+    notes: ''
+    path: StudyVersion/@amendments/StudyAmendment/@secondaryReasons/StudyAmendmentReason/@code
+  - attribute: otherReason
+    klass: StudyAmendmentReason
+    notes: Allows for free text other reason
+    path: StudyVersion/@amendments/StudyAmendment/@secondaryReasons/StudyAmendmentReason/@otherReason
+  map_status: Mapped
+  name: Secondary Reason for Amendment
+  notes: ''
+Section of Amendment Change:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Section of Amendment Change
+  notes: ''
+Sensitivity Analysis:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Sensitivity Analysis
+  notes: ''
+Severity:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Severity
+  notes: ''
+Site Distribution:
+  items:
+  - attribute: name
+    klass: StudySite
+    notes: If count is greater then one then multi-center
+    path: StudyVersion/@studyDesigns/StudyDesign/@organizations/ResearchOrganization/@manages/@name
+  map_status: Mapped
+  name: Site Distribution
+  notes: ''
+Site Geographic Scope:
+  items:
+  - attribute: name
+    klass: StudySite
+    notes: Sites may need an address or similar mechanism
+    path: StudyVersion/@studyDesigns/StudyDesign/@organizations/ResearchOrganization/@manages/@name
+  map_status: Mapped
+  name: Site Geographic Scope
+  notes: ''
+Site Identifier:
+  items:
+  - attribute: name
+    klass: StudySite
+    notes: Sites may need an address or similar mechanism
+    path: StudyVersion/@studyDesigns/StudyDesign/@organizations/ResearchOrganization/@manages/StudySite/@name
+  map_status: Mapped
+  name: Site Identifier
+  notes: ''
+Source Data Introduction:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Source Data Introduction
+  notes: ''
+Sourcing:
+  items: []
+  map_status: To Be Mapped
+  name: Sourcing
+  notes: ''
+Specify Alternative Location for Amendments:
+  items: []
+  map_status: To Be Mapped
+  name: Specify Alternative Location for Amendments
+  notes: ''
+Sponsor Confidentiality Statement:
+  items: []
+  map_status: To Be Mapped
+  name: Sponsor Confidentiality Statement
+  notes: We could this this via NarrativeContent but maybe a better mechanism could
+    be provided
+Sponsor Legal Address:
+  items:
+  - attribute: text
+    klass: Address
+    notes: Select the sponsor organization
+    path: StudyIdentifier/@studyIdentifierScope/Organization/@legalAddress/Address/@text
+  map_status: Mapped
+  name: Sponsor Legal Address
+  notes: ''
+Sponsor Name:
+  items:
+  - attribute: name
+    klass: Organization
+    notes: Select the sponsor organization
+    path: StudyIdentifier/@studyIdentifierScope/Organization/@name
+  map_status: Mapped
+  name: Sponsor Name
+  notes: ''
+Sponsor Protocol Identifier:
+  items:
+  - attribute: studyIdentifier
+    klass: StudyIdentifier
+    notes: Select the sponsor identifier. This can be identified via the 'studyIdentifierScope'
+      attribute, teh resulting organization and its type
+    path: StudyVersion/@studyIdentifiers/StudyIdentifier/@studyIdentifier
+  map_status: Mapped
+  name: Sponsor Protocol Identifier
+  notes: ''
+Sponsor Responsibilities:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Sponsor Responsibilities
+  notes: ''
+Stakeholder Input:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Stakeholder Input
+  notes: ''
+Start of Trial:
+  items: []
+  map_status: To Be Mapped
+  name: Start of Trial
+  notes: ''
+Statistical Method of Analysis:
+  items: []
+  map_status: To Be Mapped
+  name: Statistical Method of Analysis
+  notes: ''
+Storage and Handling of Investigational Trial Intervention:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Storage and Handling of Investigational Trial Intervention
+  notes: ''
+Substantial Reliability Impact:
+  items: []
+  map_status: To Be Mapped
+  name: Substantial Reliability Impact
+  notes: ''
+Substantial Safety Impact:
+  items:
+  - attribute: substantialImpact
+    klass: StudyAmendment
+    notes: ''
+    path: StudyVersion/@amendments/StudyAmendment/@substantialImpact
+  map_status: Mapped
+  name: Substantial Safety Impact
+  notes: ''
+Suicidal Ideation and Behaviour Risk Monitoring:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Suicidal Ideation and Behaviour Risk Monitoring
+  notes: ''
+Supplementary Analysis:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Supplementary Analysis
+  notes: ''
+Synopsis Primary Estimand:
+  items: []
+  map_status: To Be Mapped
+  name: Synopsis Primary Estimand
+  notes: ''
+Synopsis Primary Objective:
+  items:
+  - attribute: text
+    klass: Objective
+    notes: Where the objective level is 'primary'
+    path: StudyVersion/@studyDesigns/StudyDesign/@objectives/Objective/@text
+  map_status: Mapped
+  name: Synopsis Primary Objective
+  notes: ''
+Synopsis Secondary Estimand:
+  items: []
+  map_status: To Be Mapped
+  name: Synopsis Secondary Estimand
+  notes: ''
+Synopsis Secondary Objective:
+  items:
+  - attribute: text
+    klass: Objective
+    notes: Where the objective level is 'secondary'
+    path: StudyVersion/@studyDesigns/StudyDesign/@objectives/Objective/@text
+  map_status: Mapped
+  name: Synopsis Secondary Objective
+  notes: ''
+Table of Trial Interventions:
+  items: []
+  map_status: To Be Mapped
+  name: Table of Trial Interventions
+  notes: ''
+Target/Maximum:
+  items: []
+  map_status: To Be Mapped
+  name: Target/Maximum
+  notes: ''
+Temporary Discontinuation/Interruption of Trial Intervention:
+  items: []
+  map_status: To Be Mapped
+  name: Temporary Discontinuation/Interruption of Trial Intervention
+  notes: ''
+Time Period and/or Frequency for Collection and Reporting of AEs, SAEs, Pregnancy and Product Complaints:
+  items: []
+  map_status: To Be Mapped
+  name: Time Period and/or Frequency for Collection and Reporting of AEs, SAEs, Pregnancy
+    and Product Complaints
+  notes: ''
+Treatment:
+  items: []
+  map_status: To Be Mapped
+  name: Treatment
+  notes: ''
+Trial Acronym:
+  items:
+  - attribute: text
+    klass: StudyTitle
+    notes: There are many titles. Select the acronym via the 'type' attribute in StudyTitle
+    path: StudyVersion/@studyTitles/StudyTitle/@text
+  map_status: Mapped
+  name: Trial Acronym
+  notes: ''
+Trial Blind Schema:
+  items:
+  - attribute: blindingSchema
+    klass: StudyDesign
+    notes: ''
+    path: StudyVersion/@studyDesigns/StudyDesign/@blindingSchema
+  map_status: Mapped
+  name: Trial Blind Schema
+  notes: ''
+Trial Design Adaptation Indicator:
+  items: []
+  map_status: To Be Mapped
+  name: Trial Design Adaptation Indicator
+  notes: ''
+Trial Design Adaptation Type:
+  items: []
+  map_status: To Be Mapped
+  name: Trial Design Adaptation Type
+  notes: ''
+Trial Monitor Expectations for Source Data:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Trial Monitor Expectations for Source Data
+  notes: ''
+Trial Phase:
+  items:
+  - attribute: studyPhase
+    klass: StudyVersion
+    notes: ''
+    path: StudyVersion/@studyPhase
+  map_status: Mapped
+  name: Trial Phase
+  notes: ''
+Trial Schema:
+  items: []
+  map_status: To Be Mapped
+  name: Trial Schema
+  notes: ''
+Trial Short Title:
+  items:
+  - attribute: text
+    klass: StudyTitle
+    notes: There are many titles. Select the correct one via the 'type' attribute
+      in StudyTitle
+    path: StudyVersion/@studyTitles/StudyTitle/@text
+  map_status: Mapped
+  name: Trial Short Title
+  notes: ''
+Trial Stopping Rules:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Trial Stopping Rules
+  notes: ''
+Trial-specific Intervention Risks and Mitigations:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Trial-specific Intervention Risks and Mitigations
+  notes: ''
+Trial-specific Other Risks and Mitigations:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Trial-specific Other Risks and Mitigations
+  notes: ''
+Trial-specific Procedure Risks and Mitigations:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Trial-specific Procedure Risks and Mitigations
+  notes: ''
+Use:
+  items: []
+  map_status: To Be Mapped
+  name: Use
+  notes: ''
+Version Date:
+  items:
+  - attribute: dateValue
+    klass: GovernanceDate
+    notes: The governamce data 'type' attribute should be examined and the type 'Protocol
+      Effective Date' selected
+    path: StudyProtocolDocumentVersion/@dateValues/GovernanceDate/@dateValue
+  map_status: Mapped
+  name: Version Date
+  notes: ''
+Version Number:
+  items:
+  - attribute: versionIdentifier
+    klass: StudyVersion
+    notes: ''
+    path: StudyVersion/@versionIdentifier
+  map_status: Mapped
+  name: Version Number
+  notes: ''
+Vital Signs:
+  items:
+  - attribute: text
+    klass: NarrativeContent
+    notes: ''
+    path: StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text
+  map_status: Mapped
+  name: Vital Signs
+  notes: ''
+WHO/UTN Number:
+  items:
+  - attribute: studyIdentifier
+    klass: StudyIdentifier
+    notes: ''
+    path: StudyVersion/@studyIdentifiers/StudyIdentifier/@studyIdentifier
+  map_status: Mapped
+  name: WHO/UTN Number
+  notes: ''
