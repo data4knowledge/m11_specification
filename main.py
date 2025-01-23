@@ -16,6 +16,8 @@ with open("data/output_data/template_document.json", "w") as f:
     json.dump(template.document, f, indent=4)
 with open("data/output_data/template_elements.json", "w") as f:
     json.dump(template.elements, f, indent=4)
+with open("data/output_data/template_sections.json", "w") as f:
+    json.dump(template.sections, f, indent=4)
 with open("data/output_data/technical_document.json", "w") as f:
     json.dump(technical.document, f, indent=4)#
 with open("data/output_data/technical_elements.json", "w") as f:
@@ -42,6 +44,7 @@ with open("data/output_data/merged_elements.json", "w") as f:
 with open("data/output_data/mismatched_elements.json", "w") as f:
     json.dump(missing, f, indent=4)
 
-res = zip_longest(missing['template'].keys(), missing['technical'].keys())
-print("\n\nResults: Unmatched Items\n\n")
-print(tabulate(res, headers=['Template', 'Technical'], tablefmt="github"))
+res = list(zip_longest(missing['template'].keys(), missing['technical'].keys()))
+print(f"RES: {res}")
+#print("\n\nResults: Unmatched Items\n\n")
+#print(tabulate(res, headers=['Template', 'Technical'], tablefmt="github"))

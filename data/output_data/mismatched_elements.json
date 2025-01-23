@@ -1,27 +1,5 @@
 {
     "template": {
-        "Square brackets": {
-            "long_name": "Square brackets",
-            "short_name": "Square brackets",
-            "original_name": "Square brackets",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": [
-                "Populate field from available choices, or with free text if indicated; remove brackets and restyle text to match other text in the final document"
-            ]
-        },
-        "Chevrons": {
-            "long_name": "Chevrons",
-            "short_name": "Chevrons",
-            "original_name": "Chevrons",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": [
-                "When complete, remove chevrons and restyle text to match other text in the final document"
-            ]
-        },
         "Original Protocol Indicator": {
             "long_name": "Original Protocol Indicator",
             "short_name": "Original Protocol Indicator",

@@ -13,8 +13,10 @@ class M11Template:
         Args:
             filepath (str): Path to the Template Specification PDF
         """
+        self.in_definitions = False
         self.document = None
         self.elements = {}
+        self.sections = {}
         self.filepath = Path(filepath)
         if not self.filepath.exists():
             raise FileNotFoundError(
@@ -24,43 +26,49 @@ class M11Template:
     def process(self) -> None:
         """
         Process the template specification document.
-        """                                    
+        """     
         raw_doc: RawDocument = RawDocx(self.filepath).target_document
         self.document = raw_doc.to_dict()
         for section in raw_doc.sections:
             last_document_elements = []
+            self.sections[section.number] = {
+                "title": section.title,
+                "number": section.number,
+                "elements": []
+            }
             for item in section.items:
                 if isinstance(item, RawParagraph):
-                    confirmed_elements = self._extract_elements(section, item)
-                    if confirmed_elements:
-                        self._add_elements(confirmed_elements)
-                        last_document_elements = confirmed_elements
-                    else:
-                        instructions = self._extract_instructions(section, item)
-                        self._add_instructions(last_document_elements, instructions)
-                        last_document_elements = []
+                    if item.text.startswith("This is the end of the instructional section"):
+                        self.in_definitions = True
+                    if self.in_definitions:
+                        confirmed_elements = self._extract_elements(section, item)
+                        if confirmed_elements:
+                            self._add_elements(confirmed_elements)
+                            last_document_elements = confirmed_elements
+                        else:
+                            instructions = self._extract_instructions(section, item)
+                            self._add_instructions(last_document_elements, instructions)
+                            last_document_elements = []
                 elif isinstance(item, RawTable):
-                    for row in item.rows:
-                        for cell in row.cells:
-                            last_row_elements = []
-                            for item in cell.items:
-                                if isinstance(item, RawParagraph):
-                                    confirmed_elements = self._extract_elements(
-                                        section, item
-                                    )
-                                    if confirmed_elements:
-                                        self._add_elements(confirmed_elements)
-                                        last_row_elements = confirmed_elements
-                                    else:
-                                        instructions = self._extract_instructions(
+                    if self.in_definitions:
+                        for row in item.rows:
+                            for cell in row.cells:
+                                last_row_elements = []
+                                for item in cell.items:
+                                    if isinstance(item, RawParagraph):
+                                        confirmed_elements = self._extract_elements(
                                             section, item
                                         )
-                                        #print(
-                                        #    f"INSTRUCTIONS: {instructions} for {last_row_elements}"
-                                        #)
-                                        self._add_instructions(
-                                            last_row_elements, instructions
-                                        )
+                                        if confirmed_elements:
+                                            self._add_elements(confirmed_elements)
+                                            last_row_elements = confirmed_elements
+                                        else:
+                                            instructions = self._extract_instructions(
+                                                section, item
+                                            )
+                                            self._add_instructions(
+                                                last_row_elements, instructions
+                                            )
 
     def rename_elements(self, filepath: str) -> None:
         """
@@ -130,6 +138,7 @@ class M11Template:
                         "instructions": [],
                     }
                 )
+                self.sections[section.number]["elements"].append(short_name)
         #print(f"CONFIRMED ELEMENTS: {confirmed_elements}")
         return confirmed_elements
 

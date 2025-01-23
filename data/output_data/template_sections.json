@@ -1,0 +1,1200 @@
+{
+    "null": {
+        "title": null,
+        "number": null,
+        "elements": [
+            "Sponsor Confidentiality Statement",
+            "Full Title",
+            "Trial Acronym",
+            "Sponsor Protocol Identifier",
+            "Original Protocol Indicator",
+            "Version Number",
+            "Version Date",
+            "Amendment Identifier",
+            "Amendment Scope",
+            "Country Identifier",
+            "Region Identifier",
+            "Site Identifier",
+            "Sponsor\u2019s Investigational Product Code(s)",
+            "Nonproprietary Name(s)",
+            "Proprietary Name(s)",
+            "Trial Phase",
+            "Trial Short Title",
+            "Sponsor Name",
+            "Sponsor Legal Address",
+            "Co-Sponsor Name",
+            "Co-Sponsor Legal Address",
+            "Local Sponsor Name",
+            "Local Sponsor Address",
+            "Device Manufacturer Name",
+            "Device Manufacturer Address",
+            "EU CT Number",
+            "FDA IND Number",
+            "IDE Number",
+            "jRCT Number",
+            "NCT Number",
+            "NMPA IND Number",
+            "WHO/UTN Number",
+            "Other Regulatory or Clinical Trial Identifier",
+            "State location where information can be found",
+            "describe method",
+            "contact information for Medical Expert (as designated by sponsor) or state location where information can be found",
+            "#/%",
+            "#/%",
+            "Globally/Locally/by Cohort",
+            "#/%",
+            "Globally/Locally/by Cohort",
+            "#/%",
+            "Globally/Locally/by Cohort",
+            "Primary Reason for Amendment",
+            "Primary Reason for Amendment",
+            "Secondary Reason for Amendment",
+            "Amendment Summary",
+            "Amendment Summary",
+            "Amendment Summary",
+            "Yes/No",
+            "Yes/No",
+            "Yes/No",
+            "Yes/No",
+            "Description of Change",
+            "Brief Rationale for Change",
+            "Section # and Name of Change"
+        ]
+    },
+    "1": {
+        "title": "Protocol Summary",
+        "number": "1",
+        "elements": []
+    },
+    "1.1": {
+        "title": "Protocol Synopsis",
+        "number": "1.1",
+        "elements": []
+    },
+    "1.1.1": {
+        "title": "Primary and Secondary Objectives and Estimands",
+        "number": "1.1.1",
+        "elements": [
+            "Primary and Secondary Objectives and Estimands"
+        ]
+    },
+    "1.1.2": {
+        "title": "Overall Design",
+        "number": "1.1.2",
+        "elements": [
+            "Population type",
+            "Intervention model",
+            "Population diagnosis or condition",
+            "Control type",
+            "minimum age",
+            "units of minimum age",
+            "maximum age",
+            "units of maximum age",
+            "Nonproprietary name",
+            "INN",
+            "\u201cNot applicable\u201d",
+            "Site distribution",
+            "Site geographic scope",
+            "Intervention assignment method",
+            "Master Protocol Indicator",
+            "Drug/Device Combination Product Indicator",
+            "Adaptive Trial Design Indicator",
+            "Number of Arms",
+            "Trial Blind Schema",
+            "blinded roles",
+            "Target/Maximum",
+            "Number of Participants",
+            "randomly assigned to trial intervention/enrolled",
+            "total planned duration of trial intervention",
+            "total planned duration of trial intervention unit of time",
+            "alternate description of planned duration of trial intervention if duration will vary",
+            "total planned duration of trial participation",
+            "total planned duration of trial participation unit of time",
+            "alternate description of planned duration of trial participation if duration will vary",
+            "Additional Description of Duration",
+            "Independent Committees",
+            "Other Committees"
+        ]
+    },
+    "1.2": {
+        "title": "Trial Schema",
+        "number": "1.2",
+        "elements": [
+            "Trial Schema",
+            "Schema Notes"
+        ]
+    },
+    "1.3": {
+        "title": "Schedule of Activities",
+        "number": "1.3",
+        "elements": [
+            "Schedule of Activities"
+        ]
+    },
+    "2": {
+        "title": "Introduction",
+        "number": "2",
+        "elements": []
+    },
+    "2.1": {
+        "title": "Purpose of Trial",
+        "number": "2.1",
+        "elements": [
+            "Purpose of Trial"
+        ]
+    },
+    "2.2": {
+        "title": "Assessment of Risks and Benefits",
+        "number": "2.2",
+        "elements": []
+    },
+    "2.2.1": {
+        "title": "Risk Summary and Mitigation Strategy",
+        "number": "2.2.1",
+        "elements": [
+            "Trial-specific Intervention Risks and Mitigations",
+            "Trial-specific Procedure Risks and Mitigations",
+            "Trial-specific Other Risks and Mitigations"
+        ]
+    },
+    "2.2.2": {
+        "title": "Benefit Summary",
+        "number": "2.2.2",
+        "elements": [
+            "Benefit Summary"
+        ]
+    },
+    "2.2.3": {
+        "title": "Overall Risk-Benefit Assessment",
+        "number": "2.2.3",
+        "elements": [
+            "Overall Risk-Benefit Assessment"
+        ]
+    },
+    "3": {
+        "title": "Trial Objectives and Associated Estimands",
+        "number": "3",
+        "elements": []
+    },
+    "3.1": {
+        "title": "Primary Objective(s) and Associated Estimand(s)",
+        "number": "3.1",
+        "elements": []
+    },
+    "3.1.1": {
+        "title": "Primary Objective <#>",
+        "number": "3.1.1",
+        "elements": [
+            "Primary Objective",
+            "Population",
+            "Treatment",
+            "Endpoint",
+            "Population-level Summary",
+            "Description of Intercurrent Event",
+            "Intercurrent Event 1 Strategy"
+        ]
+    },
+    "3.2": {
+        "title": "Secondary Objective(s) and Associated Estimand(s)",
+        "number": "3.2",
+        "elements": []
+    },
+    "3.2.1": {
+        "title": "{Secondary Objective}",
+        "number": "3.2.1",
+        "elements": [
+            "Secondary Objective"
+        ]
+    },
+    "3.3": {
+        "title": "Exploratory Objective(s)",
+        "number": "3.3",
+        "elements": []
+    },
+    "3.3.1": {
+        "title": "{Exploratory Objective}",
+        "number": "3.3.1",
+        "elements": [
+            "Exploratory Objective"
+        ]
+    },
+    "4": {
+        "title": "Trial Design",
+        "number": "4",
+        "elements": []
+    },
+    "4.1": {
+        "title": "Description of Trial Design",
+        "number": "4.1",
+        "elements": [
+            "Overall Description of Trial Design and Description of Intervention Model",
+            "Description of Trial Duration",
+            "Method of Assignment to Trial Intervention",
+            "Description of Level and Method of Blinding",
+            "Additional Description of Trial Design"
+        ]
+    },
+    "4.1.1": {
+        "title": "Stakeholder Input into Design",
+        "number": "4.1.1",
+        "elements": [
+            "Stakeholder Input into Design"
+        ]
+    },
+    "4.2": {
+        "title": "Rationale for Trial Design",
+        "number": "4.2",
+        "elements": [
+            "Overall Rationale for Trial Design"
+        ]
+    },
+    "4.2.1": {
+        "title": "Rationale for Estimand(s)",
+        "number": "4.2.1",
+        "elements": [
+            "Rationale for Estimand(s)"
+        ]
+    },
+    "4.2.2": {
+        "title": "Rationale for Intervention Model",
+        "number": "4.2.2",
+        "elements": [
+            "Rationale for Intervention Model"
+        ]
+    },
+    "4.2.3": {
+        "title": "Rationale for Control Type",
+        "number": "4.2.3",
+        "elements": [
+            "Rationale for Control Type"
+        ]
+    },
+    "4.2.4": {
+        "title": "Rationale for Trial Duration",
+        "number": "4.2.4",
+        "elements": [
+            "Rationale for Duration"
+        ]
+    },
+    "4.2.5": {
+        "title": "Rationale for Adaptive or Novel Trial Design",
+        "number": "4.2.5",
+        "elements": [
+            "Rationale for Adaptive or Novel Trial Design"
+        ]
+    },
+    "4.2.6": {
+        "title": "Rationale for Interim Analysis",
+        "number": "4.2.6",
+        "elements": [
+            "Rationale for Interim Analysis"
+        ]
+    },
+    "4.2.7": {
+        "title": "Rationale for Other Trial Design Aspects",
+        "number": "4.2.7",
+        "elements": [
+            "Rationale for Other Trial Design Aspects"
+        ]
+    },
+    "4.3": {
+        "title": "Trial Stopping Rules",
+        "number": "4.3",
+        "elements": [
+            "Trial Stopping Rules"
+        ]
+    },
+    "4.4": {
+        "title": "Start of Trial and End of Trial",
+        "number": "4.4",
+        "elements": [
+            "Start of Trial",
+            "End of Trial"
+        ]
+    },
+    "4.5": {
+        "title": "Access to Trial Intervention After End of Trial",
+        "number": "4.5",
+        "elements": [
+            "Access to Trial Intervention after End of Trial"
+        ]
+    },
+    "5": {
+        "title": "Trial Population",
+        "number": "5",
+        "elements": []
+    },
+    "5.1": {
+        "title": "Description of Trial Population and Rationale",
+        "number": "5.1",
+        "elements": [
+            "Description of Trial Population and Rationale"
+        ]
+    },
+    "5.2": {
+        "title": "Inclusion Criteria",
+        "number": "5.2",
+        "elements": []
+    },
+    "5.3": {
+        "title": "Exclusion Criteria",
+        "number": "5.3",
+        "elements": []
+    },
+    "5.4": {
+        "title": "Contraception",
+        "number": "5.4",
+        "elements": []
+    },
+    "5.4.1": {
+        "title": "Definitions Related to Childbearing Potential",
+        "number": "5.4.1",
+        "elements": [
+            "Definitions Related to Childbearing Potential "
+        ]
+    },
+    "5.4.2": {
+        "title": "Contraception Requirements",
+        "number": "5.4.2",
+        "elements": [
+            "Contraception Requirements."
+        ]
+    },
+    "5.5": {
+        "title": "Lifestyle Restrictions",
+        "number": "5.5",
+        "elements": [
+            "Lifestyle Restrictions"
+        ]
+    },
+    "5.5.1": {
+        "title": "Meals and Dietary Restrictions",
+        "number": "5.5.1",
+        "elements": [
+            "Meals and Dietary Restrictions"
+        ]
+    },
+    "5.5.2": {
+        "title": "Caffeine, Alcohol, Tobacco, and Other Restrictions",
+        "number": "5.5.2",
+        "elements": [
+            "Caffeine, Alcohol, Tobacco, and Other Restrictions"
+        ]
+    },
+    "5.5.3": {
+        "title": "Physical Activity Restrictions",
+        "number": "5.5.3",
+        "elements": [
+            "Physical Activity Restrictions"
+        ]
+    },
+    "5.5.4": {
+        "title": "Other Activity Restrictions",
+        "number": "5.5.4",
+        "elements": [
+            "Other Activity Restrictions"
+        ]
+    },
+    "5.6": {
+        "title": "Screen Failure and Rescreening",
+        "number": "5.6",
+        "elements": [
+            "Screen Failure",
+            "Rescreening"
+        ]
+    },
+    "6": {
+        "title": "Trial Intervention And Concomitant Therapy",
+        "number": "6",
+        "elements": [
+            "description of the overview of trial interventions or a heading for the optional table below",
+            "Arm Name",
+            "Select Arm Type",
+            "Intervention Name",
+            "Select Intervention Type",
+            "Select Pharmaceutical Dose Form",
+            "Dosage Strength(s)",
+            "Dosage Level(s)",
+            "Select Route of Administration",
+            "Regimen/Treatment Period/Vaccination Regimen",
+            "Select Use",
+            "Select IMP or NIMP",
+            "Select Sourcing"
+        ]
+    },
+    "6.1": {
+        "title": "Description of Investigational Trial Intervention",
+        "number": "6.1",
+        "elements": [
+            "Description of Investigational Trial Intervention"
+        ]
+    },
+    "6.2": {
+        "title": "Rationale for Investigational Trial Intervention Dose and Regimen",
+        "number": "6.2",
+        "elements": [
+            "Rationale for Investigational Trial Intervention Dose and Regimen"
+        ]
+    },
+    "6.3": {
+        "title": "Investigational Trial Intervention Administration",
+        "number": "6.3",
+        "elements": [
+            "Investigational Trial Intervention Administration"
+        ]
+    },
+    "6.4": {
+        "title": "Investigational Trial Intervention Dose Modification",
+        "number": "6.4",
+        "elements": [
+            "Investigational Trial Intervention Dose Modification"
+        ]
+    },
+    "6.5": {
+        "title": "Management of Investigational Trial Intervention Overdose",
+        "number": "6.5",
+        "elements": [
+            "Management of Investigational Trial Intervention Overdose"
+        ]
+    },
+    "6.6": {
+        "title": "Preparation, Storage, Handling and Accountability of Investigational Trial Intervention",
+        "number": "6.6",
+        "elements": []
+    },
+    "6.6.1": {
+        "title": "{Preparation of Investigational Trial Intervention}",
+        "number": "6.6.1",
+        "elements": [
+            "Preparation of Investigational Trial Intervention "
+        ]
+    },
+    "6.6.2": {
+        "title": "Storage and Handling of Investigational Trial Intervention",
+        "number": "6.6.2",
+        "elements": [
+            "Storage and Handling of Investigational Trial Intervention"
+        ]
+    },
+    "6.6.3": {
+        "title": "Accountability of Investigational Trial Intervention",
+        "number": "6.6.3",
+        "elements": [
+            "Accountability of Investigational Trial Intervention"
+        ]
+    },
+    "6.7": {
+        "title": "Investigational Trial Intervention Assignment, Randomisation and Blinding",
+        "number": "6.7",
+        "elements": []
+    },
+    "6.7.1": {
+        "title": "Participant Assignment to Investigational Trial Intervention",
+        "number": "6.7.1",
+        "elements": [
+            "Participant Assignment to Investigational Trial Intervention"
+        ]
+    },
+    "6.7.2": {
+        "title": "{Randomisation}",
+        "number": "6.7.2",
+        "elements": [
+            "Randomisation"
+        ]
+    },
+    "6.7.3": {
+        "title": "{Measures to Maintain Blinding}",
+        "number": "6.7.3",
+        "elements": [
+            "Measures to Maintain Blinding"
+        ]
+    },
+    "6.7.4": {
+        "title": "{Emergency Unblinding at the Site}",
+        "number": "6.7.4",
+        "elements": [
+            "Emergency Unblinding at the Site"
+        ]
+    },
+    "6.8": {
+        "title": "Investigational Trial Intervention Adherence",
+        "number": "6.8",
+        "elements": [
+            "Investigational Trial Intervention Adherence"
+        ]
+    },
+    "6.9": {
+        "title": "Description of Noninvestigational Trial Intervention",
+        "number": "6.9",
+        "elements": [
+            "Description of Noninvestigational Trial Intervention"
+        ]
+    },
+    "6.9.1": {
+        "title": "{Background Trial Intervention}",
+        "number": "6.9.1",
+        "elements": [
+            "Background Trial Interventions"
+        ]
+    },
+    "6.9.2": {
+        "title": "{Rescue Therapy}",
+        "number": "6.9.2",
+        "elements": [
+            "Rescue Therapy"
+        ]
+    },
+    "6.9.3": {
+        "title": "{Other Noninvestigational Trial Intervention}",
+        "number": "6.9.3",
+        "elements": [
+            "Other Noninvestigational Trial Intervention"
+        ]
+    },
+    "6.10": {
+        "title": "Concomitant Therapy",
+        "number": "6.10",
+        "elements": [
+            "Concomitant Therapy"
+        ]
+    },
+    "6.10.1": {
+        "title": "{Prohibited Concomitant Therapy}",
+        "number": "6.10.1",
+        "elements": [
+            "Prohibited Concomitant Therapy"
+        ]
+    },
+    "6.10.2": {
+        "title": "{Permitted Concomitant Therapy}",
+        "number": "6.10.2",
+        "elements": [
+            "Permitted Concomitant Therapy"
+        ]
+    },
+    "7": {
+        "title": "Participant Discontinuation of Trial Intervention and Discontinuation or Withdrawal From trial",
+        "number": "7",
+        "elements": []
+    },
+    "7.1": {
+        "title": "Discontinuation of Trial Intervention for Individual Participants",
+        "number": "7.1",
+        "elements": []
+    },
+    "7.1.1": {
+        "title": "Permanent Discontinuation of Trial Intervention",
+        "number": "7.1.1",
+        "elements": [
+            "Permanent Discontinuation of Trial Intervention"
+        ]
+    },
+    "7.1.2": {
+        "title": "Temporary Discontinuation of Trial Intervention",
+        "number": "7.1.2",
+        "elements": [
+            "Temporary Discontinuation of Trial Intervention"
+        ]
+    },
+    "7.1.3": {
+        "title": "Rechallenge",
+        "number": "7.1.3",
+        "elements": [
+            "Rechallenge"
+        ]
+    },
+    "7.2": {
+        "title": "Participant Discontinuation or Withdrawal from the Trial",
+        "number": "7.2",
+        "elements": [
+            "Participant Discontinuation or Withdrawal from Trial"
+        ]
+    },
+    "7.3": {
+        "title": "Management of Loss to Follow-Up",
+        "number": "7.3",
+        "elements": [
+            "Management of Loss to Follow-Up"
+        ]
+    },
+    "8": {
+        "title": "Trial Assessments and Procedures",
+        "number": "8",
+        "elements": []
+    },
+    "8.1": {
+        "title": "Trial Assessments and Procedures Considerations",
+        "number": "8.1",
+        "elements": [
+            "Trial Assessments and Procedures Considerations"
+        ]
+    },
+    "8.2": {
+        "title": "Screening/Baseline Assessments and Procedures",
+        "number": "8.2",
+        "elements": [
+            "Screening Assessments and Procedures",
+            "Baseline Assessments and Procedures"
+        ]
+    },
+    "8.3": {
+        "title": "Efficacy Assessments and Procedures",
+        "number": "8.3",
+        "elements": [
+            "Efficacy Assessments and Procedures"
+        ]
+    },
+    "8.4": {
+        "title": "Safety Assessments and Procedures",
+        "number": "8.4",
+        "elements": [
+            "Safety Assessments and Procedures"
+        ]
+    },
+    "8.4.1": {
+        "title": "{Physical Examination}",
+        "number": "8.4.1",
+        "elements": [
+            "Physical Examination"
+        ]
+    },
+    "8.4.2": {
+        "title": "{Vital Signs}",
+        "number": "8.4.2",
+        "elements": [
+            "Vital Signs"
+        ]
+    },
+    "8.4.3": {
+        "title": "{Electrocardiograms}",
+        "number": "8.4.3",
+        "elements": [
+            "Electrocardiograms"
+        ]
+    },
+    "8.4.4": {
+        "title": "{Clinical Laboratory Assessments}",
+        "number": "8.4.4",
+        "elements": [
+            "Clinical Laboratory Assessments"
+        ]
+    },
+    "8.4.5": {
+        "title": "{Pregnancy Testing}",
+        "number": "8.4.5",
+        "elements": [
+            "Pregnancy Testing"
+        ]
+    },
+    "8.4.6": {
+        "title": "{Suicidal Ideation and Behaviour Risk Monitoring}",
+        "number": "8.4.6",
+        "elements": [
+            "Suicidal Ideation and Behaviour Risk Monitoring"
+        ]
+    },
+    "8.5": {
+        "title": "Pharmacokinetics",
+        "number": "8.5",
+        "elements": [
+            "Pharmacokinetics"
+        ]
+    },
+    "8.6": {
+        "title": "Biomarkers",
+        "number": "8.6",
+        "elements": []
+    },
+    "8.6.1": {
+        "title": "Genetics and Pharmacogenomics",
+        "number": "8.6.1",
+        "elements": [
+            "Genetics and Pharmacogenomics"
+        ]
+    },
+    "8.6.2": {
+        "title": "Pharmacodynamic Biomarkers",
+        "number": "8.6.2",
+        "elements": [
+            "Pharmacodynamic Biomarkers"
+        ]
+    },
+    "8.6.3": {
+        "title": "{Other Biomarkers}",
+        "number": "8.6.3",
+        "elements": [
+            "Other Biomarkers"
+        ]
+    },
+    "8.7": {
+        "title": "Immunogenicity Assessments",
+        "number": "8.7",
+        "elements": [
+            "Immunogenicity Assessments"
+        ]
+    },
+    "8.8": {
+        "title": "Medical Resource Utilisation and Health Economics",
+        "number": "8.8",
+        "elements": [
+            "Medical Resource Utilisation and Health Economics"
+        ]
+    },
+    "9": {
+        "title": "Adverse Events, Serious Adverse Events, Product Complaints, Pregnancy and Postpartum Information, And Special Safety Situations",
+        "number": "9",
+        "elements": []
+    },
+    "9.1": {
+        "title": "Definitions",
+        "number": "9.1",
+        "elements": []
+    },
+    "9.1.1": {
+        "title": "Definitions of Adverse Events",
+        "number": "9.1.1",
+        "elements": [
+            "Definitions of Adverse Events"
+        ]
+    },
+    "9.1.2": {
+        "title": "Definitions of Serious Adverse Events",
+        "number": "9.1.2",
+        "elements": [
+            "Definitions of Serious Adverse Events"
+        ]
+    },
+    "9.1.3": {
+        "title": "Definitions of Product Complaints",
+        "number": "9.1.3",
+        "elements": [
+            "Definitions of Product Complaints"
+        ]
+    },
+    "9.1.3.1": {
+        "title": "{Definition of Medical Device Product Complaints}",
+        "number": "9.1.3.1",
+        "elements": [
+            "Definition of Medical Device Product Complaints"
+        ]
+    },
+    "9.2": {
+        "title": "Timing and Procedures for Collection and Reporting",
+        "number": "9.2",
+        "elements": [
+            "Event Type",
+            "Situational Scope",
+            "Reportable Period Start",
+            "Reportable Period End",
+            "Timing for reporting to Sponsor or Designee",
+            "Method for Reporting",
+            "Backup Method for Reporting"
+        ]
+    },
+    "9.2.1": {
+        "title": "Timing",
+        "number": "9.2.1",
+        "elements": [
+            "Event Collection and Reporting Timing"
+        ]
+    },
+    "9.2.2": {
+        "title": "Collection Procedures",
+        "number": "9.2.2",
+        "elements": [
+            "Identification",
+            "Severity",
+            "Causality",
+            "Recording",
+            "Follow-up"
+        ]
+    },
+    "9.2.3": {
+        "title": "Reporting",
+        "number": "9.2.3",
+        "elements": [
+            "Reporting"
+        ]
+    },
+    "9.2.3.1": {
+        "title": "Regulatory Reporting Requirements",
+        "number": "9.2.3.1",
+        "elements": [
+            "Regulatory Reporting Requirements"
+        ]
+    },
+    "9.2.4": {
+        "title": "Adverse Events of Special Interest",
+        "number": "9.2.4",
+        "elements": []
+    },
+    "9.2.5": {
+        "title": "Disease-related Events or Outcomes Not Qualifying as AEs or SAEs",
+        "number": "9.2.5",
+        "elements": [
+            "Disease-related Events or Outcomes not Qualifying as AEs or SAEs"
+        ]
+    },
+    "9.3": {
+        "title": "Pregnancy and Postpartum Information",
+        "number": "9.3",
+        "elements": []
+    },
+    "9.3.1": {
+        "title": "{Participants Who Become Pregnant During the Trial}",
+        "number": "9.3.1",
+        "elements": [
+            "Participants Who Become Pregnant During the Trial"
+        ]
+    },
+    "9.3.2": {
+        "title": "{Participants Whose Partners Become Pregnant During the Trial}",
+        "number": "9.3.2",
+        "elements": [
+            "Participants Whose Partners Become Pregnant During the Trial"
+        ]
+    },
+    "9.4": {
+        "title": "Special Safety Situations",
+        "number": "9.4",
+        "elements": [
+            "Special Safety Situations"
+        ]
+    },
+    "10": {
+        "title": "Statistical Considerations",
+        "number": "10",
+        "elements": []
+    },
+    "10.1": {
+        "title": "General Considerations",
+        "number": "10.1",
+        "elements": [
+            "General Considerations"
+        ]
+    },
+    "10.2": {
+        "title": "Analysis Sets",
+        "number": "10.2",
+        "elements": [
+            "Analysis Sets"
+        ]
+    },
+    "10.3": {
+        "title": "Analyses of Demographics and Other Baseline Variables",
+        "number": "10.3",
+        "elements": [
+            "Analyses of Demographics and Other Baseline Variables"
+        ]
+    },
+    "10.4": {
+        "title": "Analyses Associated with the Primary Objective(s)",
+        "number": "10.4",
+        "elements": []
+    },
+    "10.4.1": {
+        "title": "Primary Objective",
+        "number": "10.4.1",
+        "elements": []
+    },
+    "10.4.1.1": {
+        "title": "Statistical Analysis Method",
+        "number": "10.4.1.1",
+        "elements": [
+            "Statistical Analysis Method"
+        ]
+    },
+    "10.4.1.2": {
+        "title": "Handling of Data in Relation to Primary Estimand(s)",
+        "number": "10.4.1.2",
+        "elements": [
+            "Handling of Data in Relation to Primary Estimand(s)"
+        ]
+    },
+    "10.4.1.3": {
+        "title": "Handling of Missing Data in Relation to Primary Estimand(s)",
+        "number": "10.4.1.3",
+        "elements": [
+            "Handling of Missing Data in Relation to Primary Estimand(s)"
+        ]
+    },
+    "10.4.1.4": {
+        "title": "{Sensitivity Analysis}",
+        "number": "10.4.1.4",
+        "elements": [
+            "Sensitivity Analysis"
+        ]
+    },
+    "10.4.1.5": {
+        "title": "{Supplementary Analysis}",
+        "number": "10.4.1.5",
+        "elements": [
+            "Supplementary Analysis"
+        ]
+    },
+    "10.5": {
+        "title": "Analyses Associated with the Secondary Objective(s)",
+        "number": "10.5",
+        "elements": []
+    },
+    "10.5.1": {
+        "title": "{Secondary Objective}",
+        "number": "10.5.1",
+        "elements": []
+    },
+    "10.5.1.1": {
+        "title": "{Statistical Analysis Method}",
+        "number": "10.5.1.1",
+        "elements": [
+            "Statistical Analysis Method"
+        ]
+    },
+    "10.5.1.2": {
+        "title": "{Handling of Data in Relation to Secondary Estimand(s)}",
+        "number": "10.5.1.2",
+        "elements": [
+            "Handling of Data in Relation to Secondary Estimand(s)"
+        ]
+    },
+    "10.5.1.3": {
+        "title": "{Handling of Missing Data in Relation to Secondary Estimand(s)}",
+        "number": "10.5.1.3",
+        "elements": [
+            "Handling of Missing Data in Relation to Secondary Estimand(s)"
+        ]
+    },
+    "10.5.1.4": {
+        "title": "{Sensitivity Analysis}",
+        "number": "10.5.1.4",
+        "elements": [
+            "Sensitivity Analysis"
+        ]
+    },
+    "10.5.1.5": {
+        "title": "{Supplementary Analysis}",
+        "number": "10.5.1.5",
+        "elements": [
+            "Supplementary Analysis"
+        ]
+    },
+    "10.6": {
+        "title": "Analyses Associated with the Exploratory Objective(s)",
+        "number": "10.6",
+        "elements": [
+            "Analyses Associated with the Exploratory Objective(s)"
+        ]
+    },
+    "10.7": {
+        "title": "Safety Analyses",
+        "number": "10.7",
+        "elements": [
+            "Safety Analyses"
+        ]
+    },
+    "10.8": {
+        "title": "Other Analyses",
+        "number": "10.8",
+        "elements": [
+            "Other Analyses"
+        ]
+    },
+    "10.9": {
+        "title": "Interim Analyses",
+        "number": "10.9",
+        "elements": [
+            "Interim Analyses"
+        ]
+    },
+    "10.10": {
+        "title": "Multiplicity Adjustments",
+        "number": "10.10",
+        "elements": [
+            "Multiplicity Adjustments"
+        ]
+    },
+    "10.11": {
+        "title": "Sample Size Determination",
+        "number": "10.11",
+        "elements": [
+            "Sample Size Determination"
+        ]
+    },
+    "11": {
+        "title": "Trial Oversight and Other General Considerations",
+        "number": "11",
+        "elements": []
+    },
+    "11.1": {
+        "title": "Regulatory and Ethical Considerations",
+        "number": "11.1",
+        "elements": [
+            "Regulatory and Ethical Considerations"
+        ]
+    },
+    "11.2": {
+        "title": "Trial Oversight",
+        "number": "11.2",
+        "elements": [
+            "Trial Oversight "
+        ]
+    },
+    "11.2.1": {
+        "title": "Investigator Responsibilities",
+        "number": "11.2.1",
+        "elements": [
+            "Investigator Responsibilities"
+        ]
+    },
+    "11.2.2": {
+        "title": "Sponsor Responsibilities",
+        "number": "11.2.2",
+        "elements": [
+            "Sponsor Responsibilities"
+        ]
+    },
+    "11.3": {
+        "title": "Informed Consent Process",
+        "number": "11.3",
+        "elements": [
+            "Description of Informed Consent Process",
+            "Description of Assent Process",
+            "Description of Emergency Consent Process"
+        ]
+    },
+    "11.3.1": {
+        "title": "{Informed Consent for Rescreening}",
+        "number": "11.3.1",
+        "elements": [
+            "Informed Consent for Rescreening"
+        ]
+    },
+    "11.3.2": {
+        "title": "{Informed Consent for Use of Remaining Samples in Exploratory Research}",
+        "number": "11.3.2",
+        "elements": [
+            "Informed Consent for Use of Remaining Samples in Exploratory Research"
+        ]
+    },
+    "11.4": {
+        "title": "Committees",
+        "number": "11.4",
+        "elements": [
+            "Committees"
+        ]
+    },
+    "11.5": {
+        "title": "Insurance and Indemnity",
+        "number": "11.5",
+        "elements": [
+            "Insurance and Indemnity"
+        ]
+    },
+    "11.6": {
+        "title": "Risk-Based Quality Management",
+        "number": "11.6",
+        "elements": [
+            "Risk-Based Quality Management"
+        ]
+    },
+    "11.7": {
+        "title": "Data Governance",
+        "number": "11.7",
+        "elements": [
+            "Data Governance"
+        ]
+    },
+    "11.8": {
+        "title": "Data Protection",
+        "number": "11.8",
+        "elements": [
+            "Data Protection"
+        ]
+    },
+    "11.9": {
+        "title": "Source Data",
+        "number": "11.9",
+        "elements": [
+            "Source Data Introduction",
+            "Investigator Expectations for Source Data",
+            "Trial Monitor Expectations for Source Data",
+            "Identification of Source Data"
+        ]
+    },
+    "11.10": {
+        "title": "Protocol Deviations",
+        "number": "11.10",
+        "elements": [
+            "Protocol Deviations"
+        ]
+    },
+    "11.11": {
+        "title": "Early Site Closure",
+        "number": "11.11",
+        "elements": [
+            "Decision Rights for Site Closure",
+            "Criteria for Early Closure",
+            "Responsibilities Following Early Site Closure"
+        ]
+    },
+    "11.12": {
+        "title": "Data Dissemination",
+        "number": "11.12",
+        "elements": [
+            "Data Dissemination"
+        ]
+    },
+    "12": {
+        "title": "Appendix: Supporting Details",
+        "number": "12",
+        "elements": []
+    },
+    "12.1": {
+        "title": "Clinical Laboratory Tests",
+        "number": "12.1",
+        "elements": [
+            "Clinical Laboratory Tests"
+        ]
+    },
+    "12.2": {
+        "title": "Country/Region-Specific Differences",
+        "number": "12.2",
+        "elements": [
+            "Country/Region Identifier",
+            "Country/Region Specific Requirements",
+            "Country/Region Specific Protocol Clarifications"
+        ]
+    },
+    "12.3": {
+        "title": "Prior Protocol Amendment(s)",
+        "number": "12.3",
+        "elements": [
+            "Amendment Identifier",
+            "Sponsor Approval Date",
+            "# or % enrolled globally/locally/per cohort",
+            "Sponsor Approval Date",
+            "specify alternative location",
+            "enter amendment number",
+            "enter date",
+            "Description of Change",
+            "Brief Rationale for Change",
+            "Section # and Name of Change",
+            "Description of Change",
+            "Brief Rationale for Change",
+            "Section # and Name of Change"
+        ]
+    },
+    "13": {
+        "title": "Appendix: Glossary of Terms and Abbreviations",
+        "number": "13",
+        "elements": [
+            "Glossary of Terms and Abbreviations"
+        ]
+    },
+    "14": {
+        "title": "Appendix: References",
+        "number": "14",
+        "elements": [
+            "References"
+        ]
+    }
+}
