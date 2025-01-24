@@ -65,18 +65,6 @@
             "section_title": null,
             "instructions": []
         },
-        "GloballyLocallyby Cohort": {
-            "long_name": "Globally/Locally/by Cohort",
-            "short_name": "GloballyLocallyby Cohort",
-            "original_name": "Globally/Locally/by Cohort",
-            "optional": true,
-            "section_number": null,
-            "section_title": null,
-            "instructions": [
-                "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
-                "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
-            ]
-        },
         "Primary Reason for Amendment": {
             "long_name": "Primary Reason for Amendment",
             "short_name": "Primary Reason for Amendment",
@@ -117,24 +105,6 @@
             "long_name": "Population diagnosis or condition",
             "short_name": "Population diagnosis or condition",
             "original_name": "Population diagnosis or condition",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        },
-        "Control type": {
-            "long_name": "Control type",
-            "short_name": "Control type",
-            "original_name": "Control type",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        },
-        "minimum age": {
-            "long_name": "minimum age",
-            "short_name": "minimum age",
-            "original_name": "minimum age",
             "optional": false,
             "section_number": "1.1.2",
             "section_title": "Overall Design",
@@ -195,15 +165,6 @@
             "instructions": [
                 "Further clarification:"
             ]
-        },
-        "blinded roles": {
-            "long_name": "blinded roles",
-            "short_name": "blinded roles",
-            "original_name": "blinded roles",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
         },
         "randomly assigned to trial interventionenrolled": {
             "long_name": "randomly assigned to trial intervention/enrolled",
@@ -267,15 +228,6 @@
             "section_title": "Primary Objective <#>",
             "instructions": []
         },
-        "Secondary Objective": {
-            "long_name": "Enter Secondary Objective",
-            "short_name": "Secondary Objective",
-            "original_name": "Secondary Objective",
-            "optional": false,
-            "section_number": "3.2.1",
-            "section_title": "{Secondary Objective}",
-            "instructions": []
-        },
         "Rationale for Intervention Model": {
             "long_name": "Enter Rationale for Intervention Model",
             "short_name": "Rationale for Intervention Model",
@@ -290,33 +242,6 @@
             "short_name": "description of the overview of trial interventions or a heading for the optional table below",
             "original_name": "description of the overview of trial interventions or a heading for the optional table below",
             "optional": false,
-            "section_number": "6",
-            "section_title": "Trial Intervention And Concomitant Therapy",
-            "instructions": []
-        },
-        "Select Arm Type": {
-            "long_name": "Select Arm Type",
-            "short_name": "Select Arm Type",
-            "original_name": "Select Arm Type",
-            "optional": true,
-            "section_number": "6",
-            "section_title": "Trial Intervention And Concomitant Therapy",
-            "instructions": []
-        },
-        "Select Intervention Type": {
-            "long_name": "Select Intervention Type",
-            "short_name": "Select Intervention Type",
-            "original_name": "Select Intervention Type",
-            "optional": true,
-            "section_number": "6",
-            "section_title": "Trial Intervention And Concomitant Therapy",
-            "instructions": []
-        },
-        "Select Pharmaceutical Dose Form": {
-            "long_name": "Select Pharmaceutical Dose Form",
-            "short_name": "Select Pharmaceutical Dose Form",
-            "original_name": "Select Pharmaceutical Dose Form",
-            "optional": true,
             "section_number": "6",
             "section_title": "Trial Intervention And Concomitant Therapy",
             "instructions": []
@@ -355,15 +280,6 @@
             "optional": true,
             "section_number": "6",
             "section_title": "Trial Intervention And Concomitant Therapy",
-            "instructions": []
-        },
-        "Background Trial Interventions": {
-            "long_name": "Enter Background Trial Interventions",
-            "short_name": "Background Trial Interventions",
-            "original_name": "Background Trial Interventions",
-            "optional": false,
-            "section_number": "6.9.1",
-            "section_title": "{Background Trial Intervention}",
             "instructions": []
         },
         "Other Noninvestigational Trial Intervention": {
@@ -411,55 +327,10 @@
             "section_title": "Disease-related Events or Outcomes Not Qualifying as AEs or SAEs",
             "instructions": []
         },
-        "Statistical Analysis Method": {
-            "long_name": "Enter Statistical Analysis Method",
-            "short_name": "Statistical Analysis Method",
-            "original_name": "Statistical Analysis Method",
-            "optional": false,
-            "section_number": "10.5.1.1",
-            "section_title": "{Statistical Analysis Method}",
-            "instructions": []
-        },
-        "Handling of Missing Data in Relation to Primary Estimands": {
-            "long_name": "Enter Handling of Missing Data in Relation to Primary Estimand(s)",
-            "short_name": "Handling of Missing Data in Relation to Primary Estimands",
-            "original_name": "Handling of Missing Data in Relation to Primary Estimand(s)",
-            "optional": false,
-            "section_number": "10.4.1.3",
-            "section_title": "Handling of Missing Data in Relation to Primary Estimand(s)",
-            "instructions": []
-        },
-        "Analyses Associated with the Exploratory Objectives": {
-            "long_name": "Enter Analyses Associated with the Exploratory Objective(s)",
-            "short_name": "Analyses Associated with the Exploratory Objectives",
-            "original_name": "Analyses Associated with the Exploratory Objective(s)",
-            "optional": false,
-            "section_number": "10.6",
-            "section_title": "Analyses Associated with the Exploratory Objective(s)",
-            "instructions": []
-        },
         "CountryRegion Identifier": {
             "long_name": "Country/Region Identifier",
             "short_name": "CountryRegion Identifier",
             "original_name": "Country/Region Identifier",
-            "optional": true,
-            "section_number": "12.2",
-            "section_title": "Country/Region-Specific Differences",
-            "instructions": []
-        },
-        "CountryRegion Specific Requirements": {
-            "long_name": "Enter Country/Region Specific Requirements",
-            "short_name": "CountryRegion Specific Requirements",
-            "original_name": "Country/Region Specific Requirements",
-            "optional": true,
-            "section_number": "12.2",
-            "section_title": "Country/Region-Specific Differences",
-            "instructions": []
-        },
-        "CountryRegion Specific Protocol Clarifications": {
-            "long_name": "Enter Country/Region Specific Protocol Clarifications",
-            "short_name": "CountryRegion Specific Protocol Clarifications",
-            "original_name": "Country/Region Specific Protocol Clarifications",
             "optional": true,
             "section_number": "12.2",
             "section_title": "Country/Region-Specific Differences",
@@ -481,6 +352,36 @@
             "optional": false,
             "section_number": "12.3",
             "section_title": "Prior Protocol Amendment(s)",
+            "instructions": []
+        },
+        "Globally Locally Cohort": {
+            "long_name": "Globally/Locally/by Cohort",
+            "short_name": "Globally Locally Cohort",
+            "original_name": "Globally/Locally/by Cohort",
+            "optional": true,
+            "section_number": null,
+            "section_title": null,
+            "instructions": [
+                "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
+                "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
+            ]
+        },
+        "Minimum Age": {
+            "long_name": "minimum age",
+            "short_name": "Minimum Age",
+            "original_name": "minimum age",
+            "optional": false,
+            "section_number": "1.1.2",
+            "section_title": "Overall Design",
+            "instructions": []
+        },
+        "Analysis Associated with Exploratory Objectives": {
+            "long_name": "Enter Analyses Associated with the Exploratory Objective(s)",
+            "short_name": "Analysis Associated with Exploratory Objectives",
+            "original_name": "Analyses Associated with the Exploratory Objective(s)",
+            "optional": false,
+            "section_number": "10.6",
+            "section_title": "Analyses Associated with the Exploratory Objective(s)",
             "instructions": []
         }
     },
@@ -767,60 +668,6 @@
                 }
             ]
         },
-        "Control Type": {
-            "name": "Control Type",
-            "data_type": "Valid Value",
-            "definition": "C49647\nFor review purpose, see definition of the controlled terminology below\nA characterisation or classification of the comparator against which the study intervention is evaluated.",
-            "guidance": "Control method (for example, placebo, active comparator, low dose, historical, standard of care, sham procedure, or none [uncontrolled])",
-            "conformance": "Required",
-            "cardinality": "One to one; One to Heading; One to Sponsor Protocol Identifier",
-            "relationship": "1.1.2",
-            "value": "Placebo (C49648), active comparator(C49649), Dose Response(C120841); Different Dose or Regimen (CNEW), External (CNEW), sham procedure(C184727), or No Control(C28280)",
-            "business_rules": "Value Allowed: Yes\nRelationship: Row Title; Sponsor Protocol Identifier\nConcept: C49647",
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "C66785",
-                    "preferred_term": "TCNTRL",
-                    "definition": "A terminology codelist relevant to a comparator against which the study treatment is evaluated."
-                },
-                {
-                    "ncit_code": "C49649",
-                    "preferred_term": "Active Comparator",
-                    "definition": "A type of control, which has a demonstrated effect, administered as a comparator to subjects in a clinical trial."
-                },
-                {
-                    "ncit_code": "C120841",
-                    "preferred_term": "Dose Response",
-                    "definition": "A type of control using different doses or regimens of the same treatment across the treatment arms."
-                },
-                {
-                    "ncit_code": "C28280",
-                    "preferred_term": "No Control",
-                    "definition": "A clinical study that lacks a comparison (i.e., a control) group."
-                },
-                {
-                    "ncit_code": "C49648",
-                    "preferred_term": "Placebo",
-                    "definition": "An inactive, identical-appearing drug or treatment that does not contain the test product."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Different Dose or Regimen",
-                    "definition": "A type of control that comprises a different dose or dosage regimen in comparison to the investigational intervention dose or dosage regimen."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "External",
-                    "definition": "The use of external control data as a control arm for those studies where ethical concerns and/or underserved disease indications may make it difficult to enroll subjects/participants."
-                },
-                {
-                    "ncit_code": "C184727",
-                    "preferred_term": "Sham Procedure",
-                    "definition": "A type of negative control in which a procedure is performed that mimics the procedure under study but does not include investigational processes or components."
-                }
-            ]
-        },
         "Nonproprietary name or INN or Enter Not applicable": {
             "name": "Nonproprietary name or INN or Enter Not applicable",
             "data_type": "Text",
@@ -923,55 +770,6 @@
                 }
             ]
         },
-        "Blinded roles": {
-            "name": "Blinded roles",
-            "data_type": "Valid Value",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn identifying designation assigned to a blinded individual within a clinical trial that corresponds with their function",
-            "guidance": "\u201cNot applicable (No blinding)\u201d indicates an open label trial.",
-            "conformance": "Required",
-            "cardinality": "One to many",
-            "relationship": "1.1.2",
-            "value": "Participant (C142710), Care Provider (C17445), Investigator (C25936), Outcomes Assessor (CNEW), Sponsor (C70793) Not Applicable (C48660)",
-            "business_rules": "Value Allowed: Yes, Multiple roles can be selected\nRelationship: Blinded Roles; Sponsor Protocol Identifier\nConcept: CNEW",
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Trial Blinding Role",
-                    "definition": "A terminology value set relevant to the trial blinding roles within the ICH M11 Protocol model."
-                },
-                {
-                    "ncit_code": "C142710",
-                    "preferred_term": "Participant",
-                    "definition": "A member of the clinical study population from whom data are being collected."
-                },
-                {
-                    "ncit_code": "C17445",
-                    "preferred_term": "Care Provider",
-                    "definition": "The primary person in charge of the care of a patient, usually a family member or a designated health care professional."
-                },
-                {
-                    "ncit_code": "C25936",
-                    "preferred_term": "Investigator",
-                    "definition": "A person responsible for the conduct of the clinical trial at a trial site. If a trial is conducted by a team of individuals at the trial site, the investigator is the responsible leader of the team and may be called the principal investigator."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Outcomes Assessor",
-                    "definition": "The individual who evaluates the outcome(s) of interest."
-                },
-                {
-                    "ncit_code": "C70793",
-                    "preferred_term": "Sponsor",
-                    "definition": "An individual, company, institution, or organization that takes responsibility for the initiation, management, and/or financing of a clinical study."
-                },
-                {
-                    "ncit_code": "C48660",
-                    "preferred_term": "Not Applicable",
-                    "definition": "Determination of a value is not relevant in the current context."
-                }
-            ]
-        },
         "randomly assigned to trial intervention enrolled": {
             "name": "randomly assigned to trial intervention enrolled",
             "data_type": "Valid Value",
@@ -1021,19 +819,6 @@
             "relationship": "3.2.X",
             "value": "Text and unique integer which is same as Level 3 number for the section.",
             "business_rules": "Value Allowed: Yes\nRelationship: 3.2.X Secondary Objective, Estimand Characteristics table\nConcept: C85827",
-            "repeating": "Yes, repeatable for each numbered secondary objective.",
-            "ct": []
-        },
-        "Secondary Objective Number": {
-            "name": "Secondary Objective Number",
-            "data_type": "Number",
-            "definition": "N/A",
-            "guidance": "",
-            "conformance": "Optional",
-            "cardinality": "One to one",
-            "relationship": "3.2.X",
-            "value": "an integer, unique number",
-            "business_rules": "Value Allowed: Yes\nRelationship: 3.2.X Secondary Objective\nConcept: Sequential number",
             "repeating": "Yes, repeatable for each numbered secondary objective.",
             "ct": []
         },
@@ -1180,147 +965,6 @@
             "repeating": "No",
             "ct": []
         },
-        "Arm Type": {
-            "name": "Arm Type",
-            "data_type": "Valid Value",
-            "definition": "C172457\nFor review purpose, see definition of the controlled terminology below\nA characterization or classification of the study arm.",
-            "guidance": "N/A",
-            "conformance": "Optional: if the table used",
-            "cardinality": "One to each arm name",
-            "relationship": "6",
-            "value": "Experimental Arm(C174266), Active Comparator Arm(C174267), Placebo Comparator Arm (C174268, Sham Comparator Arm (C174269), No Intervention Arm (C174270), Control Arm(C174226)",
-            "business_rules": "Value Allowed: Yes\nRelationship: arm name and arm type\nConcept: C172457",
-            "repeating": "Yes, repeatable for each arm name",
-            "ct": [
-                {
-                    "ncit_code": "C174222",
-                    "preferred_term": "Study Arm Type Value Set Terminology",
-                    "definition": "The terminology relevant to the identification of the kind of arm."
-                },
-                {
-                    "ncit_code": "C174267",
-                    "preferred_term": "Active Comparator Arm",
-                    "definition": "An arm describing the active comparator."
-                },
-                {
-                    "ncit_code": "C174226",
-                    "preferred_term": "Control Arm",
-                    "definition": "An arm describing the intervention or treatment plan for a group of participants in the study receiving a control. The control may comprise a non-investigational product (active control) or regimen, placebo, or no treatment."
-                },
-                {
-                    "ncit_code": "C174266",
-                    "preferred_term": "Experimental Arm",
-                    "definition": "An arm describing the intervention or treatment plan for a group of participants in the study receiving test product(s)."
-                },
-                {
-                    "ncit_code": "C174270",
-                    "preferred_term": "No Intervention Arm",
-                    "definition": "A study arm without an intervention or treatment."
-                },
-                {
-                    "ncit_code": "C174268",
-                    "preferred_term": "Placebo Comparator Arm",
-                    "definition": "An arm describing the placebo comparator."
-                },
-                {
-                    "ncit_code": "C174269",
-                    "preferred_term": "Sham Comparator Arm",
-                    "definition": "An arm describing the sham comparator."
-                }
-            ]
-        },
-        "Intervention Type": {
-            "name": "Intervention Type",
-            "data_type": "Valid Value",
-            "definition": "C98747\nFor review purpose, see definition of the controlled terminology below\nThe kind of product or procedure studied in a trial.",
-            "guidance": "N/A",
-            "conformance": "Optional: if the table used",
-            "cardinality": "One to each intervention name",
-            "relationship": "6",
-            "value": "Drug (C1909), Device (C16830), Biologic (C307), Vaccine (C923), Non-Surgical Procedure (CNEW), Surgery (C15329), Radiation (C15313), Behavioral (C15184), Genetic (C15238), Dietary Supplement (C1505), Combination Product (C54696), Diagnostic Test (C18020)",
-            "business_rules": "Value Allowed: Yes\nRelationship: arm name, arm type and Intervention name, Concept: C98747",
-            "repeating": "Yes, repeatable for each arm name and arm type combination",
-            "ct": [
-                {
-                    "ncit_code": "C99078",
-                    "preferred_term": "INTTYPE",
-                    "definition": "A terminology codelist relevant to the kind of product or procedure studied in a trial."
-                },
-                {
-                    "ncit_code": "C15184",
-                    "preferred_term": "Behavioral",
-                    "definition": "A technique used to change the behavior of a subject (e.g., psychotherapy, lifestyle counseling, or hypnosis)."
-                },
-                {
-                    "ncit_code": "C307",
-                    "preferred_term": "Biologic",
-                    "definition": "A product of biological origin applicable to the prevention, treatment, or cure of a disease or condition, for example: virus, therapeutic serum, toxin, antitoxin, vaccine, blood, blood component or derivative, allergenic product, or analogous product."
-                },
-                {
-                    "ncit_code": "C923",
-                    "preferred_term": "Vaccine",
-                    "definition": "A medicinal product inducing immunity against disease, most often to prevent occurrence of a disease, (e.g., a preventative vaccine against infectious disease), but also to treat a disease, (e.g., a therapeutic vaccine against cancer)."
-                },
-                {
-                    "ncit_code": "C54696",
-                    "preferred_term": "Combination Product",
-                    "definition": "A product composed of two or more different types of medical products (i.e., a combination of a drug, device, and/or biological product with one another and are referred to as \"constituent parts\" of the combination product)."
-                },
-                {
-                    "ncit_code": "C16830",
-                    "preferred_term": "Device",
-                    "definition": "Any instrument, apparatus, implement, machine, appliance, implant, reagent for in vitro use, software, material or other similar or related article, intended by the manufacturer to be used, alone or in combination for, one or more specific medical purpose(s)."
-                },
-                {
-                    "ncit_code": "C1505",
-                    "preferred_term": "Dietary Supplement",
-                    "definition": "Preparations containing ingredient(s) intended to supplement the diet."
-                },
-                {
-                    "ncit_code": "C1909",
-                    "preferred_term": "Drug",
-                    "definition": "An active natural, synthetic or semi-synthetic ingredient including endogenous body substance that is intended to furnish pharmacological activity or other direct effect in the diagnosis, cure, mitigation, treatment, or prevention of disease or to affect the structure or any function of the human body, but does not include intermediates used in the synthesis of such ingredient."
-                },
-                {
-                    "ncit_code": "C15238",
-                    "preferred_term": "Genetic",
-                    "definition": "Introduction of genetic material into cells in order to correct or treat an inherited or acquired disease."
-                },
-                {
-                    "ncit_code": "C15329",
-                    "preferred_term": "Surgery",
-                    "definition": "A diagnostic or treatment procedure performed by manual and/or instrumental means, often involving an incision and the removal or replacement of a diseased organ or tissue; of or relating to or involving or used in surgery or requiring or amenable to treatment by surgery."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Non-Surgical Procedure",
-                    "definition": "A medical procedure that produces an effect, or that is intended to alter the course of a disease in a patient or population, which is not considered a surgical procedure."
-                },
-                {
-                    "ncit_code": "C15313",
-                    "preferred_term": "Radiation",
-                    "definition": "Use of targeted or whole body radiation to treat a disease."
-                },
-                {
-                    "ncit_code": "C18020",
-                    "preferred_term": "Diagnostic Test",
-                    "definition": "Any procedure or test to diagnose a disease or disorder."
-                }
-            ]
-        },
-        "Pharmaceutical Dose Formulation": {
-            "name": "Pharmaceutical Dose Formulation",
-            "data_type": "Valid Value",
-            "definition": "C42636\nFor review purpose, see definition of the controlled terminology below\nPhysical characteristics of a drug product, (e.g. tablet, capsule, or solution) that contains a drug substance, generally-but not necessarily-in association with one or more other ingredients",
-            "guidance": "N/A",
-            "conformance": "Optional: if the table used",
-            "cardinality": "One to each arm name, arm type and intervention combination",
-            "relationship": "6",
-            "value": "Use IDMP (e.g., EDQM, CDISC)",
-            "business_rules": "Value Allowed: Yes\nRelationship: arm name and dosage formulation\nConcept: C42636",
-            "repeating": "Yes, repeatable for each intervention and dosage formulation",
-            "ct": []
-        },
         "RegimenTreatment PeriodVaccination regimen": {
             "name": "RegimenTreatment PeriodVaccination regimen",
             "data_type": "Text",
@@ -1430,19 +1074,6 @@
             "repeating": "No",
             "ct": []
         },
-        "Background Trial Intervention": {
-            "name": "Background Trial Intervention",
-            "data_type": "Text",
-            "definition": "C165822\nFor review purpose, see definition of the controlled terminology below\nMedicinal products that are administered to each clinical trial subject, regardless of randomization group, a) to treat the indication which is the object of the study, or b) required in the protocol as part of standard care for a condition that is not the indication under investigation, and is relevant for the clinical trial design. [After Recommendations from the expert group on clinical trials for the implementation of Regulation (EU) No 536/2014' dd 28 June 2017]",
-            "guidance": "Describe permitted background intervention(s), including administration and any conditions for use.",
-            "conformance": "Conditional: when any background interventions are defined",
-            "cardinality": "One to one",
-            "relationship": "6.9.1",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: 6.9.1 Background Trial Intervention\nConcept: C165822",
-            "repeating": "No",
-            "ct": []
-        },
         "Other Noninvestigational Intervention": {
             "name": "Other Noninvestigational Intervention",
             "data_type": "Text",
@@ -1521,32 +1152,6 @@
             "repeating": "No",
             "ct": []
         },
-        "Statistical Method of Analysis": {
-            "name": "Statistical Method of Analysis",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of the statistical model, hypothesis, and methods of analyses for each objective within the trial.",
-            "guidance": "Describe the statistical analysis methods that will be used to evaluate the Secondary objective(s) and associated estimand(s) in Section 3.2. Ensure that the statistical hypothesis/model/analysis (and corresponding assumptions) is aligned with the Secondary estimand(s). If there is more than one Secondary objective, present each objective as a level 3 heading and present each subsequent heading in Section 10.5 as a level 4 heading.\nFor each objective, state the null and alternative hypotheses, including the pre-planned type 1 error rate, or alternative criteria for evaluating whether the objective has been met, and relevant operating characteristics if appropriate. Describe the statistical model used and the factors that will be included (covariates and interactions) and any rules for handling these factors (for example, pooling of centres).\nIf modelling and simulation methods are to be used, please describe the model (inputs and outputs), the underlying assumptions, and the method of model fitting.",
-            "conformance": "Conditional: when there is Secondary estimand",
-            "cardinality": "One to one",
-            "relationship": "10.5.X.1",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: 10.5.X.1 Statistical Analysis Method\nConcept: CNEW",
-            "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
-            "ct": []
-        },
-        "Handling of Missing Data in Relation to Primary Estimand": {
-            "name": "Handling of Missing Data in Relation to Primary Estimand",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of how missing data associated with the primary estimand will be handled, including the rationale for the approach.",
-            "guidance": "Describe how missing data will be addressed (e.g., imputation method and model), state the underlying assumptions, and provide a rationale for the approach.",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "10.4.X.3",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: 10.4.X.3 Handling of Missing Data\nConcept: CNEW",
-            "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.4.X.1, 10.4.X.2, 10.4.X.3, 10.4.X.4, 10.4.X.5).",
-            "ct": []
-        },
         "Analysis Associated with Exploratory Objectivess": {
             "name": "Analysis Associated with Exploratory Objectivess",
             "data_type": "Text",
@@ -1558,32 +1163,6 @@
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 10.6 Analysis Associated with the Exploratory Objective(s),\nConcept: CNEW",
             "repeating": "No",
-            "ct": []
-        },
-        "CountryRegionSpecific Requirements": {
-            "name": "CountryRegionSpecific Requirements",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of any country or region-specific requirements related to the trial but not related to individual items in the protocol.",
-            "guidance": "Although global clinical trial practices are increasingly harmonised, some country/ region-specific differences in requirements do exist (e.g., document retention periods, contraception requirements). Where differences in requirements cannot be reconciled, sponsors should explain how they will document and communicate country/region-specific differences (e.g., by country/region-specific amendments or addenda).\nAn alternative to country/region-specific amendments is to list the specific differences by country or countries in this section, including a reference to the relevant section of the protocol where the differing requirement applies.",
-            "conformance": "Optional If there is Country/Region-specific differences",
-            "cardinality": "One to many",
-            "relationship": "12.2",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: 12.2 Country /Region Identifier ;Country/Region-Specific Differences\nConcept: CNEW",
-            "repeating": "Yes, repeatable for each Country/Region",
-            "ct": []
-        },
-        "CountryRegionspecific Protocol Clarifications": {
-            "name": "CountryRegionspecific Protocol Clarifications",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of any country or region-specific clarifications related to a protocol item.",
-            "guidance": "Although global clinical trial practices are increasingly harmonised, some country/ region-specific differences in requirements do exist (e.g., document retention periods, contraception requirements). Where differences in requirements cannot be reconciled, sponsors should explain how they will document and communicate country/region-specific differences (e.g., by country/region-specific amendments or addenda).\nAn alternative to country/region-specific amendments is to list the specific differences by country or countries in this section, including a reference to the relevant section of the protocol where the differing requirement applies.",
-            "conformance": "Optional if there is Country/Region-specific differences",
-            "cardinality": "One to many",
-            "relationship": "12.2",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: 12.2 Country /Region Identifier Country/Region-Specific Differences\nConcept: CNEW",
-            "repeating": "Yes, repeatable for each country/region",
             "ct": []
         },
         "Prior Protocol Amendments": {

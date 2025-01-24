@@ -1974,55 +1974,6 @@
             }
         ]
     },
-    "Blinded roles": {
-        "name": "Blinded roles",
-        "data_type": "Valid Value",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn identifying designation assigned to a blinded individual within a clinical trial that corresponds with their function",
-        "guidance": "\u201cNot applicable (No blinding)\u201d indicates an open label trial.",
-        "conformance": "Required",
-        "cardinality": "One to many",
-        "relationship": "1.1.2",
-        "value": "Participant (C142710), Care Provider (C17445), Investigator (C25936), Outcomes Assessor (CNEW), Sponsor (C70793) Not Applicable (C48660)",
-        "business_rules": "Value Allowed: Yes, Multiple roles can be selected\nRelationship: Blinded Roles; Sponsor Protocol Identifier\nConcept: CNEW",
-        "repeating": "No",
-        "ct": [
-            {
-                "ncit_code": "CNEW",
-                "preferred_term": "Trial Blinding Role",
-                "definition": "A terminology value set relevant to the trial blinding roles within the ICH M11 Protocol model."
-            },
-            {
-                "ncit_code": "C142710",
-                "preferred_term": "Participant",
-                "definition": "A member of the clinical study population from whom data are being collected."
-            },
-            {
-                "ncit_code": "C17445",
-                "preferred_term": "Care Provider",
-                "definition": "The primary person in charge of the care of a patient, usually a family member or a designated health care professional."
-            },
-            {
-                "ncit_code": "C25936",
-                "preferred_term": "Investigator",
-                "definition": "A person responsible for the conduct of the clinical trial at a trial site. If a trial is conducted by a team of individuals at the trial site, the investigator is the responsible leader of the team and may be called the principal investigator."
-            },
-            {
-                "ncit_code": "CNEW",
-                "preferred_term": "Outcomes Assessor",
-                "definition": "The individual who evaluates the outcome(s) of interest."
-            },
-            {
-                "ncit_code": "C70793",
-                "preferred_term": "Sponsor",
-                "definition": "An individual, company, institution, or organization that takes responsibility for the initiation, management, and/or financing of a clinical study."
-            },
-            {
-                "ncit_code": "C48660",
-                "preferred_term": "Not Applicable",
-                "definition": "Determination of a value is not relevant in the current context."
-            }
-        ]
-    },
     "TargetMaximum": {
         "name": "TargetMaximum",
         "data_type": "Valid Value",
@@ -2389,19 +2340,6 @@
         "relationship": "3.2.X",
         "value": "Text and unique integer which is same as Level 3 number for the section.",
         "business_rules": "Value Allowed: Yes\nRelationship: 3.2.X Secondary Objective, Estimand Characteristics table\nConcept: C85827",
-        "repeating": "Yes, repeatable for each numbered secondary objective.",
-        "ct": []
-    },
-    "Secondary Objective Number": {
-        "name": "Secondary Objective Number",
-        "data_type": "Number",
-        "definition": "N/A",
-        "guidance": "",
-        "conformance": "Optional",
-        "cardinality": "One to one",
-        "relationship": "3.2.X",
-        "value": "an integer, unique number",
-        "business_rules": "Value Allowed: Yes\nRelationship: 3.2.X Secondary Objective\nConcept: Sequential number",
         "repeating": "Yes, repeatable for each numbered secondary objective.",
         "ct": []
     },
@@ -4175,19 +4113,6 @@
         "repeating": "No",
         "ct": []
     },
-    "Statistical Method of Analysis": {
-        "name": "Statistical Method of Analysis",
-        "data_type": "Text",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of the statistical model, hypothesis, and methods of analyses for each objective within the trial.",
-        "guidance": "Describe the statistical analysis methods that will be used to evaluate the Secondary objective(s) and associated estimand(s) in Section 3.2. Ensure that the statistical hypothesis/model/analysis (and corresponding assumptions) is aligned with the Secondary estimand(s). If there is more than one Secondary objective, present each objective as a level 3 heading and present each subsequent heading in Section 10.5 as a level 4 heading.\nFor each objective, state the null and alternative hypotheses, including the pre-planned type 1 error rate, or alternative criteria for evaluating whether the objective has been met, and relevant operating characteristics if appropriate. Describe the statistical model used and the factors that will be included (covariates and interactions) and any rules for handling these factors (for example, pooling of centres).\nIf modelling and simulation methods are to be used, please describe the model (inputs and outputs), the underlying assumptions, and the method of model fitting.",
-        "conformance": "Conditional: when there is Secondary estimand",
-        "cardinality": "One to one",
-        "relationship": "10.5.X.1",
-        "value": "Text",
-        "business_rules": "Value Allowed: Yes\nRelationship: 10.5.X.1 Statistical Analysis Method\nConcept: CNEW",
-        "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
-        "ct": []
-    },
     "Handling of Data in Relation to Primary Estimands": {
         "name": "Handling of Data in Relation to Primary Estimands",
         "data_type": "Text",
@@ -4656,32 +4581,6 @@
         "repeating": "No",
         "ct": []
     },
-    "CountryRegionSpecific Requirements": {
-        "name": "CountryRegionSpecific Requirements",
-        "data_type": "Text",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of any country or region-specific requirements related to the trial but not related to individual items in the protocol.",
-        "guidance": "Although global clinical trial practices are increasingly harmonised, some country/ region-specific differences in requirements do exist (e.g., document retention periods, contraception requirements). Where differences in requirements cannot be reconciled, sponsors should explain how they will document and communicate country/region-specific differences (e.g., by country/region-specific amendments or addenda).\nAn alternative to country/region-specific amendments is to list the specific differences by country or countries in this section, including a reference to the relevant section of the protocol where the differing requirement applies.",
-        "conformance": "Optional If there is Country/Region-specific differences",
-        "cardinality": "One to many",
-        "relationship": "12.2",
-        "value": "Text",
-        "business_rules": "Value Allowed: Yes\nRelationship: 12.2 Country /Region Identifier ;Country/Region-Specific Differences\nConcept: CNEW",
-        "repeating": "Yes, repeatable for each Country/Region",
-        "ct": []
-    },
-    "CountryRegionspecific Protocol Clarifications": {
-        "name": "CountryRegionspecific Protocol Clarifications",
-        "data_type": "Text",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of any country or region-specific clarifications related to a protocol item.",
-        "guidance": "Although global clinical trial practices are increasingly harmonised, some country/ region-specific differences in requirements do exist (e.g., document retention periods, contraception requirements). Where differences in requirements cannot be reconciled, sponsors should explain how they will document and communicate country/region-specific differences (e.g., by country/region-specific amendments or addenda).\nAn alternative to country/region-specific amendments is to list the specific differences by country or countries in this section, including a reference to the relevant section of the protocol where the differing requirement applies.",
-        "conformance": "Optional if there is Country/Region-specific differences",
-        "cardinality": "One to many",
-        "relationship": "12.2",
-        "value": "Text",
-        "business_rules": "Value Allowed: Yes\nRelationship: 12.2 Country /Region Identifier Country/Region-Specific Differences\nConcept: CNEW",
-        "repeating": "Yes, repeatable for each country/region",
-        "ct": []
-    },
     "Prior Protocol Amendments": {
         "name": "Prior Protocol Amendments",
         "data_type": "Valid Value",
@@ -4863,5 +4762,111 @@
         "repeating": "No",
         "ct": [],
         "short_name": "WHO UTN Number"
+    },
+    "Blinded Roles": {
+        "name": "Blinded roles",
+        "data_type": "Valid Value",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn identifying designation assigned to a blinded individual within a clinical trial that corresponds with their function",
+        "guidance": "\u201cNot applicable (No blinding)\u201d indicates an open label trial.",
+        "conformance": "Required",
+        "cardinality": "One to many",
+        "relationship": "1.1.2",
+        "value": "Participant (C142710), Care Provider (C17445), Investigator (C25936), Outcomes Assessor (CNEW), Sponsor (C70793) Not Applicable (C48660)",
+        "business_rules": "Value Allowed: Yes, Multiple roles can be selected\nRelationship: Blinded Roles; Sponsor Protocol Identifier\nConcept: CNEW",
+        "repeating": "No",
+        "ct": [
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Trial Blinding Role",
+                "definition": "A terminology value set relevant to the trial blinding roles within the ICH M11 Protocol model."
+            },
+            {
+                "ncit_code": "C142710",
+                "preferred_term": "Participant",
+                "definition": "A member of the clinical study population from whom data are being collected."
+            },
+            {
+                "ncit_code": "C17445",
+                "preferred_term": "Care Provider",
+                "definition": "The primary person in charge of the care of a patient, usually a family member or a designated health care professional."
+            },
+            {
+                "ncit_code": "C25936",
+                "preferred_term": "Investigator",
+                "definition": "A person responsible for the conduct of the clinical trial at a trial site. If a trial is conducted by a team of individuals at the trial site, the investigator is the responsible leader of the team and may be called the principal investigator."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Outcomes Assessor",
+                "definition": "The individual who evaluates the outcome(s) of interest."
+            },
+            {
+                "ncit_code": "C70793",
+                "preferred_term": "Sponsor",
+                "definition": "An individual, company, institution, or organization that takes responsibility for the initiation, management, and/or financing of a clinical study."
+            },
+            {
+                "ncit_code": "C48660",
+                "preferred_term": "Not Applicable",
+                "definition": "Determination of a value is not relevant in the current context."
+            }
+        ],
+        "short_name": "Blinded Roles"
+    },
+    "Country Region Specific Requirements": {
+        "name": "CountryRegionSpecific Requirements",
+        "data_type": "Text",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of any country or region-specific requirements related to the trial but not related to individual items in the protocol.",
+        "guidance": "Although global clinical trial practices are increasingly harmonised, some country/ region-specific differences in requirements do exist (e.g., document retention periods, contraception requirements). Where differences in requirements cannot be reconciled, sponsors should explain how they will document and communicate country/region-specific differences (e.g., by country/region-specific amendments or addenda).\nAn alternative to country/region-specific amendments is to list the specific differences by country or countries in this section, including a reference to the relevant section of the protocol where the differing requirement applies.",
+        "conformance": "Optional If there is Country/Region-specific differences",
+        "cardinality": "One to many",
+        "relationship": "12.2",
+        "value": "Text",
+        "business_rules": "Value Allowed: Yes\nRelationship: 12.2 Country /Region Identifier ;Country/Region-Specific Differences\nConcept: CNEW",
+        "repeating": "Yes, repeatable for each Country/Region",
+        "ct": [],
+        "short_name": "Country Region Specific Requirements"
+    },
+    "Country Region Specific Protocol Clarifications": {
+        "name": "CountryRegionspecific Protocol Clarifications",
+        "data_type": "Text",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of any country or region-specific clarifications related to a protocol item.",
+        "guidance": "Although global clinical trial practices are increasingly harmonised, some country/ region-specific differences in requirements do exist (e.g., document retention periods, contraception requirements). Where differences in requirements cannot be reconciled, sponsors should explain how they will document and communicate country/region-specific differences (e.g., by country/region-specific amendments or addenda).\nAn alternative to country/region-specific amendments is to list the specific differences by country or countries in this section, including a reference to the relevant section of the protocol where the differing requirement applies.",
+        "conformance": "Optional if there is Country/Region-specific differences",
+        "cardinality": "One to many",
+        "relationship": "12.2",
+        "value": "Text",
+        "business_rules": "Value Allowed: Yes\nRelationship: 12.2 Country /Region Identifier Country/Region-Specific Differences\nConcept: CNEW",
+        "repeating": "Yes, repeatable for each country/region",
+        "ct": [],
+        "short_name": "Country Region Specific Protocol Clarifications"
+    },
+    "Secondary Objective": {
+        "name": "Secondary Objective Number",
+        "data_type": "Number",
+        "definition": "N/A",
+        "guidance": "",
+        "conformance": "Optional",
+        "cardinality": "One to one",
+        "relationship": "3.2.X",
+        "value": "an integer, unique number",
+        "business_rules": "Value Allowed: Yes\nRelationship: 3.2.X Secondary Objective\nConcept: Sequential number",
+        "repeating": "Yes, repeatable for each numbered secondary objective.",
+        "ct": [],
+        "short_name": "Secondary Objective"
+    },
+    "Statistical Analysis Method": {
+        "name": "Statistical Method of Analysis",
+        "data_type": "Text",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of the statistical model, hypothesis, and methods of analyses for each objective within the trial.",
+        "guidance": "Describe the statistical analysis methods that will be used to evaluate the Secondary objective(s) and associated estimand(s) in Section 3.2. Ensure that the statistical hypothesis/model/analysis (and corresponding assumptions) is aligned with the Secondary estimand(s). If there is more than one Secondary objective, present each objective as a level 3 heading and present each subsequent heading in Section 10.5 as a level 4 heading.\nFor each objective, state the null and alternative hypotheses, including the pre-planned type 1 error rate, or alternative criteria for evaluating whether the objective has been met, and relevant operating characteristics if appropriate. Describe the statistical model used and the factors that will be included (covariates and interactions) and any rules for handling these factors (for example, pooling of centres).\nIf modelling and simulation methods are to be used, please describe the model (inputs and outputs), the underlying assumptions, and the method of model fitting.",
+        "conformance": "Conditional: when there is Secondary estimand",
+        "cardinality": "One to one",
+        "relationship": "10.5.X.1",
+        "value": "Text",
+        "business_rules": "Value Allowed: Yes\nRelationship: 10.5.X.1 Statistical Analysis Method\nConcept: CNEW",
+        "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
+        "ct": [],
+        "short_name": "Statistical Analysis Method"
     }
 }

@@ -54,10 +54,17 @@ with open("data/output_data/merged_elements.json", "w") as f:
     json.dump(merged, f, indent=4)
 with open("data/output_data/mismatched_elements.json", "w") as f:
     json.dump(missing, f, indent=4)
-with open("data/output_data/not_mapped_elements.json", "w") as f:
+with open("data/output_data/not_mapped_to_usd_elements.json", "w") as f:
     json.dump(not_mapped, f, indent=4)
 
 res = list(zip_longest(missing['template'].keys(), missing['technical'].keys()))
 print(f"RES: {res}")
+text = "<table><tr><th>Template</th><th>Technical</th></tr>"
+for result in res:
+    text += f"<tr><td>{result[0]}</td><td>{result[1]}</td></tr>"
+text += "</table>"
+with open("data/output_data/mismatched_elements.html", "w") as f:
+    f.write(text)
+
 #print("\n\nResults: Unmatched Items\n\n")
 #print(tabulate(res, headers=['Template', 'Technical'], tablefmt="github"))

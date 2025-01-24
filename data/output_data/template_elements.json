@@ -370,18 +370,6 @@
             "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
         ]
     },
-    "GloballyLocallyby Cohort": {
-        "long_name": "Globally/Locally/by Cohort",
-        "short_name": "GloballyLocallyby Cohort",
-        "original_name": "Globally/Locally/by Cohort",
-        "optional": true,
-        "section_number": null,
-        "section_title": null,
-        "instructions": [
-            "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
-            "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
-        ]
-    },
     "Primary Reason for Amendment": {
         "long_name": "Primary Reason for Amendment",
         "short_name": "Primary Reason for Amendment",
@@ -481,24 +469,6 @@
         "long_name": "Population diagnosis or condition",
         "short_name": "Population diagnosis or condition",
         "original_name": "Population diagnosis or condition",
-        "optional": false,
-        "section_number": "1.1.2",
-        "section_title": "Overall Design",
-        "instructions": []
-    },
-    "Control type": {
-        "long_name": "Control type",
-        "short_name": "Control type",
-        "original_name": "Control type",
-        "optional": false,
-        "section_number": "1.1.2",
-        "section_title": "Overall Design",
-        "instructions": []
-    },
-    "minimum age": {
-        "long_name": "minimum age",
-        "short_name": "minimum age",
-        "original_name": "minimum age",
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
@@ -627,15 +597,6 @@
         "long_name": "Trial Blind Schema",
         "short_name": "Trial Blind Schema",
         "original_name": "Trial Blind Schema",
-        "optional": false,
-        "section_number": "1.1.2",
-        "section_title": "Overall Design",
-        "instructions": []
-    },
-    "blinded roles": {
-        "long_name": "blinded roles",
-        "short_name": "blinded roles",
-        "original_name": "blinded roles",
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
@@ -1203,37 +1164,10 @@
         "section_title": "Trial Intervention And Concomitant Therapy",
         "instructions": []
     },
-    "Select Arm Type": {
-        "long_name": "Select Arm Type",
-        "short_name": "Select Arm Type",
-        "original_name": "Select Arm Type",
-        "optional": true,
-        "section_number": "6",
-        "section_title": "Trial Intervention And Concomitant Therapy",
-        "instructions": []
-    },
     "Intervention Name": {
         "long_name": "Enter Intervention Name",
         "short_name": "Intervention Name",
         "original_name": "Intervention Name",
-        "optional": true,
-        "section_number": "6",
-        "section_title": "Trial Intervention And Concomitant Therapy",
-        "instructions": []
-    },
-    "Select Intervention Type": {
-        "long_name": "Select Intervention Type",
-        "short_name": "Select Intervention Type",
-        "original_name": "Select Intervention Type",
-        "optional": true,
-        "section_number": "6",
-        "section_title": "Trial Intervention And Concomitant Therapy",
-        "instructions": []
-    },
-    "Select Pharmaceutical Dose Form": {
-        "long_name": "Select Pharmaceutical Dose Form",
-        "short_name": "Select Pharmaceutical Dose Form",
-        "original_name": "Select Pharmaceutical Dose Form",
         "optional": true,
         "section_number": "6",
         "section_title": "Trial Intervention And Concomitant Therapy",
@@ -1417,15 +1351,6 @@
         "optional": false,
         "section_number": "6.9",
         "section_title": "Description of Noninvestigational Trial Intervention",
-        "instructions": []
-    },
-    "Background Trial Interventions": {
-        "long_name": "Enter Background Trial Interventions",
-        "short_name": "Background Trial Interventions",
-        "original_name": "Background Trial Interventions",
-        "optional": false,
-        "section_number": "6.9.1",
-        "section_title": "{Background Trial Intervention}",
         "instructions": []
     },
     "Rescue Therapy": {
@@ -1923,15 +1848,6 @@
         "section_title": "Handling of Data in Relation to Primary Estimand(s)",
         "instructions": []
     },
-    "Handling of Missing Data in Relation to Primary Estimands": {
-        "long_name": "Enter Handling of Missing Data in Relation to Primary Estimand(s)",
-        "short_name": "Handling of Missing Data in Relation to Primary Estimands",
-        "original_name": "Handling of Missing Data in Relation to Primary Estimand(s)",
-        "optional": false,
-        "section_number": "10.4.1.3",
-        "section_title": "Handling of Missing Data in Relation to Primary Estimand(s)",
-        "instructions": []
-    },
     "Sensitivity Analysis": {
         "long_name": "Enter Sensitivity Analysis",
         "short_name": "Sensitivity Analysis",
@@ -1966,15 +1882,6 @@
         "optional": false,
         "section_number": "10.5.1.3",
         "section_title": "{Handling of Missing Data in Relation to Secondary Estimand(s)}",
-        "instructions": []
-    },
-    "Analyses Associated with the Exploratory Objectives": {
-        "long_name": "Enter Analyses Associated with the Exploratory Objective(s)",
-        "short_name": "Analyses Associated with the Exploratory Objectives",
-        "original_name": "Analyses Associated with the Exploratory Objective(s)",
-        "optional": false,
-        "section_number": "10.6",
-        "section_title": "Analyses Associated with the Exploratory Objective(s)",
         "instructions": []
     },
     "Safety Analyses": {
@@ -2249,24 +2156,6 @@
         "section_title": "Country/Region-Specific Differences",
         "instructions": []
     },
-    "CountryRegion Specific Requirements": {
-        "long_name": "Enter Country/Region Specific Requirements",
-        "short_name": "CountryRegion Specific Requirements",
-        "original_name": "Country/Region Specific Requirements",
-        "optional": true,
-        "section_number": "12.2",
-        "section_title": "Country/Region-Specific Differences",
-        "instructions": []
-    },
-    "CountryRegion Specific Protocol Clarifications": {
-        "long_name": "Enter Country/Region Specific Protocol Clarifications",
-        "short_name": "CountryRegion Specific Protocol Clarifications",
-        "original_name": "Country/Region Specific Protocol Clarifications",
-        "optional": true,
-        "section_number": "12.2",
-        "section_title": "Country/Region-Specific Differences",
-        "instructions": []
-    },
     "Sponsor Approval Date": {
         "long_name": "Enter Sponsor Approval Date",
         "short_name": "Sponsor Approval Date",
@@ -2348,6 +2237,117 @@
         "optional": true,
         "section_number": null,
         "section_title": null,
+        "instructions": []
+    },
+    "Globally Locally Cohort": {
+        "long_name": "Globally/Locally/by Cohort",
+        "short_name": "Globally Locally Cohort",
+        "original_name": "Globally/Locally/by Cohort",
+        "optional": true,
+        "section_number": null,
+        "section_title": null,
+        "instructions": [
+            "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
+            "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
+        ]
+    },
+    "Control Type": {
+        "long_name": "Control type",
+        "short_name": "Control Type",
+        "original_name": "Control type",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Minimum Age": {
+        "long_name": "minimum age",
+        "short_name": "Minimum Age",
+        "original_name": "minimum age",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Blinded Roles": {
+        "long_name": "blinded roles",
+        "short_name": "Blinded Roles",
+        "original_name": "blinded roles",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Country Region Specific Requirements": {
+        "long_name": "Enter Country/Region Specific Requirements",
+        "short_name": "Country Region Specific Requirements",
+        "original_name": "Country/Region Specific Requirements",
+        "optional": true,
+        "section_number": "12.2",
+        "section_title": "Country/Region-Specific Differences",
+        "instructions": []
+    },
+    "Country Region Specific Protocol Clarifications": {
+        "long_name": "Enter Country/Region Specific Protocol Clarifications",
+        "short_name": "Country Region Specific Protocol Clarifications",
+        "original_name": "Country/Region Specific Protocol Clarifications",
+        "optional": true,
+        "section_number": "12.2",
+        "section_title": "Country/Region-Specific Differences",
+        "instructions": []
+    },
+    "Arm Type": {
+        "long_name": "Select Arm Type",
+        "short_name": "Arm Type",
+        "original_name": "Select Arm Type",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Intervention Type": {
+        "long_name": "Select Intervention Type",
+        "short_name": "Intervention Type",
+        "original_name": "Select Intervention Type",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Pharmaceutical Dose Formulation": {
+        "long_name": "Select Pharmaceutical Dose Form",
+        "short_name": "Pharmaceutical Dose Formulation",
+        "original_name": "Select Pharmaceutical Dose Form",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Background Trial Intervention": {
+        "long_name": "Enter Background Trial Interventions",
+        "short_name": "Background Trial Intervention",
+        "original_name": "Background Trial Interventions",
+        "optional": false,
+        "section_number": "6.9.1",
+        "section_title": "{Background Trial Intervention}",
+        "instructions": []
+    },
+    "Handling of Missing Data in Relation to Primary Estimand": {
+        "long_name": "Enter Handling of Missing Data in Relation to Primary Estimand(s)",
+        "short_name": "Handling of Missing Data in Relation to Primary Estimand",
+        "original_name": "Handling of Missing Data in Relation to Primary Estimand(s)",
+        "optional": false,
+        "section_number": "10.4.1.3",
+        "section_title": "Handling of Missing Data in Relation to Primary Estimand(s)",
+        "instructions": []
+    },
+    "Analysis Associated with Exploratory Objectives": {
+        "long_name": "Enter Analyses Associated with the Exploratory Objective(s)",
+        "short_name": "Analysis Associated with Exploratory Objectives",
+        "original_name": "Analyses Associated with the Exploratory Objective(s)",
+        "optional": false,
+        "section_number": "10.6",
+        "section_title": "Analyses Associated with the Exploratory Objective(s)",
         "instructions": []
     }
 }

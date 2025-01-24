@@ -65,6 +65,7 @@
     "Regulatory Reporting Requirements": "Regulatory Reporting Requirements",
     "Participants Whose Partners Become Pregnant During the Trial": "Participants Whose Partners Become Pregnant During the Trial",
     "Special Safety Situations": "Special Safety Situations",
+    "Statistical Analysis Method": "Statistical Analysis Method",
     "Handling of Data in Relation to Primary Estimands": "Handling of Data in Relation to Primary Estimands",
     "Handling of Data in Relation to Secondary Estimands": "Handling of Data in Relation to Secondary Estimands",
     "Handling of Missing Data in Relation to Secondary Estimands": "Handling of Missing Data in Relation to Secondary Estimands",
@@ -83,5 +84,8 @@
     "IMP or NIMP": "IMP or NIMP",
     "WHO UTN Number": "WHO UTN Number",
     "Country Region Specific Requirements": "Country Region Specific Requirements",
-    "Country Region Specific Protocol Clarifications": "Country Region Specific Protocol Clarifications"
+    "Country Region Specific Protocol Clarifications": "Country Region Specific Protocol Clarifications",
+    "Pharmaceutical Dose Formulation": "Pharmaceutical Dose Formulation",
+    "Background Trial Intervention": "Background Trial Intervention",
+    "Handling of Missing Data in Relation to Primary Estimand": "Handling of Missing Data in Relation to Primary Estimand"
 }
