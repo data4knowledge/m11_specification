@@ -3388,19 +3388,6 @@
         "repeating": "No",
         "ct": []
     },
-    "Description of the overview of trial interventions or a heading for the optional table below": {
-        "name": "Description of the overview of trial interventions or a heading for the optional table below",
-        "data_type": "Text",
-        "definition": "CNEW",
-        "guidance": "Trial interventions are all pre-specified, investigational and non-investigational medicinal products, medical devices or other interventions intended for the participants during the trial. The investigational trial intervention is the product used in the trial as part of trial objectives. Description of investigational trial intervention is provided in Section 6.1. Other trial interventions that are not part of trial objectives (not an investigational role in this trial) are described in Section 6.9 Description of Non-investigational trial interventions. \nAny regional requirements should be noted in the appropriate subsections. \nProvide an overview of investigational and non-investigational trial interventions. Classify the trial intervention as IMP, NIMP/AxMP designations based on study design and local legislation. Consider the optional table below",
-        "conformance": "Required",
-        "cardinality": "One to one",
-        "relationship": "6",
-        "value": "Text",
-        "business_rules": "Value Allowed: Yes\nRelationship: 6 TRIAL INTERVENTION AND CONCOMITANT THERAPY\nConcept: CNEW",
-        "repeating": "No",
-        "ct": []
-    },
     "Arm Name": {
         "name": "Arm Name",
         "data_type": "Text",
@@ -3605,19 +3592,6 @@
         "value": "Use IDMP (e.g. EDQM, CDISC)",
         "business_rules": "Value Allowed: Yes\nRelationship: arm name and route of administration\nConcept: C38114",
         "repeating": "Yes, repeatable for each intervention. Dose formulation, per arm name",
-        "ct": []
-    },
-    "Regimen-Treatment Period-Vaccination regimen": {
-        "name": "Regimen-Treatment Period-Vaccination regimen",
-        "data_type": "Text",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of the schedule and periodicity of a treatment or vaccination regimen.",
-        "guidance": "N/A",
-        "conformance": "Optional: if the table used",
-        "cardinality": "One to each intervention, dose formulation, dosage strength per arm",
-        "relationship": "6",
-        "value": "Regimen/Treatment Period",
-        "business_rules": "Value Allowed: Yes\nRelationship: arm name and regimen/treatment period/vaccine regimen, Concept: CNEW",
-        "repeating": "Yes, repeatable for each arm name",
         "ct": []
     },
     "Use": {
@@ -3921,19 +3895,6 @@
         "relationship": "6.9.2",
         "value": "Text",
         "business_rules": "Value Allowed: Yes\nRelationship: 6.9.2 Rescue Therapy\nConcept: C165835",
-        "repeating": "No",
-        "ct": []
-    },
-    "Other Noninvestigational Intervention": {
-        "name": "Other Noninvestigational Intervention",
-        "data_type": "Text",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA non-investigational trial therapy that is different than the one(s) previously specified or mentioned.",
-        "guidance": "If applicable, describe the use of any other non-investigational intervention, for example, challenge agents or diagnostics.",
-        "conformance": "Conditional: when any other non-investigational interventions are defined",
-        "cardinality": "One to one",
-        "relationship": "6.9.3",
-        "value": "Text",
-        "business_rules": "Value Allowed: Yes\nRelationship: 6.9.3 Other Noninvestigational Intervention\nConcept: CNEW",
         "repeating": "No",
         "ct": []
     },
@@ -6609,5 +6570,47 @@
             }
         ],
         "short_name": "total planned duration of trial intervention unit of time"
+    },
+    "description of the overview of trial interventions or a heading for the optional table below": {
+        "name": "Description of the overview of trial interventions or a heading for the optional table below",
+        "data_type": "Text",
+        "definition": "CNEW",
+        "guidance": "Trial interventions are all pre-specified, investigational and non-investigational medicinal products, medical devices or other interventions intended for the participants during the trial. The investigational trial intervention is the product used in the trial as part of trial objectives. Description of investigational trial intervention is provided in Section 6.1. Other trial interventions that are not part of trial objectives (not an investigational role in this trial) are described in Section 6.9 Description of Non-investigational trial interventions. \nAny regional requirements should be noted in the appropriate subsections. \nProvide an overview of investigational and non-investigational trial interventions. Classify the trial intervention as IMP, NIMP/AxMP designations based on study design and local legislation. Consider the optional table below",
+        "conformance": "Required",
+        "cardinality": "One to one",
+        "relationship": "6",
+        "value": "Text",
+        "business_rules": "Value Allowed: Yes\nRelationship: 6 TRIAL INTERVENTION AND CONCOMITANT THERAPY\nConcept: CNEW",
+        "repeating": "No",
+        "ct": [],
+        "short_name": "description of the overview of trial interventions or a heading for the optional table below"
+    },
+    "Regimen-Treatment Period-Vaccination Regimen": {
+        "name": "Regimen-Treatment Period-Vaccination regimen",
+        "data_type": "Text",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of the schedule and periodicity of a treatment or vaccination regimen.",
+        "guidance": "N/A",
+        "conformance": "Optional: if the table used",
+        "cardinality": "One to each intervention, dose formulation, dosage strength per arm",
+        "relationship": "6",
+        "value": "Regimen/Treatment Period",
+        "business_rules": "Value Allowed: Yes\nRelationship: arm name and regimen/treatment period/vaccine regimen, Concept: CNEW",
+        "repeating": "Yes, repeatable for each arm name",
+        "ct": [],
+        "short_name": "Regimen-Treatment Period-Vaccination Regimen"
+    },
+    "Other Noninvestigational Trial Intervention": {
+        "name": "Other Noninvestigational Intervention",
+        "data_type": "Text",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA non-investigational trial therapy that is different than the one(s) previously specified or mentioned.",
+        "guidance": "If applicable, describe the use of any other non-investigational intervention, for example, challenge agents or diagnostics.",
+        "conformance": "Conditional: when any other non-investigational interventions are defined",
+        "cardinality": "One to one",
+        "relationship": "6.9.3",
+        "value": "Text",
+        "business_rules": "Value Allowed: Yes\nRelationship: 6.9.3 Other Noninvestigational Intervention\nConcept: CNEW",
+        "repeating": "No",
+        "ct": [],
+        "short_name": "Other Noninvestigational Trial Intervention"
     }
 }

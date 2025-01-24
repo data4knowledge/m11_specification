@@ -1435,15 +1435,6 @@
         "section_title": "{Electrocardiograms}",
         "instructions": []
     },
-    "Clinical Laboratory Assessments": {
-        "long_name": "Enter Clinical Laboratory Assessments",
-        "short_name": "Clinical Laboratory Assessments",
-        "original_name": "Clinical Laboratory Assessments",
-        "optional": false,
-        "section_number": "8.4.4",
-        "section_title": "{Clinical Laboratory Assessments}",
-        "instructions": []
-    },
     "Pregnancy Testing": {
         "long_name": "Enter Pregnancy Testing",
         "short_name": "Pregnancy Testing",
@@ -2480,6 +2471,15 @@
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Clinical Safety Laboratory Assessments": {
+        "long_name": "Enter Clinical Laboratory Assessments",
+        "short_name": "Clinical Safety Laboratory Assessments",
+        "original_name": "Clinical Laboratory Assessments",
+        "optional": false,
+        "section_number": "8.4.4",
+        "section_title": "{Clinical Laboratory Assessments}",
         "instructions": []
     },
     "Amendment Details": {

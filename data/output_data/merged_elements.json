@@ -4928,6 +4928,31 @@
             "notes": ""
         }
     },
+    "description of the overview of trial interventions or a heading for the optional table below": {
+        "template": {
+            "long_name": "Enter description of the overview of trial interventions or a heading for the optional table below",
+            "short_name": "description of the overview of trial interventions or a heading for the optional table below",
+            "original_name": "description of the overview of trial interventions or a heading for the optional table below",
+            "optional": false,
+            "section_number": "6",
+            "section_title": "Trial Intervention And Concomitant Therapy",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Description of the overview of trial interventions or a heading for the optional table below",
+            "data_type": "Text",
+            "definition": "CNEW",
+            "guidance": "Trial interventions are all pre-specified, investigational and non-investigational medicinal products, medical devices or other interventions intended for the participants during the trial. The investigational trial intervention is the product used in the trial as part of trial objectives. Description of investigational trial intervention is provided in Section 6.1. Other trial interventions that are not part of trial objectives (not an investigational role in this trial) are described in Section 6.9 Description of Non-investigational trial interventions. \nAny regional requirements should be noted in the appropriate subsections. \nProvide an overview of investigational and non-investigational trial interventions. Classify the trial intervention as IMP, NIMP/AxMP designations based on study design and local legislation. Consider the optional table below",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "6",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 6 TRIAL INTERVENTION AND CONCOMITANT THERAPY\nConcept: CNEW",
+            "repeating": "No",
+            "ct": [],
+            "short_name": "description of the overview of trial interventions or a heading for the optional table below"
+        }
+    },
     "Arm Name": {
         "template": {
             "long_name": "Enter Arm Name",
@@ -5034,6 +5059,31 @@
             "business_rules": "Value Allowed: Yes\nRelationship: arm name and dose level\nConcept: C94394",
             "repeating": "Yes, repeatable for each intervention, dose formulation, dosage strength and dosage level per arm",
             "ct": []
+        }
+    },
+    "Regimen-Treatment Period-Vaccination Regimen": {
+        "template": {
+            "long_name": "Enter Regimen/Treatment Period/Vaccination Regimen",
+            "short_name": "Regimen-Treatment Period-Vaccination Regimen",
+            "original_name": "Regimen/Treatment Period/Vaccination Regimen",
+            "optional": true,
+            "section_number": "6",
+            "section_title": "Trial Intervention And Concomitant Therapy",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Regimen-Treatment Period-Vaccination regimen",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of the schedule and periodicity of a treatment or vaccination regimen.",
+            "guidance": "N/A",
+            "conformance": "Optional: if the table used",
+            "cardinality": "One to each intervention, dose formulation, dosage strength per arm",
+            "relationship": "6",
+            "value": "Regimen/Treatment Period",
+            "business_rules": "Value Allowed: Yes\nRelationship: arm name and regimen/treatment period/vaccine regimen, Concept: CNEW",
+            "repeating": "Yes, repeatable for each arm name",
+            "ct": [],
+            "short_name": "Regimen-Treatment Period-Vaccination Regimen"
         }
     },
     "Description of Investigational Trial Intervention": {
@@ -5537,6 +5587,31 @@
             "map_status": "Mapped",
             "name": "Rescue Therapy",
             "notes": ""
+        }
+    },
+    "Other Noninvestigational Trial Intervention": {
+        "template": {
+            "long_name": "Enter Other Noninvestigational Trial Intervention",
+            "short_name": "Other Noninvestigational Trial Intervention",
+            "original_name": "Other Noninvestigational Trial Intervention",
+            "optional": false,
+            "section_number": "6.9.3",
+            "section_title": "{Other Noninvestigational Trial Intervention}",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Other Noninvestigational Intervention",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA non-investigational trial therapy that is different than the one(s) previously specified or mentioned.",
+            "guidance": "If applicable, describe the use of any other non-investigational intervention, for example, challenge agents or diagnostics.",
+            "conformance": "Conditional: when any other non-investigational interventions are defined",
+            "cardinality": "One to one",
+            "relationship": "6.9.3",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 6.9.3 Other Noninvestigational Intervention\nConcept: CNEW",
+            "repeating": "No",
+            "ct": [],
+            "short_name": "Other Noninvestigational Trial Intervention"
         }
     },
     "Concomitant Therapy": {
@@ -9471,6 +9546,43 @@
             ],
             "map_status": "Mapped",
             "name": "Population Diagnosis or Condition",
+            "notes": ""
+        }
+    },
+    "Clinical Safety Laboratory Assessments": {
+        "template": {
+            "long_name": "Enter Clinical Laboratory Assessments",
+            "short_name": "Clinical Safety Laboratory Assessments",
+            "original_name": "Clinical Laboratory Assessments",
+            "optional": false,
+            "section_number": "8.4.4",
+            "section_title": "{Clinical Laboratory Assessments}",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Clinical Safety Laboratory Assessments",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nTrial-related laboratory assessments and procedures related to participant safety.",
+            "guidance": "",
+            "conformance": "Conditional: when Clinical Laboratory Assessments are required",
+            "cardinality": "One to one",
+            "relationship": "8.4.4",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 8.4.4 Clinical Laboratory Assessments\nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Clinical Safety Laboratory Assessments",
             "notes": ""
         }
     },
