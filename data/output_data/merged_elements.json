@@ -386,7 +386,7 @@
             ]
         },
         "technical": {
-            "name": "Country Identifier or Region Identifier or Site Identifier",
+            "name": "Country Identifier",
             "data_type": "Valid Value",
             "definition": "C20108\nCNEW\nCNEW\n\nFor review purpose, see definition of the controlled terminology below\nC20108\nA sequence of characters used to identify and/or name the country.\nCNEW\nA sequence of characters used to identify and/or name the region\nCNEW\nA sequence of characters used to identify and/or name the study site.",
             "guidance": "Leave blank for original protocol.\nIf the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope.",
@@ -396,8 +396,7 @@
             "value": "Country specific: [Country Identifier] (ISO 3166 Country Codes, Alpha 3; ISO 3166 \nCountry Codes, Alpha 2)\nor\nRegion Specific: [Region Identifier]\nor\nSite specific: [Site Identifier] (Text)\nSite Identifier Text\nCondition Blank for Original Protocol Indicator = yes",
             "business_rules": "Value Allowed: Yes\nRelationship: Heading, Amendment Scope, Amendment Identifier, Sponsor Protocol Identifier\nConcept: C20108, CNEW, CNEW",
             "repeating": "Yes, repeatable in 12.2 country/region-specific differences",
-            "ct": [],
-            "short_name": "Site Identifier"
+            "ct": []
         },
         "usdm": {
             "items": [
@@ -427,7 +426,7 @@
             ]
         },
         "technical": {
-            "name": "Country Identifier or Region Identifier or Site Identifier",
+            "name": "Region Identifier",
             "data_type": "Valid Value",
             "definition": "C20108\nCNEW\nCNEW\n\nFor review purpose, see definition of the controlled terminology below\nC20108\nA sequence of characters used to identify and/or name the country.\nCNEW\nA sequence of characters used to identify and/or name the region\nCNEW\nA sequence of characters used to identify and/or name the study site.",
             "guidance": "Leave blank for original protocol.\nIf the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope.",
@@ -437,8 +436,7 @@
             "value": "Country specific: [Country Identifier] (ISO 3166 Country Codes, Alpha 3; ISO 3166 \nCountry Codes, Alpha 2)\nor\nRegion Specific: [Region Identifier]\nor\nSite specific: [Site Identifier] (Text)\nSite Identifier Text\nCondition Blank for Original Protocol Indicator = yes",
             "business_rules": "Value Allowed: Yes\nRelationship: Heading, Amendment Scope, Amendment Identifier, Sponsor Protocol Identifier\nConcept: C20108, CNEW, CNEW",
             "repeating": "Yes, repeatable in 12.2 country/region-specific differences",
-            "ct": [],
-            "short_name": "Site Identifier"
+            "ct": []
         },
         "usdm": {
             "items": [
@@ -468,7 +466,7 @@
             ]
         },
         "technical": {
-            "name": "Country Identifier or Region Identifier or Site Identifier",
+            "name": "Site Identifier",
             "data_type": "Valid Value",
             "definition": "C20108\nCNEW\nCNEW\n\nFor review purpose, see definition of the controlled terminology below\nC20108\nA sequence of characters used to identify and/or name the country.\nCNEW\nA sequence of characters used to identify and/or name the region\nCNEW\nA sequence of characters used to identify and/or name the study site.",
             "guidance": "Leave blank for original protocol.\nIf the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope.",
@@ -478,8 +476,7 @@
             "value": "Country specific: [Country Identifier] (ISO 3166 Country Codes, Alpha 3; ISO 3166 \nCountry Codes, Alpha 2)\nor\nRegion Specific: [Region Identifier]\nor\nSite specific: [Site Identifier] (Text)\nSite Identifier Text\nCondition Blank for Original Protocol Indicator = yes",
             "business_rules": "Value Allowed: Yes\nRelationship: Heading, Amendment Scope, Amendment Identifier, Sponsor Protocol Identifier\nConcept: C20108, CNEW, CNEW",
             "repeating": "Yes, repeatable in 12.2 country/region-specific differences",
-            "ct": [],
-            "short_name": "Site Identifier"
+            "ct": []
         },
         "usdm": {
             "items": [
@@ -2629,6 +2626,36 @@
             "items": [],
             "map_status": "To Be Mapped",
             "name": "Nonproprietary name",
+            "notes": ""
+        }
+    },
+    "INN": {
+        "template": {
+            "long_name": "INN",
+            "short_name": "INN",
+            "original_name": "INN",
+            "optional": false,
+            "section_number": "1.1.2",
+            "section_title": "Overall Design",
+            "instructions": []
+        },
+        "technical": {
+            "name": "INN",
+            "data_type": "Valid Value",
+            "definition": "C142585\nFor review purpose, see definition of the controlled terminology below\nA unique name that is globally recognised and public property, which identifies pharmaceutical substances or active pharmaceutical ingredients. (After WHO)",
+            "guidance": "",
+            "conformance": "Conditional:  if there is an INN",
+            "cardinality": "One to many",
+            "relationship": "1.1.2",
+            "value": "or use for example WHO INN, USAN, JAN, XEVMPD",
+            "business_rules": "Value Allowed: Yes\nRelationship: Row title; Control Description; Protocol Identifier\nConcept: C142585",
+            "repeating": "Yes, repeatable for each INN used as control",
+            "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "INN",
             "notes": ""
         }
     },
@@ -7695,30 +7722,6 @@
             "value": "Date",
             "business_rules": "Value Allowed: Yes\nRelationship: {The Overview of Changes from each prior protocol amendment is {provided below} or <specify alternative location>}.\nConcept: CNEW",
             "repeating": "Yes, repeatable one table per amendment",
-            "ct": []
-        }
-    },
-    "or  enrolled globallylocallyper cohort": {
-        "template": {
-            "long_name": "Enter # or % enrolled globally/locally/per cohort",
-            "short_name": "or  enrolled globallylocallyper cohort",
-            "original_name": "# or % enrolled globally/locally/per cohort",
-            "optional": true,
-            "section_number": "12.3",
-            "section_title": "Prior Protocol Amendment(s)",
-            "instructions": []
-        },
-        "technical": {
-            "name": "or  enrolled globallylocallyper cohort",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage. The numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage.",
-            "guidance": "",
-            "conformance": "Optional: when there is an amendment and sponsor chooses",
-            "cardinality": "One to one",
-            "relationship": "12.3",
-            "value": "<# or %> enrolled <globally/locally/per cohort>",
-            "business_rules": "Value Allowed: Yes\nRelationship: Document, Sponsor Approval Date\nConcept: CNEW",
-            "repeating": "Yes, reuse from the title page",
             "ct": []
         }
     },

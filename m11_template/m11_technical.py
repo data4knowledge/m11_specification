@@ -1,7 +1,7 @@
 import yaml
 from pathlib import Path
 from raw_docx import RawDocx, RawDocument, RawParagraph, RawTable, RawSection, RawTableRow
-from m11_template.m11_utility import clean_element_name
+from m11_template.m11_utility import clean_element_name, find_elements
 
 class M11Technical:
     def __init__(self, filepath: str):
@@ -32,20 +32,12 @@ class M11Technical:
                     pass
                 elif isinstance(section_item, RawTable):
                     if self._is_data_element_table(section_item):
-                        data_element = self._extract_data_element(section_item)
-                        if data_element:
-                            self.elements[data_element["name"]] = data_element
-                            if index + 1 < len(section.items):
-                                next_index = index + 1
-                                while next_index < len(section.items):
-                                    next_item = section.items[next_index]
-                                    if isinstance(next_item, RawTable):
-                                        if self._is_ncit_table(next_item):
-                                            ncit_element = self._extract_ncit_element(next_item)
-                                            if ncit_element:
-                                                self.elements[data_element["name"]]["ct"] = ncit_element
-                                        break
-                                    next_index += 1
+                        data_elements = self._extract_data_elements(section_item)
+                        if data_elements:
+                            ct = self._extract_ct(section.items, index)
+                            for data_element in data_elements:
+                                data_element["ct"] = ct
+                                self.elements[data_element["name"]] = data_element
                     elif self._is_ncit_table(section_item):
                         #print(f"NCI THESAURUS TABLE:")
                         pass
@@ -53,6 +45,20 @@ class M11Technical:
                         #print(f"TABLE: Other Type")
                         pass
 
+    def _extract_ct(self, items: list, index: int) -> list:
+        if index + 1 < len(items):
+            next_index = index + 1
+            while next_index < len(items):
+                next_item = items[next_index]
+                if isinstance(next_item, RawTable):
+                    if self._is_ncit_table(next_item):
+                        return self._extract_ncit_element(next_item)
+                    else:
+                        break
+                else:
+                    next_index += 1
+        return []
+    
     def rename_elements(self, filepath: str) -> None:
         """
         Rename elements in the elements dictionary.
@@ -78,14 +84,19 @@ class M11Technical:
                     self.elements[value]["short_name"] = value
                 self.elements.pop(key)
 
-    def _extract_data_element(self, table: RawTable) -> dict:
+    def _extract_data_elements(self, table: RawTable) -> list[dict]:
         """
-        Extract the data element from the table.
+        Extract the data elements from the table.
         """
+        result = []
         data_element = None
         if len(table.rows) >= 10:
-            data_element = {
-                "name": clean_element_name(self._row_cell_text(table.rows[0], 1)),
+            text = self._row_cell_text(table.rows[0], 1)
+            data_elements = find_elements(text)
+            print(f"DATA ELEMENTS: {data_elements}")
+            data_elements = [text] if not data_elements else data_elements
+            template = {
+                "name": "temp",
                 "data_type": self._row_cell_text(table.rows[1], 1).strip(),
                 "definition": self._row_cell_text(table.rows[3], 1).strip(),
                 "guidance": self._row_cell_text(table.rows[4], 1).strip(),
@@ -97,7 +108,12 @@ class M11Technical:
                 "repeating": self._row_cell_text(table.rows[10], 1).strip(),
                 "ct": []
             }
-        return data_element
+            for data_element in data_elements:
+                temp = dict(template)
+                temp["name"] = clean_element_name(data_element)
+                result.append(temp)
+        print(f"RESULT: {result}")
+        return result
 
     def _extract_ncit_element(self, table: RawTable) -> dict:
         """
@@ -119,10 +135,10 @@ class M11Technical:
         if len(table.rows) > 3:
             row_1 = table.rows[0]
             row_3 = table.rows[2]
-            print(f"ROW 1: {self._row_cell_text(row_1, 0)} -> {self._row_cell_text(row_1, 1)}")
-            print(f"ROW 3: {self._row_cell_text(row_3, 0)} -> {self._row_cell_text(row_3, 1)}")
+            #print(f"ROW 1: {self._row_cell_text(row_1, 0)} -> {self._row_cell_text(row_1, 1)}")
+            #print(f"ROW 3: {self._row_cell_text(row_3, 0)} -> {self._row_cell_text(row_3, 1)}")
             if self._row_cell_text(row_1, 0).strip().startswith("Term (Variable)") and self._row_cell_text(row_3, 1).strip() in ["D", "V"]:
-                print(f"TRUE")
+                #print(f"TRUE")
                 return True
         return False
 

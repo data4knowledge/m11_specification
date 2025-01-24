@@ -3,7 +3,7 @@ import yaml
 from typing import Generator
 from pathlib import Path
 from raw_docx import RawDocx, RawDocument, RawParagraph, RawTable, RawSection
-from m11_template.m11_utility import clean_element_name
+from m11_template.m11_utility import clean_element_name, find_elements
 
 
 class M11Template:
@@ -207,7 +207,7 @@ class M11Template:
             list[str]: A list of confirmed elements
         """
         confirmed_elements = []
-        potential_elements = self._find_elements(paragraph)
+        potential_elements = find_elements(paragraph.text)
         for element in potential_elements:
             # print(f"TEXT: {[x.text for x in paragraph.runs]}")
             # print(f"COLOR: {[x.color for x in paragraph.runs]}")
@@ -263,7 +263,7 @@ class M11Template:
         """
         Check if a paragraph has elements.
         """
-        return len(self._find_elements(para)) > 0
+        return len(find_elements(para.text)) > 0
     
     def _has_instructions(self, para: RawParagraph) -> bool:
         """
@@ -271,18 +271,3 @@ class M11Template:
         """
         return len(self._extract_instructions(para)) > 0
     
-    def _find_elements(self, para: RawParagraph) -> list[str]:
-        """
-        Find elements in a paragraph.
-        Elements are found by looking for text between < and >.
-        Args:
-            text (str): The text to find elements in
-
-        Returns:
-            list[str]: A list of elements
-        """
-        #print(f"ELEMENT TEXT: {text}")
-        pattern = r'[<\[]([^\]>]+)[\]>]'
-        matches = re.findall(pattern, para.text)
-        #print(f"MATCHES: {matches}")
-        return matches
