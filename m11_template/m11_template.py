@@ -24,6 +24,7 @@ class M11Template:
         self.elements = {}
         self.sections = {}
         self.filepath = Path(filepath)
+        self.repeat_index = 1
         if not self.filepath.exists():
             raise FileNotFoundError(
                 f"Template specification file not found: {filepath}"
@@ -208,7 +209,13 @@ class M11Template:
         Add elements to the elements dictionary.
         """
         for element in elements:
-            self.elements[element["short_name"]] = element
+            if element["short_name"] not in self.elements:
+                self.elements[element["short_name"]] = element
+            else:
+                name = f"{element['short_name']} {self.repeat_index}"
+                element["short_name"] = name
+                self.elements[name] = element
+                self.repeat_index += 1
 
     def _add_instructions(self, elements: list[str], instructions: list[str]) -> None:
         """

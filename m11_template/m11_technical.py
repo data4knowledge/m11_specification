@@ -14,6 +14,7 @@ class M11Technical:
         self.document = None
         self.elements = {}
         self.filepath = Path(filepath)
+        self.repeat_index = 1
         if not self.filepath.exists():
             raise FileNotFoundError(
                 f"M11 Technical Document not found: {filepath}"
@@ -37,13 +38,22 @@ class M11Technical:
                             ct = self._extract_ct(section.items, index)
                             for data_element in data_elements:
                                 data_element["ct"] = ct
-                                self.elements[data_element["name"]] = data_element
+                                self._add_element(data_element)
                     elif self._is_ncit_table(section_item):
                         #print(f"NCI THESAURUS TABLE:")
                         pass
                     else:
                         #print(f"TABLE: Other Type")
                         pass
+
+    def _add_element(self, element: dict) -> None:
+        if element["name"] not in self.elements:
+            self.elements[element["name"]] = element
+        else:
+            name = f"{element['name']} {self.repeat_index}"
+            element["name"] = name
+            self.elements[name] = element
+            self.repeat_index += 1
 
     def _extract_ct(self, items: list, index: int) -> list:
         if index + 1 < len(items):

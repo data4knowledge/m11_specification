@@ -22,7 +22,9 @@
     "Site geographic scope": "Site geographic scope",
     "Master Protocol Indicator": "Master Protocol Indicator",
     "Drug-Device Combination Product Indicator": "Drug-Device Combination Product Indicator",
+    "Adaptive Trial Design Indicator": "Adaptive Trial Design Indicator",
     "Target-Maximum": "Target-Maximum",
+    "randomly assigned to trial intervention-enrolled": "randomly assigned to trial intervention-enrolled",
     "alternate description of planned duration of trial intervention if duration will vary": "alternate description of planned duration of trial intervention if duration will vary",
     "alternate description of planned duration of trial participation if duration will vary": "alternate description of planned duration of trial participation if duration will vary",
     "Additional Description of Duration": "Additional Description of Duration",
@@ -92,5 +94,6 @@
     "Population Level Summary": "Population Level Summary",
     "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs": "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs",
     "State location where Information can be found": "State location where Information can be found",
-    "Amendment Details": "Amendment Details"
+    "Amendment Details": "Amendment Details",
+    "Primary Reason Other": "Primary Reason Other"
 }
