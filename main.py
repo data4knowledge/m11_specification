@@ -12,6 +12,7 @@ template.rename_elements(filepath="data/input_data/m11/template_renames.yaml")
 technical = M11Technical(filepath="data/input_data/m11/m11-technical-spec.docx")
 technical.process()
 technical.rename_elements(filepath="data/input_data/m11/technical_renames.yaml")
+technical.split_elements(filepath="data/input_data/m11/technical_split.yaml")
 
 with open("data/output_data/template_document.json", "w") as f:
     json.dump(template.document, f, indent=4)

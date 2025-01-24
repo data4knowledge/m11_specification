@@ -319,6 +319,129 @@
             "notes": ""
         }
     },
+    "Country Identifier": {
+        "template": {
+            "long_name": "Country Identifier",
+            "short_name": "Country Identifier",
+            "original_name": "Country Identifier",
+            "optional": false,
+            "section_number": null,
+            "section_title": null,
+            "instructions": [
+                "If this is the original instance of the protocol, delete the row or enter \"Not applicable\". If an amendment applies to all sites in the trial, enter \u201cglobal\u201d and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter \u201cglobal\u201d.",
+                "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
+            ]
+        },
+        "technical": {
+            "name": "Country Identifier or Region Identifier or Site Identifier",
+            "data_type": "Valid Value",
+            "definition": "C20108\nCNEW\nCNEW\n\nFor review purpose, see definition of the controlled terminology below\nC20108\nA sequence of characters used to identify and/or name the country.\nCNEW\nA sequence of characters used to identify and/or name the region\nCNEW\nA sequence of characters used to identify and/or name the study site.",
+            "guidance": "Leave blank for original protocol.\nIf the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope.",
+            "conformance": "Conditional: when not global",
+            "cardinality": "One to one; Many to Amendment Scope; One to Amendment Identifier; One to Sponsor Protocol Identifier",
+            "relationship": "Title Page",
+            "value": "Country specific: [Country Identifier] (ISO 3166 Country Codes, Alpha 3; ISO 3166 \nCountry Codes, Alpha 2)\nor\nRegion Specific: [Region Identifier]\nor\nSite specific: [Site Identifier] (Text)\nSite Identifier Text\nCondition Blank for Original Protocol Indicator = yes",
+            "business_rules": "Value Allowed: Yes\nRelationship: Heading, Amendment Scope, Amendment Identifier, Sponsor Protocol Identifier\nConcept: C20108, CNEW, CNEW",
+            "repeating": "Yes, repeatable in 12.2 country/region-specific differences",
+            "ct": [],
+            "short_name": "Site Identifier"
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "type",
+                    "klass": "GeographicScope",
+                    "notes": "The type will give Global, Regional or Country scope. There may be several scopes but only be one global scope",
+                    "path": "StudyVersion/@amendments/StudyAmendment/@enrollments/SubjectEnrollment/@code/AliasCode/@standardCode/Code/@decode"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Country Identifier",
+            "notes": ""
+        }
+    },
+    "Region Identifier": {
+        "template": {
+            "long_name": "Region Identifier",
+            "short_name": "Region Identifier",
+            "original_name": "Region Identifier",
+            "optional": false,
+            "section_number": null,
+            "section_title": null,
+            "instructions": [
+                "If this is the original instance of the protocol, delete the row or enter \"Not applicable\". If an amendment applies to all sites in the trial, enter \u201cglobal\u201d and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter \u201cglobal\u201d.",
+                "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
+            ]
+        },
+        "technical": {
+            "name": "Country Identifier or Region Identifier or Site Identifier",
+            "data_type": "Valid Value",
+            "definition": "C20108\nCNEW\nCNEW\n\nFor review purpose, see definition of the controlled terminology below\nC20108\nA sequence of characters used to identify and/or name the country.\nCNEW\nA sequence of characters used to identify and/or name the region\nCNEW\nA sequence of characters used to identify and/or name the study site.",
+            "guidance": "Leave blank for original protocol.\nIf the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope.",
+            "conformance": "Conditional: when not global",
+            "cardinality": "One to one; Many to Amendment Scope; One to Amendment Identifier; One to Sponsor Protocol Identifier",
+            "relationship": "Title Page",
+            "value": "Country specific: [Country Identifier] (ISO 3166 Country Codes, Alpha 3; ISO 3166 \nCountry Codes, Alpha 2)\nor\nRegion Specific: [Region Identifier]\nor\nSite specific: [Site Identifier] (Text)\nSite Identifier Text\nCondition Blank for Original Protocol Indicator = yes",
+            "business_rules": "Value Allowed: Yes\nRelationship: Heading, Amendment Scope, Amendment Identifier, Sponsor Protocol Identifier\nConcept: C20108, CNEW, CNEW",
+            "repeating": "Yes, repeatable in 12.2 country/region-specific differences",
+            "ct": [],
+            "short_name": "Site Identifier"
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "type",
+                    "klass": "GeographicScope",
+                    "notes": "The type will give Global, Regional or Country scope. There may be several scopes but only be one global scope",
+                    "path": "StudyVersion/@amendments/StudyAmendment/@enrollments/SubjectEnrollment/@code/AliasCode/@standardCode/Code/@decode"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Region Identifier",
+            "notes": ""
+        }
+    },
+    "Site Identifier": {
+        "template": {
+            "long_name": "Enter Site Identifier",
+            "short_name": "Site Identifier",
+            "original_name": "Site Identifier",
+            "optional": false,
+            "section_number": null,
+            "section_title": null,
+            "instructions": [
+                "If this is the original instance of the protocol, delete the row or enter \"Not applicable\". If an amendment applies to all sites in the trial, enter \u201cglobal\u201d and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter \u201cglobal\u201d.",
+                "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
+            ]
+        },
+        "technical": {
+            "name": "Country Identifier or Region Identifier or Site Identifier",
+            "data_type": "Valid Value",
+            "definition": "C20108\nCNEW\nCNEW\n\nFor review purpose, see definition of the controlled terminology below\nC20108\nA sequence of characters used to identify and/or name the country.\nCNEW\nA sequence of characters used to identify and/or name the region\nCNEW\nA sequence of characters used to identify and/or name the study site.",
+            "guidance": "Leave blank for original protocol.\nIf the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope.",
+            "conformance": "Conditional: when not global",
+            "cardinality": "One to one; Many to Amendment Scope; One to Amendment Identifier; One to Sponsor Protocol Identifier",
+            "relationship": "Title Page",
+            "value": "Country specific: [Country Identifier] (ISO 3166 Country Codes, Alpha 3; ISO 3166 \nCountry Codes, Alpha 2)\nor\nRegion Specific: [Region Identifier]\nor\nSite specific: [Site Identifier] (Text)\nSite Identifier Text\nCondition Blank for Original Protocol Indicator = yes",
+            "business_rules": "Value Allowed: Yes\nRelationship: Heading, Amendment Scope, Amendment Identifier, Sponsor Protocol Identifier\nConcept: C20108, CNEW, CNEW",
+            "repeating": "Yes, repeatable in 12.2 country/region-specific differences",
+            "ct": [],
+            "short_name": "Site Identifier"
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "name",
+                    "klass": "StudySite",
+                    "notes": "Sites may need an address or similar mechanism",
+                    "path": "StudyVersion/@studyDesigns/StudyDesign/@organizations/ResearchOrganization/@manages/StudySite/@name"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Site Identifier",
+            "notes": ""
+        }
+    },
     "Sponsors Investigational Product Codes": {
         "template": {
             "long_name": "Enter Sponsor\u2019s Investigational Product Code(s)",

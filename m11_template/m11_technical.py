@@ -65,6 +65,19 @@ class M11Technical:
                 self.elements[value]["short_name"] = value
                 self.elements.pop(key)
 
+    def split_elements(self, filepath: str) -> None:
+        """
+        Split elements in the elements dictionary.
+        """
+        with open(filepath, "r") as f:
+            split_dict = yaml.safe_load(f)
+        for key, values in split_dict.items():
+            if key in self.elements:
+                for value in values:
+                    self.elements[value] = self.elements[key]
+                    self.elements[value]["short_name"] = value
+                self.elements.pop(key)
+
     def _extract_data_element(self, table: RawTable) -> dict:
         """
         Extract the data element from the table.
