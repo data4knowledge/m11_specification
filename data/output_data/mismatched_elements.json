@@ -1,49 +1,5 @@
 {
     "template": {
-        "total planned duration of trial intervention": {
-            "long_name": "Enter total planned duration of trial intervention",
-            "short_name": "total planned duration of trial intervention",
-            "original_name": "total planned duration of trial intervention",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": [
-                "or"
-            ]
-        },
-        "total planned duration of trial intervention unit of time": {
-            "long_name": "total planned duration of trial intervention unit of time",
-            "short_name": "total planned duration of trial intervention unit of time",
-            "original_name": "total planned duration of trial intervention unit of time",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": [
-                "or"
-            ]
-        },
-        "total planned duration of trial participation": {
-            "long_name": "Enter total planned duration of trial participation",
-            "short_name": "total planned duration of trial participation",
-            "original_name": "total planned duration of trial participation",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": [
-                "or"
-            ]
-        },
-        "total planned duration of trial participation unit of time": {
-            "long_name": "total planned duration of trial participation unit of time",
-            "short_name": "total planned duration of trial participation unit of time",
-            "original_name": "total planned duration of trial participation unit of time",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": [
-                "or"
-            ]
-        },
         "description of the overview of trial interventions or a heading for the optional table below": {
             "long_name": "Enter description of the overview of trial interventions or a heading for the optional table below",
             "short_name": "description of the overview of trial interventions or a heading for the optional table below",

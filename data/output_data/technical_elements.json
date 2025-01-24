@@ -2359,6 +2359,50 @@
         "repeating": "No",
         "ct": []
     },
+    "total planned duration of trial intervention": {
+        "name": "total planned duration of trial intervention",
+        "data_type": "Integer, Valid value",
+        "definition": "",
+        "guidance": "Select one of the two options for total planned duration of trial intervention and trial participation for each participant. Note that the total duration of trial participation should include any washout and any follow-up periods in which the participant is not receiving trial intervention. When duration will vary, provide a short explanation (e.g., \u201cevent-driven\u201d or \u201cadaptive design\u201d",
+        "conformance": "Conditional: when Planned Duration of trial Intervention Number and unit of time",
+        "cardinality": "One to one",
+        "relationship": "1.1.2",
+        "value": "total planned duration of trial intervention Integer \ntotal planned duration of time unit of time days (C25301), hours (25529), months (C29846), weeks (C29844), years (C29848)",
+        "business_rules": "Value Allowed: Yes\nRelationship: Total duration of trial intervention for each participant:\nConcept: CNEW, CNEW",
+        "repeating": "No",
+        "ct": [
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "ICH M11 Units of Time",
+                "definition": "A terminology value set relevant to units of time within the ICH M11 Protocol model."
+            },
+            {
+                "ncit_code": "C25301",
+                "preferred_term": "DAYS",
+                "definition": "A unit of measurement of time equal to 24 hours."
+            },
+            {
+                "ncit_code": "C25529",
+                "preferred_term": "HOURS",
+                "definition": "A unit of measurement of time equal to 60 minutes."
+            },
+            {
+                "ncit_code": "C29846",
+                "preferred_term": "MONTHS",
+                "definition": "One of the 12 divisions of a year as determined by a calendar. It corresponds to the unit of time of approximately to one cycle of the moon's phases, about 30 days or 4 weeks."
+            },
+            {
+                "ncit_code": "C29844",
+                "preferred_term": "WEEKS",
+                "definition": "Any period of seven consecutive days."
+            },
+            {
+                "ncit_code": "C29848",
+                "preferred_term": "YEARS",
+                "definition": "The period of time that it takes for Earth to make a complete revolution around the sun, approximately 365 days; a specific one year period."
+            }
+        ]
+    },
     "alternate description of planned duration of trial intervention if duration will vary": {
         "name": "alternate description of planned duration of trial intervention if duration will vary",
         "data_type": "Text",
@@ -2371,6 +2415,50 @@
         "business_rules": "Value Allowed: Yes\nRelationship: Total duration of trial intervention for each participant:\nConcept: CNEW",
         "repeating": "No",
         "ct": []
+    },
+    "total planned duration of trial participation": {
+        "name": "total planned duration of trial participation",
+        "data_type": "Integer, Valid value",
+        "definition": "",
+        "guidance": "Select one of the two options for total planned duration of trial intervention and trial participation for each participant. Note that the total duration of trial participation should include any washout and any follow-up periods in which the participant is not receiving trial intervention. When duration will vary, provide a short explanation (e.g., \u201cevent-driven\u201d or \u201cadaptive design\u201d",
+        "conformance": "Conditional: when planned duration of trial participation number and unit of time",
+        "cardinality": "One to one",
+        "relationship": "1.1.2",
+        "value": "total planned duration of trial participation : Integer \n total planned duration of trial participation unit of time: days (C25301), hours (25529), months (C29846), weeks (C29844), years (C29848)",
+        "business_rules": "Value Allowed: Yes\nRelationship: Total duration of trial participation for each participant:\nConcept: CNEW, CNEW",
+        "repeating": "No",
+        "ct": [
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "ICH M11 Units of Time",
+                "definition": "A terminology value set relevant to units of time within the ICH M11 Protocol model."
+            },
+            {
+                "ncit_code": "C25301",
+                "preferred_term": "DAYS",
+                "definition": "A unit of measurement of time equal to 24 hours."
+            },
+            {
+                "ncit_code": "C25529",
+                "preferred_term": "HOURS",
+                "definition": "A unit of measurement of time equal to 60 minutes."
+            },
+            {
+                "ncit_code": "C29846",
+                "preferred_term": "MONTHS",
+                "definition": "One of the 12 divisions of a year as determined by a calendar. It corresponds to the unit of time of approximately to one cycle of the moon's phases, about 30 days or 4 weeks."
+            },
+            {
+                "ncit_code": "C29844",
+                "preferred_term": "WEEKS",
+                "definition": "Any period of seven consecutive days."
+            },
+            {
+                "ncit_code": "C29848",
+                "preferred_term": "YEARS",
+                "definition": "The period of time that it takes for Earth to make a complete revolution around the sun, approximately 365 days; a specific one year period."
+            }
+        ]
     },
     "alternate description of planned duration of trial participation if duration will vary": {
         "name": "alternate description of planned duration of trial participation if duration will vary",
@@ -6431,5 +6519,95 @@
         "repeating": "No",
         "ct": [],
         "short_name": "Briefly Explain Substantial Impact on Data"
+    },
+    "total planned duration of trial participation unit of time": {
+        "name": "Total planned duration of trial participation unit of time",
+        "data_type": "Integer, Valid value",
+        "definition": "",
+        "guidance": "Select one of the two options for total planned duration of trial intervention and trial participation for each participant. Note that the total duration of trial participation should include any washout and any follow-up periods in which the participant is not receiving trial intervention. When duration will vary, provide a short explanation (e.g., \u201cevent-driven\u201d or \u201cadaptive design\u201d",
+        "conformance": "Conditional: when planned duration of trial participation number and unit of time",
+        "cardinality": "One to one",
+        "relationship": "1.1.2",
+        "value": "total planned duration of trial participation : Integer \n total planned duration of trial participation unit of time: days (C25301), hours (25529), months (C29846), weeks (C29844), years (C29848)",
+        "business_rules": "Value Allowed: Yes\nRelationship: Total duration of trial participation for each participant:\nConcept: CNEW, CNEW",
+        "repeating": "No",
+        "ct": [
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "ICH M11 Units of Time",
+                "definition": "A terminology value set relevant to units of time within the ICH M11 Protocol model."
+            },
+            {
+                "ncit_code": "C25301",
+                "preferred_term": "DAYS",
+                "definition": "A unit of measurement of time equal to 24 hours."
+            },
+            {
+                "ncit_code": "C25529",
+                "preferred_term": "HOURS",
+                "definition": "A unit of measurement of time equal to 60 minutes."
+            },
+            {
+                "ncit_code": "C29846",
+                "preferred_term": "MONTHS",
+                "definition": "One of the 12 divisions of a year as determined by a calendar. It corresponds to the unit of time of approximately to one cycle of the moon's phases, about 30 days or 4 weeks."
+            },
+            {
+                "ncit_code": "C29844",
+                "preferred_term": "WEEKS",
+                "definition": "Any period of seven consecutive days."
+            },
+            {
+                "ncit_code": "C29848",
+                "preferred_term": "YEARS",
+                "definition": "The period of time that it takes for Earth to make a complete revolution around the sun, approximately 365 days; a specific one year period."
+            }
+        ],
+        "short_name": "total planned duration of trial participation unit of time"
+    },
+    "total planned duration of trial intervention unit of time": {
+        "name": "total planned duration of trial unit of time",
+        "data_type": "Integer, Valid value",
+        "definition": "",
+        "guidance": "Select one of the two options for total planned duration of trial intervention and trial participation for each participant. Note that the total duration of trial participation should include any washout and any follow-up periods in which the participant is not receiving trial intervention. When duration will vary, provide a short explanation (e.g., \u201cevent-driven\u201d or \u201cadaptive design\u201d",
+        "conformance": "Conditional: when Planned Duration of trial Intervention Number and unit of time",
+        "cardinality": "One to one",
+        "relationship": "1.1.2",
+        "value": "total planned duration of trial intervention Integer \ntotal planned duration of time unit of time days (C25301), hours (25529), months (C29846), weeks (C29844), years (C29848)",
+        "business_rules": "Value Allowed: Yes\nRelationship: Total duration of trial intervention for each participant:\nConcept: CNEW, CNEW",
+        "repeating": "No",
+        "ct": [
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "ICH M11 Units of Time",
+                "definition": "A terminology value set relevant to units of time within the ICH M11 Protocol model."
+            },
+            {
+                "ncit_code": "C25301",
+                "preferred_term": "DAYS",
+                "definition": "A unit of measurement of time equal to 24 hours."
+            },
+            {
+                "ncit_code": "C25529",
+                "preferred_term": "HOURS",
+                "definition": "A unit of measurement of time equal to 60 minutes."
+            },
+            {
+                "ncit_code": "C29846",
+                "preferred_term": "MONTHS",
+                "definition": "One of the 12 divisions of a year as determined by a calendar. It corresponds to the unit of time of approximately to one cycle of the moon's phases, about 30 days or 4 weeks."
+            },
+            {
+                "ncit_code": "C29844",
+                "preferred_term": "WEEKS",
+                "definition": "Any period of seven consecutive days."
+            },
+            {
+                "ncit_code": "C29848",
+                "preferred_term": "YEARS",
+                "definition": "The period of time that it takes for Earth to make a complete revolution around the sun, approximately 365 days; a specific one year period."
+            }
+        ],
+        "short_name": "total planned duration of trial intervention unit of time"
     }
 }
