@@ -5140,19 +5140,6 @@
             }
         ]
     },
-    "Amendment Identifier 21": {
-        "name": "Amendment Identifier 21",
-        "data_type": "Text or Universal Text \u201cOriginal Protocol\u201d",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA sequence of characters used to uniquely identify a protocol amendment.",
-        "guidance": "",
-        "conformance": "Required",
-        "cardinality": "One to one",
-        "relationship": "12.3",
-        "value": "Text or Universal Text \u201cOriginal Protocol\u201d",
-        "business_rules": "Value Allowed: Yes\nRelationship: Table Column Heading \u201cDocument\u201d\nConcept: CNEW",
-        "repeating": "Yes, reuse from the title page",
-        "ct": []
-    },
     "Sponsor Approval Date": {
         "name": "Sponsor Approval Date",
         "data_type": "Date",
@@ -6612,5 +6599,19 @@
         "repeating": "No",
         "ct": [],
         "short_name": "Other Noninvestigational Trial Intervention"
+    },
+    "Prior Amendment Identifier": {
+        "name": "Amendment Identifier 21",
+        "data_type": "Text or Universal Text \u201cOriginal Protocol\u201d",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA sequence of characters used to uniquely identify a protocol amendment.",
+        "guidance": "",
+        "conformance": "Required",
+        "cardinality": "One to one",
+        "relationship": "12.3",
+        "value": "Text or Universal Text \u201cOriginal Protocol\u201d",
+        "business_rules": "Value Allowed: Yes\nRelationship: Table Column Heading \u201cDocument\u201d\nConcept: CNEW",
+        "repeating": "Yes, reuse from the title page",
+        "ct": [],
+        "short_name": "Prior Amendment Identifier"
     }
 }

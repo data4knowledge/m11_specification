@@ -1525,15 +1525,6 @@
         "section_title": "Definitions of Serious Adverse Events",
         "instructions": []
     },
-    "Definitions of Product Complaints": {
-        "long_name": "Enter Definitions of Product Complaints",
-        "short_name": "Definitions of Product Complaints",
-        "original_name": "Definitions of Product Complaints",
-        "optional": false,
-        "section_number": "9.1.3",
-        "section_title": "Definitions of Product Complaints",
-        "instructions": []
-    },
     "Definition of Medical Device Product Complaints": {
         "long_name": "Enter Definition of Medical Device Product Complaints",
         "short_name": "Definition of Medical Device Product Complaints",
@@ -1574,15 +1565,6 @@
         "long_name": "Reportable Period End",
         "short_name": "Reportable Period End",
         "original_name": "Reportable Period End",
-        "optional": true,
-        "section_number": "9.2",
-        "section_title": "Timing and Procedures for Collection and Reporting",
-        "instructions": []
-    },
-    "Timing for reporting to Sponsor or Designee": {
-        "long_name": "Timing for reporting to Sponsor or Designee",
-        "short_name": "Timing for reporting to Sponsor or Designee",
-        "original_name": "Timing for reporting to Sponsor or Designee",
         "optional": true,
         "section_number": "9.2",
         "section_title": "Timing and Procedures for Collection and Reporting",
@@ -2103,15 +2085,6 @@
         "section_title": "Country/Region-Specific Differences",
         "instructions": []
     },
-    "Amendment Identifier 6": {
-        "long_name": "Enter Amendment Identifier",
-        "short_name": "Amendment Identifier 6",
-        "original_name": "Amendment Identifier",
-        "optional": false,
-        "section_number": "12.3",
-        "section_title": "Prior Protocol Amendment(s)",
-        "instructions": []
-    },
     "Sponsor Approval Date": {
         "long_name": "Enter Sponsor Approval Date",
         "short_name": "Sponsor Approval Date",
@@ -2480,6 +2453,33 @@
         "optional": false,
         "section_number": "8.4.4",
         "section_title": "{Clinical Laboratory Assessments}",
+        "instructions": []
+    },
+    "Definition of Product Complaints": {
+        "long_name": "Enter Definitions of Product Complaints",
+        "short_name": "Definition of Product Complaints",
+        "original_name": "Definitions of Product Complaints",
+        "optional": false,
+        "section_number": "9.1.3",
+        "section_title": "Definitions of Product Complaints",
+        "instructions": []
+    },
+    "Timing for Reporting to Sponsor or Designee": {
+        "long_name": "Timing for reporting to Sponsor or Designee",
+        "short_name": "Timing for Reporting to Sponsor or Designee",
+        "original_name": "Timing for reporting to Sponsor or Designee",
+        "optional": true,
+        "section_number": "9.2",
+        "section_title": "Timing and Procedures for Collection and Reporting",
+        "instructions": []
+    },
+    "Prior Amendment Identifier": {
+        "long_name": "Enter Amendment Identifier",
+        "short_name": "Prior Amendment Identifier",
+        "original_name": "Amendment Identifier",
+        "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
         "instructions": []
     },
     "Amendment Details": {

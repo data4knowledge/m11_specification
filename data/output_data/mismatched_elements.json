@@ -1,23 +1,5 @@
 {
     "template": {
-        "Definitions of Product Complaints": {
-            "long_name": "Enter Definitions of Product Complaints",
-            "short_name": "Definitions of Product Complaints",
-            "original_name": "Definitions of Product Complaints",
-            "optional": false,
-            "section_number": "9.1.3",
-            "section_title": "Definitions of Product Complaints",
-            "instructions": []
-        },
-        "Timing for reporting to Sponsor or Designee": {
-            "long_name": "Timing for reporting to Sponsor or Designee",
-            "short_name": "Timing for reporting to Sponsor or Designee",
-            "original_name": "Timing for reporting to Sponsor or Designee",
-            "optional": true,
-            "section_number": "9.2",
-            "section_title": "Timing and Procedures for Collection and Reporting",
-            "instructions": []
-        },
         "Statistical Analysis Method 3": {
             "long_name": "Enter Statistical Analysis Method",
             "short_name": "Statistical Analysis Method 3",
@@ -52,15 +34,6 @@
             "optional": true,
             "section_number": "12.2",
             "section_title": "Country/Region-Specific Differences",
-            "instructions": []
-        },
-        "Amendment Identifier 6": {
-            "long_name": "Enter Amendment Identifier",
-            "short_name": "Amendment Identifier 6",
-            "original_name": "Amendment Identifier",
-            "optional": false,
-            "section_number": "12.3",
-            "section_title": "Prior Protocol Amendment(s)",
             "instructions": []
         },
         "- or - enrolled globally-locally-per cohort": {
@@ -556,32 +529,6 @@
             "repeating": "No",
             "ct": []
         },
-        "Definition of Product Complaints": {
-            "name": "Definition of Product Complaints",
-            "data_type": "Text",
-            "definition": "",
-            "guidance": "Specify the definition of product complaints in the context of the trial.",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "9.1.3",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: 9.1.3 Definition of Product Complaints\nConcept: CNEW",
-            "repeating": "No",
-            "ct": []
-        },
-        "Timing for Reporting to Sponsor or Designee": {
-            "name": "Timing for Reporting to Sponsor or Designee",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of the timing window between trial related events and their reporting to the sponsor or designee.",
-            "guidance": "N/A",
-            "conformance": "Optional if table used",
-            "cardinality": "One to one",
-            "relationship": "9.2",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: Event Type, Situational Scope\nConcept: CNEW",
-            "repeating": "Yes, repeatable for each event type and situational scope",
-            "ct": []
-        },
         "Adverse Events of Special Interest or state Not applicable": {
             "name": "Adverse Events of Special Interest or state Not applicable",
             "data_type": "Text",
@@ -680,19 +627,6 @@
                     "definition": "{This protocol has been amended previously. The Protocol Amendment Summary of Changes for the current amendment is located directly before the Table of Contents. Prior amendment(s) to this protocol are listed in the table below, beginning with the most recent.}"
                 }
             ]
-        },
-        "Amendment Identifier 21": {
-            "name": "Amendment Identifier 21",
-            "data_type": "Text or Universal Text \u201cOriginal Protocol\u201d",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA sequence of characters used to uniquely identify a protocol amendment.",
-            "guidance": "",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "12.3",
-            "value": "Text or Universal Text \u201cOriginal Protocol\u201d",
-            "business_rules": "Value Allowed: Yes\nRelationship: Table Column Heading \u201cDocument\u201d\nConcept: CNEW",
-            "repeating": "Yes, reuse from the title page",
-            "ct": []
         },
         "- or -": {
             "name": "- or -",
