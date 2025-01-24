@@ -201,64 +201,6 @@
         }
     },
     "technical": {
-        "Approval Date": {
-            "name": "Approval Date",
-            "data_type": "Valid Value",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below \nThe date that the sponsor approved the current version of the protocol, or the physical or virtual location of the date on which the sponsor approved the current version of the protocol.",
-            "guidance": "All versions should be uniquely identifiable.",
-            "conformance": "Required",
-            "cardinality": "One to one; One to Sponsor Protocol Identifier; One to Original Protocol One to Amendment Identifier",
-            "relationship": "Title Page",
-            "value": "Sponsor Approval Date (C132352)\nLocation of Sponsor Approval Date (CNEW)",
-            "business_rules": "Value Allowed: Yes\nRelationship: Heading, Sponsor Protocol Identifier, Protocol Amendment\nConcept: CNEW",
-            "repeating": "Yes, reuse to approval date in Section 12.3",
-            "ct": [
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "ICH M11 Sponsor Approval Response",
-                    "definition": "A terminology value set relevant to the sponsor approval responses within the ICH M11 Protocol model."
-                },
-                {
-                    "ncit_code": "C132352",
-                    "preferred_term": "Sponsor Approval Date",
-                    "definition": "The date that the sponsor approved the current version of the protocol."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Location of Sponsor Approval Date",
-                    "definition": "The physical or virtual location of the date on which the sponsor approved the current version of the protocol."
-                }
-            ]
-        },
-        "sponsor signature block name and title of sponsor signatory and signature date": {
-            "name": "sponsor signature block name and title of sponsor signatory and signature date",
-            "data_type": "Valid Value",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA block of text containing the name and signature of the sponsor's signatory, along with a signature date, or a statement on behalf of the sponsor that describes the method of protocol approval.",
-            "guidance": "Include either the Sponsor signature or the statement below.",
-            "conformance": "Optional",
-            "cardinality": "One to one",
-            "relationship": "Title Page",
-            "value": "Sponsor Signature Block (CNEW)\n OR \nSponsor Protocol Approval Statement (CNEW)",
-            "business_rules": "Value Allowed: Yes\nRelationship: Heading\nConcept: CNEW",
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "ICH M11 Sponsor Signatory Response",
-                    "definition": "A terminology value set relevant to the sponsor signatory responses within the ICH M11 Protocol model."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Sponsor Signature Block",
-                    "definition": "A block of text containing the name and signature of the sponsor's signatory, along with the signature date."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Sponsor Protocol Approval Statement",
-                    "definition": "A statement that the protocol was approved by a method as described. This protocol was approved via <describe method>"
-                }
-            ]
-        },
         "describe method": {
             "name": "describe method",
             "data_type": "Valid Value",

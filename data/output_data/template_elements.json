@@ -329,6 +329,26 @@
             "Include all identifiers that are applicable for the trial and available at the time of protocol or amendment finalisation. Delete prompts for identifiers not available at the time of document finalisation. Delete unused fields. Add fields for \u201cother\u201d if more than one is needed."
         ]
     },
+    "Approval Date": {
+        "long_name": "Enter Approval Date",
+        "short_name": "Approval Date",
+        "original_name": "Approval Date",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": [
+            "All versions should be uniquely identifiable. "
+        ]
+    },
+    "sponsor signature block name and title of sponsor signatory and signature date": {
+        "long_name": "Enter sponsor signature block (name and title of sponsor signatory and signature date)",
+        "short_name": "sponsor signature block name and title of sponsor signatory and signature date",
+        "original_name": "sponsor signature block (name and title of sponsor signatory and signature date)",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": []
+    },
     "contact information for Medical Expert as designated by sponsor or state location where information can be found": {
         "long_name": "Enter contact information for Medical Expert (as designated by sponsor) or state location where information can be found",
         "short_name": "contact information for Medical Expert as designated by sponsor or state location where information can be found",

@@ -47,7 +47,7 @@ class M11Template:
             }
             self.sections[section.number] = section_dict
             for para, reset in self._next_paragraph(section):
-                print(f"PARA: {state}, {section.number}, {para.text[:20]}, {'*** RESET ***' if reset else ''}")                        
+                #print(f"PARA: {state}, {section.number}, {para.text[:20]}, {'*** RESET ***' if reset else ''}")                        
                 if reset:
                     if state != "OUTSIDE":
                         if elements and instructions:
@@ -209,10 +209,7 @@ class M11Template:
         confirmed_elements = []
         potential_elements = find_elements(paragraph.text)
         for element in potential_elements:
-            # print(f"TEXT: {[x.text for x in paragraph.runs]}")
-            # print(f"COLOR: {[x.color for x in paragraph.runs]}")
-            # print(f"HIGHLIGHT: {[x.highlight for x in paragraph.runs]}")
-            # print(f"STYLE: {[x.style for x in paragraph.runs]}")
+            print(f"POT ELEMENT: {element}")
             match = next(
                 (
                     x
@@ -222,6 +219,7 @@ class M11Template:
                 None,
             )
             if match:
+                print(f"MATCH: {element}")
                 short_name = element.replace("Enter ", "")
                 optional = True if match.color == "3333FF" else False
                 confirmed_elements.append(

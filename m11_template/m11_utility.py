@@ -18,7 +18,7 @@ def find_elements(text: str) -> list[str]:
         list[str]: A list of elements
     """
     #print(f"ELEMENT TEXT: {text}")
-    pattern = r'[<\[]([^\]>]+)[\]>]'
+    pattern = r'[<\[]([^<\[\]>]+)[\]>]'
     matches = re.findall(pattern, text)
     #print(f"MATCHES: {matches}")
     return matches
