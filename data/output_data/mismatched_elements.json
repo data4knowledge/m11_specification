@@ -17,6 +17,7 @@
             "section_number": null,
             "section_title": null,
             "instructions": [
+                "If this is the original instance of the protocol, delete the row or enter \"Not applicable\". If an amendment applies to all sites in the trial, enter \u201cglobal\u201d and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter \u201cglobal\u201d.",
                 "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
             ]
         },
@@ -28,6 +29,7 @@
             "section_number": null,
             "section_title": null,
             "instructions": [
+                "If this is the original instance of the protocol, delete the row or enter \"Not applicable\". If an amendment applies to all sites in the trial, enter \u201cglobal\u201d and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter \u201cglobal\u201d.",
                 "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
             ]
         },
@@ -39,6 +41,7 @@
             "section_number": null,
             "section_title": null,
             "instructions": [
+                "If this is the original instance of the protocol, delete the row or enter \"Not applicable\". If an amendment applies to all sites in the trial, enter \u201cglobal\u201d and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter \u201cglobal\u201d.",
                 "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
             ]
         },
@@ -70,6 +73,7 @@
             "section_number": null,
             "section_title": null,
             "instructions": [
+                "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
                 "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
             ]
         },
@@ -188,7 +192,9 @@
             "optional": false,
             "section_number": "1.1.2",
             "section_title": "Overall Design",
-            "instructions": []
+            "instructions": [
+                "Further clarification:"
+            ]
         },
         "blinded roles": {
             "long_name": "blinded roles",
@@ -197,9 +203,7 @@
             "optional": false,
             "section_number": "1.1.2",
             "section_title": "Overall Design",
-            "instructions": [
-                "\u201cNot applicable (No blinding)\u201d indicates an open-label trial."
-            ]
+            "instructions": []
         },
         "randomly assigned to trial interventionenrolled": {
             "long_name": "randomly assigned to trial intervention/enrolled",
@@ -270,9 +274,7 @@
             "optional": false,
             "section_number": "3.2.1",
             "section_title": "{Secondary Objective}",
-            "instructions": [
-                "If a Secondary Objective has been entered:"
-            ]
+            "instructions": []
         },
         "Rationale for Intervention Model": {
             "long_name": "Enter Rationale for Intervention Model",
@@ -470,9 +472,7 @@
             "optional": false,
             "section_number": "12.3",
             "section_title": "Prior Protocol Amendment(s)",
-            "instructions": [
-                "(Add lines as needed)"
-            ]
+            "instructions": []
         },
         "enter date": {
             "long_name": "enter date",
@@ -481,9 +481,7 @@
             "optional": false,
             "section_number": "12.3",
             "section_title": "Prior Protocol Amendment(s)",
-            "instructions": [
-                "(Add lines as needed)"
-            ]
+            "instructions": []
         }
     },
     "technical": {

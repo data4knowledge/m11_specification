@@ -91,6 +91,7 @@
         "section_number": null,
         "section_title": null,
         "instructions": [
+            "If this is the original instance of the protocol, delete the row or enter \"Not applicable\". If an amendment applies to all sites in the trial, enter \u201cglobal\u201d and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter \u201cglobal\u201d.",
             "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
         ]
     },
@@ -102,6 +103,7 @@
         "section_number": null,
         "section_title": null,
         "instructions": [
+            "If this is the original instance of the protocol, delete the row or enter \"Not applicable\". If an amendment applies to all sites in the trial, enter \u201cglobal\u201d and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter \u201cglobal\u201d.",
             "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
         ]
     },
@@ -113,6 +115,7 @@
         "section_number": null,
         "section_title": null,
         "instructions": [
+            "If this is the original instance of the protocol, delete the row or enter \"Not applicable\". If an amendment applies to all sites in the trial, enter \u201cglobal\u201d and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter \u201cglobal\u201d.",
             "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
         ]
     },
@@ -124,6 +127,7 @@
         "section_number": null,
         "section_title": null,
         "instructions": [
+            "If this is the original instance of the protocol, delete the row or enter \"Not applicable\". If an amendment applies to all sites in the trial, enter \u201cglobal\u201d and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter \u201cglobal\u201d.",
             "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
         ]
     },
@@ -215,6 +219,7 @@
         "section_number": null,
         "section_title": null,
         "instructions": [
+            "Provide the legal name of the individual or pharmaceutical or medical device company, governmental agency, academic institution, private organisation, or other organisation who takes primary responsibility for and initiates a clinical investigation. If more than one Sponsor, list the Primary Sponsor in this field.",
             "Local Sponsor Name and Address:"
         ]
     },
@@ -255,6 +260,7 @@
         "section_number": null,
         "section_title": null,
         "instructions": [
+            "Manufacturer name and address information is required only for protocols that include investigational device(s) and should not be included for other protocols. Include the manufacturer address only if the manufacturer is different than the Sponsor listed above.",
             "Add additional fields as needed if multiple investigational devices will be used in the trial. Delete this line if not applicable."
         ]
     },
@@ -360,6 +366,7 @@
         "section_number": null,
         "section_title": null,
         "instructions": [
+            "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
             "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
         ]
     },
@@ -371,6 +378,7 @@
         "section_number": null,
         "section_title": null,
         "instructions": [
+            "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
             "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
         ]
     },
@@ -437,7 +445,10 @@
         "optional": false,
         "section_number": "12.3",
         "section_title": "Prior Protocol Amendment(s)",
-        "instructions": []
+        "instructions": [
+            "(Add lines as needed)",
+            "Add additional Overview of Changes tables as protocol amendments accrue."
+        ]
     },
     "Primary and Secondary Objectives and Estimands": {
         "long_name": "Enter Primary and Secondary Objectives and Estimands",
@@ -599,7 +610,9 @@
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
-        "instructions": []
+        "instructions": [
+            "Further clarification:"
+        ]
     },
     "Number of Arms": {
         "long_name": "Number of Arms",
@@ -608,9 +621,7 @@
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
-        "instructions": [
-            "Select the numeric value for the number of arms in the trial. For trials with a different number of arms in different periods, populate this field based on the total number of arms."
-        ]
+        "instructions": []
     },
     "Trial Blind Schema": {
         "long_name": "Trial Blind Schema",
@@ -619,9 +630,7 @@
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
-        "instructions": [
-            "For designs in which these details may differ in one or more trial periods, answer according to the portion of the trial in which the highest number of blinded roles occurs. Additional details can be provided in Section 6.7.3 Blinding."
-        ]
+        "instructions": []
     },
     "blinded roles": {
         "long_name": "blinded roles",
@@ -630,9 +639,7 @@
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
-        "instructions": [
-            "\u201cNot applicable (No blinding)\u201d indicates an open-label trial."
-        ]
+        "instructions": []
     },
     "TargetMaximum": {
         "long_name": "Target/Maximum",
@@ -721,9 +728,7 @@
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
-        "instructions": [
-            "If necessary, include any clarifications or cross references to details in the main body of the protocol in the optional field below."
-        ]
+        "instructions": []
     },
     "Additional Description of Duration": {
         "long_name": "Enter Additional Description of Duration",
@@ -797,9 +802,7 @@
         "optional": true,
         "section_number": "2.2.1",
         "section_title": "Risk Summary and Mitigation Strategy",
-        "instructions": [
-            "Trial Procedures \u2013 Describe risks associated with the design (e.g., placebo arm) and procedures specific to this trial (e.g., biopsies), and any measures to control or mitigate the risks. Provide a brief description of strategies to mitigate identified risks or provide a cross reference to the relevant protocol section. This is not intended to be an exhaustive list of all possible risks associated with trial procedures but should focus on the unique risks inherent in the design or less common or high-risk procedures. As above, provide a brief description of strategies to mitigate identified risks or provide a cross reference to the relevant protocol section."
-        ]
+        "instructions": []
     },
     "Trialspecific Procedure Risks and Mitigations": {
         "long_name": "Enter Trial-specific Procedure Risks and Mitigations",
@@ -808,9 +811,7 @@
         "optional": true,
         "section_number": "2.2.1",
         "section_title": "Risk Summary and Mitigation Strategy",
-        "instructions": [
-            "Other \u2013 Consider risks associated with other items (e.g., challenge agents, imaging agents, medical devices). This could include discussion of risk mitigation for special populations, if not described elsewhere. Insert a line for each, as needed."
-        ]
+        "instructions": []
     },
     "Trialspecific Other Risks and Mitigations": {
         "long_name": "Enter Trial-specific Other Risks and Mitigations",
@@ -909,9 +910,7 @@
         "optional": false,
         "section_number": "3.2.1",
         "section_title": "{Secondary Objective}",
-        "instructions": [
-            "If a Secondary Objective has been entered:"
-        ]
+        "instructions": []
     },
     "Exploratory Objective": {
         "long_name": "Enter Exploratory Objective",
@@ -920,9 +919,7 @@
         "optional": false,
         "section_number": "3.3.1",
         "section_title": "{Exploratory Objective}",
-        "instructions": [
-            "If an Exploratory Objective has been entered: "
-        ]
+        "instructions": []
     },
     "Overall Description of Trial Design and Description of Intervention Model": {
         "long_name": "Enter Overall Description of Trial Design and Description of Intervention Model",
@@ -931,9 +928,7 @@
         "optional": true,
         "section_number": "4.1",
         "section_title": "Description of Trial Design",
-        "instructions": [
-            "Describe the trial duration with reference to Section 1.2 Trial Schema. Explain what the overall duration for an individual participant is anticipated to be and why, including the sequence and duration of trial periods (e.g., screening, run-in, randomisation, treatment [fixed dose/titration], follow-up/washout periods). Where applicable, include discussion of sentinel dosing (or lack thereof), dose escalation, and cohort expansion. If dose modification decisions are dependent upon review by a committee, include details in Section 11.4 Committees."
-        ]
+        "instructions": []
     },
     "Description of Trial Duration": {
         "long_name": "Enter Description of Trial Duration",
@@ -942,9 +937,7 @@
         "optional": true,
         "section_number": "4.1",
         "section_title": "Description of Trial Design",
-        "instructions": [
-            "State the method of assignment to trial intervention the level and method of blinding that will be used with reference to Section 6.7 Investigational Trial Intervention Assignment, Randomisation and Blinding."
-        ]
+        "instructions": []
     },
     "Method of Assignment to Trial Intervention": {
         "long_name": "Enter Method of Assignment to Trial Intervention",
@@ -1110,7 +1103,11 @@
         "optional": false,
         "section_number": "5.4.1",
         "section_title": "Definitions Related to Childbearing Potential",
-        "instructions": []
+        "instructions": [
+            "<",
+            "Enter Definitions Related to Childbearing Potential ",
+            ">"
+        ]
     },
     "Contraception Requirements": {
         "long_name": "Enter Contraception Requirements.",
@@ -1119,7 +1116,11 @@
         "optional": false,
         "section_number": "5.4.2",
         "section_title": "Contraception Requirements",
-        "instructions": []
+        "instructions": [
+            "<",
+            "Enter Contraception Requirements.",
+            ">"
+        ]
     },
     "Lifestyle Restrictions": {
         "long_name": "Enter Lifestyle Restrictions",
@@ -2037,9 +2038,7 @@
         "optional": false,
         "section_number": "11.2",
         "section_title": "Trial Oversight",
-        "instructions": [
-            "OR"
-        ]
+        "instructions": []
     },
     "Investigator Responsibilities": {
         "long_name": "Enter Investigator Responsibilities",
@@ -2203,9 +2202,7 @@
         "optional": false,
         "section_number": "11.11",
         "section_title": "Early Site Closure",
-        "instructions": [
-            "List the criteria for early closure of a site by the sponsor or investigator."
-        ]
+        "instructions": []
     },
     "Criteria for Early Closure": {
         "long_name": "Enter Criteria for Early Closure",
@@ -2214,9 +2211,7 @@
         "optional": false,
         "section_number": "11.11",
         "section_title": "Early Site Closure",
-        "instructions": [
-            "List the responsibilities of the sponsor and investigator following early site closure, such as informing the ethics committee(s), and prompt notification of the participant and their transition to appropriate therapy and/or follow-up."
-        ]
+        "instructions": []
     },
     "Responsibilities Following Early Site Closure": {
         "long_name": "Enter Responsibilities Following Early Site Closure",
@@ -2308,9 +2303,7 @@
         "optional": false,
         "section_number": "12.3",
         "section_title": "Prior Protocol Amendment(s)",
-        "instructions": [
-            "(Add lines as needed)"
-        ]
+        "instructions": []
     },
     "enter date": {
         "long_name": "enter date",
@@ -2319,9 +2312,7 @@
         "optional": false,
         "section_number": "12.3",
         "section_title": "Prior Protocol Amendment(s)",
-        "instructions": [
-            "(Add lines as needed)"
-        ]
+        "instructions": []
     },
     "Glossary of Terms and Abbreviations": {
         "long_name": "Enter Glossary of Terms and Abbreviations",
