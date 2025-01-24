@@ -83,15 +83,6 @@
             "section_title": null,
             "instructions": []
         },
-        "Population type": {
-            "long_name": "Population type",
-            "short_name": "Population type",
-            "original_name": "Population type",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        },
         "Population diagnosis or condition": {
             "long_name": "Population diagnosis or condition",
             "short_name": "Population diagnosis or condition",
@@ -114,15 +105,6 @@
             "long_name": "Site distribution",
             "short_name": "Site distribution",
             "original_name": "Site distribution",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        },
-        "Intervention assignment method": {
-            "long_name": "Intervention assignment method",
-            "short_name": "Intervention assignment method",
-            "original_name": "Intervention assignment method",
             "optional": false,
             "section_number": "1.1.2",
             "section_title": "Overall Design",
@@ -210,15 +192,6 @@
                 "or"
             ]
         },
-        "Populationlevel Summary": {
-            "long_name": "Enter Population-level Summary",
-            "short_name": "Populationlevel Summary",
-            "original_name": "Population-level Summary",
-            "optional": false,
-            "section_number": "3.1.1",
-            "section_title": "Primary Objective <#>",
-            "instructions": []
-        },
         "description of the overview of trial interventions or a heading for the optional table below": {
             "long_name": "Enter description of the overview of trial interventions or a heading for the optional table below",
             "short_name": "description of the overview of trial interventions or a heading for the optional table below",
@@ -300,15 +273,6 @@
             "section_title": "Timing and Procedures for Collection and Reporting",
             "instructions": []
         },
-        "Diseaserelated Events or Outcomes not Qualifying as AEs or SAEs": {
-            "long_name": "Enter Disease-related Events or Outcomes not Qualifying as AEs or SAEs",
-            "short_name": "Diseaserelated Events or Outcomes not Qualifying as AEs or SAEs",
-            "original_name": "Disease-related Events or Outcomes not Qualifying as AEs or SAEs",
-            "optional": false,
-            "section_number": "9.2.5",
-            "section_title": "Disease-related Events or Outcomes Not Qualifying as AEs or SAEs",
-            "instructions": []
-        },
         "CountryRegion Identifier": {
             "long_name": "Country/Region Identifier",
             "short_name": "CountryRegion Identifier",
@@ -347,15 +311,6 @@
                 "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
                 "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
             ]
-        },
-        "Analysis Associated with Exploratory Objectives": {
-            "long_name": "Enter Analyses Associated with the Exploratory Objective(s)",
-            "short_name": "Analysis Associated with Exploratory Objectives",
-            "original_name": "Analyses Associated with the Exploratory Objective(s)",
-            "optional": false,
-            "section_number": "10.6",
-            "section_title": "Analyses Associated with the Exploratory Objective(s)",
-            "instructions": []
         }
     },
     "technical": {
@@ -563,35 +518,6 @@
             "repeating": "Yes, repeatable from Title Page Nonproprietary Name(s)\nYes, reuse for each Investigational Product",
             "ct": []
         },
-        "Population Type": {
-            "name": "Population Type",
-            "data_type": "Valid Value",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA characterisation or classification of the trial population.",
-            "guidance": "N/A",
-            "conformance": "Required",
-            "cardinality": "One to one; One to Heading; One to Sponsor Protocol Identifier",
-            "relationship": "1.1.2",
-            "value": "With Disease (CNEW); Without Disease (CNEW)",
-            "business_rules": "Value Allowed: Yes\nRelationship: Row Title; Sponsor Protocol Identifier\nConcept: CNEW",
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Population Type Response",
-                    "definition": "A terminology value set relevant to the study population type responses within the ICH M11 Protocol model."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "With Disease",
-                    "definition": "An indication that the individual or group of individuals has been diagnosed with the disease of interest or under study."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Without Disease",
-                    "definition": "An indication that the individual or group of individuals has not been diagnosed with the disease of interest or under study."
-                }
-            ]
-        },
         "Nonproprietary name or INN or Enter Not applicable": {
             "name": "Nonproprietary name or INN or Enter Not applicable",
             "data_type": "Text",
@@ -617,40 +543,6 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Row title; Control Description; Protocol Identifier\nConcept: C142585",
             "repeating": "Yes, repeatable for each INN used as control",
             "ct": []
-        },
-        "Intervention Assignment Method": {
-            "name": "Intervention Assignment Method",
-            "data_type": "Valid Value",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe process used to assign trial participants to a trial intervention or trial arm.",
-            "guidance": "Intervention assignment method - Do NOT state block size.",
-            "conformance": "Required",
-            "cardinality": "One to one: One toSponsor Protocol Identifier",
-            "relationship": "1.1.2",
-            "value": "Randomisation (C25196), Stratification (C25689), Stratified Randomisation (CNEW), Other (C17649) or Not Applicable (C48660)",
-            "business_rules": "Value Allowed: Yes\nRelationship: Row title identifier; Sponsor Protocol Identifiers\nConcept: CNEW",
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Trial Intervention Assignment Method Response",
-                    "definition": "A terminology value set relevant to the trial intervention assignment method responses within the ICH M11 Protocol model."
-                },
-                {
-                    "ncit_code": "C25196",
-                    "preferred_term": "Randomisation",
-                    "definition": "The process of assigning trial subjects to treatment or control groups using an element of chance to determine the assignments in order to reduce bias. NOTE: Unequal randomization is used to allocate subjects into groups at a differential rate; for example, three subjects may be assigned to a treatment group for every one assigned to the control group."
-                },
-                {
-                    "ncit_code": "C25689",
-                    "preferred_term": "Stratification",
-                    "definition": "Grouping defined by important prognostic factors measured at baseline."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Stratified Randomisation",
-                    "definition": "The process of grouping trial participants into strata according to important prognostic factors and then assigning participants within each stratum to different treatment or control groups using an element of chance and in order to reduce bias."
-                }
-            ]
         },
         "Site Distribution": {
             "name": "Site Distribution",
@@ -705,19 +597,6 @@
             "value": "Estimand Characteristics",
             "business_rules": "Value Allowed: Yes\nRelationship: 3.1.1 Primary Objective\nConcept: Heading",
             "repeating": "Yes, repeatable for each numbered primary objective.\nYes, reuse to the table in Section 1.1.1.for each primary objective",
-            "ct": []
-        },
-        "PopulationLevel Summary": {
-            "name": "PopulationLevel Summary",
-            "data_type": "Text",
-            "definition": "C188853\nFor review purpose, see definition of the controlled terminology below\n A synopsis of the clinical endpoint of interest within the analysis target study population.",
-            "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
-            "conformance": "Conditional: If there is a population -level summary",
-            "cardinality": "One to Row Heading, One to Exploratory Objective Table, Project Identifier",
-            "relationship": "3.3.X",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: Row Heading, Description; Table Estimand Characteristics, Exploratory (1\u2026n) Estimand\nConcept: C188857",
-            "repeating": "Yes, repeatable for each numbered exploratory objective.",
             "ct": []
         },
         "Secondary Objective X": {
@@ -1034,32 +913,6 @@
             "relationship": "9.2.4",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 9.2.4 Adverse Events of Special Interest\nConcept: CNEW",
-            "repeating": "No",
-            "ct": []
-        },
-        "Diseaserelated Events or Outcomes Not Qualifying as AEs or SAEs": {
-            "name": "Diseaserelated Events or Outcomes Not Qualifying as AEs or SAEs",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of events or outcomes related to the trial disease indication but not qualifying as adverse events or serious adverse events within the trial, or state not applicable.",
-            "guidance": "Specify any DREs, DROs, or both that will not be reported as AEs or SAEs (e.g., seizures in anticonvulsant trials) or state \u201cNot applicable.\u201d",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "9.2.5",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: 9.2.5 Disease-related Events or Outcomes Not Qualifying as AEs or SAEs\nConcept: CNEW",
-            "repeating": "No",
-            "ct": []
-        },
-        "Analysis Associated with Exploratory Objectivess": {
-            "name": "Analysis Associated with Exploratory Objectivess",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of the statistical model, hypothesis, and methods of analyses for each exploratory objective within the trial.",
-            "guidance": "Describe any exploratory analyses, if applicable. Additional subsections could be created to describe the analyses, as needed. If there is no exploratory objective, indicate \u201cnot applicable\u201d",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "10.6",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: 10.6 Analysis Associated with the Exploratory Objective(s),\nConcept: CNEW",
             "repeating": "No",
             "ct": []
         },

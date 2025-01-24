@@ -447,15 +447,6 @@
         "section_title": "Primary and Secondary Objectives and Estimands",
         "instructions": []
     },
-    "Population type": {
-        "long_name": "Population type",
-        "short_name": "Population type",
-        "original_name": "Population type",
-        "optional": false,
-        "section_number": "1.1.2",
-        "section_title": "Overall Design",
-        "instructions": []
-    },
     "Population diagnosis or condition": {
         "long_name": "Population diagnosis or condition",
         "short_name": "Population diagnosis or condition",
@@ -532,15 +523,6 @@
         "long_name": "Site geographic scope",
         "short_name": "Site geographic scope",
         "original_name": "Site geographic scope",
-        "optional": false,
-        "section_number": "1.1.2",
-        "section_title": "Overall Design",
-        "instructions": []
-    },
-    "Intervention assignment method": {
-        "long_name": "Intervention assignment method",
-        "short_name": "Intervention assignment method",
-        "original_name": "Intervention assignment method",
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
@@ -823,15 +805,6 @@
         "long_name": "Enter Endpoint",
         "short_name": "Endpoint",
         "original_name": "Endpoint",
-        "optional": false,
-        "section_number": "3.1.1",
-        "section_title": "Primary Objective <#>",
-        "instructions": []
-    },
-    "Populationlevel Summary": {
-        "long_name": "Enter Population-level Summary",
-        "short_name": "Populationlevel Summary",
-        "original_name": "Population-level Summary",
         "optional": false,
         "section_number": "3.1.1",
         "section_title": "Primary Objective <#>",
@@ -1758,15 +1731,6 @@
         "section_title": "Regulatory Reporting Requirements",
         "instructions": []
     },
-    "Diseaserelated Events or Outcomes not Qualifying as AEs or SAEs": {
-        "long_name": "Enter Disease-related Events or Outcomes not Qualifying as AEs or SAEs",
-        "short_name": "Diseaserelated Events or Outcomes not Qualifying as AEs or SAEs",
-        "original_name": "Disease-related Events or Outcomes not Qualifying as AEs or SAEs",
-        "optional": false,
-        "section_number": "9.2.5",
-        "section_title": "Disease-related Events or Outcomes Not Qualifying as AEs or SAEs",
-        "instructions": []
-    },
     "Participants Who Become Pregnant During the Trial": {
         "long_name": "Enter Participants Who Become Pregnant During the Trial",
         "short_name": "Participants Who Become Pregnant During the Trial",
@@ -2348,6 +2312,42 @@
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Population Level Summary": {
+        "long_name": "Enter Population-level Summary",
+        "short_name": "Population Level Summary",
+        "original_name": "Population-level Summary",
+        "optional": false,
+        "section_number": "3.1.1",
+        "section_title": "Primary Objective <#>",
+        "instructions": []
+    },
+    "Population Type": {
+        "long_name": "Population type",
+        "short_name": "Population Type",
+        "original_name": "Population type",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Intervention Assignment Method": {
+        "long_name": "Intervention assignment method",
+        "short_name": "Intervention Assignment Method",
+        "original_name": "Intervention assignment method",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs": {
+        "long_name": "Enter Disease-related Events or Outcomes not Qualifying as AEs or SAEs",
+        "short_name": "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs",
+        "original_name": "Disease-related Events or Outcomes not Qualifying as AEs or SAEs",
+        "optional": false,
+        "section_number": "9.2.5",
+        "section_title": "Disease-related Events or Outcomes Not Qualifying as AEs or SAEs",
         "instructions": []
     }
 }

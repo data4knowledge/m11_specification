@@ -2278,19 +2278,6 @@
         "repeating": "Yes, repeatable for each numbered exploratory objective.",
         "ct": []
     },
-    "PopulationLevel Summary": {
-        "name": "PopulationLevel Summary",
-        "data_type": "Text",
-        "definition": "C188853\nFor review purpose, see definition of the controlled terminology below\n A synopsis of the clinical endpoint of interest within the analysis target study population.",
-        "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
-        "conformance": "Conditional: If there is a population -level summary",
-        "cardinality": "One to Row Heading, One to Exploratory Objective Table, Project Identifier",
-        "relationship": "3.3.X",
-        "value": "Text",
-        "business_rules": "Value Allowed: Yes\nRelationship: Row Heading, Description; Table Estimand Characteristics, Exploratory (1\u2026n) Estimand\nConcept: C188857",
-        "repeating": "Yes, repeatable for each numbered exploratory objective.",
-        "ct": []
-    },
     "Description of Intercurrent Event": {
         "name": "Description of Intercurrent Event",
         "data_type": "Text",
@@ -3996,19 +3983,6 @@
         "repeating": "No",
         "ct": []
     },
-    "Diseaserelated Events or Outcomes Not Qualifying as AEs or SAEs": {
-        "name": "Diseaserelated Events or Outcomes Not Qualifying as AEs or SAEs",
-        "data_type": "Text",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of events or outcomes related to the trial disease indication but not qualifying as adverse events or serious adverse events within the trial, or state not applicable.",
-        "guidance": "Specify any DREs, DROs, or both that will not be reported as AEs or SAEs (e.g., seizures in anticonvulsant trials) or state \u201cNot applicable.\u201d",
-        "conformance": "Required",
-        "cardinality": "One to one",
-        "relationship": "9.2.5",
-        "value": "Text",
-        "business_rules": "Value Allowed: Yes\nRelationship: 9.2.5 Disease-related Events or Outcomes Not Qualifying as AEs or SAEs\nConcept: CNEW",
-        "repeating": "No",
-        "ct": []
-    },
     "Participants Who Become Pregnant During the Trial": {
         "name": "Participants Who Become Pregnant During the Trial",
         "data_type": "Text",
@@ -4163,19 +4137,6 @@
         "value": "Text",
         "business_rules": "Value Allowed: Yes\nRelationship: 10.5.X.3 Handling of Missing Data in Relation to Secondary Estimand(s)\nConcept: CNEW",
         "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
-        "ct": []
-    },
-    "Analysis Associated with Exploratory Objectivess": {
-        "name": "Analysis Associated with Exploratory Objectivess",
-        "data_type": "Text",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of the statistical model, hypothesis, and methods of analyses for each exploratory objective within the trial.",
-        "guidance": "Describe any exploratory analyses, if applicable. Additional subsections could be created to describe the analyses, as needed. If there is no exploratory objective, indicate \u201cnot applicable\u201d",
-        "conformance": "Required",
-        "cardinality": "One to one",
-        "relationship": "10.6",
-        "value": "Text",
-        "business_rules": "Value Allowed: Yes\nRelationship: 10.6 Analysis Associated with the Exploratory Objective(s),\nConcept: CNEW",
-        "repeating": "No",
         "ct": []
     },
     "Safety Analyses": {
@@ -4870,5 +4831,47 @@
         "repeating": "No",
         "ct": [],
         "short_name": "Rationale for Intervention Model"
+    },
+    "Population Level Summary": {
+        "name": "PopulationLevel Summary",
+        "data_type": "Text",
+        "definition": "C188853\nFor review purpose, see definition of the controlled terminology below\n A synopsis of the clinical endpoint of interest within the analysis target study population.",
+        "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
+        "conformance": "Conditional: If there is a population -level summary",
+        "cardinality": "One to Row Heading, One to Exploratory Objective Table, Project Identifier",
+        "relationship": "3.3.X",
+        "value": "Text",
+        "business_rules": "Value Allowed: Yes\nRelationship: Row Heading, Description; Table Estimand Characteristics, Exploratory (1\u2026n) Estimand\nConcept: C188857",
+        "repeating": "Yes, repeatable for each numbered exploratory objective.",
+        "ct": [],
+        "short_name": "Population Level Summary"
+    },
+    "Analysis Associated with Exploratory Objectives": {
+        "name": "Analysis Associated with Exploratory Objectivess",
+        "data_type": "Text",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of the statistical model, hypothesis, and methods of analyses for each exploratory objective within the trial.",
+        "guidance": "Describe any exploratory analyses, if applicable. Additional subsections could be created to describe the analyses, as needed. If there is no exploratory objective, indicate \u201cnot applicable\u201d",
+        "conformance": "Required",
+        "cardinality": "One to one",
+        "relationship": "10.6",
+        "value": "Text",
+        "business_rules": "Value Allowed: Yes\nRelationship: 10.6 Analysis Associated with the Exploratory Objective(s),\nConcept: CNEW",
+        "repeating": "No",
+        "ct": [],
+        "short_name": "Analysis Associated with Exploratory Objectives"
+    },
+    "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs": {
+        "name": "Diseaserelated Events or Outcomes Not Qualifying as AEs or SAEs",
+        "data_type": "Text",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of events or outcomes related to the trial disease indication but not qualifying as adverse events or serious adverse events within the trial, or state not applicable.",
+        "guidance": "Specify any DREs, DROs, or both that will not be reported as AEs or SAEs (e.g., seizures in anticonvulsant trials) or state \u201cNot applicable.\u201d",
+        "conformance": "Required",
+        "cardinality": "One to one",
+        "relationship": "9.2.5",
+        "value": "Text",
+        "business_rules": "Value Allowed: Yes\nRelationship: 9.2.5 Disease-related Events or Outcomes Not Qualifying as AEs or SAEs\nConcept: CNEW",
+        "repeating": "No",
+        "ct": [],
+        "short_name": "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs"
     }
 }
