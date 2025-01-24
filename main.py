@@ -62,8 +62,15 @@ with open("data/output_data/not_mapped_to_usd_elements.json", "w") as f:
 res = list(zip_longest(missing['template'].keys(), missing['technical'].keys()))
 #print(f"RES: {res}")
 text = "<table><tr><th>Template</th><th>Technical</th></tr>"
+blank1 = {'section_number': '', 'short_name': ''}
+blank2 = {'relationship': '', 'name': ''}
 for result in res:
-    text += f"<tr><td>{result[0]}</td><td>{result[1]}</td></tr>"
+    
+    temp = template.elements[result[0]] if result[0] else blank1
+    tech = technical.elements[result[1]] if result[1] else blank2
+    temp_text = f"{temp['section_number']}: {temp['short_name']}"
+    tech_text = f"{tech['relationship']}: {tech['name']}"
+    text += f"<tr><td>{temp_text}</td><td>{tech_text}</td></tr>"
 text += "</table>"
 with open("data/output_data/mismatched_elements.html", "w") as f:
     f.write(text)

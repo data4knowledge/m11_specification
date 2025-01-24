@@ -693,6 +693,40 @@
         "repeating": "Yes, reuse to Section 12.3",
         "ct": []
     },
+    "Amendment Scope Enrolment Description": {
+        "name": "Amendment Scope Enrolment Description",
+        "data_type": "Valid Value",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe enrollment description as to whether the amendment scope applies globally, locally, or per cohort across the trial.",
+        "guidance": "",
+        "conformance": "Conditional: if Original Protocol =No",
+        "cardinality": "One to Amendment Number",
+        "relationship": "Amendment Details",
+        "value": "Globally (C68846), Locally (CNEW), Cohort (CNEW)",
+        "business_rules": "Value Allowed: Yes\nRelationship: Statement\nConcept: CNEW",
+        "repeating": "Yes, reuse to section 12.3",
+        "ct": [
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Approximate Enrolled At Time of Sponsor Approval Scope",
+                "definition": "A terminology value set relevant to the responses for the approximate enrollment at time of sponsor approval scope within the ICH M11 Protocol model."
+            },
+            {
+                "ncit_code": "C68846",
+                "preferred_term": "Globally",
+                "definition": "Covering or affecting the whole of a system."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Locally",
+                "definition": "Covering or affecting a portion of the system."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Cohort",
+                "definition": "Covering or affecting a cohort of individuals."
+            }
+        ]
+    },
     "Primary Reason for Amendment": {
         "name": "Primary Reason for Amendment",
         "data_type": "Valid Value",
@@ -1904,6 +1938,19 @@
                 "definition": "A type of negative control in which a procedure is performed that mimics the procedure under study but does not include investigational processes or components."
             }
         ]
+    },
+    "Population Diagnosis or Condition": {
+        "name": "Population Diagnosis or Condition",
+        "data_type": "Valid Value or Text",
+        "definition": "C112038\nFor review purpose, see definition of the controlled terminology below\nA textual description of the condition, disease or disorder that the clinical trial is intended to investigate or address.",
+        "guidance": "MedDRA Preferred Term(s) or indicate \u201cother\u201d and describe.",
+        "conformance": "Required",
+        "cardinality": "One to one; One to Heading; One to Sponsor Protocol Identifier",
+        "relationship": "1.1.2",
+        "value": "Use examples MedDRA PT or SNOMED\nCT: \u201cacute lung injury,\u201d or a specific biomarker profile); indicate \u201cN/A \u2013 Healthy\u201d for studies in healthy volunteers",
+        "business_rules": "Value Allowed: Yes\nRelationship: Row Title Heading; Sponsor Protocol Identifier\nConcept: C112038",
+        "repeating": "Yes, repeatable for each population diagnosis or condition",
+        "ct": []
     },
     "Nonproprietary name": {
         "name": "Nonproprietary name",

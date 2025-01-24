@@ -448,15 +448,6 @@
         "section_title": "Primary and Secondary Objectives and Estimands",
         "instructions": []
     },
-    "Population diagnosis or condition": {
-        "long_name": "Population diagnosis or condition",
-        "short_name": "Population diagnosis or condition",
-        "original_name": "Population diagnosis or condition",
-        "optional": false,
-        "section_number": "1.1.2",
-        "section_title": "Overall Design",
-        "instructions": []
-    },
     "units of minimum age": {
         "long_name": "units of minimum age",
         "short_name": "units of minimum age",
@@ -2480,6 +2471,15 @@
         "optional": false,
         "section_number": null,
         "section_title": null,
+        "instructions": []
+    },
+    "Population Diagnosis or Condition": {
+        "long_name": "Population diagnosis or condition",
+        "short_name": "Population Diagnosis or Condition",
+        "original_name": "Population diagnosis or condition",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
         "instructions": []
     },
     "Amendment Details": {

@@ -9207,6 +9207,43 @@
             "short_name": "Substantial Impact Data"
         }
     },
+    "Population Diagnosis or Condition": {
+        "template": {
+            "long_name": "Population diagnosis or condition",
+            "short_name": "Population Diagnosis or Condition",
+            "original_name": "Population diagnosis or condition",
+            "optional": false,
+            "section_number": "1.1.2",
+            "section_title": "Overall Design",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Population Diagnosis or Condition",
+            "data_type": "Valid Value or Text",
+            "definition": "C112038\nFor review purpose, see definition of the controlled terminology below\nA textual description of the condition, disease or disorder that the clinical trial is intended to investigate or address.",
+            "guidance": "MedDRA Preferred Term(s) or indicate \u201cother\u201d and describe.",
+            "conformance": "Required",
+            "cardinality": "One to one; One to Heading; One to Sponsor Protocol Identifier",
+            "relationship": "1.1.2",
+            "value": "Use examples MedDRA PT or SNOMED\nCT: \u201cacute lung injury,\u201d or a specific biomarker profile); indicate \u201cN/A \u2013 Healthy\u201d for studies in healthy volunteers",
+            "business_rules": "Value Allowed: Yes\nRelationship: Row Title Heading; Sponsor Protocol Identifier\nConcept: C112038",
+            "repeating": "Yes, repeatable for each population diagnosis or condition",
+            "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "codes",
+                    "klass": "Indication",
+                    "notes": "",
+                    "path": "StudyVersion/@studyDesigns/StudyDesign/@indications/Indication/@codes"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Population Diagnosis or Condition",
+            "notes": ""
+        }
+    },
     "Amendment Details": {
         "template": {
             "long_name": "Amendment Details",

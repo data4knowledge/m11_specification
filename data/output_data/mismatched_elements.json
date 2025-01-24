@@ -1,14 +1,5 @@
 {
     "template": {
-        "Population diagnosis or condition": {
-            "long_name": "Population diagnosis or condition",
-            "short_name": "Population diagnosis or condition",
-            "original_name": "Population diagnosis or condition",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        },
         "total planned duration of trial intervention": {
             "long_name": "Enter total planned duration of trial intervention",
             "short_name": "total planned duration of trial intervention",
@@ -247,6 +238,40 @@
         }
     },
     "technical": {
+        "Amendment Scope Enrolment Description": {
+            "name": "Amendment Scope Enrolment Description",
+            "data_type": "Valid Value",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe enrollment description as to whether the amendment scope applies globally, locally, or per cohort across the trial.",
+            "guidance": "",
+            "conformance": "Conditional: if Original Protocol =No",
+            "cardinality": "One to Amendment Number",
+            "relationship": "Amendment Details",
+            "value": "Globally (C68846), Locally (CNEW), Cohort (CNEW)",
+            "business_rules": "Value Allowed: Yes\nRelationship: Statement\nConcept: CNEW",
+            "repeating": "Yes, reuse to section 12.3",
+            "ct": [
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Approximate Enrolled At Time of Sponsor Approval Scope",
+                    "definition": "A terminology value set relevant to the responses for the approximate enrollment at time of sponsor approval scope within the ICH M11 Protocol model."
+                },
+                {
+                    "ncit_code": "C68846",
+                    "preferred_term": "Globally",
+                    "definition": "Covering or affecting the whole of a system."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Locally",
+                    "definition": "Covering or affecting a portion of the system."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Cohort",
+                    "definition": "Covering or affecting a cohort of individuals."
+                }
+            ]
+        },
         "Sponsors Investigational Product Codes 4": {
             "name": "Sponsors Investigational Product Codes 4",
             "data_type": "Text",
