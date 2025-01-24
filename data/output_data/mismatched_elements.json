@@ -1,17 +1,5 @@
 {
     "template": {
-        "--- 1": {
-            "long_name": "#/%",
-            "short_name": "--- 1",
-            "original_name": "#/%",
-            "optional": true,
-            "section_number": null,
-            "section_title": null,
-            "instructions": [
-                "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
-                "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
-            ]
-        },
         "Population diagnosis or condition": {
             "long_name": "Population diagnosis or condition",
             "short_name": "Population diagnosis or condition",
@@ -259,19 +247,6 @@
         }
     },
     "technical": {
-        "Other description 1": {
-            "name": "Other description 1",
-            "data_type": "Text",
-            "definition": "C17649\nFor review purpose, see definition of the controlled terminology below\nDifferent than the one(s) previously specified or mentioned.",
-            "guidance": "Choose from the available categories as the primary reason and secondary reason(s) for the amendment. Select the closest match among the choices. Changes to primary estimand, endpoints, or related measures should be listed as a change of strategy. If none of the choices apply, choose \u201cother\u201d and provide a description. If no secondary reason, indicate \u201cnot applicable\u201d for the secondary reason.",
-            "conformance": "Conditional if Other is selected as a Valid Value",
-            "cardinality": "One to one",
-            "relationship": "Amendment Details",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: Heading, Secondary reason, Protocol Identifier, Protocol Amendment\nConcept:C17649",
-            "repeating": "No",
-            "ct": []
-        },
         "If yes briefly explain": {
             "name": "If yes briefly explain",
             "data_type": "Text",

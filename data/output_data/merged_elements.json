@@ -1364,30 +1364,6 @@
             "ct": []
         }
     },
-    "---": {
-        "template": {
-            "long_name": "#/%",
-            "short_name": "---",
-            "original_name": "#/%",
-            "optional": true,
-            "section_number": null,
-            "section_title": null,
-            "instructions": []
-        },
-        "technical": {
-            "name": "---",
-            "data_type": "Text",
-            "definition": "C68846\nCNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value (expressed as an absolute value or percentage) for the estimated number of participants enrolled at the time of the protocol amendment.",
-            "guidance": "",
-            "conformance": "Optional",
-            "cardinality": "One to one; One to amendment number",
-            "relationship": "Amendment Details",
-            "value": "Approximate <#/%> enrolled <Globally/Locally/by Cohort>",
-            "business_rules": "Value Allowed: Yes\nRelationship: Statement\nConcept: C68846, CNEW",
-            "repeating": "Yes, reuse to Section 12.3",
-            "ct": []
-        }
-    },
     "Globally-Locally-by Cohort": {
         "template": {
             "long_name": "Globally/Locally/by Cohort",
@@ -1700,86 +1676,6 @@
             "map_status": "Mapped",
             "name": "Amendment Summary",
             "notes": ""
-        }
-    },
-    "Yes-No": {
-        "template": {
-            "long_name": "Yes/No",
-            "short_name": "Yes-No",
-            "original_name": "Yes/No",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": []
-        },
-        "technical": {
-            "name": "Yes-No",
-            "data_type": "Valid Value",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the amendment likely to have a substantial impact on the safety or rights of the participants.",
-            "guidance": "N/A",
-            "conformance": "Conditional If there is an amendment",
-            "cardinality": "One to one; One to Amendment Identifier; One to Sponsor Protocol Identifier",
-            "relationship": "Amendment Details",
-            "value": "Yes (C49488), No (C49487)",
-            "business_rules": "Value Allowed: Yes\nRelationship: Amendment Details, Amendment Identifier, Sponsor Protocol Identifier\nConcept: CNEW",
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "C66742",
-                    "preferred_term": "NY",
-                    "definition": "A term that is used to indicate a question with permissible values of yes/no/unknown/not applicable."
-                },
-                {
-                    "ncit_code": "C49487",
-                    "preferred_term": "No",
-                    "definition": "The non-affirmative response to a question."
-                },
-                {
-                    "ncit_code": "C49488",
-                    "preferred_term": "Yes",
-                    "definition": "The affirmative response to a question."
-                }
-            ]
-        }
-    },
-    "Yes-No 2": {
-        "template": {
-            "long_name": "Yes/No",
-            "short_name": "Yes-No 2",
-            "original_name": "Yes/No",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": []
-        },
-        "technical": {
-            "name": "Yes-No 2",
-            "data_type": "Valid Value",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the amendment likely to have a substantial impact on the reliability and robustness of the data generated in the clinical trial.",
-            "guidance": "N/A",
-            "conformance": "Conditional : if there is an amendment",
-            "cardinality": "One to one; One to Amendment Identifier; One to Sponsor Protocol Identifier",
-            "relationship": "Amendment Details",
-            "value": "Yes (C49488), No (C49487)",
-            "business_rules": "Value Allowed: Yes\nRelationship: Amendment Details, Amendment Identifier, Sponsor Protocol Identifier\nConcept: CNEW",
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "C66742",
-                    "preferred_term": "NY",
-                    "definition": "A term that is used to indicate a question with permissible values of yes/no/unknown/not applicable."
-                },
-                {
-                    "ncit_code": "C49487",
-                    "preferred_term": "No",
-                    "definition": "The non-affirmative response to a question."
-                },
-                {
-                    "ncit_code": "C49488",
-                    "preferred_term": "Yes",
-                    "definition": "The affirmative response to a question."
-                }
-            ]
         }
     },
     "Description of Change": {
@@ -9201,6 +9097,116 @@
             "notes": ""
         }
     },
+    "Current Amendment Enrollment": {
+        "template": {
+            "long_name": "#/%",
+            "short_name": "Current Amendment Enrollment",
+            "original_name": "#/%",
+            "optional": true,
+            "section_number": null,
+            "section_title": null,
+            "instructions": [
+                "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
+                "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
+            ]
+        },
+        "technical": {
+            "name": "---",
+            "data_type": "Text",
+            "definition": "C68846\nCNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value (expressed as an absolute value or percentage) for the estimated number of participants enrolled at the time of the protocol amendment.",
+            "guidance": "",
+            "conformance": "Optional",
+            "cardinality": "One to one; One to amendment number",
+            "relationship": "Amendment Details",
+            "value": "Approximate <#/%> enrolled <Globally/Locally/by Cohort>",
+            "business_rules": "Value Allowed: Yes\nRelationship: Statement\nConcept: C68846, CNEW",
+            "repeating": "Yes, reuse to Section 12.3",
+            "ct": [],
+            "short_name": "Current Amendment Enrollment"
+        }
+    },
+    "Substantial Impact Safety": {
+        "template": {
+            "long_name": "Yes/No",
+            "short_name": "Substantial Impact Safety",
+            "original_name": "Yes/No",
+            "optional": false,
+            "section_number": null,
+            "section_title": null,
+            "instructions": []
+        },
+        "technical": {
+            "name": "Yes-No",
+            "data_type": "Valid Value",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the amendment likely to have a substantial impact on the safety or rights of the participants.",
+            "guidance": "N/A",
+            "conformance": "Conditional If there is an amendment",
+            "cardinality": "One to one; One to Amendment Identifier; One to Sponsor Protocol Identifier",
+            "relationship": "Amendment Details",
+            "value": "Yes (C49488), No (C49487)",
+            "business_rules": "Value Allowed: Yes\nRelationship: Amendment Details, Amendment Identifier, Sponsor Protocol Identifier\nConcept: CNEW",
+            "repeating": "No",
+            "ct": [
+                {
+                    "ncit_code": "C66742",
+                    "preferred_term": "NY",
+                    "definition": "A term that is used to indicate a question with permissible values of yes/no/unknown/not applicable."
+                },
+                {
+                    "ncit_code": "C49487",
+                    "preferred_term": "No",
+                    "definition": "The non-affirmative response to a question."
+                },
+                {
+                    "ncit_code": "C49488",
+                    "preferred_term": "Yes",
+                    "definition": "The affirmative response to a question."
+                }
+            ],
+            "short_name": "Substantial Impact Safety"
+        }
+    },
+    "Substantial Impact Data": {
+        "template": {
+            "long_name": "Yes/No",
+            "short_name": "Substantial Impact Data",
+            "original_name": "Yes/No",
+            "optional": false,
+            "section_number": null,
+            "section_title": null,
+            "instructions": []
+        },
+        "technical": {
+            "name": "Yes-No 2",
+            "data_type": "Valid Value",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the amendment likely to have a substantial impact on the reliability and robustness of the data generated in the clinical trial.",
+            "guidance": "N/A",
+            "conformance": "Conditional : if there is an amendment",
+            "cardinality": "One to one; One to Amendment Identifier; One to Sponsor Protocol Identifier",
+            "relationship": "Amendment Details",
+            "value": "Yes (C49488), No (C49487)",
+            "business_rules": "Value Allowed: Yes\nRelationship: Amendment Details, Amendment Identifier, Sponsor Protocol Identifier\nConcept: CNEW",
+            "repeating": "No",
+            "ct": [
+                {
+                    "ncit_code": "C66742",
+                    "preferred_term": "NY",
+                    "definition": "A term that is used to indicate a question with permissible values of yes/no/unknown/not applicable."
+                },
+                {
+                    "ncit_code": "C49487",
+                    "preferred_term": "No",
+                    "definition": "The non-affirmative response to a question."
+                },
+                {
+                    "ncit_code": "C49488",
+                    "preferred_term": "Yes",
+                    "definition": "The affirmative response to a question."
+                }
+            ],
+            "short_name": "Substantial Impact Data"
+        }
+    },
     "Amendment Details": {
         "template": {
             "long_name": "Amendment Details",
@@ -9264,6 +9270,31 @@
             "repeating": "No",
             "ct": [],
             "short_name": "Primary Reason Other"
+        }
+    },
+    "Secondary Reason Other": {
+        "template": {
+            "long_name": "Secondary Reason Other",
+            "short_name": "Secondary Reason Other",
+            "original_name": "Secondary Reason Other",
+            "optional": false,
+            "section_number": null,
+            "section_title": null,
+            "instructions": []
+        },
+        "technical": {
+            "name": "Other description 1",
+            "data_type": "Text",
+            "definition": "C17649\nFor review purpose, see definition of the controlled terminology below\nDifferent than the one(s) previously specified or mentioned.",
+            "guidance": "Choose from the available categories as the primary reason and secondary reason(s) for the amendment. Select the closest match among the choices. Changes to primary estimand, endpoints, or related measures should be listed as a change of strategy. If none of the choices apply, choose \u201cother\u201d and provide a description. If no secondary reason, indicate \u201cnot applicable\u201d for the secondary reason.",
+            "conformance": "Conditional if Other is selected as a Valid Value",
+            "cardinality": "One to one",
+            "relationship": "Amendment Details",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: Heading, Secondary reason, Protocol Identifier, Protocol Amendment\nConcept:C17649",
+            "repeating": "No",
+            "ct": [],
+            "short_name": "Secondary Reason Other"
         }
     }
 }

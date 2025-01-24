@@ -8,10 +8,7 @@
     "Approval Date": "Approval Date",
     "sponsor signature block name and title of sponsor signatory and signature date": "sponsor signature block name and title of sponsor signatory and signature date",
     "contact information for Medical Expert as designated by sponsor or state location where information can be found": "contact information for Medical Expert as designated by sponsor or state location where information can be found",
-    "---": "---",
     "Globally-Locally-by Cohort": "Globally-Locally-by Cohort",
-    "Yes-No": "Yes-No",
-    "Yes-No 2": "Yes-No 2",
     "Description of Change": "Description of Change",
     "Brief Rationale for Change": "Brief Rationale for Change",
     "Section - and Name of Change": "Section - and Name of Change",
@@ -95,6 +92,10 @@
     "Population Level Summary": "Population Level Summary",
     "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs": "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs",
     "State location where Information can be found": "State location where Information can be found",
+    "Current Amendment Enrollment": "Current Amendment Enrollment",
+    "Substantial Impact Safety": "Substantial Impact Safety",
+    "Substantial Impact Data": "Substantial Impact Data",
     "Amendment Details": "Amendment Details",
-    "Primary Reason Other": "Primary Reason Other"
+    "Primary Reason Other": "Primary Reason Other",
+    "Secondary Reason Other": "Secondary Reason Other"
 }

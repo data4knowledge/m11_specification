@@ -369,27 +369,6 @@
         "section_title": null,
         "instructions": []
     },
-    "---": {
-        "long_name": "#/%",
-        "short_name": "---",
-        "original_name": "#/%",
-        "optional": true,
-        "section_number": null,
-        "section_title": null,
-        "instructions": []
-    },
-    "--- 1": {
-        "long_name": "#/%",
-        "short_name": "--- 1",
-        "original_name": "#/%",
-        "optional": true,
-        "section_number": null,
-        "section_title": null,
-        "instructions": [
-            "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
-            "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
-        ]
-    },
     "Globally-Locally-by Cohort": {
         "long_name": "Globally/Locally/by Cohort",
         "short_name": "Globally-Locally-by Cohort",
@@ -430,24 +409,6 @@
         "instructions": [
             "Describe key changes briefly. Changes which are included in the amendment but unrelated to the key changes do not need to be described here."
         ]
-    },
-    "Yes-No": {
-        "long_name": "Yes/No",
-        "short_name": "Yes-No",
-        "original_name": "Yes/No",
-        "optional": false,
-        "section_number": null,
-        "section_title": null,
-        "instructions": []
-    },
-    "Yes-No 2": {
-        "long_name": "Yes/No",
-        "short_name": "Yes-No 2",
-        "original_name": "Yes/No",
-        "optional": false,
-        "section_number": null,
-        "section_title": null,
-        "instructions": []
     },
     "Description of Change": {
         "long_name": "Enter Description of Change",
@@ -2491,6 +2452,36 @@
         "section_title": "Overall Design",
         "instructions": []
     },
+    "Current Amendment Enrollment": {
+        "long_name": "#/%",
+        "short_name": "Current Amendment Enrollment",
+        "original_name": "#/%",
+        "optional": true,
+        "section_number": null,
+        "section_title": null,
+        "instructions": [
+            "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
+            "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
+        ]
+    },
+    "Substantial Impact Safety": {
+        "long_name": "Yes/No",
+        "short_name": "Substantial Impact Safety",
+        "original_name": "Yes/No",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": []
+    },
+    "Substantial Impact Data": {
+        "long_name": "Yes/No",
+        "short_name": "Substantial Impact Data",
+        "original_name": "Yes/No",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": []
+    },
     "Amendment Details": {
         "long_name": "Amendment Details",
         "short_name": "Amendment Details",
@@ -2504,6 +2495,15 @@
         "long_name": "Primary Reason Other",
         "short_name": "Primary Reason Other",
         "original_name": "Primary Reason Other",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": []
+    },
+    "Secondary Reason Other": {
+        "long_name": "Secondary Reason Other",
+        "short_name": "Secondary Reason Other",
+        "original_name": "Secondary Reason Other",
         "optional": false,
         "section_number": null,
         "section_title": null,
