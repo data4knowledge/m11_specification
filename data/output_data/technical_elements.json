@@ -705,19 +705,6 @@
         "repeating": "Yes. number consecutively, repeatable for each exclusion criteria, if deleted do not replace, do not duplicate",
         "ct": []
     },
-    "GloballyLocallyby Cohort": {
-        "name": "GloballyLocallyby Cohort",
-        "data_type": "Text",
-        "definition": "C68846\nCNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value (expressed as an absolute value or percentage) for the estimated number of participants enrolled at the time of the protocol amendment.",
-        "guidance": "",
-        "conformance": "Optional",
-        "cardinality": "One to one; One to amendment number",
-        "relationship": "Amendment Details",
-        "value": "Approximate <#/%> enrolled <Globally/Locally/by Cohort>",
-        "business_rules": "Value Allowed: Yes\nRelationship: Statement\nConcept: C68846, CNEW",
-        "repeating": "Yes, reuse to Section 12.3",
-        "ct": []
-    },
     "Number or": {
         "name": "Number or",
         "data_type": "Number",
@@ -5082,6 +5069,20 @@
         "repeating": "No",
         "ct": [],
         "short_name": "WHO UTN Number"
+    },
+    "Globally Locally Cohort": {
+        "name": "GloballyLocallyby Cohort",
+        "data_type": "Text",
+        "definition": "C68846\nCNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value (expressed as an absolute value or percentage) for the estimated number of participants enrolled at the time of the protocol amendment.",
+        "guidance": "",
+        "conformance": "Optional",
+        "cardinality": "One to one; One to amendment number",
+        "relationship": "Amendment Details",
+        "value": "Approximate <#/%> enrolled <Globally/Locally/by Cohort>",
+        "business_rules": "Value Allowed: Yes\nRelationship: Statement\nConcept: C68846, CNEW",
+        "repeating": "Yes, reuse to Section 12.3",
+        "ct": [],
+        "short_name": "Globally Locally Cohort"
     },
     "Blinded Roles": {
         "name": "Blinded roles",

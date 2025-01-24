@@ -329,17 +329,6 @@
             "Include all identifiers that are applicable for the trial and available at the time of protocol or amendment finalisation. Delete prompts for identifiers not available at the time of document finalisation. Delete unused fields. Add fields for \u201cother\u201d if more than one is needed."
         ]
     },
-    "State location where information can be found": {
-        "long_name": "State location where information can be found",
-        "short_name": "State location where information can be found",
-        "original_name": "State location where information can be found",
-        "optional": false,
-        "section_number": null,
-        "section_title": null,
-        "instructions": [
-            "All versions should be uniquely identifiable. "
-        ]
-    },
     "contact information for Medical Expert as designated by sponsor or state location where information can be found": {
         "long_name": "Enter contact information for Medical Expert (as designated by sponsor) or state location where information can be found",
         "short_name": "contact information for Medical Expert as designated by sponsor or state location where information can be found",
@@ -2349,5 +2338,16 @@
         "section_number": null,
         "section_title": null,
         "instructions": []
+    },
+    "State location where Information can be found": {
+        "long_name": "State location where information can be found",
+        "short_name": "State location where Information can be found",
+        "original_name": "State location where information can be found",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": [
+            "All versions should be uniquely identifiable. "
+        ]
     }
 }

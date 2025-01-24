@@ -93,7 +93,7 @@ class M11Technical:
         if len(table.rows) >= 10:
             text = self._row_cell_text(table.rows[0], 1)
             data_elements = find_elements(text)
-            print(f"DATA ELEMENTS: {data_elements}")
+            #print(f"DATA ELEMENTS: {data_elements}")
             data_elements = [text] if not data_elements else data_elements
             template = {
                 "name": "temp",
@@ -112,7 +112,7 @@ class M11Technical:
                 temp = dict(template)
                 temp["name"] = clean_element_name(data_element)
                 result.append(temp)
-        print(f"RESULT: {result}")
+        #print(f"RESULT: {result}")
         return result
 
     def _extract_ncit_element(self, table: RawTable) -> dict:

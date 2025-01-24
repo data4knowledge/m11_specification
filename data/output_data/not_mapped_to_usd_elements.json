@@ -85,6 +85,7 @@
     "specify alternative location": "specify alternative location",
     "IMP or NIMP": "IMP or NIMP",
     "WHO UTN Number": "WHO UTN Number",
+    "Globally Locally Cohort": "Globally Locally Cohort",
     "Country Region Specific Requirements": "Country Region Specific Requirements",
     "Country Region Specific Protocol Clarifications": "Country Region Specific Protocol Clarifications",
     "Pharmaceutical Dose Formulation": "Pharmaceutical Dose Formulation",
@@ -92,5 +93,6 @@
     "Handling of Missing Data in Relation to Primary Estimand": "Handling of Missing Data in Relation to Primary Estimand",
     "Analysis Associated with Exploratory Objectives": "Analysis Associated with Exploratory Objectives",
     "Population Level Summary": "Population Level Summary",
-    "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs": "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs"
+    "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs": "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs",
+    "State location where Information can be found": "State location where Information can be found"
 }
