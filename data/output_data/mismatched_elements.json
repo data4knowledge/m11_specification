@@ -29,9 +29,9 @@
                 "Further clarification:"
             ]
         },
-        "randomly assigned to trial interventionenrolled": {
+        "randomly assigned to trial intervention-enrolled": {
             "long_name": "randomly assigned to trial intervention/enrolled",
-            "short_name": "randomly assigned to trial interventionenrolled",
+            "short_name": "randomly assigned to trial intervention-enrolled",
             "original_name": "randomly assigned to trial intervention/enrolled",
             "optional": false,
             "section_number": "1.1.2",
@@ -100,9 +100,9 @@
             "section_title": "Trial Intervention And Concomitant Therapy",
             "instructions": []
         },
-        "RegimenTreatment PeriodVaccination Regimen": {
+        "Regimen-Treatment Period-Vaccination Regimen": {
             "long_name": "Enter Regimen/Treatment Period/Vaccination Regimen",
-            "short_name": "RegimenTreatment PeriodVaccination Regimen",
+            "short_name": "Regimen-Treatment Period-Vaccination Regimen",
             "original_name": "Regimen/Treatment Period/Vaccination Regimen",
             "optional": true,
             "section_number": "6",
@@ -163,18 +163,18 @@
             "section_title": "Timing and Procedures for Collection and Reporting",
             "instructions": []
         },
-        "CountryRegion Identifier": {
+        "Country-Region Identifier": {
             "long_name": "Country/Region Identifier",
-            "short_name": "CountryRegion Identifier",
+            "short_name": "Country-Region Identifier",
             "original_name": "Country/Region Identifier",
             "optional": true,
             "section_number": "12.2",
             "section_title": "Country/Region-Specific Differences",
             "instructions": []
         },
-        "or  enrolled globallylocallyper cohort": {
+        "- or - enrolled globally-locally-per cohort": {
             "long_name": "Enter # or % enrolled globally/locally/per cohort",
-            "short_name": "or  enrolled globallylocallyper cohort",
+            "short_name": "- or - enrolled globally-locally-per cohort",
             "original_name": "# or % enrolled globally/locally/per cohort",
             "optional": true,
             "section_number": "12.3",
@@ -214,8 +214,8 @@
             "repeating": "No",
             "ct": []
         },
-        "Number or": {
-            "name": "Number or",
+        "Number or -": {
+            "name": "Number or -",
             "data_type": "Number",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value (expressed as an absolute value or percentage) for the estimated number of participants enrolled at the time of the protocol amendment.",
             "guidance": "",
@@ -334,8 +334,8 @@
             "repeating": "No",
             "ct": []
         },
-        "randomly assigned to trial intervention enrolled": {
-            "name": "randomly assigned to trial intervention enrolled",
+        "randomly assigned to trial intervention- enrolled": {
+            "name": "randomly assigned to trial intervention- enrolled",
             "data_type": "Valid Value",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe target or maximum number of participants who have been randomly assigned to the trial intervention or enrolled in the trial.",
             "guidance": "State the expected number of participants to be assigned to trial intervention/enrolled. Indicate whether the number provided is the target or maximum number of individuals to be randomly assigned to trial intervention/enrolled",
@@ -412,8 +412,8 @@
             "repeating": "Yes, repeatable for each numbered exploratory objective.",
             "ct": []
         },
-        "Intercurrent Event  Strategy": {
-            "name": "Intercurrent Event  Strategy",
+        "Intercurrent Event - Strategy": {
+            "name": "Intercurrent Event - Strategy",
             "data_type": "Text",
             "definition": "C188857\nFor review purpose, see definition of the controlled terminology below\nA textual description of the planned strategy to address intercurrent events.",
             "guidance": "Description of the strategy to address the intercurrent event (e.g. a treatment policy strategy); cross-reference the justification in Section 4. If there is >1 intercurrent event for an objective, add additional intercurrent event rows",
@@ -449,6 +449,19 @@
             "value": "To be eligible to participate in this trial, an individual must meet all the following criteria:",
             "business_rules": "Value Allowed: No\nRelationship: 5.2 Inclusion Criteria\nConcept: Universal text",
             "repeating": "No",
+            "ct": []
+        },
+        "-": {
+            "name": "-",
+            "data_type": "Number",
+            "definition": "N/A",
+            "guidance": "Add criteria as needed.  Consider numbering the criteria sequentially",
+            "conformance": "Required",
+            "cardinality": "One to many",
+            "relationship": "5.3",
+            "value": "# is an identifier <criterion identifier> unique number and not replaceable",
+            "business_rules": "Value Allowed: Yes\nRelationship: 5.3 Exclusion Criteria\nConcept: Sequential number",
+            "repeating": "Yes. number consecutively, repeatable for each exclusion criteria, if deleted do not replace, do not duplicate",
             "ct": []
         },
         "Inclusion Criterion": {
@@ -516,8 +529,8 @@
             "repeating": "Yes, repeatable for each intervention. Dose formulation, per arm name",
             "ct": []
         },
-        "RegimenTreatment PeriodVaccination regimen": {
-            "name": "RegimenTreatment PeriodVaccination regimen",
+        "Regimen-Treatment Period-Vaccination regimen": {
+            "name": "Regimen-Treatment Period-Vaccination regimen",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of the schedule and periodicity of a treatment or vaccination regimen.",
             "guidance": "N/A",
@@ -724,8 +737,8 @@
                 }
             ]
         },
-        "or": {
-            "name": "or",
+        "- or -": {
+            "name": "- or -",
             "data_type": "Number",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value (expressed as an absolute value or percentage) for the estimated number of participants enrolled at the time of the protocol amendment.",
             "guidance": "N/A",
@@ -737,8 +750,8 @@
             "repeating": "Yes, reuse from the title page",
             "ct": []
         },
-        "globallylocallyper cohort": {
-            "name": "globallylocallyper cohort",
+        "globally-locally-per cohort": {
+            "name": "globally-locally-per cohort",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage. The numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage.",
             "guidance": "",

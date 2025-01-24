@@ -129,6 +129,8 @@ class M11Template:
                 self.elements[value] = self.elements[key]
                 self.elements[value]["short_name"] = value
                 self.elements.pop(key)
+            else:
+                print(f"Template rename not required: {key}")
 
     def insert_elements(self, filepath: str) -> None:
         """

@@ -70,6 +70,8 @@ class M11Technical:
                 self.elements[value] = self.elements[key]
                 self.elements[value]["short_name"] = value
                 self.elements.pop(key)
+            else:
+                print(f"Technical rename not required: {key}")
 
     def split_elements(self, filepath: str) -> None:
         """

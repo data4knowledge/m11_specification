@@ -59,7 +59,7 @@ with open("data/output_data/not_mapped_to_usd_elements.json", "w") as f:
     json.dump(not_mapped, f, indent=4)
 
 res = list(zip_longest(missing['template'].keys(), missing['technical'].keys()))
-print(f"RES: {res}")
+#print(f"RES: {res}")
 text = "<table><tr><th>Template</th><th>Technical</th></tr>"
 for result in res:
     text += f"<tr><td>{result[0]}</td><td>{result[1]}</td></tr>"

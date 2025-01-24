@@ -781,10 +781,10 @@
             "notes": ""
         }
     },
-    "CoSponsor Name": {
+    "Co-Sponsor Name": {
         "template": {
             "long_name": "Enter Co-Sponsor Name",
-            "short_name": "CoSponsor Name",
+            "short_name": "Co-Sponsor Name",
             "original_name": "Co-Sponsor Name",
             "optional": true,
             "section_number": null,
@@ -792,7 +792,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "CoSponsor Name",
+            "name": "Co-Sponsor Name",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe literal identifier (i.e. distinctive designation) of the trial co-Sponsor.",
             "guidance": "Provide the legal name of the individual or pharmaceutical or medical device company, governmental agency, academic institution, private organisation, or other organisation who takes primary responsibility for and initiates a clinical investigation. If more than one Sponsor, list the Primary Sponsor in this field.",
@@ -803,12 +803,25 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Heading, Co-Sponsor Name, Sponsor Name, Sponsor Protocol Identifier\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "Address",
+                    "notes": "Select the co-sponsor organization",
+                    "path": "StudyIdentifier/@studyIdentifierScope/Organization/@legalAddress/Address/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Co-Sponsor Name",
+            "notes": ""
         }
     },
-    "CoSponsor Legal Address": {
+    "Co-Sponsor Legal Address": {
         "template": {
             "long_name": "Enter Co-Sponsor Legal Address",
-            "short_name": "CoSponsor Legal Address",
+            "short_name": "Co-Sponsor Legal Address",
             "original_name": "Co-Sponsor Legal Address",
             "optional": true,
             "section_number": null,
@@ -819,7 +832,7 @@
             ]
         },
         "technical": {
-            "name": "CoSponsor Legal Address",
+            "name": "Co-Sponsor Legal Address",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe legally registered address of the trial co-sponsor.",
             "guidance": "Provide the legal name of the individual or pharmaceutical or medical device company, governmental agency, academic institution, private organisation, or other organisation who takes primary responsibility for and initiates a clinical investigation. If more than one Sponsor, list the Primary Sponsor in this field.",
@@ -830,6 +843,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Heading, Co- Sponsor Name\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "name",
+                    "klass": "Organization",
+                    "notes": "Select the co-sponsor organization",
+                    "path": "StudyIdentifier/@studyIdentifierScope/Organization/@name"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Co-Sponsor Legal Address",
+            "notes": ""
         }
     },
     "Local Sponsor Name": {
@@ -1180,6 +1206,30 @@
             "notes": ""
         }
     },
+    "WHO-UTN Number": {
+        "template": {
+            "long_name": "WHO/UTN Number",
+            "short_name": "WHO-UTN Number",
+            "original_name": "WHO/UTN Number",
+            "optional": true,
+            "section_number": null,
+            "section_title": null,
+            "instructions": []
+        },
+        "technical": {
+            "name": "WHO-UTN Number",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA sequence of characters used to identify a clinical trial, as assigned by the World Health Organisation's International Clinical Trial's Registry Platform (ICTRP).",
+            "guidance": "Include all numbers that are applicable for the trial and available at the time of protocol or amendment finalisation. Delete prompts for numbers not available at the time of document finalisation. Delete unused fields. Add fields for \u201cother\u201d if more than one is needed.",
+            "conformance": "Optional",
+            "cardinality": "One to one; One to Sponsor Protocol Identifier",
+            "relationship": "Title Page",
+            "value": "UTN/WHO: Uxxxx-xxxx-xxxx with X being an integer",
+            "business_rules": "Value Allowed: Yes; \nRelationship: Heading; Sponsor Protocol Identifier; \nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        }
+    },
     "Other Regulatory or Clinical Trial Identifier": {
         "template": {
             "long_name": "Other Regulatory or Clinical Trial Identifier",
@@ -1312,10 +1362,10 @@
             "ct": []
         }
     },
-    "": {
+    "---": {
         "template": {
             "long_name": "#/%",
-            "short_name": "",
+            "short_name": "---",
             "original_name": "#/%",
             "optional": true,
             "section_number": null,
@@ -1326,16 +1376,43 @@
             ]
         },
         "technical": {
-            "name": "",
-            "data_type": "Number",
-            "definition": "N/A",
-            "guidance": "Add criteria as needed.  Consider numbering the criteria sequentially",
-            "conformance": "Required",
-            "cardinality": "One to many",
-            "relationship": "5.3",
-            "value": "# is an identifier <criterion identifier> unique number and not replaceable",
-            "business_rules": "Value Allowed: Yes\nRelationship: 5.3 Exclusion Criteria\nConcept: Sequential number",
-            "repeating": "Yes. number consecutively, repeatable for each exclusion criteria, if deleted do not replace, do not duplicate",
+            "name": "---",
+            "data_type": "Text",
+            "definition": "C68846\nCNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value (expressed as an absolute value or percentage) for the estimated number of participants enrolled at the time of the protocol amendment.",
+            "guidance": "",
+            "conformance": "Optional",
+            "cardinality": "One to one; One to amendment number",
+            "relationship": "Amendment Details",
+            "value": "Approximate <#/%> enrolled <Globally/Locally/by Cohort>",
+            "business_rules": "Value Allowed: Yes\nRelationship: Statement\nConcept: C68846, CNEW",
+            "repeating": "Yes, reuse to Section 12.3",
+            "ct": []
+        }
+    },
+    "Globally-Locally-by Cohort": {
+        "template": {
+            "long_name": "Globally/Locally/by Cohort",
+            "short_name": "Globally-Locally-by Cohort",
+            "original_name": "Globally/Locally/by Cohort",
+            "optional": true,
+            "section_number": null,
+            "section_title": null,
+            "instructions": [
+                "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
+                "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
+            ]
+        },
+        "technical": {
+            "name": "Globally-Locally-by Cohort",
+            "data_type": "Text",
+            "definition": "C68846\nCNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value (expressed as an absolute value or percentage) for the estimated number of participants enrolled at the time of the protocol amendment.",
+            "guidance": "",
+            "conformance": "Optional",
+            "cardinality": "One to one; One to amendment number",
+            "relationship": "Amendment Details",
+            "value": "Approximate <#/%> enrolled <Globally/Locally/by Cohort>",
+            "business_rules": "Value Allowed: Yes\nRelationship: Statement\nConcept: C68846, CNEW",
+            "repeating": "Yes, reuse to Section 12.3",
             "ct": []
         }
     },
@@ -1626,10 +1703,10 @@
             "notes": ""
         }
     },
-    "YesNo": {
+    "Yes-No": {
         "template": {
             "long_name": "Yes/No",
-            "short_name": "YesNo",
+            "short_name": "Yes-No",
             "original_name": "Yes/No",
             "optional": false,
             "section_number": null,
@@ -1637,7 +1714,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "YesNo",
+            "name": "Yes-No",
             "data_type": "Valid Value",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the amendment likely to have a substantial impact on the reliability and robustness of the data generated in the clinical trial.",
             "guidance": "N/A",
@@ -1714,10 +1791,10 @@
             "ct": []
         }
     },
-    "Section  and Name of Change": {
+    "Section - and Name of Change": {
         "template": {
             "long_name": "Enter Section # and Name of Change",
-            "short_name": "Section  and Name of Change",
+            "short_name": "Section - and Name of Change",
             "original_name": "Section # and Name of Change",
             "optional": false,
             "section_number": "12.3",
@@ -1728,7 +1805,7 @@
             ]
         },
         "technical": {
-            "name": "Section  and Name of Change",
+            "name": "Section - and Name of Change",
             "data_type": "Valid Value",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe protocol section number and name containing the change introduced in the current version of the protocol.",
             "guidance": "N/A",
@@ -2845,10 +2922,10 @@
             ]
         }
     },
-    "DrugDevice Combination Product Indicator": {
+    "Drug-Device Combination Product Indicator": {
         "template": {
             "long_name": "Drug/Device Combination Product Indicator",
-            "short_name": "DrugDevice Combination Product Indicator",
+            "short_name": "Drug-Device Combination Product Indicator",
             "original_name": "Drug/Device Combination Product Indicator",
             "optional": false,
             "section_number": "1.1.2",
@@ -2856,7 +2933,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "DrugDevice Combination Product Indicator",
+            "name": "Drug-Device Combination Product Indicator",
             "data_type": "Valid Value",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the clinical trial is testing a drug device combination product.",
             "guidance": "N/A",
@@ -2985,10 +3062,10 @@
             "notes": ""
         }
     },
-    "TargetMaximum": {
+    "Target-Maximum": {
         "template": {
             "long_name": "Target/Maximum",
-            "short_name": "TargetMaximum",
+            "short_name": "Target-Maximum",
             "original_name": "Target/Maximum",
             "optional": false,
             "section_number": "1.1.2",
@@ -2996,7 +3073,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "TargetMaximum",
+            "name": "Target-Maximum",
             "data_type": "Valid Value",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA characterisation or classification of the trial participant numbers as to whether the numbers reflect a target or maximum.",
             "guidance": "State the expected number of participants to be assigned to trial intervention/enrolled. Indicate whether the number provided is the target or maximum number of individuals to be randomly assigned to trial intervention/enrolled.",
@@ -3331,10 +3408,10 @@
             "ct": []
         }
     },
-    "Trialspecific Intervention Risks and Mitigations": {
+    "Trial-specific Intervention Risks and Mitigations": {
         "template": {
             "long_name": "Enter Trial-specific Intervention Risks and Mitigations",
-            "short_name": "Trialspecific Intervention Risks and Mitigations",
+            "short_name": "Trial-specific Intervention Risks and Mitigations",
             "original_name": "Trial-specific Intervention Risks and Mitigations",
             "optional": true,
             "section_number": "2.2.1",
@@ -3342,7 +3419,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "Trialspecific Intervention Risks and Mitigations",
+            "name": "Trial-specific Intervention Risks and Mitigations",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of the potential risks associated with the trial interventions and mitigation strategies to be employed within the trial.",
             "guidance": "Trial Intervention \u2013 Describe risks related to trial-specific treatments and interventions. For the protocol, focus on the relevant key risks for THIS trial. Provide a brief description of strategies to mitigate identified risks or provide a cross-reference to the relevant protocol section.",
@@ -3353,12 +3430,25 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 2.2.1 Risk Summary and Mitigation Strategy\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Trial-specific Intervention Risks and Mitigations",
+            "notes": ""
         }
     },
-    "Trialspecific Procedure Risks and Mitigations": {
+    "Trial-specific Procedure Risks and Mitigations": {
         "template": {
             "long_name": "Enter Trial-specific Procedure Risks and Mitigations",
-            "short_name": "Trialspecific Procedure Risks and Mitigations",
+            "short_name": "Trial-specific Procedure Risks and Mitigations",
             "original_name": "Trial-specific Procedure Risks and Mitigations",
             "optional": true,
             "section_number": "2.2.1",
@@ -3366,7 +3456,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "Trialspecific Procedure Risks and Mitigations",
+            "name": "Trial-specific Procedure Risks and Mitigations",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of the potential risks associated with the trial procedures and mitigation strategies to be employed within the trial.",
             "guidance": "Trial Procedures \u2013 Describe risks associated with the design (e.g., placebo arm) and procedures specific to this trial (e.g., biopsies), and any measures to control or mitigate the risks. Provide a brief description of strategies to mitigate identified risks or provide a cross-reference to the relevant protocol section. This is not intended to be an exhaustive list of all possible risks associated with trial procedures but should focus on the unique risks inherent in the design or less common or high-risk procedures. As above, provide a brief description of strategies to mitigate identified risks or provide a cross-reference to the relevant protocol section.",
@@ -3377,12 +3467,25 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 2.2.1 Risk Summary and Mitigation Strategy\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Trial-specific Procedure Risks and Mitigations",
+            "notes": ""
         }
     },
-    "Trialspecific Other Risks and Mitigations": {
+    "Trial-specific Other Risks and Mitigations": {
         "template": {
             "long_name": "Enter Trial-specific Other Risks and Mitigations",
-            "short_name": "Trialspecific Other Risks and Mitigations",
+            "short_name": "Trial-specific Other Risks and Mitigations",
             "original_name": "Trial-specific Other Risks and Mitigations",
             "optional": true,
             "section_number": "2.2.1",
@@ -3390,7 +3493,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "Trialspecific Other Risks and Mitigations",
+            "name": "Trial-specific Other Risks and Mitigations",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of the potential risks associated with other trial-related agents and mitigation strategies to be employed within the trial.",
             "guidance": "Other \u2013 Consider risks associated with other items (e.g., challenge agents, imaging agents, medical devices). This could include discussion of risk mitigation for special populations, if not described elsewhere. Insert a line for each, as needed.",
@@ -3401,6 +3504,19 @@
             "business_rules": "Value Allowed: Yes\nRelationship: 2.2.1 Risk Summary and Mitigation Strategy\nConcept: CNEW",
             "repeating": "No",
             "ct": []
+        },
+        "usdm": {
+            "items": [
+                {
+                    "attribute": "text",
+                    "klass": "NarrativeContent",
+                    "notes": "",
+                    "path": "StudyVersion/@documentVersion/StudyProtocolDocumentVersion/@contents/NarrativeContent/@text"
+                }
+            ],
+            "map_status": "Mapped",
+            "name": "Trial-specific Other Risks and Mitigations",
+            "notes": ""
         }
     },
     "Benefit Summary": {
@@ -3440,10 +3556,10 @@
             "notes": ""
         }
     },
-    "Overall RiskBenefit Assessment": {
+    "Overall Risk-Benefit Assessment": {
         "template": {
             "long_name": "Enter Overall Risk-Benefit Assessment",
-            "short_name": "Overall RiskBenefit Assessment",
+            "short_name": "Overall Risk-Benefit Assessment",
             "original_name": "Overall Risk-Benefit Assessment",
             "optional": false,
             "section_number": "2.2.3",
@@ -3451,7 +3567,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "Overall RiskBenefit Assessment",
+            "name": "Overall Risk-Benefit Assessment",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA short textual description containing the risks and benefits associated with participation in the trial.",
             "guidance": "Provide a succinct, concluding statement on the perceived balance between risks that have been identified from cumulative safety data, protocol procedures, and anticipated efficacy/benefits within the context of the proposed trial.",
@@ -5413,10 +5529,10 @@
             "notes": ""
         }
     },
-    "Management of Loss to FollowUp": {
+    "Management of Loss to Follow-Up": {
         "template": {
             "long_name": "Enter Management of Loss to Follow-Up",
-            "short_name": "Management of Loss to FollowUp",
+            "short_name": "Management of Loss to Follow-Up",
             "original_name": "Management of Loss to Follow-Up",
             "optional": false,
             "section_number": "7.3",
@@ -5424,7 +5540,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "Management of Loss to FollowUp",
+            "name": "Management of Loss to Follow-Up",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe mitigation strategies to be employed for the loss or lack of continuation of a participant to follow-up, including the frequency by which follow-up occurs.",
             "guidance": "Describe how the trial will define how participants are lost to follow-up. In general, participants should be considered lost to follow-up only if they cannot be reached despite multiple attempts to contact. Also describe approaches that will be used to minimise loss to follow-up, such as multiple, diverse methods to remain in contact with participants (e.g., telephone calls, texts, and emails to the participant) and how contacts will be recorded.",
@@ -6276,7 +6392,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "Backup Method for Reporting",
+            "name": "Back-up Method for Reporting",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of alternative techniques by which trial related events, such as adverse events, serious adverse events, product complaints, medical device product complaints, and pregnancy and postpartum events, are reported to the sponsor and/or regulatory authority.",
             "guidance": "N/A",
@@ -6286,7 +6402,8 @@
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: Event Type, Situational Scope\nConcept: CNEW",
             "repeating": "Yes, repeatable for each event type and situational scope",
-            "ct": []
+            "ct": [],
+            "short_name": "Backup Method for Reporting"
         }
     },
     "Event Collection and Reporting Timing": {
@@ -6435,10 +6552,10 @@
             "ct": []
         }
     },
-    "Followup": {
+    "Follow-up": {
         "template": {
             "long_name": "Enter Follow-up",
-            "short_name": "Followup",
+            "short_name": "Follow-up",
             "original_name": "Follow-up",
             "optional": false,
             "section_number": "9.2.2",
@@ -6446,7 +6563,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "Followup",
+            "name": "Follow-up",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of the procedures for follow-up, including the assessment tools that will be used to monitor an event and the duration of follow-up.",
             "guidance": "Specify the procedures for follow-up. Include the assessment tools that will be used to monitor the events and the duration of follow-up after appearance of the events.",
@@ -7380,10 +7497,10 @@
             "notes": ""
         }
     },
-    "RiskBased Quality Management": {
+    "Risk-Based Quality Management": {
         "template": {
             "long_name": "Enter Risk-Based Quality Management",
-            "short_name": "RiskBased Quality Management",
+            "short_name": "Risk-Based Quality Management",
             "original_name": "Risk-Based Quality Management",
             "optional": false,
             "section_number": "11.6",
@@ -7391,7 +7508,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "RiskBased Quality Management",
+            "name": "Risk-Based Quality Management",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of how potential risks and critical to quality factors associated with the trial will be identified and handled.",
             "guidance": "Describe the identified critical to quality factors, associated risks and risk mitigation strategies in the trial or refer to a separate document where this is described.",
@@ -7783,6 +7900,56 @@
             "notes": ""
         }
     },
+    "Country-Region Specific Requirements": {
+        "template": {
+            "long_name": "Enter Country/Region Specific Requirements",
+            "short_name": "Country-Region Specific Requirements",
+            "original_name": "Country/Region Specific Requirements",
+            "optional": true,
+            "section_number": "12.2",
+            "section_title": "Country/Region-Specific Differences",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Country-Region-Specific Requirements",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of any country or region-specific requirements related to the trial but not related to individual items in the protocol.",
+            "guidance": "Although global clinical trial practices are increasingly harmonised, some country/ region-specific differences in requirements do exist (e.g., document retention periods, contraception requirements). Where differences in requirements cannot be reconciled, sponsors should explain how they will document and communicate country/region-specific differences (e.g., by country/region-specific amendments or addenda).\nAn alternative to country/region-specific amendments is to list the specific differences by country or countries in this section, including a reference to the relevant section of the protocol where the differing requirement applies.",
+            "conformance": "Optional If there is Country/Region-specific differences",
+            "cardinality": "One to many",
+            "relationship": "12.2",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 12.2 Country /Region Identifier ;Country/Region-Specific Differences\nConcept: CNEW",
+            "repeating": "Yes, repeatable for each Country/Region",
+            "ct": [],
+            "short_name": "Country-Region Specific Requirements"
+        }
+    },
+    "Country-Region Specific Protocol Clarifications": {
+        "template": {
+            "long_name": "Enter Country/Region Specific Protocol Clarifications",
+            "short_name": "Country-Region Specific Protocol Clarifications",
+            "original_name": "Country/Region Specific Protocol Clarifications",
+            "optional": true,
+            "section_number": "12.2",
+            "section_title": "Country/Region-Specific Differences",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Country-Region-specific Protocol Clarifications",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of any country or region-specific clarifications related to a protocol item.",
+            "guidance": "Although global clinical trial practices are increasingly harmonised, some country/ region-specific differences in requirements do exist (e.g., document retention periods, contraception requirements). Where differences in requirements cannot be reconciled, sponsors should explain how they will document and communicate country/region-specific differences (e.g., by country/region-specific amendments or addenda).\nAn alternative to country/region-specific amendments is to list the specific differences by country or countries in this section, including a reference to the relevant section of the protocol where the differing requirement applies.",
+            "conformance": "Optional if there is Country/Region-specific differences",
+            "cardinality": "One to many",
+            "relationship": "12.2",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: 12.2 Country /Region Identifier Country/Region-Specific Differences\nConcept: CNEW",
+            "repeating": "Yes, repeatable for each country/region",
+            "ct": [],
+            "short_name": "Country-Region Specific Protocol Clarifications"
+        }
+    },
     "Sponsor Approval Date": {
         "template": {
             "long_name": "Enter Sponsor Approval Date",
@@ -7911,7 +8078,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "IMPNIMP",
+            "name": "IMP-NIMP",
             "data_type": "Valid value",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the investigational intervention is an investigational medicinal product or an auxiliary medicinal product.",
             "guidance": "N/A",
@@ -7939,59 +8106,6 @@
                 }
             ],
             "short_name": "IMP or NIMP"
-        }
-    },
-    "WHO UTN Number": {
-        "template": {
-            "long_name": "WHO/UTN Number",
-            "short_name": "WHO UTN Number",
-            "original_name": "WHO/UTN Number",
-            "optional": true,
-            "section_number": null,
-            "section_title": null,
-            "instructions": []
-        },
-        "technical": {
-            "name": "WHOUTN Number",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA sequence of characters used to identify a clinical trial, as assigned by the World Health Organisation's International Clinical Trial's Registry Platform (ICTRP).",
-            "guidance": "Include all numbers that are applicable for the trial and available at the time of protocol or amendment finalisation. Delete prompts for numbers not available at the time of document finalisation. Delete unused fields. Add fields for \u201cother\u201d if more than one is needed.",
-            "conformance": "Optional",
-            "cardinality": "One to one; One to Sponsor Protocol Identifier",
-            "relationship": "Title Page",
-            "value": "UTN/WHO: Uxxxx-xxxx-xxxx with X being an integer",
-            "business_rules": "Value Allowed: Yes; \nRelationship: Heading; Sponsor Protocol Identifier; \nConcept: CNEW",
-            "repeating": "No",
-            "ct": [],
-            "short_name": "WHO UTN Number"
-        }
-    },
-    "Globally Locally Cohort": {
-        "template": {
-            "long_name": "Globally/Locally/by Cohort",
-            "short_name": "Globally Locally Cohort",
-            "original_name": "Globally/Locally/by Cohort",
-            "optional": true,
-            "section_number": null,
-            "section_title": null,
-            "instructions": [
-                "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
-                "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
-            ]
-        },
-        "technical": {
-            "name": "GloballyLocallyby Cohort",
-            "data_type": "Text",
-            "definition": "C68846\nCNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value (expressed as an absolute value or percentage) for the estimated number of participants enrolled at the time of the protocol amendment.",
-            "guidance": "",
-            "conformance": "Optional",
-            "cardinality": "One to one; One to amendment number",
-            "relationship": "Amendment Details",
-            "value": "Approximate <#/%> enrolled <Globally/Locally/by Cohort>",
-            "business_rules": "Value Allowed: Yes\nRelationship: Statement\nConcept: C68846, CNEW",
-            "repeating": "Yes, reuse to Section 12.3",
-            "ct": [],
-            "short_name": "Globally Locally Cohort"
         }
     },
     "Control Type": {
@@ -8194,56 +8308,6 @@
             "map_status": "Mapped",
             "name": "Blinded Roles",
             "notes": ""
-        }
-    },
-    "Country Region Specific Requirements": {
-        "template": {
-            "long_name": "Enter Country/Region Specific Requirements",
-            "short_name": "Country Region Specific Requirements",
-            "original_name": "Country/Region Specific Requirements",
-            "optional": true,
-            "section_number": "12.2",
-            "section_title": "Country/Region-Specific Differences",
-            "instructions": []
-        },
-        "technical": {
-            "name": "CountryRegionSpecific Requirements",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of any country or region-specific requirements related to the trial but not related to individual items in the protocol.",
-            "guidance": "Although global clinical trial practices are increasingly harmonised, some country/ region-specific differences in requirements do exist (e.g., document retention periods, contraception requirements). Where differences in requirements cannot be reconciled, sponsors should explain how they will document and communicate country/region-specific differences (e.g., by country/region-specific amendments or addenda).\nAn alternative to country/region-specific amendments is to list the specific differences by country or countries in this section, including a reference to the relevant section of the protocol where the differing requirement applies.",
-            "conformance": "Optional If there is Country/Region-specific differences",
-            "cardinality": "One to many",
-            "relationship": "12.2",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: 12.2 Country /Region Identifier ;Country/Region-Specific Differences\nConcept: CNEW",
-            "repeating": "Yes, repeatable for each Country/Region",
-            "ct": [],
-            "short_name": "Country Region Specific Requirements"
-        }
-    },
-    "Country Region Specific Protocol Clarifications": {
-        "template": {
-            "long_name": "Enter Country/Region Specific Protocol Clarifications",
-            "short_name": "Country Region Specific Protocol Clarifications",
-            "original_name": "Country/Region Specific Protocol Clarifications",
-            "optional": true,
-            "section_number": "12.2",
-            "section_title": "Country/Region-Specific Differences",
-            "instructions": []
-        },
-        "technical": {
-            "name": "CountryRegionspecific Protocol Clarifications",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of any country or region-specific clarifications related to a protocol item.",
-            "guidance": "Although global clinical trial practices are increasingly harmonised, some country/ region-specific differences in requirements do exist (e.g., document retention periods, contraception requirements). Where differences in requirements cannot be reconciled, sponsors should explain how they will document and communicate country/region-specific differences (e.g., by country/region-specific amendments or addenda).\nAn alternative to country/region-specific amendments is to list the specific differences by country or countries in this section, including a reference to the relevant section of the protocol where the differing requirement applies.",
-            "conformance": "Optional if there is Country/Region-specific differences",
-            "cardinality": "One to many",
-            "relationship": "12.2",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: 12.2 Country /Region Identifier Country/Region-Specific Differences\nConcept: CNEW",
-            "repeating": "Yes, repeatable for each country/region",
-            "ct": [],
-            "short_name": "Country Region Specific Protocol Clarifications"
         }
     },
     "Arm Type": {
@@ -8589,7 +8653,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "PopulationLevel Summary",
+            "name": "Population-Level Summary",
             "data_type": "Text",
             "definition": "C188853\nFor review purpose, see definition of the controlled terminology below\n A synopsis of the clinical endpoint of interest within the analysis target study population.",
             "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
@@ -8724,7 +8788,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "Diseaserelated Events or Outcomes Not Qualifying as AEs or SAEs",
+            "name": "Disease-related Events or Outcomes Not Qualifying as AEs or SAEs",
             "data_type": "Text",
             "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of events or outcomes related to the trial disease indication but not qualifying as adverse events or serious adverse events within the trial, or state not applicable.",
             "guidance": "Specify any DREs, DROs, or both that will not be reported as AEs or SAEs (e.g., seizures in anticonvulsant trials) or state \u201cNot applicable.\u201d",

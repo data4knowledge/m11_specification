@@ -1,14 +1,13 @@
-IMPNIMP: IMP or NIMP
-WHOUTN Number: WHO UTN Number
-GloballyLocallyby Cohort: "Globally Locally Cohort"
-Blinded roles: "Blinded Roles"
-CountryRegionSpecific Requirements: Country Region Specific Requirements
-CountryRegionspecific Protocol Clarifications: Country Region Specific Protocol Clarifications
+"Blinded roles": "Blinded Roles"
 "Secondary Objective Number": "Secondary Objective"
 "Statistical Method of Analysis": "Statistical Analysis Method"
 "Minimum age": "Minimum Age"
 "Rationale for Trial Intervention Model": "Rationale for Intervention Model"
-"PopulationLevel Summary": "Population Level Summary"
+"Population-Level Summary": "Population Level Summary"
 "Analysis Associated with Exploratory Objectivess": "Analysis Associated with Exploratory Objectives"
-"Diseaserelated Events or Outcomes Not Qualifying as AEs or SAEs": "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs"
+"Disease-related Events or Outcomes Not Qualifying as AEs or SAEs": "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs"
 "describe method": "Describe Method"
+"Back-up Method for Reporting": "Backup Method for Reporting"
+"IMP-NIMP": "IMP or NIMP"
+"Country-Region-Specific Requirements": "Country-Region Specific Requirements"
+"Country-Region-specific Protocol Clarifications": "Country-Region Specific Protocol Clarifications"

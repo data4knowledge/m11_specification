@@ -202,18 +202,18 @@
         "section_title": null,
         "instructions": []
     },
-    "CoSponsor Name": {
+    "Co-Sponsor Name": {
         "long_name": "Enter Co-Sponsor Name",
-        "short_name": "CoSponsor Name",
+        "short_name": "Co-Sponsor Name",
         "original_name": "Co-Sponsor Name",
         "optional": true,
         "section_number": null,
         "section_title": null,
         "instructions": []
     },
-    "CoSponsor Legal Address": {
+    "Co-Sponsor Legal Address": {
         "long_name": "Enter Co-Sponsor Legal Address",
-        "short_name": "CoSponsor Legal Address",
+        "short_name": "Co-Sponsor Legal Address",
         "original_name": "Co-Sponsor Legal Address",
         "optional": true,
         "section_number": null,
@@ -318,6 +318,15 @@
         "section_title": null,
         "instructions": []
     },
+    "WHO-UTN Number": {
+        "long_name": "WHO/UTN Number",
+        "short_name": "WHO-UTN Number",
+        "original_name": "WHO/UTN Number",
+        "optional": true,
+        "section_number": null,
+        "section_title": null,
+        "instructions": []
+    },
     "Other Regulatory or Clinical Trial Identifier": {
         "long_name": "Other Regulatory or Clinical Trial Identifier",
         "short_name": "Other Regulatory or Clinical Trial Identifier",
@@ -358,10 +367,22 @@
         "section_title": null,
         "instructions": []
     },
-    "": {
+    "---": {
         "long_name": "#/%",
-        "short_name": "",
+        "short_name": "---",
         "original_name": "#/%",
+        "optional": true,
+        "section_number": null,
+        "section_title": null,
+        "instructions": [
+            "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
+            "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
+        ]
+    },
+    "Globally-Locally-by Cohort": {
+        "long_name": "Globally/Locally/by Cohort",
+        "short_name": "Globally-Locally-by Cohort",
+        "original_name": "Globally/Locally/by Cohort",
         "optional": true,
         "section_number": null,
         "section_title": null,
@@ -399,9 +420,9 @@
             "Describe key changes briefly. Changes which are included in the amendment but unrelated to the key changes do not need to be described here."
         ]
     },
-    "YesNo": {
+    "Yes-No": {
         "long_name": "Yes/No",
-        "short_name": "YesNo",
+        "short_name": "Yes-No",
         "original_name": "Yes/No",
         "optional": false,
         "section_number": null,
@@ -426,9 +447,9 @@
         "section_title": "Prior Protocol Amendment(s)",
         "instructions": []
     },
-    "Section  and Name of Change": {
+    "Section - and Name of Change": {
         "long_name": "Enter Section # and Name of Change",
-        "short_name": "Section  and Name of Change",
+        "short_name": "Section - and Name of Change",
         "original_name": "Section # and Name of Change",
         "optional": false,
         "section_number": "12.3",
@@ -537,9 +558,9 @@
         "section_title": "Overall Design",
         "instructions": []
     },
-    "DrugDevice Combination Product Indicator": {
+    "Drug-Device Combination Product Indicator": {
         "long_name": "Drug/Device Combination Product Indicator",
-        "short_name": "DrugDevice Combination Product Indicator",
+        "short_name": "Drug-Device Combination Product Indicator",
         "original_name": "Drug/Device Combination Product Indicator",
         "optional": false,
         "section_number": "1.1.2",
@@ -575,9 +596,9 @@
         "section_title": "Overall Design",
         "instructions": []
     },
-    "TargetMaximum": {
+    "Target-Maximum": {
         "long_name": "Target/Maximum",
-        "short_name": "TargetMaximum",
+        "short_name": "Target-Maximum",
         "original_name": "Target/Maximum",
         "optional": false,
         "section_number": "1.1.2",
@@ -593,9 +614,9 @@
         "section_title": "Overall Design",
         "instructions": []
     },
-    "randomly assigned to trial interventionenrolled": {
+    "randomly assigned to trial intervention-enrolled": {
         "long_name": "randomly assigned to trial intervention/enrolled",
-        "short_name": "randomly assigned to trial interventionenrolled",
+        "short_name": "randomly assigned to trial intervention-enrolled",
         "original_name": "randomly assigned to trial intervention/enrolled",
         "optional": false,
         "section_number": "1.1.2",
@@ -729,27 +750,27 @@
         "section_title": "Purpose of Trial",
         "instructions": []
     },
-    "Trialspecific Intervention Risks and Mitigations": {
+    "Trial-specific Intervention Risks and Mitigations": {
         "long_name": "Enter Trial-specific Intervention Risks and Mitigations",
-        "short_name": "Trialspecific Intervention Risks and Mitigations",
+        "short_name": "Trial-specific Intervention Risks and Mitigations",
         "original_name": "Trial-specific Intervention Risks and Mitigations",
         "optional": true,
         "section_number": "2.2.1",
         "section_title": "Risk Summary and Mitigation Strategy",
         "instructions": []
     },
-    "Trialspecific Procedure Risks and Mitigations": {
+    "Trial-specific Procedure Risks and Mitigations": {
         "long_name": "Enter Trial-specific Procedure Risks and Mitigations",
-        "short_name": "Trialspecific Procedure Risks and Mitigations",
+        "short_name": "Trial-specific Procedure Risks and Mitigations",
         "original_name": "Trial-specific Procedure Risks and Mitigations",
         "optional": true,
         "section_number": "2.2.1",
         "section_title": "Risk Summary and Mitigation Strategy",
         "instructions": []
     },
-    "Trialspecific Other Risks and Mitigations": {
+    "Trial-specific Other Risks and Mitigations": {
         "long_name": "Enter Trial-specific Other Risks and Mitigations",
-        "short_name": "Trialspecific Other Risks and Mitigations",
+        "short_name": "Trial-specific Other Risks and Mitigations",
         "original_name": "Trial-specific Other Risks and Mitigations",
         "optional": true,
         "section_number": "2.2.1",
@@ -765,9 +786,9 @@
         "section_title": "Benefit Summary",
         "instructions": []
     },
-    "Overall RiskBenefit Assessment": {
+    "Overall Risk-Benefit Assessment": {
         "long_name": "Enter Overall Risk-Benefit Assessment",
-        "short_name": "Overall RiskBenefit Assessment",
+        "short_name": "Overall Risk-Benefit Assessment",
         "original_name": "Overall Risk-Benefit Assessment",
         "optional": false,
         "section_number": "2.2.3",
@@ -1164,9 +1185,9 @@
         "section_title": "Trial Intervention And Concomitant Therapy",
         "instructions": []
     },
-    "RegimenTreatment PeriodVaccination Regimen": {
+    "Regimen-Treatment Period-Vaccination Regimen": {
         "long_name": "Enter Regimen/Treatment Period/Vaccination Regimen",
-        "short_name": "RegimenTreatment PeriodVaccination Regimen",
+        "short_name": "Regimen-Treatment Period-Vaccination Regimen",
         "original_name": "Regimen/Treatment Period/Vaccination Regimen",
         "optional": true,
         "section_number": "6",
@@ -1398,9 +1419,9 @@
         "section_title": "Participant Discontinuation or Withdrawal from the Trial",
         "instructions": []
     },
-    "Management of Loss to FollowUp": {
+    "Management of Loss to Follow-Up": {
         "long_name": "Enter Management of Loss to Follow-Up",
-        "short_name": "Management of Loss to FollowUp",
+        "short_name": "Management of Loss to Follow-Up",
         "original_name": "Management of Loss to Follow-Up",
         "optional": false,
         "section_number": "7.3",
@@ -1704,9 +1725,9 @@
         "section_title": "Collection Procedures",
         "instructions": []
     },
-    "Followup": {
+    "Follow-up": {
         "long_name": "Enter Follow-up",
-        "short_name": "Followup",
+        "short_name": "Follow-up",
         "original_name": "Follow-up",
         "optional": false,
         "section_number": "9.2.2",
@@ -1985,9 +2006,9 @@
         "section_title": "Insurance and Indemnity",
         "instructions": []
     },
-    "RiskBased Quality Management": {
+    "Risk-Based Quality Management": {
         "long_name": "Enter Risk-Based Quality Management",
-        "short_name": "RiskBased Quality Management",
+        "short_name": "Risk-Based Quality Management",
         "original_name": "Risk-Based Quality Management",
         "optional": false,
         "section_number": "11.6",
@@ -2102,10 +2123,28 @@
         "section_title": "Clinical Laboratory Tests",
         "instructions": []
     },
-    "CountryRegion Identifier": {
+    "Country-Region Identifier": {
         "long_name": "Country/Region Identifier",
-        "short_name": "CountryRegion Identifier",
+        "short_name": "Country-Region Identifier",
         "original_name": "Country/Region Identifier",
+        "optional": true,
+        "section_number": "12.2",
+        "section_title": "Country/Region-Specific Differences",
+        "instructions": []
+    },
+    "Country-Region Specific Requirements": {
+        "long_name": "Enter Country/Region Specific Requirements",
+        "short_name": "Country-Region Specific Requirements",
+        "original_name": "Country/Region Specific Requirements",
+        "optional": true,
+        "section_number": "12.2",
+        "section_title": "Country/Region-Specific Differences",
+        "instructions": []
+    },
+    "Country-Region Specific Protocol Clarifications": {
+        "long_name": "Enter Country/Region Specific Protocol Clarifications",
+        "short_name": "Country-Region Specific Protocol Clarifications",
+        "original_name": "Country/Region Specific Protocol Clarifications",
         "optional": true,
         "section_number": "12.2",
         "section_title": "Country/Region-Specific Differences",
@@ -2120,9 +2159,9 @@
         "section_title": "Prior Protocol Amendment(s)",
         "instructions": []
     },
-    "or  enrolled globallylocallyper cohort": {
+    "- or - enrolled globally-locally-per cohort": {
         "long_name": "Enter # or % enrolled globally/locally/per cohort",
-        "short_name": "or  enrolled globallylocallyper cohort",
+        "short_name": "- or - enrolled globally-locally-per cohort",
         "original_name": "# or % enrolled globally/locally/per cohort",
         "optional": true,
         "section_number": "12.3",
@@ -2185,27 +2224,6 @@
         "section_title": "Trial Intervention And Concomitant Therapy",
         "instructions": []
     },
-    "WHO UTN Number": {
-        "long_name": "WHO/UTN Number",
-        "short_name": "WHO UTN Number",
-        "original_name": "WHO/UTN Number",
-        "optional": true,
-        "section_number": null,
-        "section_title": null,
-        "instructions": []
-    },
-    "Globally Locally Cohort": {
-        "long_name": "Globally/Locally/by Cohort",
-        "short_name": "Globally Locally Cohort",
-        "original_name": "Globally/Locally/by Cohort",
-        "optional": true,
-        "section_number": null,
-        "section_title": null,
-        "instructions": [
-            "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
-            "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
-        ]
-    },
     "Control Type": {
         "long_name": "Control type",
         "short_name": "Control Type",
@@ -2231,24 +2249,6 @@
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
-        "instructions": []
-    },
-    "Country Region Specific Requirements": {
-        "long_name": "Enter Country/Region Specific Requirements",
-        "short_name": "Country Region Specific Requirements",
-        "original_name": "Country/Region Specific Requirements",
-        "optional": true,
-        "section_number": "12.2",
-        "section_title": "Country/Region-Specific Differences",
-        "instructions": []
-    },
-    "Country Region Specific Protocol Clarifications": {
-        "long_name": "Enter Country/Region Specific Protocol Clarifications",
-        "short_name": "Country Region Specific Protocol Clarifications",
-        "original_name": "Country/Region Specific Protocol Clarifications",
-        "optional": true,
-        "section_number": "12.2",
-        "section_title": "Country/Region-Specific Differences",
         "instructions": []
     },
     "Arm Type": {
