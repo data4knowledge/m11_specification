@@ -9,10 +9,11 @@ template = M11Template(filepath="data/input_data/m11/m11-template-spec.docx")
 template.process()
 template.rename_elements(filepath="data/input_data/m11/template_renames.yaml")
 template.insert_elements(filepath="data/input_data/m11/template_inserts.yaml")
+template.delete_elements(filepath="data/input_data/m11/template_deletes.yaml")
 technical = M11Technical(filepath="data/input_data/m11/m11-technical-spec.docx")
 technical.process()
 technical.rename_elements(filepath="data/input_data/m11/technical_renames.yaml")
-#technical.split_elements(filepath="data/input_data/m11/technical_split.yaml")
+technical.delete_elements(filepath="data/input_data/m11/technical_deletes.yaml")
 
 with open("data/output_data/template_document.json", "w") as f:
     json.dump(template.document, f, indent=4)

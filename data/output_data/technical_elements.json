@@ -1808,19 +1808,6 @@
             }
         ]
     },
-    "Table of Contents": {
-        "name": "Table of Contents",
-        "data_type": "Word Generated Table of Contents",
-        "definition": "N/A",
-        "guidance": "N/A",
-        "conformance": "Generated",
-        "cardinality": "N/A",
-        "relationship": "Table of Contents",
-        "value": "Text",
-        "business_rules": "Value Allowed: Yes\nRelationship: N/A\nConcept: N/A",
-        "repeating": "No",
-        "ct": []
-    },
     "Primary and Secondary Objectives and Estimands": {
         "name": "Primary and Secondary Objectives and Estimands",
         "data_type": "Text",

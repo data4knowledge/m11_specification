@@ -142,6 +142,18 @@ class M11Template:
             if key not in self.elements:
                 self.elements[key] = value
 
+    def delete_elements(self, filepath: str) -> None:
+        """
+        Delete elements from the elements dictionary.
+        """
+        with open(filepath, "r") as f:
+            insert_dict = yaml.safe_load(f)
+        for key, value in insert_dict.items():
+            if key in self.elements:
+                self.elements.pop(key)
+            else:
+                print(f"Template delete not required: {key}")
+
     def _detect_start(self, para: RawParagraph) -> bool:
         """
         Detect the start of the definitions.

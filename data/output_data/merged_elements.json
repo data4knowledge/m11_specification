@@ -8891,6 +8891,153 @@
             ]
         }
     },
+    "Use": {
+        "template": {
+            "long_name": "Select Use",
+            "short_name": "Use",
+            "original_name": "Select Use",
+            "optional": true,
+            "section_number": "6",
+            "section_title": "Trial Intervention And Concomitant Therapy",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Use",
+            "data_type": "Valid Value",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe reason or intention for the use of the trial intervention within the trial arm.",
+            "guidance": "N/A",
+            "conformance": "Optional: if the table used",
+            "cardinality": "One to each intervention",
+            "relationship": "6",
+            "value": "Experimental Intervention(C41161), Placebo(C753), Rescue Medicine(C165835), Background treatment(C165822), Challenge Agent(C158128), Diagnostic(C18020), Additional Required treatment (CNEW)",
+            "business_rules": "Value Allowed: Yes\nRelationship: arm name and use, \nConcept: CNEW",
+            "repeating": "Yes, repeatable for each intervention per arm",
+            "ct": [
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Intervention Use Response",
+                    "definition": "A terminology value set relevant to the intervention use responses within the ICH M11 Protocol model."
+                },
+                {
+                    "ncit_code": "C41161",
+                    "preferred_term": "Experimental Intervention",
+                    "definition": "The drug, device, therapy, procedure, or process under investigation in a clinical study that is believed to have an effect on outcomes of interest in a study (e.g., health-related quality of life, efficacy, safety, pharmacoeconomics"
+                },
+                {
+                    "ncit_code": "C753",
+                    "preferred_term": "Placebo",
+                    "definition": "A pharmaceutical preparation that does not contain the investigational agent and is generally prepared to be physically indistinguishable from the preparation containing the investigational product."
+                },
+                {
+                    "ncit_code": "C165835",
+                    "preferred_term": "Rescue Medicine",
+                    "definition": "Medicinal products identified in the protocol as those that may be administered to subjects when the efficacy of the investigational medicinal product (IMP) is not satisfactory, the effect of the IMP is too great and is likely to cause a hazard to the patient, or to manage an emergency situation."
+                },
+                {
+                    "ncit_code": "C165822",
+                    "preferred_term": "Background Treatment",
+                    "definition": "Medicinal products that are administered to each clinical trial subject, regardless of randomization group, a) to treat the indication which is the object of the study, or b) required in the protocol as part of standard care for a condition that is not the indication under investigation, and is relevant for the clinical trial design."
+                },
+                {
+                    "ncit_code": "C158128",
+                    "preferred_term": "Challenge Agent",
+                    "definition": "A non-investigational medicinal product (NIMP) given to trial subjects to produce a physiological response that is necessary before the pharmacological action of the investigational medicinal product can be assessed."
+                },
+                {
+                    "ncit_code": "C18020",
+                    "preferred_term": "Diagnostic",
+                    "definition": "Any procedure or test to diagnose a disease or disorder."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Additional Required Treatment",
+                    "definition": "A medicinal product that must be administered along with the experimental treatment (e.g., drug studies wherein opioid blockers are administered to prevent overdose)."
+                }
+            ]
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Use",
+            "notes": ""
+        }
+    },
+    "Sourcing": {
+        "template": {
+            "long_name": "Select Sourcing",
+            "short_name": "Sourcing",
+            "original_name": "Select Sourcing",
+            "optional": true,
+            "section_number": "6",
+            "section_title": "Trial Intervention And Concomitant Therapy",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Sourcing",
+            "data_type": "Valid Value",
+            "definition": "CNEW\nCNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the investigational intervention is sourced from a local or central vendor.",
+            "guidance": "N/A",
+            "conformance": "Optional: if the table used",
+            "cardinality": "One to many",
+            "relationship": "6",
+            "value": "Centrally Sourced (CNEW); Locally Sourced (CNEW)",
+            "business_rules": "Value Allowed: Yes\nRelationship: One per each Intervention\nConcept: CNEW",
+            "repeating": "Yes, repeatable for each intervention per arm name",
+            "ct": [
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "ICH M11 Investigational Intervention Sourcing Response",
+                    "definition": "A terminology value set relevant to the investigational intervention source responses within the ICH M11 Protocol model."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Centrally Sourced",
+                    "definition": "An indication that the entity is obtained from a central vendor."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Locally Sourced",
+                    "definition": "An indication that the entity is obtained from a local vendor."
+                }
+            ]
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Sourcing",
+            "notes": ""
+        }
+    },
+    "Route of Administration": {
+        "template": {
+            "long_name": "Select Route of Administration",
+            "short_name": "Route of Administration",
+            "original_name": "Select Route of Administration",
+            "optional": true,
+            "section_number": "6",
+            "section_title": "Trial Intervention And Concomitant Therapy",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Route of Administration",
+            "data_type": "Valid Value",
+            "definition": "C38114\nFor review purpose, see definition of the controlled terminology below\nPath by which the pharmaceutical product is taken into or makes contact with the body.",
+            "guidance": "N/A",
+            "conformance": "Optional: if the table used",
+            "cardinality": "One to each intervention and dosage formulation",
+            "relationship": "6",
+            "value": "Use IDMP (e.g. EDQM, CDISC)",
+            "business_rules": "Value Allowed: Yes\nRelationship: arm name and route of administration\nConcept: C38114",
+            "repeating": "Yes, repeatable for each intervention. Dose formulation, per arm name",
+            "ct": []
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Route of Administration",
+            "notes": ""
+        }
+    },
     "Amendment Details": {
         "template": {
             "long_name": "Amendment Details",

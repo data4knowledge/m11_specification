@@ -1176,37 +1176,10 @@
         "section_title": "Trial Intervention And Concomitant Therapy",
         "instructions": []
     },
-    "Select Route of Administration": {
-        "long_name": "Select Route of Administration",
-        "short_name": "Select Route of Administration",
-        "original_name": "Select Route of Administration",
-        "optional": true,
-        "section_number": "6",
-        "section_title": "Trial Intervention And Concomitant Therapy",
-        "instructions": []
-    },
     "Regimen-Treatment Period-Vaccination Regimen": {
         "long_name": "Enter Regimen/Treatment Period/Vaccination Regimen",
         "short_name": "Regimen-Treatment Period-Vaccination Regimen",
         "original_name": "Regimen/Treatment Period/Vaccination Regimen",
-        "optional": true,
-        "section_number": "6",
-        "section_title": "Trial Intervention And Concomitant Therapy",
-        "instructions": []
-    },
-    "Select Use": {
-        "long_name": "Select Use",
-        "short_name": "Select Use",
-        "original_name": "Select Use",
-        "optional": true,
-        "section_number": "6",
-        "section_title": "Trial Intervention And Concomitant Therapy",
-        "instructions": []
-    },
-    "Select Sourcing": {
-        "long_name": "Select Sourcing",
-        "short_name": "Select Sourcing",
-        "original_name": "Select Sourcing",
         "optional": true,
         "section_number": "6",
         "section_title": "Trial Intervention And Concomitant Therapy",
@@ -2369,6 +2342,33 @@
         "instructions": [
             "All versions should be uniquely identifiable. "
         ]
+    },
+    "Use": {
+        "long_name": "Select Use",
+        "short_name": "Use",
+        "original_name": "Select Use",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Sourcing": {
+        "long_name": "Select Sourcing",
+        "short_name": "Sourcing",
+        "original_name": "Select Sourcing",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Route of Administration": {
+        "long_name": "Select Route of Administration",
+        "short_name": "Route of Administration",
+        "original_name": "Select Route of Administration",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
     },
     "Amendment Details": {
         "long_name": "Amendment Details",

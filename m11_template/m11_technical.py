@@ -73,18 +73,17 @@ class M11Technical:
             else:
                 print(f"Technical rename not required: {key}")
 
-    def split_elements(self, filepath: str) -> None:
+    def delete_elements(self, filepath: str) -> None:
         """
-        Split elements in the elements dictionary.
+        Delete elements from the elements dictionary.
         """
         with open(filepath, "r") as f:
-            split_dict = yaml.safe_load(f)
-        for key, values in split_dict.items():
+            insert_dict = yaml.safe_load(f)
+        for key, value in insert_dict.items():
             if key in self.elements:
-                for value in values:
-                    self.elements[value] = self.elements[key]
-                    self.elements[value]["short_name"] = value
                 self.elements.pop(key)
+            else:
+                print(f"Technical delete not required: {key}")
 
     def _extract_data_elements(self, table: RawTable) -> list[dict]:
         """
