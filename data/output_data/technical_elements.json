@@ -4651,19 +4651,6 @@
         "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.4.X.1, 10.4.X.2, 10.4.X.3, 10.4.X.4, 10.4.X.5).",
         "ct": []
     },
-    "Statistical Method of Analysis 17": {
-        "name": "Statistical Method of Analysis 17",
-        "data_type": "Text",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of the statistical model, hypothesis, and methods of analyses for each objective within the trial.",
-        "guidance": "Describe the statistical analysis methods that will be used to evaluate the Secondary objective(s) and associated estimand(s) in Section 3.2. Ensure that the statistical hypothesis/model/analysis (and corresponding assumptions) is aligned with the Secondary estimand(s). If there is more than one Secondary objective, present each objective as a level 3 heading and present each subsequent heading in Section 10.5 as a level 4 heading.\nFor each objective, state the null and alternative hypotheses, including the pre-planned type 1 error rate, or alternative criteria for evaluating whether the objective has been met, and relevant operating characteristics if appropriate. Describe the statistical model used and the factors that will be included (covariates and interactions) and any rules for handling these factors (for example, pooling of centres).\nIf modelling and simulation methods are to be used, please describe the model (inputs and outputs), the underlying assumptions, and the method of model fitting.",
-        "conformance": "Conditional: when there is Secondary estimand",
-        "cardinality": "One to one",
-        "relationship": "10.5.X.1",
-        "value": "Text",
-        "business_rules": "Value Allowed: Yes\nRelationship: 10.5.X.1 Statistical Analysis Method\nConcept: CNEW",
-        "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
-        "ct": []
-    },
     "Handling of Data in Relation to Secondary Estimands": {
         "name": "Handling of Data in Relation to Secondary Estimands",
         "data_type": "Text",
@@ -4687,32 +4674,6 @@
         "relationship": "10.5.X.3",
         "value": "Text",
         "business_rules": "Value Allowed: Yes\nRelationship: 10.5.X.3 Handling of Missing Data in Relation to Secondary Estimand(s)\nConcept: CNEW",
-        "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
-        "ct": []
-    },
-    "Sensitivity Analysis 18": {
-        "name": "Sensitivity Analysis 18",
-        "data_type": "Text",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of the series of analyses conducted to explore the robustness of inferences from the main estimator to deviations from its underlying modelling assumptions and limitations in the data.",
-        "guidance": "Describe any supplementary analysis, if applicable. Supplementary analyses are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect.",
-        "conformance": "Conditional: when there is Seconday Objective and sensitivity Analysis for a Secondary objective",
-        "cardinality": "One to one",
-        "relationship": "10.5.X.4",
-        "value": "Text",
-        "business_rules": "Value Allowed Yes\nRelationship: 10.5.X.4 Sensitivity Analysis\nConcept: CNEW",
-        "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
-        "ct": []
-    },
-    "Supplementary Analysis 19": {
-        "name": "Supplementary Analysis 19",
-        "data_type": "Text",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of the analyses that are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect.",
-        "guidance": "Describe any supplementary analysis if applicable. Supplementary analyses are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect.",
-        "conformance": "Conditional: when there Supplementary Analysis for a Secondary objective",
-        "cardinality": "One to one",
-        "relationship": "10.5.X.5",
-        "value": "Text",
-        "business_rules": "Value Allowed: Yes\nRelationship: 10.5.X.5 Supplementary Analysis\nConcept: CNEW",
         "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
         "ct": []
     },
@@ -6616,5 +6577,47 @@
             }
         ],
         "short_name": "Previous Amendment Overview Section"
+    },
+    "Secondary Objectives Statistical Analysis Method": {
+        "name": "Statistical Method of Analysis 17",
+        "data_type": "Text",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of the statistical model, hypothesis, and methods of analyses for each objective within the trial.",
+        "guidance": "Describe the statistical analysis methods that will be used to evaluate the Secondary objective(s) and associated estimand(s) in Section 3.2. Ensure that the statistical hypothesis/model/analysis (and corresponding assumptions) is aligned with the Secondary estimand(s). If there is more than one Secondary objective, present each objective as a level 3 heading and present each subsequent heading in Section 10.5 as a level 4 heading.\nFor each objective, state the null and alternative hypotheses, including the pre-planned type 1 error rate, or alternative criteria for evaluating whether the objective has been met, and relevant operating characteristics if appropriate. Describe the statistical model used and the factors that will be included (covariates and interactions) and any rules for handling these factors (for example, pooling of centres).\nIf modelling and simulation methods are to be used, please describe the model (inputs and outputs), the underlying assumptions, and the method of model fitting.",
+        "conformance": "Conditional: when there is Secondary estimand",
+        "cardinality": "One to one",
+        "relationship": "10.5.X.1",
+        "value": "Text",
+        "business_rules": "Value Allowed: Yes\nRelationship: 10.5.X.1 Statistical Analysis Method\nConcept: CNEW",
+        "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
+        "ct": [],
+        "short_name": "Secondary Objectives Statistical Analysis Method"
+    },
+    "Secondary Objectives Sensitivity Analysis": {
+        "name": "Sensitivity Analysis 18",
+        "data_type": "Text",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of the series of analyses conducted to explore the robustness of inferences from the main estimator to deviations from its underlying modelling assumptions and limitations in the data.",
+        "guidance": "Describe any supplementary analysis, if applicable. Supplementary analyses are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect.",
+        "conformance": "Conditional: when there is Seconday Objective and sensitivity Analysis for a Secondary objective",
+        "cardinality": "One to one",
+        "relationship": "10.5.X.4",
+        "value": "Text",
+        "business_rules": "Value Allowed Yes\nRelationship: 10.5.X.4 Sensitivity Analysis\nConcept: CNEW",
+        "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
+        "ct": [],
+        "short_name": "Secondary Objectives Sensitivity Analysis"
+    },
+    "Secondary Objectives Supplementary Analysis": {
+        "name": "Supplementary Analysis 19",
+        "data_type": "Text",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA textual description of the analyses that are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect.",
+        "guidance": "Describe any supplementary analysis if applicable. Supplementary analyses are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect.",
+        "conformance": "Conditional: when there Supplementary Analysis for a Secondary objective",
+        "cardinality": "One to one",
+        "relationship": "10.5.X.5",
+        "value": "Text",
+        "business_rules": "Value Allowed: Yes\nRelationship: 10.5.X.5 Supplementary Analysis\nConcept: CNEW",
+        "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
+        "ct": [],
+        "short_name": "Secondary Objectives Supplementary Analysis"
     }
 }

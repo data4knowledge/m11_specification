@@ -1750,15 +1750,6 @@
         "section_title": "{Supplementary Analysis}",
         "instructions": []
     },
-    "Statistical Analysis Method 3": {
-        "long_name": "Enter Statistical Analysis Method",
-        "short_name": "Statistical Analysis Method 3",
-        "original_name": "Statistical Analysis Method",
-        "optional": false,
-        "section_number": "10.5.1.1",
-        "section_title": "{Statistical Analysis Method}",
-        "instructions": []
-    },
     "Handling of Data in Relation to Secondary Estimands": {
         "long_name": "Enter Handling of Data in Relation to Secondary Estimand(s)",
         "short_name": "Handling of Data in Relation to Secondary Estimands",
@@ -1775,24 +1766,6 @@
         "optional": false,
         "section_number": "10.5.1.3",
         "section_title": "{Handling of Missing Data in Relation to Secondary Estimand(s)}",
-        "instructions": []
-    },
-    "Sensitivity Analysis 4": {
-        "long_name": "Enter Sensitivity Analysis",
-        "short_name": "Sensitivity Analysis 4",
-        "original_name": "Sensitivity Analysis",
-        "optional": false,
-        "section_number": "10.5.1.4",
-        "section_title": "{Sensitivity Analysis}",
-        "instructions": []
-    },
-    "Supplementary Analysis 5": {
-        "long_name": "Enter Supplementary Analysis",
-        "short_name": "Supplementary Analysis 5",
-        "original_name": "Supplementary Analysis",
-        "optional": false,
-        "section_number": "10.5.1.5",
-        "section_title": "{Supplementary Analysis}",
         "instructions": []
     },
     "Safety Analyses": {
@@ -2450,6 +2423,33 @@
         "optional": false,
         "section_number": "12.3",
         "section_title": "Prior Protocol Amendment(s)",
+        "instructions": []
+    },
+    "Secondary Objectives Statistical Analysis Method": {
+        "long_name": "Enter Statistical Analysis Method",
+        "short_name": "Secondary Objectives Statistical Analysis Method",
+        "original_name": "Statistical Analysis Method",
+        "optional": false,
+        "section_number": "10.5.1.1",
+        "section_title": "{Statistical Analysis Method}",
+        "instructions": []
+    },
+    "Secondary Objectives Sensitivity Analysis": {
+        "long_name": "Enter Sensitivity Analysis",
+        "short_name": "Secondary Objectives Sensitivity Analysis",
+        "original_name": "Sensitivity Analysis",
+        "optional": false,
+        "section_number": "10.5.1.4",
+        "section_title": "{Sensitivity Analysis}",
+        "instructions": []
+    },
+    "Secondary Objectives Supplementary Analysis": {
+        "long_name": "Enter Supplementary Analysis",
+        "short_name": "Secondary Objectives Supplementary Analysis",
+        "original_name": "Supplementary Analysis",
+        "optional": false,
+        "section_number": "10.5.1.5",
+        "section_title": "{Supplementary Analysis}",
         "instructions": []
     },
     "Amendment Details": {
