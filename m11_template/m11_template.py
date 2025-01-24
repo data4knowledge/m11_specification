@@ -199,9 +199,10 @@ class M11Template:
             elif isinstance(item, RawTable):
                 for row in item.rows:
                     for cell in row.cells:
-                        for index, cell_item in enumerate(cell.items):
-                            if isinstance(cell_item, RawParagraph):
-                                yield cell_item, index == 0
+                        if cell.first:
+                            for index, cell_item in enumerate(cell.items):
+                                if isinstance(cell_item, RawParagraph):
+                                    yield cell_item, index == 0
 
 
     def _add_elements(self, elements: list[str]) -> None:

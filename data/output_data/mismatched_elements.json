@@ -12,112 +12,6 @@
                 "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
             ]
         },
-        "--- 2": {
-            "long_name": "#/%",
-            "short_name": "--- 2",
-            "original_name": "#/%",
-            "optional": true,
-            "section_number": null,
-            "section_title": null,
-            "instructions": [
-                "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
-                "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
-            ]
-        },
-        "Globally-Locally-by Cohort 3": {
-            "long_name": "Globally/Locally/by Cohort",
-            "short_name": "Globally-Locally-by Cohort 3",
-            "original_name": "Globally/Locally/by Cohort",
-            "optional": true,
-            "section_number": null,
-            "section_title": null,
-            "instructions": [
-                "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
-                "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
-            ]
-        },
-        "--- 4": {
-            "long_name": "#/%",
-            "short_name": "--- 4",
-            "original_name": "#/%",
-            "optional": true,
-            "section_number": null,
-            "section_title": null,
-            "instructions": [
-                "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
-                "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
-            ]
-        },
-        "Globally-Locally-by Cohort 5": {
-            "long_name": "Globally/Locally/by Cohort",
-            "short_name": "Globally-Locally-by Cohort 5",
-            "original_name": "Globally/Locally/by Cohort",
-            "optional": true,
-            "section_number": null,
-            "section_title": null,
-            "instructions": [
-                "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
-                "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
-            ]
-        },
-        "Primary Reason for Amendment 6": {
-            "long_name": "Primary Reason for Amendment",
-            "short_name": "Primary Reason for Amendment 6",
-            "original_name": "Primary Reason for Amendment",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": []
-        },
-        "Amendment Summary 7": {
-            "long_name": "Amendment Summary",
-            "short_name": "Amendment Summary 7",
-            "original_name": "Amendment Summary",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": [
-                "Describe key changes briefly. Changes which are included in the amendment but unrelated to the key changes do not need to be described here."
-            ]
-        },
-        "Amendment Summary 8": {
-            "long_name": "Amendment Summary",
-            "short_name": "Amendment Summary 8",
-            "original_name": "Amendment Summary",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": [
-                "Describe key changes briefly. Changes which are included in the amendment but unrelated to the key changes do not need to be described here."
-            ]
-        },
-        "Yes-No 9": {
-            "long_name": "Yes/No",
-            "short_name": "Yes-No 9",
-            "original_name": "Yes/No",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": []
-        },
-        "Yes-No 10": {
-            "long_name": "Yes/No",
-            "short_name": "Yes-No 10",
-            "original_name": "Yes/No",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": []
-        },
-        "Yes-No 11": {
-            "long_name": "Yes/No",
-            "short_name": "Yes-No 11",
-            "original_name": "Yes/No",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": []
-        },
         "Population diagnosis or condition": {
             "long_name": "Population diagnosis or condition",
             "short_name": "Population diagnosis or condition",
@@ -225,27 +119,27 @@
             "section_title": "Timing and Procedures for Collection and Reporting",
             "instructions": []
         },
-        "Statistical Analysis Method 12": {
+        "Statistical Analysis Method 3": {
             "long_name": "Enter Statistical Analysis Method",
-            "short_name": "Statistical Analysis Method 12",
+            "short_name": "Statistical Analysis Method 3",
             "original_name": "Statistical Analysis Method",
             "optional": false,
             "section_number": "10.5.1.1",
             "section_title": "{Statistical Analysis Method}",
             "instructions": []
         },
-        "Sensitivity Analysis 13": {
+        "Sensitivity Analysis 4": {
             "long_name": "Enter Sensitivity Analysis",
-            "short_name": "Sensitivity Analysis 13",
+            "short_name": "Sensitivity Analysis 4",
             "original_name": "Sensitivity Analysis",
             "optional": false,
             "section_number": "10.5.1.4",
             "section_title": "{Sensitivity Analysis}",
             "instructions": []
         },
-        "Supplementary Analysis 14": {
+        "Supplementary Analysis 5": {
             "long_name": "Enter Supplementary Analysis",
-            "short_name": "Supplementary Analysis 14",
+            "short_name": "Supplementary Analysis 5",
             "original_name": "Supplementary Analysis",
             "optional": false,
             "section_number": "10.5.1.5",
@@ -261,9 +155,9 @@
             "section_title": "Country/Region-Specific Differences",
             "instructions": []
         },
-        "Amendment Identifier 15": {
+        "Amendment Identifier 6": {
             "long_name": "Enter Amendment Identifier",
-            "short_name": "Amendment Identifier 15",
+            "short_name": "Amendment Identifier 6",
             "original_name": "Amendment Identifier",
             "optional": false,
             "section_number": "12.3",
@@ -279,9 +173,9 @@
             "section_title": "Prior Protocol Amendment(s)",
             "instructions": []
         },
-        "Sponsor Approval Date 16": {
+        "Sponsor Approval Date 7": {
             "long_name": "Enter Sponsor Approval Date",
-            "short_name": "Sponsor Approval Date 16",
+            "short_name": "Sponsor Approval Date 7",
             "original_name": "Sponsor Approval Date",
             "optional": false,
             "section_number": "12.3",
@@ -306,54 +200,54 @@
             "section_title": "Prior Protocol Amendment(s)",
             "instructions": []
         },
-        "Description of Change 17": {
+        "Description of Change 8": {
             "long_name": "Enter Description of Change",
-            "short_name": "Description of Change 17",
+            "short_name": "Description of Change 8",
             "original_name": "Description of Change",
             "optional": false,
             "section_number": "12.3",
             "section_title": "Prior Protocol Amendment(s)",
             "instructions": []
         },
-        "Brief Rationale for Change 18": {
+        "Brief Rationale for Change 9": {
             "long_name": "Enter Brief Rationale for Change",
-            "short_name": "Brief Rationale for Change 18",
+            "short_name": "Brief Rationale for Change 9",
             "original_name": "Brief Rationale for Change",
             "optional": false,
             "section_number": "12.3",
             "section_title": "Prior Protocol Amendment(s)",
             "instructions": []
         },
-        "Section - and Name of Change 19": {
+        "Section - and Name of Change 10": {
             "long_name": "Enter Section # and Name of Change",
-            "short_name": "Section - and Name of Change 19",
+            "short_name": "Section - and Name of Change 10",
             "original_name": "Section # and Name of Change",
             "optional": false,
             "section_number": "12.3",
             "section_title": "Prior Protocol Amendment(s)",
             "instructions": []
         },
-        "Description of Change 20": {
+        "Description of Change 11": {
             "long_name": "Enter Description of Change",
-            "short_name": "Description of Change 20",
+            "short_name": "Description of Change 11",
             "original_name": "Description of Change",
             "optional": false,
             "section_number": "12.3",
             "section_title": "Prior Protocol Amendment(s)",
             "instructions": []
         },
-        "Brief Rationale for Change 21": {
+        "Brief Rationale for Change 12": {
             "long_name": "Enter Brief Rationale for Change",
-            "short_name": "Brief Rationale for Change 21",
+            "short_name": "Brief Rationale for Change 12",
             "original_name": "Brief Rationale for Change",
             "optional": false,
             "section_number": "12.3",
             "section_title": "Prior Protocol Amendment(s)",
             "instructions": []
         },
-        "Section - and Name of Change 22": {
+        "Section - and Name of Change 13": {
             "long_name": "Enter Section # and Name of Change",
-            "short_name": "Section - and Name of Change 22",
+            "short_name": "Section - and Name of Change 13",
             "original_name": "Section # and Name of Change",
             "optional": false,
             "section_number": "12.3",
@@ -390,35 +284,6 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Amendment Details, Amendment Identifier, Sponsor Protocol Identifier\nWhen the value is yes there is a text response for explanation\nConcept: CNEW",
             "repeating": "No",
             "ct": []
-        },
-        "Yes-No 2": {
-            "name": "Yes-No 2",
-            "data_type": "Valid Value",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the amendment likely to have a substantial impact on the reliability and robustness of the data generated in the clinical trial.",
-            "guidance": "N/A",
-            "conformance": "Conditional : if there is an amendment",
-            "cardinality": "One to one; One to Amendment Identifier; One to Sponsor Protocol Identifier",
-            "relationship": "Amendment Details",
-            "value": "Yes (C49488), No (C49487)",
-            "business_rules": "Value Allowed: Yes\nRelationship: Amendment Details, Amendment Identifier, Sponsor Protocol Identifier\nConcept: CNEW",
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "C66742",
-                    "preferred_term": "NY",
-                    "definition": "A term that is used to indicate a question with permissible values of yes/no/unknown/not applicable."
-                },
-                {
-                    "ncit_code": "C49487",
-                    "preferred_term": "No",
-                    "definition": "The non-affirmative response to a question."
-                },
-                {
-                    "ncit_code": "C49488",
-                    "preferred_term": "Yes",
-                    "definition": "The affirmative response to a question."
-                }
-            ]
         },
         "If yes briefly explain 3": {
             "name": "If yes briefly explain 3",

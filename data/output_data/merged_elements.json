@@ -1742,6 +1742,46 @@
             ]
         }
     },
+    "Yes-No 2": {
+        "template": {
+            "long_name": "Yes/No",
+            "short_name": "Yes-No 2",
+            "original_name": "Yes/No",
+            "optional": false,
+            "section_number": null,
+            "section_title": null,
+            "instructions": []
+        },
+        "technical": {
+            "name": "Yes-No 2",
+            "data_type": "Valid Value",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the amendment likely to have a substantial impact on the reliability and robustness of the data generated in the clinical trial.",
+            "guidance": "N/A",
+            "conformance": "Conditional : if there is an amendment",
+            "cardinality": "One to one; One to Amendment Identifier; One to Sponsor Protocol Identifier",
+            "relationship": "Amendment Details",
+            "value": "Yes (C49488), No (C49487)",
+            "business_rules": "Value Allowed: Yes\nRelationship: Amendment Details, Amendment Identifier, Sponsor Protocol Identifier\nConcept: CNEW",
+            "repeating": "No",
+            "ct": [
+                {
+                    "ncit_code": "C66742",
+                    "preferred_term": "NY",
+                    "definition": "A term that is used to indicate a question with permissible values of yes/no/unknown/not applicable."
+                },
+                {
+                    "ncit_code": "C49487",
+                    "preferred_term": "No",
+                    "definition": "The non-affirmative response to a question."
+                },
+                {
+                    "ncit_code": "C49488",
+                    "preferred_term": "Yes",
+                    "definition": "The affirmative response to a question."
+                }
+            ]
+        }
+    },
     "Description of Change": {
         "template": {
             "long_name": "Enter Description of Change",
