@@ -2,17 +2,17 @@ import json
 import yaml
 from m11_template.m11_template import M11Template
 from m11_template.m11_technical import M11Technical
-from tabulate import tabulate
 from itertools import zip_longest
 
 
 template = M11Template(filepath="data/input_data/m11/m11-template-spec.docx")
 template.process()
 template.rename_elements(filepath="data/input_data/m11/template_renames.yaml")
+template.insert_elements(filepath="data/input_data/m11/template_inserts.yaml")
 technical = M11Technical(filepath="data/input_data/m11/m11-technical-spec.docx")
 technical.process()
 technical.rename_elements(filepath="data/input_data/m11/technical_renames.yaml")
-technical.split_elements(filepath="data/input_data/m11/technical_split.yaml")
+#technical.split_elements(filepath="data/input_data/m11/technical_split.yaml")
 
 with open("data/output_data/template_document.json", "w") as f:
     json.dump(template.document, f, indent=4)
@@ -66,6 +66,3 @@ for result in res:
 text += "</table>"
 with open("data/output_data/mismatched_elements.html", "w") as f:
     f.write(text)
-
-#print("\n\nResults: Unmatched Items\n\n")
-#print(tabulate(res, headers=['Template', 'Technical'], tablefmt="github"))

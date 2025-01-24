@@ -8749,17 +8749,34 @@
             "instructions": []
         },
         "technical": {
-            "name": "Describe Method",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe narrative text describing the technique used to approve the protocol.",
+            "name": "describe method",
+            "data_type": "Valid Value",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA block of text containing the name and signature of the sponsor's signatory, along with a signature date, or a statement on behalf of the sponsor that describes the method of protocol approval.",
             "guidance": "Include either the Sponsor signature or the statement below.",
-            "conformance": "Conditional  if Sponsor Protocol Approval Statement",
-            "cardinality": "One to Sponsor Protocol Approval Statement",
+            "conformance": "Optional",
+            "cardinality": "One to one",
             "relationship": "Title Page",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: Sponsor Protocol Approval Statement\nConcept: CNEW",
+            "value": "Sponsor Signature Block (CNEW)\n OR \nSponsor Protocol Approval Statement (CNEW)",
+            "business_rules": "Value Allowed: Yes\nRelationship: Heading\nConcept: CNEW",
             "repeating": "No",
-            "ct": []
+            "ct": [
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "ICH M11 Sponsor Signatory Response",
+                    "definition": "A terminology value set relevant to the sponsor signatory responses within the ICH M11 Protocol model."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Sponsor Signature Block",
+                    "definition": "A block of text containing the name and signature of the sponsor's signatory, along with the signature date."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Sponsor Protocol Approval Statement",
+                    "definition": "A statement that the protocol was approved by a method as described. This protocol was approved via <describe method>"
+                }
+            ],
+            "short_name": "Describe Method"
         },
         "usdm": {
             "items": [],
@@ -8806,6 +8823,46 @@
                     "ncit_code": "CNEW",
                     "preferred_term": "Location of Sponsor Approval Date",
                     "definition": "The physical or virtual location of the date on which the sponsor approved the current version of the protocol."
+                }
+            ]
+        }
+    },
+    "Amendment Details": {
+        "template": {
+            "long_name": "Amendment Details",
+            "short_name": "Amendment Details",
+            "original_name": "Amendment Details",
+            "optional": false,
+            "section_number": null,
+            "section_title": null,
+            "instructions": []
+        },
+        "technical": {
+            "name": "Amendment Details",
+            "data_type": "Valid Value",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA written message within the study protocol that describes the amendment details, especially as to whether the protocol has been amended previously.",
+            "guidance": "Choose the applicable statement below. For an original protocol that has not been amended, retain the first sentence below and delete the remainder of this entire section.\n{Not applicable. This protocol has not been amended.}\nOr include the below as applicable.\n{This protocol has been amended previously. Details of prior amendments are presented in Section 12.3 Prior Protocol Amendment(s).}",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "Amendment Details",
+            "value": "Not applicable. This protocol has not been amended. (CNEW)Or\nThis is the first protocol amendment (CNEW)\nOR\nThis protocol has been amended previously. Details of prior amendments are presented in Section 12.3 Prior Protocol Amendment(s). (CNEW)",
+            "business_rules": "Value Allowed: Yes\nRelationship: Heading\nConcept: CNEW",
+            "repeating": "No",
+            "ct": [
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "ICH M11 Amendment Details Statement Response",
+                    "definition": "A terminology value set relevant to the amendment details statement responses within the ICH M11 Protocol model."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Not applicable. This protocol has not been amended.",
+                    "definition": "Not applicable. This protocol has not been amended."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "This protocol has been amended previously. Details of prior amendments are presented in Prior Protocol Amendment(s).",
+                    "definition": "This protocol has been amended previously. Details of prior amendments are presented in Prior Protocol Amendment(s)."
                 }
             ]
         }

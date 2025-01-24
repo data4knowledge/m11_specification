@@ -118,6 +118,28 @@ class M11Template:
                     print(f"UNKNOWN STATE: {section.number}, {para.text}")
                     state = "OUTSIDE" if state == "OUTSIDE" else "INSIDE"
 
+    def rename_elements(self, filepath: str) -> None:
+        """
+        Rename elements in the elements dictionary.
+        """
+        with open(filepath, "r") as f:
+            rename_dict = yaml.safe_load(f)
+        for key, value in rename_dict.items():
+            if key in self.elements:
+                self.elements[value] = self.elements[key]
+                self.elements[value]["short_name"] = value
+                self.elements.pop(key)
+
+    def insert_elements(self, filepath: str) -> None:
+        """
+        Insert elements into the elements dictionary.
+        """
+        with open(filepath, "r") as f:
+            insert_dict = yaml.safe_load(f)
+        for key, value in insert_dict.items():
+            if key not in self.elements:
+                self.elements[key] = value
+
     def _detect_start(self, para: RawParagraph) -> bool:
         """
         Detect the start of the definitions.
@@ -167,18 +189,6 @@ class M11Template:
                                 yield cell_item, index == 0
 
 
-    def rename_elements(self, filepath: str) -> None:
-        """
-        Rename elements in the elements dictionary.
-        """
-        with open(filepath, "r") as f:
-            rename_dict = yaml.safe_load(f)
-        for key, value in rename_dict.items():
-            if key in self.elements:
-                self.elements[value] = self.elements[key]
-                self.elements[value]["short_name"] = value
-                self.elements.pop(key)
-
     def _add_elements(self, elements: list[str]) -> None:
         """
         Add elements to the elements dictionary.
@@ -209,7 +219,7 @@ class M11Template:
         confirmed_elements = []
         potential_elements = find_elements(paragraph.text)
         for element in potential_elements:
-            print(f"POT ELEMENT: {element}")
+            #print(f"POT ELEMENT: {element}")
             match = next(
                 (
                     x
@@ -219,7 +229,7 @@ class M11Template:
                 None,
             )
             if match:
-                print(f"MATCH: {element}")
+                #print(f"MATCH: {element}")
                 short_name = element.replace("Enter ", "")
                 optional = True if match.color == "3333FF" else False
                 confirmed_elements.append(

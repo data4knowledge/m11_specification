@@ -595,7 +595,7 @@
             }
         ]
     },
-    "describe method": {
+    "Describe Method": {
         "name": "describe method",
         "data_type": "Valid Value",
         "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA block of text containing the name and signature of the sponsor's signatory, along with a signature date, or a statement on behalf of the sponsor that describes the method of protocol approval.",
@@ -622,20 +622,8 @@
                 "preferred_term": "Sponsor Protocol Approval Statement",
                 "definition": "A statement that the protocol was approved by a method as described. This protocol was approved via <describe method>"
             }
-        ]
-    },
-    "Describe Method": {
-        "name": "Describe Method",
-        "data_type": "Text",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe narrative text describing the technique used to approve the protocol.",
-        "guidance": "Include either the Sponsor signature or the statement below.",
-        "conformance": "Conditional  if Sponsor Protocol Approval Statement",
-        "cardinality": "One to Sponsor Protocol Approval Statement",
-        "relationship": "Title Page",
-        "value": "Text",
-        "business_rules": "Value Allowed: Yes\nRelationship: Sponsor Protocol Approval Statement\nConcept: CNEW",
-        "repeating": "No",
-        "ct": []
+        ],
+        "short_name": "Describe Method"
     },
     "contact information for Medical Expert as designated by sponsor or state location where information can be found": {
         "name": "contact information for Medical Expert as designated by sponsor or state location where information can be found",

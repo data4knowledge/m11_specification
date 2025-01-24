@@ -2369,5 +2369,14 @@
         "instructions": [
             "All versions should be uniquely identifiable. "
         ]
+    },
+    "Amendment Details": {
+        "long_name": "Amendment Details",
+        "short_name": "Amendment Details",
+        "original_name": "Amendment Details",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": []
     }
 }
