@@ -2141,63 +2141,6 @@
         "section_title": "Prior Protocol Amendment(s)",
         "instructions": []
     },
-    "Description of Change 8": {
-        "long_name": "Enter Description of Change",
-        "short_name": "Description of Change 8",
-        "original_name": "Description of Change",
-        "optional": false,
-        "section_number": "12.3",
-        "section_title": "Prior Protocol Amendment(s)",
-        "instructions": []
-    },
-    "Brief Rationale for Change 9": {
-        "long_name": "Enter Brief Rationale for Change",
-        "short_name": "Brief Rationale for Change 9",
-        "original_name": "Brief Rationale for Change",
-        "optional": false,
-        "section_number": "12.3",
-        "section_title": "Prior Protocol Amendment(s)",
-        "instructions": []
-    },
-    "Section - and Name of Change 10": {
-        "long_name": "Enter Section # and Name of Change",
-        "short_name": "Section - and Name of Change 10",
-        "original_name": "Section # and Name of Change",
-        "optional": false,
-        "section_number": "12.3",
-        "section_title": "Prior Protocol Amendment(s)",
-        "instructions": []
-    },
-    "Description of Change 11": {
-        "long_name": "Enter Description of Change",
-        "short_name": "Description of Change 11",
-        "original_name": "Description of Change",
-        "optional": false,
-        "section_number": "12.3",
-        "section_title": "Prior Protocol Amendment(s)",
-        "instructions": []
-    },
-    "Brief Rationale for Change 12": {
-        "long_name": "Enter Brief Rationale for Change",
-        "short_name": "Brief Rationale for Change 12",
-        "original_name": "Brief Rationale for Change",
-        "optional": false,
-        "section_number": "12.3",
-        "section_title": "Prior Protocol Amendment(s)",
-        "instructions": []
-    },
-    "Section - and Name of Change 13": {
-        "long_name": "Enter Section # and Name of Change",
-        "short_name": "Section - and Name of Change 13",
-        "original_name": "Section # and Name of Change",
-        "optional": false,
-        "section_number": "12.3",
-        "section_title": "Prior Protocol Amendment(s)",
-        "instructions": [
-            "(Add lines as needed)",
-            "Add additional Overview of Changes tables as protocol amendments accrue."
-        ]
-    },
     "Glossary of Terms and Abbreviations": {
         "long_name": "Enter Glossary of Terms and Abbreviations",
         "short_name": "Glossary of Terms and Abbreviations",
@@ -2477,6 +2420,33 @@
         "long_name": "Enter Amendment Identifier",
         "short_name": "Prior Amendment Identifier",
         "original_name": "Amendment Identifier",
+        "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
+        "instructions": []
+    },
+    "Previous Amendment Overview Description of Change": {
+        "long_name": "Enter Description of Change",
+        "short_name": "Previous Amendment Overview Description of Change",
+        "original_name": "Description of Change",
+        "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
+        "instructions": []
+    },
+    "Previous Amendment Overview Brief Rationale for Change": {
+        "long_name": "Enter Brief Rationale for Change",
+        "short_name": "Previous Amendment Overview Brief Rationale for Change",
+        "original_name": "Brief Rationale for Change",
+        "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
+        "instructions": []
+    },
+    "Previous Amendment Overview Section": {
+        "long_name": "Enter Section # and Name of Change",
+        "short_name": "Previous Amendment Overview Section",
+        "original_name": "Section # and Name of Change",
         "optional": false,
         "section_number": "12.3",
         "section_title": "Prior Protocol Amendment(s)",
