@@ -1,14 +1,5 @@
 {
     "template": {
-        "Original Protocol Indicator": {
-            "long_name": "Original Protocol Indicator",
-            "short_name": "Original Protocol Indicator",
-            "original_name": "Original Protocol Indicator",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": []
-        },
         "State location where information can be found": {
             "long_name": "State location where information can be found",
             "short_name": "State location where information can be found",
@@ -19,33 +10,6 @@
             "instructions": [
                 "All versions should be uniquely identifiable. "
             ]
-        },
-        "describe method": {
-            "long_name": "describe method",
-            "short_name": "describe method",
-            "original_name": "describe method",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": []
-        },
-        "Primary Reason for Amendment": {
-            "long_name": "Primary Reason for Amendment",
-            "short_name": "Primary Reason for Amendment",
-            "original_name": "Primary Reason for Amendment",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": []
-        },
-        "Secondary Reason for Amendment": {
-            "long_name": "Secondary Reason for Amendment",
-            "short_name": "Secondary Reason for Amendment",
-            "original_name": "Secondary Reason for Amendment",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": []
         },
         "Population diagnosis or condition": {
             "long_name": "Population diagnosis or condition",
@@ -69,24 +33,6 @@
             "long_name": "Site distribution",
             "short_name": "Site distribution",
             "original_name": "Site distribution",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        },
-        "Master Protocol Indicator": {
-            "long_name": "Master Protocol Indicator",
-            "short_name": "Master Protocol Indicator",
-            "original_name": "Master Protocol Indicator",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        },
-        "DrugDevice Combination Product Indicator": {
-            "long_name": "Drug/Device Combination Product Indicator",
-            "short_name": "DrugDevice Combination Product Indicator",
-            "original_name": "Drug/Device Combination Product Indicator",
             "optional": false,
             "section_number": "1.1.2",
             "section_title": "Overall Design",
@@ -336,19 +282,6 @@
                 }
             ]
         },
-        "Describe Method": {
-            "name": "Describe Method",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe narrative text describing the technique used to approve the protocol.",
-            "guidance": "Include either the Sponsor signature or the statement below.",
-            "conformance": "Conditional  if Sponsor Protocol Approval Statement",
-            "cardinality": "One to Sponsor Protocol Approval Statement",
-            "relationship": "Title Page",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: Sponsor Protocol Approval Statement\nConcept: CNEW",
-            "repeating": "No",
-            "ct": []
-        },
         "Amendment Details": {
             "name": "Amendment Details",
             "data_type": "Valid Value",
@@ -524,6 +457,19 @@
                 }
             ]
         },
+        "Adaptative Trial Design Indicator": {
+            "name": "Adaptative Trial Design Indicator",
+            "data_type": "Valid Value",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the clinical trial uses an adaptive kind of trial design, that is a clinical trial design that allows for prospectively planned modifications to one or more aspects of the design based on accumulating data from subjects in the trial.",
+            "guidance": "N/A",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "1.1.2",
+            "value": "Yes (C49488), No(C49487)",
+            "business_rules": "Value Allowed: Yes\nRelationship: Heading; Sponsor Protocol Identifier\nConcept: CNEW",
+            "repeating": "No",
+            "ct": []
+        },
         "randomly assigned to trial intervention enrolled": {
             "name": "randomly assigned to trial intervention enrolled",
             "data_type": "Valid Value",
@@ -691,6 +637,19 @@
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 6 TRIAL INTERVENTION AND CONCOMITANT THERAPY\nConcept: CNEW",
             "repeating": "No",
+            "ct": []
+        },
+        "Route of Administration": {
+            "name": "Route of Administration",
+            "data_type": "Valid Value",
+            "definition": "C38114\nFor review purpose, see definition of the controlled terminology below\nPath by which the pharmaceutical product is taken into or makes contact with the body.",
+            "guidance": "N/A",
+            "conformance": "Optional: if the table used",
+            "cardinality": "One to each intervention and dosage formulation",
+            "relationship": "6",
+            "value": "Use IDMP (e.g. EDQM, CDISC)",
+            "business_rules": "Value Allowed: Yes\nRelationship: arm name and route of administration\nConcept: C38114",
+            "repeating": "Yes, repeatable for each intervention. Dose formulation, per arm name",
             "ct": []
         },
         "RegimenTreatment PeriodVaccination regimen": {

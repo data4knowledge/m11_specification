@@ -340,15 +340,6 @@
             "All versions should be uniquely identifiable. "
         ]
     },
-    "describe method": {
-        "long_name": "describe method",
-        "short_name": "describe method",
-        "original_name": "describe method",
-        "optional": false,
-        "section_number": null,
-        "section_title": null,
-        "instructions": []
-    },
     "contact information for Medical Expert as designated by sponsor or state location where information can be found": {
         "long_name": "Enter contact information for Medical Expert (as designated by sponsor) or state location where information can be found",
         "short_name": "contact information for Medical Expert as designated by sponsor or state location where information can be found",
@@ -2348,6 +2339,15 @@
         "optional": false,
         "section_number": "9.2.5",
         "section_title": "Disease-related Events or Outcomes Not Qualifying as AEs or SAEs",
+        "instructions": []
+    },
+    "Describe Method": {
+        "long_name": "describe method",
+        "short_name": "Describe Method",
+        "original_name": "describe method",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
         "instructions": []
     }
 }

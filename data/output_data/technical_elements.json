@@ -51,6 +51,35 @@
         "repeating": "No",
         "ct": []
     },
+    "Original Protocol Indicator": {
+        "name": "Original Protocol Indicator",
+        "data_type": "Valid Value",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the protocol document reflects the original version of the protocol.",
+        "guidance": "N/A",
+        "conformance": "Required",
+        "cardinality": "One to one; One to Sponsor Protocol Identifier",
+        "relationship": "Title page",
+        "value": "Yes (C49488), No(C49487)",
+        "business_rules": "Value Allowed: Yes\nRelationship: Heading; Sponsor Protocol Identifier\nConcept: CNEW",
+        "repeating": "No",
+        "ct": [
+            {
+                "ncit_code": "C66742",
+                "preferred_term": "NY",
+                "definition": "A term that is used to indicate a question with permissible values of yes/no/unknown/not applicable."
+            },
+            {
+                "ncit_code": "C49487",
+                "preferred_term": "No",
+                "definition": "The non-affirmative response to a question."
+            },
+            {
+                "ncit_code": "C49488",
+                "preferred_term": "Yes",
+                "definition": "The affirmative response to a question."
+            }
+        ]
+    },
     "Version Number": {
         "name": "Version Number",
         "data_type": "Text",
@@ -592,6 +621,100 @@
         "repeating": "Yes, reuse to section 12.3",
         "ct": []
     },
+    "Primary Reason for Amendment": {
+        "name": "Primary Reason for Amendment",
+        "data_type": "Valid Value",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe rationale of greatest importance for the protocol amendment.",
+        "guidance": "Choose from the available categories as the primary reason and secondary reason(s) for the amendment. Select the closest match among the choices. Changes to primary estimand, endpoints, or related measures should be listed as a change of strategy. If none of the choices apply, choose \u201cother\u201d and provide a description. If no secondary reason, indicate \u201cnot applicable\u201d for the secondary reason.",
+        "conformance": "Conditional : if the protocol is=No",
+        "cardinality": "One to Amendment Details",
+        "relationship": "Amendment Details",
+        "value": "Regulatory agency request to amend (CNEW)\nNew regulatory guidance (CNEW)\nIRB/IEC feedback (CNEW)\nNew safety information available (CNEW)\nManufacturing change (NEW)\nIMP addition (CNEW)\nChange in strategy (CNEW)\nChange in standard of care (CNEW)\nNew data available (other than safety data) (CNEW)\nInvestigator/site feedback (CNEW)\nRecruitment difficulty (CNEW)\nInconsistency and/or error in the protocol (CNEW)\nProtocol design error (CNEW)\nOther(C17649)\nNot applicable(C48660)",
+        "business_rules": "Value Allowed: Yes\nRelationship: Heading, Sponsor Protocol Identifier, Protocol Amendment\nConcept: CNEW",
+        "repeating": "Yes, Multiple values can be selected except when it is Original Protocol",
+        "ct": [
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Reason for Amendment Response",
+                "definition": "A terminology value set relevant to the primary reason for amendment responses within the ICH M11 Protocol model."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Regulatory Agency Request To Amend",
+                "definition": "A regulatory agency has expressed a need for a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "New Regulatory Guidance",
+                "definition": "A regulatory agency has published a guidance document that necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "IRB/IEC Feedback",
+                "definition": "Feedback from the institutional review board or independent ethics committee necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "New Safety Information Available",
+                "definition": "Previously unavailable safety data becomes available, which necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Manufacturing Change",
+                "definition": "A change to manufacturing processes of the study agents necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "IMP Addition",
+                "definition": "The addition of an investigational medicinal product to a clinical trial design necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Change In Strategy",
+                "definition": "A change in the study purpose or intent of the scientific plan necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Change In Standard Of Care",
+                "definition": "A change in the standard of care necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "New Data Available (Other Than Safety Data)",
+                "definition": "Previously unavailable data (other than safety data) becomes available, which necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Investigator/Site Feedback",
+                "definition": "Feedback from the investigator or study site necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Recruitment Difficulty",
+                "definition": "Challenges with participant recruitment necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Inconsistency And/Or Error In The Protocol",
+                "definition": "An error or inconsistency in the protocol necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Protocol Design Error",
+                "definition": "A protocol design error necessitates a change(s) to, or formal clarification of, a document."
+            },
+            {
+                "ncit_code": "C17649",
+                "preferred_term": "Other",
+                "definition": "Different than the one(s) previously specified or mentioned."
+            },
+            {
+                "ncit_code": "C48660",
+                "preferred_term": "Not Applicable",
+                "definition": "Determination of a value is not relevant in the current context."
+            }
+        ]
+    },
     "Other description": {
         "name": "Other description",
         "data_type": "Text",
@@ -604,6 +727,100 @@
         "business_rules": "Value Allowed: Yes\nRelationship: Heading, Secondary reason, Protocol Identifier, Protocol Amendment\nConcept:C17649",
         "repeating": "No",
         "ct": []
+    },
+    "Secondary Reason for Amendment": {
+        "name": "Secondary Reason for Amendment",
+        "data_type": "Valid Value",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAdditional rationale for the protocol amendment that is not considered the primary rationale.",
+        "guidance": "Choose from the available categories as the primary reason and secondary reason(s) for the amendment. Select the closest match among the choices. Changes to primary estimand, endpoints, or related measures should be listed as a change of strategy. If none of the choices apply, choose \u201cother\u201d and provide a description. If no secondary reason, indicate \u201cnot applicable\u201d for the secondary reason.",
+        "conformance": "Conditional If Protocol Original = No",
+        "cardinality": "One to one; One to Protocol Identifier; One to Amendment Identifier",
+        "relationship": "Amendment Details",
+        "value": "Regulatory agency request to amend (CNEW)\nNew regulatory guidance (CNEW)\nIRB/IEC feedback (CNEW)\nNew safety information available (CNEW)\nManufacturing change (CNEW)\nIMP addition (CNEW)\nChange in strategy (CNEW)\nChange in standard of care (CNEW)\nNew data available (other than safety data) (CNEW)\nInvestigator/site feedback (CNEW)\nRecruitment difficulty (CNEW)\nInconsistency and/or error in the protocol (CNEW)\nProtocol design error (CNEW)\nOther(C17649)\nNot applicable(C48660)",
+        "business_rules": "Value Allowed: Yes\nRelationship: Heading, Sponsor Protocol Identifier, Protocol Amendment\nConcept: CNEW",
+        "repeating": "Yes, Multiple accepted except for the Original",
+        "ct": [
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Reason for Amendment Response",
+                "definition": "A terminology value set relevant to the secondary reason for amendment responses within the ICH M11 Protocol model."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Regulatory Agency Request To Amend",
+                "definition": "A regulatory agency has expressed a need for a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "New Regulatory Guidance",
+                "definition": "A regulatory agency has published a guidance document that necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "IRB/IEC Feedback",
+                "definition": "Feedback from the institutional review board or independent ethics committee necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "New Safety Information Available",
+                "definition": "Previously unavailable safety data becomes available, which necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Manufacturing Change",
+                "definition": "A change to manufacturing processes of the study agents necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "IMP Addition",
+                "definition": "The addition of an investigational medicinal product to a clinical trial design necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Change In Strategy",
+                "definition": "A change in the study purpose or intent of the scientific plan necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Change In Standard Of Care",
+                "definition": "A change in the standard of care necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "New Data Available (Other Than Safety Data)",
+                "definition": "Previously unavailable data (other than safety data) becomes available, which necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Investigator/Site Feedback",
+                "definition": "Feedback from the investigator or study site necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Recruitment Difficulty",
+                "definition": "Challenges with participant recruitment necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Inconsistency And/Or Error In The Protocol",
+                "definition": "An error or inconsistency in the protocol necessitates a change(s) to, or formal clarification of, the protocol."
+            },
+            {
+                "ncit_code": "CNEW",
+                "preferred_term": "Protocol Design Error",
+                "definition": "A protocol design error necessitates a change(s) to, or formal clarification of, a document."
+            },
+            {
+                "ncit_code": "C17649",
+                "preferred_term": "Other",
+                "definition": "Different than the one(s) previously specified or mentioned."
+            },
+            {
+                "ncit_code": "C48660",
+                "preferred_term": "Not Applicable",
+                "definition": "Determination of a value is not relevant in the current context."
+            }
+        ]
     },
     "Amendment Summary": {
         "name": "Amendment Summary",
@@ -1896,6 +2113,77 @@
             }
         ]
     },
+    "Adaptative Trial Design Indicator": {
+        "name": "Adaptative Trial Design Indicator",
+        "data_type": "Valid Value",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the clinical trial uses an adaptive kind of trial design, that is a clinical trial design that allows for prospectively planned modifications to one or more aspects of the design based on accumulating data from subjects in the trial.",
+        "guidance": "N/A",
+        "conformance": "Required",
+        "cardinality": "One to one",
+        "relationship": "1.1.2",
+        "value": "Yes (C49488), No(C49487)",
+        "business_rules": "Value Allowed: Yes\nRelationship: Heading; Sponsor Protocol Identifier\nConcept: CNEW",
+        "repeating": "No",
+        "ct": []
+    },
+    "Master Protocol Indicator": {
+        "name": "Master Protocol Indicator",
+        "data_type": "Valid Value",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether this is a master protocol.",
+        "guidance": "N/A",
+        "conformance": "Required",
+        "cardinality": "One to one",
+        "relationship": "1.1.2",
+        "value": "Yes (C49488), No(C49487)",
+        "business_rules": "Value Allowed: Yes\nRelationship: Heading Master Protocol Indicator; Sponsor Protocol Identifier\nConcept: CNEW",
+        "repeating": "No",
+        "ct": [
+            {
+                "ncit_code": "C66742",
+                "preferred_term": "NY",
+                "definition": "A term that is used to indicate a question with permissible values of yes/no/unknown/not applicable."
+            },
+            {
+                "ncit_code": "C49487",
+                "preferred_term": "No",
+                "definition": "The non-affirmative response to a question."
+            },
+            {
+                "ncit_code": "C49488",
+                "preferred_term": "Yes",
+                "definition": "The affirmative response to a question."
+            }
+        ]
+    },
+    "DrugDevice Combination Product Indicator": {
+        "name": "DrugDevice Combination Product Indicator",
+        "data_type": "Valid Value",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the clinical trial is testing a drug device combination product.",
+        "guidance": "N/A",
+        "conformance": "Required",
+        "cardinality": "One to one",
+        "relationship": "1.1.2",
+        "value": "Yes (C49488), No(C49487)",
+        "business_rules": "Value Allowed: Yes\nRelationship: Heading Drug/Device Combination Product; Sponsor Protocol Identifier\nConcept: CNEW",
+        "repeating": "No",
+        "ct": [
+            {
+                "ncit_code": "C66742",
+                "preferred_term": "NY",
+                "definition": "A term that is used to indicate a question with permissible values of yes/no/unknown/not applicable."
+            },
+            {
+                "ncit_code": "C49487",
+                "preferred_term": "No",
+                "definition": "The non-affirmative response to a question."
+            },
+            {
+                "ncit_code": "C49488",
+                "preferred_term": "Yes",
+                "definition": "The affirmative response to a question."
+            }
+        ]
+    },
     "Number of Arms": {
         "name": "Number of Arms",
         "data_type": "Number",
@@ -3002,6 +3290,19 @@
         "value": "Text",
         "business_rules": "Value Allowed: Yes\nRelationship: arm name and dose level\nConcept: C94394",
         "repeating": "Yes, repeatable for each intervention, dose formulation, dosage strength and dosage level per arm",
+        "ct": []
+    },
+    "Route of Administration": {
+        "name": "Route of Administration",
+        "data_type": "Valid Value",
+        "definition": "C38114\nFor review purpose, see definition of the controlled terminology below\nPath by which the pharmaceutical product is taken into or makes contact with the body.",
+        "guidance": "N/A",
+        "conformance": "Optional: if the table used",
+        "cardinality": "One to each intervention and dosage formulation",
+        "relationship": "6",
+        "value": "Use IDMP (e.g. EDQM, CDISC)",
+        "business_rules": "Value Allowed: Yes\nRelationship: arm name and route of administration\nConcept: C38114",
+        "repeating": "Yes, repeatable for each intervention. Dose formulation, per arm name",
         "ct": []
     },
     "RegimenTreatment PeriodVaccination regimen": {
