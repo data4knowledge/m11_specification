@@ -2508,5 +2508,23 @@
         "section_number": null,
         "section_title": null,
         "instructions": []
+    },
+    "Briefly Explain Substantial Impact On Safety": {
+        "long_name": "Briefly Explain Substantial Impact On Safety",
+        "short_name": "Briefly Explain Substantial Impact On Safety",
+        "original_name": "Briefly Explain Substantial Impact On Safety",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": []
+    },
+    "Briefly Explain Substantial Impact on Data": {
+        "long_name": "Briefly Explain Substantial Impact on Data",
+        "short_name": "Briefly Explain Substantial Impact on Data",
+        "original_name": "Briefly Explain Substantial Impact on Data",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": []
     }
 }

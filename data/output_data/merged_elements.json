@@ -9296,5 +9296,67 @@
             "ct": [],
             "short_name": "Secondary Reason Other"
         }
+    },
+    "Briefly Explain Substantial Impact On Safety": {
+        "template": {
+            "long_name": "Briefly Explain Substantial Impact On Safety",
+            "short_name": "Briefly Explain Substantial Impact On Safety",
+            "original_name": "Briefly Explain Substantial Impact On Safety",
+            "optional": false,
+            "section_number": null,
+            "section_title": null,
+            "instructions": []
+        },
+        "technical": {
+            "name": "If yes briefly explain",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA short descriptive account of any substantial impacts on the safety or rights of the participants due to the protocol amendment.",
+            "guidance": "Briefly Explain Substantial Impact On Safety",
+            "conformance": "Conditional: if there is an amendment and If the \"Is this amendment likely to have a substantial impact on the safety or rights of the participants? \" is yes",
+            "cardinality": "One to one Amendment Identifier,\nIs this amendment likely to have a substantial impact on the safety or rights of the participants? Response when Yes",
+            "relationship": "Amendment Details",
+            "value": "",
+            "business_rules": "Value Allowed: Yes\nRelationship: Amendment Details, Amendment Identifier, Sponsor Protocol Identifier\nWhen the value is yes there is a text response for explanation\nConcept: CNEW",
+            "repeating": "No",
+            "ct": [],
+            "short_name": "Briefly Explain Substantial Impact On Safety"
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Briefly Explain Substantial Impact On Safety",
+            "notes": ""
+        }
+    },
+    "Briefly Explain Substantial Impact on Data": {
+        "template": {
+            "long_name": "Briefly Explain Substantial Impact on Data",
+            "short_name": "Briefly Explain Substantial Impact on Data",
+            "original_name": "Briefly Explain Substantial Impact on Data",
+            "optional": false,
+            "section_number": null,
+            "section_title": null,
+            "instructions": []
+        },
+        "technical": {
+            "name": "If yes briefly explain 3",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA short descriptive account of any substantial impacts on the reliability and robustness of the data generated in the clinical trial due to the protocol amendment.",
+            "guidance": "Briefly Explain Substantial Impact on Data",
+            "conformance": "Conditional: if there is an amendment and if the answer to \"Is this amendment likely to have a substantial impact on the reliability and robustness of the data generated in the clinical trial?\" is yes",
+            "cardinality": "One to amendment identifier",
+            "relationship": "Amendment Details",
+            "value": "",
+            "business_rules": "Value Allowed: Yes\nRelationship: Amendment Details, Amendment Identifier, Sponsor Protocol Identifier\nWhen the value is yes there is a text response for explanation\nConcept: CNEW",
+            "repeating": "No",
+            "ct": [],
+            "short_name": "Briefly Explain Substantial Impact on Data"
+        },
+        "usdm": {
+            "items": [],
+            "map_status": "To Be Mapped",
+            "name": "Briefly Explain Substantial Impact on Data",
+            "notes": ""
+        }
     }
 }
