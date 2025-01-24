@@ -92,15 +92,6 @@
             "section_title": "Overall Design",
             "instructions": []
         },
-        "Intervention model": {
-            "long_name": "Intervention model",
-            "short_name": "Intervention model",
-            "original_name": "Intervention model",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        },
         "Population diagnosis or condition": {
             "long_name": "Population diagnosis or condition",
             "short_name": "Population diagnosis or condition",
@@ -226,15 +217,6 @@
             "optional": false,
             "section_number": "3.1.1",
             "section_title": "Primary Objective <#>",
-            "instructions": []
-        },
-        "Rationale for Intervention Model": {
-            "long_name": "Enter Rationale for Intervention Model",
-            "short_name": "Rationale for Intervention Model",
-            "original_name": "Rationale for Intervention Model",
-            "optional": false,
-            "section_number": "4.2.2",
-            "section_title": "Rationale for Intervention Model",
             "instructions": []
         },
         "description of the overview of trial interventions or a heading for the optional table below": {
@@ -365,15 +347,6 @@
                 "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
                 "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
             ]
-        },
-        "Minimum Age": {
-            "long_name": "minimum age",
-            "short_name": "Minimum Age",
-            "original_name": "minimum age",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
         },
         "Analysis Associated with Exploratory Objectives": {
             "long_name": "Enter Analyses Associated with the Exploratory Objective(s)",
@@ -590,55 +563,6 @@
             "repeating": "Yes, repeatable from Title Page Nonproprietary Name(s)\nYes, reuse for each Investigational Product",
             "ct": []
         },
-        "Intervention Model": {
-            "name": "Intervention Model",
-            "data_type": "Valid Value",
-            "definition": "C98746\nFor review purpose, see definition of the controlled terminology below\nThe overall design configuration for assigning intervention to participants.",
-            "guidance": "N/A",
-            "conformance": "Required",
-            "cardinality": "One to one; One to Heading One to Sponsor Protocol Identifier",
-            "relationship": "1.1.2",
-            "value": "Single group (C82640), parallel group (C82639), cross-over (C82637), factorial(C82638), sequential (C142568), other(C17649)",
-            "business_rules": "Value Allowed: Yes\nRelationship: Row title; Sponsor Protocol Identifier\nConcept: C98746",
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "C99076",
-                    "preferred_term": "INTMODEL",
-                    "definition": "A terminology codelist relevant to the trial design developed to compare treatment groups."
-                },
-                {
-                    "ncit_code": "C82637",
-                    "preferred_term": "Cross-over",
-                    "definition": "Participants receive one of two or more alternative intervention(s) during the initial epoch of the study and receive other intervention(s) during the subsequent epoch(s) of the study."
-                },
-                {
-                    "ncit_code": "C82638",
-                    "preferred_term": "Factorial",
-                    "definition": "Two or more interventions, each alone or in combination, are evaluated in parallel against a control group. This study design allows for the comparison of active drug to placebo, presence of drug-drug interactions, and comparison of active drugs against each other."
-                },
-                {
-                    "ncit_code": "C82639",
-                    "preferred_term": "Parallel Group",
-                    "definition": "Participants are assigned to one of two or more treatment groups in parallel for the duration of the study."
-                },
-                {
-                    "ncit_code": "C142568",
-                    "preferred_term": "Sequential",
-                    "definition": "Groups of participants are assigned to receive interventions based on prior milestones being reached in the study."
-                },
-                {
-                    "ncit_code": "C82640",
-                    "preferred_term": "Single Group",
-                    "definition": "All trial participants are assigned to a single treatment group for the duration of the study."
-                },
-                {
-                    "ncit_code": "C17649",
-                    "preferred_term": "Other",
-                    "definition": "Different than the one(s) previously specified or mentioned."
-                }
-            ]
-        },
         "Population Type": {
             "name": "Population Type",
             "data_type": "Valid Value",
@@ -692,19 +616,6 @@
             "value": "or use for example WHO INN, USAN, JAN, XEVMPD",
             "business_rules": "Value Allowed: Yes\nRelationship: Row title; Control Description; Protocol Identifier\nConcept: C142585",
             "repeating": "Yes, repeatable for each INN used as control",
-            "ct": []
-        },
-        "Minimum age": {
-            "name": "Minimum age",
-            "data_type": "Number",
-            "definition": "C49693\nFor review purpose, see definition of the controlled terminology below\nThe anticipated minimum age of the participants to be entered in a clinical trial.",
-            "guidance": "Population age range - For trials in which multiple age ranges may be eligible (for example, a younger cohort and an older cohort), indicate the minimum and maximum ages for the trial overall, with an additional comment for any excluded age ranges.",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "1.1.2",
-            "value": "Integer",
-            "business_rules": "Value Allowed: Yes\nRelationship: population age, Minimum; minimum unit of age\nConcept:C49693",
-            "repeating": "No",
             "ct": []
         },
         "Intervention Assignment Method": {
@@ -872,19 +783,6 @@
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: Row Heading; Strategy, Description\nConcept: C188857",
             "repeating": "Yes, repeatable for each intercurrent event",
-            "ct": []
-        },
-        "Rationale for Trial Intervention Model": {
-            "name": "Rationale for Trial Intervention Model",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn explanation as to the scientific reasons for why the intervention model was chosen for the trial.",
-            "guidance": "Provide a rationale for the trial intervention model described in Section 4.1 Description of Trial Design with a cross-reference to Section 6.2 Rationale for Investigational Intervention Dose and Regimen. Rationale for choice of comparator, if applicable, should be described separately in Section 4.2.5 Rationale for Control Type. A rationale for the choice of trial population should be described separately in Section 5.1 Description of Trial Population and Rationale.",
-            "conformance": "Conditional: when <Overall Rationale for Trial Design> is not used",
-            "cardinality": "One to one",
-            "relationship": "4.2.2",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: 4.2.2 Rational for Intervention Model\nConcept: CNEW",
-            "repeating": "No",
             "ct": []
         },
         "Prospective approval of protocol deviations to recruitment and enrollment criteria also known as protocol waivers or exemptions is not permitted": {

@@ -1716,19 +1716,6 @@
         "repeating": "No",
         "ct": []
     },
-    "Minimum age": {
-        "name": "Minimum age",
-        "data_type": "Number",
-        "definition": "C49693\nFor review purpose, see definition of the controlled terminology below\nThe anticipated minimum age of the participants to be entered in a clinical trial.",
-        "guidance": "Population age range - For trials in which multiple age ranges may be eligible (for example, a younger cohort and an older cohort), indicate the minimum and maximum ages for the trial overall, with an additional comment for any excluded age ranges.",
-        "conformance": "Required",
-        "cardinality": "One to one",
-        "relationship": "1.1.2",
-        "value": "Integer",
-        "business_rules": "Value Allowed: Yes\nRelationship: population age, Minimum; minimum unit of age\nConcept:C49693",
-        "repeating": "No",
-        "ct": []
-    },
     "units of minimum age": {
         "name": "units of minimum age",
         "data_type": "Valid Value",
@@ -2509,19 +2496,6 @@
         "relationship": "4.2.1",
         "value": "Text",
         "business_rules": "Value Allowed: Yes\nRelationship: 4.2.1 Rationale for Estimand(s)\nConcept: CNEW",
-        "repeating": "No",
-        "ct": []
-    },
-    "Rationale for Trial Intervention Model": {
-        "name": "Rationale for Trial Intervention Model",
-        "data_type": "Text",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn explanation as to the scientific reasons for why the intervention model was chosen for the trial.",
-        "guidance": "Provide a rationale for the trial intervention model described in Section 4.1 Description of Trial Design with a cross-reference to Section 6.2 Rationale for Investigational Intervention Dose and Regimen. Rationale for choice of comparator, if applicable, should be described separately in Section 4.2.5 Rationale for Control Type. A rationale for the choice of trial population should be described separately in Section 5.1 Description of Trial Population and Rationale.",
-        "conformance": "Conditional: when <Overall Rationale for Trial Design> is not used",
-        "cardinality": "One to one",
-        "relationship": "4.2.2",
-        "value": "Text",
-        "business_rules": "Value Allowed: Yes\nRelationship: 4.2.2 Rational for Intervention Model\nConcept: CNEW",
         "repeating": "No",
         "ct": []
     },
@@ -4868,5 +4842,33 @@
         "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
         "ct": [],
         "short_name": "Statistical Analysis Method"
+    },
+    "Minimum Age": {
+        "name": "Minimum age",
+        "data_type": "Number",
+        "definition": "C49693\nFor review purpose, see definition of the controlled terminology below\nThe anticipated minimum age of the participants to be entered in a clinical trial.",
+        "guidance": "Population age range - For trials in which multiple age ranges may be eligible (for example, a younger cohort and an older cohort), indicate the minimum and maximum ages for the trial overall, with an additional comment for any excluded age ranges.",
+        "conformance": "Required",
+        "cardinality": "One to one",
+        "relationship": "1.1.2",
+        "value": "Integer",
+        "business_rules": "Value Allowed: Yes\nRelationship: population age, Minimum; minimum unit of age\nConcept:C49693",
+        "repeating": "No",
+        "ct": [],
+        "short_name": "Minimum Age"
+    },
+    "Rationale for Intervention Model": {
+        "name": "Rationale for Trial Intervention Model",
+        "data_type": "Text",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn explanation as to the scientific reasons for why the intervention model was chosen for the trial.",
+        "guidance": "Provide a rationale for the trial intervention model described in Section 4.1 Description of Trial Design with a cross-reference to Section 6.2 Rationale for Investigational Intervention Dose and Regimen. Rationale for choice of comparator, if applicable, should be described separately in Section 4.2.5 Rationale for Control Type. A rationale for the choice of trial population should be described separately in Section 5.1 Description of Trial Population and Rationale.",
+        "conformance": "Conditional: when <Overall Rationale for Trial Design> is not used",
+        "cardinality": "One to one",
+        "relationship": "4.2.2",
+        "value": "Text",
+        "business_rules": "Value Allowed: Yes\nRelationship: 4.2.2 Rational for Intervention Model\nConcept: CNEW",
+        "repeating": "No",
+        "ct": [],
+        "short_name": "Rationale for Intervention Model"
     }
 }

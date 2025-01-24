@@ -456,15 +456,6 @@
         "section_title": "Overall Design",
         "instructions": []
     },
-    "Intervention model": {
-        "long_name": "Intervention model",
-        "short_name": "Intervention model",
-        "original_name": "Intervention model",
-        "optional": false,
-        "section_number": "1.1.2",
-        "section_title": "Overall Design",
-        "instructions": []
-    },
     "Population diagnosis or condition": {
         "long_name": "Population diagnosis or condition",
         "short_name": "Population diagnosis or condition",
@@ -2348,6 +2339,15 @@
         "optional": false,
         "section_number": "10.6",
         "section_title": "Analyses Associated with the Exploratory Objective(s)",
+        "instructions": []
+    },
+    "Intervention Model": {
+        "long_name": "Intervention model",
+        "short_name": "Intervention Model",
+        "original_name": "Intervention model",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
         "instructions": []
     }
 }
