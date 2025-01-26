@@ -48,7 +48,7 @@ class M11Template:
             }
             self.sections[section.number] = section_dict
             for para, reset in self._next_paragraph(section):
-                print(f"\n\nPARA: {state}, {section.number}, {para.text}{', *** RESET ***' if reset else ''}")                        
+                #print(f"\n\nPARA: {state}, {section.number}, {para.text}{', *** RESET ***' if reset else ''}")                        
                 if reset:
                     if state != "OUTSIDE":
                         if elements and instructions:
@@ -241,7 +241,7 @@ class M11Template:
         confirmed_elements = []
         potential_elements = find_elements(paragraph.text)
         for element in potential_elements:
-            print(f"POT ELEMENT: S={section.number}, E={element}")
+            #print(f"POT ELEMENT: S={section.number}, E={element}")
             match = next(
                 (
                     x
@@ -251,7 +251,7 @@ class M11Template:
                 None,
             )
             if not match:
-                print("SECOND ATTEMPT")
+                #print("SECOND ATTEMPT")
                 match = next(
                     (
                         x
@@ -261,7 +261,7 @@ class M11Template:
                     None,
                 )
             if match:
-                print(f"MATCH: {element}")
+                #print(f"MATCH: {element}")
                 short_name = element.replace("Enter ", "")
                 optional = True if match.color == "3333FF" else False
                 confirmed_elements.append(
@@ -276,7 +276,7 @@ class M11Template:
                     }
                 )
                 self.sections[section.number]["elements"].append(short_name)
-        print(f"CONFIRMED ELEMENTS: {confirmed_elements}")
+        #print(f"CONFIRMED ELEMENTS: {confirmed_elements}")
         return confirmed_elements
 
     def _extract_instructions(
