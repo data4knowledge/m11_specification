@@ -3206,19 +3206,6 @@
         "repeating": "No",
         "ct": []
     },
-    "-": {
-        "name": "-",
-        "data_type": "Number",
-        "definition": "N/A",
-        "guidance": "Add criteria as needed. Consider numbering the criteria sequentially.",
-        "conformance": "Optional",
-        "cardinality": "One to one",
-        "relationship": "5.2",
-        "value": "# is an integer <criterion identifier> unique number and not replaceable",
-        "business_rules": "Value Allowed: Yes\nRelationship: 5.2 Inclusion Criteria\nConcept: Sequential number",
-        "repeating": "Yes, repeatable for each inclusion criterion",
-        "ct": []
-    },
     "Inclusion Criterion": {
         "name": "Inclusion Criterion",
         "data_type": "Text",
@@ -3243,19 +3230,6 @@
         "value": "An individual who meets any of the following criteria will be excluded from participation in this trial:",
         "business_rules": "Value Allowed: No\nRelationship: 5.3 Exclusion Criteria, 5 TRIAL POPULATION and Table of Contents\nConcept: Universal text",
         "repeating": "No",
-        "ct": []
-    },
-    "- 16": {
-        "name": "- 16",
-        "data_type": "Number",
-        "definition": "N/A",
-        "guidance": "Add criteria as needed.  Consider numbering the criteria sequentially",
-        "conformance": "Required",
-        "cardinality": "One to many",
-        "relationship": "5.3",
-        "value": "# is an identifier <criterion identifier> unique number and not replaceable",
-        "business_rules": "Value Allowed: Yes\nRelationship: 5.3 Exclusion Criteria\nConcept: Sequential number",
-        "repeating": "Yes. number consecutively, repeatable for each exclusion criteria, if deleted do not replace, do not duplicate",
         "ct": []
     },
     "Exclusion Criterion": {
@@ -6598,5 +6572,33 @@
         "repeating": "No",
         "ct": [],
         "short_name": "Country Region Not Applicable"
+    },
+    "Inclusion Criterion Number": {
+        "name": "-",
+        "data_type": "Number",
+        "definition": "N/A",
+        "guidance": "Add criteria as needed. Consider numbering the criteria sequentially.",
+        "conformance": "Optional",
+        "cardinality": "One to one",
+        "relationship": "5.2",
+        "value": "# is an integer <criterion identifier> unique number and not replaceable",
+        "business_rules": "Value Allowed: Yes\nRelationship: 5.2 Inclusion Criteria\nConcept: Sequential number",
+        "repeating": "Yes, repeatable for each inclusion criterion",
+        "ct": [],
+        "short_name": "Inclusion Criterion Number"
+    },
+    "Exclusion Criterion Number": {
+        "name": "- 16",
+        "data_type": "Number",
+        "definition": "N/A",
+        "guidance": "Add criteria as needed.  Consider numbering the criteria sequentially",
+        "conformance": "Required",
+        "cardinality": "One to many",
+        "relationship": "5.3",
+        "value": "# is an identifier <criterion identifier> unique number and not replaceable",
+        "business_rules": "Value Allowed: Yes\nRelationship: 5.3 Exclusion Criteria\nConcept: Sequential number",
+        "repeating": "Yes. number consecutively, repeatable for each exclusion criteria, if deleted do not replace, do not duplicate",
+        "ct": [],
+        "short_name": "Exclusion Criterion Number"
     }
 }

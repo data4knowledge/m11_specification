@@ -327,32 +327,6 @@
             "repeating": "No",
             "ct": []
         },
-        "-": {
-            "name": "-",
-            "data_type": "Number",
-            "definition": "N/A",
-            "guidance": "Add criteria as needed. Consider numbering the criteria sequentially.",
-            "conformance": "Optional",
-            "cardinality": "One to one",
-            "relationship": "5.2",
-            "value": "# is an integer <criterion identifier> unique number and not replaceable",
-            "business_rules": "Value Allowed: Yes\nRelationship: 5.2 Inclusion Criteria\nConcept: Sequential number",
-            "repeating": "Yes, repeatable for each inclusion criterion",
-            "ct": []
-        },
-        "Inclusion Criterion": {
-            "name": "Inclusion Criterion",
-            "data_type": "Text",
-            "definition": "C25532 \nFor review purpose, see definition of the controlled terminology below\nThe criteria in a protocol that prospective subjects must meet to be eligible for participation in a study.",
-            "guidance": "Add criteria as needed. Consider numbering the criteria sequentially",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "5.2",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: to Number #, 5.2 Inclusion Criteria\nConcept: C25532",
-            "repeating": "Yes, number consecutively, repeatable for each inclusion criteria, if deleted do not replace, do not duplicate",
-            "ct": []
-        },
         "An individual who meets any of the following criteria will be excluded from participation in this trial": {
             "name": "An individual who meets any of the following criteria will be excluded from participation in this trial",
             "data_type": "Text",
@@ -364,32 +338,6 @@
             "value": "An individual who meets any of the following criteria will be excluded from participation in this trial:",
             "business_rules": "Value Allowed: No\nRelationship: 5.3 Exclusion Criteria, 5 TRIAL POPULATION and Table of Contents\nConcept: Universal text",
             "repeating": "No",
-            "ct": []
-        },
-        "- 16": {
-            "name": "- 16",
-            "data_type": "Number",
-            "definition": "N/A",
-            "guidance": "Add criteria as needed.  Consider numbering the criteria sequentially",
-            "conformance": "Required",
-            "cardinality": "One to many",
-            "relationship": "5.3",
-            "value": "# is an identifier <criterion identifier> unique number and not replaceable",
-            "business_rules": "Value Allowed: Yes\nRelationship: 5.3 Exclusion Criteria\nConcept: Sequential number",
-            "repeating": "Yes. number consecutively, repeatable for each exclusion criteria, if deleted do not replace, do not duplicate",
-            "ct": []
-        },
-        "Exclusion Criterion": {
-            "name": "Exclusion Criterion",
-            "data_type": "Text",
-            "definition": "C25370\nFor review purpose, see definition of the controlled terminology below\nList of characteristics in a protocol, any one of which excludes a potential subject from participation in a study. (CDISC glossary)",
-            "guidance": "Add criteria as needed. Consider numbering the criteria sequentially",
-            "conformance": "Required",
-            "cardinality": "One to many",
-            "relationship": "5.3",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: to Number #, 5.3 Exclusion Criteria\nConcept: C25370",
-            "repeating": "Yes, repeatable for each exclusion criterion, if deleted do not replace, do not duplicate",
             "ct": []
         }
     }
