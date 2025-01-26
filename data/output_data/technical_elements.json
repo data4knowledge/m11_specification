@@ -5179,32 +5179,6 @@
         "repeating": "Yes, reuse from the title page.",
         "ct": []
     },
-    "amendment number": {
-        "name": "amendment number",
-        "data_type": "Text",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA sequence of characters used to uniquely identify a protocol amendment",
-        "guidance": "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first).",
-        "conformance": "Conditional: if amendment",
-        "cardinality": "One to one",
-        "relationship": "12.3",
-        "value": "Text",
-        "business_rules": "Value Allowed: Yes\nRelationship: {The Overview of Changes from each prior protocol amendment is {provided below} or <specify alternative location>}.\nConcept: CNEW",
-        "repeating": "Yes, repeatable one table per amendment",
-        "ct": []
-    },
-    "Sponsor Approval Date 23": {
-        "name": "Sponsor Approval Date 23",
-        "data_type": "Date",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe date that the sponsor approved the version of the protocol,",
-        "guidance": "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first).",
-        "conformance": "Conditional: if amendment",
-        "cardinality": "One to one",
-        "relationship": "12.3",
-        "value": "Date",
-        "business_rules": "Value Allowed: Yes\nRelationship: {The Overview of Changes from each prior protocol amendment is {provided below} or <specify alternative location>}.\nConcept: CNEW",
-        "repeating": "Yes, repeatable one table per amendment",
-        "ct": []
-    },
     "Enter Appendix": {
         "name": "Enter Appendix",
         "data_type": "Text",
@@ -6632,5 +6606,33 @@
         "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
         "ct": [],
         "short_name": "Secondary Objectives Supplementary Analysis"
+    },
+    "Previous Amendment Number": {
+        "name": "amendment number",
+        "data_type": "Text",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA sequence of characters used to uniquely identify a protocol amendment",
+        "guidance": "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first).",
+        "conformance": "Conditional: if amendment",
+        "cardinality": "One to one",
+        "relationship": "12.3",
+        "value": "Text",
+        "business_rules": "Value Allowed: Yes\nRelationship: {The Overview of Changes from each prior protocol amendment is {provided below} or <specify alternative location>}.\nConcept: CNEW",
+        "repeating": "Yes, repeatable one table per amendment",
+        "ct": [],
+        "short_name": "Previous Amendment Number"
+    },
+    "Previous Amendment Date": {
+        "name": "Sponsor Approval Date 23",
+        "data_type": "Date",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe date that the sponsor approved the version of the protocol,",
+        "guidance": "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first).",
+        "conformance": "Conditional: if amendment",
+        "cardinality": "One to one",
+        "relationship": "12.3",
+        "value": "Date",
+        "business_rules": "Value Allowed: Yes\nRelationship: {The Overview of Changes from each prior protocol amendment is {provided below} or <specify alternative location>}.\nConcept: CNEW",
+        "repeating": "Yes, repeatable one table per amendment",
+        "ct": [],
+        "short_name": "Previous Amendment Date"
     }
 }

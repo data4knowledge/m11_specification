@@ -2076,15 +2076,6 @@
         "section_title": "Prior Protocol Amendment(s)",
         "instructions": []
     },
-    "Sponsor Approval Date 7": {
-        "long_name": "Enter Sponsor Approval Date",
-        "short_name": "Sponsor Approval Date 7",
-        "original_name": "Sponsor Approval Date",
-        "optional": false,
-        "section_number": "12.3",
-        "section_title": "Prior Protocol Amendment(s)",
-        "instructions": []
-    },
     "specify alternative location": {
         "long_name": "specify alternative location",
         "short_name": "specify alternative location",
@@ -2095,24 +2086,6 @@
         "instructions": [
             "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first)."
         ]
-    },
-    "enter amendment number": {
-        "long_name": "enter amendment number",
-        "short_name": "enter amendment number",
-        "original_name": "enter amendment number",
-        "optional": false,
-        "section_number": "12.3",
-        "section_title": "Prior Protocol Amendment(s)",
-        "instructions": []
-    },
-    "enter date": {
-        "long_name": "enter date",
-        "short_name": "enter date",
-        "original_name": "enter date",
-        "optional": false,
-        "section_number": "12.3",
-        "section_title": "Prior Protocol Amendment(s)",
-        "instructions": []
     },
     "Glossary of Terms and Abbreviations": {
         "long_name": "Enter Glossary of Terms and Abbreviations",
@@ -2450,6 +2423,24 @@
         "optional": false,
         "section_number": "10.5.1.5",
         "section_title": "{Supplementary Analysis}",
+        "instructions": []
+    },
+    "Previous Amendment Number": {
+        "long_name": "enter amendment number",
+        "short_name": "Previous Amendment Number",
+        "original_name": "enter amendment number",
+        "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
+        "instructions": []
+    },
+    "Previous Amendment Date": {
+        "long_name": "enter date",
+        "short_name": "Previous Amendment Date",
+        "original_name": "enter date",
+        "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
         "instructions": []
     },
     "Amendment Details": {

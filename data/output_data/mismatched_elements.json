@@ -8,33 +8,6 @@
             "section_number": "12.3",
             "section_title": "Prior Protocol Amendment(s)",
             "instructions": []
-        },
-        "Sponsor Approval Date 7": {
-            "long_name": "Enter Sponsor Approval Date",
-            "short_name": "Sponsor Approval Date 7",
-            "original_name": "Sponsor Approval Date",
-            "optional": false,
-            "section_number": "12.3",
-            "section_title": "Prior Protocol Amendment(s)",
-            "instructions": []
-        },
-        "enter amendment number": {
-            "long_name": "enter amendment number",
-            "short_name": "enter amendment number",
-            "original_name": "enter amendment number",
-            "optional": false,
-            "section_number": "12.3",
-            "section_title": "Prior Protocol Amendment(s)",
-            "instructions": []
-        },
-        "enter date": {
-            "long_name": "enter date",
-            "short_name": "enter date",
-            "original_name": "enter date",
-            "optional": false,
-            "section_number": "12.3",
-            "section_title": "Prior Protocol Amendment(s)",
-            "instructions": []
         }
     },
     "technical": {
@@ -533,32 +506,6 @@
             "value": "Integer for Number or one decimal point for percent",
             "business_rules": "Value Allowed: Yes\nRelationship: Document; Sponsor Approval Date\u201d\nConcept: CNEW",
             "repeating": "Yes, reuse from the title page",
-            "ct": []
-        },
-        "amendment number": {
-            "name": "amendment number",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA sequence of characters used to uniquely identify a protocol amendment",
-            "guidance": "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first).",
-            "conformance": "Conditional: if amendment",
-            "cardinality": "One to one",
-            "relationship": "12.3",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: {The Overview of Changes from each prior protocol amendment is {provided below} or <specify alternative location>}.\nConcept: CNEW",
-            "repeating": "Yes, repeatable one table per amendment",
-            "ct": []
-        },
-        "Sponsor Approval Date 23": {
-            "name": "Sponsor Approval Date 23",
-            "data_type": "Date",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe date that the sponsor approved the version of the protocol,",
-            "guidance": "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first).",
-            "conformance": "Conditional: if amendment",
-            "cardinality": "One to one",
-            "relationship": "12.3",
-            "value": "Date",
-            "business_rules": "Value Allowed: Yes\nRelationship: {The Overview of Changes from each prior protocol amendment is {provided below} or <specify alternative location>}.\nConcept: CNEW",
-            "repeating": "Yes, repeatable one table per amendment",
             "ct": []
         },
         "Enter Appendix": {
