@@ -1978,45 +1978,6 @@
         "repeating": "No",
         "ct": []
     },
-    "Enter Not applicable": {
-        "name": "Enter Not applicable",
-        "data_type": "Text",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA narrative representation of the comparator against which the study intervention is evaluated.",
-        "guidance": "",
-        "conformance": "Conditional : if there is a nonproprietary name or INN or Not applicable",
-        "cardinality": "One to many",
-        "relationship": "1.1.2",
-        "value": "[Nonproprietary name] or [INN] or <Enter \u201cN/A\u201d>",
-        "business_rules": "Value Allowed: Yes\nRelationship: Row title; Sponsor Protocol Identifier\nConcept: CNEW",
-        "repeating": "No",
-        "ct": []
-    },
-    "Nonproprietary name 5": {
-        "name": "Nonproprietary name 5",
-        "data_type": "Valid Value",
-        "definition": "C97054\nFor review purpose, see definition of the controlled terminology below\nDrug name that is not protected by a trademark, usually descriptive of its chemical structure. (ICH E2B)",
-        "guidance": "",
-        "conformance": "Conditional: if there is a Nonproprietary name",
-        "cardinality": "One to many",
-        "relationship": "1.1.2",
-        "value": "Use for example WHO INN, USAN, JAN, XEVMPD",
-        "business_rules": "Value Allowed: Yes\nRelationship: Row title; Control Description; Sponsor Protocol Identifier\nConcept: C97054",
-        "repeating": "Yes, repeatable for each nonproprietary name used as control",
-        "ct": []
-    },
-    "INN 6": {
-        "name": "INN 6",
-        "data_type": "Valid Value",
-        "definition": "C142585\nFor review purpose, see definition of the controlled terminology below\nA unique name that is globally recognised and public property, which identifies pharmaceutical substances or active pharmaceutical ingredients. (After WHO)",
-        "guidance": "",
-        "conformance": "Conditional:  if there is an INN",
-        "cardinality": "One to many",
-        "relationship": "1.1.2",
-        "value": "or use for example WHO INN, USAN, JAN, XEVMPD",
-        "business_rules": "Value Allowed: Yes\nRelationship: Row title; Control Description; Protocol Identifier\nConcept: C142585",
-        "repeating": "Yes, repeatable for each INN used as control",
-        "ct": []
-    },
     "Not applicable": {
         "name": "Not applicable",
         "data_type": "Text",

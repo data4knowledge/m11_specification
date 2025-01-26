@@ -16,3 +16,9 @@
   reason: Funny error around IEs
 "An individual who meets any of the following criteria will be excluded from participation in this trial":
   reason: Funny error around IEs
+"Enter Not applicable":
+  reason: Duplicate entry in technical specification
+"Nonproprietary name 5":
+  reason: Duplicate entry in technical specification
+"INN 6":
+  reason: Duplicate entry in technical specification
