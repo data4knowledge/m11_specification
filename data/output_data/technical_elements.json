@@ -2017,6 +2017,19 @@
         "repeating": "Yes, repeatable for each INN used as control",
         "ct": []
     },
+    "Not applicable": {
+        "name": "Not applicable",
+        "data_type": "Text",
+        "definition": "Verbatim Text",
+        "guidance": "",
+        "conformance": "Conditional: if there is no nonproprietary name and INN",
+        "cardinality": "One to one",
+        "relationship": "1.1.2",
+        "value": "N/A",
+        "business_rules": "Value Allowed: Yes, cannot have not applicable if Nonproprietary or INN are completed\nRelationship: Row title; Control Description; Protocol Identifier\nConcept: Verbatim Text",
+        "repeating": "No",
+        "ct": []
+    },
     "units of minimum age": {
         "name": "units of minimum age",
         "data_type": "Valid Value",
@@ -5041,19 +5054,6 @@
         "repeating": "No",
         "ct": []
     },
-    "Not applicable 20": {
-        "name": "Not applicable 20",
-        "data_type": "Universal Text",
-        "definition": "",
-        "guidance": "N/A",
-        "conformance": "Optional: if there are no Country/Region Specific Differences",
-        "cardinality": "One to one",
-        "relationship": "12.2",
-        "value": "Not applicable",
-        "business_rules": "Value Allowed: Yes\nRelationship: 12.2 Country/Region-Specific Differences\nConcept: Universal Text",
-        "repeating": "No",
-        "ct": []
-    },
     "Country-Region Identifier": {
         "name": "Country-Region Identifier",
         "data_type": "Valid Value",
@@ -6599,15 +6599,15 @@
         "short_name": "Previous Amendment Enrollment Scope"
     },
     "Country Region Not Applicable": {
-        "name": "Not applicable",
-        "data_type": "Text",
-        "definition": "Verbatim Text",
-        "guidance": "",
-        "conformance": "Conditional: if there is no nonproprietary name and INN",
+        "name": "Not applicable 20",
+        "data_type": "Universal Text",
+        "definition": "",
+        "guidance": "N/A",
+        "conformance": "Optional: if there are no Country/Region Specific Differences",
         "cardinality": "One to one",
-        "relationship": "1.1.2",
-        "value": "N/A",
-        "business_rules": "Value Allowed: Yes, cannot have not applicable if Nonproprietary or INN are completed\nRelationship: Row title; Control Description; Protocol Identifier\nConcept: Verbatim Text",
+        "relationship": "12.2",
+        "value": "Not applicable",
+        "business_rules": "Value Allowed: Yes\nRelationship: 12.2 Country/Region-Specific Differences\nConcept: Universal Text",
         "repeating": "No",
         "ct": [],
         "short_name": "Country Region Not Applicable"

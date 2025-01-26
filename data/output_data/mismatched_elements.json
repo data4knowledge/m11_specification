@@ -1,15 +1,5 @@
 {
-    "template": {
-        "Not applicable": {
-            "long_name": "Enter \u201cNot applicable\u201d",
-            "short_name": "Not applicable",
-            "original_name": "\u201cNot applicable\u201d",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        }
-    },
+    "template": {},
     "technical": {
         "Amendment Scope Enrolment Description": {
             "name": "Amendment Scope Enrolment Description",
@@ -419,19 +409,6 @@
             "relationship": "9.2.4",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 9.2.4 Adverse Events of Special Interest\nConcept: CNEW",
-            "repeating": "No",
-            "ct": []
-        },
-        "Not applicable 20": {
-            "name": "Not applicable 20",
-            "data_type": "Universal Text",
-            "definition": "",
-            "guidance": "N/A",
-            "conformance": "Optional: if there are no Country/Region Specific Differences",
-            "cardinality": "One to one",
-            "relationship": "12.2",
-            "value": "Not applicable",
-            "business_rules": "Value Allowed: Yes\nRelationship: 12.2 Country/Region-Specific Differences\nConcept: Universal Text",
             "repeating": "No",
             "ct": []
         }

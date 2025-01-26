@@ -2772,6 +2772,30 @@
             "notes": ""
         }
     },
+    "Not applicable": {
+        "template": {
+            "long_name": "Enter \u201cNot applicable\u201d",
+            "short_name": "Not applicable",
+            "original_name": "\u201cNot applicable\u201d",
+            "optional": false,
+            "section_number": "1.1.2",
+            "section_title": "Overall Design",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Not applicable",
+            "data_type": "Text",
+            "definition": "Verbatim Text",
+            "guidance": "",
+            "conformance": "Conditional: if there is no nonproprietary name and INN",
+            "cardinality": "One to one",
+            "relationship": "1.1.2",
+            "value": "N/A",
+            "business_rules": "Value Allowed: Yes, cannot have not applicable if Nonproprietary or INN are completed\nRelationship: Row title; Control Description; Protocol Identifier\nConcept: Verbatim Text",
+            "repeating": "No",
+            "ct": []
+        }
+    },
     "Site geographic scope": {
         "template": {
             "long_name": "Site geographic scope",
@@ -10898,15 +10922,15 @@
             "instructions": []
         },
         "technical": {
-            "name": "Not applicable",
-            "data_type": "Text",
-            "definition": "Verbatim Text",
-            "guidance": "",
-            "conformance": "Conditional: if there is no nonproprietary name and INN",
+            "name": "Not applicable 20",
+            "data_type": "Universal Text",
+            "definition": "",
+            "guidance": "N/A",
+            "conformance": "Optional: if there are no Country/Region Specific Differences",
             "cardinality": "One to one",
-            "relationship": "1.1.2",
-            "value": "N/A",
-            "business_rules": "Value Allowed: Yes, cannot have not applicable if Nonproprietary or INN are completed\nRelationship: Row title; Control Description; Protocol Identifier\nConcept: Verbatim Text",
+            "relationship": "12.2",
+            "value": "Not applicable",
+            "business_rules": "Value Allowed: Yes\nRelationship: 12.2 Country/Region-Specific Differences\nConcept: Universal Text",
             "repeating": "No",
             "ct": [],
             "short_name": "Country Region Not Applicable"
