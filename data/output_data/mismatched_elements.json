@@ -425,53 +425,6 @@
             "repeating": "No",
             "ct": []
         },
-        "Prior Protocol Amendments": {
-            "name": "Prior Protocol Amendments",
-            "data_type": "Valid Value",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nAn indication as to whether the protocol has not been amended, is the first protocol amendment, or a statement that the protocol has been amended previously.",
-            "guidance": "Choose the applicable statement below. For an original protocol that has not been amended, retain the first sentence below and delete the remainder of this entire section. \n{Not applicable. This protocol has not been amended.} \nOr\n{Not applicable. This is the first protocol amendment.} \nOr include the below as applicable.\n{This protocol has been amended previously. The Protocol Amendment Summary of Changes for the current amendment is located directly before the Table of Contents. Prior amendment(s) to this protocol are listed in the table below, beginning with the most recent.}",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "12.3",
-            "value": "Not applicable. This protocol has not been amended. (CNEW)\nOr\nNot applicable. This is the first protocol amendment. (CNEW) \nOr \nThis protocol has been amended previously. The Protocol Amendment Summary of Changes for the current amendment is located directly before the Table of Contents. Prior amendment(s) to this protocol are listed in the table below, beginning with the most recent. (CNEW)",
-            "business_rules": "Value Allowed: Yes\nRelationship: 12.3 Prior Protocol Amendment(s)\nConcept: CNEW",
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "ICH M11 Amendment Details Statement Response",
-                    "definition": "A terminology value set relevant to the amendment details statement responses within the ICH M11 Protocol model."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Not applicable. This protocol has not been amended.",
-                    "definition": "Not applicable. This protocol has not been amended."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Not applicable. This is the first protocol amendment.",
-                    "definition": "Not applicable. This is the first protocol amendment."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "{This protocol has been amended previously. The Protocol Amendment Summary of Changes for the current amendment is located directly before the Table of Contents. Prior amendment(s) to this protocol are listed in the table below, beginning with the most recent.}",
-                    "definition": "{This protocol has been amended previously. The Protocol Amendment Summary of Changes for the current amendment is located directly before the Table of Contents. Prior amendment(s) to this protocol are listed in the table below, beginning with the most recent.}"
-                }
-            ]
-        },
-        "- or - 22": {
-            "name": "- or - 22",
-            "data_type": "Number",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value (expressed as an absolute value or percentage) for the estimated number of participants enrolled at the time of the protocol amendment.",
-            "guidance": "N/A",
-            "conformance": "Optional: if Original Protocol =No",
-            "cardinality": "One to one",
-            "relationship": "Amendment Details",
-            "value": "Integer for Number or one decimal point for percent",
-            "business_rules": "Value Allowed: Yes\nRelationship: Document; Sponsor Approval Date\u201d\nConcept: CNEW",
-            "repeating": "Yes, reuse from the title page",
-            "ct": []
-        },
         "Enter Appendix": {
             "name": "Enter Appendix",
             "data_type": "Text",

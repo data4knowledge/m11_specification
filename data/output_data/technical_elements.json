@@ -5127,19 +5127,6 @@
         "repeating": "Yes, reuse from the title page",
         "ct": []
     },
-    "- or - 22": {
-        "name": "- or - 22",
-        "data_type": "Number",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value (expressed as an absolute value or percentage) for the estimated number of participants enrolled at the time of the protocol amendment.",
-        "guidance": "N/A",
-        "conformance": "Optional: if Original Protocol =No",
-        "cardinality": "One to one",
-        "relationship": "Amendment Details",
-        "value": "Integer for Number or one decimal point for percent",
-        "business_rules": "Value Allowed: Yes\nRelationship: Document; Sponsor Approval Date\u201d\nConcept: CNEW",
-        "repeating": "Yes, reuse from the title page",
-        "ct": []
-    },
     "specify alternative location": {
         "name": "specify alternative location",
         "data_type": "Text",
