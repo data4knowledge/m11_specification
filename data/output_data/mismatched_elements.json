@@ -1,5 +1,24 @@
 {
-    "template": {},
+    "template": {
+        "Table of Estimand Characteristics including Endpoint at a minimum 3": {
+            "long_name": "Enter Table of Estimand Characteristics including Endpoint at a minimum",
+            "short_name": "Table of Estimand Characteristics including Endpoint at a minimum 3",
+            "original_name": "Table of Estimand Characteristics including Endpoint at a minimum",
+            "optional": false,
+            "section_number": "3.2.1",
+            "section_title": "{Secondary Objective}",
+            "instructions": []
+        },
+        "Table of Estimand Characteristics including endpoint at a minimum": {
+            "long_name": "Enter Table of Estimand Characteristics including endpoint at a minimum",
+            "short_name": "Table of Estimand Characteristics including endpoint at a minimum",
+            "original_name": "Table of Estimand Characteristics including endpoint at a minimum",
+            "optional": false,
+            "section_number": "3.3.1",
+            "section_title": "{Exploratory Objective}",
+            "instructions": []
+        }
+    },
     "technical": {
         "Amendment Scope Enrolment Description": {
             "name": "Amendment Scope Enrolment Description",
@@ -98,19 +117,6 @@
             "value": "or use for example WHO INN, USAN, JAN, XEVMPD",
             "business_rules": "Value Allowed: Yes\nRelationship: Row title; Control Description; Protocol Identifier\nConcept: C142585",
             "repeating": "Yes, repeatable for each INN used as control",
-            "ct": []
-        },
-        "Table of Estimand Characteristics including Endpoint at a minimum": {
-            "name": "Table of Estimand Characteristics including Endpoint at a minimum",
-            "data_type": "Text",
-            "definition": "N/A",
-            "guidance": "N/A",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "3.1.X: X is a unique number for each primary objective",
-            "value": "Estimand Characteristics",
-            "business_rules": "Value Allowed: Yes\nRelationship: 3.1.1 Primary Objective\nConcept: Heading",
-            "repeating": "Yes, repeatable for each numbered primary objective.\nYes, reuse to the table in Section 1.1.1.for each primary objective",
             "ct": []
         },
         "Secondary Objective X": {
@@ -396,19 +402,6 @@
             "relationship": "6.1",
             "value": "Text",
             "business_rules": "Value Allowed: Yes\nRelationship: 6.1 Description of Investigational Trial Intervention\nConcept: CNEW",
-            "repeating": "No",
-            "ct": []
-        },
-        "Adverse Events of Special Interest or state Not applicable": {
-            "name": "Adverse Events of Special Interest or state Not applicable",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nA description of the processes and procedures used to define, measure, confirm, and report the occurrence of adverse events that are of special interest to the specific trial, or state not applicable.",
-            "guidance": "",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "9.2.4",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: 9.2.4 Adverse Events of Special Interest\nConcept: CNEW",
             "repeating": "No",
             "ct": []
         }

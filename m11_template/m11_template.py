@@ -250,6 +250,16 @@ class M11Template:
                 ),
                 None,
             )
+            if not match:
+                match = next(
+                    (
+                        x
+                        for x in paragraph.runs
+                        if element.startswith(x.text) and x.highlight == "GRAY_25 (16)"
+                    ),
+                    None,
+                )
+                #print(f"MATCH: {element}")
             if match:
                 #print(f"MATCH: {element}")
                 short_name = element.replace("Enter ", "")

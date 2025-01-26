@@ -208,6 +208,7 @@
         "number": "3.1.1",
         "elements": [
             "Primary Objective",
+            "Table of Estimand Characteristics including Endpoint at a minimum",
             "Population",
             "Treatment",
             "Endpoint",
@@ -227,7 +228,8 @@
         "title": "{Secondary Objective}",
         "number": "3.2.1",
         "elements": [
-            "Secondary Objective"
+            "Secondary Objective",
+            "Table of Estimand Characteristics including Endpoint at a minimum"
         ],
         "instructions": []
     },
@@ -241,7 +243,8 @@
         "title": "{Exploratory Objective}",
         "number": "3.3.1",
         "elements": [
-            "Exploratory Objective"
+            "Exploratory Objective",
+            "Table of Estimand Characteristics including endpoint at a minimum"
         ],
         "instructions": []
     },
@@ -939,7 +942,9 @@
     "9.2.4": {
         "title": "Adverse Events of Special Interest",
         "number": "9.2.4",
-        "elements": [],
+        "elements": [
+            "Adverse Events of Special Interest or state \u201cNot applicable\u201d"
+        ],
         "instructions": []
     },
     "9.2.5": {

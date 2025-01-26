@@ -149,13 +149,13 @@ class M11Technical:
             item_text = self._row_cell_text(row_1, 0).strip()
             item_name = self._row_cell_text(row_1, 1).strip()
             item_type = self._row_cell_text(row_3, 1).strip()
-            print(f"ROWS: {item_text}={item_name}, Type={item_type}")
+            #print(f"ROWS: {item_text}={item_name}, Type={item_type}")
             if item_text.startswith("Term (Variable)"):
                 if item_type in ["D", "V", "V or D", "D, V"]:
-                    print(f"TRUE")
+                    #print(f"TRUE")
                     return True
                 if item_name.startswith("[") and item_name.endswith("]") and item_type == "H":
-                    print(f"TRUE")
+                    #print(f"TRUE")
                     return True
         return False
 

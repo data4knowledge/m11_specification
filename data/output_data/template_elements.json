@@ -766,6 +766,15 @@
         "section_title": "Primary Objective <#>",
         "instructions": []
     },
+    "Table of Estimand Characteristics including Endpoint at a minimum": {
+        "long_name": "Enter Table of Estimand Characteristics including Endpoint at a minimum",
+        "short_name": "Table of Estimand Characteristics including Endpoint at a minimum",
+        "original_name": "Table of Estimand Characteristics including Endpoint at a minimum",
+        "optional": false,
+        "section_number": "3.1.1",
+        "section_title": "Primary Objective <#>",
+        "instructions": []
+    },
     "Population": {
         "long_name": "Enter Population",
         "short_name": "Population",
@@ -820,10 +829,28 @@
         "section_title": "{Secondary Objective}",
         "instructions": []
     },
+    "Table of Estimand Characteristics including Endpoint at a minimum 3": {
+        "long_name": "Enter Table of Estimand Characteristics including Endpoint at a minimum",
+        "short_name": "Table of Estimand Characteristics including Endpoint at a minimum 3",
+        "original_name": "Table of Estimand Characteristics including Endpoint at a minimum",
+        "optional": false,
+        "section_number": "3.2.1",
+        "section_title": "{Secondary Objective}",
+        "instructions": []
+    },
     "Exploratory Objective": {
         "long_name": "Enter Exploratory Objective",
         "short_name": "Exploratory Objective",
         "original_name": "Exploratory Objective",
+        "optional": false,
+        "section_number": "3.3.1",
+        "section_title": "{Exploratory Objective}",
+        "instructions": []
+    },
+    "Table of Estimand Characteristics including endpoint at a minimum": {
+        "long_name": "Enter Table of Estimand Characteristics including endpoint at a minimum",
+        "short_name": "Table of Estimand Characteristics including endpoint at a minimum",
+        "original_name": "Table of Estimand Characteristics including endpoint at a minimum",
         "optional": false,
         "section_number": "3.3.1",
         "section_title": "{Exploratory Objective}",
@@ -1660,6 +1687,15 @@
         "section_title": "Regulatory Reporting Requirements",
         "instructions": []
     },
+    "Adverse Events of Special Interest or state Not applicable": {
+        "long_name": "Enter Adverse Events of Special Interest or state \u201cNot applicable\u201d",
+        "short_name": "Adverse Events of Special Interest or state Not applicable",
+        "original_name": "Adverse Events of Special Interest or state \u201cNot applicable\u201d",
+        "optional": false,
+        "section_number": "9.2.4",
+        "section_title": "Adverse Events of Special Interest",
+        "instructions": []
+    },
     "Participants Who Become Pregnant During the Trial": {
         "long_name": "Enter Participants Who Become Pregnant During the Trial",
         "short_name": "Participants Who Become Pregnant During the Trial",
@@ -2353,6 +2389,33 @@
         "section_title": "Timing and Procedures for Collection and Reporting",
         "instructions": []
     },
+    "Secondary Objectives Statistical Analysis Method": {
+        "long_name": "Enter Statistical Analysis Method",
+        "short_name": "Secondary Objectives Statistical Analysis Method",
+        "original_name": "Statistical Analysis Method",
+        "optional": false,
+        "section_number": "10.5.1.1",
+        "section_title": "{Statistical Analysis Method}",
+        "instructions": []
+    },
+    "Secondary Objectives Sensitivity Analysis": {
+        "long_name": "Enter Sensitivity Analysis",
+        "short_name": "Secondary Objectives Sensitivity Analysis",
+        "original_name": "Sensitivity Analysis",
+        "optional": false,
+        "section_number": "10.5.1.4",
+        "section_title": "{Sensitivity Analysis}",
+        "instructions": []
+    },
+    "Secondary Objectives Supplementary Analysis": {
+        "long_name": "Enter Supplementary Analysis",
+        "short_name": "Secondary Objectives Supplementary Analysis",
+        "original_name": "Supplementary Analysis",
+        "optional": false,
+        "section_number": "10.5.1.5",
+        "section_title": "{Supplementary Analysis}",
+        "instructions": []
+    },
     "Prior Amendment Identifier": {
         "long_name": "Enter Amendment Identifier",
         "short_name": "Prior Amendment Identifier",
@@ -2387,33 +2450,6 @@
         "optional": false,
         "section_number": "12.3",
         "section_title": "Prior Protocol Amendment(s)",
-        "instructions": []
-    },
-    "Secondary Objectives Statistical Analysis Method": {
-        "long_name": "Enter Statistical Analysis Method",
-        "short_name": "Secondary Objectives Statistical Analysis Method",
-        "original_name": "Statistical Analysis Method",
-        "optional": false,
-        "section_number": "10.5.1.1",
-        "section_title": "{Statistical Analysis Method}",
-        "instructions": []
-    },
-    "Secondary Objectives Sensitivity Analysis": {
-        "long_name": "Enter Sensitivity Analysis",
-        "short_name": "Secondary Objectives Sensitivity Analysis",
-        "original_name": "Sensitivity Analysis",
-        "optional": false,
-        "section_number": "10.5.1.4",
-        "section_title": "{Sensitivity Analysis}",
-        "instructions": []
-    },
-    "Secondary Objectives Supplementary Analysis": {
-        "long_name": "Enter Supplementary Analysis",
-        "short_name": "Secondary Objectives Supplementary Analysis",
-        "original_name": "Supplementary Analysis",
-        "optional": false,
-        "section_number": "10.5.1.5",
-        "section_title": "{Supplementary Analysis}",
         "instructions": []
     },
     "Previous Amendment Number": {
