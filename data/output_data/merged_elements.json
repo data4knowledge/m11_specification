@@ -8211,6 +8211,30 @@
             "notes": ""
         }
     },
+    "Country-Region Identifier": {
+        "template": {
+            "long_name": "Country/Region Identifier",
+            "short_name": "Country-Region Identifier",
+            "original_name": "Country/Region Identifier",
+            "optional": true,
+            "section_number": "12.2",
+            "section_title": "Country/Region-Specific Differences",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Country-Region Identifier",
+            "data_type": "Valid Value",
+            "definition": "C20108 or CNEW\nFor review purpose, see definition of the controlled terminology below\nCountry: A sequence of characters used to identify and/or name the country.\nRegion: A sequence of characters used to identify and/or name the region.",
+            "guidance": "Although global clinical trial practices are increasingly harmonised, some country/ region-specific differences in requirements do exist (e.g., document retention periods, contraception requirements). Where differences in requirements cannot be reconciled, sponsors should explain how they will document and communicate country/region-specific differences (e.g., by country/region-specific amendments or addenda).\nAn alternative to country/region-specific amendments is to list the specific differences by country or countries in this section, including a reference to the relevant section of the protocol where the differing requirement applies.\nIf not applicable, retain the heading and enter \u201cNot applicable.\u201d",
+            "conformance": "Optional: if there is Country/Region-specific differences",
+            "cardinality": "One to many",
+            "relationship": "12.2",
+            "value": "Country Data element ISO 3166 Alpha 2, Region Data element ISO 3166 Alpha 2\nor\nNot applicable",
+            "business_rules": "Value Allowed: Yes\nRelationship: 12.2 Country/Region-Specific Differences\nConcept: C20108, CNEW, Heading, Identifier, ISO 3166 Country Codes, Alpha 2; ISO 3166 Region Codes, Alpha 2",
+            "repeating": "Yes, repeatable for each Country/Region",
+            "ct": []
+        }
+    },
     "Country-Region Specific Requirements": {
         "template": {
             "long_name": "Enter Country/Region Specific Requirements",

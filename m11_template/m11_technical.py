@@ -146,11 +146,17 @@ class M11Technical:
         if len(table.rows) > 3:
             row_1 = table.rows[0]
             row_3 = table.rows[2]
-            #print(f"ROW 1: {self._row_cell_text(row_1, 0)} -> {self._row_cell_text(row_1, 1)}")
-            #print(f"ROW 3: {self._row_cell_text(row_3, 0)} -> {self._row_cell_text(row_3, 1)}")
-            if self._row_cell_text(row_1, 0).strip().startswith("Term (Variable)") and self._row_cell_text(row_3, 1).strip() in ["D", "V", "V or D", "D, V"]:
-                #print(f"TRUE")
-                return True
+            item_text = self._row_cell_text(row_1, 0).strip()
+            item_name = self._row_cell_text(row_1, 1).strip()
+            item_type = self._row_cell_text(row_3, 1).strip()
+            print(f"ROWS: {item_text}={item_name}, Type={item_type}")
+            if item_text.startswith("Term (Variable)"):
+                if item_type in ["D", "V", "V or D", "D, V"]:
+                    print(f"TRUE")
+                    return True
+                if item_name.startswith("[") and item_name.endswith("]") and item_type == "H":
+                    print(f"TRUE")
+                    return True
         return False
 
     def _is_ncit_table(self, table: RawTable) -> bool:
