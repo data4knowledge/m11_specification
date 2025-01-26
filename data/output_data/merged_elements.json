@@ -10895,8 +10895,8 @@
             "short_name": "Previous Amendment Enrollment Scope",
             "original_name": "Previous Amendment Enrollment Scope",
             "optional": false,
-            "section_number": null,
-            "section_title": null,
+            "section_number": 12.3,
+            "section_title": "Prior Protocol Amendments",
             "instructions": []
         },
         "technical": {
@@ -10920,8 +10920,8 @@
             "short_name": "Prior Protocol Amendments",
             "original_name": "Prior Protocol Amendments",
             "optional": false,
-            "section_number": null,
-            "section_title": null,
+            "section_number": 12.3,
+            "section_title": "Prior Protocol Amendments",
             "instructions": []
         },
         "technical": {
@@ -10965,8 +10965,8 @@
             "short_name": "Country Region Not Applicable",
             "original_name": "Country Region Not Applicable",
             "optional": false,
-            "section_number": null,
-            "section_title": null,
+            "section_number": 12.3,
+            "section_title": "Prior Protocol Amendments",
             "instructions": []
         },
         "technical": {

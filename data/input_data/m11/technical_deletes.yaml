@@ -8,3 +8,5 @@
   reason: Additional appendix section but not in template specification
 "- or - 22": 
   reason: Repeating element previously defined
+"Additional Text if Needed":
+  reason: Not in template specification

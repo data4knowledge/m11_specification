@@ -391,19 +391,6 @@
             "business_rules": "Value Allowed: Yes\nRelationship: to Number #, 5.3 Exclusion Criteria\nConcept: C25370",
             "repeating": "Yes, repeatable for each exclusion criterion, if deleted do not replace, do not duplicate",
             "ct": []
-        },
-        "Additional Text if Needed": {
-            "name": "Additional Text if Needed",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nExtra or further descriptive text that is optionally added as needed.",
-            "guidance": "N/A",
-            "conformance": "Optional",
-            "cardinality": "One to one",
-            "relationship": "6.1",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: 6.1 Description of Investigational Trial Intervention\nConcept: CNEW",
-            "repeating": "No",
-            "ct": []
         }
     }
 }
