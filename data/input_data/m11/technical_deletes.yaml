@@ -10,3 +10,9 @@
   reason: Repeating element previously defined
 "Additional Text if Needed":
   reason: Not in template specification
+"Prospective approval of protocol deviations to recruitment and enrollment criteria also known as protocol waivers or exemptions is not permitted":
+  reason: Funny error around IEs
+"To be eligible to participate in this trial an individual must meet all the following criteria":
+  reason: Funny error around IEs
+"An individual who meets any of the following criteria will be excluded from participation in this trial":
+  reason: Funny error around IEs

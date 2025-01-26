@@ -300,45 +300,6 @@
             "business_rules": "Value Allowed: Yes\nRelationship: Row Heading; Strategy, Description\nConcept: C188857",
             "repeating": "Yes, repeatable for each intercurrent event",
             "ct": []
-        },
-        "Prospective approval of protocol deviations to recruitment and enrollment criteria also known as protocol waivers or exemptions is not permitted": {
-            "name": "Prospective approval of protocol deviations to recruitment and enrollment criteria also known as protocol waivers or exemptions is not permitted",
-            "data_type": "Text",
-            "definition": "Universal Text",
-            "guidance": "N/A",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "5.1",
-            "value": "Prospective approval of protocol deviations to recruitment and enrollment criteria, also known as protocol waivers or exemptions, is not permitted.",
-            "business_rules": "Value Allowed: No\nRelationship: 5.1 Description of Trial Population and Rationale\nConcept: Universal text",
-            "repeating": "No",
-            "ct": []
-        },
-        "To be eligible to participate in this trial an individual must meet all the following criteria": {
-            "name": "To be eligible to participate in this trial an individual must meet all the following criteria",
-            "data_type": "Text",
-            "definition": "Universal text",
-            "guidance": "N/A",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "5.2",
-            "value": "To be eligible to participate in this trial, an individual must meet all the following criteria:",
-            "business_rules": "Value Allowed: No\nRelationship: 5.2 Inclusion Criteria\nConcept: Universal text",
-            "repeating": "No",
-            "ct": []
-        },
-        "An individual who meets any of the following criteria will be excluded from participation in this trial": {
-            "name": "An individual who meets any of the following criteria will be excluded from participation in this trial",
-            "data_type": "Text",
-            "definition": "Universal text",
-            "guidance": "N/A",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "5.3",
-            "value": "An individual who meets any of the following criteria will be excluded from participation in this trial:",
-            "business_rules": "Value Allowed: No\nRelationship: 5.3 Exclusion Criteria, 5 TRIAL POPULATION and Table of Contents\nConcept: Universal text",
-            "repeating": "No",
-            "ct": []
         }
     }
 }
