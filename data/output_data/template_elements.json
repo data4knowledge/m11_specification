@@ -2505,5 +2505,14 @@
         "section_number": null,
         "section_title": null,
         "instructions": []
+    },
+    "Country Region Not Applicable": {
+        "long_name": "Country Region Not Applicable",
+        "short_name": "Country Region Not Applicable",
+        "original_name": "Country Region Not Applicable",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": []
     }
 }

@@ -2772,30 +2772,6 @@
             "notes": ""
         }
     },
-    "Not applicable": {
-        "template": {
-            "long_name": "Enter \u201cNot applicable\u201d",
-            "short_name": "Not applicable",
-            "original_name": "\u201cNot applicable\u201d",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Not applicable",
-            "data_type": "Text",
-            "definition": "Verbatim Text",
-            "guidance": "",
-            "conformance": "Conditional: if there is no nonproprietary name and INN",
-            "cardinality": "One to one",
-            "relationship": "1.1.2",
-            "value": "N/A",
-            "business_rules": "Value Allowed: Yes, cannot have not applicable if Nonproprietary or INN are completed\nRelationship: Row title; Control Description; Protocol Identifier\nConcept: Verbatim Text",
-            "repeating": "No",
-            "ct": []
-        }
-    },
     "Site geographic scope": {
         "template": {
             "long_name": "Site geographic scope",
@@ -10909,6 +10885,31 @@
                     "definition": "{This protocol has been amended previously. The Protocol Amendment Summary of Changes for the current amendment is located directly before the Table of Contents. Prior amendment(s) to this protocol are listed in the table below, beginning with the most recent.}"
                 }
             ]
+        }
+    },
+    "Country Region Not Applicable": {
+        "template": {
+            "long_name": "Country Region Not Applicable",
+            "short_name": "Country Region Not Applicable",
+            "original_name": "Country Region Not Applicable",
+            "optional": false,
+            "section_number": null,
+            "section_title": null,
+            "instructions": []
+        },
+        "technical": {
+            "name": "Not applicable",
+            "data_type": "Text",
+            "definition": "Verbatim Text",
+            "guidance": "",
+            "conformance": "Conditional: if there is no nonproprietary name and INN",
+            "cardinality": "One to one",
+            "relationship": "1.1.2",
+            "value": "N/A",
+            "business_rules": "Value Allowed: Yes, cannot have not applicable if Nonproprietary or INN are completed\nRelationship: Row title; Control Description; Protocol Identifier\nConcept: Verbatim Text",
+            "repeating": "No",
+            "ct": [],
+            "short_name": "Country Region Not Applicable"
         }
     }
 }

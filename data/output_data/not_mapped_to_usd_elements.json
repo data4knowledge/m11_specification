@@ -16,7 +16,6 @@
     "units of minimum age": "units of minimum age",
     "maximum age": "maximum age",
     "units of maximum age": "units of maximum age",
-    "Not applicable": "Not applicable",
     "Site geographic scope": "Site geographic scope",
     "Master Protocol Indicator": "Master Protocol Indicator",
     "Drug-Device Combination Product Indicator": "Drug-Device Combination Product Indicator",
@@ -119,5 +118,6 @@
     "Primary Reason Other": "Primary Reason Other",
     "Secondary Reason Other": "Secondary Reason Other",
     "Previous Amendment Enrollment Scope": "Previous Amendment Enrollment Scope",
-    "Prior Protocol Amendments": "Prior Protocol Amendments"
+    "Prior Protocol Amendments": "Prior Protocol Amendments",
+    "Country Region Not Applicable": "Country Region Not Applicable"
 }

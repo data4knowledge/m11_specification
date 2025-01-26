@@ -4,7 +4,7 @@
   reason: Not really a data element
 "Number or -":
   reason: ""
-"12 X where X is a unique number for each Additional Appendix: Enter Appendix":
+"Enter Appendix":
   reason: Additional appendix section but not in template specification
 "- or - 22": 
   reason: Repeating element previously defined

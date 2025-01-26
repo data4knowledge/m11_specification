@@ -2017,19 +2017,6 @@
         "repeating": "Yes, repeatable for each INN used as control",
         "ct": []
     },
-    "Not applicable": {
-        "name": "Not applicable",
-        "data_type": "Text",
-        "definition": "Verbatim Text",
-        "guidance": "",
-        "conformance": "Conditional: if there is no nonproprietary name and INN",
-        "cardinality": "One to one",
-        "relationship": "1.1.2",
-        "value": "N/A",
-        "business_rules": "Value Allowed: Yes, cannot have not applicable if Nonproprietary or INN are completed\nRelationship: Row title; Control Description; Protocol Identifier\nConcept: Verbatim Text",
-        "repeating": "No",
-        "ct": []
-    },
     "units of minimum age": {
         "name": "units of minimum age",
         "data_type": "Valid Value",
@@ -5140,19 +5127,6 @@
         "repeating": "Yes, reuse from the title page.",
         "ct": []
     },
-    "Enter Appendix": {
-        "name": "Enter Appendix",
-        "data_type": "Text",
-        "definition": "N/A",
-        "guidance": "N/A",
-        "conformance": "Optional",
-        "cardinality": "One to one",
-        "relationship": "12 X\nwhere X is a unique number for each Additional Appendix",
-        "value": "Text",
-        "business_rules": "Value Allowed: Yes\nRelationship: 12.X Additional Appendices\nConcept: CNEW",
-        "repeating": "No",
-        "ct": []
-    },
     "Glossary of Terms and Abbreviations": {
         "name": "Glossary of Terms and Abbreviations",
         "data_type": "Text",
@@ -6623,5 +6597,19 @@
         "repeating": "Yes, reuse from the title page",
         "ct": [],
         "short_name": "Previous Amendment Enrollment Scope"
+    },
+    "Country Region Not Applicable": {
+        "name": "Not applicable",
+        "data_type": "Text",
+        "definition": "Verbatim Text",
+        "guidance": "",
+        "conformance": "Conditional: if there is no nonproprietary name and INN",
+        "cardinality": "One to one",
+        "relationship": "1.1.2",
+        "value": "N/A",
+        "business_rules": "Value Allowed: Yes, cannot have not applicable if Nonproprietary or INN are completed\nRelationship: Row title; Control Description; Protocol Identifier\nConcept: Verbatim Text",
+        "repeating": "No",
+        "ct": [],
+        "short_name": "Country Region Not Applicable"
     }
 }
