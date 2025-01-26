@@ -5127,32 +5127,6 @@
         "repeating": "Yes, reuse from the title page",
         "ct": []
     },
-    "- or -": {
-        "name": "- or -",
-        "data_type": "Text",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage. The numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage.",
-        "guidance": "",
-        "conformance": "Optional: when there is an amendment and sponsor chooses",
-        "cardinality": "One to one",
-        "relationship": "12.3",
-        "value": "<# or %> enrolled <globally/locally/per cohort>",
-        "business_rules": "Value Allowed: Yes\nRelationship: Document, Sponsor Approval Date\nConcept: CNEW",
-        "repeating": "Yes, reuse from the title page",
-        "ct": []
-    },
-    "globally-locally-per cohort": {
-        "name": "globally-locally-per cohort",
-        "data_type": "Text",
-        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage. The numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage.",
-        "guidance": "",
-        "conformance": "Optional: when there is an amendment and sponsor chooses",
-        "cardinality": "One to one",
-        "relationship": "12.3",
-        "value": "<# or %> enrolled <globally/locally/per cohort>",
-        "business_rules": "Value Allowed: Yes\nRelationship: Document, Sponsor Approval Date\nConcept: CNEW",
-        "repeating": "Yes, reuse from the title page",
-        "ct": []
-    },
     "- or - 22": {
         "name": "- or - 22",
         "data_type": "Number",
@@ -6634,5 +6608,33 @@
         "repeating": "Yes, repeatable one table per amendment",
         "ct": [],
         "short_name": "Previous Amendment Date"
+    },
+    "Previous Amendment Enrollment": {
+        "name": "- or -",
+        "data_type": "Text",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage. The numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage.",
+        "guidance": "",
+        "conformance": "Optional: when there is an amendment and sponsor chooses",
+        "cardinality": "One to one",
+        "relationship": "12.3",
+        "value": "<# or %> enrolled <globally/locally/per cohort>",
+        "business_rules": "Value Allowed: Yes\nRelationship: Document, Sponsor Approval Date\nConcept: CNEW",
+        "repeating": "Yes, reuse from the title page",
+        "ct": [],
+        "short_name": "Previous Amendment Enrollment"
+    },
+    "Previous Amendment Enrollment Scope": {
+        "name": "globally-locally-per cohort",
+        "data_type": "Text",
+        "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage. The numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage.",
+        "guidance": "",
+        "conformance": "Optional: when there is an amendment and sponsor chooses",
+        "cardinality": "One to one",
+        "relationship": "12.3",
+        "value": "<# or %> enrolled <globally/locally/per cohort>",
+        "business_rules": "Value Allowed: Yes\nRelationship: Document, Sponsor Approval Date\nConcept: CNEW",
+        "repeating": "Yes, reuse from the title page",
+        "ct": [],
+        "short_name": "Previous Amendment Enrollment Scope"
     }
 }

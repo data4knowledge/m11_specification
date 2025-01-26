@@ -2067,15 +2067,6 @@
         "section_title": "Prior Protocol Amendment(s)",
         "instructions": []
     },
-    "- or - enrolled globally-locally-per cohort": {
-        "long_name": "Enter # or % enrolled globally/locally/per cohort",
-        "short_name": "- or - enrolled globally-locally-per cohort",
-        "original_name": "# or % enrolled globally/locally/per cohort",
-        "optional": true,
-        "section_number": "12.3",
-        "section_title": "Prior Protocol Amendment(s)",
-        "instructions": []
-    },
     "specify alternative location": {
         "long_name": "specify alternative location",
         "short_name": "specify alternative location",
@@ -2443,6 +2434,15 @@
         "section_title": "Prior Protocol Amendment(s)",
         "instructions": []
     },
+    "Previous Amendment Enrollment": {
+        "long_name": "Enter # or % enrolled globally/locally/per cohort",
+        "short_name": "Previous Amendment Enrollment",
+        "original_name": "# or % enrolled globally/locally/per cohort",
+        "optional": true,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
+        "instructions": []
+    },
     "Amendment Details": {
         "long_name": "Amendment Details",
         "short_name": "Amendment Details",
@@ -2483,6 +2483,15 @@
         "long_name": "Briefly Explain Substantial Impact on Data",
         "short_name": "Briefly Explain Substantial Impact on Data",
         "original_name": "Briefly Explain Substantial Impact on Data",
+        "optional": false,
+        "section_number": null,
+        "section_title": null,
+        "instructions": []
+    },
+    "Previous Amendment Enrollment Scope": {
+        "long_name": "Previous Amendment Enrollment Scope",
+        "short_name": "Previous Amendment Enrollment Scope",
+        "original_name": "Previous Amendment Enrollment Scope",
         "optional": false,
         "section_number": null,
         "section_title": null,

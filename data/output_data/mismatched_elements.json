@@ -1,15 +1,5 @@
 {
-    "template": {
-        "- or - enrolled globally-locally-per cohort": {
-            "long_name": "Enter # or % enrolled globally/locally/per cohort",
-            "short_name": "- or - enrolled globally-locally-per cohort",
-            "original_name": "# or % enrolled globally/locally/per cohort",
-            "optional": true,
-            "section_number": "12.3",
-            "section_title": "Prior Protocol Amendment(s)",
-            "instructions": []
-        }
-    },
+    "template": {},
     "technical": {
         "Amendment Scope Enrolment Description": {
             "name": "Amendment Scope Enrolment Description",
@@ -468,32 +458,6 @@
                     "definition": "{This protocol has been amended previously. The Protocol Amendment Summary of Changes for the current amendment is located directly before the Table of Contents. Prior amendment(s) to this protocol are listed in the table below, beginning with the most recent.}"
                 }
             ]
-        },
-        "- or -": {
-            "name": "- or -",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage. The numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage.",
-            "guidance": "",
-            "conformance": "Optional: when there is an amendment and sponsor chooses",
-            "cardinality": "One to one",
-            "relationship": "12.3",
-            "value": "<# or %> enrolled <globally/locally/per cohort>",
-            "business_rules": "Value Allowed: Yes\nRelationship: Document, Sponsor Approval Date\nConcept: CNEW",
-            "repeating": "Yes, reuse from the title page",
-            "ct": []
-        },
-        "globally-locally-per cohort": {
-            "name": "globally-locally-per cohort",
-            "data_type": "Text",
-            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage. The numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage.",
-            "guidance": "",
-            "conformance": "Optional: when there is an amendment and sponsor chooses",
-            "cardinality": "One to one",
-            "relationship": "12.3",
-            "value": "<# or %> enrolled <globally/locally/per cohort>",
-            "business_rules": "Value Allowed: Yes\nRelationship: Document, Sponsor Approval Date\nConcept: CNEW",
-            "repeating": "Yes, reuse from the title page",
-            "ct": []
         },
         "- or - 22": {
             "name": "- or - 22",

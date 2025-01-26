@@ -10664,6 +10664,31 @@
             "short_name": "Previous Amendment Date"
         }
     },
+    "Previous Amendment Enrollment": {
+        "template": {
+            "long_name": "Enter # or % enrolled globally/locally/per cohort",
+            "short_name": "Previous Amendment Enrollment",
+            "original_name": "# or % enrolled globally/locally/per cohort",
+            "optional": true,
+            "section_number": "12.3",
+            "section_title": "Prior Protocol Amendment(s)",
+            "instructions": []
+        },
+        "technical": {
+            "name": "- or -",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage. The numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage.",
+            "guidance": "",
+            "conformance": "Optional: when there is an amendment and sponsor chooses",
+            "cardinality": "One to one",
+            "relationship": "12.3",
+            "value": "<# or %> enrolled <globally/locally/per cohort>",
+            "business_rules": "Value Allowed: Yes\nRelationship: Document, Sponsor Approval Date\nConcept: CNEW",
+            "repeating": "Yes, reuse from the title page",
+            "ct": [],
+            "short_name": "Previous Amendment Enrollment"
+        }
+    },
     "Amendment Details": {
         "template": {
             "long_name": "Amendment Details",
@@ -10814,6 +10839,31 @@
             "map_status": "To Be Mapped",
             "name": "Briefly Explain Substantial Impact on Data",
             "notes": ""
+        }
+    },
+    "Previous Amendment Enrollment Scope": {
+        "template": {
+            "long_name": "Previous Amendment Enrollment Scope",
+            "short_name": "Previous Amendment Enrollment Scope",
+            "original_name": "Previous Amendment Enrollment Scope",
+            "optional": false,
+            "section_number": null,
+            "section_title": null,
+            "instructions": []
+        },
+        "technical": {
+            "name": "globally-locally-per cohort",
+            "data_type": "Text",
+            "definition": "CNEW\nFor review purpose, see definition of the controlled terminology below\nThe numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage. The numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage.",
+            "guidance": "",
+            "conformance": "Optional: when there is an amendment and sponsor chooses",
+            "cardinality": "One to one",
+            "relationship": "12.3",
+            "value": "<# or %> enrolled <globally/locally/per cohort>",
+            "business_rules": "Value Allowed: Yes\nRelationship: Document, Sponsor Approval Date\nConcept: CNEW",
+            "repeating": "Yes, reuse from the title page",
+            "ct": [],
+            "short_name": "Previous Amendment Enrollment Scope"
         }
     }
 }
