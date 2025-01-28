@@ -537,7 +537,11 @@
         "section_number": "1.1.2",
         "section_title": "Overall Design",
         "instructions": [
-            "Further clarification:"
+            "Further clarification:",
+            "Control description: if active comparator or low dose, pick nonproprietary name or International Nonproprietary Name; indicate \"Not applicable\u201d if not applicable.",
+            "Intervention assignment method: do NOT state block size.",
+            "Population Diagnosis or Condition: MedDRA Preferred Term(s) or indicate \u201cother\u201d and describe.",
+            "Population age range: for trials in which multiple age ranges may be eligible (e.g., a younger cohort and an older cohort), indicate the minimum and maximum ages for the trial overall, with an additional comment for any excluded age ranges."
         ]
     },
     "Number of Arms": {
@@ -891,7 +895,12 @@
         "section_number": "4.1",
         "section_title": "Description of Trial Design",
         "instructions": [
-            "Describe any other important aspects of the design, e.g.:"
+            "Describe any other important aspects of the design, e.g.:",
+            "geographic scope of trial (e.g., single-centre, multi-centre, or multi-centre and multi-national)",
+            "use of decentralised processes, tools, or features in the trial",
+            "planned use of a Data Monitoring Committee, or similar review group and cross reference Section 11.4 Committees, for details ",
+            "whether an interim analysis is planned; if so, refer to details in Section 10.9 Interim Analyses",
+            "any planned extension trial, long-term follow-up/registry, planned future use of samples or data, or post-trial sample analysis or other data-related activities"
         ]
     },
     "Additional Description of Trial Design": {
@@ -1031,6 +1040,28 @@
         "section_title": "Description of Trial Population and Rationale",
         "instructions": []
     },
+    "Inclusion Criterion": {
+        "long_name": "Inclusion Criterion",
+        "short_name": "Inclusion Criterion",
+        "original_name": "Inclusion Criterion",
+        "optional": false,
+        "section_number": "5.2",
+        "section_title": "Inclusion Criteria",
+        "instructions": [
+            "Add criteria as needed. Consider numbering the criteria sequentially."
+        ]
+    },
+    "Exclusion Criterion": {
+        "long_name": "Exclusion Criterion",
+        "short_name": "Exclusion Criterion",
+        "original_name": "Exclusion Criterion",
+        "optional": false,
+        "section_number": "5.3",
+        "section_title": "Exclusion Criteria",
+        "instructions": [
+            "Add criteria as needed. Consider numbering the criteria sequentially."
+        ]
+    },
     "Definitions Related to Childbearing Potential": {
         "long_name": "Enter Definitions Related to Childbearing Potential ",
         "short_name": "Definitions Related to Childbearing Potential",
@@ -1038,11 +1069,7 @@
         "optional": false,
         "section_number": "5.4.1",
         "section_title": "Definitions Related to Childbearing Potential",
-        "instructions": [
-            "<",
-            "Enter Definitions Related to Childbearing Potential ",
-            ">"
-        ]
+        "instructions": []
     },
     "Contraception Requirements": {
         "long_name": "Enter Contraception Requirements.",
@@ -1051,11 +1078,7 @@
         "optional": false,
         "section_number": "5.4.2",
         "section_title": "Contraception Requirements",
-        "instructions": [
-            "<",
-            "Enter Contraception Requirements.",
-            ">"
-        ]
+        "instructions": []
     },
     "Lifestyle Restrictions": {
         "long_name": "Enter Lifestyle Restrictions",
@@ -2479,6 +2502,28 @@
         "section_title": "Prior Protocol Amendment(s)",
         "instructions": []
     },
+    "Inclusion Criterion Number": {
+        "long_name": "#",
+        "short_name": "Inclusion Criterion Number",
+        "original_name": "#",
+        "optional": true,
+        "section_number": "5.2",
+        "section_title": "Inclusion Criteria",
+        "instructions": [
+            "Add criteria as needed. Consider numbering the criteria sequentially."
+        ]
+    },
+    "Exclusion Criterion Number": {
+        "long_name": "#",
+        "short_name": "Exclusion Criterion Number",
+        "original_name": "#",
+        "optional": true,
+        "section_number": "5.3",
+        "section_title": "Exclusion Criteria",
+        "instructions": [
+            "Add criteria as needed. Consider numbering the criteria sequentially."
+        ]
+    },
     "Amendment Details": {
         "long_name": "Amendment Details",
         "short_name": "Amendment Details",
@@ -2549,42 +2594,6 @@
         "optional": false,
         "section_number": 12.3,
         "section_title": "Prior Protocol Amendments",
-        "instructions": []
-    },
-    "Inclusion Criterion Number": {
-        "long_name": "Inclusion Criterion Number",
-        "short_name": "Inclusion Criterion Number",
-        "original_name": "Inclusion Criterion Number",
-        "optional": false,
-        "section_number": 5.2,
-        "section_title": "Inclusion Critieria",
-        "instructions": []
-    },
-    "Inclusion Criterion": {
-        "long_name": "Inclusion Criterion",
-        "short_name": "Inclusion Criterion",
-        "original_name": "Inclusion Criterion",
-        "optional": false,
-        "section_number": 5.2,
-        "section_title": "Inclusion Critieria",
-        "instructions": []
-    },
-    "Exclusion Criterion Number": {
-        "long_name": "Exclusion Criterion Number",
-        "short_name": "Exclusion Criterion Number",
-        "original_name": "Exclusion Criterion Number",
-        "optional": false,
-        "section_number": 5.3,
-        "section_title": "Exclusion Critieria",
-        "instructions": []
-    },
-    "Exclusion Criterion": {
-        "long_name": "Exclusion Criterion",
-        "short_name": "Exclusion Criterion",
-        "original_name": "Exclusion Criterion",
-        "optional": false,
-        "section_number": 5.3,
-        "section_title": "Exclusion Critieria",
         "instructions": []
     }
 }

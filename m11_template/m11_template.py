@@ -2,7 +2,7 @@ import re
 import yaml
 from typing import Generator
 from pathlib import Path
-from raw_docx import RawDocx, RawDocument, RawParagraph, RawTable, RawSection
+from raw_docx import RawDocx, RawDocument, RawParagraph, RawTable, RawSection, RawList
 from m11_template.m11_utility import clean_element_name, find_elements
 
 
@@ -196,6 +196,9 @@ class M11Template:
         for item in section.items:
             if isinstance(item, RawParagraph):
                 yield item, False
+            elif isinstance(item, RawList):
+                for list_item in item.all_items():
+                    yield list_item, False
             elif isinstance(item, RawTable):
                 for row in item.rows:
                     for cell in row.cells:

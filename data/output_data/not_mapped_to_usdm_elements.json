@@ -45,6 +45,8 @@
     "Rationale for Duration": "Rationale for Duration",
     "Rationale for Adaptive or Novel Trial Design": "Rationale for Adaptive or Novel Trial Design",
     "Rationale for Other Trial Design Aspects": "Rationale for Other Trial Design Aspects",
+    "Inclusion Criterion": "Inclusion Criterion",
+    "Exclusion Criterion": "Exclusion Criterion",
     "Caffeine Alcohol Tobacco and Other Restrictions": "Caffeine Alcohol Tobacco and Other Restrictions",
     "description of the overview of trial interventions or a heading for the optional table below": "description of the overview of trial interventions or a heading for the optional table below",
     "Dosage Strengths": "Dosage Strengths",
@@ -117,14 +119,12 @@
     "Previous Amendment Number": "Previous Amendment Number",
     "Previous Amendment Date": "Previous Amendment Date",
     "Previous Amendment Enrollment": "Previous Amendment Enrollment",
+    "Inclusion Criterion Number": "Inclusion Criterion Number",
+    "Exclusion Criterion Number": "Exclusion Criterion Number",
     "Amendment Details": "Amendment Details",
     "Primary Reason Other": "Primary Reason Other",
     "Secondary Reason Other": "Secondary Reason Other",
     "Previous Amendment Enrollment Scope": "Previous Amendment Enrollment Scope",
     "Prior Protocol Amendments": "Prior Protocol Amendments",
-    "Country Region Not Applicable": "Country Region Not Applicable",
-    "Inclusion Criterion Number": "Inclusion Criterion Number",
-    "Inclusion Criterion": "Inclusion Criterion",
-    "Exclusion Criterion Number": "Exclusion Criterion Number",
-    "Exclusion Criterion": "Exclusion Criterion"
+    "Country Region Not Applicable": "Country Region Not Applicable"
 }

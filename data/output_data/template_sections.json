@@ -63,7 +63,14 @@
             "Or include the below",
             "{This protocol has been amended previously. Details of prior amendments are presented in Section 12.3 Prior Protocol Amendment(s)}.",
             "* Choose from the available categories the primary reason and secondary reason(s) for the amendment. Select the closest match among the choices. Changes to primary estimand, endpoints, or related measures should be listed as a change of strategy. If none of the choices apply, choose \u201cother\u201d and provide a description. If no secondary reason, indicate \u201cNot applicable\u201d for the secondary reason.",
-            "Instructions for the Overview of Changes:"
+            "Instructions for the Overview of Changes:",
+            "If an Overview of Changes already exists from a prior amendment, move it to Section 12.3 Prior Protocol Amendment(s), and populate a clean overview table for the current amendment.",
+            "List the changes that apply to the current amendment. Provide a brief description of the change(s) and a concise scientific rationale for specific changes (e.g., change to inclusion/exclusion criteria).",
+            "If the same change affects multiple parts of the protocol, it is acceptable to list multiple locations in the right column.",
+            "Table can be sorted in any order preferred by the sponsor.",
+            "Minor edits such as clarifications and corrections to typographical errors do not need to be itemised in this table.",
+            "The changes in the table do not need to be detailed in revision marks, as these can be provided in a separate supporting document.",
+            "Tabular presentation is common but not required. The page can be changed to landscape orientation if necessary."
         ]
     },
     "1": {
@@ -380,13 +387,21 @@
     "5.2": {
         "title": "Inclusion Criteria",
         "number": "5.2",
-        "elements": [],
-        "instructions": []
+        "elements": [
+            "#",
+            "Inclusion Criterion"
+        ],
+        "instructions": [
+            "Inclusion criteria are characteristics that define the trial population, i.e., those criteria that every potential participant must satisfy to qualify for trial enrollment."
+        ]
     },
     "5.3": {
         "title": "Exclusion Criteria",
         "number": "5.3",
-        "elements": [],
+        "elements": [
+            "#",
+            "Exclusion Criterion"
+        ],
         "instructions": []
     },
     "5.4": {
@@ -1352,7 +1367,12 @@
         ],
         "instructions": [
             "Previous amendments should appear in reverse chronological order with the most recent at the top (e.g.,\u00a0Amendment 3, 2, 1). Delete lines not needed, add lines as needed. Inclusion of regional-, country-, and site-specific amendments in the table is optional. If included, ensure that the scope is clearly distinguishable from global amendments.",
-            "If including the column with enrollment numbers, follow the instructions below."
+            "If including the column with enrollment numbers, follow the instructions below.",
+            "For global amendments to international clinical trials or amendments to a single-country trial, list approximate global enrollment total or percentage at the time of the amendment and select \u201cglobally\u201d.",
+            "For global amendments consolidating only country/region-specific requirements, list approximate local enrollment total or percentage at the time of the amendment and select \u201clocally\u201d. If consolidating a series of local amendments, the status of all the relevant locations can be listed.",
+            "For country/region amendments to international clinical trials, list the approximate local enrollment total or percentage at the time of the amendment and select \u201clocally\u201d.",
+            "For studies in which enrollment status by cohort is more meaningful, such as for single-site or early-phase studies, listing approximate enrollment by cohort is an option. If multiple cohorts are ongoing at the time of the amendment, the status of all the ongoing cohorts can be listed.",
+            "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total."
         ]
     },
     "13": {

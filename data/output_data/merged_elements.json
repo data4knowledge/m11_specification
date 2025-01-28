@@ -2925,7 +2925,11 @@
             "section_number": "1.1.2",
             "section_title": "Overall Design",
             "instructions": [
-                "Further clarification:"
+                "Further clarification:",
+                "Control description: if active comparator or low dose, pick nonproprietary name or International Nonproprietary Name; indicate \"Not applicable\u201d if not applicable.",
+                "Intervention assignment method: do NOT state block size.",
+                "Population Diagnosis or Condition: MedDRA Preferred Term(s) or indicate \u201cother\u201d and describe.",
+                "Population age range: for trials in which multiple age ranges may be eligible (e.g., a younger cohort and an older cohort), indicate the minimum and maximum ages for the trial overall, with an additional comment for any excluded age ranges."
             ]
         },
         "technical": {
@@ -4197,7 +4201,12 @@
             "section_number": "4.1",
             "section_title": "Description of Trial Design",
             "instructions": [
-                "Describe any other important aspects of the design, e.g.:"
+                "Describe any other important aspects of the design, e.g.:",
+                "geographic scope of trial (e.g., single-centre, multi-centre, or multi-centre and multi-national)",
+                "use of decentralised processes, tools, or features in the trial",
+                "planned use of a Data Monitoring Committee, or similar review group and cross reference Section 11.4 Committees, for details ",
+                "whether an interim analysis is planned; if so, refer to details in Section 10.9 Interim Analyses",
+                "any planned extension trial, long-term follow-up/registry, planned future use of samples or data, or post-trial sample analysis or other data-related activities"
             ]
         },
         "technical": {
@@ -4652,6 +4661,58 @@
             "notes": ""
         }
     },
+    "Inclusion Criterion": {
+        "template": {
+            "long_name": "Inclusion Criterion",
+            "short_name": "Inclusion Criterion",
+            "original_name": "Inclusion Criterion",
+            "optional": false,
+            "section_number": "5.2",
+            "section_title": "Inclusion Criteria",
+            "instructions": [
+                "Add criteria as needed. Consider numbering the criteria sequentially."
+            ]
+        },
+        "technical": {
+            "name": "Inclusion Criterion",
+            "data_type": "Text",
+            "definition": "C25532 \nFor review purpose, see definition of the controlled terminology below\nThe criteria in a protocol that prospective subjects must meet to be eligible for participation in a study.",
+            "guidance": "Add criteria as needed. Consider numbering the criteria sequentially",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "5.2",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: to Number #, 5.2 Inclusion Criteria\nConcept: C25532",
+            "repeating": "Yes, number consecutively, repeatable for each inclusion criteria, if deleted do not replace, do not duplicate",
+            "ct": []
+        }
+    },
+    "Exclusion Criterion": {
+        "template": {
+            "long_name": "Exclusion Criterion",
+            "short_name": "Exclusion Criterion",
+            "original_name": "Exclusion Criterion",
+            "optional": false,
+            "section_number": "5.3",
+            "section_title": "Exclusion Criteria",
+            "instructions": [
+                "Add criteria as needed. Consider numbering the criteria sequentially."
+            ]
+        },
+        "technical": {
+            "name": "Exclusion Criterion",
+            "data_type": "Text",
+            "definition": "C25370\nFor review purpose, see definition of the controlled terminology below\nList of characteristics in a protocol, any one of which excludes a potential subject from participation in a study. (CDISC glossary)",
+            "guidance": "Add criteria as needed. Consider numbering the criteria sequentially",
+            "conformance": "Required",
+            "cardinality": "One to many",
+            "relationship": "5.3",
+            "value": "Text",
+            "business_rules": "Value Allowed: Yes\nRelationship: to Number #, 5.3 Exclusion Criteria\nConcept: C25370",
+            "repeating": "Yes, repeatable for each exclusion criterion, if deleted do not replace, do not duplicate",
+            "ct": []
+        }
+    },
     "Definitions Related to Childbearing Potential": {
         "template": {
             "long_name": "Enter Definitions Related to Childbearing Potential ",
@@ -4660,11 +4721,7 @@
             "optional": false,
             "section_number": "5.4.1",
             "section_title": "Definitions Related to Childbearing Potential",
-            "instructions": [
-                "<",
-                "Enter Definitions Related to Childbearing Potential ",
-                ">"
-            ]
+            "instructions": []
         },
         "technical": {
             "name": "Definitions Related to Childbearing Potential",
@@ -4694,11 +4751,7 @@
             "optional": false,
             "section_number": "5.4.2",
             "section_title": "Contraception Requirements",
-            "instructions": [
-                "<",
-                "Enter Contraception Requirements.",
-                ">"
-            ]
+            "instructions": []
         },
         "technical": {
             "name": "Contraception Requirements",
@@ -10737,6 +10790,60 @@
             "short_name": "Previous Amendment Enrollment"
         }
     },
+    "Inclusion Criterion Number": {
+        "template": {
+            "long_name": "#",
+            "short_name": "Inclusion Criterion Number",
+            "original_name": "#",
+            "optional": true,
+            "section_number": "5.2",
+            "section_title": "Inclusion Criteria",
+            "instructions": [
+                "Add criteria as needed. Consider numbering the criteria sequentially."
+            ]
+        },
+        "technical": {
+            "name": "-",
+            "data_type": "Number",
+            "definition": "N/A",
+            "guidance": "Add criteria as needed. Consider numbering the criteria sequentially.",
+            "conformance": "Optional",
+            "cardinality": "One to one",
+            "relationship": "5.2",
+            "value": "# is an integer <criterion identifier> unique number and not replaceable",
+            "business_rules": "Value Allowed: Yes\nRelationship: 5.2 Inclusion Criteria\nConcept: Sequential number",
+            "repeating": "Yes, repeatable for each inclusion criterion",
+            "ct": [],
+            "short_name": "Inclusion Criterion Number"
+        }
+    },
+    "Exclusion Criterion Number": {
+        "template": {
+            "long_name": "#",
+            "short_name": "Exclusion Criterion Number",
+            "original_name": "#",
+            "optional": true,
+            "section_number": "5.3",
+            "section_title": "Exclusion Criteria",
+            "instructions": [
+                "Add criteria as needed. Consider numbering the criteria sequentially."
+            ]
+        },
+        "technical": {
+            "name": "- 16",
+            "data_type": "Number",
+            "definition": "N/A",
+            "guidance": "Add criteria as needed.  Consider numbering the criteria sequentially",
+            "conformance": "Required",
+            "cardinality": "One to many",
+            "relationship": "5.3",
+            "value": "# is an identifier <criterion identifier> unique number and not replaceable",
+            "business_rules": "Value Allowed: Yes\nRelationship: 5.3 Exclusion Criteria\nConcept: Sequential number",
+            "repeating": "Yes. number consecutively, repeatable for each exclusion criteria, if deleted do not replace, do not duplicate",
+            "ct": [],
+            "short_name": "Exclusion Criterion Number"
+        }
+    },
     "Amendment Details": {
         "template": {
             "long_name": "Amendment Details",
@@ -10982,104 +11089,6 @@
             "repeating": "No",
             "ct": [],
             "short_name": "Country Region Not Applicable"
-        }
-    },
-    "Inclusion Criterion Number": {
-        "template": {
-            "long_name": "Inclusion Criterion Number",
-            "short_name": "Inclusion Criterion Number",
-            "original_name": "Inclusion Criterion Number",
-            "optional": false,
-            "section_number": 5.2,
-            "section_title": "Inclusion Critieria",
-            "instructions": []
-        },
-        "technical": {
-            "name": "-",
-            "data_type": "Number",
-            "definition": "N/A",
-            "guidance": "Add criteria as needed. Consider numbering the criteria sequentially.",
-            "conformance": "Optional",
-            "cardinality": "One to one",
-            "relationship": "5.2",
-            "value": "# is an integer <criterion identifier> unique number and not replaceable",
-            "business_rules": "Value Allowed: Yes\nRelationship: 5.2 Inclusion Criteria\nConcept: Sequential number",
-            "repeating": "Yes, repeatable for each inclusion criterion",
-            "ct": [],
-            "short_name": "Inclusion Criterion Number"
-        }
-    },
-    "Inclusion Criterion": {
-        "template": {
-            "long_name": "Inclusion Criterion",
-            "short_name": "Inclusion Criterion",
-            "original_name": "Inclusion Criterion",
-            "optional": false,
-            "section_number": 5.2,
-            "section_title": "Inclusion Critieria",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Inclusion Criterion",
-            "data_type": "Text",
-            "definition": "C25532 \nFor review purpose, see definition of the controlled terminology below\nThe criteria in a protocol that prospective subjects must meet to be eligible for participation in a study.",
-            "guidance": "Add criteria as needed. Consider numbering the criteria sequentially",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "5.2",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: to Number #, 5.2 Inclusion Criteria\nConcept: C25532",
-            "repeating": "Yes, number consecutively, repeatable for each inclusion criteria, if deleted do not replace, do not duplicate",
-            "ct": []
-        }
-    },
-    "Exclusion Criterion Number": {
-        "template": {
-            "long_name": "Exclusion Criterion Number",
-            "short_name": "Exclusion Criterion Number",
-            "original_name": "Exclusion Criterion Number",
-            "optional": false,
-            "section_number": 5.3,
-            "section_title": "Exclusion Critieria",
-            "instructions": []
-        },
-        "technical": {
-            "name": "- 16",
-            "data_type": "Number",
-            "definition": "N/A",
-            "guidance": "Add criteria as needed.  Consider numbering the criteria sequentially",
-            "conformance": "Required",
-            "cardinality": "One to many",
-            "relationship": "5.3",
-            "value": "# is an identifier <criterion identifier> unique number and not replaceable",
-            "business_rules": "Value Allowed: Yes\nRelationship: 5.3 Exclusion Criteria\nConcept: Sequential number",
-            "repeating": "Yes. number consecutively, repeatable for each exclusion criteria, if deleted do not replace, do not duplicate",
-            "ct": [],
-            "short_name": "Exclusion Criterion Number"
-        }
-    },
-    "Exclusion Criterion": {
-        "template": {
-            "long_name": "Exclusion Criterion",
-            "short_name": "Exclusion Criterion",
-            "original_name": "Exclusion Criterion",
-            "optional": false,
-            "section_number": 5.3,
-            "section_title": "Exclusion Critieria",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Exclusion Criterion",
-            "data_type": "Text",
-            "definition": "C25370\nFor review purpose, see definition of the controlled terminology below\nList of characteristics in a protocol, any one of which excludes a potential subject from participation in a study. (CDISC glossary)",
-            "guidance": "Add criteria as needed. Consider numbering the criteria sequentially",
-            "conformance": "Required",
-            "cardinality": "One to many",
-            "relationship": "5.3",
-            "value": "Text",
-            "business_rules": "Value Allowed: Yes\nRelationship: to Number #, 5.3 Exclusion Criteria\nConcept: C25370",
-            "repeating": "Yes, repeatable for each exclusion criterion, if deleted do not replace, do not duplicate",
-            "ct": []
         }
     }
 }
