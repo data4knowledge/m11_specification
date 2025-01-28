@@ -56,7 +56,7 @@ with open("data/output_data/merged_elements.json", "w") as f:
     json.dump(merged, f, indent=4)
 with open("data/output_data/mismatched_elements.json", "w") as f:
     json.dump(missing, f, indent=4)
-with open("data/output_data/not_mapped_to_usd_elements.json", "w") as f:
+with open("data/output_data/not_mapped_to_usdm_elements.json", "w") as f:
     json.dump(not_mapped, f, indent=4)
 
 res = list(zip_longest(missing['template'].keys(), missing['technical'].keys()))
