@@ -180,7 +180,7 @@ class M11Technical:
                 lines = cell.text().split("\n")
                 state = "OUTSIDE"
                 for line in lines:
-                    print(f"LINE: {line}, {state}")
+                    #print(f"LINE: {line}, {state}")
                     if line.startswith("For review purpose, see definition of the controlled terminology below"):
                         pass
                     elif self._is_c_code(line):
@@ -195,5 +195,5 @@ class M11Technical:
     def _is_c_code(self, text: str) -> bool:
         pattern = r'C(?:NEW|\d+)'
         match = re.search(pattern, text)
-        print(f"MATCH: {'TRUE' if match else 'FALSE'}")
+        #print(f"MATCH: {'TRUE' if match else 'FALSE'}")
         return True if match else False
