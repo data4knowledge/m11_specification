@@ -1,7 +1,7 @@
 {
-    "null": {
-        "title": null,
-        "number": null,
+    "": {
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Sponsor Confidentiality Statement",
             "Full Title",
@@ -74,28 +74,28 @@
         ]
     },
     "1": {
-        "title": "Protocol Summary",
-        "number": "1",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "1.1": {
-        "title": "Protocol Synopsis",
-        "number": "1.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "1.1.1": {
-        "title": "Primary and Secondary Objectives and Estimands",
-        "number": "1.1.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Primary and Secondary Objectives and Estimands"
         ],
         "instructions": []
     },
     "1.1.2": {
-        "title": "Overall Design",
-        "number": "1.1.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Population type",
             "Intervention model",
@@ -136,8 +136,8 @@
         ]
     },
     "1.2": {
-        "title": "Trial Schema",
-        "number": "1.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Trial Schema",
             "Schema Notes"
@@ -145,36 +145,36 @@
         "instructions": []
     },
     "1.3": {
-        "title": "Schedule of Activities",
-        "number": "1.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Schedule of Activities"
         ],
         "instructions": []
     },
     "2": {
-        "title": "Introduction",
-        "number": "2",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "2.1": {
-        "title": "Purpose of Trial",
-        "number": "2.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Purpose of Trial"
         ],
         "instructions": []
     },
     "2.2": {
-        "title": "Assessment of Risks and Benefits",
-        "number": "2.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "2.2.1": {
-        "title": "Risk Summary and Mitigation Strategy",
-        "number": "2.2.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Trial-specific Intervention Risks and Mitigations",
             "Trial-specific Procedure Risks and Mitigations",
@@ -183,36 +183,36 @@
         "instructions": []
     },
     "2.2.2": {
-        "title": "Benefit Summary",
-        "number": "2.2.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Benefit Summary"
         ],
         "instructions": []
     },
     "2.2.3": {
-        "title": "Overall Risk-Benefit Assessment",
-        "number": "2.2.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Overall Risk-Benefit Assessment"
         ],
         "instructions": []
     },
     "3": {
-        "title": "Trial Objectives and Associated Estimands",
-        "number": "3",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "3.1": {
-        "title": "Primary Objective(s) and Associated Estimand(s)",
-        "number": "3.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "3.1.1": {
-        "title": "Primary Objective <#>",
-        "number": "3.1.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Primary Objective",
             "Table of Estimand Characteristics including Endpoint at a minimum",
@@ -226,14 +226,14 @@
         "instructions": []
     },
     "3.2": {
-        "title": "Secondary Objective(s) and Associated Estimand(s)",
-        "number": "3.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "3.2.1": {
-        "title": "{Secondary Objective}",
-        "number": "3.2.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Secondary Objective",
             "Table of Estimand Characteristics including Endpoint at a minimum"
@@ -241,14 +241,14 @@
         "instructions": []
     },
     "3.3": {
-        "title": "Exploratory Objective(s)",
-        "number": "3.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "3.3.1": {
-        "title": "{Exploratory Objective}",
-        "number": "3.3.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Exploratory Objective",
             "Table of Estimand Characteristics including endpoint at a minimum"
@@ -256,14 +256,14 @@
         "instructions": []
     },
     "4": {
-        "title": "Trial Design",
-        "number": "4",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "4.1": {
-        "title": "Description of Trial Design",
-        "number": "4.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Overall Description of Trial Design and Description of Intervention Model",
             "Description of Trial Duration",
@@ -274,88 +274,88 @@
         "instructions": []
     },
     "4.1.1": {
-        "title": "Stakeholder Input into Design",
-        "number": "4.1.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Stakeholder Input into Design"
         ],
         "instructions": []
     },
     "4.2": {
-        "title": "Rationale for Trial Design",
-        "number": "4.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Overall Rationale for Trial Design"
         ],
         "instructions": []
     },
     "4.2.1": {
-        "title": "Rationale for Estimand(s)",
-        "number": "4.2.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Rationale for Estimand(s)"
         ],
         "instructions": []
     },
     "4.2.2": {
-        "title": "Rationale for Intervention Model",
-        "number": "4.2.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Rationale for Intervention Model"
         ],
         "instructions": []
     },
     "4.2.3": {
-        "title": "Rationale for Control Type",
-        "number": "4.2.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Rationale for Control Type"
         ],
         "instructions": []
     },
     "4.2.4": {
-        "title": "Rationale for Trial Duration",
-        "number": "4.2.4",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Rationale for Duration"
         ],
         "instructions": []
     },
     "4.2.5": {
-        "title": "Rationale for Adaptive or Novel Trial Design",
-        "number": "4.2.5",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Rationale for Adaptive or Novel Trial Design"
         ],
         "instructions": []
     },
     "4.2.6": {
-        "title": "Rationale for Interim Analysis",
-        "number": "4.2.6",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Rationale for Interim Analysis"
         ],
         "instructions": []
     },
     "4.2.7": {
-        "title": "Rationale for Other Trial Design Aspects",
-        "number": "4.2.7",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Rationale for Other Trial Design Aspects"
         ],
         "instructions": []
     },
     "4.3": {
-        "title": "Trial Stopping Rules",
-        "number": "4.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Trial Stopping Rules"
         ],
         "instructions": []
     },
     "4.4": {
-        "title": "Start of Trial and End of Trial",
-        "number": "4.4",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Start of Trial",
             "End of Trial"
@@ -363,30 +363,30 @@
         "instructions": []
     },
     "4.5": {
-        "title": "Access to Trial Intervention After End of Trial",
-        "number": "4.5",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Access to Trial Intervention after End of Trial"
         ],
         "instructions": []
     },
     "5": {
-        "title": "Trial Population",
-        "number": "5",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "5.1": {
-        "title": "Description of Trial Population and Rationale",
-        "number": "5.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Description of Trial Population and Rationale"
         ],
         "instructions": []
     },
     "5.2": {
-        "title": "Inclusion Criteria",
-        "number": "5.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "#",
             "Inclusion Criterion"
@@ -396,8 +396,8 @@
         ]
     },
     "5.3": {
-        "title": "Exclusion Criteria",
-        "number": "5.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "#",
             "Exclusion Criterion"
@@ -405,70 +405,70 @@
         "instructions": []
     },
     "5.4": {
-        "title": "Contraception",
-        "number": "5.4",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "5.4.1": {
-        "title": "Definitions Related to Childbearing Potential",
-        "number": "5.4.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Definitions Related to Childbearing Potential "
         ],
         "instructions": []
     },
     "5.4.2": {
-        "title": "Contraception Requirements",
-        "number": "5.4.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Contraception Requirements."
         ],
         "instructions": []
     },
     "5.5": {
-        "title": "Lifestyle Restrictions",
-        "number": "5.5",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Lifestyle Restrictions"
         ],
         "instructions": []
     },
     "5.5.1": {
-        "title": "Meals and Dietary Restrictions",
-        "number": "5.5.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Meals and Dietary Restrictions"
         ],
         "instructions": []
     },
     "5.5.2": {
-        "title": "Caffeine, Alcohol, Tobacco, and Other Restrictions",
-        "number": "5.5.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Caffeine, Alcohol, Tobacco, and Other Restrictions"
         ],
         "instructions": []
     },
     "5.5.3": {
-        "title": "Physical Activity Restrictions",
-        "number": "5.5.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Physical Activity Restrictions"
         ],
         "instructions": []
     },
     "5.5.4": {
-        "title": "Other Activity Restrictions",
-        "number": "5.5.4",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Other Activity Restrictions"
         ],
         "instructions": []
     },
     "5.6": {
-        "title": "Screen Failure and Rescreening",
-        "number": "5.6",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Screen Failure",
             "Rescreening"
@@ -476,8 +476,8 @@
         "instructions": []
     },
     "6": {
-        "title": "Trial Intervention And Concomitant Therapy",
-        "number": "6",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "description of the overview of trial interventions or a heading for the optional table below",
             "Arm Name",
@@ -496,246 +496,246 @@
         "instructions": []
     },
     "6.1": {
-        "title": "Description of Investigational Trial Intervention",
-        "number": "6.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Description of Investigational Trial Intervention"
         ],
         "instructions": []
     },
     "6.2": {
-        "title": "Rationale for Investigational Trial Intervention Dose and Regimen",
-        "number": "6.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Rationale for Investigational Trial Intervention Dose and Regimen"
         ],
         "instructions": []
     },
     "6.3": {
-        "title": "Investigational Trial Intervention Administration",
-        "number": "6.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Investigational Trial Intervention Administration"
         ],
         "instructions": []
     },
     "6.4": {
-        "title": "Investigational Trial Intervention Dose Modification",
-        "number": "6.4",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Investigational Trial Intervention Dose Modification"
         ],
         "instructions": []
     },
     "6.5": {
-        "title": "Management of Investigational Trial Intervention Overdose",
-        "number": "6.5",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Management of Investigational Trial Intervention Overdose"
         ],
         "instructions": []
     },
     "6.6": {
-        "title": "Preparation, Storage, Handling and Accountability of Investigational Trial Intervention",
-        "number": "6.6",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "6.6.1": {
-        "title": "{Preparation of Investigational Trial Intervention}",
-        "number": "6.6.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Preparation of Investigational Trial Intervention "
         ],
         "instructions": []
     },
     "6.6.2": {
-        "title": "Storage and Handling of Investigational Trial Intervention",
-        "number": "6.6.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Storage and Handling of Investigational Trial Intervention"
         ],
         "instructions": []
     },
     "6.6.3": {
-        "title": "Accountability of Investigational Trial Intervention",
-        "number": "6.6.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Accountability of Investigational Trial Intervention"
         ],
         "instructions": []
     },
     "6.7": {
-        "title": "Investigational Trial Intervention Assignment, Randomisation and Blinding",
-        "number": "6.7",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "6.7.1": {
-        "title": "Participant Assignment to Investigational Trial Intervention",
-        "number": "6.7.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Participant Assignment to Investigational Trial Intervention"
         ],
         "instructions": []
     },
     "6.7.2": {
-        "title": "{Randomisation}",
-        "number": "6.7.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Randomisation"
         ],
         "instructions": []
     },
     "6.7.3": {
-        "title": "{Measures to Maintain Blinding}",
-        "number": "6.7.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Measures to Maintain Blinding"
         ],
         "instructions": []
     },
     "6.7.4": {
-        "title": "{Emergency Unblinding at the Site}",
-        "number": "6.7.4",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Emergency Unblinding at the Site"
         ],
         "instructions": []
     },
     "6.8": {
-        "title": "Investigational Trial Intervention Adherence",
-        "number": "6.8",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Investigational Trial Intervention Adherence"
         ],
         "instructions": []
     },
     "6.9": {
-        "title": "Description of Noninvestigational Trial Intervention",
-        "number": "6.9",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Description of Noninvestigational Trial Intervention"
         ],
         "instructions": []
     },
     "6.9.1": {
-        "title": "{Background Trial Intervention}",
-        "number": "6.9.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Background Trial Interventions"
         ],
         "instructions": []
     },
     "6.9.2": {
-        "title": "{Rescue Therapy}",
-        "number": "6.9.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Rescue Therapy"
         ],
         "instructions": []
     },
     "6.9.3": {
-        "title": "{Other Noninvestigational Trial Intervention}",
-        "number": "6.9.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Other Noninvestigational Trial Intervention"
         ],
         "instructions": []
     },
     "6.10": {
-        "title": "Concomitant Therapy",
-        "number": "6.10",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Concomitant Therapy"
         ],
         "instructions": []
     },
     "6.10.1": {
-        "title": "{Prohibited Concomitant Therapy}",
-        "number": "6.10.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Prohibited Concomitant Therapy"
         ],
         "instructions": []
     },
     "6.10.2": {
-        "title": "{Permitted Concomitant Therapy}",
-        "number": "6.10.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Permitted Concomitant Therapy"
         ],
         "instructions": []
     },
     "7": {
-        "title": "Participant Discontinuation of Trial Intervention and Discontinuation or Withdrawal From trial",
-        "number": "7",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "7.1": {
-        "title": "Discontinuation of Trial Intervention for Individual Participants",
-        "number": "7.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "7.1.1": {
-        "title": "Permanent Discontinuation of Trial Intervention",
-        "number": "7.1.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Permanent Discontinuation of Trial Intervention"
         ],
         "instructions": []
     },
     "7.1.2": {
-        "title": "Temporary Discontinuation of Trial Intervention",
-        "number": "7.1.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Temporary Discontinuation of Trial Intervention"
         ],
         "instructions": []
     },
     "7.1.3": {
-        "title": "Rechallenge",
-        "number": "7.1.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Rechallenge"
         ],
         "instructions": []
     },
     "7.2": {
-        "title": "Participant Discontinuation or Withdrawal from the Trial",
-        "number": "7.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Participant Discontinuation or Withdrawal from Trial"
         ],
         "instructions": []
     },
     "7.3": {
-        "title": "Management of Loss to Follow-Up",
-        "number": "7.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Management of Loss to Follow-Up"
         ],
         "instructions": []
     },
     "8": {
-        "title": "Trial Assessments and Procedures",
-        "number": "8",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "8.1": {
-        "title": "Trial Assessments and Procedures Considerations",
-        "number": "8.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Trial Assessments and Procedures Considerations"
         ],
         "instructions": []
     },
     "8.2": {
-        "title": "Screening/Baseline Assessments and Procedures",
-        "number": "8.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Screening Assessments and Procedures",
             "Baseline Assessments and Procedures"
@@ -743,170 +743,170 @@
         "instructions": []
     },
     "8.3": {
-        "title": "Efficacy Assessments and Procedures",
-        "number": "8.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Efficacy Assessments and Procedures"
         ],
         "instructions": []
     },
     "8.4": {
-        "title": "Safety Assessments and Procedures",
-        "number": "8.4",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Safety Assessments and Procedures"
         ],
         "instructions": []
     },
     "8.4.1": {
-        "title": "{Physical Examination}",
-        "number": "8.4.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Physical Examination"
         ],
         "instructions": []
     },
     "8.4.2": {
-        "title": "{Vital Signs}",
-        "number": "8.4.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Vital Signs"
         ],
         "instructions": []
     },
     "8.4.3": {
-        "title": "{Electrocardiograms}",
-        "number": "8.4.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Electrocardiograms"
         ],
         "instructions": []
     },
     "8.4.4": {
-        "title": "{Clinical Laboratory Assessments}",
-        "number": "8.4.4",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Clinical Laboratory Assessments"
         ],
         "instructions": []
     },
     "8.4.5": {
-        "title": "{Pregnancy Testing}",
-        "number": "8.4.5",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Pregnancy Testing"
         ],
         "instructions": []
     },
     "8.4.6": {
-        "title": "{Suicidal Ideation and Behaviour Risk Monitoring}",
-        "number": "8.4.6",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Suicidal Ideation and Behaviour Risk Monitoring"
         ],
         "instructions": []
     },
     "8.5": {
-        "title": "Pharmacokinetics",
-        "number": "8.5",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Pharmacokinetics"
         ],
         "instructions": []
     },
     "8.6": {
-        "title": "Biomarkers",
-        "number": "8.6",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "8.6.1": {
-        "title": "Genetics and Pharmacogenomics",
-        "number": "8.6.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Genetics and Pharmacogenomics"
         ],
         "instructions": []
     },
     "8.6.2": {
-        "title": "Pharmacodynamic Biomarkers",
-        "number": "8.6.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Pharmacodynamic Biomarkers"
         ],
         "instructions": []
     },
     "8.6.3": {
-        "title": "{Other Biomarkers}",
-        "number": "8.6.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Other Biomarkers"
         ],
         "instructions": []
     },
     "8.7": {
-        "title": "Immunogenicity Assessments",
-        "number": "8.7",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Immunogenicity Assessments"
         ],
         "instructions": []
     },
     "8.8": {
-        "title": "Medical Resource Utilisation and Health Economics",
-        "number": "8.8",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Medical Resource Utilisation and Health Economics"
         ],
         "instructions": []
     },
     "9": {
-        "title": "Adverse Events, Serious Adverse Events, Product Complaints, Pregnancy and Postpartum Information, And Special Safety Situations",
-        "number": "9",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "9.1": {
-        "title": "Definitions",
-        "number": "9.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "9.1.1": {
-        "title": "Definitions of Adverse Events",
-        "number": "9.1.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Definitions of Adverse Events"
         ],
         "instructions": []
     },
     "9.1.2": {
-        "title": "Definitions of Serious Adverse Events",
-        "number": "9.1.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Definitions of Serious Adverse Events"
         ],
         "instructions": []
     },
     "9.1.3": {
-        "title": "Definitions of Product Complaints",
-        "number": "9.1.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Definitions of Product Complaints"
         ],
         "instructions": []
     },
     "9.1.3.1": {
-        "title": "{Definition of Medical Device Product Complaints}",
-        "number": "9.1.3.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Definition of Medical Device Product Complaints"
         ],
         "instructions": []
     },
     "9.2": {
-        "title": "Timing and Procedures for Collection and Reporting",
-        "number": "9.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Event Type",
             "Situational Scope",
@@ -919,16 +919,16 @@
         "instructions": []
     },
     "9.2.1": {
-        "title": "Timing",
-        "number": "9.2.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Event Collection and Reporting Timing"
         ],
         "instructions": []
     },
     "9.2.2": {
-        "title": "Collection Procedures",
-        "number": "9.2.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Identification",
             "Severity",
@@ -939,290 +939,290 @@
         "instructions": []
     },
     "9.2.3": {
-        "title": "Reporting",
-        "number": "9.2.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Reporting"
         ],
         "instructions": []
     },
     "9.2.3.1": {
-        "title": "Regulatory Reporting Requirements",
-        "number": "9.2.3.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Regulatory Reporting Requirements"
         ],
         "instructions": []
     },
     "9.2.4": {
-        "title": "Adverse Events of Special Interest",
-        "number": "9.2.4",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Adverse Events of Special Interest or state \u201cNot applicable\u201d"
         ],
         "instructions": []
     },
     "9.2.5": {
-        "title": "Disease-related Events or Outcomes Not Qualifying as AEs or SAEs",
-        "number": "9.2.5",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Disease-related Events or Outcomes not Qualifying as AEs or SAEs"
         ],
         "instructions": []
     },
     "9.3": {
-        "title": "Pregnancy and Postpartum Information",
-        "number": "9.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "9.3.1": {
-        "title": "{Participants Who Become Pregnant During the Trial}",
-        "number": "9.3.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Participants Who Become Pregnant During the Trial"
         ],
         "instructions": []
     },
     "9.3.2": {
-        "title": "{Participants Whose Partners Become Pregnant During the Trial}",
-        "number": "9.3.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Participants Whose Partners Become Pregnant During the Trial"
         ],
         "instructions": []
     },
     "9.4": {
-        "title": "Special Safety Situations",
-        "number": "9.4",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Special Safety Situations"
         ],
         "instructions": []
     },
     "10": {
-        "title": "Statistical Considerations",
-        "number": "10",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "10.1": {
-        "title": "General Considerations",
-        "number": "10.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "General Considerations"
         ],
         "instructions": []
     },
     "10.2": {
-        "title": "Analysis Sets",
-        "number": "10.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Analysis Sets"
         ],
         "instructions": []
     },
     "10.3": {
-        "title": "Analyses of Demographics and Other Baseline Variables",
-        "number": "10.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Analyses of Demographics and Other Baseline Variables"
         ],
         "instructions": []
     },
     "10.4": {
-        "title": "Analyses Associated with the Primary Objective(s)",
-        "number": "10.4",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "10.4.1": {
-        "title": "Primary Objective",
-        "number": "10.4.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "10.4.1.1": {
-        "title": "Statistical Analysis Method",
-        "number": "10.4.1.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Statistical Analysis Method"
         ],
         "instructions": []
     },
     "10.4.1.2": {
-        "title": "Handling of Data in Relation to Primary Estimand(s)",
-        "number": "10.4.1.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Handling of Data in Relation to Primary Estimand(s)"
         ],
         "instructions": []
     },
     "10.4.1.3": {
-        "title": "Handling of Missing Data in Relation to Primary Estimand(s)",
-        "number": "10.4.1.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Handling of Missing Data in Relation to Primary Estimand(s)"
         ],
         "instructions": []
     },
     "10.4.1.4": {
-        "title": "{Sensitivity Analysis}",
-        "number": "10.4.1.4",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Sensitivity Analysis"
         ],
         "instructions": []
     },
     "10.4.1.5": {
-        "title": "{Supplementary Analysis}",
-        "number": "10.4.1.5",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Supplementary Analysis"
         ],
         "instructions": []
     },
     "10.5": {
-        "title": "Analyses Associated with the Secondary Objective(s)",
-        "number": "10.5",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "10.5.1": {
-        "title": "{Secondary Objective}",
-        "number": "10.5.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "10.5.1.1": {
-        "title": "{Statistical Analysis Method}",
-        "number": "10.5.1.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Statistical Analysis Method"
         ],
         "instructions": []
     },
     "10.5.1.2": {
-        "title": "{Handling of Data in Relation to Secondary Estimand(s)}",
-        "number": "10.5.1.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Handling of Data in Relation to Secondary Estimand(s)"
         ],
         "instructions": []
     },
     "10.5.1.3": {
-        "title": "{Handling of Missing Data in Relation to Secondary Estimand(s)}",
-        "number": "10.5.1.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Handling of Missing Data in Relation to Secondary Estimand(s)"
         ],
         "instructions": []
     },
     "10.5.1.4": {
-        "title": "{Sensitivity Analysis}",
-        "number": "10.5.1.4",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Sensitivity Analysis"
         ],
         "instructions": []
     },
     "10.5.1.5": {
-        "title": "{Supplementary Analysis}",
-        "number": "10.5.1.5",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Supplementary Analysis"
         ],
         "instructions": []
     },
     "10.6": {
-        "title": "Analyses Associated with the Exploratory Objective(s)",
-        "number": "10.6",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Analyses Associated with the Exploratory Objective(s)"
         ],
         "instructions": []
     },
     "10.7": {
-        "title": "Safety Analyses",
-        "number": "10.7",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Safety Analyses"
         ],
         "instructions": []
     },
     "10.8": {
-        "title": "Other Analyses",
-        "number": "10.8",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Other Analyses"
         ],
         "instructions": []
     },
     "10.9": {
-        "title": "Interim Analyses",
-        "number": "10.9",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Interim Analyses"
         ],
         "instructions": []
     },
     "10.10": {
-        "title": "Multiplicity Adjustments",
-        "number": "10.10",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Multiplicity Adjustments"
         ],
         "instructions": []
     },
     "10.11": {
-        "title": "Sample Size Determination",
-        "number": "10.11",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Sample Size Determination"
         ],
         "instructions": []
     },
     "11": {
-        "title": "Trial Oversight and Other General Considerations",
-        "number": "11",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "11.1": {
-        "title": "Regulatory and Ethical Considerations",
-        "number": "11.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Regulatory and Ethical Considerations"
         ],
         "instructions": []
     },
     "11.2": {
-        "title": "Trial Oversight",
-        "number": "11.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Trial Oversight "
         ],
         "instructions": []
     },
     "11.2.1": {
-        "title": "Investigator Responsibilities",
-        "number": "11.2.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Investigator Responsibilities"
         ],
         "instructions": []
     },
     "11.2.2": {
-        "title": "Sponsor Responsibilities",
-        "number": "11.2.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Sponsor Responsibilities"
         ],
         "instructions": []
     },
     "11.3": {
-        "title": "Informed Consent Process",
-        "number": "11.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Description of Informed Consent Process",
             "Description of Assent Process",
@@ -1231,64 +1231,64 @@
         "instructions": []
     },
     "11.3.1": {
-        "title": "{Informed Consent for Rescreening}",
-        "number": "11.3.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Informed Consent for Rescreening"
         ],
         "instructions": []
     },
     "11.3.2": {
-        "title": "{Informed Consent for Use of Remaining Samples in Exploratory Research}",
-        "number": "11.3.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Informed Consent for Use of Remaining Samples in Exploratory Research"
         ],
         "instructions": []
     },
     "11.4": {
-        "title": "Committees",
-        "number": "11.4",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Committees"
         ],
         "instructions": []
     },
     "11.5": {
-        "title": "Insurance and Indemnity",
-        "number": "11.5",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Insurance and Indemnity"
         ],
         "instructions": []
     },
     "11.6": {
-        "title": "Risk-Based Quality Management",
-        "number": "11.6",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Risk-Based Quality Management"
         ],
         "instructions": []
     },
     "11.7": {
-        "title": "Data Governance",
-        "number": "11.7",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Data Governance"
         ],
         "instructions": []
     },
     "11.8": {
-        "title": "Data Protection",
-        "number": "11.8",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Data Protection"
         ],
         "instructions": []
     },
     "11.9": {
-        "title": "Source Data",
-        "number": "11.9",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Source Data Introduction",
             "Investigator Expectations for Source Data",
@@ -1298,16 +1298,16 @@
         "instructions": []
     },
     "11.10": {
-        "title": "Protocol Deviations",
-        "number": "11.10",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Protocol Deviations"
         ],
         "instructions": []
     },
     "11.11": {
-        "title": "Early Site Closure",
-        "number": "11.11",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Decision Rights for Site Closure",
             "Criteria for Early Closure",
@@ -1316,30 +1316,30 @@
         "instructions": []
     },
     "11.12": {
-        "title": "Data Dissemination",
-        "number": "11.12",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Data Dissemination"
         ],
         "instructions": []
     },
     "12": {
-        "title": "Appendix: Supporting Details",
-        "number": "12",
+        "title": "Title Page",
+        "number": "",
         "elements": [],
         "instructions": []
     },
     "12.1": {
-        "title": "Clinical Laboratory Tests",
-        "number": "12.1",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Clinical Laboratory Tests"
         ],
         "instructions": []
     },
     "12.2": {
-        "title": "Country/Region-Specific Differences",
-        "number": "12.2",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Country/Region Identifier",
             "Country/Region Specific Requirements",
@@ -1348,8 +1348,8 @@
         "instructions": []
     },
     "12.3": {
-        "title": "Prior Protocol Amendment(s)",
-        "number": "12.3",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Amendment Identifier",
             "Sponsor Approval Date",
@@ -1376,16 +1376,16 @@
         ]
     },
     "13": {
-        "title": "Appendix: Glossary of Terms and Abbreviations",
-        "number": "13",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "Glossary of Terms and Abbreviations"
         ],
         "instructions": []
     },
     "14": {
-        "title": "Appendix: References",
-        "number": "14",
+        "title": "Title Page",
+        "number": "",
         "elements": [
             "References"
         ],

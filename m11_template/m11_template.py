@@ -37,12 +37,16 @@ class M11Template:
         raw_doc: RawDocument = RawDocx(self.filepath).target_document
         self.document = raw_doc.to_dict()
         state = "OUTSIDE"
+        section_title = "Title Page"
+        section_number = ""
         for section in raw_doc.sections:
             elements = []
             instructions = []
+            section.title = section.title if section.title else section_title
+            section.number = section.number if section.number else section_number
             section_dict = {
-                "title": section.title,
-                "number": section.number,
+                "title": section_title,
+                "number": section_number,
                 "elements": [],
                 "instructions": []
             }

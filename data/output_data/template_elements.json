@@ -4,8 +4,8 @@
         "short_name": "Sponsor Confidentiality Statement",
         "original_name": "Sponsor Confidentiality Statement",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "Insert the Sponsor\u2019s confidentiality statement, if applicable, otherwise delete."
         ]
@@ -15,8 +15,8 @@
         "short_name": "Full Title",
         "original_name": "Full Title",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "The protocol should have a descriptive title that identifies the scientific aspects of the trial sufficiently to ensure it is immediately evident what the trial is investigating and on whom, and to allow retrieval from literature or internet searches."
         ]
@@ -26,8 +26,8 @@
         "short_name": "Trial Acronym",
         "original_name": "Trial Acronym",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "Acronym or abbreviation used publicly to identify the clinical trial. Delete this line from the table if not applicable."
         ]
@@ -37,8 +37,8 @@
         "short_name": "Sponsor Protocol Identifier",
         "original_name": "Sponsor Protocol Identifier",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "A unique alphanumeric identifier for the trial, designated by the Sponsor."
         ]
@@ -48,8 +48,8 @@
         "short_name": "Original Protocol Indicator",
         "original_name": "Original Protocol Indicator",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "Version Number": {
@@ -57,8 +57,8 @@
         "short_name": "Version Number",
         "original_name": "Version Number",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "For use by the Sponsor at their discretion."
         ]
@@ -68,8 +68,8 @@
         "short_name": "Version Date",
         "original_name": "Version Date",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "For use by the Sponsor at their discretion."
         ]
@@ -79,8 +79,8 @@
         "short_name": "Amendment Identifier",
         "original_name": "Amendment Identifier",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "Enter the amendment identifier (e.g., amendment number). If this is the original instance of the protocol, delete the row or enter \"Not applicable\"."
         ]
@@ -90,8 +90,8 @@
         "short_name": "Amendment Scope",
         "original_name": "Amendment Scope",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "If this is the original instance of the protocol, delete the row or enter \"Not applicable\". If an amendment applies to all sites in the trial, enter \u201cglobal\u201d and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter \u201cglobal\u201d.",
             "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
@@ -102,8 +102,8 @@
         "short_name": "Country Identifier",
         "original_name": "Country Identifier",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "If this is the original instance of the protocol, delete the row or enter \"Not applicable\". If an amendment applies to all sites in the trial, enter \u201cglobal\u201d and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter \u201cglobal\u201d.",
             "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
@@ -114,8 +114,8 @@
         "short_name": "Region Identifier",
         "original_name": "Region Identifier",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "If this is the original instance of the protocol, delete the row or enter \"Not applicable\". If an amendment applies to all sites in the trial, enter \u201cglobal\u201d and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter \u201cglobal\u201d.",
             "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
@@ -126,8 +126,8 @@
         "short_name": "Site Identifier",
         "original_name": "Site Identifier",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "If this is the original instance of the protocol, delete the row or enter \"Not applicable\". If an amendment applies to all sites in the trial, enter \u201cglobal\u201d and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter \u201cglobal\u201d.",
             "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
@@ -138,8 +138,8 @@
         "short_name": "Sponsors Investigational Product Codes",
         "original_name": "Sponsor\u2019s Investigational Product Code(s)",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "Enter the Sponsor\u2019s unique identifier for investigational compound(s) in the trial. Add fields as needed."
         ]
@@ -149,8 +149,8 @@
         "short_name": "Nonproprietary Names",
         "original_name": "Nonproprietary Name(s)",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "Proprietary Names": {
@@ -158,8 +158,8 @@
         "short_name": "Proprietary Names",
         "original_name": "Proprietary Name(s)",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "Omit nonproprietary name fields if a nonproprietary name has not yet been assigned. Omit proprietary name fields if not yet established."
         ]
@@ -169,8 +169,8 @@
         "short_name": "Trial Phase",
         "original_name": "Trial Phase",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "For trials combining investigational drugs or vaccines with devices, classify according to the phase of drug development."
         ]
@@ -180,8 +180,8 @@
         "short_name": "Trial Short Title",
         "original_name": "Trial Short Title",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "Short title should convey in plain language what the trial is about and should be suitable for use as \u201cBrief Title\u201d or \u201cTitle in Plain Language\u201d in global clinical trial registries. It can also be suitable for use with informed consents and ethics committee submissions."
         ]
@@ -191,8 +191,8 @@
         "short_name": "Sponsor Name",
         "original_name": "Sponsor Name",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "Sponsor Legal Address": {
@@ -200,8 +200,8 @@
         "short_name": "Sponsor Legal Address",
         "original_name": "Sponsor Legal Address",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "Co-Sponsor Name": {
@@ -209,8 +209,8 @@
         "short_name": "Co-Sponsor Name",
         "original_name": "Co-Sponsor Name",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "Co-Sponsor Legal Address": {
@@ -218,8 +218,8 @@
         "short_name": "Co-Sponsor Legal Address",
         "original_name": "Co-Sponsor Legal Address",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "Provide the legal name of the individual or pharmaceutical or medical device company, governmental agency, academic institution, private organisation, or other organisation who takes primary responsibility for and initiates a clinical investigation. If more than one Sponsor, list the Primary Sponsor in this field.",
             "Local Sponsor Name and Address:"
@@ -230,8 +230,8 @@
         "short_name": "Local Sponsor Name",
         "original_name": "Local Sponsor Name",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "Local Sponsor Address": {
@@ -239,8 +239,8 @@
         "short_name": "Local Sponsor Address",
         "original_name": "Local Sponsor Address",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "In some countries, the clinical trial Sponsor may be the local affiliate company (or designee). In such cases, indicate this in the Local Sponsor Name and Address Field."
         ]
@@ -250,8 +250,8 @@
         "short_name": "Device Manufacturer Name",
         "original_name": "Device Manufacturer Name",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "Device Manufacturer Address": {
@@ -259,8 +259,8 @@
         "short_name": "Device Manufacturer Address",
         "original_name": "Device Manufacturer Address",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "Manufacturer name and address information is required only for protocols that include investigational device(s) and should not be included for other protocols. Include the manufacturer address only if the manufacturer is different than the Sponsor listed above.",
             "Add additional fields as needed if multiple investigational devices will be used in the trial. Delete this line if not applicable."
@@ -271,8 +271,8 @@
         "short_name": "EU CT Number",
         "original_name": "EU CT Number",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "FDA IND Number": {
@@ -280,8 +280,8 @@
         "short_name": "FDA IND Number",
         "original_name": "FDA IND Number",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "IDE Number": {
@@ -289,8 +289,8 @@
         "short_name": "IDE Number",
         "original_name": "IDE Number",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "jRCT Number": {
@@ -298,8 +298,8 @@
         "short_name": "jRCT Number",
         "original_name": "jRCT Number",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "NCT Number": {
@@ -307,8 +307,8 @@
         "short_name": "NCT Number",
         "original_name": "NCT Number",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "NMPA IND Number": {
@@ -316,8 +316,8 @@
         "short_name": "NMPA IND Number",
         "original_name": "NMPA IND Number",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "WHO-UTN Number": {
@@ -325,8 +325,8 @@
         "short_name": "WHO-UTN Number",
         "original_name": "WHO/UTN Number",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "Other Regulatory or Clinical Trial Identifier": {
@@ -334,8 +334,8 @@
         "short_name": "Other Regulatory or Clinical Trial Identifier",
         "original_name": "Other Regulatory or Clinical Trial Identifier",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "Include all identifiers that are applicable for the trial and available at the time of protocol or amendment finalisation. Delete prompts for identifiers not available at the time of document finalisation. Delete unused fields. Add fields for \u201cother\u201d if more than one is needed."
         ]
@@ -345,8 +345,8 @@
         "short_name": "Approval Date",
         "original_name": "Approval Date",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "All versions should be uniquely identifiable. "
         ]
@@ -356,8 +356,8 @@
         "short_name": "sponsor signature block name and title of sponsor signatory and signature date",
         "original_name": "sponsor signature block (name and title of sponsor signatory and signature date)",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "contact information for Medical Expert as designated by sponsor or state location where information can be found": {
@@ -365,8 +365,8 @@
         "short_name": "contact information for Medical Expert as designated by sponsor or state location where information can be found",
         "original_name": "contact information for Medical Expert (as designated by sponsor) or state location where information can be found",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "Globally-Locally-by Cohort": {
@@ -374,8 +374,8 @@
         "short_name": "Globally-Locally-by Cohort",
         "original_name": "Globally/Locally/by Cohort",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
             "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
@@ -386,8 +386,8 @@
         "short_name": "Primary Reason for Amendment",
         "original_name": "Primary Reason for Amendment",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "Secondary Reason for Amendment": {
@@ -395,8 +395,8 @@
         "short_name": "Secondary Reason for Amendment",
         "original_name": "Secondary Reason for Amendment",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "Amendment Summary": {
@@ -404,8 +404,8 @@
         "short_name": "Amendment Summary",
         "original_name": "Amendment Summary",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "Describe key changes briefly. Changes which are included in the amendment but unrelated to the key changes do not need to be described here."
         ]
@@ -415,8 +415,8 @@
         "short_name": "Description of Change",
         "original_name": "Description of Change",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "Brief Rationale for Change": {
@@ -424,8 +424,8 @@
         "short_name": "Brief Rationale for Change",
         "original_name": "Brief Rationale for Change",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "Section - and Name of Change": {
@@ -433,8 +433,8 @@
         "short_name": "Section - and Name of Change",
         "original_name": "Section # and Name of Change",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "(Add lines as needed)"
         ]
@@ -2295,8 +2295,8 @@
         "short_name": "Describe Method",
         "original_name": "describe method",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "State location where Information can be found": {
@@ -2304,8 +2304,8 @@
         "short_name": "State location where Information can be found",
         "original_name": "State location where information can be found",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "All versions should be uniquely identifiable. "
         ]
@@ -2351,8 +2351,8 @@
         "short_name": "Current Amendment Enrollment",
         "original_name": "#/%",
         "optional": true,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": [
             "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
             "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
@@ -2363,8 +2363,8 @@
         "short_name": "Substantial Impact Safety",
         "original_name": "Yes/No",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "Substantial Impact Data": {
@@ -2372,8 +2372,8 @@
         "short_name": "Substantial Impact Data",
         "original_name": "Yes/No",
         "optional": false,
-        "section_number": null,
-        "section_title": null,
+        "section_number": "",
+        "section_title": "Title Page",
         "instructions": []
     },
     "Population Diagnosis or Condition": {

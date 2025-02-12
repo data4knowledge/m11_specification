@@ -188,7 +188,7 @@ class M11Technical:
                         c_code = line
                     elif state == "INSIDE":
                         if len(line.strip()) > 0:
-                            result.append({'c_code': c_code, 'definition': line.strip()})
+                            result.append({'c_code': c_code, 'text': line.strip()})
                         state = "OUTSIDE"
         return result
     

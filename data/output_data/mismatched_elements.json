@@ -26,7 +26,7 @@
             "definition": [
                 {
                     "c_code": "CNEW",
-                    "definition": "The enrollment description as to whether the amendment scope applies globally, locally, or per cohort across the trial."
+                    "text": "The enrollment description as to whether the amendment scope applies globally, locally, or per cohort across the trial."
                 }
             ],
             "guidance": "",
@@ -106,7 +106,7 @@
             "definition": [
                 {
                     "c_code": "C85827",
-                    "definition": "The secondary reason for performing a study in terms of the scientific questions to be answered by the analysis of data collected during the study."
+                    "text": "The secondary reason for performing a study in terms of the scientific questions to be answered by the analysis of data collected during the study."
                 }
             ],
             "guidance": "N/A",
@@ -147,7 +147,7 @@
             "definition": [
                 {
                     "c_code": "C70833",
-                    "definition": "The population of patients targeted by the clinical question. This will be represented by the entire trial population, a subgroup defined by a particular characteristic measured at baseline, or a principal stratum defined by the occurrence (or non-occurrence, depending on context) of a specific intercurrent event."
+                    "text": "The population of patients targeted by the clinical question. This will be represented by the entire trial population, a subgroup defined by a particular characteristic measured at baseline, or a principal stratum defined by the occurrence (or non-occurrence, depending on context) of a specific intercurrent event."
                 }
             ],
             "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
@@ -170,7 +170,7 @@
             "definition": [
                 {
                     "c_code": "C49236",
-                    "definition": "The treatment condition of interest and, as appropriate, the alternative treatment condition to which comparison will be made (referred to as \u201ctreatment\u201d through the remainder of this document). These might be individual interventions, combinations of interventions administered concurrently, e.g. as add-on to standard of care, or might consist of an overall regimen involving a complex sequence of interventions."
+                    "text": "The treatment condition of interest and, as appropriate, the alternative treatment condition to which comparison will be made (referred to as \u201ctreatment\u201d through the remainder of this document). These might be individual interventions, combinations of interventions administered concurrently, e.g. as add-on to standard of care, or might consist of an overall regimen involving a complex sequence of interventions."
                 }
             ],
             "guidance": "List of key aspects of treatment regimens in each study group, including at least investigational agents, dosage, and administration route",
@@ -229,7 +229,7 @@
             "definition": [
                 {
                     "c_code": "C188857",
-                    "definition": "A textual description of the planned strategy to address intercurrent events."
+                    "text": "A textual description of the planned strategy to address intercurrent events."
                 }
             ],
             "guidance": "Description of the strategy to address the intercurrent event (e.g. a treatment policy strategy); cross-reference the justification in Section 4. If there is >1 intercurrent event for an objective, add additional intercurrent event rows",
@@ -270,7 +270,7 @@
             "definition": [
                 {
                     "c_code": "C70833",
-                    "definition": "The population of patients targeted by the clinical question. This will be represented by the entire trial population, a subgroup defined by a particular characteristic measured at baseline, or a principal stratum defined by the occurrence (or non-occurrence, depending on context) of a specific intercurrent event."
+                    "text": "The population of patients targeted by the clinical question. This will be represented by the entire trial population, a subgroup defined by a particular characteristic measured at baseline, or a principal stratum defined by the occurrence (or non-occurrence, depending on context) of a specific intercurrent event."
                 }
             ],
             "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
@@ -293,7 +293,7 @@
             "definition": [
                 {
                     "c_code": "C49236",
-                    "definition": "The treatment condition of interest and, as appropriate, the alternative treatment condition to which comparison will be made (referred to as \u201ctreatment\u201d through the remainder of this document). These might be individual interventions, combinations of interventions administered concurrently, e.g. as add-on to standard of care, or might consist of an overall regimen involving a complex sequence of interventions."
+                    "text": "The treatment condition of interest and, as appropriate, the alternative treatment condition to which comparison will be made (referred to as \u201ctreatment\u201d through the remainder of this document). These might be individual interventions, combinations of interventions administered concurrently, e.g. as add-on to standard of care, or might consist of an overall regimen involving a complex sequence of interventions."
                 }
             ],
             "guidance": "List of key aspects of treatment regimens in each study group, including at least investigational agents, dosage, and administration route",
@@ -316,7 +316,7 @@
             "definition": [
                 {
                     "c_code": "C25212",
-                    "definition": "The variable to be obtained for each patient that is required to address the clinical question. The specification of the variable might include whether the patient experiences an intercurrent event"
+                    "text": "The variable to be obtained for each patient that is required to address the clinical question. The specification of the variable might include whether the patient experiences an intercurrent event"
                 }
             ],
             "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
@@ -339,7 +339,7 @@
             "definition": [
                 {
                     "c_code": "C188853",
-                    "definition": "A synopsis of the clinical endpoint of interest within the analysis target study population."
+                    "text": "A synopsis of the clinical endpoint of interest within the analysis target study population."
                 }
             ],
             "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
@@ -362,7 +362,7 @@
             "definition": [
                 {
                     "c_code": "C188853",
-                    "definition": "A textual description of the planned strategy to address intercurrent events."
+                    "text": "A textual description of the planned strategy to address intercurrent events."
                 }
             ],
             "guidance": "Enter Description of Intercurrent Event",
@@ -385,7 +385,7 @@
             "definition": [
                 {
                     "c_code": "C188857",
-                    "definition": "A textual description of the planned strategy to address intercurrent events."
+                    "text": "A textual description of the planned strategy to address intercurrent events."
                 }
             ],
             "guidance": "Description of the strategy to address the intercurrent event (e.g. a treatment policy strategy); cross-reference the justification in Section 4. If there is >1 intercurrent event for an objective, add additional intercurrent event rows",
