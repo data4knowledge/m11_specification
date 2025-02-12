@@ -351,10 +351,30 @@
             "All versions should be uniquely identifiable. "
         ]
     },
+    "State location where Information can be found": {
+        "long_name": "State location where information can be found",
+        "short_name": "State location where Information can be found",
+        "original_name": "State location where information can be found",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "All versions should be uniquely identifiable. "
+        ]
+    },
     "sponsor signature block name and title of sponsor signatory and signature date": {
         "long_name": "Enter sponsor signature block (name and title of sponsor signatory and signature date)",
         "short_name": "sponsor signature block name and title of sponsor signatory and signature date",
         "original_name": "sponsor signature block (name and title of sponsor signatory and signature date)",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Describe Method": {
+        "long_name": "describe method",
+        "short_name": "Describe Method",
+        "original_name": "describe method",
         "optional": false,
         "section_number": "",
         "section_title": "Title Page",
@@ -368,6 +388,18 @@
         "section_number": "",
         "section_title": "Title Page",
         "instructions": []
+    },
+    "Current Amendment Enrollment": {
+        "long_name": "#/%",
+        "short_name": "Current Amendment Enrollment",
+        "original_name": "#/%",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
+            "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
+        ]
     },
     "Globally-Locally-by Cohort": {
         "long_name": "Globally/Locally/by Cohort",
@@ -410,6 +442,24 @@
             "Describe key changes briefly. Changes which are included in the amendment but unrelated to the key changes do not need to be described here."
         ]
     },
+    "Substantial Impact Safety": {
+        "long_name": "Yes/No",
+        "short_name": "Substantial Impact Safety",
+        "original_name": "Yes/No",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Substantial Impact Data": {
+        "long_name": "Yes/No",
+        "short_name": "Substantial Impact Data",
+        "original_name": "Yes/No",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
     "Description of Change": {
         "long_name": "Enter Description of Change",
         "short_name": "Description of Change",
@@ -439,6 +489,51 @@
             "(Add lines as needed)"
         ]
     },
+    "Amendment Details": {
+        "long_name": "Amendment Details",
+        "short_name": "Amendment Details",
+        "original_name": "Amendment Details",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Primary Reason Other": {
+        "long_name": "Primary Reason Other",
+        "short_name": "Primary Reason Other",
+        "original_name": "Primary Reason Other",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Secondary Reason Other": {
+        "long_name": "Secondary Reason Other",
+        "short_name": "Secondary Reason Other",
+        "original_name": "Secondary Reason Other",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Briefly Explain Substantial Impact On Safety": {
+        "long_name": "Briefly Explain Substantial Impact On Safety",
+        "short_name": "Briefly Explain Substantial Impact On Safety",
+        "original_name": "Briefly Explain Substantial Impact On Safety",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Briefly Explain Substantial Impact on Data": {
+        "long_name": "Briefly Explain Substantial Impact on Data",
+        "short_name": "Briefly Explain Substantial Impact on Data",
+        "original_name": "Briefly Explain Substantial Impact on Data",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
     "Primary and Secondary Objectives and Estimands": {
         "long_name": "Enter Primary and Secondary Objectives and Estimands",
         "short_name": "Primary and Secondary Objectives and Estimands",
@@ -446,6 +541,51 @@
         "optional": false,
         "section_number": "1.1.1",
         "section_title": "Primary and Secondary Objectives and Estimands",
+        "instructions": []
+    },
+    "Population Type": {
+        "long_name": "Population type",
+        "short_name": "Population Type",
+        "original_name": "Population type",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Intervention Model": {
+        "long_name": "Intervention model",
+        "short_name": "Intervention Model",
+        "original_name": "Intervention model",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Population Diagnosis or Condition": {
+        "long_name": "Population diagnosis or condition",
+        "short_name": "Population Diagnosis or Condition",
+        "original_name": "Population diagnosis or condition",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Control Type": {
+        "long_name": "Control type",
+        "short_name": "Control Type",
+        "original_name": "Control type",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Minimum Age": {
+        "long_name": "minimum age",
+        "short_name": "Minimum Age",
+        "original_name": "minimum age",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
         "instructions": []
     },
     "units of minimum age": {
@@ -502,10 +642,28 @@
         "section_title": "Overall Design",
         "instructions": []
     },
+    "Site Distribution": {
+        "long_name": "Site distribution",
+        "short_name": "Site Distribution",
+        "original_name": "Site distribution",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
     "Site geographic scope": {
         "long_name": "Site geographic scope",
         "short_name": "Site geographic scope",
         "original_name": "Site geographic scope",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Intervention Assignment Method": {
+        "long_name": "Intervention assignment method",
+        "short_name": "Intervention Assignment Method",
+        "original_name": "Intervention assignment method",
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
@@ -557,6 +715,15 @@
         "long_name": "Trial Blind Schema",
         "short_name": "Trial Blind Schema",
         "original_name": "Trial Blind Schema",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Blinded Roles": {
+        "long_name": "blinded roles",
+        "short_name": "Blinded Roles",
+        "original_name": "blinded roles",
         "optional": false,
         "section_number": "1.1.2",
         "section_title": "Overall Design",
@@ -806,6 +973,15 @@
         "section_title": "Primary Objective <#>",
         "instructions": []
     },
+    "Population Level Summary": {
+        "long_name": "Enter Population-level Summary",
+        "short_name": "Population Level Summary",
+        "original_name": "Population-level Summary",
+        "optional": false,
+        "section_number": "3.1.1",
+        "section_title": "Primary Objective <#>",
+        "instructions": []
+    },
     "Description of Intercurrent Event": {
         "long_name": "Enter Description of Intercurrent Event",
         "short_name": "Description of Intercurrent Event",
@@ -1040,6 +1216,17 @@
         "section_title": "Description of Trial Population and Rationale",
         "instructions": []
     },
+    "Inclusion Criterion Number": {
+        "long_name": "#",
+        "short_name": "Inclusion Criterion Number",
+        "original_name": "#",
+        "optional": true,
+        "section_number": "5.2",
+        "section_title": "Inclusion Criteria",
+        "instructions": [
+            "Add criteria as needed. Consider numbering the criteria sequentially."
+        ]
+    },
     "Inclusion Criterion": {
         "long_name": "Inclusion Criterion",
         "short_name": "Inclusion Criterion",
@@ -1047,6 +1234,17 @@
         "optional": false,
         "section_number": "5.2",
         "section_title": "Inclusion Criteria",
+        "instructions": [
+            "Add criteria as needed. Consider numbering the criteria sequentially."
+        ]
+    },
+    "Exclusion Criterion Number": {
+        "long_name": "#",
+        "short_name": "Exclusion Criterion Number",
+        "original_name": "#",
+        "optional": true,
+        "section_number": "5.3",
+        "section_title": "Exclusion Criteria",
         "instructions": [
             "Add criteria as needed. Consider numbering the criteria sequentially."
         ]
@@ -1161,10 +1359,37 @@
         "section_title": "Trial Intervention And Concomitant Therapy",
         "instructions": []
     },
+    "Arm Type": {
+        "long_name": "Select Arm Type",
+        "short_name": "Arm Type",
+        "original_name": "Select Arm Type",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
     "Intervention Name": {
         "long_name": "Enter Intervention Name",
         "short_name": "Intervention Name",
         "original_name": "Intervention Name",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Intervention Type": {
+        "long_name": "Select Intervention Type",
+        "short_name": "Intervention Type",
+        "original_name": "Select Intervention Type",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Pharmaceutical Dose Formulation": {
+        "long_name": "Select Pharmaceutical Dose Form",
+        "short_name": "Pharmaceutical Dose Formulation",
+        "original_name": "Select Pharmaceutical Dose Form",
         "optional": true,
         "section_number": "6",
         "section_title": "Trial Intervention And Concomitant Therapy",
@@ -1188,10 +1413,46 @@
         "section_title": "Trial Intervention And Concomitant Therapy",
         "instructions": []
     },
+    "Route of Administration": {
+        "long_name": "Select Route of Administration",
+        "short_name": "Route of Administration",
+        "original_name": "Select Route of Administration",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
     "Regimen-Treatment Period-Vaccination Regimen": {
         "long_name": "Enter Regimen/Treatment Period/Vaccination Regimen",
         "short_name": "Regimen-Treatment Period-Vaccination Regimen",
         "original_name": "Regimen/Treatment Period/Vaccination Regimen",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Use": {
+        "long_name": "Select Use",
+        "short_name": "Use",
+        "original_name": "Select Use",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "IMP or NIMP": {
+        "long_name": "Select IMP or NIMP",
+        "short_name": "IMP or NIMP",
+        "original_name": "Select IMP or NIMP",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Sourcing": {
+        "long_name": "Select Sourcing",
+        "short_name": "Sourcing",
+        "original_name": "Select Sourcing",
         "optional": true,
         "section_number": "6",
         "section_title": "Trial Intervention And Concomitant Therapy",
@@ -1321,6 +1582,15 @@
         "optional": false,
         "section_number": "6.9",
         "section_title": "Description of Noninvestigational Trial Intervention",
+        "instructions": []
+    },
+    "Background Trial Intervention": {
+        "long_name": "Enter Background Trial Interventions",
+        "short_name": "Background Trial Intervention",
+        "original_name": "Background Trial Interventions",
+        "optional": false,
+        "section_number": "6.9.1",
+        "section_title": "{Background Trial Intervention}",
         "instructions": []
     },
     "Rescue Therapy": {
@@ -1485,6 +1755,15 @@
         "section_title": "{Electrocardiograms}",
         "instructions": []
     },
+    "Clinical Safety Laboratory Assessments": {
+        "long_name": "Enter Clinical Laboratory Assessments",
+        "short_name": "Clinical Safety Laboratory Assessments",
+        "original_name": "Clinical Laboratory Assessments",
+        "optional": false,
+        "section_number": "8.4.4",
+        "section_title": "{Clinical Laboratory Assessments}",
+        "instructions": []
+    },
     "Pregnancy Testing": {
         "long_name": "Enter Pregnancy Testing",
         "short_name": "Pregnancy Testing",
@@ -1575,6 +1854,15 @@
         "section_title": "Definitions of Serious Adverse Events",
         "instructions": []
     },
+    "Definition of Product Complaints": {
+        "long_name": "Enter Definitions of Product Complaints",
+        "short_name": "Definition of Product Complaints",
+        "original_name": "Definitions of Product Complaints",
+        "optional": false,
+        "section_number": "9.1.3",
+        "section_title": "Definitions of Product Complaints",
+        "instructions": []
+    },
     "Definition of Medical Device Product Complaints": {
         "long_name": "Enter Definition of Medical Device Product Complaints",
         "short_name": "Definition of Medical Device Product Complaints",
@@ -1615,6 +1903,15 @@
         "long_name": "Reportable Period End",
         "short_name": "Reportable Period End",
         "original_name": "Reportable Period End",
+        "optional": true,
+        "section_number": "9.2",
+        "section_title": "Timing and Procedures for Collection and Reporting",
+        "instructions": []
+    },
+    "Timing for Reporting to Sponsor or Designee": {
+        "long_name": "Timing for reporting to Sponsor or Designee",
+        "short_name": "Timing for Reporting to Sponsor or Designee",
+        "original_name": "Timing for reporting to Sponsor or Designee",
         "optional": true,
         "section_number": "9.2",
         "section_title": "Timing and Procedures for Collection and Reporting",
@@ -1719,6 +2016,15 @@
         "section_title": "Adverse Events of Special Interest",
         "instructions": []
     },
+    "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs": {
+        "long_name": "Enter Disease-related Events or Outcomes not Qualifying as AEs or SAEs",
+        "short_name": "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs",
+        "original_name": "Disease-related Events or Outcomes not Qualifying as AEs or SAEs",
+        "optional": false,
+        "section_number": "9.2.5",
+        "section_title": "Disease-related Events or Outcomes Not Qualifying as AEs or SAEs",
+        "instructions": []
+    },
     "Participants Who Become Pregnant During the Trial": {
         "long_name": "Enter Participants Who Become Pregnant During the Trial",
         "short_name": "Participants Who Become Pregnant During the Trial",
@@ -1791,6 +2097,15 @@
         "section_title": "Handling of Data in Relation to Primary Estimand(s)",
         "instructions": []
     },
+    "Handling of Missing Data in Relation to Primary Estimand": {
+        "long_name": "Enter Handling of Missing Data in Relation to Primary Estimand(s)",
+        "short_name": "Handling of Missing Data in Relation to Primary Estimand",
+        "original_name": "Handling of Missing Data in Relation to Primary Estimand(s)",
+        "optional": false,
+        "section_number": "10.4.1.3",
+        "section_title": "Handling of Missing Data in Relation to Primary Estimand(s)",
+        "instructions": []
+    },
     "Sensitivity Analysis": {
         "long_name": "Enter Sensitivity Analysis",
         "short_name": "Sensitivity Analysis",
@@ -1809,6 +2124,15 @@
         "section_title": "{Supplementary Analysis}",
         "instructions": []
     },
+    "Secondary Objectives Statistical Analysis Method": {
+        "long_name": "Enter Statistical Analysis Method",
+        "short_name": "Secondary Objectives Statistical Analysis Method",
+        "original_name": "Statistical Analysis Method",
+        "optional": false,
+        "section_number": "10.5.1.1",
+        "section_title": "{Statistical Analysis Method}",
+        "instructions": []
+    },
     "Handling of Data in Relation to Secondary Estimands": {
         "long_name": "Enter Handling of Data in Relation to Secondary Estimand(s)",
         "short_name": "Handling of Data in Relation to Secondary Estimands",
@@ -1825,6 +2149,33 @@
         "optional": false,
         "section_number": "10.5.1.3",
         "section_title": "{Handling of Missing Data in Relation to Secondary Estimand(s)}",
+        "instructions": []
+    },
+    "Secondary Objectives Sensitivity Analysis": {
+        "long_name": "Enter Sensitivity Analysis",
+        "short_name": "Secondary Objectives Sensitivity Analysis",
+        "original_name": "Sensitivity Analysis",
+        "optional": false,
+        "section_number": "10.5.1.4",
+        "section_title": "{Sensitivity Analysis}",
+        "instructions": []
+    },
+    "Secondary Objectives Supplementary Analysis": {
+        "long_name": "Enter Supplementary Analysis",
+        "short_name": "Secondary Objectives Supplementary Analysis",
+        "original_name": "Supplementary Analysis",
+        "optional": false,
+        "section_number": "10.5.1.5",
+        "section_title": "{Supplementary Analysis}",
+        "instructions": []
+    },
+    "Analysis Associated with Exploratory Objectives": {
+        "long_name": "Enter Analyses Associated with the Exploratory Objective(s)",
+        "short_name": "Analysis Associated with Exploratory Objectives",
+        "original_name": "Analyses Associated with the Exploratory Objective(s)",
+        "optional": false,
+        "section_number": "10.6",
+        "section_title": "Analyses Associated with the Exploratory Objective(s)",
         "instructions": []
     },
     "Safety Analyses": {
@@ -2117,11 +2468,29 @@
         "section_title": "Country/Region-Specific Differences",
         "instructions": []
     },
+    "Prior Amendment Identifier": {
+        "long_name": "Enter Amendment Identifier",
+        "short_name": "Prior Amendment Identifier",
+        "original_name": "Amendment Identifier",
+        "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
+        "instructions": []
+    },
     "Sponsor Approval Date": {
         "long_name": "Enter Sponsor Approval Date",
         "short_name": "Sponsor Approval Date",
         "original_name": "Sponsor Approval Date",
         "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
+        "instructions": []
+    },
+    "Previous Amendment Enrollment": {
+        "long_name": "Enter # or % enrolled globally/locally/per cohort",
+        "short_name": "Previous Amendment Enrollment",
+        "original_name": "# or % enrolled globally/locally/per cohort",
+        "optional": true,
         "section_number": "12.3",
         "section_title": "Prior Protocol Amendment(s)",
         "instructions": []
@@ -2137,312 +2506,19 @@
             "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first)."
         ]
     },
-    "Glossary of Terms and Abbreviations": {
-        "long_name": "Enter Glossary of Terms and Abbreviations",
-        "short_name": "Glossary of Terms and Abbreviations",
-        "original_name": "Glossary of Terms and Abbreviations",
+    "Previous Amendment Number": {
+        "long_name": "enter amendment number",
+        "short_name": "Previous Amendment Number",
+        "original_name": "enter amendment number",
         "optional": false,
-        "section_number": "13",
-        "section_title": "Appendix: Glossary of Terms and Abbreviations",
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
         "instructions": []
     },
-    "References": {
-        "long_name": "Enter References",
-        "short_name": "References",
-        "original_name": "References",
-        "optional": false,
-        "section_number": "14",
-        "section_title": "Appendix: References",
-        "instructions": []
-    },
-    "IMP or NIMP": {
-        "long_name": "Select IMP or NIMP",
-        "short_name": "IMP or NIMP",
-        "original_name": "Select IMP or NIMP",
-        "optional": true,
-        "section_number": "6",
-        "section_title": "Trial Intervention And Concomitant Therapy",
-        "instructions": []
-    },
-    "Control Type": {
-        "long_name": "Control type",
-        "short_name": "Control Type",
-        "original_name": "Control type",
-        "optional": false,
-        "section_number": "1.1.2",
-        "section_title": "Overall Design",
-        "instructions": []
-    },
-    "Minimum Age": {
-        "long_name": "minimum age",
-        "short_name": "Minimum Age",
-        "original_name": "minimum age",
-        "optional": false,
-        "section_number": "1.1.2",
-        "section_title": "Overall Design",
-        "instructions": []
-    },
-    "Blinded Roles": {
-        "long_name": "blinded roles",
-        "short_name": "Blinded Roles",
-        "original_name": "blinded roles",
-        "optional": false,
-        "section_number": "1.1.2",
-        "section_title": "Overall Design",
-        "instructions": []
-    },
-    "Arm Type": {
-        "long_name": "Select Arm Type",
-        "short_name": "Arm Type",
-        "original_name": "Select Arm Type",
-        "optional": true,
-        "section_number": "6",
-        "section_title": "Trial Intervention And Concomitant Therapy",
-        "instructions": []
-    },
-    "Intervention Type": {
-        "long_name": "Select Intervention Type",
-        "short_name": "Intervention Type",
-        "original_name": "Select Intervention Type",
-        "optional": true,
-        "section_number": "6",
-        "section_title": "Trial Intervention And Concomitant Therapy",
-        "instructions": []
-    },
-    "Pharmaceutical Dose Formulation": {
-        "long_name": "Select Pharmaceutical Dose Form",
-        "short_name": "Pharmaceutical Dose Formulation",
-        "original_name": "Select Pharmaceutical Dose Form",
-        "optional": true,
-        "section_number": "6",
-        "section_title": "Trial Intervention And Concomitant Therapy",
-        "instructions": []
-    },
-    "Background Trial Intervention": {
-        "long_name": "Enter Background Trial Interventions",
-        "short_name": "Background Trial Intervention",
-        "original_name": "Background Trial Interventions",
-        "optional": false,
-        "section_number": "6.9.1",
-        "section_title": "{Background Trial Intervention}",
-        "instructions": []
-    },
-    "Handling of Missing Data in Relation to Primary Estimand": {
-        "long_name": "Enter Handling of Missing Data in Relation to Primary Estimand(s)",
-        "short_name": "Handling of Missing Data in Relation to Primary Estimand",
-        "original_name": "Handling of Missing Data in Relation to Primary Estimand(s)",
-        "optional": false,
-        "section_number": "10.4.1.3",
-        "section_title": "Handling of Missing Data in Relation to Primary Estimand(s)",
-        "instructions": []
-    },
-    "Analysis Associated with Exploratory Objectives": {
-        "long_name": "Enter Analyses Associated with the Exploratory Objective(s)",
-        "short_name": "Analysis Associated with Exploratory Objectives",
-        "original_name": "Analyses Associated with the Exploratory Objective(s)",
-        "optional": false,
-        "section_number": "10.6",
-        "section_title": "Analyses Associated with the Exploratory Objective(s)",
-        "instructions": []
-    },
-    "Intervention Model": {
-        "long_name": "Intervention model",
-        "short_name": "Intervention Model",
-        "original_name": "Intervention model",
-        "optional": false,
-        "section_number": "1.1.2",
-        "section_title": "Overall Design",
-        "instructions": []
-    },
-    "Population Level Summary": {
-        "long_name": "Enter Population-level Summary",
-        "short_name": "Population Level Summary",
-        "original_name": "Population-level Summary",
-        "optional": false,
-        "section_number": "3.1.1",
-        "section_title": "Primary Objective <#>",
-        "instructions": []
-    },
-    "Population Type": {
-        "long_name": "Population type",
-        "short_name": "Population Type",
-        "original_name": "Population type",
-        "optional": false,
-        "section_number": "1.1.2",
-        "section_title": "Overall Design",
-        "instructions": []
-    },
-    "Intervention Assignment Method": {
-        "long_name": "Intervention assignment method",
-        "short_name": "Intervention Assignment Method",
-        "original_name": "Intervention assignment method",
-        "optional": false,
-        "section_number": "1.1.2",
-        "section_title": "Overall Design",
-        "instructions": []
-    },
-    "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs": {
-        "long_name": "Enter Disease-related Events or Outcomes not Qualifying as AEs or SAEs",
-        "short_name": "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs",
-        "original_name": "Disease-related Events or Outcomes not Qualifying as AEs or SAEs",
-        "optional": false,
-        "section_number": "9.2.5",
-        "section_title": "Disease-related Events or Outcomes Not Qualifying as AEs or SAEs",
-        "instructions": []
-    },
-    "Describe Method": {
-        "long_name": "describe method",
-        "short_name": "Describe Method",
-        "original_name": "describe method",
-        "optional": false,
-        "section_number": "",
-        "section_title": "Title Page",
-        "instructions": []
-    },
-    "State location where Information can be found": {
-        "long_name": "State location where information can be found",
-        "short_name": "State location where Information can be found",
-        "original_name": "State location where information can be found",
-        "optional": false,
-        "section_number": "",
-        "section_title": "Title Page",
-        "instructions": [
-            "All versions should be uniquely identifiable. "
-        ]
-    },
-    "Use": {
-        "long_name": "Select Use",
-        "short_name": "Use",
-        "original_name": "Select Use",
-        "optional": true,
-        "section_number": "6",
-        "section_title": "Trial Intervention And Concomitant Therapy",
-        "instructions": []
-    },
-    "Sourcing": {
-        "long_name": "Select Sourcing",
-        "short_name": "Sourcing",
-        "original_name": "Select Sourcing",
-        "optional": true,
-        "section_number": "6",
-        "section_title": "Trial Intervention And Concomitant Therapy",
-        "instructions": []
-    },
-    "Route of Administration": {
-        "long_name": "Select Route of Administration",
-        "short_name": "Route of Administration",
-        "original_name": "Select Route of Administration",
-        "optional": true,
-        "section_number": "6",
-        "section_title": "Trial Intervention And Concomitant Therapy",
-        "instructions": []
-    },
-    "Site Distribution": {
-        "long_name": "Site distribution",
-        "short_name": "Site Distribution",
-        "original_name": "Site distribution",
-        "optional": false,
-        "section_number": "1.1.2",
-        "section_title": "Overall Design",
-        "instructions": []
-    },
-    "Current Amendment Enrollment": {
-        "long_name": "#/%",
-        "short_name": "Current Amendment Enrollment",
-        "original_name": "#/%",
-        "optional": true,
-        "section_number": "",
-        "section_title": "Title Page",
-        "instructions": [
-            "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
-            "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
-        ]
-    },
-    "Substantial Impact Safety": {
-        "long_name": "Yes/No",
-        "short_name": "Substantial Impact Safety",
-        "original_name": "Yes/No",
-        "optional": false,
-        "section_number": "",
-        "section_title": "Title Page",
-        "instructions": []
-    },
-    "Substantial Impact Data": {
-        "long_name": "Yes/No",
-        "short_name": "Substantial Impact Data",
-        "original_name": "Yes/No",
-        "optional": false,
-        "section_number": "",
-        "section_title": "Title Page",
-        "instructions": []
-    },
-    "Population Diagnosis or Condition": {
-        "long_name": "Population diagnosis or condition",
-        "short_name": "Population Diagnosis or Condition",
-        "original_name": "Population diagnosis or condition",
-        "optional": false,
-        "section_number": "1.1.2",
-        "section_title": "Overall Design",
-        "instructions": []
-    },
-    "Clinical Safety Laboratory Assessments": {
-        "long_name": "Enter Clinical Laboratory Assessments",
-        "short_name": "Clinical Safety Laboratory Assessments",
-        "original_name": "Clinical Laboratory Assessments",
-        "optional": false,
-        "section_number": "8.4.4",
-        "section_title": "{Clinical Laboratory Assessments}",
-        "instructions": []
-    },
-    "Definition of Product Complaints": {
-        "long_name": "Enter Definitions of Product Complaints",
-        "short_name": "Definition of Product Complaints",
-        "original_name": "Definitions of Product Complaints",
-        "optional": false,
-        "section_number": "9.1.3",
-        "section_title": "Definitions of Product Complaints",
-        "instructions": []
-    },
-    "Timing for Reporting to Sponsor or Designee": {
-        "long_name": "Timing for reporting to Sponsor or Designee",
-        "short_name": "Timing for Reporting to Sponsor or Designee",
-        "original_name": "Timing for reporting to Sponsor or Designee",
-        "optional": true,
-        "section_number": "9.2",
-        "section_title": "Timing and Procedures for Collection and Reporting",
-        "instructions": []
-    },
-    "Secondary Objectives Statistical Analysis Method": {
-        "long_name": "Enter Statistical Analysis Method",
-        "short_name": "Secondary Objectives Statistical Analysis Method",
-        "original_name": "Statistical Analysis Method",
-        "optional": false,
-        "section_number": "10.5.1.1",
-        "section_title": "{Statistical Analysis Method}",
-        "instructions": []
-    },
-    "Secondary Objectives Sensitivity Analysis": {
-        "long_name": "Enter Sensitivity Analysis",
-        "short_name": "Secondary Objectives Sensitivity Analysis",
-        "original_name": "Sensitivity Analysis",
-        "optional": false,
-        "section_number": "10.5.1.4",
-        "section_title": "{Sensitivity Analysis}",
-        "instructions": []
-    },
-    "Secondary Objectives Supplementary Analysis": {
-        "long_name": "Enter Supplementary Analysis",
-        "short_name": "Secondary Objectives Supplementary Analysis",
-        "original_name": "Supplementary Analysis",
-        "optional": false,
-        "section_number": "10.5.1.5",
-        "section_title": "{Supplementary Analysis}",
-        "instructions": []
-    },
-    "Prior Amendment Identifier": {
-        "long_name": "Enter Amendment Identifier",
-        "short_name": "Prior Amendment Identifier",
-        "original_name": "Amendment Identifier",
+    "Previous Amendment Date": {
+        "long_name": "enter date",
+        "short_name": "Previous Amendment Date",
+        "original_name": "enter date",
         "optional": false,
         "section_number": "12.3",
         "section_title": "Prior Protocol Amendment(s)",
@@ -2475,106 +2551,12 @@
         "section_title": "Prior Protocol Amendment(s)",
         "instructions": []
     },
-    "Previous Amendment Number": {
-        "long_name": "enter amendment number",
-        "short_name": "Previous Amendment Number",
-        "original_name": "enter amendment number",
-        "optional": false,
-        "section_number": "12.3",
-        "section_title": "Prior Protocol Amendment(s)",
-        "instructions": []
-    },
-    "Previous Amendment Date": {
-        "long_name": "enter date",
-        "short_name": "Previous Amendment Date",
-        "original_name": "enter date",
-        "optional": false,
-        "section_number": "12.3",
-        "section_title": "Prior Protocol Amendment(s)",
-        "instructions": []
-    },
-    "Previous Amendment Enrollment": {
-        "long_name": "Enter # or % enrolled globally/locally/per cohort",
-        "short_name": "Previous Amendment Enrollment",
-        "original_name": "# or % enrolled globally/locally/per cohort",
-        "optional": true,
-        "section_number": "12.3",
-        "section_title": "Prior Protocol Amendment(s)",
-        "instructions": []
-    },
-    "Inclusion Criterion Number": {
-        "long_name": "#",
-        "short_name": "Inclusion Criterion Number",
-        "original_name": "#",
-        "optional": true,
-        "section_number": "5.2",
-        "section_title": "Inclusion Criteria",
-        "instructions": [
-            "Add criteria as needed. Consider numbering the criteria sequentially."
-        ]
-    },
-    "Exclusion Criterion Number": {
-        "long_name": "#",
-        "short_name": "Exclusion Criterion Number",
-        "original_name": "#",
-        "optional": true,
-        "section_number": "5.3",
-        "section_title": "Exclusion Criteria",
-        "instructions": [
-            "Add criteria as needed. Consider numbering the criteria sequentially."
-        ]
-    },
-    "Amendment Details": {
-        "long_name": "Amendment Details",
-        "short_name": "Amendment Details",
-        "original_name": "Amendment Details",
-        "optional": false,
-        "section_number": null,
-        "section_title": null,
-        "instructions": []
-    },
-    "Primary Reason Other": {
-        "long_name": "Primary Reason Other",
-        "short_name": "Primary Reason Other",
-        "original_name": "Primary Reason Other",
-        "optional": false,
-        "section_number": null,
-        "section_title": null,
-        "instructions": []
-    },
-    "Secondary Reason Other": {
-        "long_name": "Secondary Reason Other",
-        "short_name": "Secondary Reason Other",
-        "original_name": "Secondary Reason Other",
-        "optional": false,
-        "section_number": null,
-        "section_title": null,
-        "instructions": []
-    },
-    "Briefly Explain Substantial Impact On Safety": {
-        "long_name": "Briefly Explain Substantial Impact On Safety",
-        "short_name": "Briefly Explain Substantial Impact On Safety",
-        "original_name": "Briefly Explain Substantial Impact On Safety",
-        "optional": false,
-        "section_number": null,
-        "section_title": null,
-        "instructions": []
-    },
-    "Briefly Explain Substantial Impact on Data": {
-        "long_name": "Briefly Explain Substantial Impact on Data",
-        "short_name": "Briefly Explain Substantial Impact on Data",
-        "original_name": "Briefly Explain Substantial Impact on Data",
-        "optional": false,
-        "section_number": null,
-        "section_title": null,
-        "instructions": []
-    },
     "Previous Amendment Enrollment Scope": {
         "long_name": "Previous Amendment Enrollment Scope",
         "short_name": "Previous Amendment Enrollment Scope",
         "original_name": "Previous Amendment Enrollment Scope",
         "optional": false,
-        "section_number": 12.3,
+        "section_number": "12.3",
         "section_title": "Prior Protocol Amendments",
         "instructions": []
     },
@@ -2583,7 +2565,7 @@
         "short_name": "Prior Protocol Amendments",
         "original_name": "Prior Protocol Amendments",
         "optional": false,
-        "section_number": 12.3,
+        "section_number": "12.3",
         "section_title": "Prior Protocol Amendments",
         "instructions": []
     },
@@ -2592,8 +2574,26 @@
         "short_name": "Country Region Not Applicable",
         "original_name": "Country Region Not Applicable",
         "optional": false,
-        "section_number": 12.3,
+        "section_number": "12.3",
         "section_title": "Prior Protocol Amendments",
+        "instructions": []
+    },
+    "Glossary of Terms and Abbreviations": {
+        "long_name": "Enter Glossary of Terms and Abbreviations",
+        "short_name": "Glossary of Terms and Abbreviations",
+        "original_name": "Glossary of Terms and Abbreviations",
+        "optional": false,
+        "section_number": "13",
+        "section_title": "Appendix: Glossary of Terms and Abbreviations",
+        "instructions": []
+    },
+    "References": {
+        "long_name": "Enter References",
+        "short_name": "References",
+        "original_name": "References",
+        "optional": false,
+        "section_number": "14",
+        "section_title": "Appendix: References",
         "instructions": []
     }
 }

@@ -22,6 +22,7 @@ class M11Template:
         """
         self.document = None
         self.elements = {}
+        self.element_order = []
         self.sections = {}
         self.filepath = Path(filepath)
         self.repeat_index = 1
@@ -123,6 +124,12 @@ class M11Template:
                     print(f"UNKNOWN STATE: {section.number}, {para.text}")
                     state = "OUTSIDE" if state == "OUTSIDE" else "INSIDE"
 
+    def order_elements(self) -> None:
+        new_elements = {}
+        for key in self.element_order:
+            new_elements[key] = self.elements[key]
+        self.elements = new_elements
+
     def rename_elements(self, filepath: str) -> None:
         with open(filepath, "r") as f:
             rename_dict = yaml.safe_load(f)
@@ -131,6 +138,8 @@ class M11Template:
                 self.elements[value] = self.elements[key]
                 self.elements[value]["short_name"] = value
                 self.elements.pop(key)
+                index = self.element_order.index(key)
+                self.element_order[index] = value
             else:
                 print(f"Template rename not required: {key}")
 
@@ -140,13 +149,32 @@ class M11Template:
         for key, value in insert_dict.items():
             if key not in self.elements:
                 self.elements[key] = value
+                #print(f"INSERT: {key}, {value}")
+                section_numbers = [self.elements[x]["section_number"] for x in self.element_order]
+                #print(f"SECTION NUMBERS: {section_numbers}")
+                index = self._find_last(section_numbers, value["section_number"])
+                if index:
+                    #print(f"INSERT: {key}, {value}, {index}")
+                    self.element_order.insert(index+1, key)
+                else:
+                    print(f"Template insert not found: {key}")
+            else:
+                print(f"Template insert not required: {key}")
 
+    def _find_last(self, lst: list[str], target: str) -> int:
+        for i, item in enumerate(reversed(lst)):
+            if item == target:
+                #print(f"FOUND: {item}, {len(lst) - 1 - i}")
+                return len(lst) - 1 - i
+        return None
+    
     def delete_elements(self, filepath: str) -> None:
         with open(filepath, "r") as f:
             insert_dict = yaml.safe_load(f)
         for key, value in insert_dict.items():
             if key in self.elements:
                 self.elements.pop(key)
+                self.element_order.remove(key)
             else:
                 print(f"Template delete not required: {key}")
 
@@ -197,6 +225,7 @@ class M11Template:
                 element["short_name"] = name
                 self.elements[name] = element
                 self.repeat_index += 1
+            self.element_order.append(element["short_name"])
 
     def _add_instructions(self, elements: list[str], instructions: list[str]) -> None:
         for element in elements:

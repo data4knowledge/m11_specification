@@ -1334,6 +1334,58 @@
             ]
         }
     },
+    "State location where Information can be found": {
+        "template": {
+            "long_name": "State location where information can be found",
+            "short_name": "State location where Information can be found",
+            "original_name": "State location where information can be found",
+            "optional": false,
+            "section_number": "",
+            "section_title": "Title Page",
+            "instructions": [
+                "All versions should be uniquely identifiable. "
+            ]
+        },
+        "technical": {
+            "name": "State location where Information can be found",
+            "data_type": "Valid Value",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "The date that the sponsor approved the current version of the protocol, or the physical or virtual location of the date on which the sponsor approved the current version of the protocol."
+                }
+            ],
+            "guidance": "All versions should be uniquely identifiable.",
+            "conformance": "Required",
+            "cardinality": "One to one; One to Sponsor Protocol Identifier; One to Original Protocol One to Amendment Identifier",
+            "relationship": "Title Page",
+            "value": "Sponsor Approval Date (C132352)\nLocation of Sponsor Approval Date (CNEW)",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Heading, Sponsor Protocol Identifier, Protocol Amendment",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "Yes, reuse to approval date in Section 12.3",
+            "ct": [
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "ICH M11 Sponsor Approval Response",
+                    "definition": "A terminology value set relevant to the sponsor approval responses within the ICH M11 Protocol model."
+                },
+                {
+                    "ncit_code": "C132352",
+                    "preferred_term": "Sponsor Approval Date",
+                    "definition": "The date that the sponsor approved the current version of the protocol."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Location of Sponsor Approval Date",
+                    "definition": "The physical or virtual location of the date on which the sponsor approved the current version of the protocol."
+                }
+            ]
+        }
+    },
     "sponsor signature block name and title of sponsor signatory and signature date": {
         "template": {
             "long_name": "Enter sponsor signature block (name and title of sponsor signatory and signature date)",
@@ -1384,6 +1436,57 @@
             ]
         }
     },
+    "Describe Method": {
+        "template": {
+            "long_name": "describe method",
+            "short_name": "Describe Method",
+            "original_name": "describe method",
+            "optional": false,
+            "section_number": "",
+            "section_title": "Title Page",
+            "instructions": []
+        },
+        "technical": {
+            "name": "describe method",
+            "data_type": "Valid Value",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "A block of text containing the name and signature of the sponsor's signatory, along with a signature date, or a statement on behalf of the sponsor that describes the method of protocol approval."
+                }
+            ],
+            "guidance": "Include either the Sponsor signature or the statement below.",
+            "conformance": "Optional",
+            "cardinality": "One to one",
+            "relationship": "Title Page",
+            "value": "Sponsor Signature Block (CNEW)\n OR \nSponsor Protocol Approval Statement (CNEW)",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Heading",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": [
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "ICH M11 Sponsor Signatory Response",
+                    "definition": "A terminology value set relevant to the sponsor signatory responses within the ICH M11 Protocol model."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Sponsor Signature Block",
+                    "definition": "A block of text containing the name and signature of the sponsor's signatory, along with the signature date."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Sponsor Protocol Approval Statement",
+                    "definition": "A statement that the protocol was approved by a method as described. This protocol was approved via <describe method>"
+                }
+            ],
+            "short_name": "Describe Method"
+        }
+    },
     "contact information for Medical Expert as designated by sponsor or state location where information can be found": {
         "template": {
             "long_name": "Enter contact information for Medical Expert (as designated by sponsor) or state location where information can be found",
@@ -1416,6 +1519,44 @@
             },
             "repeating": "No",
             "ct": []
+        }
+    },
+    "Current Amendment Enrollment": {
+        "template": {
+            "long_name": "#/%",
+            "short_name": "Current Amendment Enrollment",
+            "original_name": "#/%",
+            "optional": true,
+            "section_number": "",
+            "section_title": "Title Page",
+            "instructions": [
+                "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
+                "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
+            ]
+        },
+        "technical": {
+            "name": "---",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "The numeric value (expressed as an absolute value or percentage) for the estimated number of participants enrolled at the time of the protocol amendment."
+                }
+            ],
+            "guidance": "",
+            "conformance": "Optional",
+            "cardinality": "One to one; One to amendment number",
+            "relationship": "Amendment Details",
+            "value": "Approximate <#/%> enrolled <Globally/Locally/by Cohort>",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Statement",
+                "concept": "C68846, CNEW",
+                "other": ""
+            },
+            "repeating": "Yes, reuse to Section 12.3",
+            "ct": [],
+            "short_name": "Current Amendment Enrollment"
         }
     },
     "Globally-Locally-by Cohort": {
@@ -1719,6 +1860,108 @@
             },
             "repeating": "No",
             "ct": []
+        }
+    },
+    "Substantial Impact Safety": {
+        "template": {
+            "long_name": "Yes/No",
+            "short_name": "Substantial Impact Safety",
+            "original_name": "Yes/No",
+            "optional": false,
+            "section_number": "",
+            "section_title": "Title Page",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Yes-No",
+            "data_type": "Valid Value",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "An indication as to whether the amendment likely to have a substantial impact on the safety or rights of the participants."
+                }
+            ],
+            "guidance": "N/A",
+            "conformance": "Conditional If there is an amendment",
+            "cardinality": "One to one; One to Amendment Identifier; One to Sponsor Protocol Identifier",
+            "relationship": "Amendment Details",
+            "value": "Yes (C49488), No (C49487)",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Amendment Details, Amendment Identifier, Sponsor Protocol Identifier",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": [
+                {
+                    "ncit_code": "C66742",
+                    "preferred_term": "NY",
+                    "definition": "A term that is used to indicate a question with permissible values of yes/no/unknown/not applicable."
+                },
+                {
+                    "ncit_code": "C49487",
+                    "preferred_term": "No",
+                    "definition": "The non-affirmative response to a question."
+                },
+                {
+                    "ncit_code": "C49488",
+                    "preferred_term": "Yes",
+                    "definition": "The affirmative response to a question."
+                }
+            ],
+            "short_name": "Substantial Impact Safety"
+        }
+    },
+    "Substantial Impact Data": {
+        "template": {
+            "long_name": "Yes/No",
+            "short_name": "Substantial Impact Data",
+            "original_name": "Yes/No",
+            "optional": false,
+            "section_number": "",
+            "section_title": "Title Page",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Yes-No 2",
+            "data_type": "Valid Value",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "An indication as to whether the amendment likely to have a substantial impact on the reliability and robustness of the data generated in the clinical trial."
+                }
+            ],
+            "guidance": "N/A",
+            "conformance": "Conditional : if there is an amendment",
+            "cardinality": "One to one; One to Amendment Identifier; One to Sponsor Protocol Identifier",
+            "relationship": "Amendment Details",
+            "value": "Yes (C49488), No (C49487)",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Amendment Details, Amendment Identifier, Sponsor Protocol Identifier",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": [
+                {
+                    "ncit_code": "C66742",
+                    "preferred_term": "NY",
+                    "definition": "A term that is used to indicate a question with permissible values of yes/no/unknown/not applicable."
+                },
+                {
+                    "ncit_code": "C49487",
+                    "preferred_term": "No",
+                    "definition": "The non-affirmative response to a question."
+                },
+                {
+                    "ncit_code": "C49488",
+                    "preferred_term": "Yes",
+                    "definition": "The affirmative response to a question."
+                }
+            ],
+            "short_name": "Substantial Impact Data"
         }
     },
     "Description of Change": {
@@ -2621,6 +2864,196 @@
             ]
         }
     },
+    "Amendment Details": {
+        "template": {
+            "long_name": "Amendment Details",
+            "short_name": "Amendment Details",
+            "original_name": "Amendment Details",
+            "optional": false,
+            "section_number": "",
+            "section_title": "Title Page",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Amendment Details",
+            "data_type": "Valid Value",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "A written message within the study protocol that describes the amendment details, especially as to whether the protocol has been amended previously."
+                }
+            ],
+            "guidance": "Choose the applicable statement below. For an original protocol that has not been amended, retain the first sentence below and delete the remainder of this entire section.\n{Not applicable. This protocol has not been amended.}\nOr include the below as applicable.\n{This protocol has been amended previously. Details of prior amendments are presented in Section 12.3 Prior Protocol Amendment(s).}",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "Amendment Details",
+            "value": "Not applicable. This protocol has not been amended. (CNEW)Or\nThis is the first protocol amendment (CNEW)\nOR\nThis protocol has been amended previously. Details of prior amendments are presented in Section 12.3 Prior Protocol Amendment(s). (CNEW)",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Heading",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": [
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "ICH M11 Amendment Details Statement Response",
+                    "definition": "A terminology value set relevant to the amendment details statement responses within the ICH M11 Protocol model."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Not applicable. This protocol has not been amended.",
+                    "definition": "Not applicable. This protocol has not been amended."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "This protocol has been amended previously. Details of prior amendments are presented in Prior Protocol Amendment(s).",
+                    "definition": "This protocol has been amended previously. Details of prior amendments are presented in Prior Protocol Amendment(s)."
+                }
+            ]
+        }
+    },
+    "Primary Reason Other": {
+        "template": {
+            "long_name": "Primary Reason Other",
+            "short_name": "Primary Reason Other",
+            "original_name": "Primary Reason Other",
+            "optional": false,
+            "section_number": "",
+            "section_title": "Title Page",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Other description",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "C17649",
+                    "text": "Different than the one(s) previously specified or mentioned."
+                }
+            ],
+            "guidance": "Choose from the available categories the primary reason and secondary reason(s) for the amendment. Select the closest match among the choices. Changes to primary estimand, endpoints, or related measures should be listed as a change of strategy. If none of the choices apply, choose \u201cother\u201d and provide a description. If no secondary reason, indicate \u201cNot applicable\u201d for the secondary reason.",
+            "conformance": "Conditional : if Other is selected as a Valid Value",
+            "cardinality": "One to one",
+            "relationship": "Amendment Details",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Heading, Primary reason, Sponsor Protocol Identifier, Protocol Amendment",
+                "concept": "C17649",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": [],
+            "short_name": "Primary Reason Other"
+        }
+    },
+    "Secondary Reason Other": {
+        "template": {
+            "long_name": "Secondary Reason Other",
+            "short_name": "Secondary Reason Other",
+            "original_name": "Secondary Reason Other",
+            "optional": false,
+            "section_number": "",
+            "section_title": "Title Page",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Other description 1",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "C17649",
+                    "text": "Different than the one(s) previously specified or mentioned."
+                }
+            ],
+            "guidance": "Choose from the available categories as the primary reason and secondary reason(s) for the amendment. Select the closest match among the choices. Changes to primary estimand, endpoints, or related measures should be listed as a change of strategy. If none of the choices apply, choose \u201cother\u201d and provide a description. If no secondary reason, indicate \u201cnot applicable\u201d for the secondary reason.",
+            "conformance": "Conditional if Other is selected as a Valid Value",
+            "cardinality": "One to one",
+            "relationship": "Amendment Details",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Heading, Secondary reason, Protocol Identifier, Protocol Amendment",
+                "concept": "C17649",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": [],
+            "short_name": "Secondary Reason Other"
+        }
+    },
+    "Briefly Explain Substantial Impact On Safety": {
+        "template": {
+            "long_name": "Briefly Explain Substantial Impact On Safety",
+            "short_name": "Briefly Explain Substantial Impact On Safety",
+            "original_name": "Briefly Explain Substantial Impact On Safety",
+            "optional": false,
+            "section_number": "",
+            "section_title": "Title Page",
+            "instructions": []
+        },
+        "technical": {
+            "name": "If yes briefly explain",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "A short descriptive account of any substantial impacts on the safety or rights of the participants due to the protocol amendment."
+                }
+            ],
+            "guidance": "Briefly Explain Substantial Impact On Safety",
+            "conformance": "Conditional: if there is an amendment and If the \"Is this amendment likely to have a substantial impact on the safety or rights of the participants? \" is yes",
+            "cardinality": "One to one Amendment Identifier,\nIs this amendment likely to have a substantial impact on the safety or rights of the participants? Response when Yes",
+            "relationship": "Amendment Details",
+            "value": "",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Amendment Details, Amendment Identifier, Sponsor Protocol Identifier\nWhen the value is yes there is a text response for explanation",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": [],
+            "short_name": "Briefly Explain Substantial Impact On Safety"
+        }
+    },
+    "Briefly Explain Substantial Impact on Data": {
+        "template": {
+            "long_name": "Briefly Explain Substantial Impact on Data",
+            "short_name": "Briefly Explain Substantial Impact on Data",
+            "original_name": "Briefly Explain Substantial Impact on Data",
+            "optional": false,
+            "section_number": "",
+            "section_title": "Title Page",
+            "instructions": []
+        },
+        "technical": {
+            "name": "If yes briefly explain 3",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "A short descriptive account of any substantial impacts on the reliability and robustness of the data generated in the clinical trial due to the protocol amendment."
+                }
+            ],
+            "guidance": "Briefly Explain Substantial Impact on Data",
+            "conformance": "Conditional: if there is an amendment and if the answer to \"Is this amendment likely to have a substantial impact on the reliability and robustness of the data generated in the clinical trial?\" is yes",
+            "cardinality": "One to amendment identifier",
+            "relationship": "Amendment Details",
+            "value": "",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Amendment Details, Amendment Identifier, Sponsor Protocol Identifier\nWhen the value is yes there is a text response for explanation",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": [],
+            "short_name": "Briefly Explain Substantial Impact on Data"
+        }
+    },
     "Primary and Secondary Objectives and Estimands": {
         "template": {
             "long_name": "Enter Primary and Secondary Objectives and Estimands",
@@ -2653,6 +3086,270 @@
             },
             "repeating": "Yes, Reuse <Primary Objective> and <Endpoint> for each Primary Objective from section 3.1, reuse <Secondary Objective> and <Endpoint> for each Secondary Objective from section 3.2.",
             "ct": []
+        }
+    },
+    "Population Type": {
+        "template": {
+            "long_name": "Population type",
+            "short_name": "Population Type",
+            "original_name": "Population type",
+            "optional": false,
+            "section_number": "1.1.2",
+            "section_title": "Overall Design",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Population Type",
+            "data_type": "Valid Value",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "A characterisation or classification of the trial population."
+                }
+            ],
+            "guidance": "N/A",
+            "conformance": "Required",
+            "cardinality": "One to one; One to Heading; One to Sponsor Protocol Identifier",
+            "relationship": "1.1.2",
+            "value": "With Disease (CNEW); Without Disease (CNEW)",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Row Title; Sponsor Protocol Identifier",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": [
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Population Type Response",
+                    "definition": "A terminology value set relevant to the study population type responses within the ICH M11 Protocol model."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "With Disease",
+                    "definition": "An indication that the individual or group of individuals has been diagnosed with the disease of interest or under study."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Without Disease",
+                    "definition": "An indication that the individual or group of individuals has not been diagnosed with the disease of interest or under study."
+                }
+            ]
+        }
+    },
+    "Intervention Model": {
+        "template": {
+            "long_name": "Intervention model",
+            "short_name": "Intervention Model",
+            "original_name": "Intervention model",
+            "optional": false,
+            "section_number": "1.1.2",
+            "section_title": "Overall Design",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Intervention Model",
+            "data_type": "Valid Value",
+            "definition": [
+                {
+                    "c_code": "C98746",
+                    "text": "The overall design configuration for assigning intervention to participants."
+                }
+            ],
+            "guidance": "N/A",
+            "conformance": "Required",
+            "cardinality": "One to one; One to Heading One to Sponsor Protocol Identifier",
+            "relationship": "1.1.2",
+            "value": "Single group (C82640), parallel group (C82639), cross-over (C82637), factorial(C82638), sequential (C142568), other(C17649)",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Row title; Sponsor Protocol Identifier",
+                "concept": "C98746",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": [
+                {
+                    "ncit_code": "C99076",
+                    "preferred_term": "INTMODEL",
+                    "definition": "A terminology codelist relevant to the trial design developed to compare treatment groups."
+                },
+                {
+                    "ncit_code": "C82637",
+                    "preferred_term": "Cross-over",
+                    "definition": "Participants receive one of two or more alternative intervention(s) during the initial epoch of the study and receive other intervention(s) during the subsequent epoch(s) of the study."
+                },
+                {
+                    "ncit_code": "C82638",
+                    "preferred_term": "Factorial",
+                    "definition": "Two or more interventions, each alone or in combination, are evaluated in parallel against a control group. This study design allows for the comparison of active drug to placebo, presence of drug-drug interactions, and comparison of active drugs against each other."
+                },
+                {
+                    "ncit_code": "C82639",
+                    "preferred_term": "Parallel Group",
+                    "definition": "Participants are assigned to one of two or more treatment groups in parallel for the duration of the study."
+                },
+                {
+                    "ncit_code": "C142568",
+                    "preferred_term": "Sequential",
+                    "definition": "Groups of participants are assigned to receive interventions based on prior milestones being reached in the study."
+                },
+                {
+                    "ncit_code": "C82640",
+                    "preferred_term": "Single Group",
+                    "definition": "All trial participants are assigned to a single treatment group for the duration of the study."
+                },
+                {
+                    "ncit_code": "C17649",
+                    "preferred_term": "Other",
+                    "definition": "Different than the one(s) previously specified or mentioned."
+                }
+            ]
+        }
+    },
+    "Population Diagnosis or Condition": {
+        "template": {
+            "long_name": "Population diagnosis or condition",
+            "short_name": "Population Diagnosis or Condition",
+            "original_name": "Population diagnosis or condition",
+            "optional": false,
+            "section_number": "1.1.2",
+            "section_title": "Overall Design",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Population Diagnosis or Condition",
+            "data_type": "Valid Value or Text",
+            "definition": [
+                {
+                    "c_code": "C112038",
+                    "text": "A textual description of the condition, disease or disorder that the clinical trial is intended to investigate or address."
+                }
+            ],
+            "guidance": "MedDRA Preferred Term(s) or indicate \u201cother\u201d and describe.",
+            "conformance": "Required",
+            "cardinality": "One to one; One to Heading; One to Sponsor Protocol Identifier",
+            "relationship": "1.1.2",
+            "value": "Use examples MedDRA PT or SNOMED\nCT: \u201cacute lung injury,\u201d or a specific biomarker profile); indicate \u201cN/A \u2013 Healthy\u201d for studies in healthy volunteers",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Row Title Heading; Sponsor Protocol Identifier",
+                "concept": "C112038",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each population diagnosis or condition",
+            "ct": []
+        }
+    },
+    "Control Type": {
+        "template": {
+            "long_name": "Control type",
+            "short_name": "Control Type",
+            "original_name": "Control type",
+            "optional": false,
+            "section_number": "1.1.2",
+            "section_title": "Overall Design",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Control Type",
+            "data_type": "Valid Value",
+            "definition": [
+                {
+                    "c_code": "C49647",
+                    "text": "A characterisation or classification of the comparator against which the study intervention is evaluated."
+                }
+            ],
+            "guidance": "Control method (for example, placebo, active comparator, low dose, historical, standard of care, sham procedure, or none [uncontrolled])",
+            "conformance": "Required",
+            "cardinality": "One to one; One to Heading; One to Sponsor Protocol Identifier",
+            "relationship": "1.1.2",
+            "value": "Placebo (C49648), active comparator(C49649), Dose Response(C120841); Different Dose or Regimen (CNEW), External (CNEW), sham procedure(C184727), or No Control(C28280)",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Row Title; Sponsor Protocol Identifier",
+                "concept": "C49647",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": [
+                {
+                    "ncit_code": "C66785",
+                    "preferred_term": "TCNTRL",
+                    "definition": "A terminology codelist relevant to a comparator against which the study treatment is evaluated."
+                },
+                {
+                    "ncit_code": "C49649",
+                    "preferred_term": "Active Comparator",
+                    "definition": "A type of control, which has a demonstrated effect, administered as a comparator to subjects in a clinical trial."
+                },
+                {
+                    "ncit_code": "C120841",
+                    "preferred_term": "Dose Response",
+                    "definition": "A type of control using different doses or regimens of the same treatment across the treatment arms."
+                },
+                {
+                    "ncit_code": "C28280",
+                    "preferred_term": "No Control",
+                    "definition": "A clinical study that lacks a comparison (i.e., a control) group."
+                },
+                {
+                    "ncit_code": "C49648",
+                    "preferred_term": "Placebo",
+                    "definition": "An inactive, identical-appearing drug or treatment that does not contain the test product."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Different Dose or Regimen",
+                    "definition": "A type of control that comprises a different dose or dosage regimen in comparison to the investigational intervention dose or dosage regimen."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "External",
+                    "definition": "The use of external control data as a control arm for those studies where ethical concerns and/or underserved disease indications may make it difficult to enroll subjects/participants."
+                },
+                {
+                    "ncit_code": "C184727",
+                    "preferred_term": "Sham Procedure",
+                    "definition": "A type of negative control in which a procedure is performed that mimics the procedure under study but does not include investigational processes or components."
+                }
+            ]
+        }
+    },
+    "Minimum Age": {
+        "template": {
+            "long_name": "minimum age",
+            "short_name": "Minimum Age",
+            "original_name": "minimum age",
+            "optional": false,
+            "section_number": "1.1.2",
+            "section_title": "Overall Design",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Minimum age",
+            "data_type": "Number",
+            "definition": [
+                {
+                    "c_code": "C49693",
+                    "text": "The anticipated minimum age of the participants to be entered in a clinical trial."
+                }
+            ],
+            "guidance": "Population age range - For trials in which multiple age ranges may be eligible (for example, a younger cohort and an older cohort), indicate the minimum and maximum ages for the trial overall, with an additional comment for any excluded age ranges.",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "1.1.2",
+            "value": "Integer",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "population age, Minimum; minimum unit of age",
+                "concept": "C49693",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": [],
+            "short_name": "Minimum Age"
         }
     },
     "units of minimum age": {
@@ -2916,6 +3613,56 @@
             "ct": []
         }
     },
+    "Site Distribution": {
+        "template": {
+            "long_name": "Site distribution",
+            "short_name": "Site Distribution",
+            "original_name": "Site distribution",
+            "optional": false,
+            "section_number": "1.1.2",
+            "section_title": "Overall Design",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Site Distribution",
+            "data_type": "Valid Value",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "An indication as to whether the occurrence applies to a single or multiple trial sites."
+                }
+            ],
+            "guidance": "N/A",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "1.1.2",
+            "value": "single-centre (CNEW), multi-centre(CNEW)",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Row Title heading; Sponsor Protocol Identifier",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": [
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Trial Site Distribution Response",
+                    "definition": "A terminology value set relevant to the trial site distribution responses within the ICH M11 Protocol model."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Single-Centre",
+                    "definition": "A clinical study that is conducted at a single study site."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Multicentre",
+                    "definition": "A clinical trial conducted according to a single protocol but at more than one site, and therefore, carried out by more than one investigator."
+                }
+            ]
+        }
+    },
     "Site geographic scope": {
         "template": {
             "long_name": "Site geographic scope",
@@ -2962,6 +3709,61 @@
                     "ncit_code": "CNEW",
                     "preferred_term": "Multiple Countries",
                     "definition": "Of, or pertaining to, an occurrence in more than one country."
+                }
+            ]
+        }
+    },
+    "Intervention Assignment Method": {
+        "template": {
+            "long_name": "Intervention assignment method",
+            "short_name": "Intervention Assignment Method",
+            "original_name": "Intervention assignment method",
+            "optional": false,
+            "section_number": "1.1.2",
+            "section_title": "Overall Design",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Intervention Assignment Method",
+            "data_type": "Valid Value",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "The process used to assign trial participants to a trial intervention or trial arm."
+                }
+            ],
+            "guidance": "Intervention assignment method - Do NOT state block size.",
+            "conformance": "Required",
+            "cardinality": "One to one: One toSponsor Protocol Identifier",
+            "relationship": "1.1.2",
+            "value": "Randomisation (C25196), Stratification (C25689), Stratified Randomisation (CNEW), Other (C17649) or Not Applicable (C48660)",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Row title identifier; Sponsor Protocol Identifiers",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": [
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Trial Intervention Assignment Method Response",
+                    "definition": "A terminology value set relevant to the trial intervention assignment method responses within the ICH M11 Protocol model."
+                },
+                {
+                    "ncit_code": "C25196",
+                    "preferred_term": "Randomisation",
+                    "definition": "The process of assigning trial subjects to treatment or control groups using an element of chance to determine the assignments in order to reduce bias. NOTE: Unequal randomization is used to allocate subjects into groups at a differential rate; for example, three subjects may be assigned to a treatment group for every one assigned to the control group."
+                },
+                {
+                    "ncit_code": "C25689",
+                    "preferred_term": "Stratification",
+                    "definition": "Grouping defined by important prognostic factors measured at baseline."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Stratified Randomisation",
+                    "definition": "The process of grouping trial participants into strata according to important prognostic factors and then assigning participants within each stratum to different treatment or control groups using an element of chance and in order to reduce bias."
                 }
             ]
         }
@@ -3199,6 +4001,77 @@
                     "definition": "A study in which one party, either the subject or study personnel, does not know which intervention is administered to the subject."
                 }
             ]
+        }
+    },
+    "Blinded Roles": {
+        "template": {
+            "long_name": "blinded roles",
+            "short_name": "Blinded Roles",
+            "original_name": "blinded roles",
+            "optional": false,
+            "section_number": "1.1.2",
+            "section_title": "Overall Design",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Blinded roles",
+            "data_type": "Valid Value",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "An identifying designation assigned to a blinded individual within a clinical trial that corresponds with their function"
+                }
+            ],
+            "guidance": "\u201cNot applicable (No blinding)\u201d indicates an open label trial.",
+            "conformance": "Required",
+            "cardinality": "One to many",
+            "relationship": "1.1.2",
+            "value": "Participant (C142710), Care Provider (C17445), Investigator (C25936), Outcomes Assessor (CNEW), Sponsor (C70793) Not Applicable (C48660)",
+            "business_rules": {
+                "value_allowed": "Yes, Multiple roles can be selected",
+                "relationship": "Blinded Roles; Sponsor Protocol Identifier",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": [
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Trial Blinding Role",
+                    "definition": "A terminology value set relevant to the trial blinding roles within the ICH M11 Protocol model."
+                },
+                {
+                    "ncit_code": "C142710",
+                    "preferred_term": "Participant",
+                    "definition": "A member of the clinical study population from whom data are being collected."
+                },
+                {
+                    "ncit_code": "C17445",
+                    "preferred_term": "Care Provider",
+                    "definition": "The primary person in charge of the care of a patient, usually a family member or a designated health care professional."
+                },
+                {
+                    "ncit_code": "C25936",
+                    "preferred_term": "Investigator",
+                    "definition": "A person responsible for the conduct of the clinical trial at a trial site. If a trial is conducted by a team of individuals at the trial site, the investigator is the responsible leader of the team and may be called the principal investigator."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Outcomes Assessor",
+                    "definition": "The individual who evaluates the outcome(s) of interest."
+                },
+                {
+                    "ncit_code": "C70793",
+                    "preferred_term": "Sponsor",
+                    "definition": "An individual, company, institution, or organization that takes responsibility for the initiation, management, and/or financing of a clinical study."
+                },
+                {
+                    "ncit_code": "C48660",
+                    "preferred_term": "Not Applicable",
+                    "definition": "Determination of a value is not relevant in the current context."
+                }
+            ],
+            "short_name": "Blinded Roles"
         }
     },
     "Target-Maximum": {
@@ -4228,6 +5101,41 @@
             "ct": []
         }
     },
+    "Population Level Summary": {
+        "template": {
+            "long_name": "Enter Population-level Summary",
+            "short_name": "Population Level Summary",
+            "original_name": "Population-level Summary",
+            "optional": false,
+            "section_number": "3.1.1",
+            "section_title": "Primary Objective <#>",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Population-Level Summary",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "C188853",
+                    "text": "The variable to be obtained for each patient that is required to address the clinical question. The specification of the variable might include whether the patient experiences an intercurrent event"
+                }
+            ],
+            "guidance": "Description of the population-level summary (e.g., mean difference, relative risk)",
+            "conformance": "Conditional: If there is a population-level summary as estimand",
+            "cardinality": "One to Row Heading, One to Primary Objective Table, Project Identifier",
+            "relationship": "3.1.X",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Row Heading, Description",
+                "concept": "C188853",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each numbered primary objective",
+            "ct": [],
+            "short_name": "Population Level Summary"
+        }
+    },
     "Description of Intercurrent Event": {
         "template": {
             "long_name": "Enter Description of Intercurrent Event",
@@ -5011,6 +5919,38 @@
             "ct": []
         }
     },
+    "Inclusion Criterion Number": {
+        "template": {
+            "long_name": "#",
+            "short_name": "Inclusion Criterion Number",
+            "original_name": "#",
+            "optional": true,
+            "section_number": "5.2",
+            "section_title": "Inclusion Criteria",
+            "instructions": [
+                "Add criteria as needed. Consider numbering the criteria sequentially."
+            ]
+        },
+        "technical": {
+            "name": "-",
+            "data_type": "Number",
+            "definition": [],
+            "guidance": "Add criteria as needed. Consider numbering the criteria sequentially.",
+            "conformance": "Optional",
+            "cardinality": "One to one",
+            "relationship": "5.2",
+            "value": "# is an integer <criterion identifier> unique number and not replaceable",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "5.2 Inclusion Criteria",
+                "concept": "Sequential number",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each inclusion criterion",
+            "ct": [],
+            "short_name": "Inclusion Criterion Number"
+        }
+    },
     "Inclusion Criterion": {
         "template": {
             "long_name": "Inclusion Criterion",
@@ -5045,6 +5985,38 @@
             },
             "repeating": "Yes, number consecutively, repeatable for each inclusion criteria, if deleted do not replace, do not duplicate",
             "ct": []
+        }
+    },
+    "Exclusion Criterion Number": {
+        "template": {
+            "long_name": "#",
+            "short_name": "Exclusion Criterion Number",
+            "original_name": "#",
+            "optional": true,
+            "section_number": "5.3",
+            "section_title": "Exclusion Criteria",
+            "instructions": [
+                "Add criteria as needed. Consider numbering the criteria sequentially."
+            ]
+        },
+        "technical": {
+            "name": "- 16",
+            "data_type": "Number",
+            "definition": [],
+            "guidance": "Add criteria as needed.  Consider numbering the criteria sequentially",
+            "conformance": "Required",
+            "cardinality": "One to many",
+            "relationship": "5.3",
+            "value": "# is an identifier <criterion identifier> unique number and not replaceable",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "5.3 Exclusion Criteria",
+                "concept": "Sequential number",
+                "other": ""
+            },
+            "repeating": "Yes. number consecutively, repeatable for each exclusion criteria, if deleted do not replace, do not duplicate",
+            "ct": [],
+            "short_name": "Exclusion Criterion Number"
         }
     },
     "Exclusion Criterion": {
@@ -5453,6 +6425,76 @@
             "ct": []
         }
     },
+    "Arm Type": {
+        "template": {
+            "long_name": "Select Arm Type",
+            "short_name": "Arm Type",
+            "original_name": "Select Arm Type",
+            "optional": true,
+            "section_number": "6",
+            "section_title": "Trial Intervention And Concomitant Therapy",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Arm Type",
+            "data_type": "Valid Value",
+            "definition": [
+                {
+                    "c_code": "C172457",
+                    "text": "A characterization or classification of the study arm."
+                }
+            ],
+            "guidance": "N/A",
+            "conformance": "Optional: if the table used",
+            "cardinality": "One to each arm name",
+            "relationship": "6",
+            "value": "Experimental Arm(C174266), Active Comparator Arm(C174267), Placebo Comparator Arm (C174268, Sham Comparator Arm (C174269), No Intervention Arm (C174270), Control Arm(C174226)",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "arm name and arm type",
+                "concept": "C172457",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each arm name",
+            "ct": [
+                {
+                    "ncit_code": "C174222",
+                    "preferred_term": "Study Arm Type Value Set Terminology",
+                    "definition": "The terminology relevant to the identification of the kind of arm."
+                },
+                {
+                    "ncit_code": "C174267",
+                    "preferred_term": "Active Comparator Arm",
+                    "definition": "An arm describing the active comparator."
+                },
+                {
+                    "ncit_code": "C174226",
+                    "preferred_term": "Control Arm",
+                    "definition": "An arm describing the intervention or treatment plan for a group of participants in the study receiving a control. The control may comprise a non-investigational product (active control) or regimen, placebo, or no treatment."
+                },
+                {
+                    "ncit_code": "C174266",
+                    "preferred_term": "Experimental Arm",
+                    "definition": "An arm describing the intervention or treatment plan for a group of participants in the study receiving test product(s)."
+                },
+                {
+                    "ncit_code": "C174270",
+                    "preferred_term": "No Intervention Arm",
+                    "definition": "A study arm without an intervention or treatment."
+                },
+                {
+                    "ncit_code": "C174268",
+                    "preferred_term": "Placebo Comparator Arm",
+                    "definition": "An arm describing the placebo comparator."
+                },
+                {
+                    "ncit_code": "C174269",
+                    "preferred_term": "Sham Comparator Arm",
+                    "definition": "An arm describing the sham comparator."
+                }
+            ]
+        }
+    },
     "Intervention Name": {
         "template": {
             "long_name": "Enter Intervention Name",
@@ -5484,6 +6526,140 @@
                 "other": ""
             },
             "repeating": "Yes, repeatable for each arm name and arm type",
+            "ct": []
+        }
+    },
+    "Intervention Type": {
+        "template": {
+            "long_name": "Select Intervention Type",
+            "short_name": "Intervention Type",
+            "original_name": "Select Intervention Type",
+            "optional": true,
+            "section_number": "6",
+            "section_title": "Trial Intervention And Concomitant Therapy",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Intervention Type",
+            "data_type": "Valid Value",
+            "definition": [
+                {
+                    "c_code": "C98747",
+                    "text": "The kind of product or procedure studied in a trial."
+                }
+            ],
+            "guidance": "N/A",
+            "conformance": "Optional: if the table used",
+            "cardinality": "One to each intervention name",
+            "relationship": "6",
+            "value": "Drug (C1909), Device (C16830), Biologic (C307), Vaccine (C923), Non-Surgical Procedure (CNEW), Surgery (C15329), Radiation (C15313), Behavioral (C15184), Genetic (C15238), Dietary Supplement (C1505), Combination Product (C54696), Diagnostic Test (C18020)",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "arm name, arm type and Intervention name, Concept: C98747",
+                "concept": "",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each arm name and arm type combination",
+            "ct": [
+                {
+                    "ncit_code": "C99078",
+                    "preferred_term": "INTTYPE",
+                    "definition": "A terminology codelist relevant to the kind of product or procedure studied in a trial."
+                },
+                {
+                    "ncit_code": "C15184",
+                    "preferred_term": "Behavioral",
+                    "definition": "A technique used to change the behavior of a subject (e.g., psychotherapy, lifestyle counseling, or hypnosis)."
+                },
+                {
+                    "ncit_code": "C307",
+                    "preferred_term": "Biologic",
+                    "definition": "A product of biological origin applicable to the prevention, treatment, or cure of a disease or condition, for example: virus, therapeutic serum, toxin, antitoxin, vaccine, blood, blood component or derivative, allergenic product, or analogous product."
+                },
+                {
+                    "ncit_code": "C923",
+                    "preferred_term": "Vaccine",
+                    "definition": "A medicinal product inducing immunity against disease, most often to prevent occurrence of a disease, (e.g., a preventative vaccine against infectious disease), but also to treat a disease, (e.g., a therapeutic vaccine against cancer)."
+                },
+                {
+                    "ncit_code": "C54696",
+                    "preferred_term": "Combination Product",
+                    "definition": "A product composed of two or more different types of medical products (i.e., a combination of a drug, device, and/or biological product with one another and are referred to as \"constituent parts\" of the combination product)."
+                },
+                {
+                    "ncit_code": "C16830",
+                    "preferred_term": "Device",
+                    "definition": "Any instrument, apparatus, implement, machine, appliance, implant, reagent for in vitro use, software, material or other similar or related article, intended by the manufacturer to be used, alone or in combination for, one or more specific medical purpose(s)."
+                },
+                {
+                    "ncit_code": "C1505",
+                    "preferred_term": "Dietary Supplement",
+                    "definition": "Preparations containing ingredient(s) intended to supplement the diet."
+                },
+                {
+                    "ncit_code": "C1909",
+                    "preferred_term": "Drug",
+                    "definition": "An active natural, synthetic or semi-synthetic ingredient including endogenous body substance that is intended to furnish pharmacological activity or other direct effect in the diagnosis, cure, mitigation, treatment, or prevention of disease or to affect the structure or any function of the human body, but does not include intermediates used in the synthesis of such ingredient."
+                },
+                {
+                    "ncit_code": "C15238",
+                    "preferred_term": "Genetic",
+                    "definition": "Introduction of genetic material into cells in order to correct or treat an inherited or acquired disease."
+                },
+                {
+                    "ncit_code": "C15329",
+                    "preferred_term": "Surgery",
+                    "definition": "A diagnostic or treatment procedure performed by manual and/or instrumental means, often involving an incision and the removal or replacement of a diseased organ or tissue; of or relating to or involving or used in surgery or requiring or amenable to treatment by surgery."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Non-Surgical Procedure",
+                    "definition": "A medical procedure that produces an effect, or that is intended to alter the course of a disease in a patient or population, which is not considered a surgical procedure."
+                },
+                {
+                    "ncit_code": "C15313",
+                    "preferred_term": "Radiation",
+                    "definition": "Use of targeted or whole body radiation to treat a disease."
+                },
+                {
+                    "ncit_code": "C18020",
+                    "preferred_term": "Diagnostic Test",
+                    "definition": "Any procedure or test to diagnose a disease or disorder."
+                }
+            ]
+        }
+    },
+    "Pharmaceutical Dose Formulation": {
+        "template": {
+            "long_name": "Select Pharmaceutical Dose Form",
+            "short_name": "Pharmaceutical Dose Formulation",
+            "original_name": "Select Pharmaceutical Dose Form",
+            "optional": true,
+            "section_number": "6",
+            "section_title": "Trial Intervention And Concomitant Therapy",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Pharmaceutical Dose Formulation",
+            "data_type": "Valid Value",
+            "definition": [
+                {
+                    "c_code": "C42636",
+                    "text": "Physical characteristics of a drug product, (e.g. tablet, capsule, or solution) that contains a drug substance, generally-but not necessarily-in association with one or more other ingredients"
+                }
+            ],
+            "guidance": "N/A",
+            "conformance": "Optional: if the table used",
+            "cardinality": "One to each arm name, arm type and intervention combination",
+            "relationship": "6",
+            "value": "Use IDMP (e.g., EDQM, CDISC)",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "arm name and dosage formulation",
+                "concept": "C42636",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each intervention and dosage formulation",
             "ct": []
         }
     },
@@ -5555,6 +6731,40 @@
             "ct": []
         }
     },
+    "Route of Administration": {
+        "template": {
+            "long_name": "Select Route of Administration",
+            "short_name": "Route of Administration",
+            "original_name": "Select Route of Administration",
+            "optional": true,
+            "section_number": "6",
+            "section_title": "Trial Intervention And Concomitant Therapy",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Route of Administration",
+            "data_type": "Valid Value",
+            "definition": [
+                {
+                    "c_code": "C38114",
+                    "text": "Path by which the pharmaceutical product is taken into or makes contact with the body."
+                }
+            ],
+            "guidance": "N/A",
+            "conformance": "Optional: if the table used",
+            "cardinality": "One to each intervention and dosage formulation",
+            "relationship": "6",
+            "value": "Use IDMP (e.g. EDQM, CDISC)",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "arm name and route of administration",
+                "concept": "C38114",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each intervention. Dose formulation, per arm name",
+            "ct": []
+        }
+    },
     "Regimen-Treatment Period-Vaccination Regimen": {
         "template": {
             "long_name": "Enter Regimen/Treatment Period/Vaccination Regimen",
@@ -5588,6 +6798,182 @@
             "repeating": "Yes, repeatable for each arm name",
             "ct": [],
             "short_name": "Regimen-Treatment Period-Vaccination Regimen"
+        }
+    },
+    "Use": {
+        "template": {
+            "long_name": "Select Use",
+            "short_name": "Use",
+            "original_name": "Select Use",
+            "optional": true,
+            "section_number": "6",
+            "section_title": "Trial Intervention And Concomitant Therapy",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Use",
+            "data_type": "Valid Value",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "The reason or intention for the use of the trial intervention within the trial arm."
+                }
+            ],
+            "guidance": "N/A",
+            "conformance": "Optional: if the table used",
+            "cardinality": "One to each intervention",
+            "relationship": "6",
+            "value": "Experimental Intervention(C41161), Placebo(C753), Rescue Medicine(C165835), Background treatment(C165822), Challenge Agent(C158128), Diagnostic(C18020), Additional Required treatment (CNEW)",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "arm name and use,",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each intervention per arm",
+            "ct": [
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Intervention Use Response",
+                    "definition": "A terminology value set relevant to the intervention use responses within the ICH M11 Protocol model."
+                },
+                {
+                    "ncit_code": "C41161",
+                    "preferred_term": "Experimental Intervention",
+                    "definition": "The drug, device, therapy, procedure, or process under investigation in a clinical study that is believed to have an effect on outcomes of interest in a study (e.g., health-related quality of life, efficacy, safety, pharmacoeconomics"
+                },
+                {
+                    "ncit_code": "C753",
+                    "preferred_term": "Placebo",
+                    "definition": "A pharmaceutical preparation that does not contain the investigational agent and is generally prepared to be physically indistinguishable from the preparation containing the investigational product."
+                },
+                {
+                    "ncit_code": "C165835",
+                    "preferred_term": "Rescue Medicine",
+                    "definition": "Medicinal products identified in the protocol as those that may be administered to subjects when the efficacy of the investigational medicinal product (IMP) is not satisfactory, the effect of the IMP is too great and is likely to cause a hazard to the patient, or to manage an emergency situation."
+                },
+                {
+                    "ncit_code": "C165822",
+                    "preferred_term": "Background Treatment",
+                    "definition": "Medicinal products that are administered to each clinical trial subject, regardless of randomization group, a) to treat the indication which is the object of the study, or b) required in the protocol as part of standard care for a condition that is not the indication under investigation, and is relevant for the clinical trial design."
+                },
+                {
+                    "ncit_code": "C158128",
+                    "preferred_term": "Challenge Agent",
+                    "definition": "A non-investigational medicinal product (NIMP) given to trial subjects to produce a physiological response that is necessary before the pharmacological action of the investigational medicinal product can be assessed."
+                },
+                {
+                    "ncit_code": "C18020",
+                    "preferred_term": "Diagnostic",
+                    "definition": "Any procedure or test to diagnose a disease or disorder."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Additional Required Treatment",
+                    "definition": "A medicinal product that must be administered along with the experimental treatment (e.g., drug studies wherein opioid blockers are administered to prevent overdose)."
+                }
+            ]
+        }
+    },
+    "IMP or NIMP": {
+        "template": {
+            "long_name": "Select IMP or NIMP",
+            "short_name": "IMP or NIMP",
+            "original_name": "Select IMP or NIMP",
+            "optional": true,
+            "section_number": "6",
+            "section_title": "Trial Intervention And Concomitant Therapy",
+            "instructions": []
+        },
+        "technical": {
+            "name": "IMP-NIMP",
+            "data_type": "Valid value",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "An indication as to whether the investigational intervention is an investigational medicinal product or an auxiliary medicinal product."
+                }
+            ],
+            "guidance": "N/A",
+            "conformance": "Optional: if the table used",
+            "cardinality": "One to each intervention",
+            "relationship": "6",
+            "value": "IMP(CNEW), NIMP(C156473)",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "One per each intervention",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each intervention per arm",
+            "ct": [
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "ICH M11 Investigational Medicinal Product Indicator Response",
+                    "definition": "A terminology value set relevant to the investigational medicinal product indicator responses within the ICH M11 Protocol model."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "IMP",
+                    "definition": "A medicinal product which is being tested or used as a reference, including as a placebo, in a clinical trial."
+                },
+                {
+                    "ncit_code": "C156473",
+                    "preferred_term": "NIMP (AxMP)",
+                    "definition": "A medicinal product that is related to the specific needs of the clinical trial as described in the protocol, but not as an investigational medicinal product."
+                }
+            ],
+            "short_name": "IMP or NIMP"
+        }
+    },
+    "Sourcing": {
+        "template": {
+            "long_name": "Select Sourcing",
+            "short_name": "Sourcing",
+            "original_name": "Select Sourcing",
+            "optional": true,
+            "section_number": "6",
+            "section_title": "Trial Intervention And Concomitant Therapy",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Sourcing",
+            "data_type": "Valid Value",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "An indication as to whether the investigational intervention is sourced from a local or central vendor."
+                }
+            ],
+            "guidance": "N/A",
+            "conformance": "Optional: if the table used",
+            "cardinality": "One to many",
+            "relationship": "6",
+            "value": "Centrally Sourced (CNEW); Locally Sourced (CNEW)",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "One per each Intervention",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each intervention per arm name",
+            "ct": [
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "ICH M11 Investigational Intervention Sourcing Response",
+                    "definition": "A terminology value set relevant to the investigational intervention source responses within the ICH M11 Protocol model."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Centrally Sourced",
+                    "definition": "An indication that the entity is obtained from a central vendor."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Locally Sourced",
+                    "definition": "An indication that the entity is obtained from a local vendor."
+                }
+            ]
         }
     },
     "Description of Investigational Trial Intervention": {
@@ -6060,6 +7446,40 @@
                 "value_allowed": "Yes",
                 "relationship": "6.9 Description of Noninvestigational Trial Intervention",
                 "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": []
+        }
+    },
+    "Background Trial Intervention": {
+        "template": {
+            "long_name": "Enter Background Trial Interventions",
+            "short_name": "Background Trial Intervention",
+            "original_name": "Background Trial Interventions",
+            "optional": false,
+            "section_number": "6.9.1",
+            "section_title": "{Background Trial Intervention}",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Background Trial Intervention",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "C165822",
+                    "text": "Medicinal products that are administered to each clinical trial subject, regardless of randomization group, a) to treat the indication which is the object of the study, or b) required in the protocol as part of standard care for a condition that is not the indication under investigation, and is relevant for the clinical trial design. [After Recommendations from the expert group on clinical trials for the implementation of Regulation (EU) No 536/2014' dd 28 June 2017]"
+                }
+            ],
+            "guidance": "Describe permitted background intervention(s), including administration and any conditions for use.",
+            "conformance": "Conditional: when any background interventions are defined",
+            "cardinality": "One to one",
+            "relationship": "6.9.1",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "6.9.1 Background Trial Intervention",
+                "concept": "C165822",
                 "other": ""
             },
             "repeating": "No",
@@ -6679,6 +8099,40 @@
             "ct": []
         }
     },
+    "Clinical Safety Laboratory Assessments": {
+        "template": {
+            "long_name": "Enter Clinical Laboratory Assessments",
+            "short_name": "Clinical Safety Laboratory Assessments",
+            "original_name": "Clinical Laboratory Assessments",
+            "optional": false,
+            "section_number": "8.4.4",
+            "section_title": "{Clinical Laboratory Assessments}",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Clinical Safety Laboratory Assessments",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "Trial-related laboratory assessments and procedures related to participant safety."
+                }
+            ],
+            "guidance": "",
+            "conformance": "Conditional: when Clinical Laboratory Assessments are required",
+            "cardinality": "One to one",
+            "relationship": "8.4.4",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "8.4.4 Clinical Laboratory Assessments",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": []
+        }
+    },
     "Pregnancy Testing": {
         "template": {
             "long_name": "Enter Pregnancy Testing",
@@ -7019,6 +8473,35 @@
             "ct": []
         }
     },
+    "Definition of Product Complaints": {
+        "template": {
+            "long_name": "Enter Definitions of Product Complaints",
+            "short_name": "Definition of Product Complaints",
+            "original_name": "Definitions of Product Complaints",
+            "optional": false,
+            "section_number": "9.1.3",
+            "section_title": "Definitions of Product Complaints",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Definition of Product Complaints",
+            "data_type": "Text",
+            "definition": [],
+            "guidance": "Specify the definition of product complaints in the context of the trial.",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "9.1.3",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "9.1.3 Definition of Product Complaints",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": []
+        }
+    },
     "Definition of Medical Device Product Complaints": {
         "template": {
             "long_name": "Enter Definition of Medical Device Product Complaints",
@@ -7237,6 +8720,40 @@
                 "other": ""
             },
             "repeating": "Yes, repeatable for each event type, situation scope, reportable period start",
+            "ct": []
+        }
+    },
+    "Timing for Reporting to Sponsor or Designee": {
+        "template": {
+            "long_name": "Timing for reporting to Sponsor or Designee",
+            "short_name": "Timing for Reporting to Sponsor or Designee",
+            "original_name": "Timing for reporting to Sponsor or Designee",
+            "optional": true,
+            "section_number": "9.2",
+            "section_title": "Timing and Procedures for Collection and Reporting",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Timing for Reporting to Sponsor or Designee",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "A description of the timing window between trial related events and their reporting to the sponsor or designee."
+                }
+            ],
+            "guidance": "N/A",
+            "conformance": "Optional if table used",
+            "cardinality": "One to one",
+            "relationship": "9.2",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Event Type, Situational Scope",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each event type and situational scope",
             "ct": []
         }
     },
@@ -7615,6 +9132,41 @@
             "ct": []
         }
     },
+    "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs": {
+        "template": {
+            "long_name": "Enter Disease-related Events or Outcomes not Qualifying as AEs or SAEs",
+            "short_name": "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs",
+            "original_name": "Disease-related Events or Outcomes not Qualifying as AEs or SAEs",
+            "optional": false,
+            "section_number": "9.2.5",
+            "section_title": "Disease-related Events or Outcomes Not Qualifying as AEs or SAEs",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Disease-related Events or Outcomes Not Qualifying as AEs or SAEs",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "A description of events or outcomes related to the trial disease indication but not qualifying as adverse events or serious adverse events within the trial, or state not applicable."
+                }
+            ],
+            "guidance": "Specify any DREs, DROs, or both that will not be reported as AEs or SAEs (e.g., seizures in anticonvulsant trials) or state \u201cNot applicable.\u201d",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "9.2.5",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "9.2.5 Disease-related Events or Outcomes Not Qualifying as AEs or SAEs",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": [],
+            "short_name": "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs"
+        }
+    },
     "Participants Who Become Pregnant During the Trial": {
         "template": {
             "long_name": "Enter Participants Who Become Pregnant During the Trial",
@@ -7888,6 +9440,40 @@
             "ct": []
         }
     },
+    "Handling of Missing Data in Relation to Primary Estimand": {
+        "template": {
+            "long_name": "Enter Handling of Missing Data in Relation to Primary Estimand(s)",
+            "short_name": "Handling of Missing Data in Relation to Primary Estimand",
+            "original_name": "Handling of Missing Data in Relation to Primary Estimand(s)",
+            "optional": false,
+            "section_number": "10.4.1.3",
+            "section_title": "Handling of Missing Data in Relation to Primary Estimand(s)",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Handling of Missing Data in Relation to Primary Estimand",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "A textual description of how missing data associated with the primary estimand will be handled, including the rationale for the approach."
+                }
+            ],
+            "guidance": "Describe how missing data will be addressed (e.g., imputation method and model), state the underlying assumptions, and provide a rationale for the approach.",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "10.4.X.3",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "10.4.X.3 Handling of Missing Data",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.4.X.1, 10.4.X.2, 10.4.X.3, 10.4.X.4, 10.4.X.5).",
+            "ct": []
+        }
+    },
     "Sensitivity Analysis": {
         "template": {
             "long_name": "Enter Sensitivity Analysis",
@@ -7956,6 +9542,41 @@
             "ct": []
         }
     },
+    "Secondary Objectives Statistical Analysis Method": {
+        "template": {
+            "long_name": "Enter Statistical Analysis Method",
+            "short_name": "Secondary Objectives Statistical Analysis Method",
+            "original_name": "Statistical Analysis Method",
+            "optional": false,
+            "section_number": "10.5.1.1",
+            "section_title": "{Statistical Analysis Method}",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Statistical Method of Analysis 17",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "A textual description of the statistical model, hypothesis, and methods of analyses for each objective within the trial."
+                }
+            ],
+            "guidance": "Describe the statistical analysis methods that will be used to evaluate the Secondary objective(s) and associated estimand(s) in Section 3.2. Ensure that the statistical hypothesis/model/analysis (and corresponding assumptions) is aligned with the Secondary estimand(s). If there is more than one Secondary objective, present each objective as a level 3 heading and present each subsequent heading in Section 10.5 as a level 4 heading.\nFor each objective, state the null and alternative hypotheses, including the pre-planned type 1 error rate, or alternative criteria for evaluating whether the objective has been met, and relevant operating characteristics if appropriate. Describe the statistical model used and the factors that will be included (covariates and interactions) and any rules for handling these factors (for example, pooling of centres).\nIf modelling and simulation methods are to be used, please describe the model (inputs and outputs), the underlying assumptions, and the method of model fitting.",
+            "conformance": "Conditional: when there is Secondary estimand",
+            "cardinality": "One to one",
+            "relationship": "10.5.X.1",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "10.5.X.1 Statistical Analysis Method",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
+            "ct": [],
+            "short_name": "Secondary Objectives Statistical Analysis Method"
+        }
+    },
     "Handling of Data in Relation to Secondary Estimands": {
         "template": {
             "long_name": "Enter Handling of Data in Relation to Secondary Estimand(s)",
@@ -8022,6 +9643,111 @@
             },
             "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
             "ct": []
+        }
+    },
+    "Secondary Objectives Sensitivity Analysis": {
+        "template": {
+            "long_name": "Enter Sensitivity Analysis",
+            "short_name": "Secondary Objectives Sensitivity Analysis",
+            "original_name": "Sensitivity Analysis",
+            "optional": false,
+            "section_number": "10.5.1.4",
+            "section_title": "{Sensitivity Analysis}",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Sensitivity Analysis 18",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "A textual description of the series of analyses conducted to explore the robustness of inferences from the main estimator to deviations from its underlying modelling assumptions and limitations in the data."
+                }
+            ],
+            "guidance": "Describe any supplementary analysis, if applicable. Supplementary analyses are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect.",
+            "conformance": "Conditional: when there is Seconday Objective and sensitivity Analysis for a Secondary objective",
+            "cardinality": "One to one",
+            "relationship": "10.5.X.4",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "",
+                "relationship": "10.5.X.4 Sensitivity Analysis",
+                "concept": "CNEW",
+                "other": "Value Allowed Yes"
+            },
+            "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
+            "ct": [],
+            "short_name": "Secondary Objectives Sensitivity Analysis"
+        }
+    },
+    "Secondary Objectives Supplementary Analysis": {
+        "template": {
+            "long_name": "Enter Supplementary Analysis",
+            "short_name": "Secondary Objectives Supplementary Analysis",
+            "original_name": "Supplementary Analysis",
+            "optional": false,
+            "section_number": "10.5.1.5",
+            "section_title": "{Supplementary Analysis}",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Supplementary Analysis 19",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "A textual description of the analyses that are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect."
+                }
+            ],
+            "guidance": "Describe any supplementary analysis if applicable. Supplementary analyses are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect.",
+            "conformance": "Conditional: when there Supplementary Analysis for a Secondary objective",
+            "cardinality": "One to one",
+            "relationship": "10.5.X.5",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "10.5.X.5 Supplementary Analysis",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
+            "ct": [],
+            "short_name": "Secondary Objectives Supplementary Analysis"
+        }
+    },
+    "Analysis Associated with Exploratory Objectives": {
+        "template": {
+            "long_name": "Enter Analyses Associated with the Exploratory Objective(s)",
+            "short_name": "Analysis Associated with Exploratory Objectives",
+            "original_name": "Analyses Associated with the Exploratory Objective(s)",
+            "optional": false,
+            "section_number": "10.6",
+            "section_title": "Analyses Associated with the Exploratory Objective(s)",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Analysis Associated with Exploratory Objectivess",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "A textual description of the statistical model, hypothesis, and methods of analyses for each exploratory objective within the trial."
+                }
+            ],
+            "guidance": "Describe any exploratory analyses, if applicable. Additional subsections could be created to describe the analyses, as needed. If there is no exploratory objective, indicate \u201cnot applicable\u201d",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "10.6",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "10.6 Analysis Associated with the Exploratory Objective(s),",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": [],
+            "short_name": "Analysis Associated with Exploratory Objectives"
         }
     },
     "Safety Analyses": {
@@ -9116,6 +10842,41 @@
             "short_name": "Country-Region Specific Protocol Clarifications"
         }
     },
+    "Prior Amendment Identifier": {
+        "template": {
+            "long_name": "Enter Amendment Identifier",
+            "short_name": "Prior Amendment Identifier",
+            "original_name": "Amendment Identifier",
+            "optional": false,
+            "section_number": "12.3",
+            "section_title": "Prior Protocol Amendment(s)",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Amendment Identifier 21",
+            "data_type": "Text or Universal Text \u201cOriginal Protocol\u201d",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "A sequence of characters used to uniquely identify a protocol amendment."
+                }
+            ],
+            "guidance": "",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "12.3",
+            "value": "Text or Universal Text \u201cOriginal Protocol\u201d",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Table Column Heading \u201cDocument\u201d",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "Yes, reuse from the title page",
+            "ct": [],
+            "short_name": "Prior Amendment Identifier"
+        }
+    },
     "Sponsor Approval Date": {
         "template": {
             "long_name": "Enter Sponsor Approval Date",
@@ -9148,6 +10909,41 @@
             },
             "repeating": "Yes, reuse from the title page",
             "ct": []
+        }
+    },
+    "Previous Amendment Enrollment": {
+        "template": {
+            "long_name": "Enter # or % enrolled globally/locally/per cohort",
+            "short_name": "Previous Amendment Enrollment",
+            "original_name": "# or % enrolled globally/locally/per cohort",
+            "optional": true,
+            "section_number": "12.3",
+            "section_title": "Prior Protocol Amendment(s)",
+            "instructions": []
+        },
+        "technical": {
+            "name": "- or -",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "The numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage. The numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage."
+                }
+            ],
+            "guidance": "",
+            "conformance": "Optional: when there is an amendment and sponsor chooses",
+            "cardinality": "One to one",
+            "relationship": "12.3",
+            "value": "<# or %> enrolled <globally/locally/per cohort>",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Document, Sponsor Approval Date",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "Yes, reuse from the title page",
+            "ct": [],
+            "short_name": "Previous Amendment Enrollment"
         }
     },
     "specify alternative location": {
@@ -9186,1579 +10982,74 @@
             "ct": []
         }
     },
-    "Glossary of Terms and Abbreviations": {
+    "Previous Amendment Number": {
         "template": {
-            "long_name": "Enter Glossary of Terms and Abbreviations",
-            "short_name": "Glossary of Terms and Abbreviations",
-            "original_name": "Glossary of Terms and Abbreviations",
-            "optional": false,
-            "section_number": "13",
-            "section_title": "Appendix: Glossary of Terms and Abbreviations",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Glossary of Terms and Abbreviations",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "A collection of abbreviations (a shortened form of a word or phrase) and definitions (a concise explanation of the meaning of a word or phrase or symbol)."
-                }
-            ],
-            "guidance": "Define abbreviations and other terms used in the protocol. A tabular presentation is common and may serve as the definition at first use.",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "13",
-            "value": "Text",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "13 APPENDIX: GLOSSARY OF TERMS AND ABBREVIATIONS",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": []
-        }
-    },
-    "References": {
-        "template": {
-            "long_name": "Enter References",
-            "short_name": "References",
-            "original_name": "References",
-            "optional": false,
-            "section_number": "14",
-            "section_title": "Appendix: References",
-            "instructions": []
-        },
-        "technical": {
-            "name": "References",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "C184397",
-                    "text": "The curated list of sources that are cited within the reference section of the document."
-                }
-            ],
-            "guidance": "References should be listed in a common format that includes all relevant information to identify the source and date published. If not published, this should be clearly indicated.",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "14",
-            "value": "Text",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "14 APPENDIX: REFERENCES",
-                "concept": "C184397",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": []
-        }
-    },
-    "IMP or NIMP": {
-        "template": {
-            "long_name": "Select IMP or NIMP",
-            "short_name": "IMP or NIMP",
-            "original_name": "Select IMP or NIMP",
-            "optional": true,
-            "section_number": "6",
-            "section_title": "Trial Intervention And Concomitant Therapy",
-            "instructions": []
-        },
-        "technical": {
-            "name": "IMP-NIMP",
-            "data_type": "Valid value",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "An indication as to whether the investigational intervention is an investigational medicinal product or an auxiliary medicinal product."
-                }
-            ],
-            "guidance": "N/A",
-            "conformance": "Optional: if the table used",
-            "cardinality": "One to each intervention",
-            "relationship": "6",
-            "value": "IMP(CNEW), NIMP(C156473)",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "One per each intervention",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "Yes, repeatable for each intervention per arm",
-            "ct": [
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "ICH M11 Investigational Medicinal Product Indicator Response",
-                    "definition": "A terminology value set relevant to the investigational medicinal product indicator responses within the ICH M11 Protocol model."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "IMP",
-                    "definition": "A medicinal product which is being tested or used as a reference, including as a placebo, in a clinical trial."
-                },
-                {
-                    "ncit_code": "C156473",
-                    "preferred_term": "NIMP (AxMP)",
-                    "definition": "A medicinal product that is related to the specific needs of the clinical trial as described in the protocol, but not as an investigational medicinal product."
-                }
-            ],
-            "short_name": "IMP or NIMP"
-        }
-    },
-    "Control Type": {
-        "template": {
-            "long_name": "Control type",
-            "short_name": "Control Type",
-            "original_name": "Control type",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Control Type",
-            "data_type": "Valid Value",
-            "definition": [
-                {
-                    "c_code": "C49647",
-                    "text": "A characterisation or classification of the comparator against which the study intervention is evaluated."
-                }
-            ],
-            "guidance": "Control method (for example, placebo, active comparator, low dose, historical, standard of care, sham procedure, or none [uncontrolled])",
-            "conformance": "Required",
-            "cardinality": "One to one; One to Heading; One to Sponsor Protocol Identifier",
-            "relationship": "1.1.2",
-            "value": "Placebo (C49648), active comparator(C49649), Dose Response(C120841); Different Dose or Regimen (CNEW), External (CNEW), sham procedure(C184727), or No Control(C28280)",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Row Title; Sponsor Protocol Identifier",
-                "concept": "C49647",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "C66785",
-                    "preferred_term": "TCNTRL",
-                    "definition": "A terminology codelist relevant to a comparator against which the study treatment is evaluated."
-                },
-                {
-                    "ncit_code": "C49649",
-                    "preferred_term": "Active Comparator",
-                    "definition": "A type of control, which has a demonstrated effect, administered as a comparator to subjects in a clinical trial."
-                },
-                {
-                    "ncit_code": "C120841",
-                    "preferred_term": "Dose Response",
-                    "definition": "A type of control using different doses or regimens of the same treatment across the treatment arms."
-                },
-                {
-                    "ncit_code": "C28280",
-                    "preferred_term": "No Control",
-                    "definition": "A clinical study that lacks a comparison (i.e., a control) group."
-                },
-                {
-                    "ncit_code": "C49648",
-                    "preferred_term": "Placebo",
-                    "definition": "An inactive, identical-appearing drug or treatment that does not contain the test product."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Different Dose or Regimen",
-                    "definition": "A type of control that comprises a different dose or dosage regimen in comparison to the investigational intervention dose or dosage regimen."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "External",
-                    "definition": "The use of external control data as a control arm for those studies where ethical concerns and/or underserved disease indications may make it difficult to enroll subjects/participants."
-                },
-                {
-                    "ncit_code": "C184727",
-                    "preferred_term": "Sham Procedure",
-                    "definition": "A type of negative control in which a procedure is performed that mimics the procedure under study but does not include investigational processes or components."
-                }
-            ]
-        }
-    },
-    "Minimum Age": {
-        "template": {
-            "long_name": "minimum age",
-            "short_name": "Minimum Age",
-            "original_name": "minimum age",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Minimum age",
-            "data_type": "Number",
-            "definition": [
-                {
-                    "c_code": "C49693",
-                    "text": "The anticipated minimum age of the participants to be entered in a clinical trial."
-                }
-            ],
-            "guidance": "Population age range - For trials in which multiple age ranges may be eligible (for example, a younger cohort and an older cohort), indicate the minimum and maximum ages for the trial overall, with an additional comment for any excluded age ranges.",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "1.1.2",
-            "value": "Integer",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "population age, Minimum; minimum unit of age",
-                "concept": "C49693",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": [],
-            "short_name": "Minimum Age"
-        }
-    },
-    "Blinded Roles": {
-        "template": {
-            "long_name": "blinded roles",
-            "short_name": "Blinded Roles",
-            "original_name": "blinded roles",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Blinded roles",
-            "data_type": "Valid Value",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "An identifying designation assigned to a blinded individual within a clinical trial that corresponds with their function"
-                }
-            ],
-            "guidance": "\u201cNot applicable (No blinding)\u201d indicates an open label trial.",
-            "conformance": "Required",
-            "cardinality": "One to many",
-            "relationship": "1.1.2",
-            "value": "Participant (C142710), Care Provider (C17445), Investigator (C25936), Outcomes Assessor (CNEW), Sponsor (C70793) Not Applicable (C48660)",
-            "business_rules": {
-                "value_allowed": "Yes, Multiple roles can be selected",
-                "relationship": "Blinded Roles; Sponsor Protocol Identifier",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Trial Blinding Role",
-                    "definition": "A terminology value set relevant to the trial blinding roles within the ICH M11 Protocol model."
-                },
-                {
-                    "ncit_code": "C142710",
-                    "preferred_term": "Participant",
-                    "definition": "A member of the clinical study population from whom data are being collected."
-                },
-                {
-                    "ncit_code": "C17445",
-                    "preferred_term": "Care Provider",
-                    "definition": "The primary person in charge of the care of a patient, usually a family member or a designated health care professional."
-                },
-                {
-                    "ncit_code": "C25936",
-                    "preferred_term": "Investigator",
-                    "definition": "A person responsible for the conduct of the clinical trial at a trial site. If a trial is conducted by a team of individuals at the trial site, the investigator is the responsible leader of the team and may be called the principal investigator."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Outcomes Assessor",
-                    "definition": "The individual who evaluates the outcome(s) of interest."
-                },
-                {
-                    "ncit_code": "C70793",
-                    "preferred_term": "Sponsor",
-                    "definition": "An individual, company, institution, or organization that takes responsibility for the initiation, management, and/or financing of a clinical study."
-                },
-                {
-                    "ncit_code": "C48660",
-                    "preferred_term": "Not Applicable",
-                    "definition": "Determination of a value is not relevant in the current context."
-                }
-            ],
-            "short_name": "Blinded Roles"
-        }
-    },
-    "Arm Type": {
-        "template": {
-            "long_name": "Select Arm Type",
-            "short_name": "Arm Type",
-            "original_name": "Select Arm Type",
-            "optional": true,
-            "section_number": "6",
-            "section_title": "Trial Intervention And Concomitant Therapy",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Arm Type",
-            "data_type": "Valid Value",
-            "definition": [
-                {
-                    "c_code": "C172457",
-                    "text": "A characterization or classification of the study arm."
-                }
-            ],
-            "guidance": "N/A",
-            "conformance": "Optional: if the table used",
-            "cardinality": "One to each arm name",
-            "relationship": "6",
-            "value": "Experimental Arm(C174266), Active Comparator Arm(C174267), Placebo Comparator Arm (C174268, Sham Comparator Arm (C174269), No Intervention Arm (C174270), Control Arm(C174226)",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "arm name and arm type",
-                "concept": "C172457",
-                "other": ""
-            },
-            "repeating": "Yes, repeatable for each arm name",
-            "ct": [
-                {
-                    "ncit_code": "C174222",
-                    "preferred_term": "Study Arm Type Value Set Terminology",
-                    "definition": "The terminology relevant to the identification of the kind of arm."
-                },
-                {
-                    "ncit_code": "C174267",
-                    "preferred_term": "Active Comparator Arm",
-                    "definition": "An arm describing the active comparator."
-                },
-                {
-                    "ncit_code": "C174226",
-                    "preferred_term": "Control Arm",
-                    "definition": "An arm describing the intervention or treatment plan for a group of participants in the study receiving a control. The control may comprise a non-investigational product (active control) or regimen, placebo, or no treatment."
-                },
-                {
-                    "ncit_code": "C174266",
-                    "preferred_term": "Experimental Arm",
-                    "definition": "An arm describing the intervention or treatment plan for a group of participants in the study receiving test product(s)."
-                },
-                {
-                    "ncit_code": "C174270",
-                    "preferred_term": "No Intervention Arm",
-                    "definition": "A study arm without an intervention or treatment."
-                },
-                {
-                    "ncit_code": "C174268",
-                    "preferred_term": "Placebo Comparator Arm",
-                    "definition": "An arm describing the placebo comparator."
-                },
-                {
-                    "ncit_code": "C174269",
-                    "preferred_term": "Sham Comparator Arm",
-                    "definition": "An arm describing the sham comparator."
-                }
-            ]
-        }
-    },
-    "Intervention Type": {
-        "template": {
-            "long_name": "Select Intervention Type",
-            "short_name": "Intervention Type",
-            "original_name": "Select Intervention Type",
-            "optional": true,
-            "section_number": "6",
-            "section_title": "Trial Intervention And Concomitant Therapy",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Intervention Type",
-            "data_type": "Valid Value",
-            "definition": [
-                {
-                    "c_code": "C98747",
-                    "text": "The kind of product or procedure studied in a trial."
-                }
-            ],
-            "guidance": "N/A",
-            "conformance": "Optional: if the table used",
-            "cardinality": "One to each intervention name",
-            "relationship": "6",
-            "value": "Drug (C1909), Device (C16830), Biologic (C307), Vaccine (C923), Non-Surgical Procedure (CNEW), Surgery (C15329), Radiation (C15313), Behavioral (C15184), Genetic (C15238), Dietary Supplement (C1505), Combination Product (C54696), Diagnostic Test (C18020)",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "arm name, arm type and Intervention name, Concept: C98747",
-                "concept": "",
-                "other": ""
-            },
-            "repeating": "Yes, repeatable for each arm name and arm type combination",
-            "ct": [
-                {
-                    "ncit_code": "C99078",
-                    "preferred_term": "INTTYPE",
-                    "definition": "A terminology codelist relevant to the kind of product or procedure studied in a trial."
-                },
-                {
-                    "ncit_code": "C15184",
-                    "preferred_term": "Behavioral",
-                    "definition": "A technique used to change the behavior of a subject (e.g., psychotherapy, lifestyle counseling, or hypnosis)."
-                },
-                {
-                    "ncit_code": "C307",
-                    "preferred_term": "Biologic",
-                    "definition": "A product of biological origin applicable to the prevention, treatment, or cure of a disease or condition, for example: virus, therapeutic serum, toxin, antitoxin, vaccine, blood, blood component or derivative, allergenic product, or analogous product."
-                },
-                {
-                    "ncit_code": "C923",
-                    "preferred_term": "Vaccine",
-                    "definition": "A medicinal product inducing immunity against disease, most often to prevent occurrence of a disease, (e.g., a preventative vaccine against infectious disease), but also to treat a disease, (e.g., a therapeutic vaccine against cancer)."
-                },
-                {
-                    "ncit_code": "C54696",
-                    "preferred_term": "Combination Product",
-                    "definition": "A product composed of two or more different types of medical products (i.e., a combination of a drug, device, and/or biological product with one another and are referred to as \"constituent parts\" of the combination product)."
-                },
-                {
-                    "ncit_code": "C16830",
-                    "preferred_term": "Device",
-                    "definition": "Any instrument, apparatus, implement, machine, appliance, implant, reagent for in vitro use, software, material or other similar or related article, intended by the manufacturer to be used, alone or in combination for, one or more specific medical purpose(s)."
-                },
-                {
-                    "ncit_code": "C1505",
-                    "preferred_term": "Dietary Supplement",
-                    "definition": "Preparations containing ingredient(s) intended to supplement the diet."
-                },
-                {
-                    "ncit_code": "C1909",
-                    "preferred_term": "Drug",
-                    "definition": "An active natural, synthetic or semi-synthetic ingredient including endogenous body substance that is intended to furnish pharmacological activity or other direct effect in the diagnosis, cure, mitigation, treatment, or prevention of disease or to affect the structure or any function of the human body, but does not include intermediates used in the synthesis of such ingredient."
-                },
-                {
-                    "ncit_code": "C15238",
-                    "preferred_term": "Genetic",
-                    "definition": "Introduction of genetic material into cells in order to correct or treat an inherited or acquired disease."
-                },
-                {
-                    "ncit_code": "C15329",
-                    "preferred_term": "Surgery",
-                    "definition": "A diagnostic or treatment procedure performed by manual and/or instrumental means, often involving an incision and the removal or replacement of a diseased organ or tissue; of or relating to or involving or used in surgery or requiring or amenable to treatment by surgery."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Non-Surgical Procedure",
-                    "definition": "A medical procedure that produces an effect, or that is intended to alter the course of a disease in a patient or population, which is not considered a surgical procedure."
-                },
-                {
-                    "ncit_code": "C15313",
-                    "preferred_term": "Radiation",
-                    "definition": "Use of targeted or whole body radiation to treat a disease."
-                },
-                {
-                    "ncit_code": "C18020",
-                    "preferred_term": "Diagnostic Test",
-                    "definition": "Any procedure or test to diagnose a disease or disorder."
-                }
-            ]
-        }
-    },
-    "Pharmaceutical Dose Formulation": {
-        "template": {
-            "long_name": "Select Pharmaceutical Dose Form",
-            "short_name": "Pharmaceutical Dose Formulation",
-            "original_name": "Select Pharmaceutical Dose Form",
-            "optional": true,
-            "section_number": "6",
-            "section_title": "Trial Intervention And Concomitant Therapy",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Pharmaceutical Dose Formulation",
-            "data_type": "Valid Value",
-            "definition": [
-                {
-                    "c_code": "C42636",
-                    "text": "Physical characteristics of a drug product, (e.g. tablet, capsule, or solution) that contains a drug substance, generally-but not necessarily-in association with one or more other ingredients"
-                }
-            ],
-            "guidance": "N/A",
-            "conformance": "Optional: if the table used",
-            "cardinality": "One to each arm name, arm type and intervention combination",
-            "relationship": "6",
-            "value": "Use IDMP (e.g., EDQM, CDISC)",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "arm name and dosage formulation",
-                "concept": "C42636",
-                "other": ""
-            },
-            "repeating": "Yes, repeatable for each intervention and dosage formulation",
-            "ct": []
-        }
-    },
-    "Background Trial Intervention": {
-        "template": {
-            "long_name": "Enter Background Trial Interventions",
-            "short_name": "Background Trial Intervention",
-            "original_name": "Background Trial Interventions",
-            "optional": false,
-            "section_number": "6.9.1",
-            "section_title": "{Background Trial Intervention}",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Background Trial Intervention",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "C165822",
-                    "text": "Medicinal products that are administered to each clinical trial subject, regardless of randomization group, a) to treat the indication which is the object of the study, or b) required in the protocol as part of standard care for a condition that is not the indication under investigation, and is relevant for the clinical trial design. [After Recommendations from the expert group on clinical trials for the implementation of Regulation (EU) No 536/2014' dd 28 June 2017]"
-                }
-            ],
-            "guidance": "Describe permitted background intervention(s), including administration and any conditions for use.",
-            "conformance": "Conditional: when any background interventions are defined",
-            "cardinality": "One to one",
-            "relationship": "6.9.1",
-            "value": "Text",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "6.9.1 Background Trial Intervention",
-                "concept": "C165822",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": []
-        }
-    },
-    "Handling of Missing Data in Relation to Primary Estimand": {
-        "template": {
-            "long_name": "Enter Handling of Missing Data in Relation to Primary Estimand(s)",
-            "short_name": "Handling of Missing Data in Relation to Primary Estimand",
-            "original_name": "Handling of Missing Data in Relation to Primary Estimand(s)",
-            "optional": false,
-            "section_number": "10.4.1.3",
-            "section_title": "Handling of Missing Data in Relation to Primary Estimand(s)",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Handling of Missing Data in Relation to Primary Estimand",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "A textual description of how missing data associated with the primary estimand will be handled, including the rationale for the approach."
-                }
-            ],
-            "guidance": "Describe how missing data will be addressed (e.g., imputation method and model), state the underlying assumptions, and provide a rationale for the approach.",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "10.4.X.3",
-            "value": "Text",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "10.4.X.3 Handling of Missing Data",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.4.X.1, 10.4.X.2, 10.4.X.3, 10.4.X.4, 10.4.X.5).",
-            "ct": []
-        }
-    },
-    "Analysis Associated with Exploratory Objectives": {
-        "template": {
-            "long_name": "Enter Analyses Associated with the Exploratory Objective(s)",
-            "short_name": "Analysis Associated with Exploratory Objectives",
-            "original_name": "Analyses Associated with the Exploratory Objective(s)",
-            "optional": false,
-            "section_number": "10.6",
-            "section_title": "Analyses Associated with the Exploratory Objective(s)",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Analysis Associated with Exploratory Objectivess",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "A textual description of the statistical model, hypothesis, and methods of analyses for each exploratory objective within the trial."
-                }
-            ],
-            "guidance": "Describe any exploratory analyses, if applicable. Additional subsections could be created to describe the analyses, as needed. If there is no exploratory objective, indicate \u201cnot applicable\u201d",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "10.6",
-            "value": "Text",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "10.6 Analysis Associated with the Exploratory Objective(s),",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": [],
-            "short_name": "Analysis Associated with Exploratory Objectives"
-        }
-    },
-    "Intervention Model": {
-        "template": {
-            "long_name": "Intervention model",
-            "short_name": "Intervention Model",
-            "original_name": "Intervention model",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Intervention Model",
-            "data_type": "Valid Value",
-            "definition": [
-                {
-                    "c_code": "C98746",
-                    "text": "The overall design configuration for assigning intervention to participants."
-                }
-            ],
-            "guidance": "N/A",
-            "conformance": "Required",
-            "cardinality": "One to one; One to Heading One to Sponsor Protocol Identifier",
-            "relationship": "1.1.2",
-            "value": "Single group (C82640), parallel group (C82639), cross-over (C82637), factorial(C82638), sequential (C142568), other(C17649)",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Row title; Sponsor Protocol Identifier",
-                "concept": "C98746",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "C99076",
-                    "preferred_term": "INTMODEL",
-                    "definition": "A terminology codelist relevant to the trial design developed to compare treatment groups."
-                },
-                {
-                    "ncit_code": "C82637",
-                    "preferred_term": "Cross-over",
-                    "definition": "Participants receive one of two or more alternative intervention(s) during the initial epoch of the study and receive other intervention(s) during the subsequent epoch(s) of the study."
-                },
-                {
-                    "ncit_code": "C82638",
-                    "preferred_term": "Factorial",
-                    "definition": "Two or more interventions, each alone or in combination, are evaluated in parallel against a control group. This study design allows for the comparison of active drug to placebo, presence of drug-drug interactions, and comparison of active drugs against each other."
-                },
-                {
-                    "ncit_code": "C82639",
-                    "preferred_term": "Parallel Group",
-                    "definition": "Participants are assigned to one of two or more treatment groups in parallel for the duration of the study."
-                },
-                {
-                    "ncit_code": "C142568",
-                    "preferred_term": "Sequential",
-                    "definition": "Groups of participants are assigned to receive interventions based on prior milestones being reached in the study."
-                },
-                {
-                    "ncit_code": "C82640",
-                    "preferred_term": "Single Group",
-                    "definition": "All trial participants are assigned to a single treatment group for the duration of the study."
-                },
-                {
-                    "ncit_code": "C17649",
-                    "preferred_term": "Other",
-                    "definition": "Different than the one(s) previously specified or mentioned."
-                }
-            ]
-        }
-    },
-    "Population Level Summary": {
-        "template": {
-            "long_name": "Enter Population-level Summary",
-            "short_name": "Population Level Summary",
-            "original_name": "Population-level Summary",
-            "optional": false,
-            "section_number": "3.1.1",
-            "section_title": "Primary Objective <#>",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Population-Level Summary",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "C188853",
-                    "text": "The variable to be obtained for each patient that is required to address the clinical question. The specification of the variable might include whether the patient experiences an intercurrent event"
-                }
-            ],
-            "guidance": "Description of the population-level summary (e.g., mean difference, relative risk)",
-            "conformance": "Conditional: If there is a population-level summary as estimand",
-            "cardinality": "One to Row Heading, One to Primary Objective Table, Project Identifier",
-            "relationship": "3.1.X",
-            "value": "Text",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Row Heading, Description",
-                "concept": "C188853",
-                "other": ""
-            },
-            "repeating": "Yes, repeatable for each numbered primary objective",
-            "ct": [],
-            "short_name": "Population Level Summary"
-        }
-    },
-    "Population Type": {
-        "template": {
-            "long_name": "Population type",
-            "short_name": "Population Type",
-            "original_name": "Population type",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Population Type",
-            "data_type": "Valid Value",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "A characterisation or classification of the trial population."
-                }
-            ],
-            "guidance": "N/A",
-            "conformance": "Required",
-            "cardinality": "One to one; One to Heading; One to Sponsor Protocol Identifier",
-            "relationship": "1.1.2",
-            "value": "With Disease (CNEW); Without Disease (CNEW)",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Row Title; Sponsor Protocol Identifier",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Population Type Response",
-                    "definition": "A terminology value set relevant to the study population type responses within the ICH M11 Protocol model."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "With Disease",
-                    "definition": "An indication that the individual or group of individuals has been diagnosed with the disease of interest or under study."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Without Disease",
-                    "definition": "An indication that the individual or group of individuals has not been diagnosed with the disease of interest or under study."
-                }
-            ]
-        }
-    },
-    "Intervention Assignment Method": {
-        "template": {
-            "long_name": "Intervention assignment method",
-            "short_name": "Intervention Assignment Method",
-            "original_name": "Intervention assignment method",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Intervention Assignment Method",
-            "data_type": "Valid Value",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "The process used to assign trial participants to a trial intervention or trial arm."
-                }
-            ],
-            "guidance": "Intervention assignment method - Do NOT state block size.",
-            "conformance": "Required",
-            "cardinality": "One to one: One toSponsor Protocol Identifier",
-            "relationship": "1.1.2",
-            "value": "Randomisation (C25196), Stratification (C25689), Stratified Randomisation (CNEW), Other (C17649) or Not Applicable (C48660)",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Row title identifier; Sponsor Protocol Identifiers",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Trial Intervention Assignment Method Response",
-                    "definition": "A terminology value set relevant to the trial intervention assignment method responses within the ICH M11 Protocol model."
-                },
-                {
-                    "ncit_code": "C25196",
-                    "preferred_term": "Randomisation",
-                    "definition": "The process of assigning trial subjects to treatment or control groups using an element of chance to determine the assignments in order to reduce bias. NOTE: Unequal randomization is used to allocate subjects into groups at a differential rate; for example, three subjects may be assigned to a treatment group for every one assigned to the control group."
-                },
-                {
-                    "ncit_code": "C25689",
-                    "preferred_term": "Stratification",
-                    "definition": "Grouping defined by important prognostic factors measured at baseline."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Stratified Randomisation",
-                    "definition": "The process of grouping trial participants into strata according to important prognostic factors and then assigning participants within each stratum to different treatment or control groups using an element of chance and in order to reduce bias."
-                }
-            ]
-        }
-    },
-    "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs": {
-        "template": {
-            "long_name": "Enter Disease-related Events or Outcomes not Qualifying as AEs or SAEs",
-            "short_name": "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs",
-            "original_name": "Disease-related Events or Outcomes not Qualifying as AEs or SAEs",
-            "optional": false,
-            "section_number": "9.2.5",
-            "section_title": "Disease-related Events or Outcomes Not Qualifying as AEs or SAEs",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Disease-related Events or Outcomes Not Qualifying as AEs or SAEs",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "A description of events or outcomes related to the trial disease indication but not qualifying as adverse events or serious adverse events within the trial, or state not applicable."
-                }
-            ],
-            "guidance": "Specify any DREs, DROs, or both that will not be reported as AEs or SAEs (e.g., seizures in anticonvulsant trials) or state \u201cNot applicable.\u201d",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "9.2.5",
-            "value": "Text",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "9.2.5 Disease-related Events or Outcomes Not Qualifying as AEs or SAEs",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": [],
-            "short_name": "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs"
-        }
-    },
-    "Describe Method": {
-        "template": {
-            "long_name": "describe method",
-            "short_name": "Describe Method",
-            "original_name": "describe method",
-            "optional": false,
-            "section_number": "",
-            "section_title": "Title Page",
-            "instructions": []
-        },
-        "technical": {
-            "name": "describe method",
-            "data_type": "Valid Value",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "A block of text containing the name and signature of the sponsor's signatory, along with a signature date, or a statement on behalf of the sponsor that describes the method of protocol approval."
-                }
-            ],
-            "guidance": "Include either the Sponsor signature or the statement below.",
-            "conformance": "Optional",
-            "cardinality": "One to one",
-            "relationship": "Title Page",
-            "value": "Sponsor Signature Block (CNEW)\n OR \nSponsor Protocol Approval Statement (CNEW)",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Heading",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "ICH M11 Sponsor Signatory Response",
-                    "definition": "A terminology value set relevant to the sponsor signatory responses within the ICH M11 Protocol model."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Sponsor Signature Block",
-                    "definition": "A block of text containing the name and signature of the sponsor's signatory, along with the signature date."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Sponsor Protocol Approval Statement",
-                    "definition": "A statement that the protocol was approved by a method as described. This protocol was approved via <describe method>"
-                }
-            ],
-            "short_name": "Describe Method"
-        }
-    },
-    "State location where Information can be found": {
-        "template": {
-            "long_name": "State location where information can be found",
-            "short_name": "State location where Information can be found",
-            "original_name": "State location where information can be found",
-            "optional": false,
-            "section_number": "",
-            "section_title": "Title Page",
-            "instructions": [
-                "All versions should be uniquely identifiable. "
-            ]
-        },
-        "technical": {
-            "name": "State location where Information can be found",
-            "data_type": "Valid Value",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "The date that the sponsor approved the current version of the protocol, or the physical or virtual location of the date on which the sponsor approved the current version of the protocol."
-                }
-            ],
-            "guidance": "All versions should be uniquely identifiable.",
-            "conformance": "Required",
-            "cardinality": "One to one; One to Sponsor Protocol Identifier; One to Original Protocol One to Amendment Identifier",
-            "relationship": "Title Page",
-            "value": "Sponsor Approval Date (C132352)\nLocation of Sponsor Approval Date (CNEW)",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Heading, Sponsor Protocol Identifier, Protocol Amendment",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "Yes, reuse to approval date in Section 12.3",
-            "ct": [
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "ICH M11 Sponsor Approval Response",
-                    "definition": "A terminology value set relevant to the sponsor approval responses within the ICH M11 Protocol model."
-                },
-                {
-                    "ncit_code": "C132352",
-                    "preferred_term": "Sponsor Approval Date",
-                    "definition": "The date that the sponsor approved the current version of the protocol."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Location of Sponsor Approval Date",
-                    "definition": "The physical or virtual location of the date on which the sponsor approved the current version of the protocol."
-                }
-            ]
-        }
-    },
-    "Use": {
-        "template": {
-            "long_name": "Select Use",
-            "short_name": "Use",
-            "original_name": "Select Use",
-            "optional": true,
-            "section_number": "6",
-            "section_title": "Trial Intervention And Concomitant Therapy",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Use",
-            "data_type": "Valid Value",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "The reason or intention for the use of the trial intervention within the trial arm."
-                }
-            ],
-            "guidance": "N/A",
-            "conformance": "Optional: if the table used",
-            "cardinality": "One to each intervention",
-            "relationship": "6",
-            "value": "Experimental Intervention(C41161), Placebo(C753), Rescue Medicine(C165835), Background treatment(C165822), Challenge Agent(C158128), Diagnostic(C18020), Additional Required treatment (CNEW)",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "arm name and use,",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "Yes, repeatable for each intervention per arm",
-            "ct": [
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Intervention Use Response",
-                    "definition": "A terminology value set relevant to the intervention use responses within the ICH M11 Protocol model."
-                },
-                {
-                    "ncit_code": "C41161",
-                    "preferred_term": "Experimental Intervention",
-                    "definition": "The drug, device, therapy, procedure, or process under investigation in a clinical study that is believed to have an effect on outcomes of interest in a study (e.g., health-related quality of life, efficacy, safety, pharmacoeconomics"
-                },
-                {
-                    "ncit_code": "C753",
-                    "preferred_term": "Placebo",
-                    "definition": "A pharmaceutical preparation that does not contain the investigational agent and is generally prepared to be physically indistinguishable from the preparation containing the investigational product."
-                },
-                {
-                    "ncit_code": "C165835",
-                    "preferred_term": "Rescue Medicine",
-                    "definition": "Medicinal products identified in the protocol as those that may be administered to subjects when the efficacy of the investigational medicinal product (IMP) is not satisfactory, the effect of the IMP is too great and is likely to cause a hazard to the patient, or to manage an emergency situation."
-                },
-                {
-                    "ncit_code": "C165822",
-                    "preferred_term": "Background Treatment",
-                    "definition": "Medicinal products that are administered to each clinical trial subject, regardless of randomization group, a) to treat the indication which is the object of the study, or b) required in the protocol as part of standard care for a condition that is not the indication under investigation, and is relevant for the clinical trial design."
-                },
-                {
-                    "ncit_code": "C158128",
-                    "preferred_term": "Challenge Agent",
-                    "definition": "A non-investigational medicinal product (NIMP) given to trial subjects to produce a physiological response that is necessary before the pharmacological action of the investigational medicinal product can be assessed."
-                },
-                {
-                    "ncit_code": "C18020",
-                    "preferred_term": "Diagnostic",
-                    "definition": "Any procedure or test to diagnose a disease or disorder."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Additional Required Treatment",
-                    "definition": "A medicinal product that must be administered along with the experimental treatment (e.g., drug studies wherein opioid blockers are administered to prevent overdose)."
-                }
-            ]
-        }
-    },
-    "Sourcing": {
-        "template": {
-            "long_name": "Select Sourcing",
-            "short_name": "Sourcing",
-            "original_name": "Select Sourcing",
-            "optional": true,
-            "section_number": "6",
-            "section_title": "Trial Intervention And Concomitant Therapy",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Sourcing",
-            "data_type": "Valid Value",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "An indication as to whether the investigational intervention is sourced from a local or central vendor."
-                }
-            ],
-            "guidance": "N/A",
-            "conformance": "Optional: if the table used",
-            "cardinality": "One to many",
-            "relationship": "6",
-            "value": "Centrally Sourced (CNEW); Locally Sourced (CNEW)",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "One per each Intervention",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "Yes, repeatable for each intervention per arm name",
-            "ct": [
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "ICH M11 Investigational Intervention Sourcing Response",
-                    "definition": "A terminology value set relevant to the investigational intervention source responses within the ICH M11 Protocol model."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Centrally Sourced",
-                    "definition": "An indication that the entity is obtained from a central vendor."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Locally Sourced",
-                    "definition": "An indication that the entity is obtained from a local vendor."
-                }
-            ]
-        }
-    },
-    "Route of Administration": {
-        "template": {
-            "long_name": "Select Route of Administration",
-            "short_name": "Route of Administration",
-            "original_name": "Select Route of Administration",
-            "optional": true,
-            "section_number": "6",
-            "section_title": "Trial Intervention And Concomitant Therapy",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Route of Administration",
-            "data_type": "Valid Value",
-            "definition": [
-                {
-                    "c_code": "C38114",
-                    "text": "Path by which the pharmaceutical product is taken into or makes contact with the body."
-                }
-            ],
-            "guidance": "N/A",
-            "conformance": "Optional: if the table used",
-            "cardinality": "One to each intervention and dosage formulation",
-            "relationship": "6",
-            "value": "Use IDMP (e.g. EDQM, CDISC)",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "arm name and route of administration",
-                "concept": "C38114",
-                "other": ""
-            },
-            "repeating": "Yes, repeatable for each intervention. Dose formulation, per arm name",
-            "ct": []
-        }
-    },
-    "Site Distribution": {
-        "template": {
-            "long_name": "Site distribution",
-            "short_name": "Site Distribution",
-            "original_name": "Site distribution",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Site Distribution",
-            "data_type": "Valid Value",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "An indication as to whether the occurrence applies to a single or multiple trial sites."
-                }
-            ],
-            "guidance": "N/A",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "1.1.2",
-            "value": "single-centre (CNEW), multi-centre(CNEW)",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Row Title heading; Sponsor Protocol Identifier",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Trial Site Distribution Response",
-                    "definition": "A terminology value set relevant to the trial site distribution responses within the ICH M11 Protocol model."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Single-Centre",
-                    "definition": "A clinical study that is conducted at a single study site."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Multicentre",
-                    "definition": "A clinical trial conducted according to a single protocol but at more than one site, and therefore, carried out by more than one investigator."
-                }
-            ]
-        }
-    },
-    "Current Amendment Enrollment": {
-        "template": {
-            "long_name": "#/%",
-            "short_name": "Current Amendment Enrollment",
-            "original_name": "#/%",
-            "optional": true,
-            "section_number": "",
-            "section_title": "Title Page",
-            "instructions": [
-                "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
-                "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
-            ]
-        },
-        "technical": {
-            "name": "---",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "The numeric value (expressed as an absolute value or percentage) for the estimated number of participants enrolled at the time of the protocol amendment."
-                }
-            ],
-            "guidance": "",
-            "conformance": "Optional",
-            "cardinality": "One to one; One to amendment number",
-            "relationship": "Amendment Details",
-            "value": "Approximate <#/%> enrolled <Globally/Locally/by Cohort>",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Statement",
-                "concept": "C68846, CNEW",
-                "other": ""
-            },
-            "repeating": "Yes, reuse to Section 12.3",
-            "ct": [],
-            "short_name": "Current Amendment Enrollment"
-        }
-    },
-    "Substantial Impact Safety": {
-        "template": {
-            "long_name": "Yes/No",
-            "short_name": "Substantial Impact Safety",
-            "original_name": "Yes/No",
-            "optional": false,
-            "section_number": "",
-            "section_title": "Title Page",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Yes-No",
-            "data_type": "Valid Value",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "An indication as to whether the amendment likely to have a substantial impact on the safety or rights of the participants."
-                }
-            ],
-            "guidance": "N/A",
-            "conformance": "Conditional If there is an amendment",
-            "cardinality": "One to one; One to Amendment Identifier; One to Sponsor Protocol Identifier",
-            "relationship": "Amendment Details",
-            "value": "Yes (C49488), No (C49487)",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Amendment Details, Amendment Identifier, Sponsor Protocol Identifier",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "C66742",
-                    "preferred_term": "NY",
-                    "definition": "A term that is used to indicate a question with permissible values of yes/no/unknown/not applicable."
-                },
-                {
-                    "ncit_code": "C49487",
-                    "preferred_term": "No",
-                    "definition": "The non-affirmative response to a question."
-                },
-                {
-                    "ncit_code": "C49488",
-                    "preferred_term": "Yes",
-                    "definition": "The affirmative response to a question."
-                }
-            ],
-            "short_name": "Substantial Impact Safety"
-        }
-    },
-    "Substantial Impact Data": {
-        "template": {
-            "long_name": "Yes/No",
-            "short_name": "Substantial Impact Data",
-            "original_name": "Yes/No",
-            "optional": false,
-            "section_number": "",
-            "section_title": "Title Page",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Yes-No 2",
-            "data_type": "Valid Value",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "An indication as to whether the amendment likely to have a substantial impact on the reliability and robustness of the data generated in the clinical trial."
-                }
-            ],
-            "guidance": "N/A",
-            "conformance": "Conditional : if there is an amendment",
-            "cardinality": "One to one; One to Amendment Identifier; One to Sponsor Protocol Identifier",
-            "relationship": "Amendment Details",
-            "value": "Yes (C49488), No (C49487)",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Amendment Details, Amendment Identifier, Sponsor Protocol Identifier",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "C66742",
-                    "preferred_term": "NY",
-                    "definition": "A term that is used to indicate a question with permissible values of yes/no/unknown/not applicable."
-                },
-                {
-                    "ncit_code": "C49487",
-                    "preferred_term": "No",
-                    "definition": "The non-affirmative response to a question."
-                },
-                {
-                    "ncit_code": "C49488",
-                    "preferred_term": "Yes",
-                    "definition": "The affirmative response to a question."
-                }
-            ],
-            "short_name": "Substantial Impact Data"
-        }
-    },
-    "Population Diagnosis or Condition": {
-        "template": {
-            "long_name": "Population diagnosis or condition",
-            "short_name": "Population Diagnosis or Condition",
-            "original_name": "Population diagnosis or condition",
-            "optional": false,
-            "section_number": "1.1.2",
-            "section_title": "Overall Design",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Population Diagnosis or Condition",
-            "data_type": "Valid Value or Text",
-            "definition": [
-                {
-                    "c_code": "C112038",
-                    "text": "A textual description of the condition, disease or disorder that the clinical trial is intended to investigate or address."
-                }
-            ],
-            "guidance": "MedDRA Preferred Term(s) or indicate \u201cother\u201d and describe.",
-            "conformance": "Required",
-            "cardinality": "One to one; One to Heading; One to Sponsor Protocol Identifier",
-            "relationship": "1.1.2",
-            "value": "Use examples MedDRA PT or SNOMED\nCT: \u201cacute lung injury,\u201d or a specific biomarker profile); indicate \u201cN/A \u2013 Healthy\u201d for studies in healthy volunteers",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Row Title Heading; Sponsor Protocol Identifier",
-                "concept": "C112038",
-                "other": ""
-            },
-            "repeating": "Yes, repeatable for each population diagnosis or condition",
-            "ct": []
-        }
-    },
-    "Clinical Safety Laboratory Assessments": {
-        "template": {
-            "long_name": "Enter Clinical Laboratory Assessments",
-            "short_name": "Clinical Safety Laboratory Assessments",
-            "original_name": "Clinical Laboratory Assessments",
-            "optional": false,
-            "section_number": "8.4.4",
-            "section_title": "{Clinical Laboratory Assessments}",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Clinical Safety Laboratory Assessments",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "Trial-related laboratory assessments and procedures related to participant safety."
-                }
-            ],
-            "guidance": "",
-            "conformance": "Conditional: when Clinical Laboratory Assessments are required",
-            "cardinality": "One to one",
-            "relationship": "8.4.4",
-            "value": "Text",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "8.4.4 Clinical Laboratory Assessments",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": []
-        }
-    },
-    "Definition of Product Complaints": {
-        "template": {
-            "long_name": "Enter Definitions of Product Complaints",
-            "short_name": "Definition of Product Complaints",
-            "original_name": "Definitions of Product Complaints",
-            "optional": false,
-            "section_number": "9.1.3",
-            "section_title": "Definitions of Product Complaints",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Definition of Product Complaints",
-            "data_type": "Text",
-            "definition": [],
-            "guidance": "Specify the definition of product complaints in the context of the trial.",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "9.1.3",
-            "value": "Text",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "9.1.3 Definition of Product Complaints",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": []
-        }
-    },
-    "Timing for Reporting to Sponsor or Designee": {
-        "template": {
-            "long_name": "Timing for reporting to Sponsor or Designee",
-            "short_name": "Timing for Reporting to Sponsor or Designee",
-            "original_name": "Timing for reporting to Sponsor or Designee",
-            "optional": true,
-            "section_number": "9.2",
-            "section_title": "Timing and Procedures for Collection and Reporting",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Timing for Reporting to Sponsor or Designee",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "A description of the timing window between trial related events and their reporting to the sponsor or designee."
-                }
-            ],
-            "guidance": "N/A",
-            "conformance": "Optional if table used",
-            "cardinality": "One to one",
-            "relationship": "9.2",
-            "value": "Text",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Event Type, Situational Scope",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "Yes, repeatable for each event type and situational scope",
-            "ct": []
-        }
-    },
-    "Secondary Objectives Statistical Analysis Method": {
-        "template": {
-            "long_name": "Enter Statistical Analysis Method",
-            "short_name": "Secondary Objectives Statistical Analysis Method",
-            "original_name": "Statistical Analysis Method",
-            "optional": false,
-            "section_number": "10.5.1.1",
-            "section_title": "{Statistical Analysis Method}",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Statistical Method of Analysis 17",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "A textual description of the statistical model, hypothesis, and methods of analyses for each objective within the trial."
-                }
-            ],
-            "guidance": "Describe the statistical analysis methods that will be used to evaluate the Secondary objective(s) and associated estimand(s) in Section 3.2. Ensure that the statistical hypothesis/model/analysis (and corresponding assumptions) is aligned with the Secondary estimand(s). If there is more than one Secondary objective, present each objective as a level 3 heading and present each subsequent heading in Section 10.5 as a level 4 heading.\nFor each objective, state the null and alternative hypotheses, including the pre-planned type 1 error rate, or alternative criteria for evaluating whether the objective has been met, and relevant operating characteristics if appropriate. Describe the statistical model used and the factors that will be included (covariates and interactions) and any rules for handling these factors (for example, pooling of centres).\nIf modelling and simulation methods are to be used, please describe the model (inputs and outputs), the underlying assumptions, and the method of model fitting.",
-            "conformance": "Conditional: when there is Secondary estimand",
-            "cardinality": "One to one",
-            "relationship": "10.5.X.1",
-            "value": "Text",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "10.5.X.1 Statistical Analysis Method",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
-            "ct": [],
-            "short_name": "Secondary Objectives Statistical Analysis Method"
-        }
-    },
-    "Secondary Objectives Sensitivity Analysis": {
-        "template": {
-            "long_name": "Enter Sensitivity Analysis",
-            "short_name": "Secondary Objectives Sensitivity Analysis",
-            "original_name": "Sensitivity Analysis",
-            "optional": false,
-            "section_number": "10.5.1.4",
-            "section_title": "{Sensitivity Analysis}",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Sensitivity Analysis 18",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "A textual description of the series of analyses conducted to explore the robustness of inferences from the main estimator to deviations from its underlying modelling assumptions and limitations in the data."
-                }
-            ],
-            "guidance": "Describe any supplementary analysis, if applicable. Supplementary analyses are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect.",
-            "conformance": "Conditional: when there is Seconday Objective and sensitivity Analysis for a Secondary objective",
-            "cardinality": "One to one",
-            "relationship": "10.5.X.4",
-            "value": "Text",
-            "business_rules": {
-                "value_allowed": "",
-                "relationship": "10.5.X.4 Sensitivity Analysis",
-                "concept": "CNEW",
-                "other": "Value Allowed Yes"
-            },
-            "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
-            "ct": [],
-            "short_name": "Secondary Objectives Sensitivity Analysis"
-        }
-    },
-    "Secondary Objectives Supplementary Analysis": {
-        "template": {
-            "long_name": "Enter Supplementary Analysis",
-            "short_name": "Secondary Objectives Supplementary Analysis",
-            "original_name": "Supplementary Analysis",
-            "optional": false,
-            "section_number": "10.5.1.5",
-            "section_title": "{Supplementary Analysis}",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Supplementary Analysis 19",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "A textual description of the analyses that are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect."
-                }
-            ],
-            "guidance": "Describe any supplementary analysis if applicable. Supplementary analyses are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect.",
-            "conformance": "Conditional: when there Supplementary Analysis for a Secondary objective",
-            "cardinality": "One to one",
-            "relationship": "10.5.X.5",
-            "value": "Text",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "10.5.X.5 Supplementary Analysis",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "Yes, repeatable for each objective as a series of level 4 sections (10.5.X.1, 10.5.X.2, 10.5.X.3, 10.5.X.4, 10.5.X.5).",
-            "ct": [],
-            "short_name": "Secondary Objectives Supplementary Analysis"
-        }
-    },
-    "Prior Amendment Identifier": {
-        "template": {
-            "long_name": "Enter Amendment Identifier",
-            "short_name": "Prior Amendment Identifier",
-            "original_name": "Amendment Identifier",
+            "long_name": "enter amendment number",
+            "short_name": "Previous Amendment Number",
+            "original_name": "enter amendment number",
             "optional": false,
             "section_number": "12.3",
             "section_title": "Prior Protocol Amendment(s)",
             "instructions": []
         },
         "technical": {
-            "name": "Amendment Identifier 21",
-            "data_type": "Text or Universal Text \u201cOriginal Protocol\u201d",
+            "name": "amendment number",
+            "data_type": "Text",
             "definition": [
                 {
                     "c_code": "CNEW",
-                    "text": "A sequence of characters used to uniquely identify a protocol amendment."
+                    "text": "A sequence of characters used to uniquely identify a protocol amendment"
                 }
             ],
-            "guidance": "",
-            "conformance": "Required",
+            "guidance": "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first).",
+            "conformance": "Conditional: if amendment",
             "cardinality": "One to one",
             "relationship": "12.3",
-            "value": "Text or Universal Text \u201cOriginal Protocol\u201d",
+            "value": "Text",
             "business_rules": {
                 "value_allowed": "Yes",
-                "relationship": "Table Column Heading \u201cDocument\u201d",
+                "relationship": "{The Overview of Changes from each prior protocol amendment is {provided below} or <specify alternative location>}.",
                 "concept": "CNEW",
                 "other": ""
             },
-            "repeating": "Yes, reuse from the title page",
+            "repeating": "Yes, repeatable one table per amendment",
             "ct": [],
-            "short_name": "Prior Amendment Identifier"
+            "short_name": "Previous Amendment Number"
+        }
+    },
+    "Previous Amendment Date": {
+        "template": {
+            "long_name": "enter date",
+            "short_name": "Previous Amendment Date",
+            "original_name": "enter date",
+            "optional": false,
+            "section_number": "12.3",
+            "section_title": "Prior Protocol Amendment(s)",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Sponsor Approval Date 23",
+            "data_type": "Date",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "The date that the sponsor approved the version of the protocol,"
+                }
+            ],
+            "guidance": "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first).",
+            "conformance": "Conditional: if amendment",
+            "cardinality": "One to one",
+            "relationship": "12.3",
+            "value": "Date",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "{The Overview of Changes from each prior protocol amendment is {provided below} or <specify alternative location>}.",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable one table per amendment",
+            "ct": [],
+            "short_name": "Previous Amendment Date"
         }
     },
     "Previous Amendment Overview Description of Change": {
@@ -11647,372 +11938,13 @@
             "short_name": "Previous Amendment Overview Section"
         }
     },
-    "Previous Amendment Number": {
-        "template": {
-            "long_name": "enter amendment number",
-            "short_name": "Previous Amendment Number",
-            "original_name": "enter amendment number",
-            "optional": false,
-            "section_number": "12.3",
-            "section_title": "Prior Protocol Amendment(s)",
-            "instructions": []
-        },
-        "technical": {
-            "name": "amendment number",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "A sequence of characters used to uniquely identify a protocol amendment"
-                }
-            ],
-            "guidance": "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first).",
-            "conformance": "Conditional: if amendment",
-            "cardinality": "One to one",
-            "relationship": "12.3",
-            "value": "Text",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "{The Overview of Changes from each prior protocol amendment is {provided below} or <specify alternative location>}.",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "Yes, repeatable one table per amendment",
-            "ct": [],
-            "short_name": "Previous Amendment Number"
-        }
-    },
-    "Previous Amendment Date": {
-        "template": {
-            "long_name": "enter date",
-            "short_name": "Previous Amendment Date",
-            "original_name": "enter date",
-            "optional": false,
-            "section_number": "12.3",
-            "section_title": "Prior Protocol Amendment(s)",
-            "instructions": []
-        },
-        "technical": {
-            "name": "Sponsor Approval Date 23",
-            "data_type": "Date",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "The date that the sponsor approved the version of the protocol,"
-                }
-            ],
-            "guidance": "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first).",
-            "conformance": "Conditional: if amendment",
-            "cardinality": "One to one",
-            "relationship": "12.3",
-            "value": "Date",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "{The Overview of Changes from each prior protocol amendment is {provided below} or <specify alternative location>}.",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "Yes, repeatable one table per amendment",
-            "ct": [],
-            "short_name": "Previous Amendment Date"
-        }
-    },
-    "Previous Amendment Enrollment": {
-        "template": {
-            "long_name": "Enter # or % enrolled globally/locally/per cohort",
-            "short_name": "Previous Amendment Enrollment",
-            "original_name": "# or % enrolled globally/locally/per cohort",
-            "optional": true,
-            "section_number": "12.3",
-            "section_title": "Prior Protocol Amendment(s)",
-            "instructions": []
-        },
-        "technical": {
-            "name": "- or -",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "The numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage. The numeric value for the estimated number of participants enrolled in the trial, expressed as an absolute value or percentage."
-                }
-            ],
-            "guidance": "",
-            "conformance": "Optional: when there is an amendment and sponsor chooses",
-            "cardinality": "One to one",
-            "relationship": "12.3",
-            "value": "<# or %> enrolled <globally/locally/per cohort>",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Document, Sponsor Approval Date",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "Yes, reuse from the title page",
-            "ct": [],
-            "short_name": "Previous Amendment Enrollment"
-        }
-    },
-    "Inclusion Criterion Number": {
-        "template": {
-            "long_name": "#",
-            "short_name": "Inclusion Criterion Number",
-            "original_name": "#",
-            "optional": true,
-            "section_number": "5.2",
-            "section_title": "Inclusion Criteria",
-            "instructions": [
-                "Add criteria as needed. Consider numbering the criteria sequentially."
-            ]
-        },
-        "technical": {
-            "name": "-",
-            "data_type": "Number",
-            "definition": [],
-            "guidance": "Add criteria as needed. Consider numbering the criteria sequentially.",
-            "conformance": "Optional",
-            "cardinality": "One to one",
-            "relationship": "5.2",
-            "value": "# is an integer <criterion identifier> unique number and not replaceable",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "5.2 Inclusion Criteria",
-                "concept": "Sequential number",
-                "other": ""
-            },
-            "repeating": "Yes, repeatable for each inclusion criterion",
-            "ct": [],
-            "short_name": "Inclusion Criterion Number"
-        }
-    },
-    "Exclusion Criterion Number": {
-        "template": {
-            "long_name": "#",
-            "short_name": "Exclusion Criterion Number",
-            "original_name": "#",
-            "optional": true,
-            "section_number": "5.3",
-            "section_title": "Exclusion Criteria",
-            "instructions": [
-                "Add criteria as needed. Consider numbering the criteria sequentially."
-            ]
-        },
-        "technical": {
-            "name": "- 16",
-            "data_type": "Number",
-            "definition": [],
-            "guidance": "Add criteria as needed.  Consider numbering the criteria sequentially",
-            "conformance": "Required",
-            "cardinality": "One to many",
-            "relationship": "5.3",
-            "value": "# is an identifier <criterion identifier> unique number and not replaceable",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "5.3 Exclusion Criteria",
-                "concept": "Sequential number",
-                "other": ""
-            },
-            "repeating": "Yes. number consecutively, repeatable for each exclusion criteria, if deleted do not replace, do not duplicate",
-            "ct": [],
-            "short_name": "Exclusion Criterion Number"
-        }
-    },
-    "Amendment Details": {
-        "template": {
-            "long_name": "Amendment Details",
-            "short_name": "Amendment Details",
-            "original_name": "Amendment Details",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": []
-        },
-        "technical": {
-            "name": "Amendment Details",
-            "data_type": "Valid Value",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "A written message within the study protocol that describes the amendment details, especially as to whether the protocol has been amended previously."
-                }
-            ],
-            "guidance": "Choose the applicable statement below. For an original protocol that has not been amended, retain the first sentence below and delete the remainder of this entire section.\n{Not applicable. This protocol has not been amended.}\nOr include the below as applicable.\n{This protocol has been amended previously. Details of prior amendments are presented in Section 12.3 Prior Protocol Amendment(s).}",
-            "conformance": "Required",
-            "cardinality": "One to one",
-            "relationship": "Amendment Details",
-            "value": "Not applicable. This protocol has not been amended. (CNEW)Or\nThis is the first protocol amendment (CNEW)\nOR\nThis protocol has been amended previously. Details of prior amendments are presented in Section 12.3 Prior Protocol Amendment(s). (CNEW)",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Heading",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": [
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "ICH M11 Amendment Details Statement Response",
-                    "definition": "A terminology value set relevant to the amendment details statement responses within the ICH M11 Protocol model."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Not applicable. This protocol has not been amended.",
-                    "definition": "Not applicable. This protocol has not been amended."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "This protocol has been amended previously. Details of prior amendments are presented in Prior Protocol Amendment(s).",
-                    "definition": "This protocol has been amended previously. Details of prior amendments are presented in Prior Protocol Amendment(s)."
-                }
-            ]
-        }
-    },
-    "Primary Reason Other": {
-        "template": {
-            "long_name": "Primary Reason Other",
-            "short_name": "Primary Reason Other",
-            "original_name": "Primary Reason Other",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": []
-        },
-        "technical": {
-            "name": "Other description",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "C17649",
-                    "text": "Different than the one(s) previously specified or mentioned."
-                }
-            ],
-            "guidance": "Choose from the available categories the primary reason and secondary reason(s) for the amendment. Select the closest match among the choices. Changes to primary estimand, endpoints, or related measures should be listed as a change of strategy. If none of the choices apply, choose \u201cother\u201d and provide a description. If no secondary reason, indicate \u201cNot applicable\u201d for the secondary reason.",
-            "conformance": "Conditional : if Other is selected as a Valid Value",
-            "cardinality": "One to one",
-            "relationship": "Amendment Details",
-            "value": "Text",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Heading, Primary reason, Sponsor Protocol Identifier, Protocol Amendment",
-                "concept": "C17649",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": [],
-            "short_name": "Primary Reason Other"
-        }
-    },
-    "Secondary Reason Other": {
-        "template": {
-            "long_name": "Secondary Reason Other",
-            "short_name": "Secondary Reason Other",
-            "original_name": "Secondary Reason Other",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": []
-        },
-        "technical": {
-            "name": "Other description 1",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "C17649",
-                    "text": "Different than the one(s) previously specified or mentioned."
-                }
-            ],
-            "guidance": "Choose from the available categories as the primary reason and secondary reason(s) for the amendment. Select the closest match among the choices. Changes to primary estimand, endpoints, or related measures should be listed as a change of strategy. If none of the choices apply, choose \u201cother\u201d and provide a description. If no secondary reason, indicate \u201cnot applicable\u201d for the secondary reason.",
-            "conformance": "Conditional if Other is selected as a Valid Value",
-            "cardinality": "One to one",
-            "relationship": "Amendment Details",
-            "value": "Text",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Heading, Secondary reason, Protocol Identifier, Protocol Amendment",
-                "concept": "C17649",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": [],
-            "short_name": "Secondary Reason Other"
-        }
-    },
-    "Briefly Explain Substantial Impact On Safety": {
-        "template": {
-            "long_name": "Briefly Explain Substantial Impact On Safety",
-            "short_name": "Briefly Explain Substantial Impact On Safety",
-            "original_name": "Briefly Explain Substantial Impact On Safety",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": []
-        },
-        "technical": {
-            "name": "If yes briefly explain",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "A short descriptive account of any substantial impacts on the safety or rights of the participants due to the protocol amendment."
-                }
-            ],
-            "guidance": "Briefly Explain Substantial Impact On Safety",
-            "conformance": "Conditional: if there is an amendment and If the \"Is this amendment likely to have a substantial impact on the safety or rights of the participants? \" is yes",
-            "cardinality": "One to one Amendment Identifier,\nIs this amendment likely to have a substantial impact on the safety or rights of the participants? Response when Yes",
-            "relationship": "Amendment Details",
-            "value": "",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Amendment Details, Amendment Identifier, Sponsor Protocol Identifier\nWhen the value is yes there is a text response for explanation",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": [],
-            "short_name": "Briefly Explain Substantial Impact On Safety"
-        }
-    },
-    "Briefly Explain Substantial Impact on Data": {
-        "template": {
-            "long_name": "Briefly Explain Substantial Impact on Data",
-            "short_name": "Briefly Explain Substantial Impact on Data",
-            "original_name": "Briefly Explain Substantial Impact on Data",
-            "optional": false,
-            "section_number": null,
-            "section_title": null,
-            "instructions": []
-        },
-        "technical": {
-            "name": "If yes briefly explain 3",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "A short descriptive account of any substantial impacts on the reliability and robustness of the data generated in the clinical trial due to the protocol amendment."
-                }
-            ],
-            "guidance": "Briefly Explain Substantial Impact on Data",
-            "conformance": "Conditional: if there is an amendment and if the answer to \"Is this amendment likely to have a substantial impact on the reliability and robustness of the data generated in the clinical trial?\" is yes",
-            "cardinality": "One to amendment identifier",
-            "relationship": "Amendment Details",
-            "value": "",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Amendment Details, Amendment Identifier, Sponsor Protocol Identifier\nWhen the value is yes there is a text response for explanation",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "No",
-            "ct": [],
-            "short_name": "Briefly Explain Substantial Impact on Data"
-        }
-    },
     "Previous Amendment Enrollment Scope": {
         "template": {
             "long_name": "Previous Amendment Enrollment Scope",
             "short_name": "Previous Amendment Enrollment Scope",
             "original_name": "Previous Amendment Enrollment Scope",
             "optional": false,
-            "section_number": 12.3,
+            "section_number": "12.3",
             "section_title": "Prior Protocol Amendments",
             "instructions": []
         },
@@ -12047,7 +11979,7 @@
             "short_name": "Prior Protocol Amendments",
             "original_name": "Prior Protocol Amendments",
             "optional": false,
-            "section_number": 12.3,
+            "section_number": "12.3",
             "section_title": "Prior Protocol Amendments",
             "instructions": []
         },
@@ -12102,7 +12034,7 @@
             "short_name": "Country Region Not Applicable",
             "original_name": "Country Region Not Applicable",
             "optional": false,
-            "section_number": 12.3,
+            "section_number": "12.3",
             "section_title": "Prior Protocol Amendments",
             "instructions": []
         },
@@ -12124,6 +12056,74 @@
             "repeating": "No",
             "ct": [],
             "short_name": "Country Region Not Applicable"
+        }
+    },
+    "Glossary of Terms and Abbreviations": {
+        "template": {
+            "long_name": "Enter Glossary of Terms and Abbreviations",
+            "short_name": "Glossary of Terms and Abbreviations",
+            "original_name": "Glossary of Terms and Abbreviations",
+            "optional": false,
+            "section_number": "13",
+            "section_title": "Appendix: Glossary of Terms and Abbreviations",
+            "instructions": []
+        },
+        "technical": {
+            "name": "Glossary of Terms and Abbreviations",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "A collection of abbreviations (a shortened form of a word or phrase) and definitions (a concise explanation of the meaning of a word or phrase or symbol)."
+                }
+            ],
+            "guidance": "Define abbreviations and other terms used in the protocol. A tabular presentation is common and may serve as the definition at first use.",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "13",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "13 APPENDIX: GLOSSARY OF TERMS AND ABBREVIATIONS",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": []
+        }
+    },
+    "References": {
+        "template": {
+            "long_name": "Enter References",
+            "short_name": "References",
+            "original_name": "References",
+            "optional": false,
+            "section_number": "14",
+            "section_title": "Appendix: References",
+            "instructions": []
+        },
+        "technical": {
+            "name": "References",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "C184397",
+                    "text": "The curated list of sources that are cited within the reference section of the document."
+                }
+            ],
+            "guidance": "References should be listed in a common format that includes all relevant information to identify the source and date published. If not published, this should be clearly indicated.",
+            "conformance": "Required",
+            "cardinality": "One to one",
+            "relationship": "14",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "14 APPENDIX: REFERENCES",
+                "concept": "C184397",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": []
         }
     }
 }
