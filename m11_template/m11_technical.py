@@ -1,6 +1,7 @@
 import yaml
+import re
 from pathlib import Path
-from raw_docx import RawDocx, RawDocument, RawParagraph, RawTable, RawSection, RawTableRow
+from raw_docx import RawDocx, RawDocument, RawParagraph, RawTable, RawTableRow
 from m11_template.m11_utility import clean_element_name, find_elements
 
 class M11Technical:
@@ -91,13 +92,13 @@ class M11Technical:
             template = {
                 "name": "temp",
                 "data_type": self._row_cell_text(table.rows[1], 1).strip(),
-                "definition": self._row_cell_text(table.rows[3], 1).strip(),
+                "definition": self._decode_definition(table.rows[3], 1),
                 "guidance": self._row_cell_text(table.rows[4], 1).strip(),
                 "conformance": self._row_cell_text(table.rows[5], 1).strip(),
                 "cardinality": self._row_cell_text(table.rows[6], 1).strip(),
                 "relationship": self._row_cell_text(table.rows[7], 1).strip(),
                 "value": self._row_cell_text(table.rows[8], 1).strip(),
-                "business_rules": self._row_cell_text(table.rows[9], 1).strip(),
+                "business_rules": self._decode_business_rules(table.rows[9], 1),
                 "repeating": self._row_cell_text(table.rows[10], 1).strip(),
                 "ct": []
             }
@@ -150,4 +151,49 @@ class M11Technical:
                 return cell.text()
         return ""
 
-
+    def _decode_business_rules(self, row: RawTableRow, cell_index: int) -> dict:
+        result = {
+            'value_allowed': '',
+            'relationship': '',
+            'concept': '',
+            'other': ''
+        }
+        if len(row.cells) > cell_index:
+            cell = row.cells[cell_index]
+            for item in cell.items:
+                if isinstance(item , RawParagraph):
+                    if item.text.startswith("Value Allowed:"):
+                        result['value_allowed'] = item.text.replace("Value Allowed:", "").strip()
+                    elif item.text.startswith("Relationship:"):
+                        result['relationship'] = item.text.replace("Relationship:", "").strip()
+                    elif item.text.startswith("Concept:"):
+                        result['concept'] = item.text.replace("Concept:", "").strip()
+                    else:
+                        result['other'] = item.text.strip()
+        return result
+    
+    def _decode_definition(self, row: RawTableRow, cell_index: int) -> dict:
+        result = []
+        if len(row.cells) > cell_index:
+            cell = row.cells[cell_index]
+            if cell.is_text():
+                lines = cell.text().split("\n")
+                state = "OUTSIDE"
+                for line in lines:
+                    print(f"LINE: {line}, {state}")
+                    if line.startswith("For review purpose, see definition of the controlled terminology below"):
+                        pass
+                    elif self._is_c_code(line):
+                        state = "INSIDE"
+                        c_code = line
+                    elif state == "INSIDE":
+                        if len(line.strip()) > 0:
+                            result.append({'c_code': c_code, 'definition': line.strip()})
+                        state = "OUTSIDE"
+        return result
+    
+    def _is_c_code(self, text: str) -> bool:
+        pattern = r'C(?:NEW|\d+)'
+        match = re.search(pattern, text)
+        print(f"MATCH: {'TRUE' if match else 'FALSE'}")
+        return True if match else False
