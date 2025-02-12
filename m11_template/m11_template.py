@@ -120,9 +120,6 @@ class M11Template:
                     state = "OUTSIDE" if state == "OUTSIDE" else "INSIDE"
 
     def rename_elements(self, filepath: str) -> None:
-        """
-        Rename elements in the elements dictionary.
-        """
         with open(filepath, "r") as f:
             rename_dict = yaml.safe_load(f)
         for key, value in rename_dict.items():
@@ -134,9 +131,6 @@ class M11Template:
                 print(f"Template rename not required: {key}")
 
     def insert_elements(self, filepath: str) -> None:
-        """
-        Insert elements into the elements dictionary.
-        """
         with open(filepath, "r") as f:
             insert_dict = yaml.safe_load(f)
         for key, value in insert_dict.items():
@@ -144,9 +138,6 @@ class M11Template:
                 self.elements[key] = value
 
     def delete_elements(self, filepath: str) -> None:
-        """
-        Delete elements from the elements dictionary.
-        """
         with open(filepath, "r") as f:
             insert_dict = yaml.safe_load(f)
         for key, value in insert_dict.items():
@@ -156,31 +147,19 @@ class M11Template:
                 print(f"Template delete not required: {key}")
 
     def _detect_start(self, para: RawParagraph) -> bool:
-        """
-        Detect the start of the definitions.
-        """
         return True if para.text.startswith(self.START_TEXT) else False
         
     def _save_element(self, section: RawSection, para: RawParagraph) -> list:
-        """
-        Save elements to the elements dictionary.
-        """
         elements = self._extract_elements(section, para)
         self._add_elements(elements)
         return elements
     
     def _save_instructions(self, elements: list, para: RawParagraph) -> list:
-        """
-        Save instructions to the elements dictionary.
-        """
         instructions = self._extract_instructions(para)
         self._add_instructions(elements, instructions)
         return instructions
 
     def _process_para(self, para: RawParagraph) -> str:
-        """
-        Process a paragraph.
-        """
         if self._has_elements(para):
             return self.ELEMENT
         elif self._has_instructions(para):
@@ -190,9 +169,6 @@ class M11Template:
             return self.OTHER
 
     def _next_paragraph(self, section: RawSection) -> Generator[tuple[RawParagraph, bool], None, None]:
-        """
-        Get the next paragraph in a section.
-        """
         for item in section.items:
             if isinstance(item, RawParagraph):
                 yield item, False
@@ -209,9 +185,6 @@ class M11Template:
 
 
     def _add_elements(self, elements: list[str]) -> None:
-        """
-        Add elements to the elements dictionary.
-        """
         for element in elements:
             if element["short_name"] not in self.elements:
                 self.elements[element["short_name"]] = element
@@ -222,25 +195,12 @@ class M11Template:
                 self.repeat_index += 1
 
     def _add_instructions(self, elements: list[str], instructions: list[str]) -> None:
-        """
-        Add instructions to the elements dictionary.
-        """
         for element in elements:
             self.elements[element["short_name"]]["instructions"] += instructions
 
     def _extract_elements(
         self, section: RawSection, paragraph: RawParagraph
     ) -> list[str]:
-        """
-        Extract elements from a paragraph.
-
-        Args:
-            section (RawSection): The section the paragraph belongs to
-            paragraph (RawParagraph): The paragraph to extract elements from
-
-        Returns:
-            list[str]: A list of confirmed elements
-        """
         confirmed_elements = []
         potential_elements = find_elements(paragraph.text)
         for element in potential_elements:
@@ -285,16 +245,6 @@ class M11Template:
     def _extract_instructions(
         self, paragraph: RawParagraph
     ) -> list[str]:
-        """
-        Extract instructions from a paragraph.
-
-        Args:
-            section (RawSection): The section the paragraph belongs to
-            paragraph (RawParagraph): The paragraph to extract instructions from
-
-        Returns:
-            list[str]: The instructions
-        """
         instructions = [
             x.text
             for x in paragraph.runs
@@ -303,14 +253,8 @@ class M11Template:
         return instructions
 
     def _has_elements(self, para: RawParagraph) -> bool:
-        """
-        Check if a paragraph has elements.
-        """
         return len(find_elements(para.text)) > 0
     
     def _has_instructions(self, para: RawParagraph) -> bool:
-        """
-        Check if a paragraph has instructions.
-        """
         return len(self._extract_instructions(para)) > 0
     

@@ -5,12 +5,6 @@ from m11_template.m11_utility import clean_element_name, find_elements
 
 class M11Technical:
     def __init__(self, filepath: str):
-        """
-        Initialize the M11 technical document processor.
-
-        Args:
-            filepath (str): Path to the M11 Technical Document
-        """
         self.document = None
         self.elements = {}
         self.filepath = Path(filepath)
@@ -21,9 +15,6 @@ class M11Technical:
             )
 
     def process(self) -> None:
-        """
-        Process the M11 Technical Document.
-        """                                    
         raw_doc: RawDocument = RawDocx(self.filepath).target_document
         self.document = raw_doc.to_dict()
         for section in raw_doc.sections:
@@ -70,9 +61,6 @@ class M11Technical:
         return []
     
     def rename_elements(self, filepath: str) -> None:
-        """
-        Rename elements in the elements dictionary.
-        """
         with open(filepath, "r") as f:
             rename_dict = yaml.safe_load(f)
         for key, value in rename_dict.items():
@@ -84,9 +72,6 @@ class M11Technical:
                 print(f"Technical rename not required: {key}")
 
     def delete_elements(self, filepath: str) -> None:
-        """
-        Delete elements from the elements dictionary.
-        """
         with open(filepath, "r") as f:
             insert_dict = yaml.safe_load(f)
         for key, value in insert_dict.items():
@@ -96,9 +81,6 @@ class M11Technical:
                 print(f"Technical delete not required: {key}")
 
     def _extract_data_elements(self, table: RawTable) -> list[dict]:
-        """
-        Extract the data elements from the table.
-        """
         result = []
         data_element = None
         if len(table.rows) >= 10:
@@ -127,9 +109,6 @@ class M11Technical:
         return result
 
     def _extract_ncit_element(self, table: RawTable) -> dict:
-        """
-        Extract the NCI Thesaurus element from the table.
-        """
         ncit_element = []
         for row in table.rows[1:]:
             ncit_element.append({
@@ -140,9 +119,6 @@ class M11Technical:
         return ncit_element
 
     def _is_data_element_table(self, table: RawTable) -> bool:
-        """
-        Check if the table is a data element table.
-        """
         if len(table.rows) > 3:
             row_1 = table.rows[0]
             row_3 = table.rows[2]
@@ -160,9 +136,6 @@ class M11Technical:
         return False
 
     def _is_ncit_table(self, table: RawTable) -> bool:
-        """
-        Check if the table is a NCI Thesaurus table.
-        """
         if len(table.rows) > 1:
             row_1 = table.rows[0]
             #print(f"ROW 1: {self._row_cell_text(row_1, 0)}")
