@@ -1,0 +1,96 @@
+Amendment Details:
+  "long_name": "Amendment Details"
+  "short_name": "Amendment Details"
+  "original_name": "Amendment Details"
+  "optional": false
+  "section_number": ''
+  "section_title": "Title Page"
+  "instructions": []
+Primary Reason Other:
+  "long_name": "Primary Reason Other"
+  "short_name": "Primary Reason Other"
+  "original_name": "Primary Reason Other"
+  "optional": false
+  "section_number": ''
+  "section_title": "Title Page"
+  "instructions": []
+Secondary Reason Other:
+  "long_name": "Secondary Reason Other"
+  "short_name": "Secondary Reason Other"
+  "original_name": "Secondary Reason Other"
+  "optional": false
+  "section_number": ''
+  "section_title": "Title Page"
+  "instructions": []
+"Briefly Explain Substantial Impact On Safety":
+  "long_name": "Briefly Explain Substantial Impact On Safety"
+  "short_name": "Briefly Explain Substantial Impact On Safety"
+  "original_name": "Briefly Explain Substantial Impact On Safety"
+  "optional": false
+  "section_number": ''
+  "section_title": "Title Page"
+  "instructions": []
+"Briefly Explain Substantial Impact on Data":
+  "long_name": "Briefly Explain Substantial Impact on Data"
+  "short_name": "Briefly Explain Substantial Impact on Data"
+  "original_name": "Briefly Explain Substantial Impact on Data"
+  "optional": false
+  "section_number": ''
+  "section_title": "Title Page"
+  "instructions": []
+Previous Amendment Enrollment Scope:
+  "long_name": "Previous Amendment Enrollment Scope"
+  "short_name": "Previous Amendment Enrollment Scope"
+  "original_name": "Previous Amendment Enrollment Scope"
+  "optional": false
+  "section_number": '12.3'
+  "section_title": "Prior Protocol Amendments"
+  "instructions": []
+Prior Protocol Amendments:
+  "long_name": "Prior Protocol Amendments"
+  "short_name": "Prior Protocol Amendments"
+  "original_name": "Prior Protocol Amendments"
+  "optional": false
+  "section_number": '12.3'
+  "section_title": "Prior Protocol Amendments"
+  "instructions": []
+Country Region Not Applicable:
+  "long_name": "Country Region Not Applicable"
+  "short_name": "Country Region Not Applicable"
+  "original_name": "Country Region Not Applicable"
+  "optional": false
+  "section_number": '12.3'
+  "section_title": "Prior Protocol Amendments"
+  "instructions": []
+# "Inclusion Criterion Number":
+#   "long_name": Inclusion Criterion Number
+#   "short_name": Inclusion Criterion Number
+#   "original_name": Inclusion Criterion Number
+#   "optional": false
+#   "section_number": 5.2
+#   "section_title": Inclusion Critieria
+#   "instructions": []
+# "Inclusion Criterion":
+#   "long_name": Inclusion Criterion
+#   "short_name": Inclusion Criterion
+#   "original_name": Inclusion Criterion
+#   "optional": false
+#   "section_number": 5.2
+#   "section_title": Inclusion Critieria
+#   "instructions": []
+# "Exclusion Criterion Number":
+#   "long_name": Exclusion Criterion Number
+#   "short_name": Exclusion Criterion Number
+#   "original_name": Exclusion Criterion Number
+#   "optional": false
+#   "section_number": 5.3
+#   "section_title": Exclusion Critieria
+#   "instructions": []
+# "Exclusion Criterion":
+#   "long_name": Exclusion Criterion
+#   "short_name": Exclusion Criterion
+#   "original_name": Exclusion Criterion
+#   "optional": false
+#   "section_number": 5.3
+#   "section_title": Exclusion Critieria
+#   "instructions": []

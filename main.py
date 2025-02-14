@@ -5,26 +5,26 @@ from m11_template.m11_technical import M11Technical
 from itertools import zip_longest
 
 
-template = M11Template(filepath="data/input_data/m11/m11-template-spec.docx")
+template = M11Template(filepath="source_data/2025-01-17/m11-template-spec.docx")
 template.process()
-template.rename_elements(filepath="data/input_data/m11/template_renames.yaml")
-template.insert_elements(filepath="data/input_data/m11/template_inserts.yaml")
-template.delete_elements(filepath="data/input_data/m11/template_deletes.yaml")
+template.rename_elements(filepath="source_data/2025-01-17/template_renames.yaml")
+template.insert_elements(filepath="source_data/2025-01-17/template_inserts.yaml")
+template.delete_elements(filepath="source_data/2025-01-17/template_deletes.yaml")
 template.order_elements()
-technical = M11Technical(filepath="data/input_data/m11/m11-technical-spec.docx")
+technical = M11Technical(filepath="source_data/2025-01-17/m11-technical-spec.docx")
 technical.process()
-technical.rename_elements(filepath="data/input_data/m11/technical_renames.yaml")
-technical.delete_elements(filepath="data/input_data/m11/technical_deletes.yaml")
+technical.rename_elements(filepath="source_data/2025-01-17/technical_renames.yaml")
+technical.delete_elements(filepath="source_data/2025-01-17/technical_deletes.yaml")
 
-with open("data/output_data/template_document.json", "w") as f:
+with open("output_data/template_document.json", "w") as f:
     json.dump(template.document, f, indent=4)
-with open("data/output_data/template_elements.json", "w") as f:
+with open("output_data/template_elements.json", "w") as f:
     json.dump(template.elements, f, indent=4)
-with open("data/output_data/template_sections.json", "w") as f:
+with open("output_data/template_sections.json", "w") as f:
     json.dump(template.sections, f, indent=4)
-with open("data/output_data/technical_document.json", "w") as f:
+with open("output_data/technical_document.json", "w") as f:
     json.dump(technical.document, f, indent=4)#
-with open("data/output_data/technical_elements.json", "w") as f:
+with open("output_data/technical_elements.json", "w") as f:
     json.dump(technical.elements, f, indent=4)
 
 merged = {}
@@ -53,11 +53,11 @@ for key, value in technical.elements.items():
 #     else:
 #         not_mapped[key] = key
 
-with open("data/output_data/merged_elements.json", "w") as f:
+with open("output_data/merged_elements.json", "w") as f:
     json.dump(merged, f, indent=4)
-with open("data/output_data/mismatched_elements.json", "w") as f:
+with open("output_data/mismatched_elements.json", "w") as f:
     json.dump(missing, f, indent=4)
-# with open("data/output_data/not_mapped_to_usdm_elements.json", "w") as f:
+# with open("output_data/not_mapped_to_usdm_elements.json", "w") as f:
 #     json.dump(not_mapped, f, indent=4)
 
 res = list(zip_longest(missing['template'].keys(), missing['technical'].keys()))
@@ -73,5 +73,5 @@ for result in res:
     tech_text = f"{tech['relationship']}: {tech['name']}"
     text += f"<tr><td>{temp_text}</td><td>{tech_text}</td></tr>"
 text += "</table>"
-with open("data/output_data/mismatched_elements.html", "w") as f:
+with open("output_data/mismatched_elements.html", "w") as f:
     f.write(text)
