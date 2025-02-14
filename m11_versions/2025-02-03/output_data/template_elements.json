@@ -1,0 +1,2599 @@
+{
+    "Sponsor Confidentiality Statement": {
+        "long_name": "Enter Sponsor Confidentiality Statement",
+        "short_name": "Sponsor Confidentiality Statement",
+        "original_name": "Sponsor Confidentiality Statement",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "Insert the Sponsor\u2019s confidentiality statement, if applicable, otherwise delete."
+        ]
+    },
+    "Full Title": {
+        "long_name": "Enter Full Title",
+        "short_name": "Full Title",
+        "original_name": "Full Title",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "The protocol should have a descriptive title that identifies the scientific aspects of the trial sufficiently to ensure it is immediately evident what the trial is investigating and on whom, and to allow retrieval from literature or internet searches."
+        ]
+    },
+    "Trial Acronym": {
+        "long_name": "Enter Trial Acronym",
+        "short_name": "Trial Acronym",
+        "original_name": "Trial Acronym",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "Acronym or abbreviation used publicly to identify the clinical trial. Delete this line from the table if not applicable."
+        ]
+    },
+    "Sponsor Protocol Identifier": {
+        "long_name": "Enter Sponsor Protocol Identifier",
+        "short_name": "Sponsor Protocol Identifier",
+        "original_name": "Sponsor Protocol Identifier",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "A unique alphanumeric identifier for the trial, designated by the Sponsor."
+        ]
+    },
+    "Original Protocol Indicator": {
+        "long_name": "Original Protocol Indicator",
+        "short_name": "Original Protocol Indicator",
+        "original_name": "Original Protocol Indicator",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Version Number": {
+        "long_name": "Enter Version Number",
+        "short_name": "Version Number",
+        "original_name": "Version Number",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "For use by the Sponsor at their discretion."
+        ]
+    },
+    "Version Date": {
+        "long_name": "Enter Version Date",
+        "short_name": "Version Date",
+        "original_name": "Version Date",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "For use by the Sponsor at their discretion."
+        ]
+    },
+    "Amendment Identifier": {
+        "long_name": "Amendment Identifier",
+        "short_name": "Amendment Identifier",
+        "original_name": "Amendment Identifier",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "Enter the amendment identifier (e.g., amendment number). If this is the original instance of the protocol, delete the row or enter \"Not applicable\"."
+        ]
+    },
+    "Amendment Scope": {
+        "long_name": "Amendment Scope",
+        "short_name": "Amendment Scope",
+        "original_name": "Amendment Scope",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "If this is the original instance of the protocol, delete the row or enter \"Not applicable\". If an amendment applies to all sites in the trial, enter \u201cglobal\u201d and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter \u201cglobal\u201d.",
+            "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
+        ]
+    },
+    "Country Identifier": {
+        "long_name": "Country Identifier",
+        "short_name": "Country Identifier",
+        "original_name": "Country Identifier",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "If this is the original instance of the protocol, delete the row or enter \"Not applicable\". If an amendment applies to all sites in the trial, enter \u201cglobal\u201d and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter \u201cglobal\u201d.",
+            "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
+        ]
+    },
+    "Region Identifier": {
+        "long_name": "Region Identifier",
+        "short_name": "Region Identifier",
+        "original_name": "Region Identifier",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "If this is the original instance of the protocol, delete the row or enter \"Not applicable\". If an amendment applies to all sites in the trial, enter \u201cglobal\u201d and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter \u201cglobal\u201d.",
+            "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
+        ]
+    },
+    "Site Identifier": {
+        "long_name": "Enter Site Identifier",
+        "short_name": "Site Identifier",
+        "original_name": "Site Identifier",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "If this is the original instance of the protocol, delete the row or enter \"Not applicable\". If an amendment applies to all sites in the trial, enter \u201cglobal\u201d and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter \u201cglobal\u201d.",
+            "If the amendment does not apply to all sites in the trial, select \u201cNot Global\u201d and utilise one of the identifiers based on amendment scope."
+        ]
+    },
+    "Sponsors Investigational Product Codes": {
+        "long_name": "Enter Sponsor\u2019s Investigational Product Code(s)",
+        "short_name": "Sponsors Investigational Product Codes",
+        "original_name": "Sponsor\u2019s Investigational Product Code(s)",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "Enter the Sponsor\u2019s unique identifier for investigational compound(s) in the trial. Add fields as needed."
+        ]
+    },
+    "Nonproprietary Names": {
+        "long_name": "Enter Nonproprietary Name(s)",
+        "short_name": "Nonproprietary Names",
+        "original_name": "Nonproprietary Name(s)",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Proprietary Names": {
+        "long_name": "Enter Proprietary Name(s)",
+        "short_name": "Proprietary Names",
+        "original_name": "Proprietary Name(s)",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "Omit nonproprietary name fields if a nonproprietary name has not yet been assigned. Omit proprietary name fields if not yet established."
+        ]
+    },
+    "Trial Phase": {
+        "long_name": "Trial Phase",
+        "short_name": "Trial Phase",
+        "original_name": "Trial Phase",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "For trials combining investigational drugs or vaccines with devices, classify according to the phase of drug development."
+        ]
+    },
+    "Trial Short Title": {
+        "long_name": "Enter Trial Short Title",
+        "short_name": "Trial Short Title",
+        "original_name": "Trial Short Title",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "Short title should convey in plain language what the trial is about and should be suitable for use as \u201cBrief Title\u201d or \u201cTitle in Plain Language\u201d in global clinical trial registries. It can also be suitable for use with informed consents and ethics committee submissions."
+        ]
+    },
+    "Sponsor Name": {
+        "long_name": "Enter Sponsor Name",
+        "short_name": "Sponsor Name",
+        "original_name": "Sponsor Name",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Sponsor Legal Address": {
+        "long_name": "Enter Sponsor Legal Address",
+        "short_name": "Sponsor Legal Address",
+        "original_name": "Sponsor Legal Address",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Co-Sponsor Name": {
+        "long_name": "Enter Co-Sponsor Name",
+        "short_name": "Co-Sponsor Name",
+        "original_name": "Co-Sponsor Name",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Co-Sponsor Legal Address": {
+        "long_name": "Enter Co-Sponsor Legal Address",
+        "short_name": "Co-Sponsor Legal Address",
+        "original_name": "Co-Sponsor Legal Address",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "Provide the legal name of the individual or pharmaceutical or medical device company, governmental agency, academic institution, private organisation, or other organisation who takes primary responsibility for and initiates a clinical investigation. If more than one Sponsor, list the Primary Sponsor in this field.",
+            "Local Sponsor Name and Address:"
+        ]
+    },
+    "Local Sponsor Name": {
+        "long_name": "Enter Local Sponsor Name",
+        "short_name": "Local Sponsor Name",
+        "original_name": "Local Sponsor Name",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Local Sponsor Address": {
+        "long_name": "Enter Local Sponsor Address",
+        "short_name": "Local Sponsor Address",
+        "original_name": "Local Sponsor Address",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "In some countries, the clinical trial Sponsor may be the local affiliate company (or designee). In such cases, indicate this in the Local Sponsor Name and Address Field."
+        ]
+    },
+    "Device Manufacturer Name": {
+        "long_name": "Enter Device Manufacturer Name",
+        "short_name": "Device Manufacturer Name",
+        "original_name": "Device Manufacturer Name",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Device Manufacturer Address": {
+        "long_name": "Enter Device Manufacturer Address",
+        "short_name": "Device Manufacturer Address",
+        "original_name": "Device Manufacturer Address",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "Manufacturer name and address information is required only for protocols that include investigational device(s) and should not be included for other protocols. Include the manufacturer address only if the manufacturer is different than the Sponsor listed above.",
+            "Add additional fields as needed if multiple investigational devices will be used in the trial. Delete this line if not applicable."
+        ]
+    },
+    "EU CT Number": {
+        "long_name": "EU CT Number",
+        "short_name": "EU CT Number",
+        "original_name": "EU CT Number",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "FDA IND Number": {
+        "long_name": "FDA IND Number",
+        "short_name": "FDA IND Number",
+        "original_name": "FDA IND Number",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "IDE Number": {
+        "long_name": "IDE Number",
+        "short_name": "IDE Number",
+        "original_name": "IDE Number",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "jRCT Number": {
+        "long_name": "jRCT Number",
+        "short_name": "jRCT Number",
+        "original_name": "jRCT Number",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "NCT Number": {
+        "long_name": "NCT Number",
+        "short_name": "NCT Number",
+        "original_name": "NCT Number",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "NMPA IND Number": {
+        "long_name": "NMPA IND Number",
+        "short_name": "NMPA IND Number",
+        "original_name": "NMPA IND Number",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "WHO-UTN Number": {
+        "long_name": "WHO/UTN Number",
+        "short_name": "WHO-UTN Number",
+        "original_name": "WHO/UTN Number",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Other Regulatory or Clinical Trial Identifier": {
+        "long_name": "Other Regulatory or Clinical Trial Identifier",
+        "short_name": "Other Regulatory or Clinical Trial Identifier",
+        "original_name": "Other Regulatory or Clinical Trial Identifier",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "Include all identifiers that are applicable for the trial and available at the time of protocol or amendment finalisation. Delete prompts for identifiers not available at the time of document finalisation. Delete unused fields. Add fields for \u201cother\u201d if more than one is needed."
+        ]
+    },
+    "Approval Date": {
+        "long_name": "Enter Approval Date",
+        "short_name": "Approval Date",
+        "original_name": "Approval Date",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "All versions should be uniquely identifiable. "
+        ]
+    },
+    "State location where Information can be found": {
+        "long_name": "State location where information can be found",
+        "short_name": "State location where Information can be found",
+        "original_name": "State location where information can be found",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "All versions should be uniquely identifiable. "
+        ]
+    },
+    "sponsor signature block name and title of sponsor signatory and signature date": {
+        "long_name": "Enter sponsor signature block (name and title of sponsor signatory and signature date)",
+        "short_name": "sponsor signature block name and title of sponsor signatory and signature date",
+        "original_name": "sponsor signature block (name and title of sponsor signatory and signature date)",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Describe Method": {
+        "long_name": "describe method",
+        "short_name": "Describe Method",
+        "original_name": "describe method",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "contact information for Medical Expert as designated by sponsor or state location where information can be found": {
+        "long_name": "Enter contact information for Medical Expert (as designated by sponsor) or state location where information can be found",
+        "short_name": "contact information for Medical Expert as designated by sponsor or state location where information can be found",
+        "original_name": "contact information for Medical Expert (as designated by sponsor) or state location where information can be found",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Current Amendment Enrollment": {
+        "long_name": "#/%",
+        "short_name": "Current Amendment Enrollment",
+        "original_name": "#/%",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
+            "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
+        ]
+    },
+    "Globally-Locally-by Cohort": {
+        "long_name": "Globally/Locally/by Cohort",
+        "short_name": "Globally-Locally-by Cohort",
+        "original_name": "Globally/Locally/by Cohort",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "Enter the approximate number or percentage of participants enrolled as a percentage of the expected total. If the number of expected participants is changing as a result of the current amendment, use the updated number of expected participants to estimate the current percent of enrollment. Estimates are adequate, as precise enrollment figures will likely be changing while an amendment is being prepared.",
+            "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
+        ]
+    },
+    "Primary Reason for Amendment": {
+        "long_name": "Primary Reason for Amendment",
+        "short_name": "Primary Reason for Amendment",
+        "original_name": "Primary Reason for Amendment",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Secondary Reason for Amendment": {
+        "long_name": "Secondary Reason for Amendment",
+        "short_name": "Secondary Reason for Amendment",
+        "original_name": "Secondary Reason for Amendment",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Amendment Summary": {
+        "long_name": "Amendment Summary",
+        "short_name": "Amendment Summary",
+        "original_name": "Amendment Summary",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "Describe key changes briefly. Changes which are included in the amendment but unrelated to the key changes do not need to be described here."
+        ]
+    },
+    "Substantial Impact Safety": {
+        "long_name": "Yes/No",
+        "short_name": "Substantial Impact Safety",
+        "original_name": "Yes/No",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Substantial Impact Data": {
+        "long_name": "Yes/No",
+        "short_name": "Substantial Impact Data",
+        "original_name": "Yes/No",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Description of Change": {
+        "long_name": "Enter Description of Change",
+        "short_name": "Description of Change",
+        "original_name": "Description of Change",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Brief Rationale for Change": {
+        "long_name": "Enter Brief Rationale for Change",
+        "short_name": "Brief Rationale for Change",
+        "original_name": "Brief Rationale for Change",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Section - and Name of Change": {
+        "long_name": "Enter Section # and Name of Change",
+        "short_name": "Section - and Name of Change",
+        "original_name": "Section # and Name of Change",
+        "optional": true,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": [
+            "(Add lines as needed)"
+        ]
+    },
+    "Amendment Details": {
+        "long_name": "Amendment Details",
+        "short_name": "Amendment Details",
+        "original_name": "Amendment Details",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Primary Reason Other": {
+        "long_name": "Primary Reason Other",
+        "short_name": "Primary Reason Other",
+        "original_name": "Primary Reason Other",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Secondary Reason Other": {
+        "long_name": "Secondary Reason Other",
+        "short_name": "Secondary Reason Other",
+        "original_name": "Secondary Reason Other",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Briefly Explain Substantial Impact On Safety": {
+        "long_name": "Briefly Explain Substantial Impact On Safety",
+        "short_name": "Briefly Explain Substantial Impact On Safety",
+        "original_name": "Briefly Explain Substantial Impact On Safety",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Briefly Explain Substantial Impact on Data": {
+        "long_name": "Briefly Explain Substantial Impact on Data",
+        "short_name": "Briefly Explain Substantial Impact on Data",
+        "original_name": "Briefly Explain Substantial Impact on Data",
+        "optional": false,
+        "section_number": "",
+        "section_title": "Title Page",
+        "instructions": []
+    },
+    "Primary and Secondary Objectives and Estimands": {
+        "long_name": "Enter Primary and Secondary Objectives and Estimands",
+        "short_name": "Primary and Secondary Objectives and Estimands",
+        "original_name": "Primary and Secondary Objectives and Estimands",
+        "optional": false,
+        "section_number": "1.1.1",
+        "section_title": "Primary and Secondary Objectives and Estimands",
+        "instructions": []
+    },
+    "Population Type": {
+        "long_name": "Population type",
+        "short_name": "Population Type",
+        "original_name": "Population type",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Intervention Model": {
+        "long_name": "Intervention model",
+        "short_name": "Intervention Model",
+        "original_name": "Intervention model",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Population Diagnosis or Condition": {
+        "long_name": "Population diagnosis or condition",
+        "short_name": "Population Diagnosis or Condition",
+        "original_name": "Population diagnosis or condition",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Control Type": {
+        "long_name": "Control type",
+        "short_name": "Control Type",
+        "original_name": "Control type",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Minimum Age": {
+        "long_name": "minimum age",
+        "short_name": "Minimum Age",
+        "original_name": "minimum age",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "units of minimum age": {
+        "long_name": "units of minimum age",
+        "short_name": "units of minimum age",
+        "original_name": "units of minimum age",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "maximum age": {
+        "long_name": "maximum age",
+        "short_name": "maximum age",
+        "original_name": "maximum age",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "units of maximum age": {
+        "long_name": "units of maximum age",
+        "short_name": "units of maximum age",
+        "original_name": "units of maximum age",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Nonproprietary name": {
+        "long_name": "Nonproprietary name",
+        "short_name": "Nonproprietary name",
+        "original_name": "Nonproprietary name",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "INN": {
+        "long_name": "INN",
+        "short_name": "INN",
+        "original_name": "INN",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Not applicable": {
+        "long_name": "Enter \u201cNot applicable\u201d",
+        "short_name": "Not applicable",
+        "original_name": "\u201cNot applicable\u201d",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Site Distribution": {
+        "long_name": "Site distribution",
+        "short_name": "Site Distribution",
+        "original_name": "Site distribution",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Site geographic scope": {
+        "long_name": "Site geographic scope",
+        "short_name": "Site geographic scope",
+        "original_name": "Site geographic scope",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Intervention Assignment Method": {
+        "long_name": "Intervention assignment method",
+        "short_name": "Intervention Assignment Method",
+        "original_name": "Intervention assignment method",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Master Protocol Indicator": {
+        "long_name": "Master Protocol Indicator",
+        "short_name": "Master Protocol Indicator",
+        "original_name": "Master Protocol Indicator",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Drug-Device Combination Product Indicator": {
+        "long_name": "Drug/Device Combination Product Indicator",
+        "short_name": "Drug-Device Combination Product Indicator",
+        "original_name": "Drug/Device Combination Product Indicator",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Adaptive Trial Design Indicator": {
+        "long_name": "Adaptive Trial Design Indicator",
+        "short_name": "Adaptive Trial Design Indicator",
+        "original_name": "Adaptive Trial Design Indicator",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": [
+            "Further clarification:",
+            "Control description: if active comparator or low dose, pick nonproprietary name or International Nonproprietary Name; indicate \"Not applicable\u201d if not applicable.",
+            "Intervention assignment method: do NOT state block size.",
+            "Population Diagnosis or Condition: MedDRA Preferred Term(s) or indicate \u201cother\u201d and describe.",
+            "Population age range: for trials in which multiple age ranges may be eligible (e.g., a younger cohort and an older cohort), indicate the minimum and maximum ages for the trial overall, with an additional comment for any excluded age ranges."
+        ]
+    },
+    "Number of Arms": {
+        "long_name": "Number of Arms",
+        "short_name": "Number of Arms",
+        "original_name": "Number of Arms",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Trial Blind Schema": {
+        "long_name": "Trial Blind Schema",
+        "short_name": "Trial Blind Schema",
+        "original_name": "Trial Blind Schema",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Blinded Roles": {
+        "long_name": "blinded roles",
+        "short_name": "Blinded Roles",
+        "original_name": "blinded roles",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Target-Maximum": {
+        "long_name": "Target/Maximum",
+        "short_name": "Target-Maximum",
+        "original_name": "Target/Maximum",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Number of Participants": {
+        "long_name": "Enter Number of Participants",
+        "short_name": "Number of Participants",
+        "original_name": "Number of Participants",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "randomly assigned to trial intervention-enrolled": {
+        "long_name": "randomly assigned to trial intervention/enrolled",
+        "short_name": "randomly assigned to trial intervention-enrolled",
+        "original_name": "randomly assigned to trial intervention/enrolled",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "total planned duration of trial intervention": {
+        "long_name": "Enter total planned duration of trial intervention",
+        "short_name": "total planned duration of trial intervention",
+        "original_name": "total planned duration of trial intervention",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": [
+            "or"
+        ]
+    },
+    "total planned duration of trial intervention unit of time": {
+        "long_name": "total planned duration of trial intervention unit of time",
+        "short_name": "total planned duration of trial intervention unit of time",
+        "original_name": "total planned duration of trial intervention unit of time",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": [
+            "or"
+        ]
+    },
+    "alternate description of planned duration of trial intervention if duration will vary": {
+        "long_name": "Enter alternate description of planned duration of trial intervention if duration will vary",
+        "short_name": "alternate description of planned duration of trial intervention if duration will vary",
+        "original_name": "alternate description of planned duration of trial intervention if duration will vary",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "total planned duration of trial participation": {
+        "long_name": "Enter total planned duration of trial participation",
+        "short_name": "total planned duration of trial participation",
+        "original_name": "total planned duration of trial participation",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": [
+            "or"
+        ]
+    },
+    "total planned duration of trial participation unit of time": {
+        "long_name": "total planned duration of trial participation unit of time",
+        "short_name": "total planned duration of trial participation unit of time",
+        "original_name": "total planned duration of trial participation unit of time",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": [
+            "or"
+        ]
+    },
+    "alternate description of planned duration of trial participation if duration will vary": {
+        "long_name": "Enter alternate description of planned duration of trial participation if duration will vary",
+        "short_name": "alternate description of planned duration of trial participation if duration will vary",
+        "original_name": "alternate description of planned duration of trial participation if duration will vary",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Additional Description of Duration": {
+        "long_name": "Enter Additional Description of Duration",
+        "short_name": "Additional Description of Duration",
+        "original_name": "Additional Description of Duration",
+        "optional": true,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Independent Committees": {
+        "long_name": "Enter Independent Committees",
+        "short_name": "Independent Committees",
+        "original_name": "Independent Committees",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": []
+    },
+    "Other Committees": {
+        "long_name": "Enter Other Committees",
+        "short_name": "Other Committees",
+        "original_name": "Other Committees",
+        "optional": true,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": [
+            "Delete \u201cOther Committees\u201d if not applicable."
+        ]
+    },
+    "Trial Schema": {
+        "long_name": "Enter Trial Schema",
+        "short_name": "Trial Schema",
+        "original_name": "Trial Schema",
+        "optional": false,
+        "section_number": "1.2",
+        "section_title": "Trial Schema",
+        "instructions": []
+    },
+    "Schema Notes": {
+        "long_name": "Enter Schema Notes",
+        "short_name": "Schema Notes",
+        "original_name": "Schema Notes",
+        "optional": true,
+        "section_number": "1.2",
+        "section_title": "Trial Schema",
+        "instructions": []
+    },
+    "Schedule of Activities": {
+        "long_name": "Enter Schedule of Activities",
+        "short_name": "Schedule of Activities",
+        "original_name": "Schedule of Activities",
+        "optional": false,
+        "section_number": "1.3",
+        "section_title": "Schedule of Activities",
+        "instructions": []
+    },
+    "Purpose of Trial": {
+        "long_name": "Enter Purpose of Trial",
+        "short_name": "Purpose of Trial",
+        "original_name": "Purpose of Trial",
+        "optional": false,
+        "section_number": "2.1",
+        "section_title": "Purpose of Trial",
+        "instructions": []
+    },
+    "Trial-specific Intervention Risks and Mitigations": {
+        "long_name": "Enter Trial-specific Intervention Risks and Mitigations",
+        "short_name": "Trial-specific Intervention Risks and Mitigations",
+        "original_name": "Trial-specific Intervention Risks and Mitigations",
+        "optional": true,
+        "section_number": "2.2.1",
+        "section_title": "Risk Summary and Mitigation Strategy",
+        "instructions": []
+    },
+    "Trial-specific Procedure Risks and Mitigations": {
+        "long_name": "Enter Trial-specific Procedure Risks and Mitigations",
+        "short_name": "Trial-specific Procedure Risks and Mitigations",
+        "original_name": "Trial-specific Procedure Risks and Mitigations",
+        "optional": true,
+        "section_number": "2.2.1",
+        "section_title": "Risk Summary and Mitigation Strategy",
+        "instructions": []
+    },
+    "Trial-specific Other Risks and Mitigations": {
+        "long_name": "Enter Trial-specific Other Risks and Mitigations",
+        "short_name": "Trial-specific Other Risks and Mitigations",
+        "original_name": "Trial-specific Other Risks and Mitigations",
+        "optional": true,
+        "section_number": "2.2.1",
+        "section_title": "Risk Summary and Mitigation Strategy",
+        "instructions": []
+    },
+    "Benefit Summary": {
+        "long_name": "Enter Benefit Summary",
+        "short_name": "Benefit Summary",
+        "original_name": "Benefit Summary",
+        "optional": true,
+        "section_number": "2.2.2",
+        "section_title": "Benefit Summary",
+        "instructions": []
+    },
+    "Overall Risk-Benefit Assessment": {
+        "long_name": "Enter Overall Risk-Benefit Assessment",
+        "short_name": "Overall Risk-Benefit Assessment",
+        "original_name": "Overall Risk-Benefit Assessment",
+        "optional": false,
+        "section_number": "2.2.3",
+        "section_title": "Overall Risk-Benefit Assessment",
+        "instructions": []
+    },
+    "Primary Objective": {
+        "long_name": "Enter Primary Objective",
+        "short_name": "Primary Objective",
+        "original_name": "Primary Objective",
+        "optional": false,
+        "section_number": "3.1.1",
+        "section_title": "Primary Objective <#>",
+        "instructions": []
+    },
+    "Table of Estimand Characteristics including Endpoint at a minimum": {
+        "long_name": "Enter Table of Estimand Characteristics including Endpoint at a minimum",
+        "short_name": "Table of Estimand Characteristics including Endpoint at a minimum",
+        "original_name": "Table of Estimand Characteristics including Endpoint at a minimum",
+        "optional": false,
+        "section_number": "3.1.1",
+        "section_title": "Primary Objective <#>",
+        "instructions": []
+    },
+    "Population": {
+        "long_name": "Enter Population",
+        "short_name": "Population",
+        "original_name": "Population",
+        "optional": false,
+        "section_number": "3.1.1",
+        "section_title": "Primary Objective <#>",
+        "instructions": []
+    },
+    "Treatment": {
+        "long_name": "Enter Treatment",
+        "short_name": "Treatment",
+        "original_name": "Treatment",
+        "optional": false,
+        "section_number": "3.1.1",
+        "section_title": "Primary Objective <#>",
+        "instructions": []
+    },
+    "Endpoint": {
+        "long_name": "Enter Endpoint",
+        "short_name": "Endpoint",
+        "original_name": "Endpoint",
+        "optional": false,
+        "section_number": "3.1.1",
+        "section_title": "Primary Objective <#>",
+        "instructions": []
+    },
+    "Population Level Summary": {
+        "long_name": "Enter Population-level Summary",
+        "short_name": "Population Level Summary",
+        "original_name": "Population-level Summary",
+        "optional": false,
+        "section_number": "3.1.1",
+        "section_title": "Primary Objective <#>",
+        "instructions": []
+    },
+    "Description of Intercurrent Event": {
+        "long_name": "Enter Description of Intercurrent Event",
+        "short_name": "Description of Intercurrent Event",
+        "original_name": "Description of Intercurrent Event",
+        "optional": false,
+        "section_number": "3.1.1",
+        "section_title": "Primary Objective <#>",
+        "instructions": []
+    },
+    "Intercurrent Event 1 Strategy": {
+        "long_name": "Enter Intercurrent Event 1 Strategy",
+        "short_name": "Intercurrent Event 1 Strategy",
+        "original_name": "Intercurrent Event 1 Strategy",
+        "optional": false,
+        "section_number": "3.1.1",
+        "section_title": "Primary Objective <#>",
+        "instructions": []
+    },
+    "Secondary Objective": {
+        "long_name": "Enter Secondary Objective",
+        "short_name": "Secondary Objective",
+        "original_name": "Secondary Objective",
+        "optional": false,
+        "section_number": "3.2.1",
+        "section_title": "{Secondary Objective}",
+        "instructions": []
+    },
+    "Table of Estimand Characteristics including Endpoint at a minimum 3": {
+        "long_name": "Enter Table of Estimand Characteristics including Endpoint at a minimum",
+        "short_name": "Table of Estimand Characteristics including Endpoint at a minimum 3",
+        "original_name": "Table of Estimand Characteristics including Endpoint at a minimum",
+        "optional": false,
+        "section_number": "3.2.1",
+        "section_title": "{Secondary Objective}",
+        "instructions": []
+    },
+    "Exploratory Objective": {
+        "long_name": "Enter Exploratory Objective",
+        "short_name": "Exploratory Objective",
+        "original_name": "Exploratory Objective",
+        "optional": false,
+        "section_number": "3.3.1",
+        "section_title": "{Exploratory Objective}",
+        "instructions": []
+    },
+    "Table of Estimand Characteristics including endpoint at a minimum": {
+        "long_name": "Enter Table of Estimand Characteristics including endpoint at a minimum",
+        "short_name": "Table of Estimand Characteristics including endpoint at a minimum",
+        "original_name": "Table of Estimand Characteristics including endpoint at a minimum",
+        "optional": false,
+        "section_number": "3.3.1",
+        "section_title": "{Exploratory Objective}",
+        "instructions": []
+    },
+    "Overall Description of Trial Design and Description of Intervention Model": {
+        "long_name": "Enter Overall Description of Trial Design and Description of Intervention Model",
+        "short_name": "Overall Description of Trial Design and Description of Intervention Model",
+        "original_name": "Overall Description of Trial Design and Description of Intervention Model",
+        "optional": true,
+        "section_number": "4.1",
+        "section_title": "Description of Trial Design",
+        "instructions": []
+    },
+    "Description of Trial Duration": {
+        "long_name": "Enter Description of Trial Duration",
+        "short_name": "Description of Trial Duration",
+        "original_name": "Description of Trial Duration",
+        "optional": true,
+        "section_number": "4.1",
+        "section_title": "Description of Trial Design",
+        "instructions": []
+    },
+    "Method of Assignment to Trial Intervention": {
+        "long_name": "Enter Method of Assignment to Trial Intervention",
+        "short_name": "Method of Assignment to Trial Intervention",
+        "original_name": "Method of Assignment to Trial Intervention",
+        "optional": true,
+        "section_number": "4.1",
+        "section_title": "Description of Trial Design",
+        "instructions": []
+    },
+    "Description of Level and Method of Blinding": {
+        "long_name": "Enter Description of Level and Method of Blinding",
+        "short_name": "Description of Level and Method of Blinding",
+        "original_name": "Description of Level and Method of Blinding",
+        "optional": true,
+        "section_number": "4.1",
+        "section_title": "Description of Trial Design",
+        "instructions": [
+            "Describe any other important aspects of the design, e.g.:",
+            "geographic scope of trial (e.g., single-centre, multi-centre, or multi-centre and multi-national)",
+            "use of decentralised processes, tools, or features in the trial",
+            "planned use of a Data Monitoring Committee, or similar review group and cross reference Section 11.4 Committees, for details ",
+            "whether an interim analysis is planned; if so, refer to details in Section 10.9 Interim Analyses",
+            "any planned extension trial, long-term follow-up/registry, planned future use of samples or data, or post-trial sample analysis or other data-related activities"
+        ]
+    },
+    "Additional Description of Trial Design": {
+        "long_name": "Enter Additional Description of Trial Design",
+        "short_name": "Additional Description of Trial Design",
+        "original_name": "Additional Description of Trial Design",
+        "optional": true,
+        "section_number": "4.1",
+        "section_title": "Description of Trial Design",
+        "instructions": []
+    },
+    "Stakeholder Input into Design": {
+        "long_name": "Enter Stakeholder Input into Design",
+        "short_name": "Stakeholder Input into Design",
+        "original_name": "Stakeholder Input into Design",
+        "optional": false,
+        "section_number": "4.1.1",
+        "section_title": "Stakeholder Input into Design",
+        "instructions": []
+    },
+    "Overall Rationale for Trial Design": {
+        "long_name": "Enter Overall Rationale for Trial Design",
+        "short_name": "Overall Rationale for Trial Design",
+        "original_name": "Overall Rationale for Trial Design",
+        "optional": true,
+        "section_number": "4.2",
+        "section_title": "Rationale for Trial Design",
+        "instructions": [
+            "OR"
+        ]
+    },
+    "Rationale for Estimands": {
+        "long_name": "Enter Rationale for Estimand(s)",
+        "short_name": "Rationale for Estimands",
+        "original_name": "Rationale for Estimand(s)",
+        "optional": false,
+        "section_number": "4.2.1",
+        "section_title": "Rationale for Estimand(s)",
+        "instructions": []
+    },
+    "Rationale for Intervention Model": {
+        "long_name": "Enter Rationale for Intervention Model",
+        "short_name": "Rationale for Intervention Model",
+        "original_name": "Rationale for Intervention Model",
+        "optional": false,
+        "section_number": "4.2.2",
+        "section_title": "Rationale for Intervention Model",
+        "instructions": []
+    },
+    "Rationale for Control Type": {
+        "long_name": "Enter Rationale for Control Type",
+        "short_name": "Rationale for Control Type",
+        "original_name": "Rationale for Control Type",
+        "optional": false,
+        "section_number": "4.2.3",
+        "section_title": "Rationale for Control Type",
+        "instructions": []
+    },
+    "Rationale for Duration": {
+        "long_name": "Enter Rationale for Duration",
+        "short_name": "Rationale for Duration",
+        "original_name": "Rationale for Duration",
+        "optional": false,
+        "section_number": "4.2.4",
+        "section_title": "Rationale for Trial Duration",
+        "instructions": []
+    },
+    "Rationale for Adaptive or Novel Trial Design": {
+        "long_name": "Enter Rationale for Adaptive or Novel Trial Design",
+        "short_name": "Rationale for Adaptive or Novel Trial Design",
+        "original_name": "Rationale for Adaptive or Novel Trial Design",
+        "optional": false,
+        "section_number": "4.2.5",
+        "section_title": "Rationale for Adaptive or Novel Trial Design",
+        "instructions": []
+    },
+    "Rationale for Interim Analysis": {
+        "long_name": "Enter Rationale for Interim Analysis",
+        "short_name": "Rationale for Interim Analysis",
+        "original_name": "Rationale for Interim Analysis",
+        "optional": false,
+        "section_number": "4.2.6",
+        "section_title": "Rationale for Interim Analysis",
+        "instructions": []
+    },
+    "Rationale for Other Trial Design Aspects": {
+        "long_name": "Enter Rationale for Other Trial Design Aspects",
+        "short_name": "Rationale for Other Trial Design Aspects",
+        "original_name": "Rationale for Other Trial Design Aspects",
+        "optional": false,
+        "section_number": "4.2.7",
+        "section_title": "Rationale for Other Trial Design Aspects",
+        "instructions": []
+    },
+    "Trial Stopping Rules": {
+        "long_name": "Enter Trial Stopping Rules",
+        "short_name": "Trial Stopping Rules",
+        "original_name": "Trial Stopping Rules",
+        "optional": false,
+        "section_number": "4.3",
+        "section_title": "Trial Stopping Rules",
+        "instructions": []
+    },
+    "Start of Trial": {
+        "long_name": "Enter Start of Trial",
+        "short_name": "Start of Trial",
+        "original_name": "Start of Trial",
+        "optional": false,
+        "section_number": "4.4",
+        "section_title": "Start of Trial and End of Trial",
+        "instructions": []
+    },
+    "End of Trial": {
+        "long_name": "Enter End of Trial",
+        "short_name": "End of Trial",
+        "original_name": "End of Trial",
+        "optional": false,
+        "section_number": "4.4",
+        "section_title": "Start of Trial and End of Trial",
+        "instructions": []
+    },
+    "Access to Trial Intervention after End of Trial": {
+        "long_name": "Enter Access to Trial Intervention after End of Trial",
+        "short_name": "Access to Trial Intervention after End of Trial",
+        "original_name": "Access to Trial Intervention after End of Trial",
+        "optional": false,
+        "section_number": "4.5",
+        "section_title": "Access to Trial Intervention After End of Trial",
+        "instructions": []
+    },
+    "Description of Trial Population and Rationale": {
+        "long_name": "Enter Description of Trial Population and Rationale",
+        "short_name": "Description of Trial Population and Rationale",
+        "original_name": "Description of Trial Population and Rationale",
+        "optional": false,
+        "section_number": "5.1",
+        "section_title": "Description of Trial Population and Rationale",
+        "instructions": []
+    },
+    "Inclusion Criterion Number": {
+        "long_name": "#",
+        "short_name": "Inclusion Criterion Number",
+        "original_name": "#",
+        "optional": true,
+        "section_number": "5.2",
+        "section_title": "Inclusion Criteria",
+        "instructions": [
+            "Add criteria as needed. Consider numbering the criteria sequentially."
+        ]
+    },
+    "Inclusion Criterion": {
+        "long_name": "Inclusion Criterion",
+        "short_name": "Inclusion Criterion",
+        "original_name": "Inclusion Criterion",
+        "optional": false,
+        "section_number": "5.2",
+        "section_title": "Inclusion Criteria",
+        "instructions": [
+            "Add criteria as needed. Consider numbering the criteria sequentially."
+        ]
+    },
+    "Exclusion Criterion Number": {
+        "long_name": "#",
+        "short_name": "Exclusion Criterion Number",
+        "original_name": "#",
+        "optional": true,
+        "section_number": "5.3",
+        "section_title": "Exclusion Criteria",
+        "instructions": [
+            "Add criteria as needed. Consider numbering the criteria sequentially."
+        ]
+    },
+    "Exclusion Criterion": {
+        "long_name": "Exclusion Criterion",
+        "short_name": "Exclusion Criterion",
+        "original_name": "Exclusion Criterion",
+        "optional": false,
+        "section_number": "5.3",
+        "section_title": "Exclusion Criteria",
+        "instructions": [
+            "Add criteria as needed. Consider numbering the criteria sequentially."
+        ]
+    },
+    "Definitions Related to Childbearing Potential": {
+        "long_name": "Enter Definitions Related to Childbearing Potential ",
+        "short_name": "Definitions Related to Childbearing Potential",
+        "original_name": "Definitions Related to Childbearing Potential ",
+        "optional": false,
+        "section_number": "5.4.1",
+        "section_title": "Definitions Related to Childbearing Potential",
+        "instructions": []
+    },
+    "Contraception Requirements": {
+        "long_name": "Enter Contraception Requirements.",
+        "short_name": "Contraception Requirements",
+        "original_name": "Contraception Requirements.",
+        "optional": false,
+        "section_number": "5.4.2",
+        "section_title": "Contraception Requirements",
+        "instructions": []
+    },
+    "Lifestyle Restrictions": {
+        "long_name": "Enter Lifestyle Restrictions",
+        "short_name": "Lifestyle Restrictions",
+        "original_name": "Lifestyle Restrictions",
+        "optional": false,
+        "section_number": "5.5",
+        "section_title": "Lifestyle Restrictions",
+        "instructions": []
+    },
+    "Meals and Dietary Restrictions": {
+        "long_name": "Enter Meals and Dietary Restrictions",
+        "short_name": "Meals and Dietary Restrictions",
+        "original_name": "Meals and Dietary Restrictions",
+        "optional": false,
+        "section_number": "5.5.1",
+        "section_title": "Meals and Dietary Restrictions",
+        "instructions": []
+    },
+    "Caffeine Alcohol Tobacco and Other Restrictions": {
+        "long_name": "Enter Caffeine, Alcohol, Tobacco, and Other Restrictions",
+        "short_name": "Caffeine Alcohol Tobacco and Other Restrictions",
+        "original_name": "Caffeine, Alcohol, Tobacco, and Other Restrictions",
+        "optional": false,
+        "section_number": "5.5.2",
+        "section_title": "Caffeine, Alcohol, Tobacco, and Other Restrictions",
+        "instructions": []
+    },
+    "Physical Activity Restrictions": {
+        "long_name": "Enter Physical Activity Restrictions",
+        "short_name": "Physical Activity Restrictions",
+        "original_name": "Physical Activity Restrictions",
+        "optional": false,
+        "section_number": "5.5.3",
+        "section_title": "Physical Activity Restrictions",
+        "instructions": []
+    },
+    "Other Activity Restrictions": {
+        "long_name": "Enter Other Activity Restrictions",
+        "short_name": "Other Activity Restrictions",
+        "original_name": "Other Activity Restrictions",
+        "optional": false,
+        "section_number": "5.5.4",
+        "section_title": "Other Activity Restrictions",
+        "instructions": []
+    },
+    "Screen Failure": {
+        "long_name": "Enter Screen Failure",
+        "short_name": "Screen Failure",
+        "original_name": "Screen Failure",
+        "optional": false,
+        "section_number": "5.6",
+        "section_title": "Screen Failure and Rescreening",
+        "instructions": []
+    },
+    "Rescreening": {
+        "long_name": "Enter Rescreening",
+        "short_name": "Rescreening",
+        "original_name": "Rescreening",
+        "optional": false,
+        "section_number": "5.6",
+        "section_title": "Screen Failure and Rescreening",
+        "instructions": []
+    },
+    "description of the overview of trial interventions or a heading for the optional table below": {
+        "long_name": "Enter description of the overview of trial interventions or a heading for the optional table below",
+        "short_name": "description of the overview of trial interventions or a heading for the optional table below",
+        "original_name": "description of the overview of trial interventions or a heading for the optional table below",
+        "optional": false,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Arm Name": {
+        "long_name": "Enter Arm Name",
+        "short_name": "Arm Name",
+        "original_name": "Arm Name",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Arm Type": {
+        "long_name": "Select Arm Type",
+        "short_name": "Arm Type",
+        "original_name": "Select Arm Type",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Intervention Name": {
+        "long_name": "Enter Intervention Name",
+        "short_name": "Intervention Name",
+        "original_name": "Intervention Name",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Intervention Type": {
+        "long_name": "Select Intervention Type",
+        "short_name": "Intervention Type",
+        "original_name": "Select Intervention Type",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Pharmaceutical Dose Formulation": {
+        "long_name": "Select Pharmaceutical Dose Form",
+        "short_name": "Pharmaceutical Dose Formulation",
+        "original_name": "Select Pharmaceutical Dose Form",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Dosage Strengths": {
+        "long_name": "Enter Dosage Strength(s)",
+        "short_name": "Dosage Strengths",
+        "original_name": "Dosage Strength(s)",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Dosage Levels": {
+        "long_name": "Enter Dosage Level(s)",
+        "short_name": "Dosage Levels",
+        "original_name": "Dosage Level(s)",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Route of Administration": {
+        "long_name": "Select Route of Administration",
+        "short_name": "Route of Administration",
+        "original_name": "Select Route of Administration",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Regimen-Treatment Period-Vaccination Regimen": {
+        "long_name": "Enter Regimen/Treatment Period/Vaccination Regimen",
+        "short_name": "Regimen-Treatment Period-Vaccination Regimen",
+        "original_name": "Regimen/Treatment Period/Vaccination Regimen",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Use": {
+        "long_name": "Select Use",
+        "short_name": "Use",
+        "original_name": "Select Use",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "IMP or NIMP": {
+        "long_name": "Select IMP or NIMP",
+        "short_name": "IMP or NIMP",
+        "original_name": "Select IMP or NIMP",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Sourcing": {
+        "long_name": "Select Sourcing",
+        "short_name": "Sourcing",
+        "original_name": "Select Sourcing",
+        "optional": true,
+        "section_number": "6",
+        "section_title": "Trial Intervention And Concomitant Therapy",
+        "instructions": []
+    },
+    "Description of Investigational Trial Intervention": {
+        "long_name": "Enter Description of Investigational Trial Intervention",
+        "short_name": "Description of Investigational Trial Intervention",
+        "original_name": "Description of Investigational Trial Intervention",
+        "optional": false,
+        "section_number": "6.1",
+        "section_title": "Description of Investigational Trial Intervention",
+        "instructions": []
+    },
+    "Rationale for Investigational Trial Intervention Dose and Regimen": {
+        "long_name": "Enter Rationale for Investigational Trial Intervention Dose and Regimen",
+        "short_name": "Rationale for Investigational Trial Intervention Dose and Regimen",
+        "original_name": "Rationale for Investigational Trial Intervention Dose and Regimen",
+        "optional": false,
+        "section_number": "6.2",
+        "section_title": "Rationale for Investigational Trial Intervention Dose and Regimen",
+        "instructions": []
+    },
+    "Investigational Trial Intervention Administration": {
+        "long_name": "Enter Investigational Trial Intervention Administration",
+        "short_name": "Investigational Trial Intervention Administration",
+        "original_name": "Investigational Trial Intervention Administration",
+        "optional": false,
+        "section_number": "6.3",
+        "section_title": "Investigational Trial Intervention Administration",
+        "instructions": []
+    },
+    "Investigational Trial Intervention Dose Modification": {
+        "long_name": "Enter Investigational Trial Intervention Dose Modification",
+        "short_name": "Investigational Trial Intervention Dose Modification",
+        "original_name": "Investigational Trial Intervention Dose Modification",
+        "optional": false,
+        "section_number": "6.4",
+        "section_title": "Investigational Trial Intervention Dose Modification",
+        "instructions": []
+    },
+    "Management of Investigational Trial Intervention Overdose": {
+        "long_name": "Enter Management of Investigational Trial Intervention Overdose",
+        "short_name": "Management of Investigational Trial Intervention Overdose",
+        "original_name": "Management of Investigational Trial Intervention Overdose",
+        "optional": false,
+        "section_number": "6.5",
+        "section_title": "Management of Investigational Trial Intervention Overdose",
+        "instructions": []
+    },
+    "Preparation of Investigational Trial Intervention": {
+        "long_name": "Enter Preparation of Investigational Trial Intervention ",
+        "short_name": "Preparation of Investigational Trial Intervention",
+        "original_name": "Preparation of Investigational Trial Intervention ",
+        "optional": false,
+        "section_number": "6.6.1",
+        "section_title": "{Preparation of Investigational Trial Intervention}",
+        "instructions": []
+    },
+    "Storage and Handling of Investigational Trial Intervention": {
+        "long_name": "Enter Storage and Handling of Investigational Trial Intervention",
+        "short_name": "Storage and Handling of Investigational Trial Intervention",
+        "original_name": "Storage and Handling of Investigational Trial Intervention",
+        "optional": false,
+        "section_number": "6.6.2",
+        "section_title": "Storage and Handling of Investigational Trial Intervention",
+        "instructions": []
+    },
+    "Accountability of Investigational Trial Intervention": {
+        "long_name": "Enter Accountability of Investigational Trial Intervention",
+        "short_name": "Accountability of Investigational Trial Intervention",
+        "original_name": "Accountability of Investigational Trial Intervention",
+        "optional": false,
+        "section_number": "6.6.3",
+        "section_title": "Accountability of Investigational Trial Intervention",
+        "instructions": []
+    },
+    "Participant Assignment to Investigational Trial Intervention": {
+        "long_name": "Enter Participant Assignment to Investigational Trial Intervention",
+        "short_name": "Participant Assignment to Investigational Trial Intervention",
+        "original_name": "Participant Assignment to Investigational Trial Intervention",
+        "optional": false,
+        "section_number": "6.7.1",
+        "section_title": "Participant Assignment to Investigational Trial Intervention",
+        "instructions": []
+    },
+    "Randomisation": {
+        "long_name": "Enter Randomisation",
+        "short_name": "Randomisation",
+        "original_name": "Randomisation",
+        "optional": false,
+        "section_number": "6.7.2",
+        "section_title": "{Randomisation}",
+        "instructions": []
+    },
+    "Measures to Maintain Blinding": {
+        "long_name": "Enter Measures to Maintain Blinding",
+        "short_name": "Measures to Maintain Blinding",
+        "original_name": "Measures to Maintain Blinding",
+        "optional": false,
+        "section_number": "6.7.3",
+        "section_title": "{Measures to Maintain Blinding}",
+        "instructions": []
+    },
+    "Emergency Unblinding at the Site": {
+        "long_name": "Enter Emergency Unblinding at the Site",
+        "short_name": "Emergency Unblinding at the Site",
+        "original_name": "Emergency Unblinding at the Site",
+        "optional": false,
+        "section_number": "6.7.4",
+        "section_title": "{Emergency Unblinding at the Site}",
+        "instructions": []
+    },
+    "Investigational Trial Intervention Adherence": {
+        "long_name": "Enter Investigational Trial Intervention Adherence",
+        "short_name": "Investigational Trial Intervention Adherence",
+        "original_name": "Investigational Trial Intervention Adherence",
+        "optional": false,
+        "section_number": "6.8",
+        "section_title": "Investigational Trial Intervention Adherence",
+        "instructions": []
+    },
+    "Description of Noninvestigational Trial Intervention": {
+        "long_name": "Enter Description of Noninvestigational Trial Intervention",
+        "short_name": "Description of Noninvestigational Trial Intervention",
+        "original_name": "Description of Noninvestigational Trial Intervention",
+        "optional": false,
+        "section_number": "6.9",
+        "section_title": "Description of Noninvestigational Trial Intervention",
+        "instructions": []
+    },
+    "Background Trial Intervention": {
+        "long_name": "Enter Background Trial Interventions",
+        "short_name": "Background Trial Intervention",
+        "original_name": "Background Trial Interventions",
+        "optional": false,
+        "section_number": "6.9.1",
+        "section_title": "{Background Trial Intervention}",
+        "instructions": []
+    },
+    "Rescue Therapy": {
+        "long_name": "Enter Rescue Therapy",
+        "short_name": "Rescue Therapy",
+        "original_name": "Rescue Therapy",
+        "optional": false,
+        "section_number": "6.9.2",
+        "section_title": "{Rescue Therapy}",
+        "instructions": []
+    },
+    "Other Noninvestigational Trial Intervention": {
+        "long_name": "Enter Other Noninvestigational Trial Intervention",
+        "short_name": "Other Noninvestigational Trial Intervention",
+        "original_name": "Other Noninvestigational Trial Intervention",
+        "optional": false,
+        "section_number": "6.9.3",
+        "section_title": "{Other Noninvestigational Trial Intervention}",
+        "instructions": []
+    },
+    "Concomitant Therapy": {
+        "long_name": "Enter Concomitant Therapy",
+        "short_name": "Concomitant Therapy",
+        "original_name": "Concomitant Therapy",
+        "optional": false,
+        "section_number": "6.10",
+        "section_title": "Concomitant Therapy",
+        "instructions": []
+    },
+    "Prohibited Concomitant Therapy": {
+        "long_name": "Enter Prohibited Concomitant Therapy",
+        "short_name": "Prohibited Concomitant Therapy",
+        "original_name": "Prohibited Concomitant Therapy",
+        "optional": false,
+        "section_number": "6.10.1",
+        "section_title": "{Prohibited Concomitant Therapy}",
+        "instructions": []
+    },
+    "Permitted Concomitant Therapy": {
+        "long_name": "Enter Permitted Concomitant Therapy",
+        "short_name": "Permitted Concomitant Therapy",
+        "original_name": "Permitted Concomitant Therapy",
+        "optional": false,
+        "section_number": "6.10.2",
+        "section_title": "{Permitted Concomitant Therapy}",
+        "instructions": []
+    },
+    "Permanent Discontinuation of Trial Intervention": {
+        "long_name": "Enter Permanent Discontinuation of Trial Intervention",
+        "short_name": "Permanent Discontinuation of Trial Intervention",
+        "original_name": "Permanent Discontinuation of Trial Intervention",
+        "optional": false,
+        "section_number": "7.1.1",
+        "section_title": "Permanent Discontinuation of Trial Intervention",
+        "instructions": []
+    },
+    "Temporary Discontinuation of Trial Intervention": {
+        "long_name": "Enter Temporary Discontinuation of Trial Intervention",
+        "short_name": "Temporary Discontinuation of Trial Intervention",
+        "original_name": "Temporary Discontinuation of Trial Intervention",
+        "optional": false,
+        "section_number": "7.1.2",
+        "section_title": "Temporary Discontinuation of Trial Intervention",
+        "instructions": []
+    },
+    "Rechallenge": {
+        "long_name": "Enter Rechallenge",
+        "short_name": "Rechallenge",
+        "original_name": "Rechallenge",
+        "optional": false,
+        "section_number": "7.1.3",
+        "section_title": "Rechallenge",
+        "instructions": []
+    },
+    "Participant Discontinuation or Withdrawal from Trial": {
+        "long_name": "Enter Participant Discontinuation or Withdrawal from Trial",
+        "short_name": "Participant Discontinuation or Withdrawal from Trial",
+        "original_name": "Participant Discontinuation or Withdrawal from Trial",
+        "optional": false,
+        "section_number": "7.2",
+        "section_title": "Participant Discontinuation or Withdrawal from the Trial",
+        "instructions": []
+    },
+    "Management of Loss to Follow-Up": {
+        "long_name": "Enter Management of Loss to Follow-Up",
+        "short_name": "Management of Loss to Follow-Up",
+        "original_name": "Management of Loss to Follow-Up",
+        "optional": false,
+        "section_number": "7.3",
+        "section_title": "Management of Loss to Follow-Up",
+        "instructions": []
+    },
+    "Trial Assessments and Procedures Considerations": {
+        "long_name": "Enter Trial Assessments and Procedures Considerations",
+        "short_name": "Trial Assessments and Procedures Considerations",
+        "original_name": "Trial Assessments and Procedures Considerations",
+        "optional": false,
+        "section_number": "8.1",
+        "section_title": "Trial Assessments and Procedures Considerations",
+        "instructions": []
+    },
+    "Screening Assessments and Procedures": {
+        "long_name": "Enter Screening Assessments and Procedures",
+        "short_name": "Screening Assessments and Procedures",
+        "original_name": "Screening Assessments and Procedures",
+        "optional": false,
+        "section_number": "8.2",
+        "section_title": "Screening/Baseline Assessments and Procedures",
+        "instructions": []
+    },
+    "Baseline Assessments and Procedures": {
+        "long_name": "Enter Baseline Assessments and Procedures",
+        "short_name": "Baseline Assessments and Procedures",
+        "original_name": "Baseline Assessments and Procedures",
+        "optional": false,
+        "section_number": "8.2",
+        "section_title": "Screening/Baseline Assessments and Procedures",
+        "instructions": []
+    },
+    "Efficacy Assessments and Procedures": {
+        "long_name": "Enter Efficacy Assessments and Procedures",
+        "short_name": "Efficacy Assessments and Procedures",
+        "original_name": "Efficacy Assessments and Procedures",
+        "optional": false,
+        "section_number": "8.3",
+        "section_title": "Efficacy Assessments and Procedures",
+        "instructions": []
+    },
+    "Safety Assessments and Procedures": {
+        "long_name": "Enter Safety Assessments and Procedures",
+        "short_name": "Safety Assessments and Procedures",
+        "original_name": "Safety Assessments and Procedures",
+        "optional": false,
+        "section_number": "8.4",
+        "section_title": "Safety Assessments and Procedures",
+        "instructions": []
+    },
+    "Physical Examination": {
+        "long_name": "Enter Physical Examination",
+        "short_name": "Physical Examination",
+        "original_name": "Physical Examination",
+        "optional": false,
+        "section_number": "8.4.1",
+        "section_title": "{Physical Examination}",
+        "instructions": []
+    },
+    "Vital Signs": {
+        "long_name": "Enter Vital Signs",
+        "short_name": "Vital Signs",
+        "original_name": "Vital Signs",
+        "optional": false,
+        "section_number": "8.4.2",
+        "section_title": "{Vital Signs}",
+        "instructions": []
+    },
+    "Electrocardiograms": {
+        "long_name": "Enter Electrocardiograms",
+        "short_name": "Electrocardiograms",
+        "original_name": "Electrocardiograms",
+        "optional": false,
+        "section_number": "8.4.3",
+        "section_title": "{Electrocardiograms}",
+        "instructions": []
+    },
+    "Clinical Safety Laboratory Assessments": {
+        "long_name": "Enter Clinical Laboratory Assessments",
+        "short_name": "Clinical Safety Laboratory Assessments",
+        "original_name": "Clinical Laboratory Assessments",
+        "optional": false,
+        "section_number": "8.4.4",
+        "section_title": "{Clinical Laboratory Assessments}",
+        "instructions": []
+    },
+    "Pregnancy Testing": {
+        "long_name": "Enter Pregnancy Testing",
+        "short_name": "Pregnancy Testing",
+        "original_name": "Pregnancy Testing",
+        "optional": false,
+        "section_number": "8.4.5",
+        "section_title": "{Pregnancy Testing}",
+        "instructions": []
+    },
+    "Suicidal Ideation and Behaviour Risk Monitoring": {
+        "long_name": "Enter Suicidal Ideation and Behaviour Risk Monitoring",
+        "short_name": "Suicidal Ideation and Behaviour Risk Monitoring",
+        "original_name": "Suicidal Ideation and Behaviour Risk Monitoring",
+        "optional": false,
+        "section_number": "8.4.6",
+        "section_title": "{Suicidal Ideation and Behaviour Risk Monitoring}",
+        "instructions": []
+    },
+    "Pharmacokinetics": {
+        "long_name": "Enter Pharmacokinetics",
+        "short_name": "Pharmacokinetics",
+        "original_name": "Pharmacokinetics",
+        "optional": false,
+        "section_number": "8.5",
+        "section_title": "Pharmacokinetics",
+        "instructions": []
+    },
+    "Genetics and Pharmacogenomics": {
+        "long_name": "Enter Genetics and Pharmacogenomics",
+        "short_name": "Genetics and Pharmacogenomics",
+        "original_name": "Genetics and Pharmacogenomics",
+        "optional": false,
+        "section_number": "8.6.1",
+        "section_title": "Genetics and Pharmacogenomics",
+        "instructions": []
+    },
+    "Pharmacodynamic Biomarkers": {
+        "long_name": "Enter Pharmacodynamic Biomarkers",
+        "short_name": "Pharmacodynamic Biomarkers",
+        "original_name": "Pharmacodynamic Biomarkers",
+        "optional": false,
+        "section_number": "8.6.2",
+        "section_title": "Pharmacodynamic Biomarkers",
+        "instructions": []
+    },
+    "Other Biomarkers": {
+        "long_name": "Enter Other Biomarkers",
+        "short_name": "Other Biomarkers",
+        "original_name": "Other Biomarkers",
+        "optional": false,
+        "section_number": "8.6.3",
+        "section_title": "{Other Biomarkers}",
+        "instructions": []
+    },
+    "Immunogenicity Assessments": {
+        "long_name": "Enter Immunogenicity Assessments",
+        "short_name": "Immunogenicity Assessments",
+        "original_name": "Immunogenicity Assessments",
+        "optional": false,
+        "section_number": "8.7",
+        "section_title": "Immunogenicity Assessments",
+        "instructions": []
+    },
+    "Medical Resource Utilisation and Health Economics": {
+        "long_name": "Enter Medical Resource Utilisation and Health Economics",
+        "short_name": "Medical Resource Utilisation and Health Economics",
+        "original_name": "Medical Resource Utilisation and Health Economics",
+        "optional": false,
+        "section_number": "8.8",
+        "section_title": "Medical Resource Utilisation and Health Economics",
+        "instructions": []
+    },
+    "Definitions of Adverse Events": {
+        "long_name": "Enter Definitions of Adverse Events",
+        "short_name": "Definitions of Adverse Events",
+        "original_name": "Definitions of Adverse Events",
+        "optional": false,
+        "section_number": "9.1.1",
+        "section_title": "Definitions of Adverse Events",
+        "instructions": []
+    },
+    "Definitions of Serious Adverse Events": {
+        "long_name": "Enter Definitions of Serious Adverse Events",
+        "short_name": "Definitions of Serious Adverse Events",
+        "original_name": "Definitions of Serious Adverse Events",
+        "optional": false,
+        "section_number": "9.1.2",
+        "section_title": "Definitions of Serious Adverse Events",
+        "instructions": []
+    },
+    "Definition of Product Complaints": {
+        "long_name": "Enter Definitions of Product Complaints",
+        "short_name": "Definition of Product Complaints",
+        "original_name": "Definitions of Product Complaints",
+        "optional": false,
+        "section_number": "9.1.3",
+        "section_title": "Definitions of Product Complaints",
+        "instructions": []
+    },
+    "Definition of Medical Device Product Complaints": {
+        "long_name": "Enter Definition of Medical Device Product Complaints",
+        "short_name": "Definition of Medical Device Product Complaints",
+        "original_name": "Definition of Medical Device Product Complaints",
+        "optional": false,
+        "section_number": "9.1.3.1",
+        "section_title": "{Definition of Medical Device Product Complaints}",
+        "instructions": []
+    },
+    "Event Type": {
+        "long_name": "Event Type",
+        "short_name": "Event Type",
+        "original_name": "Event Type",
+        "optional": true,
+        "section_number": "9.2",
+        "section_title": "Timing and Procedures for Collection and Reporting",
+        "instructions": []
+    },
+    "Situational Scope": {
+        "long_name": "Situational Scope",
+        "short_name": "Situational Scope",
+        "original_name": "Situational Scope",
+        "optional": true,
+        "section_number": "9.2",
+        "section_title": "Timing and Procedures for Collection and Reporting",
+        "instructions": []
+    },
+    "Reportable Period Start": {
+        "long_name": "Reportable Period Start",
+        "short_name": "Reportable Period Start",
+        "original_name": "Reportable Period Start",
+        "optional": true,
+        "section_number": "9.2",
+        "section_title": "Timing and Procedures for Collection and Reporting",
+        "instructions": []
+    },
+    "Reportable Period End": {
+        "long_name": "Reportable Period End",
+        "short_name": "Reportable Period End",
+        "original_name": "Reportable Period End",
+        "optional": true,
+        "section_number": "9.2",
+        "section_title": "Timing and Procedures for Collection and Reporting",
+        "instructions": []
+    },
+    "Timing for Reporting to Sponsor or Designee": {
+        "long_name": "Timing for reporting to Sponsor or Designee",
+        "short_name": "Timing for Reporting to Sponsor or Designee",
+        "original_name": "Timing for reporting to Sponsor or Designee",
+        "optional": true,
+        "section_number": "9.2",
+        "section_title": "Timing and Procedures for Collection and Reporting",
+        "instructions": []
+    },
+    "Method for Reporting": {
+        "long_name": "Method for Reporting",
+        "short_name": "Method for Reporting",
+        "original_name": "Method for Reporting",
+        "optional": true,
+        "section_number": "9.2",
+        "section_title": "Timing and Procedures for Collection and Reporting",
+        "instructions": []
+    },
+    "Backup Method for Reporting": {
+        "long_name": "Backup Method for Reporting",
+        "short_name": "Backup Method for Reporting",
+        "original_name": "Backup Method for Reporting",
+        "optional": true,
+        "section_number": "9.2",
+        "section_title": "Timing and Procedures for Collection and Reporting",
+        "instructions": []
+    },
+    "Event Collection and Reporting Timing": {
+        "long_name": "Enter Event Collection and Reporting Timing",
+        "short_name": "Event Collection and Reporting Timing",
+        "original_name": "Event Collection and Reporting Timing",
+        "optional": false,
+        "section_number": "9.2.1",
+        "section_title": "Timing",
+        "instructions": []
+    },
+    "Identification": {
+        "long_name": "Enter Identification",
+        "short_name": "Identification",
+        "original_name": "Identification",
+        "optional": false,
+        "section_number": "9.2.2",
+        "section_title": "Collection Procedures",
+        "instructions": []
+    },
+    "Severity": {
+        "long_name": "Enter Severity",
+        "short_name": "Severity",
+        "original_name": "Severity",
+        "optional": false,
+        "section_number": "9.2.2",
+        "section_title": "Collection Procedures",
+        "instructions": []
+    },
+    "Causality": {
+        "long_name": "Enter Causality",
+        "short_name": "Causality",
+        "original_name": "Causality",
+        "optional": false,
+        "section_number": "9.2.2",
+        "section_title": "Collection Procedures",
+        "instructions": []
+    },
+    "Recording": {
+        "long_name": "Enter Recording",
+        "short_name": "Recording",
+        "original_name": "Recording",
+        "optional": false,
+        "section_number": "9.2.2",
+        "section_title": "Collection Procedures",
+        "instructions": []
+    },
+    "Follow-up": {
+        "long_name": "Enter Follow-up",
+        "short_name": "Follow-up",
+        "original_name": "Follow-up",
+        "optional": false,
+        "section_number": "9.2.2",
+        "section_title": "Collection Procedures",
+        "instructions": []
+    },
+    "Reporting": {
+        "long_name": "Enter Reporting",
+        "short_name": "Reporting",
+        "original_name": "Reporting",
+        "optional": false,
+        "section_number": "9.2.3",
+        "section_title": "Reporting",
+        "instructions": []
+    },
+    "Regulatory Reporting Requirements": {
+        "long_name": "Enter Regulatory Reporting Requirements",
+        "short_name": "Regulatory Reporting Requirements",
+        "original_name": "Regulatory Reporting Requirements",
+        "optional": false,
+        "section_number": "9.2.3.1",
+        "section_title": "Regulatory Reporting Requirements",
+        "instructions": []
+    },
+    "Adverse Events of Special Interest or state Not applicable": {
+        "long_name": "Enter Adverse Events of Special Interest or state \u201cNot applicable\u201d",
+        "short_name": "Adverse Events of Special Interest or state Not applicable",
+        "original_name": "Adverse Events of Special Interest or state \u201cNot applicable\u201d",
+        "optional": false,
+        "section_number": "9.2.4",
+        "section_title": "Adverse Events of Special Interest",
+        "instructions": []
+    },
+    "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs": {
+        "long_name": "Enter Disease-related Events or Outcomes not Qualifying as AEs or SAEs",
+        "short_name": "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs",
+        "original_name": "Disease-related Events or Outcomes not Qualifying as AEs or SAEs",
+        "optional": false,
+        "section_number": "9.2.5",
+        "section_title": "Disease-related Events or Outcomes Not Qualifying as AEs or SAEs",
+        "instructions": []
+    },
+    "Participants Who Become Pregnant During the Trial": {
+        "long_name": "Enter Participants Who Become Pregnant During the Trial",
+        "short_name": "Participants Who Become Pregnant During the Trial",
+        "original_name": "Participants Who Become Pregnant During the Trial",
+        "optional": false,
+        "section_number": "9.3.1",
+        "section_title": "{Participants Who Become Pregnant During the Trial}",
+        "instructions": []
+    },
+    "Participants Whose Partners Become Pregnant During the Trial": {
+        "long_name": "Enter Participants Whose Partners Become Pregnant During the Trial",
+        "short_name": "Participants Whose Partners Become Pregnant During the Trial",
+        "original_name": "Participants Whose Partners Become Pregnant During the Trial",
+        "optional": false,
+        "section_number": "9.3.2",
+        "section_title": "{Participants Whose Partners Become Pregnant During the Trial}",
+        "instructions": []
+    },
+    "Special Safety Situations": {
+        "long_name": "Enter Special Safety Situations",
+        "short_name": "Special Safety Situations",
+        "original_name": "Special Safety Situations",
+        "optional": false,
+        "section_number": "9.4",
+        "section_title": "Special Safety Situations",
+        "instructions": []
+    },
+    "General Considerations": {
+        "long_name": "Enter General Considerations",
+        "short_name": "General Considerations",
+        "original_name": "General Considerations",
+        "optional": false,
+        "section_number": "10.1",
+        "section_title": "General Considerations",
+        "instructions": []
+    },
+    "Analysis Sets": {
+        "long_name": "Enter Analysis Sets",
+        "short_name": "Analysis Sets",
+        "original_name": "Analysis Sets",
+        "optional": false,
+        "section_number": "10.2",
+        "section_title": "Analysis Sets",
+        "instructions": []
+    },
+    "Analyses of Demographics and Other Baseline Variables": {
+        "long_name": "Enter Analyses of Demographics and Other Baseline Variables",
+        "short_name": "Analyses of Demographics and Other Baseline Variables",
+        "original_name": "Analyses of Demographics and Other Baseline Variables",
+        "optional": false,
+        "section_number": "10.3",
+        "section_title": "Analyses of Demographics and Other Baseline Variables",
+        "instructions": []
+    },
+    "Statistical Analysis Method": {
+        "long_name": "Enter Statistical Analysis Method",
+        "short_name": "Statistical Analysis Method",
+        "original_name": "Statistical Analysis Method",
+        "optional": false,
+        "section_number": "10.4.1.1",
+        "section_title": "Statistical Analysis Method",
+        "instructions": []
+    },
+    "Handling of Data in Relation to Primary Estimands": {
+        "long_name": "Enter Handling of Data in Relation to Primary Estimand(s)",
+        "short_name": "Handling of Data in Relation to Primary Estimands",
+        "original_name": "Handling of Data in Relation to Primary Estimand(s)",
+        "optional": false,
+        "section_number": "10.4.1.2",
+        "section_title": "Handling of Data in Relation to Primary Estimand(s)",
+        "instructions": []
+    },
+    "Handling of Missing Data in Relation to Primary Estimand": {
+        "long_name": "Enter Handling of Missing Data in Relation to Primary Estimand(s)",
+        "short_name": "Handling of Missing Data in Relation to Primary Estimand",
+        "original_name": "Handling of Missing Data in Relation to Primary Estimand(s)",
+        "optional": false,
+        "section_number": "10.4.1.3",
+        "section_title": "Handling of Missing Data in Relation to Primary Estimand(s)",
+        "instructions": []
+    },
+    "Sensitivity Analysis": {
+        "long_name": "Enter Sensitivity Analysis",
+        "short_name": "Sensitivity Analysis",
+        "original_name": "Sensitivity Analysis",
+        "optional": false,
+        "section_number": "10.4.1.4",
+        "section_title": "{Sensitivity Analysis}",
+        "instructions": []
+    },
+    "Supplementary Analysis": {
+        "long_name": "Enter Supplementary Analysis",
+        "short_name": "Supplementary Analysis",
+        "original_name": "Supplementary Analysis",
+        "optional": false,
+        "section_number": "10.4.1.5",
+        "section_title": "{Supplementary Analysis}",
+        "instructions": []
+    },
+    "Secondary Objectives Statistical Analysis Method": {
+        "long_name": "Enter Statistical Analysis Method",
+        "short_name": "Secondary Objectives Statistical Analysis Method",
+        "original_name": "Statistical Analysis Method",
+        "optional": false,
+        "section_number": "10.5.1.1",
+        "section_title": "{Statistical Analysis Method}",
+        "instructions": []
+    },
+    "Handling of Data in Relation to Secondary Estimands": {
+        "long_name": "Enter Handling of Data in Relation to Secondary Estimand(s)",
+        "short_name": "Handling of Data in Relation to Secondary Estimands",
+        "original_name": "Handling of Data in Relation to Secondary Estimand(s)",
+        "optional": false,
+        "section_number": "10.5.1.2",
+        "section_title": "{Handling of Data in Relation to Secondary Estimand(s)}",
+        "instructions": []
+    },
+    "Handling of Missing Data in Relation to Secondary Estimands": {
+        "long_name": "Enter Handling of Missing Data in Relation to Secondary Estimand(s)",
+        "short_name": "Handling of Missing Data in Relation to Secondary Estimands",
+        "original_name": "Handling of Missing Data in Relation to Secondary Estimand(s)",
+        "optional": false,
+        "section_number": "10.5.1.3",
+        "section_title": "{Handling of Missing Data in Relation to Secondary Estimand(s)}",
+        "instructions": []
+    },
+    "Secondary Objectives Sensitivity Analysis": {
+        "long_name": "Enter Sensitivity Analysis",
+        "short_name": "Secondary Objectives Sensitivity Analysis",
+        "original_name": "Sensitivity Analysis",
+        "optional": false,
+        "section_number": "10.5.1.4",
+        "section_title": "{Sensitivity Analysis}",
+        "instructions": []
+    },
+    "Secondary Objectives Supplementary Analysis": {
+        "long_name": "Enter Supplementary Analysis",
+        "short_name": "Secondary Objectives Supplementary Analysis",
+        "original_name": "Supplementary Analysis",
+        "optional": false,
+        "section_number": "10.5.1.5",
+        "section_title": "{Supplementary Analysis}",
+        "instructions": []
+    },
+    "Analysis Associated with Exploratory Objectives": {
+        "long_name": "Enter Analyses Associated with the Exploratory Objective(s)",
+        "short_name": "Analysis Associated with Exploratory Objectives",
+        "original_name": "Analyses Associated with the Exploratory Objective(s)",
+        "optional": false,
+        "section_number": "10.6",
+        "section_title": "Analyses Associated with the Exploratory Objective(s)",
+        "instructions": []
+    },
+    "Safety Analyses": {
+        "long_name": "Enter Safety Analyses",
+        "short_name": "Safety Analyses",
+        "original_name": "Safety Analyses",
+        "optional": false,
+        "section_number": "10.7",
+        "section_title": "Safety Analyses",
+        "instructions": []
+    },
+    "Other Analyses": {
+        "long_name": "Enter Other Analyses",
+        "short_name": "Other Analyses",
+        "original_name": "Other Analyses",
+        "optional": false,
+        "section_number": "10.8",
+        "section_title": "Other Analyses",
+        "instructions": []
+    },
+    "Interim Analyses": {
+        "long_name": "Enter Interim Analyses",
+        "short_name": "Interim Analyses",
+        "original_name": "Interim Analyses",
+        "optional": false,
+        "section_number": "10.9",
+        "section_title": "Interim Analyses",
+        "instructions": []
+    },
+    "Multiplicity Adjustments": {
+        "long_name": "Enter Multiplicity Adjustments",
+        "short_name": "Multiplicity Adjustments",
+        "original_name": "Multiplicity Adjustments",
+        "optional": false,
+        "section_number": "10.10",
+        "section_title": "Multiplicity Adjustments",
+        "instructions": []
+    },
+    "Sample Size Determination": {
+        "long_name": "Enter Sample Size Determination",
+        "short_name": "Sample Size Determination",
+        "original_name": "Sample Size Determination",
+        "optional": false,
+        "section_number": "10.11",
+        "section_title": "Sample Size Determination",
+        "instructions": []
+    },
+    "Regulatory and Ethical Considerations": {
+        "long_name": "Enter Regulatory and Ethical Considerations",
+        "short_name": "Regulatory and Ethical Considerations",
+        "original_name": "Regulatory and Ethical Considerations",
+        "optional": false,
+        "section_number": "11.1",
+        "section_title": "Regulatory and Ethical Considerations",
+        "instructions": []
+    },
+    "Trial Oversight": {
+        "long_name": "Enter Trial Oversight ",
+        "short_name": "Trial Oversight",
+        "original_name": "Trial Oversight ",
+        "optional": false,
+        "section_number": "11.2",
+        "section_title": "Trial Oversight",
+        "instructions": []
+    },
+    "Investigator Responsibilities": {
+        "long_name": "Enter Investigator Responsibilities",
+        "short_name": "Investigator Responsibilities",
+        "original_name": "Investigator Responsibilities",
+        "optional": false,
+        "section_number": "11.2.1",
+        "section_title": "Investigator Responsibilities",
+        "instructions": []
+    },
+    "Sponsor Responsibilities": {
+        "long_name": "Enter Sponsor Responsibilities",
+        "short_name": "Sponsor Responsibilities",
+        "original_name": "Sponsor Responsibilities",
+        "optional": true,
+        "section_number": "11.2.2",
+        "section_title": "Sponsor Responsibilities",
+        "instructions": []
+    },
+    "Description of Informed Consent Process": {
+        "long_name": "Enter Description of Informed Consent Process",
+        "short_name": "Description of Informed Consent Process",
+        "original_name": "Description of Informed Consent Process",
+        "optional": false,
+        "section_number": "11.3",
+        "section_title": "Informed Consent Process",
+        "instructions": []
+    },
+    "Description of Assent Process": {
+        "long_name": "Enter Description of Assent Process",
+        "short_name": "Description of Assent Process",
+        "original_name": "Description of Assent Process",
+        "optional": true,
+        "section_number": "11.3",
+        "section_title": "Informed Consent Process",
+        "instructions": [
+            "If enrollment in the trial may occur during an emergency in which the participant or their legally acceptable representative is not able or available to give consent, describe the consent process."
+        ]
+    },
+    "Description of Emergency Consent Process": {
+        "long_name": "Enter Description of Emergency Consent Process",
+        "short_name": "Description of Emergency Consent Process",
+        "original_name": "Description of Emergency Consent Process",
+        "optional": true,
+        "section_number": "11.3",
+        "section_title": "Informed Consent Process",
+        "instructions": []
+    },
+    "Informed Consent for Rescreening": {
+        "long_name": "Enter Informed Consent for Rescreening",
+        "short_name": "Informed Consent for Rescreening",
+        "original_name": "Informed Consent for Rescreening",
+        "optional": false,
+        "section_number": "11.3.1",
+        "section_title": "{Informed Consent for Rescreening}",
+        "instructions": []
+    },
+    "Informed Consent for Use of Remaining Samples in Exploratory Research": {
+        "long_name": "Enter Informed Consent for Use of Remaining Samples in Exploratory Research",
+        "short_name": "Informed Consent for Use of Remaining Samples in Exploratory Research",
+        "original_name": "Informed Consent for Use of Remaining Samples in Exploratory Research",
+        "optional": false,
+        "section_number": "11.3.2",
+        "section_title": "{Informed Consent for Use of Remaining Samples in Exploratory Research}",
+        "instructions": []
+    },
+    "Committees": {
+        "long_name": "Enter Committees",
+        "short_name": "Committees",
+        "original_name": "Committees",
+        "optional": false,
+        "section_number": "11.4",
+        "section_title": "Committees",
+        "instructions": []
+    },
+    "Insurance and Indemnity": {
+        "long_name": "Enter Insurance and Indemnity",
+        "short_name": "Insurance and Indemnity",
+        "original_name": "Insurance and Indemnity",
+        "optional": false,
+        "section_number": "11.5",
+        "section_title": "Insurance and Indemnity",
+        "instructions": []
+    },
+    "Risk-Based Quality Management": {
+        "long_name": "Enter Risk-Based Quality Management",
+        "short_name": "Risk-Based Quality Management",
+        "original_name": "Risk-Based Quality Management",
+        "optional": false,
+        "section_number": "11.6",
+        "section_title": "Risk-Based Quality Management",
+        "instructions": []
+    },
+    "Data Governance": {
+        "long_name": "Enter Data Governance",
+        "short_name": "Data Governance",
+        "original_name": "Data Governance",
+        "optional": false,
+        "section_number": "11.7",
+        "section_title": "Data Governance",
+        "instructions": []
+    },
+    "Data Protection": {
+        "long_name": "Enter Data Protection",
+        "short_name": "Data Protection",
+        "original_name": "Data Protection",
+        "optional": false,
+        "section_number": "11.8",
+        "section_title": "Data Protection",
+        "instructions": []
+    },
+    "Source Data Introduction": {
+        "long_name": "Enter Source Data Introduction",
+        "short_name": "Source Data Introduction",
+        "original_name": "Source Data Introduction",
+        "optional": false,
+        "section_number": "11.9",
+        "section_title": "Source Data",
+        "instructions": []
+    },
+    "Investigator Expectations for Source Data": {
+        "long_name": "Enter Investigator Expectations for Source Data",
+        "short_name": "Investigator Expectations for Source Data",
+        "original_name": "Investigator Expectations for Source Data",
+        "optional": false,
+        "section_number": "11.9",
+        "section_title": "Source Data",
+        "instructions": []
+    },
+    "Trial Monitor Expectations for Source Data": {
+        "long_name": "Enter Trial Monitor Expectations for Source Data",
+        "short_name": "Trial Monitor Expectations for Source Data",
+        "original_name": "Trial Monitor Expectations for Source Data",
+        "optional": false,
+        "section_number": "11.9",
+        "section_title": "Source Data",
+        "instructions": []
+    },
+    "Identification of Source Data": {
+        "long_name": "Enter Identification of Source Data",
+        "short_name": "Identification of Source Data",
+        "original_name": "Identification of Source Data",
+        "optional": false,
+        "section_number": "11.9",
+        "section_title": "Source Data",
+        "instructions": []
+    },
+    "Protocol Deviations": {
+        "long_name": "Enter Protocol Deviations",
+        "short_name": "Protocol Deviations",
+        "original_name": "Protocol Deviations",
+        "optional": false,
+        "section_number": "11.10",
+        "section_title": "Protocol Deviations",
+        "instructions": []
+    },
+    "Decision Rights for Site Closure": {
+        "long_name": "Enter Decision Rights for Site Closure",
+        "short_name": "Decision Rights for Site Closure",
+        "original_name": "Decision Rights for Site Closure",
+        "optional": false,
+        "section_number": "11.11",
+        "section_title": "Early Site Closure",
+        "instructions": []
+    },
+    "Criteria for Early Closure": {
+        "long_name": "Enter Criteria for Early Closure",
+        "short_name": "Criteria for Early Closure",
+        "original_name": "Criteria for Early Closure",
+        "optional": false,
+        "section_number": "11.11",
+        "section_title": "Early Site Closure",
+        "instructions": []
+    },
+    "Responsibilities Following Early Site Closure": {
+        "long_name": "Enter Responsibilities Following Early Site Closure",
+        "short_name": "Responsibilities Following Early Site Closure",
+        "original_name": "Responsibilities Following Early Site Closure",
+        "optional": false,
+        "section_number": "11.11",
+        "section_title": "Early Site Closure",
+        "instructions": []
+    },
+    "Data Dissemination": {
+        "long_name": "Enter Data Dissemination",
+        "short_name": "Data Dissemination",
+        "original_name": "Data Dissemination",
+        "optional": false,
+        "section_number": "11.12",
+        "section_title": "Data Dissemination",
+        "instructions": []
+    },
+    "Clinical Laboratory Tests": {
+        "long_name": "Enter Clinical Laboratory Tests",
+        "short_name": "Clinical Laboratory Tests",
+        "original_name": "Clinical Laboratory Tests",
+        "optional": false,
+        "section_number": "12.1",
+        "section_title": "Clinical Laboratory Tests",
+        "instructions": []
+    },
+    "Country-Region Identifier": {
+        "long_name": "Country/Region Identifier",
+        "short_name": "Country-Region Identifier",
+        "original_name": "Country/Region Identifier",
+        "optional": true,
+        "section_number": "12.2",
+        "section_title": "Country/Region-Specific Differences",
+        "instructions": []
+    },
+    "Country-Region Specific Requirements": {
+        "long_name": "Enter Country/Region Specific Requirements",
+        "short_name": "Country-Region Specific Requirements",
+        "original_name": "Country/Region Specific Requirements",
+        "optional": true,
+        "section_number": "12.2",
+        "section_title": "Country/Region-Specific Differences",
+        "instructions": []
+    },
+    "Country-Region Specific Protocol Clarifications": {
+        "long_name": "Enter Country/Region Specific Protocol Clarifications",
+        "short_name": "Country-Region Specific Protocol Clarifications",
+        "original_name": "Country/Region Specific Protocol Clarifications",
+        "optional": true,
+        "section_number": "12.2",
+        "section_title": "Country/Region-Specific Differences",
+        "instructions": []
+    },
+    "Prior Amendment Identifier": {
+        "long_name": "Enter Amendment Identifier",
+        "short_name": "Prior Amendment Identifier",
+        "original_name": "Amendment Identifier",
+        "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
+        "instructions": []
+    },
+    "Sponsor Approval Date": {
+        "long_name": "Enter Sponsor Approval Date",
+        "short_name": "Sponsor Approval Date",
+        "original_name": "Sponsor Approval Date",
+        "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
+        "instructions": []
+    },
+    "Previous Amendment Enrollment": {
+        "long_name": "Enter # or % enrolled globally/locally/per cohort",
+        "short_name": "Previous Amendment Enrollment",
+        "original_name": "# or % enrolled globally/locally/per cohort",
+        "optional": true,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
+        "instructions": []
+    },
+    "specify alternative location": {
+        "long_name": "specify alternative location",
+        "short_name": "specify alternative location",
+        "original_name": "specify alternative location",
+        "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
+        "instructions": [
+            "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first)."
+        ]
+    },
+    "Previous Amendment Number": {
+        "long_name": "enter amendment number",
+        "short_name": "Previous Amendment Number",
+        "original_name": "enter amendment number",
+        "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
+        "instructions": []
+    },
+    "Previous Amendment Date": {
+        "long_name": "enter date",
+        "short_name": "Previous Amendment Date",
+        "original_name": "enter date",
+        "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
+        "instructions": []
+    },
+    "Previous Amendment Overview Description of Change": {
+        "long_name": "Enter Description of Change",
+        "short_name": "Previous Amendment Overview Description of Change",
+        "original_name": "Description of Change",
+        "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
+        "instructions": []
+    },
+    "Previous Amendment Overview Brief Rationale for Change": {
+        "long_name": "Enter Brief Rationale for Change",
+        "short_name": "Previous Amendment Overview Brief Rationale for Change",
+        "original_name": "Brief Rationale for Change",
+        "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
+        "instructions": []
+    },
+    "Previous Amendment Overview Section": {
+        "long_name": "Enter Section # and Name of Change",
+        "short_name": "Previous Amendment Overview Section",
+        "original_name": "Section # and Name of Change",
+        "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendment(s)",
+        "instructions": []
+    },
+    "Previous Amendment Enrollment Scope": {
+        "long_name": "Previous Amendment Enrollment Scope",
+        "short_name": "Previous Amendment Enrollment Scope",
+        "original_name": "Previous Amendment Enrollment Scope",
+        "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendments",
+        "instructions": []
+    },
+    "Prior Protocol Amendments": {
+        "long_name": "Prior Protocol Amendments",
+        "short_name": "Prior Protocol Amendments",
+        "original_name": "Prior Protocol Amendments",
+        "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendments",
+        "instructions": []
+    },
+    "Country Region Not Applicable": {
+        "long_name": "Country Region Not Applicable",
+        "short_name": "Country Region Not Applicable",
+        "original_name": "Country Region Not Applicable",
+        "optional": false,
+        "section_number": "12.3",
+        "section_title": "Prior Protocol Amendments",
+        "instructions": []
+    },
+    "Glossary of Terms and Abbreviations": {
+        "long_name": "Enter Glossary of Terms and Abbreviations",
+        "short_name": "Glossary of Terms and Abbreviations",
+        "original_name": "Glossary of Terms and Abbreviations",
+        "optional": false,
+        "section_number": "13",
+        "section_title": "Appendix: Glossary of Terms and Abbreviations",
+        "instructions": []
+    },
+    "References": {
+        "long_name": "Enter References",
+        "short_name": "References",
+        "original_name": "References",
+        "optional": false,
+        "section_number": "14",
+        "section_title": "Appendix: References",
+        "instructions": []
+    }
+}
