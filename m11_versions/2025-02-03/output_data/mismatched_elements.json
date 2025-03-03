@@ -1,14 +1,5 @@
 {
     "template": {
-        "Secondary Reason Other": {
-            "long_name": "Secondary Reason Other",
-            "short_name": "Secondary Reason Other",
-            "original_name": "Secondary Reason Other",
-            "optional": false,
-            "section_number": "",
-            "section_title": "Title Page",
-            "instructions": []
-        },
         "Population Level Summary": {
             "long_name": "Enter Population-level Summary",
             "short_name": "Population Level Summary",

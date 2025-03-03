@@ -9218,5 +9218,29 @@
         "repeating": "Yes. number consecutively, repeatable for each exclusion criteria, if deleted do not replace, do not duplicate",
         "ct": [],
         "short_name": "Exclusion Criterion Number"
+    },
+    "Secondary Reason Other": {
+        "name": "Other description 2",
+        "data_type": "Text",
+        "definition": [
+            {
+                "c_code": "C17649",
+                "text": "Different than the one(s) previously specified or mentioned."
+            }
+        ],
+        "guidance": "Choose from the available categories as the primary reason and secondary reason(s) for the amendment. Select the closest match among the choices. Changes to primary estimand, endpoints, or related measures should be listed as a change of strategy. If none of the choices apply, choose \u201cother\u201d and provide a description. If no secondary reason, indicate \u201cnot applicable\u201d for the secondary reason.",
+        "conformance": "Conditional if Other is selected as a Valid Value",
+        "cardinality": "One to one",
+        "relationship": "Amendment Details",
+        "value": "Text",
+        "business_rules": {
+            "value_allowed": "Yes",
+            "relationship": "Heading, Secondary reason, Protocol Identifier, Protocol Amendment",
+            "concept": "C17649",
+            "other": ""
+        },
+        "repeating": "No",
+        "ct": [],
+        "short_name": "Secondary Reason Other"
     }
 }
