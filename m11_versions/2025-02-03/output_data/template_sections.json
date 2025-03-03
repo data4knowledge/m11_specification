@@ -131,8 +131,7 @@
             "Other Committees"
         ],
         "instructions": [
-            "Select one of the two options for total planned duration of trial intervention and trial participation for each participant. Note that the total duration of trial participation should include any washout and any follow-up periods in which the participant is not receiving trial intervention. When duration will vary, provide a short explanation (e.g., \u201cevent-driven\u201d or \u201cadaptive design",
-            "\u201d."
+            "Select one of the two options for total planned duration of trial intervention and trial participation for each participant. Note that the total duration of trial participation should include any washout and any follow-up periods in which the participant is not receiving trial intervention. When duration will vary, provide a short explanation (e.g., \u201cevent-driven\u201d or \u201cadaptive design\u201d."
         ]
     },
     "1.2": {
@@ -317,7 +316,7 @@
         "title": "Title Page",
         "number": "",
         "elements": [
-            "Rationale for Duration"
+            "Rationale for Trial Duration"
         ],
         "instructions": []
     },
@@ -1357,10 +1356,7 @@
             "Sponsor Approval Date",
             "specify alternative location",
             "enter amendment number",
-            "enter date",
-            "Description of Change",
-            "Brief Rationale for Change",
-            "Section # and Name of Change",
+            "enter sponsor approval date",
             "Description of Change",
             "Brief Rationale for Change",
             "Section # and Name of Change"

@@ -1,10 +1,9 @@
 import json
-import yaml
 from m11_template.m11_template import M11Template
 from m11_template.m11_technical import M11Technical
 from itertools import zip_longest
 
-version = "2025-01-17"
+version = "2025-02-03"
 template = M11Template(filepath=f"m11_versions/{version}/specification/m11-template-spec.docx")
 template.process()
 template.rename_elements(filepath=f"m11_versions/{version}/fix_data/template_renames.yaml")
@@ -14,6 +13,7 @@ template.order_elements()
 technical = M11Technical(filepath=f"m11_versions/{version}/specification/m11-technical-spec.docx")
 technical.process()
 technical.rename_elements(filepath=f"m11_versions/{version}/fix_data/technical_renames.yaml")
+technical.insert_elements(filepath=f"m11_versions/{version}/fix_data/technical_inserts.yaml")
 technical.delete_elements(filepath=f"m11_versions/{version}/fix_data/technical_deletes.yaml")
 
 with open(f"m11_versions/{version}/output_data/template_document.json", "w") as f:
@@ -66,7 +66,7 @@ text = "<table><tr><th>Template</th><th>Technical</th></tr>"
 blank1 = {'section_number': '', 'short_name': ''}
 blank2 = {'relationship': '', 'name': ''}
 for result in res:
-    
+ 
     temp = template.elements[result[0]] if result[0] else blank1
     tech = technical.elements[result[1]] if result[1] else blank2
     temp_text = f"{temp['section_number']}: {temp['short_name']}"

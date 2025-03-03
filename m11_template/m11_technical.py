@@ -91,12 +91,21 @@ class M11Technical:
 
     def delete_elements(self, filepath: str) -> None:
         with open(filepath, "r") as f:
-            insert_dict = yaml.safe_load(f)
-        for key, value in insert_dict.items():
+            delete_dict = yaml.safe_load(f)
+        for key, value in delete_dict.items():
             if key in self.elements:
                 self.elements.pop(key)
             else:
                 print(f"Technical delete not required: {key}")
+
+    def insert_elements(self, filepath: str) -> None:
+        with open(filepath, "r") as f:
+            insert_dict = yaml.safe_load(f)
+        for key, value in insert_dict.items():
+            if key not in self.elements:
+                self.elements[key] = value
+            else:
+                print(f"Technical insert not required: {key}")
 
     def _extract_data_elements(self, table: RawTable) -> list[dict]:
         result = []

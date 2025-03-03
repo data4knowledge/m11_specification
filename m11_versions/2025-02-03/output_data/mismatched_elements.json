@@ -1,12 +1,30 @@
 {
     "template": {
-        "Table of Estimand Characteristics including Endpoint at a minimum 3": {
+        "Secondary Reason Other": {
+            "long_name": "Secondary Reason Other",
+            "short_name": "Secondary Reason Other",
+            "original_name": "Secondary Reason Other",
+            "optional": false,
+            "section_number": "",
+            "section_title": "Title Page",
+            "instructions": []
+        },
+        "Population Level Summary": {
+            "long_name": "Enter Population-level Summary",
+            "short_name": "Population Level Summary",
+            "original_name": "Population-level Summary",
+            "optional": false,
+            "section_number": "3.1.1",
+            "section_title": "Primary Objective <#>",
+            "instructions": []
+        },
+        "Table of Estimand Characteristics including Endpoint at a minimum 2": {
             "long_name": "Enter Table of Estimand Characteristics including Endpoint at a minimum",
-            "short_name": "Table of Estimand Characteristics including Endpoint at a minimum 3",
+            "short_name": "Table of Estimand Characteristics including Endpoint at a minimum 2",
             "original_name": "Table of Estimand Characteristics including Endpoint at a minimum",
             "optional": false,
             "section_number": "3.2.1",
-            "section_title": "{Secondary Objective}",
+            "section_title": "{Secondary Objective <#>}",
             "instructions": []
         },
         "Table of Estimand Characteristics including endpoint at a minimum": {
@@ -15,13 +33,49 @@
             "original_name": "Table of Estimand Characteristics including endpoint at a minimum",
             "optional": false,
             "section_number": "3.3.1",
-            "section_title": "{Exploratory Objective}",
+            "section_title": "{Exploratory Objective <#>}",
+            "instructions": []
+        },
+        "Informed Consent for Use of Remaining Samples in Exploratory Research": {
+            "long_name": "Enter Informed Consent for Use of Remaining Samples in Exploratory Research",
+            "short_name": "Informed Consent for Use of Remaining Samples in Exploratory Research",
+            "original_name": "Informed Consent for Use of Remaining Samples in Exploratory Research",
+            "optional": false,
+            "section_number": "11.3.2",
+            "section_title": "{Informed Consent for Use of Remaining Samples in Exploratory Research}",
+            "instructions": []
+        },
+        "Country-Region Specific Protocol Clarifications": {
+            "long_name": "Enter Country/Region Specific Protocol Clarifications",
+            "short_name": "Country-Region Specific Protocol Clarifications",
+            "original_name": "Country/Region Specific Protocol Clarifications",
+            "optional": true,
+            "section_number": "12.2",
+            "section_title": "Country/Region-Specific Differences",
+            "instructions": []
+        },
+        "Previous Amendment Number": {
+            "long_name": "enter amendment number",
+            "short_name": "Previous Amendment Number",
+            "original_name": "enter amendment number",
+            "optional": false,
+            "section_number": "12.3",
+            "section_title": "Prior Protocol Amendment(s)",
+            "instructions": []
+        },
+        "enter sponsor approval date": {
+            "long_name": "enter sponsor approval date",
+            "short_name": "enter sponsor approval date",
+            "original_name": "enter sponsor approval date",
+            "optional": false,
+            "section_number": "12.3",
+            "section_title": "Prior Protocol Amendment(s)",
             "instructions": []
         }
     },
     "technical": {
-        "Amendment Scope Enrolment Description": {
-            "name": "Amendment Scope Enrolment Description",
+        "Amendment Scope Enrollment Description": {
+            "name": "Amendment Scope Enrollment Description",
             "data_type": "Valid Value",
             "definition": [
                 {
@@ -30,10 +84,10 @@
                 }
             ],
             "guidance": "",
-            "conformance": "Conditional: if Original Protocol =No",
+            "conformance": "Conditional if Original Protocol =No",
             "cardinality": "One to Amendment Number",
             "relationship": "Amendment Details",
-            "value": "Globally (C68846), Locally (CNEW), Cohort (CNEW)",
+            "value": "Globally (C68846); Locally (CNEW); Cohort (CNEW)",
             "business_rules": {
                 "value_allowed": "Yes",
                 "relationship": "Statement",
@@ -42,11 +96,6 @@
             },
             "repeating": "Yes, reuse to section 12.3",
             "ct": [
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Approximate Enrolled At Time of Sponsor Approval Scope",
-                    "definition": "A terminology value set relevant to the responses for the approximate enrollment at time of sponsor approval scope within the ICH M11 Protocol model."
-                },
                 {
                     "ncit_code": "C68846",
                     "preferred_term": "Globally",
@@ -64,18 +113,23 @@
                 }
             ]
         },
-        "Sponsors Investigational Product Codes 4": {
-            "name": "Sponsors Investigational Product Codes 4",
+        "Sponsors Investigational Product Codes 2": {
+            "name": "Sponsors Investigational Product Codes 2",
             "data_type": "Text",
-            "definition": [],
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "A symbol or combination of symbols that are assigned by the sponsor to uniquely identify an experimental intervention."
+                }
+            ],
             "guidance": "N/A",
             "conformance": "Optional Required Either Sponsor Investigational Product Code or Nonproprietary Name",
-            "cardinality": "One to one; One to Heading One to Protocol Identifier",
+            "cardinality": "One to one; One to Heading; One to Protocol Identifier",
             "relationship": "1.1.2",
             "value": "Text",
             "business_rules": {
                 "value_allowed": "Yes",
-                "relationship": "Row title; Sponsor Protocol Identifier",
+                "relationship": "Row title; Sponsor\u2019s Protocol Identifier",
                 "concept": "",
                 "other": ""
             },
@@ -85,42 +139,47 @@
         "NonProprietary Names": {
             "name": "NonProprietary Names",
             "data_type": "Text",
-            "definition": [],
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "Drug name that is not protected by a trademark, usually descriptive of its chemical structure, and sometimes a public name"
+                }
+            ],
             "guidance": "N/A",
             "conformance": "Optional Required Either Sponsor Investigational Product Code or Nonproprietary Name",
-            "cardinality": "One to one; One to Heading One to Protocol Identifier",
+            "cardinality": "One to one; One to Heading; One to Protocol Identifier",
             "relationship": "1.1.2",
             "value": "Text",
             "business_rules": {
                 "value_allowed": "Yes",
-                "relationship": "Row title; Sponsor Protocol Identifier",
+                "relationship": "Row title; Sponsor\u2019s Protocol Identifier",
                 "concept": "",
                 "other": ""
             },
             "repeating": "Yes, repeatable from Title Page Nonproprietary Name(s)\nYes, reuse for each Investigational Product",
             "ct": []
         },
-        "Secondary Objective X": {
-            "name": "Secondary Objective X",
+        "Population-level Summary": {
+            "name": "Population-level Summary",
             "data_type": "Text",
             "definition": [
                 {
-                    "c_code": "C85827",
-                    "text": "The secondary reason for performing a study in terms of the scientific questions to be answered by the analysis of data collected during the study."
+                    "c_code": "C188853",
+                    "text": "Population level summary for the clinical endpoint of interest, which provides a basis for comparison between treatment conditions."
                 }
             ],
-            "guidance": "N/A",
-            "conformance": "Required",
-            "cardinality": "One to one; Table of Contents Number 3.2.X, One to Estimand Characteristic Table, Secondary Objective X, Protocol Identifier",
-            "relationship": "3.2.X",
-            "value": "Text and unique integer which is same as Level 3 number for the section.",
+            "guidance": "Description of the population-level summary (e.g., mean difference, relative risk)",
+            "conformance": "Conditional: If there is a population-level summary as estimand",
+            "cardinality": "One to Row Heading; One to Primary Objective Table; Project Identifier",
+            "relationship": "3.1.X",
+            "value": "Text",
             "business_rules": {
                 "value_allowed": "Yes",
-                "relationship": "3.2.X Secondary Objective, Estimand Characteristics table",
-                "concept": "C85827",
+                "relationship": "Row Heading; Description",
+                "concept": "C188853",
                 "other": ""
             },
-            "repeating": "Yes, repeatable for each numbered secondary objective.",
+            "repeating": "Yes, repeatable for each numbered primary objective",
             "ct": []
         },
         "Enter Table of Estimand Characteristics including Endpoint at a minimum": {
@@ -141,8 +200,8 @@
             "repeating": "Yes, repeatable for each numbered secondary objective.",
             "ct": []
         },
-        "Population 7": {
-            "name": "Population 7",
+        "Population 2": {
+            "name": "Population 2",
             "data_type": "Text",
             "definition": [
                 {
@@ -152,20 +211,20 @@
             ],
             "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
             "conformance": "Conditional: If there is a population for Secondary",
-            "cardinality": "One to Row Heading, One to Secondary Objective Table, Secondary Objective X, Protocol Identifier",
+            "cardinality": "One to Row Heading; One to Secondary Objective Table; Secondary Objective <#>; Protocol Identifier",
             "relationship": "3.2.X",
             "value": "Text",
             "business_rules": {
                 "value_allowed": "Yes",
-                "relationship": "Row Heading, Description; Estimand Characteristics,",
+                "relationship": "Row Heading, Description; Estimand Characteristic",
                 "concept": "C70833",
                 "other": ""
             },
             "repeating": "Yes, repeatable for each numbered secondary objective.",
             "ct": []
         },
-        "Treatment 8": {
-            "name": "Treatment 8",
+        "Treatment 2": {
+            "name": "Treatment 2",
             "data_type": "Text",
             "definition": [
                 {
@@ -180,56 +239,66 @@
             "value": "Text",
             "business_rules": {
                 "value_allowed": "Yes",
-                "relationship": "Row Heading, Description; Estimand Characteristics,",
+                "relationship": "Row Heading, Description; Estimand Characteristics",
                 "concept": "C49236",
                 "other": ""
             },
             "repeating": "Yes, repeatable for each numbered secondary objective.",
             "ct": []
         },
-        "Endpoint 9": {
-            "name": "Endpoint 9",
+        "Endpoint 2": {
+            "name": "Endpoint 2",
             "data_type": "Text",
-            "definition": [],
-            "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
+            "definition": [
+                {
+                    "c_code": "C25212",
+                    "text": "The variable to be obtained for each patient that is required to address the clinical question. The specification of the variable might include whether the patient experiences an intercurrent event"
+                }
+            ],
+            "guidance": "Definition of the endpoint",
             "conformance": "Required",
             "cardinality": "One to Row Heading, One to Secondary Objective Table, Project Identifier",
             "relationship": "3.2.X",
             "value": "Text",
             "business_rules": {
                 "value_allowed": "Yes",
-                "relationship": "Row Heading, Description; Table Estimand Characteristics, Secondary (1\u2026n) Estimand; Concept: C25212",
-                "concept": "",
+                "relationship": "Row Heading; Description; Table Estimand Characteristics; Secondary (1\u2026n) Estimand",
+                "concept": "C25212",
                 "other": ""
             },
             "repeating": "Yes, repeatable for each numbered secondary objective.",
             "ct": []
         },
-        "Population-Level Summary 10": {
-            "name": "Population-Level Summary 10",
+        "Population-level Summary 2": {
+            "name": "Population-level Summary 2",
             "data_type": "Text",
-            "definition": [],
-            "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
+            "definition": [
+                {
+                    "c_code": "C188853",
+                    "text": "Population level summary for the clinical endpoint of interest, which provides a basis for comparison between treatment conditions."
+                }
+            ],
+            "guidance": "Description of the population-level summary (e.g., mean difference, relative risk)",
             "conformance": "Conditional: If there is a population for Secondary",
-            "cardinality": "One to Row Heading, One to Secondary Objective Table, Project Identifier",
+            "cardinality": "One to Row Heading; One to Secondary Objective Table; Project Identifier",
             "relationship": "3.2.X",
             "value": "Text",
             "business_rules": {
                 "value_allowed": "Yes",
-                "relationship": "Row Heading, Description; Table estimand Characteristics, Secondary (1\u2026n) Estimand; Protocol Identifier",
+                "relationship": "Row Heading; Description; Table estimand Characteristics; Secondary (1\u2026n) Estimand; Protocol Identifier",
                 "concept": "C188853",
                 "other": ""
             },
             "repeating": "Yes, repeatable for each numbered secondary objective.",
             "ct": []
         },
-        "Intercurrent Event Strategy": {
-            "name": "Intercurrent Event Strategy",
+        "Intercurrent Event 1 Strategy 2": {
+            "name": "Intercurrent Event 1 Strategy 2",
             "data_type": "Text",
             "definition": [
                 {
                     "c_code": "C188857",
-                    "text": "A textual description of the planned strategy to address intercurrent events."
+                    "text": "A description of the planned strategy to address intercurrent events."
                 }
             ],
             "guidance": "Description of the strategy to address the intercurrent event (e.g. a treatment policy strategy); cross-reference the justification in Section 4. If there is >1 intercurrent event for an objective, add additional intercurrent event rows",
@@ -239,7 +308,7 @@
             "value": "Text",
             "business_rules": {
                 "value_allowed": "Yes",
-                "relationship": "Row Heading Intercurrent Event, Description",
+                "relationship": "Row Heading; Description of Intercurrent Event",
                 "concept": "C188857",
                 "other": ""
             },
@@ -257,15 +326,15 @@
             "value": "Text",
             "business_rules": {
                 "value_allowed": "Yes",
-                "relationship": "3.3.3 Exploratory Objective(s) and associated Estimand(s);Table column Heading; Description, Population, Treatment, Endpoint, Population-Level, Intercurrent Event (1\u2026n)",
+                "relationship": "3.3.3 Exploratory Objective(s) and associated Estimand(s); Table column Heading; Description; Population; Treatment; Endpoint; Population-Level; Intercurrent Event (1\u2026n)",
                 "concept": "Heading",
                 "other": ""
             },
             "repeating": "Yes, repeatable for each numbered exploratory objective.",
             "ct": []
         },
-        "Population 11": {
-            "name": "Population 11",
+        "Population 3": {
+            "name": "Population 3",
             "data_type": "Text",
             "definition": [
                 {
@@ -274,21 +343,21 @@
                 }
             ],
             "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
-            "conformance": "Conditional: If there is a population as estimand  characteristic",
-            "cardinality": "One to Row Heading, One to Exploratory Objective Table, Exploratory Objective X, Protocol Identifier",
+            "conformance": "Conditional: If there is a population as estimand characteristic",
+            "cardinality": "One to Row Heading; One to Exploratory Objective Table, Exploratory Objective <#>, Protocol Identifier",
             "relationship": "3.3.X",
             "value": "Text",
             "business_rules": {
                 "value_allowed": "Yes",
-                "relationship": "Row Heading, Description; Table Estimand Characteristics, Exploratory (1\u2026n) Estimand",
+                "relationship": "Row Heading, Description; Table Estimand Characteristics; Exploratory (1\u2026n) Estimand",
                 "concept": "C70833",
                 "other": ""
             },
             "repeating": "Yes, repeatable for each numbered exploratory objective.",
             "ct": []
         },
-        "Treatment 12": {
-            "name": "Treatment 12",
+        "Treatment 3": {
+            "name": "Treatment 3",
             "data_type": "Text",
             "definition": [
                 {
@@ -298,20 +367,20 @@
             ],
             "guidance": "List of key aspects of treatment regimens in each study group, including at least investigational agents, dosage, and administration route",
             "conformance": "Conditional: If there is a treatment as estimand",
-            "cardinality": "One to Row Heading, One to Exploratory Objective Table, Project Identifier",
+            "cardinality": "One to Row Heading; One to Exploratory Objective Table; Project Identifier",
             "relationship": "3.3.X",
             "value": "Text",
             "business_rules": {
                 "value_allowed": "Yes",
-                "relationship": "Row Heading, Description; Table Estimand Characteristics, Exploratory (1\u2026n) Estimand; Protocol Identifier",
+                "relationship": "Row Heading, Description; Table Estimand Characteristics; Exploratory (1\u2026n) Estimand; Protocol Identifier",
                 "concept": "C49236",
                 "other": ""
             },
             "repeating": "Yes, repeatable for each numbered exploratory objective.",
             "ct": []
         },
-        "Endpoint 13": {
-            "name": "Endpoint 13",
+        "Endpoint 3": {
+            "name": "Endpoint 3",
             "data_type": "Text",
             "definition": [
                 {
@@ -319,61 +388,61 @@
                     "text": "The variable to be obtained for each patient that is required to address the clinical question. The specification of the variable might include whether the patient experiences an intercurrent event"
                 }
             ],
-            "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
+            "guidance": "Definition of the endpoint",
             "conformance": "Conditional: if there is exploratory endpoint(s).",
-            "cardinality": "One to Row Heading, One to Exploratory Objective Table, Project Identifier",
+            "cardinality": "One to Row Heading; One to Exploratory Objective Table, Project Identifier",
             "relationship": "3.3.X",
             "value": "Text",
             "business_rules": {
                 "value_allowed": "Yes",
-                "relationship": "Row Heading, Description; Table Estimand Characteristics, Exploratory (1\u2026n) Estimand",
+                "relationship": "Row Heading; Description; Table Estimand Characteristics; Exploratory (1\u2026n) Estimand",
                 "concept": "C25212",
                 "other": ""
             },
             "repeating": "Yes, repeatable for each numbered exploratory objective.",
             "ct": []
         },
-        "Population-Level Summary 14": {
-            "name": "Population-Level Summary 14",
+        "Population-level Summary 3": {
+            "name": "Population-level Summary 3",
             "data_type": "Text",
             "definition": [
                 {
                     "c_code": "C188853",
-                    "text": "A synopsis of the clinical endpoint of interest within the analysis target study population."
+                    "text": "Population level summary for the clinical endpoint of interest, which provides a basis for comparison between treatment conditions."
                 }
             ],
             "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
-            "conformance": "Conditional: If there is a population -level summary",
-            "cardinality": "One to Row Heading, One to Exploratory Objective Table, Project Identifier",
+            "conformance": "Conditional: If there is a population-level summary",
+            "cardinality": "One to Row Heading; One to Exploratory Objective Table, Project Identifier",
             "relationship": "3.3.X",
             "value": "Text",
             "business_rules": {
                 "value_allowed": "Yes",
-                "relationship": "Row Heading, Description; Table Estimand Characteristics, Exploratory (1\u2026n) Estimand",
-                "concept": "C188857",
+                "relationship": "Row Heading; Description; Table Estimand Characteristics; Exploratory (1\u2026n) Estimand",
+                "concept": "C188853",
                 "other": ""
             },
             "repeating": "Yes, repeatable for each numbered exploratory objective.",
             "ct": []
         },
-        "Description of Intercurrent Event 15": {
-            "name": "Description of Intercurrent Event 15",
+        "Description of Intercurrent Event 2": {
+            "name": "Description of Intercurrent Event 2",
             "data_type": "Text",
             "definition": [
                 {
-                    "c_code": "C188853",
-                    "text": "A textual description of the planned strategy to address intercurrent events."
+                    "c_code": "C188856",
+                    "text": "A description of the intercurrent event."
                 }
             ],
             "guidance": "Enter Description of Intercurrent Event",
-            "conformance": "Conditional: If there is one or more other intercurrent events as estimand charactristic.",
+            "conformance": "Conditional: If there is one or more other intercurrent events as estimand characteristic.",
             "cardinality": "One to one or as many intercurrent event as available",
             "relationship": "3.3.X",
             "value": "Text",
             "business_rules": {
                 "value_allowed": "Yes",
                 "relationship": "Row Heading, Estimand Characteristics",
-                "concept": "C188853",
+                "concept": "C188856",
                 "other": ""
             },
             "repeating": "Yes, repeatable for each intercurrent event",
@@ -385,22 +454,115 @@
             "definition": [
                 {
                     "c_code": "C188857",
-                    "text": "A textual description of the planned strategy to address intercurrent events."
+                    "text": "A description of the planned strategy to address intercurrent events."
                 }
             ],
-            "guidance": "Description of the strategy to address the intercurrent event (e.g. a treatment policy strategy); cross-reference the justification in Section 4. If there is >1 intercurrent event for an objective, add additional intercurrent event rows",
-            "conformance": "Conditional: If there is one or more other intercurrent events as estimand charactristic.",
+            "guidance": "Description of the strategy to address the intercurrent event (e.g., a treatment policy strategy); cross reference the justification in Section 4 Trial Design. If there is >1 intercurrent event for an objective, add additional intercurrent event rows",
+            "conformance": "Conditional: If there is one or more other intercurrent events as estimand characteristic.",
             "cardinality": "One to one",
             "relationship": "3.3.X",
             "value": "Text",
             "business_rules": {
                 "value_allowed": "Yes",
-                "relationship": "Row Heading; Strategy, Description",
+                "relationship": "Row Heading; Strategy; Description",
                 "concept": "C188857",
                 "other": ""
             },
             "repeating": "Yes, repeatable for each intercurrent event",
             "ct": []
+        },
+        "Informed consent for Use of Remaining Samples in Exploratory Research": {
+            "name": "Informed consent for Use of Remaining Samples in Exploratory Research",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "A description of the consent requirements for exploratory research using the remainder of mandatory samples. If applicable, this may include text in the original consent that address the use of remaining samples or additional text."
+                }
+            ],
+            "guidance": "If participants will be asked to consent to optional exploratory research using the remainder of mandatory samples, describe the use of remaining samples for optional exploratory research.\nIf any exploratory research is planned and additional written consent regarding the use of remaining samples for exploratory research will be obtained, describe the consent process.",
+            "conformance": "Conditional",
+            "cardinality": "One to one",
+            "relationship": "11.3.2",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "11.3.2 Informed Consent for Use of Remaining Samples in Exploratory Research",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "No",
+            "ct": []
+        },
+        "Country-Region-specific Protocol Clarification": {
+            "name": "Country-Region-specific Protocol Clarification",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "A description of any country or region-specific clarifications related to a protocol item."
+                }
+            ],
+            "guidance": "Although global clinical trial practices are increasingly harmonised, some country/region-specific differences in requirements do exist (e.g., document retention periods, contraception requirements). Where differences in requirements cannot be reconciled, sponsors should explain how they will document and communicate country/region-specific differences (e.g., by country/region-specific amendments or addenda).\nAn alternative to country/region-specific amendments is to list the specific differences by country or countries in this section, including a reference to the relevant section of the protocol where the differing requirement applies.\nIf not applicable, retain the heading and enter \u201cNot applicable.\u201d",
+            "conformance": "Optional if there is Country/Region-specific differences",
+            "cardinality": "One to many",
+            "relationship": "12.2",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Country /Region Identifier; 12.2 Country/Region-Specific Differences",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each country/region",
+            "ct": []
+        },
+        "amendment Identifier": {
+            "name": "amendment Identifier",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "A sequence of characters used to uniquely identify a protocol amendment."
+                }
+            ],
+            "guidance": "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first).",
+            "conformance": "Conditional: if amendment",
+            "cardinality": "One to one",
+            "relationship": "12.3",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Overview of Changes from each prior protocol amendment is {provided below} or <specify alternative location>}.",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable one table per amendment identifier",
+            "ct": []
+        },
+        "Previous Amendment Date": {
+            "name": "Sponsor Approval Date 2",
+            "data_type": "Date",
+            "definition": [
+                {
+                    "c_code": "CNEW",
+                    "text": "The date that the sponsor approved the current or prior version of the protocol."
+                }
+            ],
+            "guidance": "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first).",
+            "conformance": "Conditional: if amendment",
+            "cardinality": "One to one",
+            "relationship": "12.3",
+            "value": "Date",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "{The Overview of Changes from each prior protocol amendment is {provided below} or <specify alternative location>}.",
+                "concept": "CNEW",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable one table per amendment",
+            "ct": [],
+            "short_name": "Previous Amendment Date"
         }
     }
 }

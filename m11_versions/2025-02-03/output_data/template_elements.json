@@ -1006,16 +1006,16 @@
         "original_name": "Secondary Objective",
         "optional": false,
         "section_number": "3.2.1",
-        "section_title": "{Secondary Objective}",
+        "section_title": "{Secondary Objective <#>}",
         "instructions": []
     },
-    "Table of Estimand Characteristics including Endpoint at a minimum 3": {
+    "Table of Estimand Characteristics including Endpoint at a minimum 2": {
         "long_name": "Enter Table of Estimand Characteristics including Endpoint at a minimum",
-        "short_name": "Table of Estimand Characteristics including Endpoint at a minimum 3",
+        "short_name": "Table of Estimand Characteristics including Endpoint at a minimum 2",
         "original_name": "Table of Estimand Characteristics including Endpoint at a minimum",
         "optional": false,
         "section_number": "3.2.1",
-        "section_title": "{Secondary Objective}",
+        "section_title": "{Secondary Objective <#>}",
         "instructions": []
     },
     "Exploratory Objective": {
@@ -1024,7 +1024,7 @@
         "original_name": "Exploratory Objective",
         "optional": false,
         "section_number": "3.3.1",
-        "section_title": "{Exploratory Objective}",
+        "section_title": "{Exploratory Objective <#>}",
         "instructions": []
     },
     "Table of Estimand Characteristics including endpoint at a minimum": {
@@ -1033,7 +1033,7 @@
         "original_name": "Table of Estimand Characteristics including endpoint at a minimum",
         "optional": false,
         "section_number": "3.3.1",
-        "section_title": "{Exploratory Objective}",
+        "section_title": "{Exploratory Objective <#>}",
         "instructions": []
     },
     "Overall Description of Trial Design and Description of Intervention Model": {
@@ -1135,10 +1135,10 @@
         "section_title": "Rationale for Control Type",
         "instructions": []
     },
-    "Rationale for Duration": {
-        "long_name": "Enter Rationale for Duration",
-        "short_name": "Rationale for Duration",
-        "original_name": "Rationale for Duration",
+    "Rationale for Trial Duration": {
+        "long_name": "Enter Rationale for Trial Duration",
+        "short_name": "Rationale for Trial Duration",
+        "original_name": "Rationale for Trial Duration",
         "optional": false,
         "section_number": "4.2.4",
         "section_title": "Rationale for Trial Duration",
@@ -1509,8 +1509,12 @@
         "original_name": "Preparation of Investigational Trial Intervention ",
         "optional": false,
         "section_number": "6.6.1",
-        "section_title": "{Preparation of Investigational Trial Intervention}",
-        "instructions": []
+        "section_title": "Preparation of Investigational Trial Intervention",
+        "instructions": [
+            "<",
+            "Enter Preparation of Investigational Trial Intervention ",
+            ">"
+        ]
     },
     "Storage and Handling of Investigational Trial Intervention": {
         "long_name": "Enter Storage and Handling of Investigational Trial Intervention",
@@ -2515,10 +2519,10 @@
         "section_title": "Prior Protocol Amendment(s)",
         "instructions": []
     },
-    "Previous Amendment Date": {
-        "long_name": "enter date",
-        "short_name": "Previous Amendment Date",
-        "original_name": "enter date",
+    "enter sponsor approval date": {
+        "long_name": "enter sponsor approval date",
+        "short_name": "enter sponsor approval date",
+        "original_name": "enter sponsor approval date",
         "optional": false,
         "section_number": "12.3",
         "section_title": "Prior Protocol Amendment(s)",
@@ -2549,7 +2553,10 @@
         "optional": false,
         "section_number": "12.3",
         "section_title": "Prior Protocol Amendment(s)",
-        "instructions": []
+        "instructions": [
+            "(Add lines as needed)",
+            "Add additional Overview of Changes tables as protocol amendments accrue."
+        ]
     },
     "Previous Amendment Enrollment Scope": {
         "long_name": "Previous Amendment Enrollment Scope",
