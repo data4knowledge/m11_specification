@@ -25,7 +25,7 @@ class M11Template:
         self.element_order = []
         self.sections = {}
         self.filepath = Path(filepath)
-        self.repeat_index = 1
+        self.repeat_index = {}
         if not self.filepath.exists():
             raise FileNotFoundError(
                 f"Template specification file not found: {filepath}"
@@ -161,6 +161,13 @@ class M11Template:
             else:
                 print(f"Template insert not required: {key}")
 
+    def _get_repeat_index(self, name: str) -> int:
+        if name in self.repeat_index:
+            self.repeat_index[name] += 1
+        else:
+            self.repeat_index[name] = 2
+        return self.repeat_index[name]
+    
     def _find_last(self, lst: list[str], target: str) -> int:
         for i, item in enumerate(reversed(lst)):
             if item == target:
@@ -221,10 +228,14 @@ class M11Template:
             if element["short_name"] not in self.elements:
                 self.elements[element["short_name"]] = element
             else:
-                name = f"{element['short_name']} {self.repeat_index}"
+                existing_name = element['short_name']
+                repeat_index = self._get_repeat_index(existing_name)
+                name = f"{existing_name} {repeat_index}"
                 element["short_name"] = name
                 self.elements[name] = element
-                self.repeat_index += 1
+                # new_name = f"{existing_name} 1"
+                # self.elements[new_name] = self.elements[existing_name]
+                # self.elements.pop(existing_name)
             self.element_order.append(element["short_name"])
 
     def _add_instructions(self, elements: list[str], instructions: list[str]) -> None:

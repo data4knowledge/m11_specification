@@ -1,8 +1,8 @@
 {
     "template": {
-        "Table of Estimand Characteristics including Endpoint at a minimum 3": {
+        "Table of Estimand Characteristics including Endpoint at a minimum 2": {
             "long_name": "Enter Table of Estimand Characteristics including Endpoint at a minimum",
-            "short_name": "Table of Estimand Characteristics including Endpoint at a minimum 3",
+            "short_name": "Table of Estimand Characteristics including Endpoint at a minimum 2",
             "original_name": "Table of Estimand Characteristics including Endpoint at a minimum",
             "optional": false,
             "section_number": "3.2.1",
@@ -64,8 +64,8 @@
                 }
             ]
         },
-        "Sponsors Investigational Product Codes 4": {
-            "name": "Sponsors Investigational Product Codes 4",
+        "Sponsors Investigational Product Codes 2": {
+            "name": "Sponsors Investigational Product Codes 2",
             "data_type": "Text",
             "definition": [],
             "guidance": "N/A",
@@ -141,8 +141,8 @@
             "repeating": "Yes, repeatable for each numbered secondary objective.",
             "ct": []
         },
-        "Population 7": {
-            "name": "Population 7",
+        "Population 2": {
+            "name": "Population 2",
             "data_type": "Text",
             "definition": [
                 {
@@ -164,8 +164,8 @@
             "repeating": "Yes, repeatable for each numbered secondary objective.",
             "ct": []
         },
-        "Treatment 8": {
-            "name": "Treatment 8",
+        "Treatment 2": {
+            "name": "Treatment 2",
             "data_type": "Text",
             "definition": [
                 {
@@ -187,8 +187,8 @@
             "repeating": "Yes, repeatable for each numbered secondary objective.",
             "ct": []
         },
-        "Endpoint 9": {
-            "name": "Endpoint 9",
+        "Endpoint 2": {
+            "name": "Endpoint 2",
             "data_type": "Text",
             "definition": [],
             "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
@@ -205,8 +205,8 @@
             "repeating": "Yes, repeatable for each numbered secondary objective.",
             "ct": []
         },
-        "Population-Level Summary 10": {
-            "name": "Population-Level Summary 10",
+        "Population-Level Summary 2": {
+            "name": "Population-Level Summary 2",
             "data_type": "Text",
             "definition": [],
             "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
@@ -264,8 +264,8 @@
             "repeating": "Yes, repeatable for each numbered exploratory objective.",
             "ct": []
         },
-        "Population 11": {
-            "name": "Population 11",
+        "Population 3": {
+            "name": "Population 3",
             "data_type": "Text",
             "definition": [
                 {
@@ -287,8 +287,8 @@
             "repeating": "Yes, repeatable for each numbered exploratory objective.",
             "ct": []
         },
-        "Treatment 12": {
-            "name": "Treatment 12",
+        "Treatment 3": {
+            "name": "Treatment 3",
             "data_type": "Text",
             "definition": [
                 {
@@ -310,8 +310,8 @@
             "repeating": "Yes, repeatable for each numbered exploratory objective.",
             "ct": []
         },
-        "Endpoint 13": {
-            "name": "Endpoint 13",
+        "Endpoint 3": {
+            "name": "Endpoint 3",
             "data_type": "Text",
             "definition": [
                 {
@@ -333,8 +333,8 @@
             "repeating": "Yes, repeatable for each numbered exploratory objective.",
             "ct": []
         },
-        "Population-Level Summary 14": {
-            "name": "Population-Level Summary 14",
+        "Population-Level Summary 3": {
+            "name": "Population-Level Summary 3",
             "data_type": "Text",
             "definition": [
                 {
@@ -356,8 +356,8 @@
             "repeating": "Yes, repeatable for each numbered exploratory objective.",
             "ct": []
         },
-        "Description of Intercurrent Event 15": {
-            "name": "Description of Intercurrent Event 15",
+        "Description of Intercurrent Event 2": {
+            "name": "Description of Intercurrent Event 2",
             "data_type": "Text",
             "definition": [
                 {

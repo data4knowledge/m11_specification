@@ -5,11 +5,14 @@ from raw_docx import RawDocx, RawDocument, RawParagraph, RawTable, RawTableRow
 from m11_template.m11_utility import clean_element_name, find_elements
 
 class M11Technical:
+
+    CT_TABLE_START_INDEX: int = 1
+
     def __init__(self, filepath: str):
         self.document = None
         self.elements = {}
         self.filepath = Path(filepath)
-        self.repeat_index = 1
+        self.repeat_index = {}
         if not self.filepath.exists():
             raise FileNotFoundError(
                 f"M11 Technical Document not found: {filepath}"
@@ -42,18 +45,32 @@ class M11Technical:
         if element["name"] not in self.elements:
             self.elements[element["name"]] = element
         else:
-            name = f"{element['name']} {self.repeat_index}"
+            existing_name = element["name"]
+            repeat_index = self._get_repeat_index(existing_name)
+            name = f"{existing_name} {repeat_index}"
             element["name"] = name
             self.elements[name] = element
-            self.repeat_index += 1
+            # new_name = f"{existing_name} 1"
+            # self.elements[new_name] = self.elements[existing_name]
+            # self.elements.pop(existing_name)
+
+    def _get_repeat_index(self, name: str) -> int:
+        if name in self.repeat_index:
+            self.repeat_index[name] += 1
+        else:
+            self.repeat_index[name] = 2
+        return self.repeat_index[name]
 
     def _extract_ct(self, items: list, index: int) -> list:
         if index + 1 < len(items):
             next_index = index + 1
             while next_index < len(items):
+                #print(f"CT INDEX: {next_index}")
                 next_item = items[next_index]
                 if isinstance(next_item, RawTable):
+                    #print(f"TABLE: {next_index}")
                     if self._is_ncit_table(next_item):
+                        #print(f"NCI TABLE: {next_index}")
                         return self._extract_ncit_element(next_item)
                     else:
                         break
@@ -111,7 +128,7 @@ class M11Technical:
 
     def _extract_ncit_element(self, table: RawTable) -> dict:
         ncit_element = []
-        for row in table.rows[1:]:
+        for row in table.rows[self.CT_TABLE_START_INDEX:]:
             ncit_element.append({
                 "ncit_code": row.cells[0].text().strip(),
                 "preferred_term": row.cells[1].text().strip(),
@@ -139,8 +156,8 @@ class M11Technical:
     def _is_ncit_table(self, table: RawTable) -> bool:
         if len(table.rows) > 1:
             row_1 = table.rows[0]
-            #print(f"ROW 1: {self._row_cell_text(row_1, 0)}")
-            if self._row_cell_text(row_1, 0).startswith("NCI C-Code"):
+            #print(f"ROW 1: {self._row_cell_text(row_1, 0)}, {self._row_cell_text(row_1, 1)}")
+            if self._row_cell_text(row_1, 0).upper().startswith("NCI C-CODE"):
                 return True
         return False
 

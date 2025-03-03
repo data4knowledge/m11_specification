@@ -6,7 +6,7 @@
   reason: ""
 "Enter Appendix":
   reason: Additional appendix section but not in template specification
-"- or - 22": 
+"- or - 2": 
   reason: Repeating element previously defined
 "Additional Text if Needed":
   reason: Not in template specification
@@ -18,7 +18,7 @@
   reason: Funny error around IEs
 "Enter Not applicable":
   reason: Duplicate entry in technical specification
-"Nonproprietary name 5":
+"Nonproprietary name 2":
   reason: Duplicate entry in technical specification
-"INN 6":
+"INN 2":
   reason: Duplicate entry in technical specification

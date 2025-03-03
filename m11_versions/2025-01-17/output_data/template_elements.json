@@ -1009,9 +1009,9 @@
         "section_title": "{Secondary Objective}",
         "instructions": []
     },
-    "Table of Estimand Characteristics including Endpoint at a minimum 3": {
+    "Table of Estimand Characteristics including Endpoint at a minimum 2": {
         "long_name": "Enter Table of Estimand Characteristics including Endpoint at a minimum",
-        "short_name": "Table of Estimand Characteristics including Endpoint at a minimum 3",
+        "short_name": "Table of Estimand Characteristics including Endpoint at a minimum 2",
         "original_name": "Table of Estimand Characteristics including Endpoint at a minimum",
         "optional": false,
         "section_number": "3.2.1",

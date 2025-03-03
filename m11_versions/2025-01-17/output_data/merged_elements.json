@@ -2960,7 +2960,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "Other description 1",
+            "name": "Other description 2",
             "data_type": "Text",
             "definition": [
                 {
@@ -3030,7 +3030,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "If yes briefly explain 3",
+            "name": "If yes briefly explain 2",
             "data_type": "Text",
             "definition": [
                 {
@@ -6000,7 +6000,7 @@
             ]
         },
         "technical": {
-            "name": "- 16",
+            "name": "- 2",
             "data_type": "Number",
             "definition": [],
             "guidance": "Add criteria as needed.  Consider numbering the criteria sequentially",
@@ -9553,7 +9553,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "Statistical Method of Analysis 17",
+            "name": "Statistical Method of Analysis 2",
             "data_type": "Text",
             "definition": [
                 {
@@ -9656,7 +9656,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "Sensitivity Analysis 18",
+            "name": "Sensitivity Analysis 2",
             "data_type": "Text",
             "definition": [
                 {
@@ -9691,7 +9691,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "Supplementary Analysis 19",
+            "name": "Supplementary Analysis 2",
             "data_type": "Text",
             "definition": [
                 {
@@ -10853,7 +10853,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "Amendment Identifier 21",
+            "name": "Amendment Identifier 2",
             "data_type": "Text or Universal Text \u201cOriginal Protocol\u201d",
             "definition": [
                 {
@@ -11028,7 +11028,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "Sponsor Approval Date 23",
+            "name": "Sponsor Approval Date 2",
             "data_type": "Date",
             "definition": [
                 {
@@ -11063,7 +11063,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "Description of Change 24",
+            "name": "Description of Change 2",
             "data_type": "Text",
             "definition": [
                 {
@@ -11098,7 +11098,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "Brief Rationale for Change 25",
+            "name": "Brief Rationale for Change 2",
             "data_type": "Text",
             "definition": [
                 {
@@ -11133,7 +11133,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "Section - and Name of Change 26",
+            "name": "Section - and Name of Change 2",
             "data_type": "Valid Value",
             "definition": [
                 {
@@ -12039,7 +12039,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "Not applicable 20",
+            "name": "Not applicable 2",
             "data_type": "Universal Text",
             "definition": [],
             "guidance": "N/A",

@@ -4,7 +4,7 @@ from m11_template.m11_template import M11Template
 from m11_template.m11_technical import M11Technical
 from itertools import zip_longest
 
-version = "2025-02-03"
+version = "2025-01-17"
 template = M11Template(filepath=f"m11_versions/{version}/specification/m11-template-spec.docx")
 template.process()
 template.rename_elements(filepath=f"m11_versions/{version}/fix_data/template_renames.yaml")

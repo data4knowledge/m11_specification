@@ -2280,8 +2280,8 @@
         "repeating": "Yes, Reuse <Primary Objective> and <Endpoint> for each Primary Objective from section 3.1, reuse <Secondary Objective> and <Endpoint> for each Secondary Objective from section 3.2.",
         "ct": []
     },
-    "Sponsors Investigational Product Codes 4": {
-        "name": "Sponsors Investigational Product Codes 4",
+    "Sponsors Investigational Product Codes 2": {
+        "name": "Sponsors Investigational Product Codes 2",
         "data_type": "Text",
         "definition": [],
         "guidance": "N/A",
@@ -3662,8 +3662,8 @@
         "repeating": "Yes, repeatable for each numbered secondary objective.",
         "ct": []
     },
-    "Population 7": {
-        "name": "Population 7",
+    "Population 2": {
+        "name": "Population 2",
         "data_type": "Text",
         "definition": [
             {
@@ -3685,8 +3685,8 @@
         "repeating": "Yes, repeatable for each numbered secondary objective.",
         "ct": []
     },
-    "Treatment 8": {
-        "name": "Treatment 8",
+    "Treatment 2": {
+        "name": "Treatment 2",
         "data_type": "Text",
         "definition": [
             {
@@ -3708,8 +3708,8 @@
         "repeating": "Yes, repeatable for each numbered secondary objective.",
         "ct": []
     },
-    "Endpoint 9": {
-        "name": "Endpoint 9",
+    "Endpoint 2": {
+        "name": "Endpoint 2",
         "data_type": "Text",
         "definition": [],
         "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
@@ -3726,8 +3726,8 @@
         "repeating": "Yes, repeatable for each numbered secondary objective.",
         "ct": []
     },
-    "Population-Level Summary 10": {
-        "name": "Population-Level Summary 10",
+    "Population-Level Summary 2": {
+        "name": "Population-Level Summary 2",
         "data_type": "Text",
         "definition": [],
         "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
@@ -3808,8 +3808,8 @@
         "repeating": "Yes, repeatable for each numbered exploratory objective.",
         "ct": []
     },
-    "Population 11": {
-        "name": "Population 11",
+    "Population 3": {
+        "name": "Population 3",
         "data_type": "Text",
         "definition": [
             {
@@ -3831,8 +3831,8 @@
         "repeating": "Yes, repeatable for each numbered exploratory objective.",
         "ct": []
     },
-    "Treatment 12": {
-        "name": "Treatment 12",
+    "Treatment 3": {
+        "name": "Treatment 3",
         "data_type": "Text",
         "definition": [
             {
@@ -3854,8 +3854,8 @@
         "repeating": "Yes, repeatable for each numbered exploratory objective.",
         "ct": []
     },
-    "Endpoint 13": {
-        "name": "Endpoint 13",
+    "Endpoint 3": {
+        "name": "Endpoint 3",
         "data_type": "Text",
         "definition": [
             {
@@ -3877,8 +3877,8 @@
         "repeating": "Yes, repeatable for each numbered exploratory objective.",
         "ct": []
     },
-    "Population-Level Summary 14": {
-        "name": "Population-Level Summary 14",
+    "Population-Level Summary 3": {
+        "name": "Population-Level Summary 3",
         "data_type": "Text",
         "definition": [
             {
@@ -3900,8 +3900,8 @@
         "repeating": "Yes, repeatable for each numbered exploratory objective.",
         "ct": []
     },
-    "Description of Intercurrent Event 15": {
-        "name": "Description of Intercurrent Event 15",
+    "Description of Intercurrent Event 2": {
+        "name": "Description of Intercurrent Event 2",
         "data_type": "Text",
         "definition": [
             {
@@ -7885,7 +7885,7 @@
         "short_name": "Primary Reason Other"
     },
     "Secondary Reason Other": {
-        "name": "Other description 1",
+        "name": "Other description 2",
         "data_type": "Text",
         "definition": [
             {
@@ -8085,7 +8085,7 @@
         "short_name": "Briefly Explain Substantial Impact On Safety"
     },
     "Briefly Explain Substantial Impact on Data": {
-        "name": "If yes briefly explain 3",
+        "name": "If yes briefly explain 2",
         "data_type": "Text",
         "definition": [
             {
@@ -8276,7 +8276,7 @@
         "short_name": "Other Noninvestigational Trial Intervention"
     },
     "Prior Amendment Identifier": {
-        "name": "Amendment Identifier 21",
+        "name": "Amendment Identifier 2",
         "data_type": "Text or Universal Text \u201cOriginal Protocol\u201d",
         "definition": [
             {
@@ -8300,7 +8300,7 @@
         "short_name": "Prior Amendment Identifier"
     },
     "Previous Amendment Overview Description of Change": {
-        "name": "Description of Change 24",
+        "name": "Description of Change 2",
         "data_type": "Text",
         "definition": [
             {
@@ -8324,7 +8324,7 @@
         "short_name": "Previous Amendment Overview Description of Change"
     },
     "Previous Amendment Overview Brief Rationale for Change": {
-        "name": "Brief Rationale for Change 25",
+        "name": "Brief Rationale for Change 2",
         "data_type": "Text",
         "definition": [
             {
@@ -8348,7 +8348,7 @@
         "short_name": "Previous Amendment Overview Brief Rationale for Change"
     },
     "Previous Amendment Overview Section": {
-        "name": "Section - and Name of Change 26",
+        "name": "Section - and Name of Change 2",
         "data_type": "Valid Value",
         "definition": [
             {
@@ -9153,7 +9153,7 @@
         "short_name": "Previous Amendment Overview Section"
     },
     "Secondary Objectives Statistical Analysis Method": {
-        "name": "Statistical Method of Analysis 17",
+        "name": "Statistical Method of Analysis 2",
         "data_type": "Text",
         "definition": [
             {
@@ -9177,7 +9177,7 @@
         "short_name": "Secondary Objectives Statistical Analysis Method"
     },
     "Secondary Objectives Sensitivity Analysis": {
-        "name": "Sensitivity Analysis 18",
+        "name": "Sensitivity Analysis 2",
         "data_type": "Text",
         "definition": [
             {
@@ -9201,7 +9201,7 @@
         "short_name": "Secondary Objectives Sensitivity Analysis"
     },
     "Secondary Objectives Supplementary Analysis": {
-        "name": "Supplementary Analysis 19",
+        "name": "Supplementary Analysis 2",
         "data_type": "Text",
         "definition": [
             {
@@ -9249,7 +9249,7 @@
         "short_name": "Previous Amendment Number"
     },
     "Previous Amendment Date": {
-        "name": "Sponsor Approval Date 23",
+        "name": "Sponsor Approval Date 2",
         "data_type": "Date",
         "definition": [
             {
@@ -9321,7 +9321,7 @@
         "short_name": "Previous Amendment Enrollment Scope"
     },
     "Country Region Not Applicable": {
-        "name": "Not applicable 20",
+        "name": "Not applicable 2",
         "data_type": "Universal Text",
         "definition": [],
         "guidance": "N/A",
@@ -9359,7 +9359,7 @@
         "short_name": "Inclusion Criterion Number"
     },
     "Exclusion Criterion Number": {
-        "name": "- 16",
+        "name": "- 2",
         "data_type": "Number",
         "definition": [],
         "guidance": "Add criteria as needed.  Consider numbering the criteria sequentially",
