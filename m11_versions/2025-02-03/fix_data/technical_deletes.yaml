@@ -2,6 +2,8 @@
   reason: No a data element
 "The table below describes the current amendment": 
   reason: Not really a data element
+"Globally-Locally-by Cohort":
+  reason: "Duplicates Amendment Scope Enrollment Description"
 "Number or -":
   reason: ""
 "Enter Appendix":

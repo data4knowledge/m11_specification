@@ -401,9 +401,9 @@
             "For a country/regional amendment, provide the estimated local or regional enrollment at the time the Sponsor approved the amendment."
         ]
     },
-    "Globally-Locally-by Cohort": {
+    "Amendment Scope Enrollment Description": {
         "long_name": "Globally/Locally/by Cohort",
-        "short_name": "Globally-Locally-by Cohort",
+        "short_name": "Amendment Scope Enrollment Description",
         "original_name": "Globally/Locally/by Cohort",
         "optional": true,
         "section_number": "",

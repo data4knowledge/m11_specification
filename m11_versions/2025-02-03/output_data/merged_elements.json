@@ -1529,10 +1529,10 @@
             "short_name": "Current Amendment Enrollment"
         }
     },
-    "Globally-Locally-by Cohort": {
+    "Amendment Scope Enrollment Description": {
         "template": {
             "long_name": "Globally/Locally/by Cohort",
-            "short_name": "Globally-Locally-by Cohort",
+            "short_name": "Amendment Scope Enrollment Description",
             "original_name": "Globally/Locally/by Cohort",
             "optional": true,
             "section_number": "",
@@ -1543,27 +1543,43 @@
             ]
         },
         "technical": {
-            "name": "Globally-Locally-by Cohort",
-            "data_type": "Text",
+            "name": "Amendment Scope Enrollment Description",
+            "data_type": "Valid Value",
             "definition": [
                 {
                     "c_code": "CNEW",
-                    "text": "The value (expressed either numerically or as a percentage) for the estimated number of participants enrolled at the time of the protocol amendment."
+                    "text": "The enrollment description as to whether the amendment scope applies globally, locally, or per cohort across the trial."
                 }
             ],
             "guidance": "",
-            "conformance": "Optional",
-            "cardinality": "One to one; One to amendment number",
+            "conformance": "Conditional if Original Protocol =No",
+            "cardinality": "One to Amendment Number",
             "relationship": "Amendment Details",
-            "value": "Approximate <#/%> enrolled <Globally/Locally/by Cohort>",
+            "value": "Globally (C68846); Locally (CNEW); Cohort (CNEW)",
             "business_rules": {
                 "value_allowed": "Yes",
                 "relationship": "Statement",
                 "concept": "CNEW",
                 "other": ""
             },
-            "repeating": "Yes, reuse to Section 12.3",
-            "ct": []
+            "repeating": "Yes, reuse to section 12.3",
+            "ct": [
+                {
+                    "ncit_code": "C68846",
+                    "preferred_term": "Globally",
+                    "definition": "Covering or affecting the whole of a system."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Locally",
+                    "definition": "Covering or affecting a portion of the system."
+                },
+                {
+                    "ncit_code": "CNEW",
+                    "preferred_term": "Cohort",
+                    "definition": "Covering or affecting a cohort of individuals."
+                }
+            ]
         }
     },
     "Primary Reason for Amendment": {
@@ -2915,7 +2931,7 @@
             "instructions": []
         },
         "technical": {
-            "name": "Other description 2",
+            "name": "Secondary Reason Other",
             "data_type": "Text",
             "definition": [
                 {

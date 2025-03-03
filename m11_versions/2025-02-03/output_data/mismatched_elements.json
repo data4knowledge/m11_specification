@@ -65,45 +65,6 @@
         }
     },
     "technical": {
-        "Amendment Scope Enrollment Description": {
-            "name": "Amendment Scope Enrollment Description",
-            "data_type": "Valid Value",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "The enrollment description as to whether the amendment scope applies globally, locally, or per cohort across the trial."
-                }
-            ],
-            "guidance": "",
-            "conformance": "Conditional if Original Protocol =No",
-            "cardinality": "One to Amendment Number",
-            "relationship": "Amendment Details",
-            "value": "Globally (C68846); Locally (CNEW); Cohort (CNEW)",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "Statement",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "Yes, reuse to section 12.3",
-            "ct": [
-                {
-                    "ncit_code": "C68846",
-                    "preferred_term": "Globally",
-                    "definition": "Covering or affecting the whole of a system."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Locally",
-                    "definition": "Covering or affecting a portion of the system."
-                },
-                {
-                    "ncit_code": "CNEW",
-                    "preferred_term": "Cohort",
-                    "definition": "Covering or affecting a cohort of individuals."
-                }
-            ]
-        },
         "Sponsors Investigational Product Codes 2": {
             "name": "Sponsors Investigational Product Codes 2",
             "data_type": "Text",
