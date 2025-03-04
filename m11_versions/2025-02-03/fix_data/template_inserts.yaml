@@ -62,35 +62,21 @@ Country Region Not Applicable:
   "section_number": '12.3'
   "section_title": "Prior Protocol Amendments"
   "instructions": []
-# "Inclusion Criterion Number":
-#   "long_name": Inclusion Criterion Number
-#   "short_name": Inclusion Criterion Number
-#   "original_name": Inclusion Criterion Number
-#   "optional": false
-#   "section_number": 5.2
-#   "section_title": Inclusion Critieria
-#   "instructions": []
-# "Inclusion Criterion":
-#   "long_name": Inclusion Criterion
-#   "short_name": Inclusion Criterion
-#   "original_name": Inclusion Criterion
-#   "optional": false
-#   "section_number": 5.2
-#   "section_title": Inclusion Critieria
-#   "instructions": []
-# "Exclusion Criterion Number":
-#   "long_name": Exclusion Criterion Number
-#   "short_name": Exclusion Criterion Number
-#   "original_name": Exclusion Criterion Number
-#   "optional": false
-#   "section_number": 5.3
-#   "section_title": Exclusion Critieria
-#   "instructions": []
-# "Exclusion Criterion":
-#   "long_name": Exclusion Criterion
-#   "short_name": Exclusion Criterion
-#   "original_name": Exclusion Criterion
-#   "optional": false
-#   "section_number": 5.3
-#   "section_title": Exclusion Critieria
-#   "instructions": []
+"Sponsors Investigational Product Codes 2":
+  "long_name": Sponsors Investigational Product Codes
+  "short_name": Sponsors Investigational Product Codes
+  "original_name": Sponsors Investigational Product Codes
+  "optional": false
+  "section_number": 1.1.2
+  "section_title": Overall Design
+  "instructions": []
+  "reason": No grey highlight in source document
+"NonProprietary Names 2":
+  "long_name": Nonproprietary Names
+  "short_name": Nonproprietary Names
+  "original_name": Nonproprietary Names
+  "optional": false
+  "section_number": 1.1.2
+  "section_title": Overall Design
+  "instructions": []
+  "reason": No grey highlight in source document

@@ -2240,29 +2240,6 @@
         "repeating": "Yes, repeatable from Title Page Sponsor Investigational Product Code(s)\nyes, reuse for each Investigational Product",
         "ct": []
     },
-    "NonProprietary Names": {
-        "name": "NonProprietary Names",
-        "data_type": "Text",
-        "definition": [
-            {
-                "c_code": "CNEW",
-                "text": "Drug name that is not protected by a trademark, usually descriptive of its chemical structure, and sometimes a public name"
-            }
-        ],
-        "guidance": "N/A",
-        "conformance": "Optional Required Either Sponsor Investigational Product Code or Nonproprietary Name",
-        "cardinality": "One to one; One to Heading; One to Protocol Identifier",
-        "relationship": "1.1.2",
-        "value": "Text",
-        "business_rules": {
-            "value_allowed": "Yes",
-            "relationship": "Row title; Sponsor\u2019s Protocol Identifier",
-            "concept": "",
-            "other": ""
-        },
-        "repeating": "Yes, repeatable from Title Page Nonproprietary Name(s)\nYes, reuse for each Investigational Product",
-        "ct": []
-    },
     "Intervention Model": {
         "name": "Intervention Model",
         "data_type": "Valid Value",
@@ -7511,6 +7488,30 @@
         },
         "repeating": "No",
         "ct": []
+    },
+    "NonProprietary Names 2": {
+        "name": "NonProprietary Names",
+        "data_type": "Text",
+        "definition": [
+            {
+                "c_code": "CNEW",
+                "text": "Drug name that is not protected by a trademark, usually descriptive of its chemical structure, and sometimes a public name"
+            }
+        ],
+        "guidance": "N/A",
+        "conformance": "Optional Required Either Sponsor Investigational Product Code or Nonproprietary Name",
+        "cardinality": "One to one; One to Heading; One to Protocol Identifier",
+        "relationship": "1.1.2",
+        "value": "Text",
+        "business_rules": {
+            "value_allowed": "Yes",
+            "relationship": "Row title; Sponsor\u2019s Protocol Identifier",
+            "concept": "",
+            "other": ""
+        },
+        "repeating": "Yes, repeatable from Title Page Nonproprietary Name(s)\nYes, reuse for each Investigational Product",
+        "ct": [],
+        "short_name": "NonProprietary Names 2"
     },
     "Blinded Roles": {
         "name": "Blinded roles",

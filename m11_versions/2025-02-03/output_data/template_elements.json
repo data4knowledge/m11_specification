@@ -847,6 +847,26 @@
             "Delete \u201cOther Committees\u201d if not applicable."
         ]
     },
+    "Sponsors Investigational Product Codes 2": {
+        "long_name": "Sponsors Investigational Product Codes",
+        "short_name": "Sponsors Investigational Product Codes",
+        "original_name": "Sponsors Investigational Product Codes",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": [],
+        "reason": "No grey highlight in source document"
+    },
+    "NonProprietary Names 2": {
+        "long_name": "Nonproprietary Names",
+        "short_name": "Nonproprietary Names",
+        "original_name": "Nonproprietary Names",
+        "optional": false,
+        "section_number": "1.1.2",
+        "section_title": "Overall Design",
+        "instructions": [],
+        "reason": "No grey highlight in source document"
+    },
     "Trial Schema": {
         "long_name": "Enter Trial Schema",
         "short_name": "Trial Schema",

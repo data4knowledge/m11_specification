@@ -154,7 +154,7 @@ class M11Template:
                 #print(f"SECTION NUMBERS: {section_numbers}")
                 index = self._find_last(section_numbers, value["section_number"])
                 if index:
-                    #print(f"INSERT: {key}, {value}, {index}")
+                    print(f"Template insert done: {key}")
                     self.element_order.insert(index+1, key)
                 else:
                     print(f"Template insert not found: {key}")
