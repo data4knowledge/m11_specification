@@ -2539,9 +2539,9 @@
         "section_title": "Prior Protocol Amendment(s)",
         "instructions": []
     },
-    "enter sponsor approval date": {
+    "Previous Amendment Approval Date": {
         "long_name": "enter sponsor approval date",
-        "short_name": "enter sponsor approval date",
+        "short_name": "Previous Amendment Approval Date",
         "original_name": "enter sponsor approval date",
         "optional": false,
         "section_number": "12.3",

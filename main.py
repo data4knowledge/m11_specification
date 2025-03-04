@@ -82,3 +82,4 @@ for result in res:
 text += "</table>"
 with open(f"m11_versions/{version}/output_data/mismatched_elements.html", "w") as f:
     f.write(text)
+print("\n\n")

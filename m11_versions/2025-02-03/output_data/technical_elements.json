@@ -7284,29 +7284,6 @@
         "repeating": "Yes, repeatable for each Country/Region",
         "ct": []
     },
-    "Country-Region-specific Protocol Clarification": {
-        "name": "Country-Region-specific Protocol Clarification",
-        "data_type": "Text",
-        "definition": [
-            {
-                "c_code": "CNEW",
-                "text": "A description of any country or region-specific clarifications related to a protocol item."
-            }
-        ],
-        "guidance": "Although global clinical trial practices are increasingly harmonised, some country/region-specific differences in requirements do exist (e.g., document retention periods, contraception requirements). Where differences in requirements cannot be reconciled, sponsors should explain how they will document and communicate country/region-specific differences (e.g., by country/region-specific amendments or addenda).\nAn alternative to country/region-specific amendments is to list the specific differences by country or countries in this section, including a reference to the relevant section of the protocol where the differing requirement applies.\nIf not applicable, retain the heading and enter \u201cNot applicable.\u201d",
-        "conformance": "Optional if there is Country/Region-specific differences",
-        "cardinality": "One to many",
-        "relationship": "12.2",
-        "value": "Text",
-        "business_rules": {
-            "value_allowed": "Yes",
-            "relationship": "Country /Region Identifier; 12.2 Country/Region-Specific Differences",
-            "concept": "CNEW",
-            "other": ""
-        },
-        "repeating": "Yes, repeatable for each country/region",
-        "ct": []
-    },
     "Prior Protocol Amendments": {
         "name": "Prior Protocol Amendments",
         "data_type": "Valid Value",
@@ -7395,29 +7372,6 @@
             "other": ""
         },
         "repeating": "Yes, reuse from the title page.",
-        "ct": []
-    },
-    "amendment Identifier": {
-        "name": "amendment Identifier",
-        "data_type": "Text",
-        "definition": [
-            {
-                "c_code": "CNEW",
-                "text": "A sequence of characters used to uniquely identify a protocol amendment."
-            }
-        ],
-        "guidance": "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first).",
-        "conformance": "Conditional: if amendment",
-        "cardinality": "One to one",
-        "relationship": "12.3",
-        "value": "Text",
-        "business_rules": {
-            "value_allowed": "Yes",
-            "relationship": "Overview of Changes from each prior protocol amendment is {provided below} or <specify alternative location>}.",
-            "concept": "CNEW",
-            "other": ""
-        },
-        "repeating": "Yes, repeatable one table per amendment identifier",
         "ct": []
     },
     "Glossary of Terms and Abbreviations": {
@@ -9045,7 +8999,7 @@
         "ct": [],
         "short_name": "Secondary Objectives Supplementary Analysis"
     },
-    "Previous Amendment Date": {
+    "Previous Amendment Approval Date": {
         "name": "Sponsor Approval Date 2",
         "data_type": "Date",
         "definition": [
@@ -9067,7 +9021,7 @@
         },
         "repeating": "Yes, repeatable one table per amendment",
         "ct": [],
-        "short_name": "Previous Amendment Date"
+        "short_name": "Previous Amendment Approval Date"
     },
     "Previous Amendment Enrollment": {
         "name": "- or -",
@@ -9197,6 +9151,54 @@
         "repeating": "No",
         "ct": [],
         "short_name": "Informed Consent for Use of Remaining Samples in Exploratory Research"
+    },
+    "Country-Region Specific Protocol Clarifications": {
+        "name": "Country-Region-specific Protocol Clarification",
+        "data_type": "Text",
+        "definition": [
+            {
+                "c_code": "CNEW",
+                "text": "A description of any country or region-specific clarifications related to a protocol item."
+            }
+        ],
+        "guidance": "Although global clinical trial practices are increasingly harmonised, some country/region-specific differences in requirements do exist (e.g., document retention periods, contraception requirements). Where differences in requirements cannot be reconciled, sponsors should explain how they will document and communicate country/region-specific differences (e.g., by country/region-specific amendments or addenda).\nAn alternative to country/region-specific amendments is to list the specific differences by country or countries in this section, including a reference to the relevant section of the protocol where the differing requirement applies.\nIf not applicable, retain the heading and enter \u201cNot applicable.\u201d",
+        "conformance": "Optional if there is Country/Region-specific differences",
+        "cardinality": "One to many",
+        "relationship": "12.2",
+        "value": "Text",
+        "business_rules": {
+            "value_allowed": "Yes",
+            "relationship": "Country /Region Identifier; 12.2 Country/Region-Specific Differences",
+            "concept": "CNEW",
+            "other": ""
+        },
+        "repeating": "Yes, repeatable for each country/region",
+        "ct": [],
+        "short_name": "Country-Region Specific Protocol Clarifications"
+    },
+    "Previous Amendment Number": {
+        "name": "amendment Identifier",
+        "data_type": "Text",
+        "definition": [
+            {
+                "c_code": "CNEW",
+                "text": "A sequence of characters used to uniquely identify a protocol amendment."
+            }
+        ],
+        "guidance": "Move the Overview of Changes table from the previous amendments to this section in reverse chronological order (most recent first).",
+        "conformance": "Conditional: if amendment",
+        "cardinality": "One to one",
+        "relationship": "12.3",
+        "value": "Text",
+        "business_rules": {
+            "value_allowed": "Yes",
+            "relationship": "Overview of Changes from each prior protocol amendment is {provided below} or <specify alternative location>}.",
+            "concept": "CNEW",
+            "other": ""
+        },
+        "repeating": "Yes, repeatable one table per amendment identifier",
+        "ct": [],
+        "short_name": "Previous Amendment Number"
     },
     "Secondary Reason Other": {
         "name": "Secondary Reason Other",
