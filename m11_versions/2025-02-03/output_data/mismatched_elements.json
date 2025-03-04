@@ -27,15 +27,6 @@
             "section_title": "{Exploratory Objective <#>}",
             "instructions": []
         },
-        "Informed Consent for Use of Remaining Samples in Exploratory Research": {
-            "long_name": "Enter Informed Consent for Use of Remaining Samples in Exploratory Research",
-            "short_name": "Informed Consent for Use of Remaining Samples in Exploratory Research",
-            "original_name": "Informed Consent for Use of Remaining Samples in Exploratory Research",
-            "optional": false,
-            "section_number": "11.3.2",
-            "section_title": "{Informed Consent for Use of Remaining Samples in Exploratory Research}",
-            "instructions": []
-        },
         "Country-Region Specific Protocol Clarifications": {
             "long_name": "Enter Country/Region Specific Protocol Clarifications",
             "short_name": "Country-Region Specific Protocol Clarifications",
@@ -375,29 +366,6 @@
                 "other": ""
             },
             "repeating": "Yes, repeatable for each intercurrent event",
-            "ct": []
-        },
-        "Informed consent for Use of Remaining Samples in Exploratory Research": {
-            "name": "Informed consent for Use of Remaining Samples in Exploratory Research",
-            "data_type": "Text",
-            "definition": [
-                {
-                    "c_code": "CNEW",
-                    "text": "A description of the consent requirements for exploratory research using the remainder of mandatory samples. If applicable, this may include text in the original consent that address the use of remaining samples or additional text."
-                }
-            ],
-            "guidance": "If participants will be asked to consent to optional exploratory research using the remainder of mandatory samples, describe the use of remaining samples for optional exploratory research.\nIf any exploratory research is planned and additional written consent regarding the use of remaining samples for exploratory research will be obtained, describe the consent process.",
-            "conformance": "Conditional",
-            "cardinality": "One to one",
-            "relationship": "11.3.2",
-            "value": "Text",
-            "business_rules": {
-                "value_allowed": "Yes",
-                "relationship": "11.3.2 Informed Consent for Use of Remaining Samples in Exploratory Research",
-                "concept": "CNEW",
-                "other": ""
-            },
-            "repeating": "No",
             "ct": []
         },
         "Country-Region-specific Protocol Clarification": {

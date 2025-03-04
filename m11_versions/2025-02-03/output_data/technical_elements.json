@@ -6916,29 +6916,6 @@
         "repeating": "No",
         "ct": []
     },
-    "Informed consent for Use of Remaining Samples in Exploratory Research": {
-        "name": "Informed consent for Use of Remaining Samples in Exploratory Research",
-        "data_type": "Text",
-        "definition": [
-            {
-                "c_code": "CNEW",
-                "text": "A description of the consent requirements for exploratory research using the remainder of mandatory samples. If applicable, this may include text in the original consent that address the use of remaining samples or additional text."
-            }
-        ],
-        "guidance": "If participants will be asked to consent to optional exploratory research using the remainder of mandatory samples, describe the use of remaining samples for optional exploratory research.\nIf any exploratory research is planned and additional written consent regarding the use of remaining samples for exploratory research will be obtained, describe the consent process.",
-        "conformance": "Conditional",
-        "cardinality": "One to one",
-        "relationship": "11.3.2",
-        "value": "Text",
-        "business_rules": {
-            "value_allowed": "Yes",
-            "relationship": "11.3.2 Informed Consent for Use of Remaining Samples in Exploratory Research",
-            "concept": "CNEW",
-            "other": ""
-        },
-        "repeating": "No",
-        "ct": []
-    },
     "Committees": {
         "name": "Committees",
         "data_type": "Text",
@@ -9196,6 +9173,30 @@
         "repeating": "Yes. number consecutively, repeatable for each exclusion criteria, if deleted do not replace, do not duplicate",
         "ct": [],
         "short_name": "Exclusion Criterion Number"
+    },
+    "Informed Consent for Use of Remaining Samples in Exploratory Research": {
+        "name": "Informed consent for Use of Remaining Samples in Exploratory Research",
+        "data_type": "Text",
+        "definition": [
+            {
+                "c_code": "CNEW",
+                "text": "A description of the consent requirements for exploratory research using the remainder of mandatory samples. If applicable, this may include text in the original consent that address the use of remaining samples or additional text."
+            }
+        ],
+        "guidance": "If participants will be asked to consent to optional exploratory research using the remainder of mandatory samples, describe the use of remaining samples for optional exploratory research.\nIf any exploratory research is planned and additional written consent regarding the use of remaining samples for exploratory research will be obtained, describe the consent process.",
+        "conformance": "Conditional",
+        "cardinality": "One to one",
+        "relationship": "11.3.2",
+        "value": "Text",
+        "business_rules": {
+            "value_allowed": "Yes",
+            "relationship": "11.3.2 Informed Consent for Use of Remaining Samples in Exploratory Research",
+            "concept": "CNEW",
+            "other": ""
+        },
+        "repeating": "No",
+        "ct": [],
+        "short_name": "Informed Consent for Use of Remaining Samples in Exploratory Research"
     },
     "Secondary Reason Other": {
         "name": "Secondary Reason Other",

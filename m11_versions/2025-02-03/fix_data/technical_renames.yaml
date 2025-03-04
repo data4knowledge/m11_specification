@@ -1,21 +1,21 @@
 "NonProprietary Names": "NonProprietary Names 2"
 "Blinded roles": "Blinded Roles"
-"Secondary Objective Number": "Secondary Objective"
+#"Secondary Objective Number": "Secondary Objective"
 "Statistical Method of Analysis": "Statistical Analysis Method"
 "Minimum age": "Minimum Age"
 "Rationale for Trial Intervention Model": "Rationale for Intervention Model"
-"Population-Level Summary": "Population Level Summary"
+#"Population-Level Summary": "Population Level Summary"
 "Analysis Associated with Exploratory Objectivess": "Analysis Associated with Exploratory Objectives"
 "Disease-related Events or Outcomes Not Qualifying as AEs or SAEs": "Disease Related Events or Outcomes Not Qualifying as AEs or SAEs"
 "describe method": "Describe Method"
 "Back-up Method for Reporting": "Backup Method for Reporting"
 "IMP-NIMP": "IMP or NIMP"
 "Country-Region-Specific Requirements": "Country-Region Specific Requirements"
-"Country-Region-specific Protocol Clarifications": "Country-Region Specific Protocol Clarifications"
+#"Country-Region-specific Protocol Clarifications": "Country-Region Specific Protocol Clarifications"
 "Other description": "Primary Reason Other"
 "Other description 2": "Secondary Reason Other"
 "Adaptative Trial Design Indicator": "Adaptive Trial Design Indicator"
-randomly assigned to trial intervention- enrolled: randomly assigned to trial intervention-enrolled
+#randomly assigned to trial intervention- enrolled: randomly assigned to trial intervention-enrolled
 "---": "Current Amendment Enrollment"
 "Yes-No": "Substantial Impact Safety"
 "Yes-No 2": "Substantial Impact Data"
@@ -40,4 +40,4 @@ globally-locally-per cohort: Previous Amendment Enrollment Scope
 Not applicable 2: Country Region Not Applicable
 "-": Inclusion Criterion Number
 "- 2": Exclusion Criterion Number
-" Informed consent for Use of Remaining Samples in Exploratory Research": " Informed Consent for Use of Remaining Samples in Exploratory Research"
+"Informed consent for Use of Remaining Samples in Exploratory Research": "Informed Consent for Use of Remaining Samples in Exploratory Research"
