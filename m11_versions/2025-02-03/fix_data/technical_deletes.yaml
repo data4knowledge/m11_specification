@@ -10,8 +10,8 @@
   reason: Additional appendix section but not in template specification
 "- or - 2": 
   reason: Repeating element previously defined
-"Additional Text if Needed":
-  reason: Not in template specification
+#"Additional Text if Needed":
+#  reason: Not in template specification
 "Prospective approval of protocol deviations to recruitment and enrollment criteria also known as protocol waivers or exemptions is not permitted":
   reason: Funny error around IEs
 "To be eligible to participate in this trial an individual must meet all the following criteria":

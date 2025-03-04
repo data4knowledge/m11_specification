@@ -13,7 +13,7 @@
 "Country-Region-Specific Requirements": "Country-Region Specific Requirements"
 #"Country-Region-specific Protocol Clarifications": "Country-Region Specific Protocol Clarifications"
 "Other description": "Primary Reason Other"
-"Other description 2": "Secondary Reason Other"
+#"Other description 2": "Secondary Reason Other"
 "Adaptative Trial Design Indicator": "Adaptive Trial Design Indicator"
 #randomly assigned to trial intervention- enrolled: randomly assigned to trial intervention-enrolled
 "---": "Current Amendment Enrollment"
@@ -24,7 +24,7 @@
 "Total planned duration of trial participation unit of time": total planned duration of trial participation unit of time
 "total planned duration of trial unit of time": "total planned duration of trial intervention unit of time"
 Description of the overview of trial interventions or a heading for the optional table below: description of the overview of trial interventions or a heading for the optional table below
-Regimen-Treatment Period-Vaccination regimen: Regimen-Treatment Period-Vaccination Regimen
+#Regimen-Treatment Period-Vaccination regimen: Regimen-Treatment Period-Vaccination Regimen
 Other Noninvestigational Intervention: Other Noninvestigational Trial Intervention
 Amendment Identifier 2: Prior Amendment Identifier 
 Description of Change 2: Previous Amendment Overview Description of Change
@@ -33,7 +33,7 @@ Section - and Name of Change 2: Previous Amendment Overview Section
 Statistical Method of Analysis 2: Secondary Objectives Statistical Analysis Method
 Sensitivity Analysis 2: Secondary Objectives Sensitivity Analysis
 Supplementary Analysis 2: Secondary Objectives Supplementary Analysis
-amendment number: Previous Amendment Number
+#amendment number: Previous Amendment Number
 Sponsor Approval Date 2: Previous Amendment Date
 "- or -": Previous Amendment Enrollment
 globally-locally-per cohort: Previous Amendment Enrollment Scope

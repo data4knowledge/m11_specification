@@ -4,12 +4,19 @@ from m11_template.m11_technical import M11Technical
 from itertools import zip_longest
 
 version = "2025-02-03"
+
+print(f"\n\nProcessing M11: {version}")
+print(f"--------------------------\n\n")
+
+print("Template specification ...\n")
 template = M11Template(filepath=f"m11_versions/{version}/specification/m11-template-spec.docx")
 template.process()
 template.rename_elements(filepath=f"m11_versions/{version}/fix_data/template_renames.yaml")
 template.insert_elements(filepath=f"m11_versions/{version}/fix_data/template_inserts.yaml")
 template.delete_elements(filepath=f"m11_versions/{version}/fix_data/template_deletes.yaml")
 template.order_elements()
+
+print("\n\nTechnical specification ...\n")
 technical = M11Technical(filepath=f"m11_versions/{version}/specification/m11-technical-spec.docx")
 technical.process()
 technical.rename_elements(filepath=f"m11_versions/{version}/fix_data/technical_renames.yaml")
