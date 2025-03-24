@@ -112,9 +112,7 @@ class M11Technical:
         data_element = None
         if len(table.rows) >= 11:
             text = self._row_cell_text(table.rows[0], 1)
-            print(f"TEXT: {text}")
             data_elements = find_elements(text)
-            #print(f"DATA ELEMENTS: {data_elements}")
             data_elements = [text] if not data_elements else data_elements
             template = {
                 "name": "temp",
