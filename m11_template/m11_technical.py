@@ -110,29 +110,36 @@ class M11Technical:
     def _extract_data_elements(self, table: RawTable) -> list[dict]:
         result = []
         data_element = None
-        if len(table.rows) >= 10:
+        if len(table.rows) >= 11:
             text = self._row_cell_text(table.rows[0], 1)
+            print(f"TEXT: {text}")
             data_elements = find_elements(text)
             #print(f"DATA ELEMENTS: {data_elements}")
             data_elements = [text] if not data_elements else data_elements
-            template = {
-                "name": "temp",
-                "data_type": self._row_cell_text(table.rows[1], 1).strip(),
-                "definition": self._decode_definition(table.rows[3], 1),
-                "guidance": self._row_cell_text(table.rows[4], 1).strip(),
-                "conformance": self._row_cell_text(table.rows[5], 1).strip(),
-                "cardinality": self._row_cell_text(table.rows[6], 1).strip(),
-                "relationship": self._row_cell_text(table.rows[7], 1).strip(),
-                "value": self._row_cell_text(table.rows[8], 1).strip(),
-                "business_rules": self._decode_business_rules(table.rows[9], 1),
-                "repeating": self._row_cell_text(table.rows[10], 1).strip(),
-                "ct": []
-            }
+            try:
+                template = {
+                    "name": "temp",
+                    "data_type": self._row_cell_text(table.rows[1], 1).strip(),
+                    "definition": self._decode_definition(table.rows[3], 1),
+                    "guidance": self._row_cell_text(table.rows[4], 1).strip(),
+                    "conformance": self._row_cell_text(table.rows[5], 1).strip(),
+                    "cardinality": self._row_cell_text(table.rows[6], 1).strip(),
+                    "relationship": self._row_cell_text(table.rows[7], 1).strip(),
+                    "value": self._row_cell_text(table.rows[8], 1).strip(),
+                    "business_rules": self._decode_business_rules(table.rows[9], 1),
+                    "repeating": self._row_cell_text(table.rows[10], 1).strip(),
+                    "ct": []
+                }
+            except Exception:
+                print(f"ROWS: {table.rows}")
+                raise
             for data_element in data_elements:
                 temp = dict(template)
                 temp["name"] = clean_element_name(data_element)
                 result.append(temp)
-        #print(f"RESULT: {result}")
+        else:
+            text = self._row_cell_text(table.rows[0], 1)
+            print(f"Warning: Short table, first row {text}")
         return result
 
     def _extract_ncit_element(self, table: RawTable) -> dict:

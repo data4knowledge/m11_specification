@@ -1,0 +1,345 @@
+{
+    "template": {
+        "Population Level Summary": {
+            "long_name": "Enter Population-level Summary",
+            "short_name": "Population Level Summary",
+            "original_name": "Population-level Summary",
+            "optional": false,
+            "section_number": "3.1.1",
+            "section_title": "Primary Objective <#>",
+            "instructions": []
+        },
+        "Table of Estimand Characteristics including Endpoint at a minimum 2": {
+            "long_name": "Enter Table of Estimand Characteristics including Endpoint at a minimum",
+            "short_name": "Table of Estimand Characteristics including Endpoint at a minimum 2",
+            "original_name": "Table of Estimand Characteristics including Endpoint at a minimum",
+            "optional": false,
+            "section_number": "3.2.1",
+            "section_title": "{Secondary Objective <#>}",
+            "instructions": []
+        },
+        "Table of Estimand Characteristics including endpoint at a minimum": {
+            "long_name": "Enter Table of Estimand Characteristics including endpoint at a minimum",
+            "short_name": "Table of Estimand Characteristics including endpoint at a minimum",
+            "original_name": "Table of Estimand Characteristics including endpoint at a minimum",
+            "optional": false,
+            "section_number": "3.3.1",
+            "section_title": "{Exploratory Objective <#>}",
+            "instructions": []
+        }
+    },
+    "technical": {
+        "Population-level Summary": {
+            "name": "Population-level Summary",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "C188853",
+                    "text": "Population level summary for the clinical endpoint of interest, which provides a basis for comparison between treatment conditions."
+                }
+            ],
+            "guidance": "Description of the population-level summary (e.g., mean difference, relative risk)",
+            "conformance": "Conditional: If there is a population-level summary as estimand",
+            "cardinality": "One to Row Heading; One to Primary Objective Table; Project Identifier",
+            "relationship": "3.1.X",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Row Heading; Description",
+                "concept": "C188853",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each numbered primary objective",
+            "ct": []
+        },
+        "Enter Table of Estimand Characteristics including Endpoint at a minimum": {
+            "name": "Enter Table of Estimand Characteristics including Endpoint at a minimum",
+            "data_type": "Text",
+            "definition": [],
+            "guidance": "{If a Secondary Objective has been entered: <Enter Table of Estimand Characteristics>} including Endpoint at a minimum}",
+            "conformance": "Conditional: either Enter Table of Estimand Characteristics or details of the characteristics relevant to objective",
+            "cardinality": "One to many rows",
+            "relationship": "3.2.X",
+            "value": "Estimand Characteristics",
+            "business_rules": {
+                "value_allowed": "No",
+                "relationship": "3 3.2 Secondary Objective(s) and associated Estimand(s)",
+                "concept": "Heading",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each numbered secondary objective.",
+            "ct": []
+        },
+        "Population 2": {
+            "name": "Population 2",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "C70833",
+                    "text": "The population of patients targeted by the clinical question. This will be represented by the entire trial population, a subgroup defined by a particular characteristic measured at baseline, or a principal stratum defined by the occurrence (or non-occurrence, depending on context) of a specific intercurrent event."
+                }
+            ],
+            "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
+            "conformance": "Conditional: If there is a population for Secondary",
+            "cardinality": "One to Row Heading; One to Secondary Objective Table; Secondary Objective <#>; Protocol Identifier",
+            "relationship": "3.2.X",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Row Heading, Description; Estimand Characteristic",
+                "concept": "C70833",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each numbered secondary objective.",
+            "ct": []
+        },
+        "Treatment 2": {
+            "name": "Treatment 2",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "C49236",
+                    "text": "The treatment condition of interest and, as appropriate, the alternative treatment condition to which comparison will be made (referred to as \u201ctreatment\u201d through the remainder of this document). These might be individual interventions, combinations of interventions administered concurrently, e.g. as add-on to standard of care, or might consist of an overall regimen involving a complex sequence of interventions."
+                }
+            ],
+            "guidance": "List of key aspects of treatment regimens in each study group, including at least investigational agents, dosage, and administration route",
+            "conformance": "Conditional: If there is a population for Secondary",
+            "cardinality": "One to Row Heading, One to Secondary Objective Table, Project Identifier",
+            "relationship": "3.2.X",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Row Heading, Description; Estimand Characteristics",
+                "concept": "C49236",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each numbered secondary objective.",
+            "ct": []
+        },
+        "Endpoint 2": {
+            "name": "Endpoint 2",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "C25212",
+                    "text": "The variable to be obtained for each patient that is required to address the clinical question. The specification of the variable might include whether the patient experiences an intercurrent event"
+                }
+            ],
+            "guidance": "Definition of the endpoint",
+            "conformance": "Required",
+            "cardinality": "One to Row Heading, One to Secondary Objective Table, Project Identifier",
+            "relationship": "3.2.X",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Row Heading; Description; Table Estimand Characteristics; Secondary (1\u2026n) Estimand",
+                "concept": "C25212",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each numbered secondary objective.",
+            "ct": []
+        },
+        "Population-level Summary 2": {
+            "name": "Population-level Summary 2",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "C188853",
+                    "text": "Population level summary for the clinical endpoint of interest, which provides a basis for comparison between treatment conditions."
+                }
+            ],
+            "guidance": "Description of the population-level summary (e.g., mean difference, relative risk)",
+            "conformance": "Conditional: If there is a population for Secondary",
+            "cardinality": "One to Row Heading; One to Secondary Objective Table; Project Identifier",
+            "relationship": "3.2.X",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Row Heading; Description; Table estimand Characteristics; Secondary (1\u2026n) Estimand; Protocol Identifier",
+                "concept": "C188853",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each numbered secondary objective.",
+            "ct": []
+        },
+        "Intercurrent Event 1 Strategy 2": {
+            "name": "Intercurrent Event 1 Strategy 2",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "C188857",
+                    "text": "A description of the planned strategy to address intercurrent events."
+                }
+            ],
+            "guidance": "Description of the strategy to address the intercurrent event (e.g. a treatment policy strategy); cross-reference the justification in Section 4. If there is >1 intercurrent event for an objective, add additional intercurrent event rows",
+            "conformance": "Conditional: If there is one or more other intercurrent events.",
+            "cardinality": "One to one",
+            "relationship": "3.2.X",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Row Heading; Description of Intercurrent Event",
+                "concept": "C188857",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each intercurrent event",
+            "ct": []
+        },
+        "Enter Table of Estimand Characteristics": {
+            "name": "Enter Table of Estimand Characteristics",
+            "data_type": "Text",
+            "definition": [],
+            "guidance": "{If an Exploratory Objective has been entered: <Table of Estimand Characteristics> including Endpoint at a minimum}",
+            "conformance": "Conditional: either Enter Table of Estimand Characteristics or details of the characteristics relevant to objective",
+            "cardinality": "One to many",
+            "relationship": "3.3.X",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "3.3.3 Exploratory Objective(s) and associated Estimand(s); Table column Heading; Description; Population; Treatment; Endpoint; Population-Level; Intercurrent Event (1\u2026n)",
+                "concept": "Heading",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each numbered exploratory objective.",
+            "ct": []
+        },
+        "Population 3": {
+            "name": "Population 3",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "C70833",
+                    "text": "The population of patients targeted by the clinical question. This will be represented by the entire trial population, a subgroup defined by a particular characteristic measured at baseline, or a principal stratum defined by the occurrence (or non-occurrence, depending on context) of a specific intercurrent event."
+                }
+            ],
+            "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
+            "conformance": "Conditional: If there is a population as estimand characteristic",
+            "cardinality": "One to Row Heading; One to Exploratory Objective Table, Exploratory Objective <#>, Protocol Identifier",
+            "relationship": "3.3.X",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Row Heading, Description; Table Estimand Characteristics; Exploratory (1\u2026n) Estimand",
+                "concept": "C70833",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each numbered exploratory objective.",
+            "ct": []
+        },
+        "Treatment 3": {
+            "name": "Treatment 3",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "C49236",
+                    "text": "The treatment condition of interest and, as appropriate, the alternative treatment condition to which comparison will be made (referred to as \u201ctreatment\u201d through the remainder of this document). These might be individual interventions, combinations of interventions administered concurrently, e.g. as add-on to standard of care, or might consist of an overall regimen involving a complex sequence of interventions."
+                }
+            ],
+            "guidance": "List of key aspects of treatment regimens in each study group, including at least investigational agents, dosage, and administration route",
+            "conformance": "Conditional: If there is a treatment as estimand",
+            "cardinality": "One to Row Heading; One to Exploratory Objective Table; Project Identifier",
+            "relationship": "3.3.X",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Row Heading, Description; Table Estimand Characteristics; Exploratory (1\u2026n) Estimand; Protocol Identifier",
+                "concept": "C49236",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each numbered exploratory objective.",
+            "ct": []
+        },
+        "Endpoint 3": {
+            "name": "Endpoint 3",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "C25212",
+                    "text": "The variable to be obtained for each patient that is required to address the clinical question. The specification of the variable might include whether the patient experiences an intercurrent event"
+                }
+            ],
+            "guidance": "Definition of the endpoint",
+            "conformance": "Conditional: if there is exploratory endpoint(s).",
+            "cardinality": "One to Row Heading; One to Exploratory Objective Table, Project Identifier",
+            "relationship": "3.3.X",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Row Heading; Description; Table Estimand Characteristics; Exploratory (1\u2026n) Estimand",
+                "concept": "C25212",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each numbered exploratory objective.",
+            "ct": []
+        },
+        "Population-level Summary 3": {
+            "name": "Population-level Summary 3",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "C188853",
+                    "text": "Population level summary for the clinical endpoint of interest, which provides a basis for comparison between treatment conditions."
+                }
+            ],
+            "guidance": "List of key characteristics, such as demographic characteristics (e.g. age, sex) and clinical characteristics (e.g. prior therapies, symptoms, severity, biomarker status)",
+            "conformance": "Conditional: If there is a population-level summary",
+            "cardinality": "One to Row Heading; One to Exploratory Objective Table, Project Identifier",
+            "relationship": "3.3.X",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Row Heading; Description; Table Estimand Characteristics; Exploratory (1\u2026n) Estimand",
+                "concept": "C188853",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each numbered exploratory objective.",
+            "ct": []
+        },
+        "Description of Intercurrent Event 2": {
+            "name": "Description of Intercurrent Event 2",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "C188856",
+                    "text": "A description of the intercurrent event."
+                }
+            ],
+            "guidance": "Enter Description of Intercurrent Event",
+            "conformance": "Conditional: If there is one or more other intercurrent events as estimand characteristic.",
+            "cardinality": "One to one or as many intercurrent event as available",
+            "relationship": "3.3.X",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Row Heading, Estimand Characteristics",
+                "concept": "C188856",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each intercurrent event",
+            "ct": []
+        },
+        "Intercurrent Event - Strategy": {
+            "name": "Intercurrent Event - Strategy",
+            "data_type": "Text",
+            "definition": [
+                {
+                    "c_code": "C188857",
+                    "text": "A description of the planned strategy to address intercurrent events."
+                }
+            ],
+            "guidance": "Description of the strategy to address the intercurrent event (e.g., a treatment policy strategy); cross reference the justification in Section 4 Trial Design. If there is >1 intercurrent event for an objective, add additional intercurrent event rows",
+            "conformance": "Conditional: If there is one or more other intercurrent events as estimand characteristic.",
+            "cardinality": "One to one",
+            "relationship": "3.3.X",
+            "value": "Text",
+            "business_rules": {
+                "value_allowed": "Yes",
+                "relationship": "Row Heading; Strategy; Description",
+                "concept": "C188857",
+                "other": ""
+            },
+            "repeating": "Yes, repeatable for each intercurrent event",
+            "ct": []
+        }
+    }
+}
